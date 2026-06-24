@@ -35,6 +35,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary StreamingWebExample - Spring Boot + SSE streaming agent responses. (StreamingWebExample - Spring Boot + SSE streaming agent responses.)}
  * StreamingWebExample - Spring Boot + SSE streaming agent responses.
  *
  * <p>Migration notes (from documentation/quickstart):
@@ -58,6 +59,7 @@ import reactor.core.scheduler.Schedulers;
 public class StreamingWebExample {
 
     /**
+     * {@summary StreamingWebExample - Spring Boot + SSE streaming agent responses. (StreamingWebExample - Spring Boot + SSE streaming agent responses.)}
      * Starts the Spring Boot application.
      *
      * @param args command-line arguments
@@ -99,6 +101,7 @@ public class StreamingWebExample {
         }
 
         /**
+         * {@summary StreamingWebExample - Spring Boot + SSE streaming agent responses. (StreamingWebExample - Spring Boot + SSE streaming agent responses.)}
          * Chat endpoint that streams agent responses via SSE.
          *
          * @param message   user message
@@ -137,6 +140,7 @@ public class StreamingWebExample {
         }
 
         /**
+         * {@summary StreamingWebExample - Spring Boot + SSE streaming agent responses. (StreamingWebExample - Spring Boot + SSE streaming agent responses.)}
          * Health check endpoint.
          *
          * @return {@code "OK"}

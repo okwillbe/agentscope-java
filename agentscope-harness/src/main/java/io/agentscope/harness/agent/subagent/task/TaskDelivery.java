@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent.task;
 
+/** {@summary TaskDelivery (TaskDelivery)} */
 import java.time.Instant;
 
 /**
@@ -23,18 +24,17 @@ import java.time.Instant;
  * middleware can render it into a synthetic {@code <system-reminder>} message without re-querying
  * the underlying record.
  *
- * <p>Fields are denormalised from {@link TaskRecord} on purpose — the consumer
+ * <p>Fields are denormalised from {@link TaskRecord} on purpose ...the consumer
  * ({@code SubagentsMiddleware}) only needs the projection, and snapshotting up-front avoids racing
  * with a later status mutation.
  *
  * @param taskId        task identifier
  * @param agentId       which subagent type produced this result (may be {@code null} on legacy
  *                      records)
- * @param status        terminal status — one of COMPLETED / FAILED / CANCELLED
+ * @param status        terminal status ...one of COMPLETED / FAILED / CANCELLED
  * @param result        completion payload; {@code null} for FAILED / CANCELLED
  * @param errorMessage  failure message; {@code null} for COMPLETED / CANCELLED
- * @param completedAt   wall-clock instant the task reached its terminal status (best-effort —
- *                      typically {@link TaskRecord#getLastUpdatedAt()})
+ * @param completedAt   wall-clock instant the task reached its terminal status (best-effort ... *                      typically {@link TaskRecord#getLastUpdatedAt()})
  */
 public record TaskDelivery(
         String taskId,

@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
  * Metadata filter configuration for Dify knowledge base retrieval.
  *
  * <p>This class allows filtering documents based on their metadata fields.
@@ -55,6 +56,7 @@ public class MetadataFilter {
     }
 
     /**
+     * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
      * Gets the logical operator for combining conditions.
      *
      * @return the logical operator ("and" or "or")
@@ -64,6 +66,7 @@ public class MetadataFilter {
     }
 
     /**
+     * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
      * Gets the list of filter conditions.
      *
      * @return a copy of the conditions list
@@ -73,6 +76,7 @@ public class MetadataFilter {
     }
 
     /**
+     * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
      * Creates a new builder for MetadataFilter.
      *
      * @return a new Builder instance
@@ -82,6 +86,7 @@ public class MetadataFilter {
     }
 
     /**
+     * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
      * Builder for MetadataFilter.
      */
     public static class Builder {
@@ -91,6 +96,7 @@ public class MetadataFilter {
         private Builder() {}
 
         /**
+         * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
          * Sets the logical operator for combining conditions.
          *
          * <p>Default: "and"
@@ -104,6 +110,7 @@ public class MetadataFilter {
         }
 
         /**
+         * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
          * Sets the list of filter conditions.
          *
          * @param conditions the list of conditions
@@ -115,6 +122,7 @@ public class MetadataFilter {
         }
 
         /**
+         * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
          * Adds a single filter condition.
          *
          * @param condition the condition to add
@@ -129,6 +137,7 @@ public class MetadataFilter {
         }
 
         /**
+         * {@summary Metadata filter configuration for Dify knowledge base retrieval. (Metadata filter configuration for Dify knowledge base retrieval.)}
          * Builds a new MetadataFilter instance.
          *
          * @return a new MetadataFilter instance

@@ -24,6 +24,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
+ * {@summary Implements Feishu callback encryption + signature verification. (Implements Feishu callback encryption + signature verification.)}
  * Implements Feishu callback encryption + signature verification.
  *
  * <p>Feishu encrypts the callback body when an Encrypt Key is configured in the developer console.
@@ -59,6 +60,7 @@ public final class FeishuCrypto {
     }
 
     /**
+     * {@summary Implements Feishu callback encryption + signature verification. (Implements Feishu callback encryption + signature verification.)}
      * Verifies the SHA-256 signature: {@code hex(SHA-256(timestamp + nonce + encryptKey + body))}.
      * Returns false when any argument is null or the digest mismatches.
      */
@@ -84,6 +86,7 @@ public final class FeishuCrypto {
     }
 
     /**
+     * {@summary Implements Feishu callback encryption + signature verification. (Implements Feishu callback encryption + signature verification.)}
      * Decrypts the {@code encrypt} string from a Feishu callback. Returns the JSON plaintext as a
      * UTF-8 string.
      *

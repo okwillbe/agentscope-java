@@ -22,6 +22,7 @@ import io.agentscope.core.message.TextBlock;
 import io.agentscope.core.message.ThinkingBlock;
 
 /**
+ * {@summary TextPartParser class ()}
  * Parser for {@link TextPart} to {@link TextBlock} or
  * {@link ThinkingBlock}.
  */

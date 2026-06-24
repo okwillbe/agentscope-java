@@ -17,7 +17,7 @@ package io.agentscope.extensions.sandbox.e2b;
 
 import io.agentscope.harness.agent.sandbox.SandboxState;
 
-/** Serializable state for an E2B-backed sandbox. */
+/** {@summary Serializable state for an E2B-backed sandbox. (Serializable state for an E2B-backed sandbox.)} Serializable state for an E2B-backed sandbox. */
 public class E2bSandboxState extends SandboxState {
 
     private String sandboxId;

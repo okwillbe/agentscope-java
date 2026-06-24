@@ -41,6 +41,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Channel directory and channel lifecycle management. (Channel directory and channel lifecycle management.)}
  * Channel directory and channel lifecycle management.
  *
  * <ul>

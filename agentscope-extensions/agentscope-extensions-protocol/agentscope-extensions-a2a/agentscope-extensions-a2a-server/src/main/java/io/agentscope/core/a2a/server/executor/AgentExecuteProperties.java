@@ -17,6 +17,7 @@
 package io.agentscope.core.a2a.server.executor;
 
 /**
+ * {@summary Properties about agent execution. (Properties about agent execution.)}
  * Properties about agent execution.
  *
  * <p>Some of these properties are used to configure the agent execution in {@link AgentScopeAgentExecutor}.
@@ -24,6 +25,7 @@ package io.agentscope.core.a2a.server.executor;
 public class AgentExecuteProperties {
 
     /**
+     * {@summary Properties about agent execution. (Properties about agent execution.)}
      * Whether the agent task execution should complete with a message.
      *
      * <p>Only for Non-blocking agent task request. The Blocking agent task request always complete with a message.
@@ -32,6 +34,7 @@ public class AgentExecuteProperties {
     private final boolean completeWithMessage;
 
     /**
+     * {@summary Properties about agent execution. (Properties about agent execution.)}
      * Whether the agent task execution should require an inner message such as tool_call result.
      *
      * <p>If is {@code true}, the agent execution will handle {@link io.agentscope.core.agent.Event} with

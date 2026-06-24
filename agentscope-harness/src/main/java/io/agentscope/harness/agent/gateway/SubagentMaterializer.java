@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary SubagentMaterializer (SubagentMaterializer)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import java.util.Optional;

@@ -31,6 +31,7 @@ import io.agentscope.core.tool.Toolkit;
 import java.util.Scanner;
 
 /**
+ * {@summary PermissionHITLExample - Human-in-the-loop confirmation via the permission engine. (PermissionHITLExample - Human-in-the-loop confirmation via the permission engine.)}
  * PermissionHITLExample - Human-in-the-loop confirmation via the permission engine.
  *
  * <p>When the permission engine encounters a tool call that matches an {@code ASK} rule,
@@ -60,6 +61,7 @@ import java.util.Scanner;
 public class PermissionHITLExample {
 
     /**
+     * {@summary PermissionHITLExample - Human-in-the-loop confirmation via the permission engine. (PermissionHITLExample - Human-in-the-loop confirmation via the permission engine.)}
      * Runs the permission HITL example.
      *
      * @param args command-line arguments (ignored)
@@ -182,6 +184,7 @@ public class PermissionHITLExample {
     public static class DangerousTools {
 
         /**
+         * {@summary PermissionHITLExample - Human-in-the-loop confirmation via the permission engine. (PermissionHITLExample - Human-in-the-loop confirmation via the permission engine.)}
          * Reads a file safely (always auto-allowed).
          *
          * @param path file path to read
@@ -194,6 +197,7 @@ public class PermissionHITLExample {
         }
 
         /**
+         * {@summary PermissionHITLExample - Human-in-the-loop confirmation via the permission engine. (PermissionHITLExample - Human-in-the-loop confirmation via the permission engine.)}
          * Permanently deletes a file (requires user confirmation).
          *
          * @param path file path to delete

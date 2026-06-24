@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary SandboxSnapshotSpec (SandboxSnapshotSpec)} */
+
 /**
  * Factory that creates {@link SandboxSnapshot} instances for a given session ID.
  *

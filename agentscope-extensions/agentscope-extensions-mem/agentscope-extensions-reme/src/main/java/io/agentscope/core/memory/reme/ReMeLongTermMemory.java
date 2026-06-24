@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
  * Long-term memory implementation using ReMe as the store.
  *
  * <p>This implementation integrates with ReMe, a memory layer for AI applications that
@@ -69,6 +70,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
     private final String userId;
 
     /**
+     * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
      * Private constructor - use Builder instead.
      */
     private ReMeLongTermMemory(Builder builder) {
@@ -85,6 +87,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
      * Records messages to long-term memory.
      *
      * <p>This method converts messages to ReMe trajectory format and sends them to
@@ -168,6 +171,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
      * Converts a Msg to a ReMeMessage.
      *
      * <p>Role mapping:
@@ -195,6 +199,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
      * Retrieves relevant memories based on the input message.
      *
      * <p>Uses the message content as a query to search for relevant memories in ReMe.
@@ -244,6 +249,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
      * Creates a new builder for ReMeLongTermMemory.
      *
      * @return A new builder instance
@@ -253,6 +259,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
      * Builder for ReMeLongTermMemory.
      */
     public static class Builder {
@@ -261,6 +268,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
         private Duration timeout = Duration.ofSeconds(60);
 
         /**
+         * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
          * Sets the userId.
          *
          * @param userId The userId
@@ -272,6 +280,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
          * Sets the ReMe API base URL.
          *
          * @param apiBaseUrl The base URL (e.g., "http://localhost:8002")
@@ -283,6 +292,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
          * Sets the HTTP request timeout.
          *
          * @param timeout The timeout duration
@@ -294,6 +304,7 @@ public class ReMeLongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using ReMe as the store. (Long-term memory implementation using ReMe as the store.)}
          * Builds the ReMeLongTermMemory instance.
          *
          * @return A new ReMeLongTermMemory instance

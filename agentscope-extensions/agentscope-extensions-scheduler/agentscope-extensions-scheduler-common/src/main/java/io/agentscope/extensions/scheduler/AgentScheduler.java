@@ -21,6 +21,7 @@ import io.agentscope.extensions.scheduler.config.ScheduleConfig;
 import java.util.List;
 
 /**
+ * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
  * Core interface for scheduling agents to run at specified times or intervals.
  *
  * <p>This interface defines the fundamental operations for scheduling agents, including
@@ -77,6 +78,7 @@ import java.util.List;
 public interface AgentScheduler {
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Schedule an agent to run according to the specified configuration.
      *
      * <p>This method accepts an {@link AgentConfig} that defines how to create fresh Agent instances.
@@ -104,6 +106,7 @@ public interface AgentScheduler {
     ScheduleAgentTask schedule(AgentConfig agentConfig, ScheduleConfig scheduleConfig);
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Schedule an agent to run with an initial input message.
      *
      * <p>This method extends {@link #schedule(AgentConfig, ScheduleConfig)} by allowing
@@ -126,6 +129,7 @@ public interface AgentScheduler {
     }
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Cancel and remove a scheduled task permanently.
      *
      * <p>This operation permanently removes the task from the scheduler. If the task is
@@ -141,6 +145,7 @@ public interface AgentScheduler {
     boolean cancel(String name);
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Retrieve a scheduled task by its name.
      *
      * <p>The name is derived from {@link AgentConfig#getName()} when the task was scheduled.
@@ -156,6 +161,7 @@ public interface AgentScheduler {
     ScheduleAgentTask getScheduledAgent(String name);
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Retrieve all scheduled tasks managed by this scheduler.
      *
      * <p>This operation returns all scheduled tasks regardless of their status (scheduled, running,
@@ -167,6 +173,7 @@ public interface AgentScheduler {
     List<ScheduleAgentTask> getAllScheduleAgentTasks();
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Gracefully shutdown the scheduler.
      *
      * <p>This operation stops accepting new scheduling requests and waits for currently executing
@@ -179,6 +186,7 @@ public interface AgentScheduler {
     void shutdown();
 
     /**
+     * {@summary Core interface for scheduling agents to run at specified times or intervals. (Core interface for scheduling agents to run at specified times or intervals.)}
      * Get the type identifier of this scheduler implementation.
      *
      * <p>This can be used to distinguish between different scheduler implementations

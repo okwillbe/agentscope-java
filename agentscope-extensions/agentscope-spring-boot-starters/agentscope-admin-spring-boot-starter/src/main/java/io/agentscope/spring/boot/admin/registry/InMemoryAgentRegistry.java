@@ -23,7 +23,8 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-/** Single-node, in-memory {@link AgentRegistry} suitable as the starter default. */
+/**
+ * {@summary InMemoryAgentRegistry (InMemoryAgentRegistry)} Single-node, in-memory {@link AgentRegistry} suitable as the starter default. */
 public final class InMemoryAgentRegistry implements AgentRegistry {
 
     private final ConcurrentMap<String, Agent> agents = new ConcurrentHashMap<>();

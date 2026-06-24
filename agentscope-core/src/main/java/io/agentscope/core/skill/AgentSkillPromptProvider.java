@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary AgentSkillPromptProvider (AgentSkillPromptProvider)} */
 import java.nio.file.Path;
 import java.util.Collection;
 import java.util.LinkedHashMap;
@@ -61,7 +62,7 @@ public class AgentSkillPromptProvider {
             - Additional resources (scripts, assets, references) can be loaded using the same tool with different paths
 
             Example:
-            1. User asks to analyze data → find a matching skill below (e.g. <skill-id>data-analysis_builtin</skill-id>)
+            1. User asks to analyze data 鈫?find a matching skill below (e.g. <skill-id>data-analysis_builtin</skill-id>)
             2. Load it: load_skill_through_path(skillId="data-analysis_builtin", path="SKILL.md")
             3. Follow the instructions returned by the skill
 
@@ -95,12 +96,12 @@ public class AgentSkillPromptProvider {
             Workflow:
             1. After loading a skill, use ls to explore its directory structure and discover available scripts/assets
             2. Once you find the right script, execute it immediately with its absolute path
-            3. If execution fails, diagnose and retry — do not fall back to describing the command
+            3. If execution fails, diagnose and retry 鈥?do not fall back to describing the command
 
             Rules:
             - Always use absolute paths when executing scripts
-            - If a script exists for the task, run it directly — do not rewrite its logic inline
-            - If asset/data files exist for the task, read them directly — do not recreate them
+            - If a script exists for the task, run it directly 鈥?do not rewrite its logic inline
+            - If asset/data files exist for the task, read them directly 鈥?do not recreate them
 
             Example:
               # Explore what scripts are available for a skill
@@ -114,7 +115,7 @@ public class AgentSkillPromptProvider {
     /**
      * Code-execution instruction used when every visible skill carries its own {@code
      * <files-root>} (e.g. {@link io.agentscope.core.skill.repository.FileSystemSkillRepository}).
-     * No single root path to substitute — the LLM reads each skill's {@code <files-root>}
+     * No single root path to substitute 鈥?the LLM reads each skill's {@code <files-root>}
      * directly from the {@code <available_skills>} block.
      */
     public static final String DEFAULT_PER_SKILL_CODE_EXECUTION_INSTRUCTION =
@@ -131,7 +132,7 @@ public class AgentSkillPromptProvider {
             2. List its files:    ls <files-root>/
             3. Run scripts:       python3 <files-root>/scripts/<script-name>
             4. Always use absolute paths derived from <files-root>; never invent paths
-            5. If a script exists for the task, run it directly — do not rewrite its logic inline
+            5. If a script exists for the task, run it directly 鈥?do not rewrite its logic inline
             </code_execution>
             """;
 
@@ -225,7 +226,7 @@ public class AgentSkillPromptProvider {
      *   <li>If a custom template was set via {@link #setCodeExecutionInstruction(String)}, use it
      *       verbatim ({@code %s} substituted with {@code uploadDir} when both are present).
      *   <li>If every visible skill has a {@code <files-root>}, use {@link
-     *       #DEFAULT_PER_SKILL_CODE_EXECUTION_INSTRUCTION} — no substitution needed.
+     *       #DEFAULT_PER_SKILL_CODE_EXECUTION_INSTRUCTION} 鈥?no substitution needed.
      *   <li>Otherwise fall back to {@link #DEFAULT_CODE_EXECUTION_INSTRUCTION} (single uploadDir).
      *       Returns empty if {@code uploadDir} is null in this branch, since the template's
      *       absolute path is required to be meaningful.

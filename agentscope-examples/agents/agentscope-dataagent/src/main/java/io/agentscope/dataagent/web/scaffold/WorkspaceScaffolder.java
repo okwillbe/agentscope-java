@@ -20,6 +20,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary Materializes the workspace folder for an agent. Safe to call repeatedly: only files that do (Materializes the workspace folder for an agent. Safe to call repeatedly: only files that do)}
  * Writes the LangSmith-Fleet-style workspace folder layout that the builder UI edits: {@code
  * AGENTS.md}, {@code tools.json}, an example skill, and {@code subagents/}/{@code memory/}
  * directories. Existing files are left untouched, so calling this on a populated workspace is a
@@ -33,6 +34,7 @@ public final class WorkspaceScaffolder {
     private WorkspaceScaffolder() {}
 
     /**
+     * {@summary Materializes the workspace folder for an agent. Safe to call repeatedly: only files that do (Materializes the workspace folder for an agent. Safe to call repeatedly: only files that do)}
      * Materializes the workspace folder for an agent. Safe to call repeatedly: only files that do
      * not already exist are created.
      *

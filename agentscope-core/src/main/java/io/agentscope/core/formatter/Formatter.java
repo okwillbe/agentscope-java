@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter;
 
+/** {@summary Formatter (Formatter)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.model.ChatResponse;
 import io.agentscope.core.model.GenerateOptions;

@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
  * DashScope Text Embedding Model implementation.
  *
  * <p>This implementation provides access to DashScope's text embedding API, supporting both
@@ -53,6 +54,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
     private final String baseUrl;
 
     /**
+     * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
      * Creates a new DashScope text embedding model instance.
      *
      * @param apiKey the API key for DashScope authentication
@@ -76,6 +78,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
      * Creates a new builder for DashScopeTextEmbedding.
      *
      * @return a new Builder instance
@@ -212,6 +215,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
      * Builder for DashScopeTextEmbedding.
      */
     public static class Builder {
@@ -222,6 +226,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
         private String baseUrl;
 
         /**
+         * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
          * Sets the API key for DashScope authentication.
          *
          * @param apiKey the API key
@@ -233,6 +238,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
          * Sets the model name to use.
          *
          * @param modelName the model name (e.g., "text-embedding-v3")
@@ -244,6 +250,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
          * Sets the dimension of embedding vectors.
          *
          * @param dimensions the dimension
@@ -255,6 +262,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
          * Sets the default execution configuration.
          *
          * @param config the execution config (null for defaults)
@@ -266,6 +274,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
          * Sets a custom base URL for DashScope API.
          *
          * @param baseUrl the base URL (null for default)
@@ -277,6 +286,7 @@ public class DashScopeTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Text Embedding Model implementation. (DashScope Text Embedding Model implementation.)}
          * Builds the DashScopeTextEmbedding instance.
          *
          * <p>This method validates required parameters and ensures that the defaultExecutionConfig

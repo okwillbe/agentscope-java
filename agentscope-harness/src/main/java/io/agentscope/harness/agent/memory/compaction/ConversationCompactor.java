@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.compaction;
 
+/** {@summary ConversationCompactor (ConversationCompactor)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.Msg;
@@ -40,15 +41,15 @@ import reactor.core.publisher.Mono;
 /**
  * <h2>Algorithm</h2>
  * <ol>
- *   <li><b>Check trigger</b> — token count or message count exceeds threshold</li>
- *   <li><b>Determine cutoff</b> — find the earliest index that keeps the tail within the
+ *   <li><b>Check trigger</b> ...token count or message count exceeds threshold</li>
+ *   <li><b>Determine cutoff</b> ...find the earliest index that keeps the tail within the
  *       "keep" budget; never split an ASSISTANT tool-call from its TOOL result(s)</li>
- *   <li><b>Memory flush</b> (optional) — extract long-term memories from the prefix via
+ *   <li><b>Memory flush</b> (optional) ...extract long-term memories from the prefix via
  *       {@link MemoryFlushManager#flushMemories}</li>
- *   <li><b>Message offload</b> (optional) — persist the full conversation to the session
+ *   <li><b>Message offload</b> (optional) ...persist the full conversation to the session
  *       JSONL via {@link MemoryFlushManager#offloadMessages}</li>
- *   <li><b>Summarize</b> — one LLM call to distill the prefix into a structured summary</li>
- *   <li><b>Rebuild</b> — return {@code [summaryUserMsg] + preservedTail}</li>
+ *   <li><b>Summarize</b> ...one LLM call to distill the prefix into a structured summary</li>
+ *   <li><b>Rebuild</b> ...return {@code [summaryUserMsg] + preservedTail}</li>
  * </ol>
  *
  * <p>The caller is responsible for updating both the agent's working memory and the LLM-facing
@@ -111,7 +112,7 @@ public class ConversationCompactor {
 
         int cutoff = determineCutoffIndex(messages, totalTokens, config);
         if (cutoff <= 0) {
-            log.debug("Compaction triggered but safe cutoff is 0 — skipping");
+            log.debug("Compaction triggered but safe cutoff is 0 ...skipping");
             return Mono.just(Optional.empty());
         }
 
@@ -143,7 +144,7 @@ public class ConversationCompactor {
                         : Mono.empty();
 
         // Step 3: Offload raw messages to JSONL and capture the file path.
-        // If offload fails, we continue with null — the summary message falls back to the
+        // If offload fails, we continue with null ...the summary message falls back to the
         // simple format without a file reference.
         Mono<String> offloadStep;
         if (config.isOffloadBeforeCompact()) {
@@ -190,7 +191,7 @@ public class ConversationCompactor {
                                                     compacted.add(summaryMsg);
                                                     compacted.addAll(tail);
                                                     log.info(
-                                                            "Compaction complete: {} msgs → 1"
+                                                            "Compaction complete: {} msgs 鈫?1"
                                                                     + " summary + {} tail = {}"
                                                                     + " total",
                                                             messages.size(),
@@ -306,7 +307,7 @@ public class ConversationCompactor {
         }
 
         if (toolCallIds.isEmpty()) {
-            // No IDs found — advance past all TOOL messages to avoid orphaned results
+            // No IDs found ...advance past all TOOL messages to avoid orphaned results
             return idx;
         }
 

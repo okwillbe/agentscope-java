@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent;
 
+/** {@summary RemoteSubagentStub (RemoteSubagentStub)} */
 import io.agentscope.core.agent.AgentBase;
 import io.agentscope.core.interruption.InterruptContext;
 import io.agentscope.core.message.Msg;

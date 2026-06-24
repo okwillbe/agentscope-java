@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary AuthenticationException (AuthenticationException)} */
+
 /**
  * Exception thrown when authentication fails (HTTP 401).
  *

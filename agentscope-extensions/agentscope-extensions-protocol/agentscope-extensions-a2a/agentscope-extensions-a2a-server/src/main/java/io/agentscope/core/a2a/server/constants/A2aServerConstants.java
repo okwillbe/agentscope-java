@@ -17,6 +17,7 @@
 package io.agentscope.core.a2a.server.constants;
 
 /**
+ * {@summary Constants for A2A server. (Constants for A2A server.)}
  * Constants for A2A server.
  */
 public class A2aServerConstants {
@@ -24,6 +25,7 @@ public class A2aServerConstants {
     public static class ContextKeys {
 
         /**
+         * {@summary Constants for A2A server. (Constants for A2A server.)}
          * Context key for storing whether the request is streaming.
          */
         public static final String IS_STREAM_KEY = "isStream";

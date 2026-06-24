@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.util;
 
+/** {@summary MessageUtils (MessageUtils)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.MsgRole;
 import io.agentscope.core.message.ToolUseBlock;

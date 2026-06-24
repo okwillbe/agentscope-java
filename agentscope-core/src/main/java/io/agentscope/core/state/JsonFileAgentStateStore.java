@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary JsonFileAgentStateStore (JsonFileAgentStateStore)} */
 import io.agentscope.core.util.JsonUtils;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -45,12 +46,12 @@ import reactor.core.scheduler.Schedulers;
  *
  * <pre>
  * &lt;root&gt;/
- *   __anon__/                       ← anonymous (userId == null) sessions
+ *   __anon__/                       鈫?anonymous (userId == null) sessions
  *     &lt;safe(sessionId)&gt;/
  *       agent_state.json
  *       memory_messages.jsonl
  *       memory_messages.hash
- *   &lt;safe(userId)&gt;/                ← per-user sessions
+ *   &lt;safe(userId)&gt;/                鈫?per-user sessions
  *     &lt;safe(sessionId)&gt;/
  *       agent_state.json
  *       ...

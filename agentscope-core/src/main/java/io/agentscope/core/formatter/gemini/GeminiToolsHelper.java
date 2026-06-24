@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.gemini;
 
+/** {@summary GeminiToolsHelper (GeminiToolsHelper)} */
 import com.google.genai.types.FunctionCallingConfig;
 import com.google.genai.types.FunctionCallingConfigMode;
 import com.google.genai.types.FunctionDeclaration;

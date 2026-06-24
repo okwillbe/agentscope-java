@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary TaskTool (TaskTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;
@@ -30,9 +31,9 @@ import java.util.Collection;
  * cancellation, and listing into a single tool class.
  *
  * <ul>
- *   <li>{@code task_output} — retrieve result (blocking or non-blocking)
- *   <li>{@code task_cancel} — cancel a running task
- *   <li>{@code task_list} — list all tracked tasks with optional status filter
+ *   <li>{@code task_output} ...retrieve result (blocking or non-blocking)
+ *   <li>{@code task_cancel} ...cancel a running task
+ *   <li>{@code task_list} ...list all tracked tasks with optional status filter
  * </ul>
  *
  * <p>All operations are scoped to the current parent session ID via {@link RuntimeContext}. The
@@ -57,7 +58,7 @@ public class TaskTool {
                         + " agent_send was called with timeout_seconds=0. Prefer block=false to"
                         + " check status without waiting. Only use block=true (the default) when"
                         + " you are ready to wait for the result. Do NOT call this immediately"
-                        + " after launching a task — the task status in conversation history is"
+                        + " after launching a task ...the task status in conversation history is"
                         + " stale; always call task_output or task_list to get the current state.")
     public String taskOutput(
             RuntimeContext runtimeContext,
@@ -122,7 +123,7 @@ public class TaskTool {
 
         // If the caller successfully retrieved a terminal result, mark this task delivered so the
         // SubagentsMiddleware push path doesn't re-deliver the same payload on the next reasoning
-        // round. Idempotent — if already delivered, this is a no-op. (Phase B-3.)
+        // round. Idempotent ...if already delivered, this is a no-op. (Phase B-3.)
         if (bgTask.isCompleted() && bgTask.getTaskStatus().isTerminal()) {
             try {
                 taskRepository.markDelivered(runtimeContext, sessionId, taskId);
@@ -169,7 +170,7 @@ public class TaskTool {
             name = "task_list",
             description =
                     "List all background tasks for the current session with their current statuses."
-                        + " Reads from durable workspace storage — always accurate even after"
+                        + " Reads from durable workspace storage ...always accurate even after"
                         + " conversation compaction or node migration. Optionally filter by status"
                         + " (running, completed, failed, cancelled). Use this to recover task IDs"
                         + " and state after compaction.")

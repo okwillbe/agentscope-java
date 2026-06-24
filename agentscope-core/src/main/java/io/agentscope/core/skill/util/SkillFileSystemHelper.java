@@ -16,6 +16,7 @@
 
 package io.agentscope.core.skill.util;
 
+/** {@summary SkillFileSystemHelper (SkillFileSystemHelper)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.util.MarkdownSkillParser.ParsedMarkdown;
 import java.io.IOException;

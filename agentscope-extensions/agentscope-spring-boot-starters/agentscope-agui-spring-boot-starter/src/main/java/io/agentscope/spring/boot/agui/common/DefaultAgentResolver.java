@@ -22,6 +22,7 @@ import io.agentscope.core.agui.registry.AguiAgentRegistry;
 import java.util.Objects;
 
 /**
+ * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
  * Default implementation of {@link AgentResolver} for Spring Boot integration.
  *
  * <p>This resolver supports two modes:
@@ -37,6 +38,7 @@ public class DefaultAgentResolver implements AgentResolver {
     private final boolean serverSideMemory;
 
     /**
+     * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
      * Creates a simple resolver without session support.
      *
      * @param registry The agent registry
@@ -46,6 +48,7 @@ public class DefaultAgentResolver implements AgentResolver {
     }
 
     /**
+     * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
      * Creates a resolver with optional session support.
      *
      * @param registry The agent registry
@@ -90,6 +93,7 @@ public class DefaultAgentResolver implements AgentResolver {
     }
 
     /**
+     * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
      * Creates a new builder for DefaultAgentResolver.
      *
      * @return A new builder instance
@@ -106,6 +110,7 @@ public class DefaultAgentResolver implements AgentResolver {
         private boolean serverSideMemory = false;
 
         /**
+         * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
          * Set the agent registry.
          *
          * @param registry The agent registry
@@ -117,6 +122,7 @@ public class DefaultAgentResolver implements AgentResolver {
         }
 
         /**
+         * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
          * Set the session manager for server-side memory support.
          *
          * @param sessionManager The session manager
@@ -128,6 +134,7 @@ public class DefaultAgentResolver implements AgentResolver {
         }
 
         /**
+         * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
          * Enable or disable server-side memory management.
          *
          * @param enabled Whether to enable server-side memory
@@ -139,6 +146,7 @@ public class DefaultAgentResolver implements AgentResolver {
         }
 
         /**
+         * {@summary Creates a simple resolver without session support. (Creates a simple resolver without session support.)}
          * Build the resolver.
          *
          * @return The built resolver

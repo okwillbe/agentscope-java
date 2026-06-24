@@ -23,6 +23,7 @@ import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 import java.util.Objects;
 
 /**
+ * {@summary Creates an OSS distributed store. (Creates an OSS distributed store.)}
  * Alibaba Cloud OSS-backed {@link DistributedStore}.
  *
  * <p>Usage:
@@ -49,6 +50,7 @@ public class OssDistributedStore implements DistributedStore {
     }
 
     /**
+     * {@summary Creates an OSS distributed store. (Creates an OSS distributed store.)}
      * Creates an OSS distributed store.
      *
      * @param ossClient initialized OSS client

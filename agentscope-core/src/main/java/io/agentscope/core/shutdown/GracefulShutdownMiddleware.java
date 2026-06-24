@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary GracefulShutdownMiddleware (GracefulShutdownMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.AgentBase;
 import io.agentscope.core.agent.RuntimeContext;
@@ -34,19 +35,19 @@ import reactor.core.publisher.Flux;
  * each call registers a distinct {@code requestId} (carried on the Reactor Context under {@link
  * io.agentscope.core.agent.AgentBase#SHUTDOWN_REQUEST_ID_KEY}) and unregisters it via
  * {@code doFinally}, guaranteeing that every registered request is always unregistered regardless
- * of success, error, or cancel — and that concurrent calls on one agent instance are tracked
+ * of success, error, or cancel 鈥?and that concurrent calls on one agent instance are tracked
  * independently.
  *
  * <p>This middleware is responsible for:
  * <ul>
- *   <li>{@code onAgent} — deduplicate input if resuming from a shutdown-interrupted session</li>
- *   <li>{@code onReasoning} (doOnComplete) — checkpoint after reasoning</li>
- *   <li>{@code onActing} (doOnComplete) — checkpoint after acting</li>
+ *   <li>{@code onAgent} 鈥?deduplicate input if resuming from a shutdown-interrupted session</li>
+ *   <li>{@code onReasoning} (doOnComplete) 鈥?checkpoint after reasoning</li>
+ *   <li>{@code onActing} (doOnComplete) 鈥?checkpoint after acting</li>
  * </ul>
  *
- * <p>Shutdown checkpoints — when the system is in SHUTTING_DOWN state, the agent is
+ * <p>Shutdown checkpoints 鈥?when the system is in SHUTTING_DOWN state, the agent is
  * interrupted at these safe points (after the current phase has fully completed), so
- * reasoning/acting are allowed to complete before the interrupt is issued — output tokens
+ * reasoning/acting are allowed to complete before the interrupt is issued 鈥?output tokens
  * are not wasted. Only when the global shutdown timeout is reached will the agent be
  * force-interrupted mid-phase (handled by GracefulShutdownManager#enforceTimeoutAndInterrupt).
  */

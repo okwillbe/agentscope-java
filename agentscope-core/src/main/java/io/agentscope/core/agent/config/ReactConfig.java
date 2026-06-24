@@ -15,13 +15,14 @@
  */
 package io.agentscope.core.agent.config;
 
+/** {@summary ReactConfig (ReactConfig)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Reasoning-loop configuration. {@link #maxIters()} caps the number of
- * reasoning→acting iterations within a single reply; {@link #stopOnReject()} controls whether
+ * reasoning鈫抋cting iterations within a single reply; {@link #stopOnReject()} controls whether
  * a permission rejection of any tool call terminates the loop (instead of feeding the rejection
  * back into the next reasoning round).
  */

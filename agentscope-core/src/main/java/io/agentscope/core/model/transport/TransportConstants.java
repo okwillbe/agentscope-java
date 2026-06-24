@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary TransportConstants (TransportConstants)} */
+
 /**
  * Constants for HTTP transport layer.
  */

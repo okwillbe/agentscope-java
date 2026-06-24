@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.tools.data;
 
 /**
+ * {@summary SPI for rendering an in-line chart from a small tabular result. v1 ships with a stub (SPI for rendering an in-line chart from a small tabular result. v1 ships with a stub)}
  * SPI for rendering an in-line chart from a small tabular result. v1 ships with a stub
  * implementation; concrete renderers (server-side PNG via XChart, ECharts-spec JSON for the SPA,
  * Mermaid for inline markdown) belong in {@code agentscope-extensions/}.
@@ -23,6 +24,7 @@ package io.agentscope.dataagent.tools.data;
 public interface ChartRenderer {
 
     /**
+     * {@summary SPI for rendering an in-line chart from a small tabular result. v1 ships with a stub (SPI for rendering an in-line chart from a small tabular result. v1 ships with a stub)}
      * Renders a chart described by a Vega-Lite-like spec. Returns a short status string that the
      * agent can include in its response — typically either a markdown image link, an inline base64
      * image, or an {@code "ok: rendered to <url>"} pointer.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary ShutdownStateSaver (ShutdownStateSaver)} */
 import io.agentscope.core.state.AgentState;
 
 /**

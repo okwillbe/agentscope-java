@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolSchemaGenerator (ToolSchemaGenerator)} */
 import io.agentscope.core.util.JsonSchemaUtils;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary URLSource (URLSource)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;

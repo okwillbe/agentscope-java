@@ -19,6 +19,7 @@ import java.time.Instant;
 import java.util.Map;
 
 /**
+ * {@summary Immutable audit record for one admin operation. (Immutable audit record for one admin operation.)}
  * Immutable audit record for one admin operation.
  *
  * <p>Emitted by {@code AdminAuditLogger} both as an SLF4J line and (when configured) as a Spring

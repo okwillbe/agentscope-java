@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.runtime.session;
 
 /**
+ * {@summary Controls what happens to a session's records and transcript after the run completes. Mirrors (Controls what happens to a session's records and transcript after the run completes. Mirrors)}
  * Controls what happens to a session's records and transcript after the run completes. Mirrors
  * OpenClaw's {@code cleanup} parameter on subagent spawns.
  *

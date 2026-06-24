@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Request object for adding memories to ReMe API. (Request object for adding memories to ReMe API.)}
  * Request object for adding memories to ReMe API.
  *
  * <p>This request is sent to the ReMe API's {@code POST /summary_personal_memory} endpoint
@@ -39,6 +40,7 @@ public class ReMeAddRequest {
     public ReMeAddRequest() {}
 
     /**
+     * {@summary Request object for adding memories to ReMe API. (Request object for adding memories to ReMe API.)}
      * Creates a new ReMeAddRequest with specified workspace ID and trajectories.
      *
      * @param workspaceId The workspace identifier
@@ -68,6 +70,7 @@ public class ReMeAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to ReMe API. (Request object for adding memories to ReMe API.)}
      * Creates a new builder for ReMeAddRequest.
      *
      * @return A new builder instance

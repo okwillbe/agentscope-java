@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary FileInfo (FileInfo)} */
+
 /**
  * Structured file listing info. Only {@code path} is required;
  * other fields are best-effort and may be absent depending on filesystem implementation.

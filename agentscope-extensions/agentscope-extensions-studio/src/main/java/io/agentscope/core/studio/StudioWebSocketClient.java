@@ -35,6 +35,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.publisher.Sinks;
 
 /**
+ * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
  * WebSocket client for real-time communication with AgentScope Studio.
  *
  * <p>This client uses Socket.IO to connect to Studio's /python namespace and receive
@@ -53,6 +54,7 @@ public class StudioWebSocketClient {
     private final Map<String, Sinks.One<UserInputData>> pendingRequests = new ConcurrentHashMap<>();
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Creates a new Studio WebSocket client.
      *
      * @param config Configuration for Studio connection
@@ -62,6 +64,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Package-private constructor for testing with pre-configured socket.
      *
      * @param config Configuration for Studio connection
@@ -73,6 +76,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Connects to Studio's WebSocket endpoint (/python namespace).
      *
      * <p>This establishes a Socket.IO connection with authentication via run_id. The connection
@@ -140,6 +144,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Sets up Socket.IO event handlers.
      */
     private void setupEventHandlers() {
@@ -180,6 +185,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Handles user input received from Studio via WebSocket.
      *
      * <p>Studio server emits 'forwardUserInput' with three arguments: requestId, blocksInput
@@ -217,6 +223,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Parses ContentBlock array from JSON.
      *
      * <p>Converts a JSON array of content blocks from Studio into strongly-typed ContentBlock
@@ -259,6 +266,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Normalizes ToolResultBlock output to ensure consistent format.
      *
      * <p>Ensures the output field is always represented as a list of ContentBlock objects. If the
@@ -294,6 +302,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Converts JSONObject to Map using Jackson.
      *
      * <p>This method leverages Jackson's ObjectMapper to convert org.json.JSONObject
@@ -315,6 +324,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Waits for user input matching the given request ID.
      *
      * <p>This method is called after sending a requestUserInput HTTP request.
@@ -338,6 +348,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Closes the WebSocket connection and releases resources.
      */
     public void close() {
@@ -348,6 +359,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Checks if the WebSocket is currently connected.
      *
      * @return true if connected, false otherwise
@@ -357,6 +369,7 @@ public class StudioWebSocketClient {
     }
 
     /**
+     * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
      * Data structure representing user input from Studio.
      *
      * <p>This contains both content blocks (text, images, etc.) and optional
@@ -367,6 +380,7 @@ public class StudioWebSocketClient {
         private final Map<String, Object> structuredInput;
 
         /**
+         * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
          * Creates user input data.
          *
          * @param blocksInput List of content blocks provided by the user
@@ -378,6 +392,7 @@ public class StudioWebSocketClient {
         }
 
         /**
+         * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
          * Gets the content blocks provided by the user.
          *
          * @return List of content blocks
@@ -387,6 +402,7 @@ public class StudioWebSocketClient {
         }
 
         /**
+         * {@summary WebSocket client for real-time communication with AgentScope Studio. (WebSocket client for real-time communication with AgentScope Studio.)}
          * Gets the structured input data.
          *
          * @return Map of structured data, or null if not provided

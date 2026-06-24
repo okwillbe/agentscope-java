@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary LocalApprovalGate (LocalApprovalGate)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.time.Duration;
 import java.time.Instant;
@@ -28,11 +29,11 @@ import reactor.core.publisher.Mono;
 
 /**
  * Single-replica HITL gate. Calls a user-supplied prompter function that returns
- * approve / reject from human input (terminal, CLI, IDE prompt, …). Defers if the prompter
+ * approve / reject from human input (terminal, CLI, IDE prompt, .... Defers if the prompter
  * times out.
  *
  * <p>The default constructor wires a no-op prompter that always defers. Real deployments
- * should supply a prompter that bridges to whatever HITL surface is available — typically
+ * should supply a prompter that bridges to whatever HITL surface is available ...typically
  * via {@code RequestStopEvent} so the agent's outer loop can pause for the prompt.
  */
 public class LocalApprovalGate implements SkillPromotionGate {

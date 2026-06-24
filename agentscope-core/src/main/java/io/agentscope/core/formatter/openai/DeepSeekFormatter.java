@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary DeepSeekFormatter (DeepSeekFormatter)} */
 import io.agentscope.core.formatter.openai.dto.OpenAIContentPart;
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
 import io.agentscope.core.message.Msg;

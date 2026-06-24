@@ -27,6 +27,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Read-only endpoints for browsing the built-in starter agent templates. (Read-only endpoints for browsing the built-in starter agent templates.)}
  * Read-only endpoints for browsing the built-in starter agent templates.
  *
  * <ul>

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxState (SandboxState)} */
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshot;

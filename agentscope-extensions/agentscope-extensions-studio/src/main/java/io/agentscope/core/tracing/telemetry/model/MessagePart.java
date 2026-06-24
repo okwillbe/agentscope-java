@@ -25,6 +25,7 @@ package io.agentscope.core.tracing.telemetry.model;
 public interface MessagePart {
 
     /**
+     * {@summary Get the type of this message part. (Get the type of this message part.)}
      * Get the type of this message part.
      *
      * @return the type string

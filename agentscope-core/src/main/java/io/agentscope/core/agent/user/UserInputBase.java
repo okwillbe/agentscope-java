@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.user;
 
+/** {@summary UserInputBase (UserInputBase)} */
 import io.agentscope.core.message.Msg;
 import java.util.List;
 import reactor.core.publisher.Mono;

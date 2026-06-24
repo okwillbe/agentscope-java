@@ -40,6 +40,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Scope;
 
 /**
+ * {@summary AgentscopeNacosReActAgentAutoConfiguration class ()}
  * Auto-configuration that assembles {@link ReActAgent} instances backed by Nacos-managed prompts.
  *
  * <p>This configuration is responsible only for wiring the Agent from existing building blocks

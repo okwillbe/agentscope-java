@@ -231,6 +231,7 @@ public class AgentRunSandboxClient implements SandboxClient<AgentRunSandboxClien
     }
 
     /**
+     * {@summary Crockford Base32 alphabet (ULID-style). (Crockford Base32 alphabet (ULID-style).)}
      * Derives a deterministic 26-character Crockford-base32 sandbox id from {@code sessionId}.
      *
      * <p>The first 26 characters of {@code base32(SHA-256(sessionId))} are used. This shape

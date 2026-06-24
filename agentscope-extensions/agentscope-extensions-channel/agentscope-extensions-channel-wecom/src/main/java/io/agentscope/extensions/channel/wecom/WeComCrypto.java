@@ -24,6 +24,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
+ * {@summary Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See (Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See)}
  * Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See
  * <a href="https://developer.work.weixin.qq.com/document/path/90968">WeCom callback specification</a>.
  *
@@ -68,6 +69,7 @@ public final class WeComCrypto {
     }
 
     /**
+     * {@summary Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See (Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See)}
      * Verifies the SHA-1 signature produced by sorting {@code [token, timestamp, nonce, encrypt]},
      * concatenating, and hashing.
      */
@@ -96,6 +98,7 @@ public final class WeComCrypto {
     }
 
     /**
+     * {@summary Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See (Implements WeCom's URL-handshake signature + AES-CBC + PKCS#7 encrypt / decrypt scheme. See)}
      * Decrypts the {@code Encrypt} body and returns the inner XML payload as a UTF-8 string.
      *
      * <p>WeCom plaintext layout after AES-CBC decrypt + PKCS#7 unpad:

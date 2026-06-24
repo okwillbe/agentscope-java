@@ -29,6 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary JdbcRemoteSnapshotClient class ()}
  * {@link RemoteSnapshotClient} backed by a JDBC BLOB column.
  *
  * <p>Stores sandbox workspace tar archives in a database table with columns

@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Hook for automatically forwarding agent messages to Studio. (Hook for automatically forwarding agent messages to Studio.)}
  * Hook for automatically forwarding agent messages to Studio.
  *
  * <p>This hook intercepts PostCallEvent events (fired after an agent produces a response)
@@ -45,6 +46,7 @@ public class StudioMessageHook implements Hook {
     private final StudioClient studioClient;
 
     /**
+     * {@summary Hook for automatically forwarding agent messages to Studio. (Hook for automatically forwarding agent messages to Studio.)}
      * Creates a new Studio message hook.
      *
      * @param studioClient The Studio HTTP client for sending messages
@@ -54,6 +56,7 @@ public class StudioMessageHook implements Hook {
     }
 
     /**
+     * {@summary Hook for automatically forwarding agent messages to Studio. (Hook for automatically forwarding agent messages to Studio.)}
      * Handles hook events.
      *
      * <p>This method listens for PostCallEvent and forwards the agent's output message

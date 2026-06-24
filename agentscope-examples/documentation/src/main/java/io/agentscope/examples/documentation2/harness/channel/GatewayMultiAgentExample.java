@@ -22,6 +22,7 @@ import io.agentscope.harness.agent.gateway.channel.chatui.ChatUiChannel;
 import io.agentscope.harness.agent.gateway.channel.chatui.SendOptions;
 
 /**
+ * {@summary Runs the multi-agent routing example. (Runs the multi-agent routing example.)}
  * Routes messages to different agents using {@link GatewayBootstrap}
  * and {@link SendOptions#withAgentId(String)}.
  *
@@ -38,6 +39,7 @@ import io.agentscope.harness.agent.gateway.channel.chatui.SendOptions;
 public class GatewayMultiAgentExample {
 
     /**
+     * {@summary Runs the multi-agent routing example. (Runs the multi-agent routing example.)}
      * Runs the multi-agent routing example.
      *
      * @param args command-line arguments (ignored)

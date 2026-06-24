@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.anthropic;
 
+/** {@summary AnthropicToolsHelper (AnthropicToolsHelper)} */
 import static com.anthropic.models.messages.ToolChoice.ofAny;
 import static com.anthropic.models.messages.ToolChoice.ofAuto;
 import static com.anthropic.models.messages.ToolChoice.ofTool;

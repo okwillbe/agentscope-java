@@ -32,6 +32,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 /**
+ * {@summary WeComInboundMapper class ()}
  * Parses a decrypted WeCom callback XML body into an {@link InboundMessage}.
  *
  * <p>For MVP only {@code MsgType=text} (single-user app message) is mapped. Other inbound types
@@ -51,6 +52,7 @@ public final class WeComInboundMapper {
     }
 
     /**
+     * {@summary WeComInboundMapper class ()}
      * Builds an {@link InboundMessage} from a decrypted WeCom message XML, or returns empty when
      * the payload is not a user-text message we should dispatch.
      */

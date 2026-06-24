@@ -16,16 +16,19 @@
 package io.agentscope.core.rag.integration.haystack;
 
 /**
+ * {@summary Policy to determine how filters are applied in retrievers interacting with document stores. (Policy to determine how filters are applied in retrievers interacting with document stores.)}
  * Policy to determine how filters are applied in retrievers interacting with document stores.
  */
 public enum FilterPolicy {
 
     /**
+     * {@summary Policy to determine how filters are applied in retrievers interacting with document stores. (Policy to determine how filters are applied in retrievers interacting with document stores.)}
      * Runtime filters replace init filters during retriever run invocation.
      */
     REPLACE("replace"),
 
     /**
+     * {@summary Policy to determine how filters are applied in retrievers interacting with document stores. (Policy to determine how filters are applied in retrievers interacting with document stores.)}
      * Runtime filters are merged with init filters, with runtime filters overwriting init values.
      */
     MERGE("merge");

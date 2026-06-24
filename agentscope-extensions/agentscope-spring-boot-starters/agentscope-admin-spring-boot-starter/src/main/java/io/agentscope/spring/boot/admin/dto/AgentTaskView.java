@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary AgentTaskView class ()}
  * Read-only wire view of {@link Task} (the per-{@link io.agentscope.core.state.AgentState} task
  * record — the TodoWrite-style work-item list that an agent maintains for itself).
  *

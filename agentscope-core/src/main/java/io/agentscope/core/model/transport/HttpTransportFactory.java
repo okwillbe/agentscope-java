@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary HttpTransportFactory (HttpTransportFactory)} */
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import org.slf4j.Logger;

@@ -30,6 +30,7 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.core.annotation.AnnotationUtils;
 
 /**
+ * {@summary A Scanner class for automatically registering Agent beans with the AguiAgentRegistry. (A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.)}
  * A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.
  *
  * <p>This configuration scans all Agent beans in the application context and registers them with
@@ -81,6 +82,7 @@ public class AguiAgentAutoRegistration implements BeanFactoryAware, Initializing
     private final AguiAgentRegistry registry;
 
     /**
+     * {@summary A Scanner class for automatically registering Agent beans with the AguiAgentRegistry. (A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.)}
      * Creates a new AguiAgentAutoRegistration.
      *
      * @param registry The agent registry
@@ -97,6 +99,7 @@ public class AguiAgentAutoRegistration implements BeanFactoryAware, Initializing
     }
 
     /**
+     * {@summary A Scanner class for automatically registering Agent beans with the AguiAgentRegistry. (A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.)}
      * Registers all Agent beans with the AguiAgentRegistry.
      *
      * <p>This method is called after the registry is created and scans for all Agent beans.
@@ -141,6 +144,7 @@ public class AguiAgentAutoRegistration implements BeanFactoryAware, Initializing
     }
 
     /**
+     * {@summary A Scanner class for automatically registering Agent beans with the AguiAgentRegistry. (A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.)}
      * Resolve the agent ID for a bean.
      *
      * @param beanName The bean name
@@ -188,6 +192,7 @@ public class AguiAgentAutoRegistration implements BeanFactoryAware, Initializing
     }
 
     /**
+     * {@summary A Scanner class for automatically registering Agent beans with the AguiAgentRegistry. (A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.)}
      * Check if a bean is prototype-scoped.
      *
      * @param beanName The bean name
@@ -204,6 +209,7 @@ public class AguiAgentAutoRegistration implements BeanFactoryAware, Initializing
     }
 
     /**
+     * {@summary A Scanner class for automatically registering Agent beans with the AguiAgentRegistry. (A Scanner class for automatically registering Agent beans with the AguiAgentRegistry.)}
      * Invoke {@link #aguiAgentAutoRegistrar()} after all properties are set.
      */
     @Override

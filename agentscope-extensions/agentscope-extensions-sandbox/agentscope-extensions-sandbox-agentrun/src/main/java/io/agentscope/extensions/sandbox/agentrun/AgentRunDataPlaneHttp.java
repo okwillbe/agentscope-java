@@ -103,6 +103,7 @@ final class AgentRunDataPlaneHttp {
     }
 
     /**
+     * {@summary Deletes the sandbox. Returns silently on HTTP 404 (already gone). All other non-2xx}
      * Deletes the sandbox. Returns silently on HTTP 404 (already gone). All other non-2xx
      * responses raise.
      */
@@ -119,6 +120,7 @@ final class AgentRunDataPlaneHttp {
     }
 
     /**
+     * {@summary Deletes the sandbox. Returns silently on HTTP 404 (already gone). All other non-2xx}
      * Polls {@link #getSandbox(String)} until the sandbox reaches the {@code READY} state or
      * fails.
      */

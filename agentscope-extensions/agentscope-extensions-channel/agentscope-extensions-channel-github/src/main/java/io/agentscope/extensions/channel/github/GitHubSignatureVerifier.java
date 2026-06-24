@@ -20,6 +20,7 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
+ * {@summary GitHubSignatureVerifier class ()}
  * Verifies the {@code X-Hub-Signature-256} header on GitHub webhook deliveries: a {@code sha256=}
  * prefix followed by the HMAC-SHA256 of the raw request body keyed with the configured webhook
  * secret.
@@ -40,6 +41,7 @@ public final class GitHubSignatureVerifier {
     }
 
     /**
+     * {@summary GitHubSignatureVerifier class ()}
      * Returns true when {@code header} matches {@code "sha256=" + hex(HMAC-SHA256(secret, body))}.
      * Comparison is constant time.
      */

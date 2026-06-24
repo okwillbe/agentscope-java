@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary OutboundAddress (OutboundAddress)} */
 import java.util.Objects;
 
 /**

@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Properties for A2A AgentCard and Endpoint registry to Nacos.
+ * {@summary Properties for A2A AgentCard and Endpoint registry to Nacos. (Properties for A2A AgentCard and Endpoint registry to Nacos.)}
  *
  * <p>Property description:
  * <ul>

@@ -35,6 +35,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary DingTalk (钉钉) channel adapter using the Stream protocol (persistent WebSocket).}
  * DingTalk (钉钉) channel adapter using the Stream protocol (persistent WebSocket).
  *
  * <p>Inbound: {@link DingTalkStreamClient} dispatches each bot message payload here, where it is

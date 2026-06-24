@@ -15,13 +15,14 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary DefaultContextStore (DefaultContextStore)} */
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
 /**
- * In-memory {@link ContextStore} using two-level Map: Class → (Key → Object).
+ * In-memory {@link ContextStore} using two-level Map: Class 鈫?(Key 鈫?Object).
  *
  * <p>Supports singleton (one per type) and multi-instance (keyed) patterns. Immutable and
  * thread-safe.
@@ -117,7 +118,7 @@ class DefaultContextStore implements ContextStore {
     /**
      * Returns an unmodifiable view of the internal object map.
      *
-     * <p>The map structure is: Class → (Key → Object), where the outer map is keyed by type and
+     * <p>The map structure is: Class 鈫?(Key 鈫?Object), where the outer map is keyed by type and
      * the inner map is keyed by instance identifier. This allows both singleton pattern (using
      * default key "") and multi-instance pattern (using custom keys).
      *

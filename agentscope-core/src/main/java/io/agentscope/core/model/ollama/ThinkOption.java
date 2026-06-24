@@ -16,6 +16,7 @@
 
 package io.agentscope.core.model.ollama;
 
+/** {@summary ThinkOption (ThinkOption)} */
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;

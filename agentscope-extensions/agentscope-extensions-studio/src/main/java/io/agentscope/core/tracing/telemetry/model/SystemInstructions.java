@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * {@summary SystemInstructions class ()}
  * Represents the list of system instructions sent to the model. <br>
  * Thread unsafe model.
  */

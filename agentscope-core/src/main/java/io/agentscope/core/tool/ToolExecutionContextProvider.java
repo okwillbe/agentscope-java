@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolExecutionContextProvider (ToolExecutionContextProvider)} */
+
 /**
  * Provider interface for resolving ToolExecutionContext from external sources.
  *

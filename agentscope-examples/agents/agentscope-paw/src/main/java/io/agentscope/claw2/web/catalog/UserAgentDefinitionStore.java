@@ -38,6 +38,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary Loads the entries map from disk; missing/blank file starts empty. (Loads the entries map from disk; missing/blank file starts empty.)}
  * User-defined agent catalog backed by a single JSON file at {@code ${clawHome}/agents.json}.
  *
  * <p>Stores the lightweight metadata for every custom agent (id, name, description, system prompt,

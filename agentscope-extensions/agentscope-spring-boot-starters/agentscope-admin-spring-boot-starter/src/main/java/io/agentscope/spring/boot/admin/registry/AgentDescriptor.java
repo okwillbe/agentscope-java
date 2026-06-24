@@ -19,6 +19,7 @@ import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 
 /**
+ * {@summary AgentDescriptor class ()}
  * Lightweight projection of an {@link Agent} for inventory views.
  *
  * <p>Holds only the data safe to serialize over an admin API — no model API keys, no in-memory

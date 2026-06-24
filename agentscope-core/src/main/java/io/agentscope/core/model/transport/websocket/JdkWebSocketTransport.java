@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary JdkWebSocketTransport (JdkWebSocketTransport)} */
 import io.agentscope.core.model.transport.ProxyConfig;
 import io.agentscope.core.model.transport.ProxyType;
 import io.agentscope.core.model.transport.WebSocketTransport;

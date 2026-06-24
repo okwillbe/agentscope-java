@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary SkillManageTool (SkillManageTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.skill.AgentSkill;
@@ -43,13 +44,13 @@ import reactor.core.publisher.Mono;
  *
  * <p>Six actions, dispatched on the {@code action} parameter:
  * <ul>
- *   <li>{@code create} — write a brand-new {@code SKILL.md} (frontmatter required)</li>
- *   <li>{@code edit} — full-rewrite the {@code SKILL.md} of an existing skill</li>
- *   <li>{@code patch} — targeted find-and-replace within {@code SKILL.md} or a support file</li>
- *   <li>{@code write_file} — add/overwrite a single file under {@code references/} /
+ *   <li>{@code create} ...write a brand-new {@code SKILL.md} (frontmatter required)</li>
+ *   <li>{@code edit} ...full-rewrite the {@code SKILL.md} of an existing skill</li>
+ *   <li>{@code patch} ...targeted find-and-replace within {@code SKILL.md} or a support file</li>
+ *   <li>{@code write_file} ...add/overwrite a single file under {@code references/} /
  *       {@code templates/} / {@code scripts/} / {@code assets/}</li>
- *   <li>{@code remove_file} — delete a single support file</li>
- *   <li>{@code delete} — archive the entire skill directory (non-destructive)</li>
+ *   <li>{@code remove_file} ...delete a single support file</li>
+ *   <li>{@code delete} ...archive the entire skill directory (non-destructive)</li>
  * </ul>
  *
  * <p><b>Staging</b>: by default ({@link SkillManageConfig#autoPromote()} = false), {@code create}
@@ -137,7 +138,7 @@ public class SkillManageTool implements AgentTool {
                 + (config.autoPromote()
                         ? "New skills become immediately visible on the next reasoning turn."
                         : "New skills land in skills/_drafts/ and are NOT visible until "
-                                + "explicitly promoted. Use this freely — drafts cost nothing.");
+                                + "explicitly promoted. Use this freely ...drafts cost nothing.");
     }
 
     @Override
@@ -461,7 +462,7 @@ public class SkillManageTool implements AgentTool {
                     "File not found: " + relPath + " (in skill '" + name + "')");
         }
 
-        // Fuzzy-match ladder: EXACT → TRAILING_WS_STRIPPED → WHITESPACE_COLLAPSED. Looser
+        // Fuzzy-match ladder: EXACT 鈫?TRAILING_WS_STRIPPED 鈫?WHITESPACE_COLLAPSED. Looser
         // levels only fire when stricter levels return zero matches; uniqueness is then
         // checked against the chosen level's matches so non-replace_all stays safe.
         FuzzyTextMatcher.SearchResult search = FuzzyTextMatcher.search(existing, oldString);
@@ -527,7 +528,7 @@ public class SkillManageTool implements AgentTool {
             }
         }
         bumpPatchSilent(name);
-        // Surface the fuzziness level so the LLM knows when whitespace was normalised — useful
+        // Surface the fuzziness level so the LLM knows when whitespace was normalised ...useful
         // for the agent to decide whether to re-verify by reading the file back.
         String levelSuffix =
                 matchedLevel == FuzzyTextMatcher.Level.EXACT

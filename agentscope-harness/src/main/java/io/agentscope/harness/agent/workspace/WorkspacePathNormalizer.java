@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.workspace;
 
+/** {@summary WorkspacePathNormalizer (WorkspacePathNormalizer)} */
 import java.util.ArrayList;
 import java.util.List;
 

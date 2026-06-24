@@ -32,6 +32,7 @@ import io.agentscope.core.tool.ToolParam;
 import io.agentscope.core.tool.Toolkit;
 
 /**
+ * {@summary Runs the agent-event stream demonstration. (Runs the agent-event stream demonstration.)}
  * AgentEventStreamExample - Demonstrates {@link ReActAgent#streamEvents} and the
  * {@link AgentEvent} hierarchy.
  *
@@ -71,6 +72,7 @@ import io.agentscope.core.tool.Toolkit;
 public class AgentEventStreamExample {
 
     /**
+     * {@summary Runs the agent-event stream demonstration. (Runs the agent-event stream demonstration.)}
      * Runs the agent-event stream demonstration.
      *
      * @param args command-line arguments (ignored)
@@ -111,6 +113,7 @@ public class AgentEventStreamExample {
     }
 
     /**
+     * {@summary Runs the agent-event stream demonstration. (Runs the agent-event stream demonstration.)}
      * Dispatches an {@link AgentEvent} to a type-specific handler.
      *
      * <p>The {@code instanceof} pattern is the recommended way to consume events because
@@ -180,6 +183,7 @@ public class AgentEventStreamExample {
     public static class WeatherTools {
 
         /**
+         * {@summary Runs the agent-event stream demonstration. (Runs the agent-event stream demonstration.)}
          * Returns the current weather for the specified city.
          *
          * @param city city name to query

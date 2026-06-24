@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary EventType (EventType)} */
+
 /**
  * Types of events emitted during agent execution.
  *

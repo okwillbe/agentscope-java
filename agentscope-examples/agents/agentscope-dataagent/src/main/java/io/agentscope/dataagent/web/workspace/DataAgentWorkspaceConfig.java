@@ -29,6 +29,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Spring configuration for the per-tenant workspace filesystem used by every per-agent (Spring configuration for the per-tenant workspace filesystem used by every per-agent)}
  * Spring configuration for the per-tenant workspace filesystem used by every per-agent
  * {@code WorkspaceManager}.
  *
@@ -59,6 +60,7 @@ public class DataAgentWorkspaceConfig {
     private long evictionPollSeconds;
 
     /**
+     * {@summary Spring configuration for the per-tenant workspace filesystem used by every per-agent (Spring configuration for the per-tenant workspace filesystem used by every per-agent)}
      * Same property {@code DataAgentConfig} reads for {@code cwd}. Resolved independently here so
      * {@link #userSandboxRegistry} does not have to inject {@code DataAgentBootstrap} — the
      * bootstrap itself depends on this registry, which would form a cycle.
@@ -67,6 +69,7 @@ public class DataAgentWorkspaceConfig {
     private String workspaceDir;
 
     /**
+     * {@summary Spring configuration for the per-tenant workspace filesystem used by every per-agent (Spring configuration for the per-tenant workspace filesystem used by every per-agent)}
      * Default {@link SandboxClient} bean — a no-arg {@link DockerSandboxClient}. Operators can
      * override by declaring their own {@code SandboxClient<DockerSandboxClientOptions>} bean.
      */

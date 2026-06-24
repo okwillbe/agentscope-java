@@ -57,6 +57,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
  * Qdrant vector database store implementation.
  *
  * <p>This class provides an interface for storing and searching vectors using Qdrant, a
@@ -124,6 +125,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     private volatile boolean closed = false;
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Creates a new QdrantStore using the builder configuration.
      *
      * @param builder the builder instance
@@ -313,6 +315,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Gets the underlying Qdrant client for advanced operations.
      *
      * <p>This method provides access to the Qdrant client for users who need to perform
@@ -333,6 +336,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Gets the underlying gRPC client for low-level operations.
      *
      * <p>This provides direct access to the gRPC client for advanced users who need
@@ -347,6 +351,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Ensures the store is not closed before performing operations.
      *
      * @throws VectorStoreException if the store has been closed
@@ -358,6 +363,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Ensures the collection exists, creating it if necessary.
      *
      * @param client the QdrantClient to use
@@ -383,6 +389,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Creates a new collection with the specified dimensions.
      *
      * @param client the QdrantClient to use
@@ -397,6 +404,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Adds multiple documents to Qdrant.
      *
      * <p>In Qdrant, we use the payload field to store the metadata, including the document ID,
@@ -461,6 +469,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Converts DocumentMetadata to Qdrant payload map.
      *
      * <p>Serializes the ContentBlock to JSON and stores it as a Qdrant Value.
@@ -506,6 +515,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Converts a Java Object to Qdrant Value.
      *
      * @param obj the object to convert
@@ -561,6 +571,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Searches for similar documents in Qdrant.
      *
      * @param vectorName     the name of the vector
@@ -639,6 +650,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Reconstructs a Document from Qdrant payload and vectors.
      *
      * <p>Reconstructs DocumentMetadata directly from payload map and extracts the embedding
@@ -692,6 +704,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Reconstructs DocumentMetadata from Qdrant payload map.
      *
      * <p>Deserializes the content field from JSON to ContentBlock and extracts
@@ -756,6 +769,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Converts a Qdrant Value to Java Object.
      *
      * @param value the Qdrant Value
@@ -792,6 +806,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Parses the location string to extract host and port information.
      *
      * @param location the location string (HTTP URL, gRPC URL, or file path)
@@ -853,6 +868,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Connection information holder.
      */
     private static class ConnectionInfo {
@@ -866,6 +882,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Gets the Qdrant server location.
      *
      * @return the location
@@ -875,6 +892,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Gets the collection name.
      *
      * @return the collection name
@@ -884,6 +902,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Gets the vector dimensions.
      *
      * @return the dimensions
@@ -893,6 +912,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Gets the API key (if set).
      *
      * @return the API key, or null if not set
@@ -902,6 +922,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Closes the Qdrant client and releases all resources.
      *
      * <p>This method closes both the QdrantClient and the underlying QdrantGrpcClient,
@@ -954,6 +975,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Checks if this store has been closed.
      *
      * @return true if the store has been closed, false otherwise
@@ -963,6 +985,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Builder for creating QdrantStore instances with fluent configuration.
      *
      * <p>Example usage:
@@ -988,6 +1011,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         private Builder() {}
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Sets the Qdrant server location.
          *
          * @param location the Qdrant server location (e.g., "http://localhost:6333" or
@@ -1000,6 +1024,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Sets the collection name.
          *
          * @param collectionName the name of the collection to use
@@ -1011,6 +1036,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Sets the vector dimensions.
          *
          * @param dimensions the dimension of vectors that will be stored
@@ -1022,6 +1048,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Sets the API key for authentication.
          *
          * @param apiKey the API key (optional, null for no authentication)
@@ -1033,6 +1060,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Sets whether to use Transport Layer Security (TLS) for gRPC connections.
          *
          * <p>Default is false. Set to true to enable TLS encryption for secure connections.
@@ -1046,6 +1074,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Sets whether to check client-server compatibility.
          *
          * <p>Default is true. Set to false to skip version compatibility checks, which can be
@@ -1061,6 +1090,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
          * Builds a new QdrantStore instance.
          *
          * <p>The client connection is established immediately during construction. If the
@@ -1086,6 +1116,7 @@ public class QdrantStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Qdrant vector database store implementation. (Qdrant vector database store implementation.)}
      * Creates a new builder for constructing QdrantStore instances.
      *
      * @return a new builder instance

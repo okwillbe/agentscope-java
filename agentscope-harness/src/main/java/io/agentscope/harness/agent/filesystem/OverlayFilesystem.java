@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem;
 
+/** {@summary OverlayFilesystem (OverlayFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.model.EditResult;
 import io.agentscope.harness.agent.filesystem.model.ExecuteResponse;
@@ -44,13 +45,13 @@ import java.util.Map;
  * <p>Merge semantics:
  *
  * <ul>
- *   <li>{@code ls} — union of both layers; upper entries take precedence on path collision
- *   <li>{@code read} — upper first, then lower
- *   <li>{@code write}/{@code edit} — always to upper (copy-on-write)
- *   <li>{@code delete} — removes from upper only; shared-layer files cannot be deleted
- *   <li>{@code grep}/{@code glob} — searches both layers; upper results override lower on path
+ *   <li>{@code ls} ...union of both layers; upper entries take precedence on path collision
+ *   <li>{@code read} ...upper first, then lower
+ *   <li>{@code write}/{@code edit} ...always to upper (copy-on-write)
+ *   <li>{@code delete} ...removes from upper only; shared-layer files cannot be deleted
+ *   <li>{@code grep}/{@code glob} ...searches both layers; upper results override lower on path
  *       collision
- *   <li>{@code exists} — true if present in either layer
+ *   <li>{@code exists} ...true if present in either layer
  * </ul>
  */
 public class OverlayFilesystem implements AbstractFilesystem {
@@ -93,7 +94,7 @@ public class OverlayFilesystem implements AbstractFilesystem {
      *
      * <p>Use this factory in preference to the constructor when {@code upper} may carry shell
      * capability (e.g. {@link io.agentscope.harness.agent.filesystem.local.LocalFilesystemWithShell})
-     * — it lets callers like
+     * ...it lets callers like
      * {@code ReActAgent.Builder} keep their {@code instanceof AbstractSandboxFilesystem} check
      * working through the overlay.
      *

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ReflectiveFunctionTool (ReflectiveFunctionTool)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.state.AgentState;
 import java.lang.reflect.Method;

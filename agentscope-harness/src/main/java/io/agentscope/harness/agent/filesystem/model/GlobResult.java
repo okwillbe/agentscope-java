@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary GlobResult (GlobResult)} */
 import java.util.List;
 
 /**

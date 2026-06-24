@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.anthropic;
 
+/** {@summary AnthropicMessageConverter (AnthropicMessageConverter)} */
 import com.anthropic.core.JsonValue;
 import com.anthropic.models.messages.ContentBlockParam;
 import com.anthropic.models.messages.ImageBlockParam;

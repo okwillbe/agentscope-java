@@ -19,6 +19,7 @@ package io.agentscope.core.training.reward;
 import io.agentscope.core.agent.Agent;
 
 /**
+ * {@summary Reward Calculator Interface (Reward Calculator Interface)}
  * Reward Calculator Interface
  *
  * <p>Calculate reward value based on shadow Agent's execution results
@@ -26,6 +27,7 @@ import io.agentscope.core.agent.Agent;
 public interface RewardCalculator {
 
     /**
+     * {@summary Reward Calculator Interface (Reward Calculator Interface)}
      * Calculate reward value based on execution results
      *
      * @param agent Shadow Agent

@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Converter for converting OpenAI tool format to AgentScope ToolSchema. (Converter for converting OpenAI tool format to AgentScope ToolSchema.)}
  * Converter for converting OpenAI tool format to AgentScope ToolSchema.
  *
  * <p>This converter handles the transformation from OpenAI's tool format (used in Chat Completions
@@ -36,6 +37,7 @@ public class OpenAIToolConverter {
     private static final Logger log = LoggerFactory.getLogger(OpenAIToolConverter.class);
 
     /**
+     * {@summary Converter for converting OpenAI tool format to AgentScope ToolSchema. (Converter for converting OpenAI tool format to AgentScope ToolSchema.)}
      * Converts a list of OpenAI tools to AgentScope ToolSchemas.
      *
      * <p>Only tools with type "function" are converted. Other tool types are skipped with a warning.
@@ -113,6 +115,7 @@ public class OpenAIToolConverter {
     }
 
     /**
+     * {@summary Converter for converting OpenAI tool format to AgentScope ToolSchema. (Converter for converting OpenAI tool format to AgentScope ToolSchema.)}
      * Converts a single OpenAI tool to a ToolSchema.
      *
      * @param tool The OpenAI tool to convert

@@ -18,33 +18,39 @@ package io.agentscope.core.rag.store.dto;
 import org.jspecify.annotations.Nullable;
 
 /**
+ * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
  * Search document data transfer object, used to encapsulate parameters for vector search.
  * Contains vector name, query embedding, limit for returned results, and similarity score threshold.
  */
 public class SearchDocumentDto {
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Vector name, used to specify which vector space to search in.
      */
     @Nullable private String vectorName;
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Query embedding vector, used to search for similar vectors in the vector space.
      */
     private double[] queryEmbedding;
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Limit for the number of returned results.
      */
     private int limit;
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Similarity score threshold, used to filter search results,
      * only results with scores above this threshold will be returned.
      */
     @Nullable private Double scoreThreshold;
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Private constructor for builder class.
      *
      * @param vectorName     Vector name
@@ -61,6 +67,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Get the vector name.
      *
      * @return Vector name
@@ -70,6 +77,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Set the vector name.
      *
      * @param vectorName Vector name
@@ -79,6 +87,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Get the query embedding vector.
      *
      * @return Query embedding vector
@@ -88,6 +97,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Set the query embedding vector.
      *
      * @param queryEmbedding Query embedding vector
@@ -97,6 +107,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Get the limit for returned results.
      *
      * @return Limit for returned results
@@ -106,6 +117,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Set the limit for returned results.
      *
      * @param limit Limit for returned results
@@ -115,6 +127,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Get the similarity score threshold.
      *
      * @return Similarity score threshold
@@ -124,6 +137,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Set the similarity score threshold.
      *
      * @param scoreThreshold Similarity score threshold
@@ -142,6 +156,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Create a SearchDocumentDto Builder instance.
      *
      * @return Builder instance
@@ -151,6 +166,7 @@ public class SearchDocumentDto {
     }
 
     /**
+     * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
      * Builder class for SearchDocument DTO.
      */
     public static class SearchDocumentDtoBuilder {
@@ -162,6 +178,7 @@ public class SearchDocumentDto {
         private SearchDocumentDtoBuilder() {}
 
         /**
+         * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
          * Set the vector name.
          *
          * @param vectorName Vector name
@@ -173,6 +190,7 @@ public class SearchDocumentDto {
         }
 
         /**
+         * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
          * Set the query embedding vector.
          *
          * @param queryEmbedding Query embedding vector
@@ -184,6 +202,7 @@ public class SearchDocumentDto {
         }
 
         /**
+         * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
          * Set the limit for returned results.
          *
          * @param limit Limit for returned results
@@ -195,6 +214,7 @@ public class SearchDocumentDto {
         }
 
         /**
+         * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
          * Set the similarity score threshold.
          *
          * @param scoreThreshold Similarity score threshold
@@ -206,6 +226,7 @@ public class SearchDocumentDto {
         }
 
         /**
+         * {@summary Search document data transfer object, used to encapsulate parameters for vector search. (Search document data transfer object, used to encapsulate parameters for vector search.)}
          * Build a SearchDocumentDto instance.
          *
          * @return Search document DTO instance

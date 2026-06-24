@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent.task;
 
+/** {@summary TaskRunSpec (TaskRunSpec)} */
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;

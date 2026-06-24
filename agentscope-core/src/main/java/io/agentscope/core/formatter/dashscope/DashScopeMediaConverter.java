@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope;
 
+/** {@summary DashScopeMediaConverter (DashScopeMediaConverter)} */
 import io.agentscope.core.formatter.MediaUtils;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeContentPart;
 import io.agentscope.core.message.AudioBlock;
@@ -43,9 +44,9 @@ public class DashScopeMediaConverter {
      *
      * <p>Handles:
      * <ul>
-     *   <li>Local files → file:// protocol URL (e.g., file:///absolute/path/image.png)
-     *   <li>Remote URLs → Direct URL (e.g., https://example.com/image.png)
-     *   <li>Base64 sources → Data URL (e.g., data:image/png;base64,...)
+     *   <li>Local files 鈫?file:// protocol URL (e.g., file:///absolute/path/image.png)
+     *   <li>Remote URLs 鈫?Direct URL (e.g., https://example.com/image.png)
+     *   <li>Base64 sources 鈫?Data URL (e.g., data:image/png;base64,...)
      * </ul>
      *
      * @param imageBlock The image block to convert
@@ -96,9 +97,9 @@ public class DashScopeMediaConverter {
      *
      * <p>Handles:
      * <ul>
-     *   <li>Local files → file:// protocol URL (e.g., file:///absolute/path/video.mp4)
-     *   <li>Remote URLs → Direct URL (e.g., https://example.com/video.mp4)
-     *   <li>Base64 sources → Data URL (e.g., data:video/mp4;base64,...)
+     *   <li>Local files 鈫?file:// protocol URL (e.g., file:///absolute/path/video.mp4)
+     *   <li>Remote URLs 鈫?Direct URL (e.g., https://example.com/video.mp4)
+     *   <li>Base64 sources 鈫?Data URL (e.g., data:video/mp4;base64,...)
      * </ul>
      *
      * @param videoBlock The video block to convert
@@ -152,9 +153,9 @@ public class DashScopeMediaConverter {
      *
      * <p>Handles:
      * <ul>
-     *   <li>Local files → file:// protocol URL (e.g., file:///absolute/path/audio.mp3)
-     *   <li>Remote URLs → Direct URL (e.g., https://example.com/audio.mp3)
-     *   <li>Base64 sources → Data URL (e.g., data:audio/wav;base64,...)
+     *   <li>Local files 鈫?file:// protocol URL (e.g., file:///absolute/path/audio.mp3)
+     *   <li>Remote URLs 鈫?Direct URL (e.g., https://example.com/audio.mp3)
+     *   <li>Base64 sources 鈫?Data URL (e.g., data:audio/wav;base64,...)
      * </ul>
      *
      * @param audioBlock The audio block to convert

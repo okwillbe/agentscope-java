@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory;
 
+/** {@summary MemoryFlushManager (MemoryFlushManager)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.Msg;
@@ -46,9 +47,9 @@ import reactor.core.publisher.Mono;
  *
  * <p><b>Two-layer memory model</b> (this class owns only the first layer):
  * <ul>
- *   <li>{@code memory/YYYY-MM-DD.md} — append-only daily ledger. Each compaction's flush
+ *   <li>{@code memory/YYYY-MM-DD.md} ...append-only daily ledger. Each compaction's flush
  *       appends a timestamped section here. Written ONLY by this class.</li>
- *   <li>{@code MEMORY.md} — globally curated, deduplicated, size-bounded long-term memory.
+ *   <li>{@code MEMORY.md} ...globally curated, deduplicated, size-bounded long-term memory.
  *       Written ONLY by {@link MemoryConsolidator} on a periodic schedule. Treated as
  *       read-only context here.</li>
  * </ul>
@@ -80,9 +81,9 @@ public class MemoryFlushManager {
             - Record relationship context (who works on what, team structure)
             - Ignore routine greetings, tool invocations, and ephemeral status updates
 
-            IMPORTANT — write target and append-only rules:
+            IMPORTANT ...write target and append-only rules:
             - You are writing to TODAY'S daily memory ledger (memory/YYYY-MM-DD.md), NOT to \
-            MEMORY.md. The daily ledger is append-only — your output will be appended after the \
+            MEMORY.md. The daily ledger is append-only ...your output will be appended after the \
             entries already shown below.
             - MEMORY.md is the curated long-term memory and is shown ONLY as read-only context. \
             Do NOT restate facts already covered by MEMORY.md or by today's earlier entries; a \
@@ -129,7 +130,7 @@ public class MemoryFlushManager {
         StringBuilder userPrompt = new StringBuilder();
         if (!existingMemory.isBlank()) {
             userPrompt
-                    .append("MEMORY.md (read-only curated long-term memory — do NOT restate):\n")
+                    .append("MEMORY.md (read-only curated long-term memory ...do NOT restate):\n")
                     .append(existingMemory)
                     .append("\n\n");
         }
@@ -314,7 +315,7 @@ public class MemoryFlushManager {
     /**
      * Appends the extracted entries to today's daily memory ledger.
      *
-     * <p>MEMORY.md is intentionally <b>NOT</b> touched here — it is owned by
+     * <p>MEMORY.md is intentionally <b>NOT</b> touched here ...it is owned by
      * {@link MemoryConsolidator}, which periodically merges the daily ledgers into a
      * curated, size-bounded MEMORY.md.
      */
@@ -323,7 +324,7 @@ public class MemoryFlushManager {
 
         String dailyEntry =
                 String.format(
-                        "\n## Memory Flush — %s\n%s\n",
+                        "\n## Memory Flush ...%s\n%s\n",
                         java.time.Instant.now().toString(), content);
 
         String dailyRelPath = WorkspaceConstants.MEMORY_DIR + "/" + today + ".md";

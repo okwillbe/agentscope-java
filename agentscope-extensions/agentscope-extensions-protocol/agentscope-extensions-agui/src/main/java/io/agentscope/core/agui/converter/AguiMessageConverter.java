@@ -33,6 +33,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
+ * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
  * Converter between AG-UI messages and AgentScope messages.
  *
  * <p>This class handles the bidirectional conversion between the AG-UI protocol's
@@ -40,11 +41,13 @@ import java.util.stream.Collectors;
  */
 public class AguiMessageConverter {
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Creates a new AguiMessageConverter
      */
     public AguiMessageConverter() {}
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert an AG-UI message to an AgentScope message.
      *
      * @param aguiMessage The AG-UI message to convert
@@ -79,6 +82,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert an AgentScope message to an AG-UI message.
      *
      * @param msg The AgentScope message to convert
@@ -121,6 +125,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert a list of AG-UI messages to AgentScope messages.
      *
      * @param aguiMessages The AG-UI messages to convert
@@ -131,6 +136,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert a list of AgentScope messages to AG-UI messages.
      *
      * @param msgs The AgentScope messages to convert
@@ -141,6 +147,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert an AG-UI role string to an AgentScope MsgRole.
      *
      * @param role The AG-UI role string
@@ -157,6 +164,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert an AgentScope MsgRole to an AG-UI role string.
      *
      * @param role The AgentScope MsgRole
@@ -172,6 +180,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert an AG-UI tool call to an AgentScope ToolUseBlock.
      *
      * @param tc The AG-UI tool call
@@ -187,6 +196,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Convert an AgentScope ToolUseBlock to an AG-UI tool call.
      *
      * @param tub The AgentScope ToolUseBlock
@@ -199,6 +209,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Parse JSON arguments string to a Map.
      *
      * @param arguments The JSON arguments string
@@ -217,6 +228,7 @@ public class AguiMessageConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI messages and AgentScope messages. (Converter between AG-UI messages and AgentScope messages.)}
      * Serialize arguments Map to JSON string.
      *
      * @param arguments The arguments Map

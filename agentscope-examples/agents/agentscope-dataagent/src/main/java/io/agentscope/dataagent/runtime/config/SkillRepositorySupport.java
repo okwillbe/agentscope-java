@@ -35,6 +35,7 @@ public final class SkillRepositorySupport {
     private SkillRepositorySupport() {}
 
     /**
+     * {@summary SkillRepositorySupport class ()}
      * Materialises every non-null entry in {@code entries} via {@link #create(Path,
      * SkillRepositoryConfigEntry)} and returns the resulting list, preserving order. Entries that
      * fail to instantiate (unknown type, missing optional Git dependency, …) are filtered out and
@@ -54,6 +55,7 @@ public final class SkillRepositorySupport {
     }
 
     /**
+     * {@summary SkillRepositorySupport class ()}
      * @param cwd   bootstrap working directory (used to resolve relative paths)
      * @param entry non-null config entry
      * @return repository instance, or {@code null} if configuration is invalid or optional Git

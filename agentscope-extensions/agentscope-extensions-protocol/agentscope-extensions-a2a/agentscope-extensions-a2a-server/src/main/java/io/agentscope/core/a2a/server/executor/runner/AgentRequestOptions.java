@@ -17,21 +17,25 @@
 package io.agentscope.core.a2a.server.executor.runner;
 
 /**
+ * {@summary The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests. (The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests.)}
  * The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests.
  */
 public class AgentRequestOptions {
 
     /**
+     * {@summary The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests. (The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests.)}
      * Task id, most likely a UUID.
      */
     private String taskId;
 
     /**
+     * {@summary The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests. (The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests.)}
      * AgentStateStore id, if null or empty string means not found session id from request.
      */
     private String sessionId;
 
     /**
+     * {@summary The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests. (The options for each agent requests, such as `taskId`, `sessionId` or `userId` of requests.)}
      * User id, if null or empty string means not found user id from request.
      */
     private String userId;

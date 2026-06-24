@@ -30,6 +30,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary HTTP entry point for agent-initiated / external outbound messages. (HTTP entry point for agent-initiated / external outbound messages.)}
  * HTTP entry point for agent-initiated / external outbound messages.
  *
  * <pre>

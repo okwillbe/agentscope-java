@@ -16,6 +16,7 @@
 
 package io.agentscope.core.model;
 
+/** {@summary ToolSchema (ToolSchema)} */
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

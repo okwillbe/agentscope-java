@@ -16,6 +16,7 @@
 package io.agentscope.claw2.runtime.session;
 
 /**
+ * {@summary Policy controlling when a session is considered "stale" and should be rolled over to a new (Policy controlling when a session is considered "stale" and should be rolled over to a new)}
  * Policy controlling when a session is considered "stale" and should be rolled over to a new
  * session.
  *

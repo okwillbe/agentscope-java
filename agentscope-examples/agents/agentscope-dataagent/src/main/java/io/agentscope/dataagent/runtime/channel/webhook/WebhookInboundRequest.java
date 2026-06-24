@@ -18,6 +18,7 @@ package io.agentscope.dataagent.runtime.channel.webhook;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
+ * {@summary WebhookInboundRequest class ()}
  * Inbound request body for {@code POST /api/webhook/{channelId}/inbound}.
  *
  * <p>Two {@link #replyMode} flavors are supported:

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill;
 
+/** {@summary LazyResourceCapable (LazyResourceCapable)} */
 import io.agentscope.core.agent.RuntimeContext;
 
 /**
@@ -30,7 +31,7 @@ import io.agentscope.core.agent.RuntimeContext;
  *
  * <p>Repositories that preload all resources into {@code AgentSkill.resources} (e.g. core's
  * {@code FileSystemSkillRepository}, {@code ClasspathSkillRepository}, and most third-party
- * marketplace extensions) do not need to implement this — the in-memory map already covers
+ * marketplace extensions) do not need to implement this ...the in-memory map already covers
  * every path.
  */
 public interface LazyResourceCapable {

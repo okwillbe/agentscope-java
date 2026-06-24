@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary OpenAIChatFormatter (OpenAIChatFormatter)} */
 import io.agentscope.core.formatter.ResponseFormat;
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
 import io.agentscope.core.formatter.openai.dto.OpenAIRequest;

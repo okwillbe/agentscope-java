@@ -28,6 +28,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
  * Core processor for AG-UI requests.
  *
  * <p>This class encapsulates the common logic for processing AG-UI requests,
@@ -67,6 +68,7 @@ public class AguiRequestProcessor {
     }
 
     /**
+     * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
      * Result of processing an AG-UI request.
      *
      * <p>Contains the resolved agent (for interrupt handling) and the event stream.
@@ -77,6 +79,7 @@ public class AguiRequestProcessor {
     public record ProcessResult(Agent agent, Flux<AguiEvent> events) {}
 
     /**
+     * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
      * Process an AG-UI request and return the result containing agent and event stream.
      *
      * @param input The run agent input
@@ -110,6 +113,7 @@ public class AguiRequestProcessor {
     }
 
     /**
+     * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
      * Resolve the agent ID from multiple sources.
      *
      * <p>The agent ID is resolved in the following priority order:
@@ -159,6 +163,7 @@ public class AguiRequestProcessor {
     }
 
     /**
+     * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
      * Extract only the latest user message from the input.
      *
      * <p>This is used when server-side memory is enabled and the agent already
@@ -199,6 +204,7 @@ public class AguiRequestProcessor {
     }
 
     /**
+     * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
      * Creates a new builder for AguiRequestProcessor.
      *
      * @return A new builder instance
@@ -214,6 +220,7 @@ public class AguiRequestProcessor {
         private AguiAdapterConfig config;
 
         /**
+         * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
          * Set the agent resolver.
          *
          * @param agentResolver The agent resolver
@@ -225,6 +232,7 @@ public class AguiRequestProcessor {
         }
 
         /**
+         * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
          * Set the adapter configuration.
          *
          * @param config The adapter configuration
@@ -236,6 +244,7 @@ public class AguiRequestProcessor {
         }
 
         /**
+         * {@summary Core processor for AG-UI requests. (Core processor for AG-UI requests.)}
          * Build the processor.
          *
          * @return The built processor

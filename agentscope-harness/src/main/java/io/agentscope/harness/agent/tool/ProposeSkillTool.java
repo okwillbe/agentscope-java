@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary ProposeSkillTool (ProposeSkillTool)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.tool.AgentTool;
 import io.agentscope.core.tool.ToolCallParam;
@@ -83,7 +84,7 @@ public class ProposeSkillTool implements AgentTool {
                         "type",
                         "string",
                         "description",
-                        "Markdown body of SKILL.md (no frontmatter — added" + " for you)."));
+                        "Markdown body of SKILL.md (no frontmatter ...added" + " for you)."));
         properties.put(
                 "scripts",
                 Map.of(

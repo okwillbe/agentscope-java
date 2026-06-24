@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Git-backed marketplace. Delegates clone / pull / file walking to (Git-backed marketplace. Delegates clone / pull / file walking to)}
  * Git-backed marketplace. Delegates clone / pull / file walking to
  * {@link GitSkillRepository} from the {@code agentscope-extensions-skill-git-repository}
  * module so claw does not duplicate JGit plumbing.
@@ -44,6 +45,7 @@ public class GitClawMarketplace implements ClawMarketplace {
     private final GitSkillRepository repo;
 
     /**
+     * {@summary Git-backed marketplace. Delegates clone / pull / file walking to (Git-backed marketplace. Delegates clone / pull / file walking to)}
      * @param id         stable marketplace id chosen by the user
      * @param remoteUrl  HTTPS or SSH URL of the upstream git repository
      * @param branch     optional branch (null → remote default)

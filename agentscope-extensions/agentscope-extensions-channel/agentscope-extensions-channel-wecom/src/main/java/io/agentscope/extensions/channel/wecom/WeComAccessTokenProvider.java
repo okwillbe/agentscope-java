@@ -23,6 +23,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Returns a valid access token, refreshing in-band when the cached one is missing or close to (Returns a valid access token, refreshing in-band when the cached one is missing or close to)}
  * Fetches and caches a WeCom {@code access_token} for one {@code corpid + corpsecret} pair.
  * Tokens are valid for ~7200 s; this provider proactively refreshes at ~80% of TTL so a single
  * worker hot path never sees a forced refresh.
@@ -43,6 +44,7 @@ public final class WeComAccessTokenProvider {
     }
 
     /**
+     * {@summary Returns a valid access token, refreshing in-band when the cached one is missing or close to (Returns a valid access token, refreshing in-band when the cached one is missing or close to)}
      * Returns a valid access token, refreshing in-band when the cached one is missing or close to
      * expiring.
      */

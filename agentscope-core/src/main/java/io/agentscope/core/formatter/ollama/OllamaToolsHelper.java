@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.ollama;
 
+/** {@summary OllamaToolsHelper (OllamaToolsHelper)} */
 import io.agentscope.core.formatter.ollama.dto.OllamaFunction;
 import io.agentscope.core.formatter.ollama.dto.OllamaRequest;
 import io.agentscope.core.formatter.ollama.dto.OllamaTool;

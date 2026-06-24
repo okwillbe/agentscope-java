@@ -34,6 +34,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Client for interacting with HayStack Knowledge Base API. (Client for interacting with HayStack Knowledge Base API.)}
  * Client for interacting with HayStack Knowledge Base API.
  *
  * <p>This class wraps OkHttp client and provides reactive API methods for
@@ -72,6 +73,7 @@ public class HayStackClient {
     }
 
     /**
+     * {@summary Client for interacting with HayStack Knowledge Base API. (Client for interacting with HayStack Knowledge Base API.)}
      * Retrieve documents from HayStack knowledge base.
      *
      * <p>This method calls the HayStack retrieval API to search for relevant document chunks.
@@ -277,6 +279,7 @@ public class HayStackClient {
     }
 
     /**
+     * {@summary Client for interacting with HayStack Knowledge Base API. (Client for interacting with HayStack Knowledge Base API.)}
      * Interceptor for retrying failed requests.
      */
     private record RetryInterceptor(int maxRetries) implements Interceptor {
@@ -347,6 +350,7 @@ public class HayStackClient {
     }
 
     /**
+     * {@summary Client for interacting with HayStack Knowledge Base API. (Client for interacting with HayStack Knowledge Base API.)}
      * Interceptor for logging HTTP requests and responses.
      */
     private static class LoggingInterceptor implements Interceptor {

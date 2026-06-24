@@ -15,12 +15,13 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary RejectAllGate (RejectAllGate)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.time.Duration;
 import reactor.core.publisher.Mono;
 
 /**
- * Always returns {@link SkillPromotionGate.PromotionDecision.Defer} — promotion can only
+ * Always returns {@link SkillPromotionGate.PromotionDecision.Defer} ...promotion can only
  * happen via an explicit {@code HarnessAgent.promoteSkill(...)} call from outside the gate.
  *
  * <p>This is the most paranoid default: the agent's own actions can never put a skill on the

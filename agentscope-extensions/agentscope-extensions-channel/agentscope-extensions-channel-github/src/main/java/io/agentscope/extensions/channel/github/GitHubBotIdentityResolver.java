@@ -26,6 +26,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 
 /**
+ * {@summary Resolves the bot's GitHub user id (and login) for the configured PAT by calling}
  * Resolves the bot's GitHub user id (and login) for the configured PAT by calling
  * {@code GET /user}. Used for bot-loop self-detection in the webhook handler — when a
  * webhook delivers a comment authored by the bot itself, the channel must drop it instead of
@@ -52,6 +53,7 @@ public final class GitHubBotIdentityResolver {
     }
 
     /**
+     * {@summary Resolves the bot's GitHub user id (and login) for the configured PAT by calling}
      * Synchronously attempts to resolve {@code GET /user} and cache the response. Errors are
      * logged at WARN; startup continues.
      */

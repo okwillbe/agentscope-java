@@ -22,6 +22,7 @@ import io.agentscope.harness.agent.gateway.channel.chatui.ChatUiChannel;
 import io.agentscope.harness.agent.gateway.channel.chatui.SendOptions;
 
 /**
+ * {@summary Runs the basic channel example. (Runs the basic channel example.)}
  * The simplest Channel usage: build a {@link HarnessAgent}, bind a
  * {@link ChatUiChannel}, and send messages with {@link SendOptions}.
  *
@@ -39,6 +40,7 @@ import io.agentscope.harness.agent.gateway.channel.chatui.SendOptions;
 public class ChannelSendExample {
 
     /**
+     * {@summary Runs the basic channel example. (Runs the basic channel example.)}
      * Runs the basic channel example.
      *
      * @param args command-line arguments (ignored)

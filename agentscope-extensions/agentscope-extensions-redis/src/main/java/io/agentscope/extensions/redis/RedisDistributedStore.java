@@ -28,6 +28,7 @@ import java.util.Objects;
 import redis.clients.jedis.UnifiedJedis;
 
 /**
+ * {@summary Creates a Redis distributed store from a Jedis client with the default key prefix. (Creates a Redis distributed store from a Jedis client with the default key prefix.)}
  * Redis-backed {@link DistributedStore} that configures all distributed storage components
  * with a single Jedis connection.
  *
@@ -64,6 +65,7 @@ public class RedisDistributedStore implements DistributedStore {
     }
 
     /**
+     * {@summary Creates a Redis distributed store from a Jedis client with the default key prefix. (Creates a Redis distributed store from a Jedis client with the default key prefix.)}
      * Creates a Redis distributed store from a Jedis client with the default key prefix.
      *
      * @param jedis initialized Jedis client (e.g. {@code new JedisPooled("redis://localhost:6379")})
@@ -74,6 +76,7 @@ public class RedisDistributedStore implements DistributedStore {
     }
 
     /**
+     * {@summary Creates a Redis distributed store from a Jedis client with the default key prefix. (Creates a Redis distributed store from a Jedis client with the default key prefix.)}
      * Creates a Redis distributed store from a Jedis client with a custom key prefix.
      *
      * @param jedis initialized Jedis client

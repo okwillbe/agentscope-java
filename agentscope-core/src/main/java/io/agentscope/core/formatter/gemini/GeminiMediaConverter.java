@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.gemini;
 
+/** {@summary GeminiMediaConverter (GeminiMediaConverter)} */
 import com.google.genai.types.Blob;
 import com.google.genai.types.Part;
 import io.agentscope.core.message.AudioBlock;

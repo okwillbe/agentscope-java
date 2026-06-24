@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.bus;
 
+/** {@summary BusEntry (BusEntry)} */
 import java.util.Map;
 
 /**

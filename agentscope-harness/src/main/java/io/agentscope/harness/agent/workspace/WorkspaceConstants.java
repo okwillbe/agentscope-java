@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.workspace;
 
+/** {@summary WorkspaceConstants (WorkspaceConstants)} */
+
 /** Path constants for the workspace directory structure. */
 public final class WorkspaceConstants {
 

@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 
 /**
+ * {@summary Response object from Mem0's search memory API. (Response object from Mem0's search memory API.)}
  * Response object from Mem0's search memory API.
  *
  * <p>This response is returned from the {@code POST /v1/memories/search} endpoint
@@ -33,6 +34,7 @@ import java.util.List;
 public class Mem0SearchResponse {
 
     /**
+     * {@summary Response object from Mem0's search memory API. (Response object from Mem0's search memory API.)}
      * List of search results, ordered by relevance score (descending).
      * May be empty if no relevant memories are found.
      */

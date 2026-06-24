@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary ThinkingBlock (ThinkingBlock)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashMap;

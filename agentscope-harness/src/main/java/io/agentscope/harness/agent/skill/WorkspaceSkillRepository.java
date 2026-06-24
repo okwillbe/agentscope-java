@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill;
 
+/** {@summary WorkspaceSkillRepository (WorkspaceSkillRepository)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.repository.AgentSkillRepository;
@@ -504,7 +505,7 @@ public class WorkspaceSkillRepository implements AgentSkillRepository, LazyResou
         String normalized = path.replace('\\', '/');
         String b = base.replace('\\', '/');
 
-        // base = "." or ""  →  any path whose first non-leading-slash segment starts with
+        // base = "." or ""  鈫? any path whose first non-leading-slash segment starts with
         // '_' or '.' is metadata. Avoids the marker "/./" matching nothing.
         if (b.isEmpty() || ".".equals(b)) {
             String trimmed = normalized.startsWith("/") ? normalized.substring(1) : normalized;

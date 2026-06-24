@@ -19,6 +19,7 @@ import io.agentscope.extensions.scheduler.AgentScheduler;
 import java.util.Objects;
 
 /**
+ * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
  * Configuration for scheduled agent tasks.
  *
  * <p>This class defines the scheduling parameters for an agent, including the scheduling
@@ -75,6 +76,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Validate the configuration based on schedule mode.
      */
     private void validate() {
@@ -105,6 +107,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Create a new builder instance.
      *
      * @return A new ScheduleConfig.Builder
@@ -114,6 +117,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Get the schedule mode.
      *
      * @return The schedule mode
@@ -123,6 +127,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Get the cron expression (only applicable for CRON type).
      *
      * @return The cron expression, or null if not a CRON schedule
@@ -132,6 +137,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Get the fixed rate duration in milliseconds (only applicable for FIXED_RATE type).
      *
      * @return The fixed rate duration in milliseconds, or null if not a FIXED_RATE schedule
@@ -141,6 +147,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Get the fixed delay duration in milliseconds (only applicable for FIXED_DELAY type).
      *
      * @return The fixed delay duration in milliseconds, or null if not a FIXED_DELAY schedule
@@ -150,6 +157,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Get the initial delay in milliseconds before the first execution.
      *
      * @return The initial delay in milliseconds, or null if no initial delay is configured
@@ -159,6 +167,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Get the time zone ID for cron expression evaluation.
      *
      * <p>Examples: "Asia/Shanghai", "America/New_York", "UTC"
@@ -170,6 +179,7 @@ public class ScheduleConfig {
     }
 
     /**
+     * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
      * Builder for creating ScheduleConfig instances.
      */
     public static class Builder {
@@ -183,6 +193,7 @@ public class ScheduleConfig {
         private Builder() {}
 
         /**
+         * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
          * Configure a cron-based schedule.
          *
          * <p>The cron expression follows the standard format:
@@ -214,6 +225,7 @@ public class ScheduleConfig {
         }
 
         /**
+         * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
          * Configure a fixed-rate schedule.
          *
          * <p>The task will be executed at a fixed rate. If a previous execution is still running,
@@ -233,6 +245,7 @@ public class ScheduleConfig {
         }
 
         /**
+         * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
          * Configure a fixed-delay schedule.
          *
          * <p>The task will be executed with a fixed delay between the completion of one execution
@@ -251,6 +264,7 @@ public class ScheduleConfig {
         }
 
         /**
+         * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
          * Set the initial delay before the first execution.
          *
          * <p>This is applicable to all schedule types. The scheduler will wait for this duration
@@ -265,6 +279,7 @@ public class ScheduleConfig {
         }
 
         /**
+         * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
          * Set the time zone ID for cron expression evaluation.
          *
          * <p>This is only applicable for CRON schedules. If not specified, the system default
@@ -281,6 +296,7 @@ public class ScheduleConfig {
         }
 
         /**
+         * {@summary Configuration for scheduled agent tasks. (Configuration for scheduled agent tasks.)}
          * Build the ScheduleConfig instance.
          *
          * @return A new ScheduleConfig instance

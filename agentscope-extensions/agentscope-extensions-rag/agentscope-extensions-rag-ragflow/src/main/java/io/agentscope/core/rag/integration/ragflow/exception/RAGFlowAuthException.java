@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.ragflow.exception;
 
 /**
+ * {@summary Exception thrown when RAGFlow authentication fails (401/403).}
  * Exception thrown when RAGFlow authentication fails (401/403).
  *
  * @author RAGFlow Integration Team

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary SkillFilter (SkillFilter)} */
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -24,14 +25,13 @@ import java.util.Set;
  *
  * <p>Two usage patterns:
  * <ul>
- *   <li><b>Standalone</b> (builder level) — {@link #all()}, {@link #none()}, {@link #only},
+ *   <li><b>Standalone</b> (builder level) 鈥?{@link #all()}, {@link #none()}, {@link #only},
  *       {@link #except} express a complete policy.</li>
- *   <li><b>Overlay</b> (RuntimeContext level) — {@link #enable}, {@link #disable} express
+ *   <li><b>Overlay</b> (RuntimeContext level) 鈥?{@link #enable}, {@link #disable} express
  *       partial overrides that are merged with a base filter via {@link #overlay}.</li>
  * </ul>
  *
- * <p>When no {@code SkillFilter} is configured, the default behaviour is {@link #all()} —
- * every skill is enabled.
+ * <p>When no {@code SkillFilter} is configured, the default behaviour is {@link #all()} 鈥? * every skill is enabled.
  *
  * <p><b>Usage example:</b>
  * <pre>{@code

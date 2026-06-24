@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.reader;
 
 /**
+ * {@summary Enumeration of table formatting options for Word document readers. (Enumeration of table formatting options for Word document readers.)}
  * Enumeration of table formatting options for Word document readers.
  *
  * <p>This enum defines how tables should be converted to text format
@@ -23,6 +24,7 @@ package io.agentscope.core.rag.reader;
  */
 public enum TableFormat {
     /**
+     * {@summary Enumeration of table formatting options for Word document readers. (Enumeration of table formatting options for Word document readers.)}
      * Convert tables to Markdown format.
      *
      * <p>Example:
@@ -38,6 +40,7 @@ public enum TableFormat {
     MARKDOWN,
 
     /**
+     * {@summary Enumeration of table formatting options for Word document readers. (Enumeration of table formatting options for Word document readers.)}
      * Convert tables to JSON format.
      *
      * <p>Extracts the table as a JSON string representing a list of rows,

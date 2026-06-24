@@ -21,7 +21,8 @@ import java.util.List;
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
-/** {@code GET /actuator/agentscope-agents}: enumerate agents known to the registry. */
+/**
+ * {@summary AgentscopeAgentsEndpoint (AgentscopeAgentsEndpoint)} {@code GET /actuator/agentscope-agents}: enumerate agents known to the registry. */
 @Endpoint(id = "agentscope-agents")
 public class AgentscopeAgentsEndpoint {
 

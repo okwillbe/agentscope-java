@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.snapshot;
 import io.agentscope.core.state.AgentState;
 
 /**
+ * {@summary AgentStateRestorer class ()}
  * Copies the mutable fields of a snapshotted {@link AgentState} back into a live one.
  *
  * <p>Why a copy instead of a swap: {@code ReActAgent} holds its {@code AgentState} in a
@@ -45,6 +46,7 @@ public final class AgentStateRestorer {
     private AgentStateRestorer() {}
 
     /**
+     * {@summary AgentStateRestorer class ()}
      * Restore the live {@code AgentState} from a snapshot.
      *
      * @param live the agent's current state (mutated in place)

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.builtin;
 
+/** {@summary TodoTools (TodoTools)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -35,7 +36,7 @@ import java.util.Map;
  * <p>The single {@code todo_write} tool uses <b>full-list-replace</b> semantics: the model passes
  * the <i>entire</i> updated list every call and the tool rebuilds
  * {@link AgentState#getTasksContext()} from it. This is intentionally simpler than a granular
- * create/update/delete surface — the model never has to reason about ids or partial diffs, and the
+ * create/update/delete surface 鈥?the model never has to reason about ids or partial diffs, and the
  * latest complete list is always the source of truth (and is re-surfaced every turn by
  * {@code TaskReminderMiddleware}).
  *
@@ -43,7 +44,7 @@ import java.util.Map;
  * state that {@code ReActAgent} flushes to its {@code AgentStateStore} after every call.
  *
  * <p>This tool is independent from the harness {@code TaskTool} ({@code task_output} /
- * {@code task_cancel} / {@code task_list}), which manages background <i>subagent</i> runs — a
+ * {@code task_cancel} / {@code task_list}), which manages background <i>subagent</i> runs 鈥?a
  * different layer that this tool neither reads nor writes.
  */
 public class TodoTools {
@@ -52,30 +53,30 @@ public class TodoTools {
             """
             Create and maintain a structured task list for the current session. Tracks progress,
             organizes multi-step work, and surfaces status to the user. Pass the COMPLETE updated
-            list every call — this tool replaces the whole list (it does not merge).
+            list every call 鈥?this tool replaces the whole list (it does not merge).
 
             ## When to use
             Use proactively when:
             - The task needs 3+ distinct steps or actions
             - The work is non-trivial and benefits from planning
             - The user gives multiple tasks (numbered or comma-separated) or asks for a todo list
-            - New instructions arrive — capture them as todos
-            - You start a task — mark it in_progress (only one at a time) before working
-            - You finish a task — mark it completed and add any follow-ups you discovered
+            - New instructions arrive 鈥?capture them as todos
+            - You start a task 鈥?mark it in_progress (only one at a time) before working
+            - You finish a task 鈥?mark it completed and add any follow-ups you discovered
 
             ## When NOT to use
             Skip when the work is a single straightforward step (<3 trivial steps), or the request
             is purely informational/conversational, or tracking adds no value.
 
             ## States
-            - pending     — not started
-            - in_progress — actively working (exactly ONE at a time)
-            - completed   — finished successfully
+            - pending     鈥?not started
+            - in_progress 鈥?actively working (exactly ONE at a time)
+            - completed   鈥?finished successfully
 
             ## Rules
             - Update status in real time; do not batch completions.
             - Mark completed only after the work is actually done, including any required
-              verification — never based on intent.
+              verification 鈥?never based on intent.
             - Keep exactly one task in_progress while work remains.
             - If blocked or partial, keep the task in_progress and add a follow-up todo describing
               the blocker.

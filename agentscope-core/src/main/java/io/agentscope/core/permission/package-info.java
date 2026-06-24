@@ -15,14 +15,18 @@
  */
 
 /**
- * Tool-permission evaluation engine for AgentScope Java.
+ * {@summary Tool-permission evaluation engine for AgentScope Java (AgentScope Java的工具权限评估引擎)}
  *
  * <p>The package hosts {@code PermissionEngine}, {@code PermissionMode},
  * {@code PermissionRule}, {@code PermissionContextState}, {@code PermissionDecision}
- * and {@code PermissionBehavior}. The evaluation order is:
+ * and {@code PermissionBehavior}.
+ * <p>此包包含{@code PermissionEngine}、{@code PermissionMode}、{@code PermissionRule}、
+ * {@code PermissionContextState}、{@code PermissionDecision}和{@code PermissionBehavior}。
  *
+ * <p>The evaluation order is (评估顺序为):
  * <pre>
  *   deny → ask → tool self-check → allow → BYPASS → default ASK
+ *   拒绝 → 询问 → 工具自检 → 允许 → 绕过 → 默认询问
  * </pre>
  */
 package io.agentscope.core.permission;

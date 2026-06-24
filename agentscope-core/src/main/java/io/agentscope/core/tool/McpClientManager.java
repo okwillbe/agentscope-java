@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary McpClientManager (McpClientManager)} */
 import io.agentscope.core.tool.mcp.McpClientWrapper;
 import io.agentscope.core.tool.mcp.McpTool;
 import java.util.Collections;

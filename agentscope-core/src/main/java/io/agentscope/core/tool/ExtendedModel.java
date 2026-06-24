@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ExtendedModel (ExtendedModel)} */
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;

@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
  * Request object for searching memories in Mem0 v2 API.
  *
  * <p>This request is sent to the Mem0 API's {@code POST /v2/memories/search/} endpoint
@@ -43,6 +44,7 @@ public class Mem0SearchRequest {
     private String version = "v2";
 
     /**
+     * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
      * Filters to apply to the search (user_id, agent_id, run_id, app_id, etc.).
      * This field is required by the API. An empty map will be sent if no filters are specified.
      */
@@ -192,6 +194,7 @@ public class Mem0SearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
      * Creates a new builder for Mem0SearchRequest.
      *
      * @return A new builder instance
@@ -235,6 +238,7 @@ public class Mem0SearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
          * Convenience method to add agent_id to filters.
          *
          * @param agentId The agent identifier
@@ -248,6 +252,7 @@ public class Mem0SearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
          * Sets the user identifier.
          *
          * <p>This method sets the userId field and also adds it to filters for v2 API compatibility.
@@ -264,6 +269,7 @@ public class Mem0SearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
          * Convenience method to add run_id to filters.
          *
          * @param runId The run/session identifier
@@ -277,6 +283,7 @@ public class Mem0SearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
          * Convenience method to add app_id to filters.
          *
          * @param appId The application identifier
@@ -295,6 +302,7 @@ public class Mem0SearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Mem0 v2 API. (Request object for searching memories in Mem0 v2 API.)}
          * Convenience method for backward compatibility.
          *
          * @param limit Maximum number of results (maps to top_k)

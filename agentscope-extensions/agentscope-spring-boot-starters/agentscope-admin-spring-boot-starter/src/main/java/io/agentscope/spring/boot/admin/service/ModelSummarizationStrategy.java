@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary ModelSummarizationStrategy class ()}
  * Default {@link SummarizationStrategy} that asks the agent's own model to produce a fresh
  * rolling summary.
  *

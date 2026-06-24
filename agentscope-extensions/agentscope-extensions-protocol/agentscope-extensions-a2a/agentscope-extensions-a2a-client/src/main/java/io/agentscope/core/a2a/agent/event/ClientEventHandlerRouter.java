@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary ClientEventHandlerRouter class ()}
  * The Strategy router for {@link ClientEventHandler}.
  */
 public class ClientEventHandlerRouter {
@@ -45,6 +46,7 @@ public class ClientEventHandlerRouter {
     }
 
     /**
+     * {@summary ClientEventHandlerRouter class ()}
      * Handle {@link ClientEvent} By event type.
      *
      * <p>If not found handler for this event type, it will return empty.

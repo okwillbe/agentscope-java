@@ -19,6 +19,7 @@ import io.agentscope.core.message.ContentBlock;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Interface for embedding models supporting multimodal content. (Interface for embedding models supporting multimodal content.)}
  * Interface for embedding models supporting multimodal content.
  *
  * <p>This interface provides a unified API for generating vector embeddings from content blocks.
@@ -36,6 +37,7 @@ import reactor.core.publisher.Mono;
 public interface EmbeddingModel {
 
     /**
+     * {@summary Interface for embedding models supporting multimodal content. (Interface for embedding models supporting multimodal content.)}
      * Generate embedding vector for a single content block.
      *
      * <p>Implementations should check the content block type and throw {@link EmbeddingException}
@@ -49,6 +51,7 @@ public interface EmbeddingModel {
     Mono<double[]> embed(ContentBlock block);
 
     /**
+     * {@summary Interface for embedding models supporting multimodal content. (Interface for embedding models supporting multimodal content.)}
      * Get the model name for logging and identification.
      *
      * @return the model name
@@ -56,6 +59,7 @@ public interface EmbeddingModel {
     String getModelName();
 
     /**
+     * {@summary Interface for embedding models supporting multimodal content. (Interface for embedding models supporting multimodal content.)}
      * Get the dimension of embedding vectors produced by this model.
      * The default value is 1024 if not specified.
      *

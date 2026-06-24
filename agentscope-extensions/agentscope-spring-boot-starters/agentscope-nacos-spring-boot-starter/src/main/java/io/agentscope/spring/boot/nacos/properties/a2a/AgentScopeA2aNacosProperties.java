@@ -22,6 +22,7 @@ import io.agentscope.spring.boot.nacos.properties.BaseNacosProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Spring Boot configuration properties for AgentScope A2A Nacos integration. (Spring Boot configuration properties for AgentScope A2A Nacos integration.)}
  * Spring Boot configuration properties for AgentScope A2A Nacos integration.
  *
  * <p>This class extends {@link BaseNacosProperties} to provide Nacos configuration
@@ -61,6 +62,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class AgentScopeA2aNacosProperties extends BaseNacosProperties {
 
     /**
+     * {@summary Spring Boot configuration properties for AgentScope A2A Nacos integration. (Spring Boot configuration properties for AgentScope A2A Nacos integration.)}
      * Some sub properties for nacos a2a registry.
      *
      * <p>These sub properties can control the behavior for registering agent or agent endpoint to Nacos. Detail see
@@ -69,6 +71,7 @@ public class AgentScopeA2aNacosProperties extends BaseNacosProperties {
     private NacosA2aRegistryProperties registry = new NacosA2aRegistryProperties();
 
     /**
+     * {@summary Spring Boot configuration properties for AgentScope A2A Nacos integration. (Spring Boot configuration properties for AgentScope A2A Nacos integration.)}
      * Some sub properties for nacos a2a discovery.
      *
      * <p>These sub properties can control the behavior for discovering agent or agent endpoint from Nacos. Detail see

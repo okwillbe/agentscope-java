@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary FileData (FileData)} */
 import java.time.Instant;
 
 /**

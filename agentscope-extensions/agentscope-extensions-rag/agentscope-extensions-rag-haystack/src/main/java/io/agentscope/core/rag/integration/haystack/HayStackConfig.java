@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
  * Configuration for HayStack integration.
  *
  * <p>This class holds the configuration for connecting to HayStack service, including
@@ -215,6 +216,7 @@ public class HayStackConfig {
         private Map<String, String> customHeaders = new HashMap<>();
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Sets the HayStack base URL.
          *
          * @param baseUrl the base URL
@@ -226,6 +228,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Sets the HayStack API success code.
          * <p>Default: 0
          *
@@ -238,6 +241,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * The maximum number of documents to return. If using `group_by` parameters, maximum number of groups to return.
          * <p>Default: 3
          *
@@ -253,6 +257,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Whether to scale the scores of the retrieved documents or not
          *
          * <p>- When `true`, scales the score of retrieved documents to a range of 0 to 1, where 1 means extremely relevant.
@@ -267,6 +272,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Whether to return the embedding of the retrieved Documents.
          *
          * @param returnEmbedding whether to return embedding
@@ -278,6 +284,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * A minimal score threshold for the result.
          * <p>Score of the returned result might be higher or smaller than the threshold depending on the Distance function used.
          * <p>E.g. for cosine similarity only higher scores will be returned.
@@ -291,6 +298,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Payload field to group by, must be a string or number field. If the field contains more than 1 value,
          * all values will be used for grouping. One point can be in multiple groups.
          *
@@ -303,6 +311,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Maximum amount of points to return per group.
          *
          * <p>Default is 3.
@@ -316,6 +325,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Use vector retrieval from the vector store.
          * <p>Normally you should not use it directly, instead use normal `query text` together with Haystack's `Embedders`.
          *
@@ -328,6 +338,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Sparse Embedding of the query.
          *
          * @param querySparseEmbedding SparseEmbedding
@@ -344,6 +355,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * The documents must include `metadata` indicating their origin and position:
          * <p>- `source_id` is used to group sentence chunks belonging to the same original document.
          * <p>- `split_id` represents the position/order of the chunk within the document.
@@ -357,6 +369,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * The number of adjacent documents to include on each side of the retrieved document can be configured using the `window_size` parameter.
          *
          * @param windowSize the window size
@@ -368,6 +381,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * A dictionary with filters to narrow down the retriever's search space in the document store.
          *
          * @param filters the filters
@@ -379,6 +393,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Policy to determine how filters are applied in retrievers interacting with document stores.
          *
          * @param filterPolicy FilterPolicy.REPLACE or FilterPolicy.MERGE
@@ -390,6 +405,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Sets the HTTP timeout.
          *
          * <p>Default: 30 seconds
@@ -403,6 +419,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Sets the maximum number of retries for failed requests.
          *
          * <p>Default: 3
@@ -419,6 +436,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Sets custom HTTP headers.
          *
          * @param customHeaders the custom headers map
@@ -430,6 +448,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Adds a custom HTTP header.
          *
          * @param key   the header name
@@ -442,6 +461,7 @@ public class HayStackConfig {
         }
 
         /**
+         * {@summary Configuration for HayStack integration. (Configuration for HayStack integration.)}
          * Builds the HayStackConfig instance.
          *
          * <p>The {@code baseUrl} parameter is required and must not be {@code null} or blank.

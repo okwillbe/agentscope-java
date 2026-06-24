@@ -28,6 +28,7 @@ import io.agentscope.harness.agent.HarnessAgent;
 import java.time.Duration;
 
 /**
+ * {@summary AsyncWaitModeExample class ()}
  * Demonstrates Mode C — the agent calls {@code wait_async_results} to block within a single
  * {@code call()} until background tool results arrive. No wakeup, no user interaction needed.
  *

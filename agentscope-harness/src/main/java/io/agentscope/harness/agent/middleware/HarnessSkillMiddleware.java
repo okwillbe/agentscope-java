@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary HarnessSkillMiddleware (HarnessSkillMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.middleware.MiddlewareBase;
@@ -117,7 +118,7 @@ public class HarnessSkillMiddleware implements MiddlewareBase {
      * @param visibilityFilter optional per-request filter (canary/allow-list)
      * @param stager           marketplace stager; {@code null} disables staging entirely
      * @param shellPathPolicy  policy for resolving {@code <files-root>} per shell mode; never
-     *                         {@code null} — pass {@link ShellPathPolicy#noShell()} when no
+     *                         {@code null} ...pass {@link ShellPathPolicy#noShell()} when no
      *                         shell tool is registered
      */
     public HarnessSkillMiddleware(

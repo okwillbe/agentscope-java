@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
+ * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
  * Represents a message in the AG-UI protocol.
  *
  * <p>Messages are the primary communication unit in the AG-UI protocol.
@@ -44,6 +45,7 @@ public class AguiMessage {
     private final String toolCallId;
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Creates a new AguiMessage.
      *
      * @param id The unique message ID
@@ -70,6 +72,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Creates a simple user message.
      *
      * @param id The message ID
@@ -81,6 +84,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Creates a simple assistant message.
      *
      * @param id The message ID
@@ -92,6 +96,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Creates a system message.
      *
      * @param id The message ID
@@ -103,6 +108,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Creates a tool result message.
      *
      * @param id The message ID
@@ -115,6 +121,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Get the message ID.
      *
      * @return The message ID
@@ -124,6 +131,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Get the message role.
      *
      * @return The role (user, assistant, system, tool)
@@ -133,6 +141,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Get the message content.
      *
      * @return The content, may be null
@@ -142,6 +151,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Get the tool calls (for assistant messages).
      *
      * @return The tool calls as an immutable list, empty if none
@@ -151,6 +161,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Get the tool call ID (for tool messages).
      *
      * @return The tool call ID, or null if not a tool message
@@ -160,6 +171,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Check if this is a user message.
      *
      * @return true if role is "user"
@@ -169,6 +181,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Check if this is an assistant message.
      *
      * @return true if role is "assistant"
@@ -178,6 +191,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Check if this is a system message.
      *
      * @return true if role is "system"
@@ -187,6 +201,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Check if this is a tool message.
      *
      * @return true if role is "tool"
@@ -196,6 +211,7 @@ public class AguiMessage {
     }
 
     /**
+     * {@summary Represents a message in the AG-UI protocol. (Represents a message in the AG-UI protocol.)}
      * Check if this message has tool calls.
      *
      * @return true if tool calls are present

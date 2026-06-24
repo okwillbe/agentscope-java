@@ -19,6 +19,7 @@ package io.agentscope.spring.boot.a2a.properties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary A2A Server configuration for deployment. (A2A Server configuration for deployment.)}
  * A2A Server configuration for deployment.
  */
 @ConfigurationProperties(Constants.A2A_SERVER_PREFIX)
@@ -27,21 +28,25 @@ public class A2aCommonProperties {
     private boolean enabled = true;
 
     /**
+     * {@summary A2A Server configuration for deployment. (A2A Server configuration for deployment.)}
      * The timeout seconds for agent to complete a task,
      */
     private Integer agentCompletionTimeoutSeconds;
 
     /**
+     * {@summary A2A Server configuration for deployment. (A2A Server configuration for deployment.)}
      * The timeout seconds for a2a server to consume stream output from agent completed task.
      */
     private Integer consumptionCompletionTimeoutSeconds;
 
     /**
+     * {@summary A2A Server configuration for deployment. (A2A Server configuration for deployment.)}
      * Whether A2A server response completed messages for agent task status updated to complete.
      */
     private boolean completeWithMessage;
 
     /**
+     * {@summary A2A Server configuration for deployment. (A2A Server configuration for deployment.)}
      * Whether A2A server response messages with some inner events and messages like TOOL_CALL.
      */
     private boolean requireInnerMessage;

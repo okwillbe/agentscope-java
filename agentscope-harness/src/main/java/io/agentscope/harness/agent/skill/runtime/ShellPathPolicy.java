@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.runtime;
 
+/** {@summary ShellPathPolicy (ShellPathPolicy)} */
 import io.agentscope.harness.agent.skill.runtime.MarketplaceStager.StageResult;
 import java.nio.file.Path;
 
@@ -26,12 +27,12 @@ import java.nio.file.Path;
  * <p>Three modes the policy knows about:
  *
  * <ul>
- *   <li>{@link Mode#NO_SHELL} — no {@code ShellExecuteTool} registered. Returns {@code null}
+ *   <li>{@link Mode#NO_SHELL} ...no {@code ShellExecuteTool} registered. Returns {@code null}
  *       for every skill so the prompt omits {@code <files-root>} and the code-execution
  *       instruction block entirely.
- *   <li>{@link Mode#SANDBOX} — sandbox-backed filesystem. Paths use the sandbox-internal
+ *   <li>{@link Mode#SANDBOX} ...sandbox-backed filesystem. Paths use the sandbox-internal
  *       prefix ({@code /workspace/}).
- *   <li>{@link Mode#LOCAL_WITH_SHELL} — {@code LocalFilesystemWithShell}. Paths use the
+ *   <li>{@link Mode#LOCAL_WITH_SHELL} ...{@code LocalFilesystemWithShell}. Paths use the
  *       absolute host workspace root.
  * </ul>
  */
@@ -60,7 +61,7 @@ public final class ShellPathPolicy {
         return new ShellPathPolicy(Mode.NO_SHELL, null, null);
     }
 
-    /** Sandbox mode — paths under the default {@code /workspace/} prefix. */
+    /** Sandbox mode ...paths under the default {@code /workspace/} prefix. */
     public static ShellPathPolicy sandbox() {
         return sandbox(SANDBOX_WORKSPACE_PREFIX);
     }
@@ -78,7 +79,7 @@ public final class ShellPathPolicy {
                 workspacePrefix != null ? workspacePrefix : SANDBOX_WORKSPACE_PREFIX);
     }
 
-    /** Local-with-shell mode — paths absolute on the host. */
+    /** Local-with-shell mode ...paths absolute on the host. */
     public static ShellPathPolicy localWithShell(Path workspaceRoot) {
         if (workspaceRoot == null) {
             throw new IllegalArgumentException("workspaceRoot required for LOCAL_WITH_SHELL");

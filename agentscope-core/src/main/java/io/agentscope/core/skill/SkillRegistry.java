@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary SkillRegistry (SkillRegistry)} */
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;

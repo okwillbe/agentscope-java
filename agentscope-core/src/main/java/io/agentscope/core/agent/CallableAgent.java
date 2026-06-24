@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary CallableAgent (CallableAgent)} */
 import com.fasterxml.jackson.databind.JsonNode;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.UserMessage;

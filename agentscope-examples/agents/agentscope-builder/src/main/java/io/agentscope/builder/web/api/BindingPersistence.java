@@ -42,6 +42,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Applies the on-disk routing config to the live channel so binding edits take effect for (Applies the on-disk routing config to the live channel so binding edits take effect for)}
  * Helper that loads, mutates, and atomically rewrites {@code agentscope.json} for binding /
  * channel-default edits, then re-registers the affected channel with the live
  * {@link ChannelManager} so changes take effect immediately.
@@ -69,6 +70,7 @@ public class BindingPersistence {
     }
 
     /**
+     * {@summary Applies the on-disk routing config to the live channel so binding edits take effect for (Applies the on-disk routing config to the live channel so binding edits take effect for)}
      * Apply {@code mutator} to the live channels map of {@code agentscope.json}, persist the
      * result atomically, and re-register the supplied channel ids in the live
      * {@link ChannelManager}. Returns the value produced by {@code mutator} so callers can shape
@@ -150,6 +152,7 @@ public class BindingPersistence {
     }
 
     /**
+     * {@summary Applies the on-disk routing config to the live channel so binding edits take effect for (Applies the on-disk routing config to the live channel so binding edits take effect for)}
      * Applies the on-disk routing config to the live channel so binding edits take effect for
      * subsequent inbound messages. Delegates to {@link Channel#applyRoutingConfig}; channels that
      * return {@code false} (no live-swap support) get a "restart required" log entry — their

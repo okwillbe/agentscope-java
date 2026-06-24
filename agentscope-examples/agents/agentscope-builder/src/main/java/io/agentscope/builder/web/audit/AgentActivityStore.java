@@ -39,6 +39,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
+ * {@summary Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace. (Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace.)}
  * Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace.
  *
  * <p>Layout (relative to the agent's namespace root):
@@ -97,6 +98,7 @@ public class AgentActivityStore {
     }
 
     /**
+     * {@summary Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace. (Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace.)}
      * Appends a single event to {@code (ownerId, agentId)}'s log. Best-effort: persistence errors
      * are logged but never propagated, so a failing audit log cannot break the user-facing call.
      */
@@ -105,6 +107,7 @@ public class AgentActivityStore {
     }
 
     /**
+     * {@summary Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace. (Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace.)}
      * Appends a single event with an optional target and metadata. See
      * {@link #record(String, String, ActorRef, String)} for failure semantics.
      */
@@ -139,6 +142,7 @@ public class AgentActivityStore {
     }
 
     /**
+     * {@summary Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace. (Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace.)}
      * Returns the {@code limit} most-recent events for {@code (ownerId, agentId)}, optionally
      * filtered to events strictly newer than {@code sinceMs}. Returned newest-first.
      */
@@ -284,6 +288,7 @@ public class AgentActivityStore {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace. (Per-agent append-only activity log stored as JSONL inside the agent's own namespaced workspace.)}
      * Returns the owner-scoped filesystem view for {@code (ownerId, agentId)}. Activity events
      * are owner-keyed (not caller-keyed) so the audit trail follows the agent rather than
      * fragmenting across every user who interacted with it.

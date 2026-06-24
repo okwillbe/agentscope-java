@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
  * Configuration for Dify Knowledge Base integration.
  *
  * <p>This class contains all necessary configuration parameters to connect to
@@ -128,6 +129,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the Dify API key.
      *
      * @return the API key
@@ -137,6 +139,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the Dify API base URL.
      *
      * @return the base URL
@@ -146,6 +149,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the dataset (knowledge base) ID.
      *
      * @return the dataset ID
@@ -155,6 +159,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the retrieval mode.
      *
      * @return the retrieval mode
@@ -164,6 +169,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the top K value for retrieval.
      *
      * @return the top K value (1-100)
@@ -173,6 +179,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the score threshold for filtering results.
      *
      * @return the score threshold (0.0-1.0)
@@ -182,6 +189,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Checks if reranking is enabled.
      *
      * @return true if reranking is enabled, null if not configured
@@ -191,6 +199,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the rerank configuration.
      *
      * @return the rerank config, or null if not set
@@ -200,6 +209,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the hybrid search weights.
      *
      * <p>This parameter is used when retrieval mode is HYBRID_SEARCH.
@@ -212,6 +222,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the metadata filter configuration.
      *
      * @return the metadata filter, or null if not set
@@ -221,6 +232,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the HTTP connection timeout.
      *
      * @return the connection timeout
@@ -230,6 +242,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the HTTP read timeout.
      *
      * @return the read timeout
@@ -239,6 +252,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets the maximum number of retries for failed requests.
      *
      * @return the max retries
@@ -248,6 +262,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Gets custom HTTP headers.
      *
      * @return a copy of custom headers map
@@ -257,6 +272,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Creates a new builder for DifyRAGConfig.
      *
      * @return a new Builder instance
@@ -266,6 +282,7 @@ public class DifyRAGConfig {
     }
 
     /**
+     * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
      * Builder for DifyRAGConfig.
      */
     public static class Builder {
@@ -300,6 +317,7 @@ public class DifyRAGConfig {
         private Builder() {}
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the Dify API key.
          *
          * <p>Get your dataset API key from Dify console
@@ -313,6 +331,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the Dify API base URL.
          *
          * <p>For Dify Cloud, use the default: https://api.dify.ai/v1
@@ -329,6 +348,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the dataset (knowledge base) ID.
          *
          * <p>Get your dataset ID from Dify console: can got by url
@@ -343,6 +363,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the retrieval mode.
          *
          * <p>Available modes:
@@ -364,6 +385,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the top K value for retrieval.
          *
          * <p>Number of documents to retrieve from the knowledge base.
@@ -382,6 +404,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the score threshold for filtering results.
          *
          * <p>Only documents with similarity score >= threshold will be returned.
@@ -400,6 +423,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets whether to enable reranking.
          *
          * <p>Reranking uses a specialized model to re-score and reorder retrieved
@@ -416,6 +440,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the rerank configuration.
          *
          * <p>Only takes effect when enableRerank is true.
@@ -429,6 +454,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the hybrid search weights.
          *
          * <p>This parameter is used when retrieval mode is HYBRID_SEARCH.
@@ -450,6 +476,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the metadata filter configuration.
          *
          * <p>Use this to filter documents based on their metadata fields.
@@ -463,6 +490,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the HTTP connection timeout.
          *
          * <p>Default: 30 seconds
@@ -476,6 +504,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the HTTP read timeout.
          *
          * <p>Default: 60 seconds
@@ -489,6 +518,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets the maximum number of retries for failed requests.
          *
          * <p>Default: 3
@@ -506,6 +536,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Sets custom HTTP headers to include in all requests.
          *
          * <p>Useful for adding custom authentication, tracing headers, etc.
@@ -519,6 +550,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Adds a single custom HTTP header.
          *
          * @param name the header name
@@ -534,6 +566,7 @@ public class DifyRAGConfig {
         }
 
         /**
+         * {@summary Configuration for Dify Knowledge Base integration. (Configuration for Dify Knowledge Base integration.)}
          * Builds a new DifyRAGConfig instance.
          *
          * @return a new DifyRAGConfig instance

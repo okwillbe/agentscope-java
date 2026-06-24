@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
 /**
+ * {@summary Represents a tool call in the AG-UI protocol. (Represents a tool call in the AG-UI protocol.)}
  * Represents a tool call in the AG-UI protocol.
  *
  * <p>Tool calls are used in assistant messages to indicate that the agent
@@ -32,6 +33,7 @@ public class AguiToolCall {
     private final AguiFunctionCall function;
 
     /**
+     * {@summary Represents a tool call in the AG-UI protocol. (Represents a tool call in the AG-UI protocol.)}
      * Creates a new AguiToolCall.
      *
      * @param id The unique tool call ID
@@ -49,6 +51,7 @@ public class AguiToolCall {
     }
 
     /**
+     * {@summary Represents a tool call in the AG-UI protocol. (Represents a tool call in the AG-UI protocol.)}
      * Creates a new AguiToolCall with type "function".
      *
      * @param id The unique tool call ID
@@ -59,6 +62,7 @@ public class AguiToolCall {
     }
 
     /**
+     * {@summary Represents a tool call in the AG-UI protocol. (Represents a tool call in the AG-UI protocol.)}
      * Get the tool call ID.
      *
      * @return The tool call ID
@@ -68,6 +72,7 @@ public class AguiToolCall {
     }
 
     /**
+     * {@summary Represents a tool call in the AG-UI protocol. (Represents a tool call in the AG-UI protocol.)}
      * Get the tool call type.
      *
      * @return The type (typically "function")
@@ -77,6 +82,7 @@ public class AguiToolCall {
     }
 
     /**
+     * {@summary Represents a tool call in the AG-UI protocol. (Represents a tool call in the AG-UI protocol.)}
      * Get the function call details.
      *
      * @return The function call

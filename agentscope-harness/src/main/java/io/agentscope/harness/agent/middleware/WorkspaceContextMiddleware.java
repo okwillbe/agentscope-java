@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary WorkspaceContextMiddleware (WorkspaceContextMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.middleware.MiddlewareBase;
@@ -59,7 +60,7 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
             """
             ## Domain Knowledge
             The workspace `knowledge/` tree holds many detailed reference documents (not only a single summary file). When the task needs specs, procedures, schemas, or domain facts, treat that directory as the source of truth.
-            Below, `<domain_knowledge_context>` already includes what you need to navigate it: injected `knowledge/KNOWLEDGE.md` (if present) plus a **full list of knowledge file paths** under `knowledge/` — use that as the catalog of what exists and where.
+            Below, `<domain_knowledge_context>` already includes what you need to navigate it: injected `knowledge/KNOWLEDGE.md` (if present) plus a **full list of knowledge file paths** under `knowledge/` ...use that as the catalog of what exists and where.
             For content not inlined here, open only the paths you need with read_file, grep, or glob (prefer targeted reads over loading entire trees into the reply).
 
             ## Memory Recall
@@ -71,9 +72,9 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
             You have a persistent MEMORY.md. Update it proactively when:
             - User shares preferences, project context, or decisions
             - Important outcomes or action items are established
-            Use the **memory_save** tool to persist memories — it atomically updates \
+            Use the **memory_save** tool to persist memories ...it atomically updates \
             both MEMORY.md and the daily ledger. Do NOT use write_file or edit_file on \
-            MEMORY.md or any path under memory/ — always use memory_save instead. \
+            MEMORY.md or any path under memory/ ...always use memory_save instead. \
             Memory is also automatically extracted at conversation end.
             """;
 
@@ -85,7 +86,7 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
             """;
 
     private static final String TRUNCATION_NOTICE =
-            "\n\n... (memory truncated — use memory_search for older entries) ...\n";
+            "\n\n... (memory truncated ...use memory_search for older entries) ...\n";
 
     private static final int DEFAULT_MAX_CONTEXT_TOKENS = 8000;
 
@@ -183,13 +184,12 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
      *
      * <ul>
      *   <li><b>Local overlay</b> ({@link OverlayFilesystem} wrapping
-     *       {@link LocalFilesystemWithShell}) — renders Project + Workspace as two lines plus
+     *       {@link LocalFilesystemWithShell}) ...renders Project + Workspace as two lines plus
      *       overlay/shell semantics.
-     *   <li><b>Sandbox</b> ({@link AbstractSandboxFilesystem} not wrapped in an overlay) —
-     *       describes the isolated container view and how host files reach it.
-     *   <li><b>Remote</b> ({@link CompositeFilesystem}) — describes the distributed store-backed
+     *   <li><b>Sandbox</b> ({@link AbstractSandboxFilesystem} not wrapped in an overlay) ...     *       describes the isolated container view and how host files reach it.
+     *   <li><b>Remote</b> ({@link CompositeFilesystem}) ...describes the distributed store-backed
      *       workspace and the fact that there is no host filesystem to fall back to.
-     *   <li><b>Other</b> — single-line legacy "working directory is X" form for plain
+     *   <li><b>Other</b> ...single-line legacy "working directory is X" form for plain
      *       {@link io.agentscope.harness.agent.filesystem.local.LocalFilesystem} or anything we
      *       don't recognize.
      * </ul>
@@ -202,7 +202,7 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
             sb.append("Project (the user's source tree you're assisting with): ")
                     .append(project.toAbsolutePath())
                     .append("\n");
-            sb.append("Workspace (your home base — memory, sessions, skills, runtime data): ")
+            sb.append("Workspace (your home base ...memory, sessions, skills, runtime data): ")
                     .append(workspace.toAbsolutePath())
                     .append("\n");
             List<Path> extraRoots = extraRootsOf(localUpper, project, workspace);
@@ -240,7 +240,7 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
                     .append(")\n");
             sb.append(
                     "Files are isolated inside this container. The host filesystem is not"
-                            + " directly accessible — use upload/download tools when you need to"
+                            + " directly accessible ...use upload/download tools when you need to"
                             + " move bytes across the boundary.\n");
         } else if (fs instanceof CompositeFilesystem) {
             sb.append("Distributed workspace template root: ")
@@ -259,7 +259,7 @@ public class WorkspaceContextMiddleware implements MiddlewareBase {
                             + " unless explicitly instructed otherwise.\n");
         }
         sb.append(
-                "AGENTS.md defines persona and local conventions — honor them when consistent"
+                "AGENTS.md defines persona and local conventions ...honor them when consistent"
                         + " with safety and policy.\n");
         return sb.toString();
     }

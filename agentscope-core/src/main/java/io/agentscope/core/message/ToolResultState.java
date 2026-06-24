@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary ToolResultState (ToolResultState)} */
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum ToolResultState {

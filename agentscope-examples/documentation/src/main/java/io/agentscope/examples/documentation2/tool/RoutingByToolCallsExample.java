@@ -27,6 +27,7 @@ import io.agentscope.core.tool.Toolkit;
 import io.agentscope.harness.agent.middleware.AgentTraceMiddleware;
 
 /**
+ * {@summary RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls. (RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls.)}
  * RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls.
  *
  * <p>A router agent receives the user query and delegates it to a specialist sub-agent
@@ -40,6 +41,7 @@ import io.agentscope.harness.agent.middleware.AgentTraceMiddleware;
 public class RoutingByToolCallsExample {
 
     /**
+     * {@summary RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls. (RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls.)}
      * Runs the routing example.
      *
      * @param args command-line arguments (ignored)
@@ -89,6 +91,7 @@ public class RoutingByToolCallsExample {
     public static class SimpleTools {
 
         /**
+         * {@summary RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls. (RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls.)}
          * Generates Python code by delegating to a Python specialist agent.
          *
          * @param demand description of the Python code to generate
@@ -126,6 +129,7 @@ public class RoutingByToolCallsExample {
         }
 
         /**
+         * {@summary RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls. (RoutingByToolCallsExample - Demonstrates routing user requests to sub-agents via tool calls.)}
          * Generates a poem by delegating to a poetry specialist agent.
          *
          * @param demand description of the poem to generate

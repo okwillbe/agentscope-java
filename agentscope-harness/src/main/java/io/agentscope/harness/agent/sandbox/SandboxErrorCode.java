@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxErrorCode (SandboxErrorCode)} */
+
 /**
  * Error codes for sandbox operations, used in {@link SandboxException} and its subclasses.
  */

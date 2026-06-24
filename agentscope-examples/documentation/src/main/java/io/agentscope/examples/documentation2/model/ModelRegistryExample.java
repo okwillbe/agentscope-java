@@ -21,6 +21,7 @@ import io.agentscope.core.message.UserMessage;
 import io.agentscope.core.model.ModelRegistry;
 
 /**
+ * {@summary ModelRegistryExample - Demonstrates how the framework's built-in model providers let you (ModelRegistryExample - Demonstrates how the framework's built-in model providers let you)}
  * ModelRegistryExample - Demonstrates how the framework's built-in model providers let you
  * create an agent by supplying only a model-ID string.
  *
@@ -48,6 +49,7 @@ import io.agentscope.core.model.ModelRegistry;
 public class ModelRegistryExample {
 
     /**
+     * {@summary ModelRegistryExample - Demonstrates how the framework's built-in model providers let you (ModelRegistryExample - Demonstrates how the framework's built-in model providers let you)}
      * Runs the model-string resolution demonstration.
      *
      * @param args command-line arguments (ignored)

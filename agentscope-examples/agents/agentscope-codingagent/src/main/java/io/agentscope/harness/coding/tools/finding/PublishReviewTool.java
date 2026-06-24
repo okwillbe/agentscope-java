@@ -23,6 +23,7 @@ import io.agentscope.harness.coding.reviewer.ReviewerFindingsService;
 import io.agentscope.harness.coding.tools.GitHubApiTool;
 
 /**
+ * {@summary Publishes the accumulated reviewer findings as a single GitHub PR review. Must be called exactly (Publishes the accumulated reviewer findings as a single GitHub PR review. Must be called exactly)}
  * Publishes the accumulated reviewer findings as a single GitHub PR review. Must be called exactly
  * once at the end of a reviewer run.
  */

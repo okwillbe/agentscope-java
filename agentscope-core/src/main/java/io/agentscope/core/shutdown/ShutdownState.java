@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary ShutdownState (ShutdownState)} */
+
 /**
  * Global framework shutdown state.
  */

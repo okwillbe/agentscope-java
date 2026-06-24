@@ -18,6 +18,7 @@ package io.agentscope.claw2.marketplace;
 import java.util.List;
 
 /**
+ * {@summary A claw-managed skill marketplace. Browsed and configured via the UI, independent of the (A claw-managed skill marketplace. Browsed and configured via the UI, independent of the)}
  * A claw-managed skill marketplace. Browsed and configured via the UI, independent of the
  * runtime {@code skillRepositories} that an agent itself loads.
  *
@@ -41,12 +42,14 @@ public interface ClawMarketplace extends AutoCloseable {
     }
 
     /**
+     * {@summary A claw-managed skill marketplace. Browsed and configured via the UI, independent of the (A claw-managed skill marketplace. Browsed and configured via the UI, independent of the)}
      * List all skills exposed by this marketplace. Implementations may cache or hit the upstream
      * on every call; callers should treat this as potentially slow and let the UI lazy-load.
      */
     List<MarketSkillSummary> list();
 
     /**
+     * {@summary A claw-managed skill marketplace. Browsed and configured via the UI, independent of the (A claw-managed skill marketplace. Browsed and configured via the UI, independent of the)}
      * Fetch the full content (SKILL.md plus any side resources) for the named skill, or
      * {@code null} if it does not exist.
      */

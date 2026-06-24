@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel.chatui;
 
+/** {@summary ChatUiRequest (ChatUiRequest)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.MsgRole;
 import java.util.List;
@@ -28,7 +29,7 @@ import java.util.Objects;
  *
  * <ul>
  *   <li>If {@code peerId} is null and the channel's DmScope is MAIN, all requests share one
- *       session — convenient for single-user or testing scenarios.
+ *       session ...convenient for single-user or testing scenarios.
  *   <li>If {@code peerId} is provided, each distinct peer gets its own session (when using
  *       PER_PEER or similar scopes).
  * </ul>

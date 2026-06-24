@@ -40,6 +40,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary HTTP controller exposing a Chat Completions API compatible with OpenAI's standard. (HTTP controller exposing a Chat Completions API compatible with OpenAI's standard.)}
  * HTTP controller exposing a Chat Completions API compatible with OpenAI's standard.
  *
  * <p>This controller implements a <b>100% stateless API</b>, fully compatible with OpenAI's Chat
@@ -87,6 +88,7 @@ public class ChatCompletionsController {
     private final OpenAIToolConverter toolConverter;
 
     /**
+     * {@summary HTTP controller exposing a Chat Completions API compatible with OpenAI's standard. (HTTP controller exposing a Chat Completions API compatible with OpenAI's standard.)}
      * Constructs a new ChatCompletionsController.
      *
      * @param agentProvider Provider for creating prototype-scoped agent instances
@@ -109,6 +111,7 @@ public class ChatCompletionsController {
     }
 
     /**
+     * {@summary HTTP controller exposing a Chat Completions API compatible with OpenAI's standard. (HTTP controller exposing a Chat Completions API compatible with OpenAI's standard.)}
      * Non-streaming chat completion endpoint.
      *
      * <p>Processes the complete message history and returns an assistant response.
@@ -202,6 +205,7 @@ public class ChatCompletionsController {
     }
 
     /**
+     * {@summary HTTP controller exposing a Chat Completions API compatible with OpenAI's standard. (HTTP controller exposing a Chat Completions API compatible with OpenAI's standard.)}
      * Streaming chat completion endpoint.
      *
      * <p>Processes the complete message history and streams the response as Server-Sent Events.

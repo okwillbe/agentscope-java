@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary LegacyHookDispatcher (LegacyHookDispatcher)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.accumulator.ReasoningContext;
 import io.agentscope.core.message.ContentBlock;

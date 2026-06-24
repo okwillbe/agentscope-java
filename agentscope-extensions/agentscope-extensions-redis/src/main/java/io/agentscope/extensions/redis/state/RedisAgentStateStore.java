@@ -35,6 +35,7 @@ import reactor.core.scheduler.Schedulers;
 import redis.clients.jedis.UnifiedJedis;
 
 /**
+ * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
  * Redis-based session implementation supporting multiple Redis clients.
  *
  * <p>This implementation provides a unified interface for Redis-based session storage, supporting
@@ -200,6 +201,7 @@ public class RedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
      * Creates a new builder for {@link RedisAgentStateStore}.
      *
      * @return a new Builder instance
@@ -384,6 +386,7 @@ public class RedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
      * Clear all sessions stored in Redis (for testing or cleanup).
      *
      * @return Mono that completes with the number of deleted session keys
@@ -405,6 +408,7 @@ public class RedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
      * Get the Redis key for a single state value.
      *
      * @param sessionId the session ID
@@ -416,6 +420,7 @@ public class RedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
      * Get the Redis key for a list state value.
      *
      * @param sessionId the session ID
@@ -427,6 +432,7 @@ public class RedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
      * Get the Redis key for tracking session keys.
      *
      * @param sessionId the session ID
@@ -437,6 +443,7 @@ public class RedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation supporting multiple Redis clients. (Redis-based session implementation supporting multiple Redis clients.)}
      * Builder for {@link RedisAgentStateStore}.
      *
      * <p>The builder supports multiple Redis client types. Only one client type should be set.

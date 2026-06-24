@@ -15,25 +15,26 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary NotificationSink (NotificationSink)} */
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
  * Pushes {@link SkillCandidate} metadata to an external system (Slack webhook, ticket service,
- * Nacos config item, …). {@code NotifyAndWaitGate} fires its sinks once per draft submission;
+ * Nacos config item, .... {@code NotifyAndWaitGate} fires its sinks once per draft submission;
  * sinks are best-effort and never block the gate.
  */
 public interface NotificationSink {
 
     Mono<Void> notify(SkillCandidate candidate);
 
-    /** No-op — useful as the "I'll wire my own sink later" default. */
+    /** No-op ...useful as the "I'll wire my own sink later" default. */
     static NotificationSink noOp() {
         return c -> Mono.empty();
     }
 
-    /** Logs the candidate at INFO; production setups can route via slf4j → ELK / Loki. */
+    /** Logs the candidate at INFO; production setups can route via slf4j 鈫?ELK / Loki. */
     static NotificationSink logging() {
         Logger log = LoggerFactory.getLogger("SkillNotificationSink.logging");
         return candidate -> {

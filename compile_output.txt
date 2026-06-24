@@ -1,0 +1,166 @@
+﻿[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.agentscope:agentscope-core:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ io.agentscope:agentscope-core:${revision}, D:\github\agentscope-java\agentscope-core\pom.xml, line 237, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] AgentScope Java - Parent                                           [pom]
+[INFO] AgentScope Java - Core                                             [jar]
+[INFO] 
+[INFO] ------------------< io.agentscope:agentscope-parent >-------------------
+[INFO] Building AgentScope Java - Parent 2.0.0-SNAPSHOT                   [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ agentscope-parent ---
+[INFO] argLine set to -javaagent:C:\\Users\\zhaowei\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=D:\\github\\agentscope-java\\target\\jacoco.exec -Xms512m -Xmx1024m
+[INFO] 
+[INFO] --- flatten:1.7.3:flatten (flatten) @ agentscope-parent ---
+[INFO] Generating flattened POM of project io.agentscope:agentscope-parent:pom:2.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- spotless:3.4.0:check (default) @ agentscope-parent ---
+[INFO] Spotless.Format is keeping 1 files clean - 0 needs changes to be clean, 0 were already clean, 1 were skipped because caching determined they were already clean
+[INFO] 
+[INFO] -------------------< io.agentscope:agentscope-core >--------------------
+[INFO] Building AgentScope Java - Core 2.0.0-SNAPSHOT                     [2/2]
+[INFO]   from agentscope-core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ agentscope-core ---
+[INFO] argLine set to -javaagent:C:\\Users\\zhaowei\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=D:\\github\\agentscope-java\\agentscope-core\\target\\jacoco.exec -Xms512m -Xmx1024m
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ agentscope-core ---
+[INFO] skip non existing resourceDirectory D:\github\agentscope-java\agentscope-core\src\main\resources
+[INFO] 
+[INFO] --- flatten:1.5.0:flatten (flatten) @ agentscope-core ---
+[INFO] Generating flattened POM of project io.agentscope:agentscope-core:jar:2.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ agentscope-core ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 402 source files with javac [debug release 17] to target\classes
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/memory/StaticLongTermMemoryHook.java:[18,40] io.agentscope.core.memory �е� io.agentscope.core.memory.LongTermMemoryTools �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/memory/LongTermMemoryTools.java:[69,19] io.agentscope.core.memory �е� io.agentscope.core.memory.LongTermMemory �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/memory/LongTermMemoryTools.java:[77,32] io.agentscope.core.memory �е� io.agentscope.core.memory.LongTermMemory �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/model/ChatModelBase.java:[56,16] io.agentscope.core.tracing �е� io.agentscope.core.tracing.TracerRegistry �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/Agent.java:[47,47] io.agentscope.core.agent �е� io.agentscope.core.agent.StreamableAgent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/tool/ToolExecutor.java:[168,16] io.agentscope.core.tracing �е� io.agentscope.core.tracing.TracerRegistry �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[78,17] io.agentscope.core.hook �е� io.agentscope.core.hook.PreCallEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[78,31] io.agentscope.core.hook �е� io.agentscope.core.hook.PostCallEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[78,46] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[78,62] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[78,75] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[78,89] io.agentscope.core.hook �е� io.agentscope.core.hook.ErrorEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[80,19] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[98,25] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[109,18] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[139,18] io.agentscope.core.memory �е� io.agentscope.core.memory.Memory �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/HookEvent.java:[141,24] io.agentscope.core.memory �е� io.agentscope.core.memory.AgentStateMemoryView �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryEvent.java:[45,51] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryEvent.java:[46,17] io.agentscope.core.hook �е� io.agentscope.core.hook.PreSummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryEvent.java:[46,34] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryEvent.java:[46,53] io.agentscope.core.hook �е� io.agentscope.core.hook.PostSummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryEvent.java:[61,13] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryChunkEvent.java:[63,46] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/SummaryChunkEvent.java:[86,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreSummaryEvent.java:[52,44] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreSummaryEvent.java:[77,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostSummaryEvent.java:[50,45] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostSummaryEvent.java:[65,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreCallEvent.java:[47,41] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreCallEvent.java:[59,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostCallEvent.java:[45,42] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostCallEvent.java:[57,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningEvent.java:[44,53] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningEvent.java:[45,17] io.agentscope.core.hook �е� io.agentscope.core.hook.PreReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningEvent.java:[45,36] io.agentscope.core.hook �е� io.agentscope.core.hook.PostReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningEvent.java:[45,56] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningEvent.java:[60,13] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreReasoningEvent.java:[50,46] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreReasoningEvent.java:[69,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostReasoningEvent.java:[54,47] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostReasoningEvent.java:[70,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningChunkEvent.java:[63,48] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ReasoningChunkEvent.java:[86,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingEvent.java:[44,50] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingEvent.java:[45,17] io.agentscope.core.hook �е� io.agentscope.core.hook.PreActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingEvent.java:[45,33] io.agentscope.core.hook �е� io.agentscope.core.hook.PostActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingEvent.java:[45,50] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingEvent.java:[58,27] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreActingEvent.java:[50,43] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PreActingEvent.java:[61,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostActingEvent.java:[53,44] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/PostActingEvent.java:[69,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingChunkEvent.java:[52,45] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ActingChunkEvent.java:[67,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ErrorEvent.java:[44,39] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/ErrorEvent.java:[56,15] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEventType �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/rag/model/Document.java:[41,19] io.agentscope.core.rag.model �е� io.agentscope.core.rag.model.DocumentMetadata �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/rag/model/Document.java:[54,21] io.agentscope.core.rag.model �е� io.agentscope.core.rag.model.DocumentMetadata �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/rag/model/Document.java:[76,12] io.agentscope.core.rag.model �е� io.agentscope.core.rag.model.DocumentMetadata �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/rag/model/Document.java:[215,46] io.agentscope.core.rag.model �е� io.agentscope.core.rag.model.DocumentMetadata �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[49,39] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[69,23] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[70,30] io.agentscope.core.hook �е� io.agentscope.core.hook.PostReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[71,13] io.agentscope.core.hook �е� io.agentscope.core.hook.PostReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[71,37] io.agentscope.core.hook �е� io.agentscope.core.hook.PostReasoningEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[79,37] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[80,13] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[80,38] io.agentscope.core.hook �е� io.agentscope.core.hook.ReasoningChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[90,37] io.agentscope.core.hook �е� io.agentscope.core.hook.PostActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[91,13] io.agentscope.core.hook �е� io.agentscope.core.hook.PostActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[91,34] io.agentscope.core.hook �е� io.agentscope.core.hook.PostActingEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[98,37] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[99,13] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[99,35] io.agentscope.core.hook �е� io.agentscope.core.hook.ActingChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[106,37] io.agentscope.core.hook �е� io.agentscope.core.hook.PostSummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[107,13] io.agentscope.core.hook �е� io.agentscope.core.hook.PostSummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[107,35] io.agentscope.core.hook �е� io.agentscope.core.hook.PostSummaryEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[114,37] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[115,13] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/StreamingHook.java:[115,36] io.agentscope.core.hook �е� io.agentscope.core.hook.SummaryChunkEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/hook/Hook.java:[152,16] io.agentscope.core.hook �е� io.agentscope.core.hook.HookEvent �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[961,24] io.agentscope.core.agent.StreamableAgent �е� stream(java.util.List<io.agentscope.core.message.Msg>,io.agentscope.core.agent.StreamOptions,com.fasterxml.jackson.databind.JsonNode) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[945,24] io.agentscope.core.agent.StreamableAgent �е� stream(java.util.List<io.agentscope.core.message.Msg>,io.agentscope.core.agent.StreamOptions,java.lang.Class<?>) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[929,24] io.agentscope.core.agent.StreamableAgent �е� stream(java.util.List<io.agentscope.core.message.Msg>,io.agentscope.core.agent.StreamOptions) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[97,24] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[98,31] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[101,37] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[101,85] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[103,40] io.agentscope.core.hook �е� io.agentscope.core.hook.RuntimeContextAware �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[137,82] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[148,60] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[155,14] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[310,17] io.agentscope.core.tracing �е� io.agentscope.core.tracing.TracerRegistry �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[434,38] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[438,41] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[603,14] io.agentscope.core.hook �е� io.agentscope.core.hook.RuntimeContextAware �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[612,14] io.agentscope.core.hook �е� io.agentscope.core.hook.RuntimeContextAware �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[617,53] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[618,29] io.agentscope.core.hook �е� io.agentscope.core.hook.RuntimeContextAware �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[WARNING] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java:[629,17] io.agentscope.core.hook �е� io.agentscope.core.hook.Hook �ѹ�ʱ, �ұ��Ϊ��ɾ��
+[INFO] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/skill/util/SkillUtil.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/skill/util/SkillUtil.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/agent/AgentBase.java: ĳЩ�����ļ�����ʹ�û򸲸��˱��Ϊ��ɾ�����ѹ�ʱ API��
+[INFO] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/formatter/anthropic/AnthropicMessageConverter.java: ĳЩ�����ļ�ʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/github/agentscope-java/agentscope-core/src/main/java/io/agentscope/core/formatter/anthropic/AnthropicMessageConverter.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- spotless:3.4.0:check (default) @ agentscope-core ---
+[INFO] Index file does not exist. Fallback to an empty index
+[INFO] Spotless.Java is keeping 688 files clean - 0 needs changes to be clean, 688 were already clean, 0 were skipped because caching determined they were already clean
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for AgentScope Java - Parent 2.0.0-SNAPSHOT:
+[INFO] 
+[INFO] AgentScope Java - Parent ........................... SUCCESS [  2.045 s]
+[INFO] AgentScope Java - Core ............................. SUCCESS [ 38.489 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  41.769 s
+[INFO] Finished at: 2026-06-24T11:23:40+08:00
+[INFO] ------------------------------------------------------------------------

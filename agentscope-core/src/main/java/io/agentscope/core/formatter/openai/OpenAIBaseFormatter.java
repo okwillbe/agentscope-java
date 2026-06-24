@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary OpenAIBaseFormatter (OpenAIBaseFormatter)} */
 import io.agentscope.core.formatter.AbstractBaseFormatter;
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
 import io.agentscope.core.formatter.openai.dto.OpenAIRequest;

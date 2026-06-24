@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary WebhookInboundMapper class ()}
  * Translates an authenticated {@link WebhookInboundRequest} into the framework's
  * {@link InboundMessage}.
  *

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary SubagentsMiddleware (SubagentsMiddleware)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
@@ -70,7 +71,7 @@ import reactor.core.publisher.Flux;
  *       (namespace-scoped) to support per-user subagent isolation.
  *   <li>Prepends rich subagent usage guidance and current async task summary to the leading
  *       SYSTEM message of every {@link ReasoningInput}. Because the framework rebuilds the
- *       SYSTEM message from a frozen base each iteration, this is safe — content never
+ *       SYSTEM message from a frozen base each iteration, this is safe ...content never
  *       accumulates across iterations.
  * </ol>
  */
@@ -85,7 +86,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
 
     /**
      * Cap on individual task results aggregated into a single {@code <system-reminder>} delivery
-     * message. Anything beyond this gets a "... and N more — call task_list()" footer; the LLM
+     * message. Anything beyond this gets a "... and N more ...call task_list()" footer; the LLM
      * can still fetch each one explicitly.
      */
     static final int MAX_DELIVERIES_PER_REMINDER = 10;
@@ -97,43 +98,43 @@ public class SubagentsMiddleware implements MiddlewareBase {
             ## Subagents
 
             You have access to subagent tools for spawning and coordinating isolated subagents.
-            Subagents are ephemeral — they live only for the duration of the task and return a single result.
+            Subagents are ephemeral ...they live only for the duration of the task and return a single result.
 
             ### Agent Tools
 
-            **`%s`** — Spawn an isolated subagent
+            **`%s`** ...Spawn an isolated subagent
             - `agent_id` (required): which subagent to instantiate
             - `task` (optional): initial prompt; omit to create a persistent session
             - `label` (optional): human-readable name for referencing via send
             - `timeout_seconds`: wait time; 0=fire-and-forget (returns task_id), default=30, max=600
-            - Response always includes `agent_key:` (opaque handle) — save it for follow-up sends
+            - Response always includes `agent_key:` (opaque handle) ...save it for follow-up sends
 
-            **`%s`** — Send a follow-up message to an existing subagent
+            **`%s`** ...Send a follow-up message to an existing subagent
             - `agent_key`: copy the **full value** after `agent_key:` from spawn output (starts with `agent:`). This is NOT `agent_id`, NOT `session_id`, and NOT `task_id`
             - Or use `label` if you set one at spawn (mutually exclusive with agent_key)
             - `message` (required): content to send
             - `timeout_seconds`: 0=fire-and-forget, >0=wait for reply (default: 30)
 
-            **`%s`** — List active subagents
+            **`%s`** ...List active subagents
 
             ### Task Tools (for async/background operations)
 
-            **`task_output`** — Retrieve the result of a background task by task_id.
+            **`task_output`** ...Retrieve the result of a background task by task_id.
             - **You rarely need this.** Completed tasks are pushed back to you automatically as a `<system-reminder>` block before your next reasoning step.
             - Use `task_output(block=false)` only when you need the full result and the pushed summary was truncated, or to inspect a specific task on demand.
             - Avoid `block=true`; it serialises the conversation behind the task.
 
-            **`task_cancel`** — Cancel a running background task by task_id. No effect on already-completed tasks.
+            **`task_cancel`** ...Cancel a running background task by task_id. No effect on already-completed tasks.
 
-            **`task_list`** — List all in-flight background tasks (durable, accurate across compaction and migration). Completed tasks fall off this list after they're pushed to you.
+            **`task_list`** ...List all in-flight background tasks (durable, accurate across compaction and migration). Completed tasks fall off this list after they're pushed to you.
 
             ### Background task flow
             1. Spawn with `timeout_seconds=0` to fire-and-forget; the response gives you a task_id.
             2. **Do not poll.** Continue with other work; when the task finishes you'll see a `<system-reminder>` containing its result.
-            3. If the agent has nothing useful to do, hand control back to the user — they'll prompt again when ready and the next reasoning round will surface any completions.
+            3. If the agent has nothing useful to do, hand control back to the user ...they'll prompt again when ready and the next reasoning round will surface any completions.
 
             ### Timeout promotion
-            When a sync spawn/send exceeds its timeout, the task is **not lost** — it is automatically promoted to a background task. You receive `status: timeout_promoted` with a `task_id`. Treat it like any async task: the result will be pushed back to you automatically as a `<system-reminder>`. Do NOT retry the same task — it is already running in the background.
+            When a sync spawn/send exceeds its timeout, the task is **not lost** ...it is automatically promoted to a background task. You receive `status: timeout_promoted` with a `task_id`. Treat it like any async task: the result will be pushed back to you automatically as a `<system-reminder>`. Do NOT retry the same task ...it is already running in the background.
 
             ### Available agent ids
             %s
@@ -143,7 +144,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
             - When a task is independent of other tasks and can run in parallel
             - When a task requires focused reasoning or heavy context usage that would bloat the main thread
             - When sandboxing improves reliability (e.g. code analysis, structured searches, data formatting)
-            - When you only care about the output, not the intermediate steps (e.g. research → synthesized report)
+            - When you only care about the output, not the intermediate steps (e.g. research 鈫?synthesized report)
 
             ### When NOT to use subagents
             - If the task is trivial (a few tool calls or simple lookup)
@@ -152,17 +153,17 @@ public class SubagentsMiddleware implements MiddlewareBase {
             - If splitting would add latency without benefit
 
             ### Subagent lifecycle
-            1. **Spawn** → Provide clear role, instructions, and expected output format
-            2. **Run** → The subagent completes the task autonomously
-            3. **Return** → The subagent provides a single structured result
-            4. **Reconcile** → Incorporate or synthesize the result into the main thread
+            1. **Spawn** 鈫?Provide clear role, instructions, and expected output format
+            2. **Run** 鈫?The subagent completes the task autonomously
+            3. **Return** 鈫?The subagent provides a single structured result
+            4. **Reconcile** 鈫?Incorporate or synthesize the result into the main thread
 
             ### Usage patterns
             - **Parallel execution**: Launch multiple subagents concurrently with timeout_seconds=0 when tasks are independent, then collect results with task_output(block=false) after a delay
             - **Sync delegation**: Use default timeout for simple one-shot delegation
             - **Persistent session**: Spawn without a task, then use send for multi-turn interaction
             - **Cancel stale work**: Use task_cancel to stop background tasks that are no longer needed
-            - Subagent results are NOT visible to the user — always summarize them in your response
+            - Subagent results are NOT visible to the user ...always summarize them in your response
             """;
     // @formatter:on
 
@@ -241,7 +242,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
 
     /**
      * Enables the {@code agent_generate} tool, which lets the LLM author new subagent specs from
-     * a description. Off by default — the generator needs a {@link io.agentscope.core.model.Model}
+     * a description. Off by default ...the generator needs a {@link io.agentscope.core.model.Model}
      * and writes to the workspace, so callers opt in explicitly.
      *
      * <p>Only effective in default (non-session) mode, where this middleware owns a
@@ -272,7 +273,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
      * when subagent work finishes.
      *
      * <p>Registers a {@link WorkspaceTaskRepository.TaskCompletionCallback} on the underlying
-     * repository (if it is a {@link WorkspaceTaskRepository}). Safe to call multiple times — each
+     * repository (if it is a {@link WorkspaceTaskRepository}). Safe to call multiple times ...each
      * call replaces the previous callback.
      *
      * @param messageBus the application message bus
@@ -409,7 +410,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
 
         // ---- Phase B-3 push delivery -------------------------------------------------------
         // Drain newly-terminal tasks first so the SYSTEM summary built afterwards can omit them.
-        // Only persist to AgentState when the agent is a ReActAgent — other Agent kinds keep
+        // Only persist to AgentState when the agent is a ReActAgent ...other Agent kinds keep
         // the legacy pull-only flow unchanged.
         List<TaskDelivery> pending = this.taskRepository.findPendingDeliveries(rc, sessionId);
         Msg deliveryMsg = null;
@@ -433,7 +434,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
         }
         List<Msg> rebuilt = prependToSystemMessage(input.messages(), addition.toString());
         if (deliveryMsg != null) {
-            // Inject for this round (parallel to the AgentState write — keeps the message visible
+            // Inject for this round (parallel to the AgentState write ...keeps the message visible
             // in the immediate LLM call regardless of when the framework re-derives messages from
             // the state next round).
             rebuilt = new ArrayList<>(rebuilt);
@@ -447,7 +448,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
             // if we marked before reasoning, a crash mid-call could persist deliveredAt while the
             // AgentState write was never flushed, causing permanent message loss. The reverse
             // (crash AFTER reasoning, BEFORE markDelivered) only causes a redundant re-delivery
-            // on the next round — annoying, but safe.
+            // on the next round ...annoying, but safe.
             final TaskRepository repoRef = this.taskRepository;
             final RuntimeContext rcRef = rc;
             final String sidRef = sessionId;
@@ -519,7 +520,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
         if (total > shown) {
             sb.append("\n... and ")
                     .append(total - shown)
-                    .append(" more — call task_list() to inspect.\n");
+                    .append(" more ...call task_list() to inspect.\n");
         }
         sb.append(
                 "\nIf you need a single task's full output, call"
@@ -653,7 +654,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
      * Builds a concise summary of in-flight tasks for the current session, or {@code null} if
      * none. Shared with {@link DynamicSubagentsMiddleware}.
      *
-     * <p>Phase B-3: already-delivered tasks are filtered out — they live in the conversation
+     * <p>Phase B-3: already-delivered tasks are filtered out ...they live in the conversation
      * history as {@code <system-reminder>} blocks, so re-mentioning them here would (a) waste
      * tokens, (b) push genuinely still-running tasks past the {@link #MAX_TASK_SUMMARY_ENTRIES}
      * cap, and (c) invite the LLM to second-guess the push by re-fetching results.
@@ -683,7 +684,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
             if (count >= MAX_TASK_SUMMARY_ENTRIES) {
                 sb.append("- ... (")
                         .append(visible.size() - MAX_TASK_SUMMARY_ENTRIES)
-                        .append(" more — use task_list() to see all)\n");
+                        .append(" more ...use task_list() to see all)\n");
                 break;
             }
             sb.append("- task_id: ").append(task.getTaskId());
@@ -697,7 +698,7 @@ public class SubagentsMiddleware implements MiddlewareBase {
         }
         sb.append(
                 "(Completed/failed/cancelled tasks are pushed back to you as <system-reminder>"
-                        + " blocks, not listed here — no need to call task_output unless you need"
+                        + " blocks, not listed here ...no need to call task_output unless you need"
                         + " the full payload.)\n");
         return sb.toString();
     }

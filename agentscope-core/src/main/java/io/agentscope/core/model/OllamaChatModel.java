@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary OllamaChatModel (OllamaChatModel)} */
 import io.agentscope.core.formatter.Formatter;
 import io.agentscope.core.formatter.ollama.OllamaChatFormatter;
 import io.agentscope.core.formatter.ollama.OllamaMultiAgentFormatter;
@@ -373,13 +374,13 @@ public class OllamaChatModel extends ChatModelBase {
             }
 
             if (proxyConfig != null) {
-                // Only proxy() called → use default transport with proxy
+                // Only proxy() called 鈫?use default transport with proxy
                 return OkHttpTransport.builder()
                         .config(HttpTransportConfig.builder().proxy(proxyConfig).build())
                         .build();
             }
 
-            // Neither called → use factory default
+            // Neither called 鈫?use factory default
             return HttpTransportFactory.getDefault();
         }
     }

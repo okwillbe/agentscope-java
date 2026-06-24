@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tools;
 
+/** {@summary ToolsConfig (ToolsConfig)} */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,8 +29,8 @@ import java.util.Map;
  * <p>Two responsibilities:
  *
  * <ul>
- *   <li>{@link #allow} / {@link #deny} — filter the harness's built-in tool surface.
- *   <li>{@link #mcpServers} — declare additional tools served by external MCP servers.
+ *   <li>{@link #allow} / {@link #deny} ...filter the harness's built-in tool surface.
+ *   <li>{@link #mcpServers} ...declare additional tools served by external MCP servers.
  * </ul>
  *
  * <p>Filter semantics: when {@code allow} is non-empty, only tools whose names appear in it are

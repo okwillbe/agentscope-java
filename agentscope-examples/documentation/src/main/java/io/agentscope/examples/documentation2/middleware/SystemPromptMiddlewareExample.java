@@ -30,6 +30,7 @@ import java.time.Instant;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
  * SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt
  * by overriding {@link MiddlewareBase#onSystemPrompt(Agent, RuntimeContext, String)}.
  *
@@ -54,6 +55,7 @@ import reactor.core.publisher.Mono;
 public class SystemPromptMiddlewareExample {
 
     /**
+     * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
      * Runs the system prompt middleware example.
      *
      * @param args command-line arguments (ignored)
@@ -120,6 +122,7 @@ public class SystemPromptMiddlewareExample {
     }
 
     /**
+     * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
      * Middleware that appends the current UTC timestamp to the system prompt.
      *
      * <p>The agent can reference this to answer time-related questions without a
@@ -128,6 +131,7 @@ public class SystemPromptMiddlewareExample {
     public static class TimestampMiddleware implements MiddlewareBase {
 
         /**
+         * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
          * Appends the current UTC timestamp to the system prompt.
          *
          * @param agent         the calling agent (available for context inspection)
@@ -143,6 +147,7 @@ public class SystemPromptMiddlewareExample {
     }
 
     /**
+     * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
      * Middleware that appends environment and user information to the system prompt.
      */
     public static class EnvironmentMiddleware implements MiddlewareBase {
@@ -151,6 +156,7 @@ public class SystemPromptMiddlewareExample {
         private final String userId;
 
         /**
+         * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
          * Constructs the environment middleware.
          *
          * @param environment deployment environment label (e.g. "demo", "production")
@@ -162,6 +168,7 @@ public class SystemPromptMiddlewareExample {
         }
 
         /**
+         * {@summary SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt (SystemPromptMiddlewareExample - Demonstrates injecting dynamic content into the system prompt)}
          * Appends environment and user information to the system prompt.
          *
          * @param agent         the calling agent

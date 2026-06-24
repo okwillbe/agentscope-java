@@ -33,6 +33,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Dispatches agent runs, handling busy-thread queueing. (Dispatches agent runs, handling busy-thread queueing.)}
  * Dispatches agent runs, handling busy-thread queueing.
  *
  * <ul>
@@ -65,6 +66,7 @@ public class RunDispatcher {
     }
 
     /**
+     * {@summary Dispatches agent runs, handling busy-thread queueing. (Dispatches agent runs, handling busy-thread queueing.)}
      * Dispatches an agent run or enqueues the message if the thread is busy.
      *
      * @param threadId canonical thread ID (used as sessionId in context)
@@ -145,6 +147,7 @@ public class RunDispatcher {
     }
 
     /**
+     * {@summary Dispatches agent runs, handling busy-thread queueing. (Dispatches agent runs, handling busy-thread queueing.)}
      * Enqueues a message for injection into the next reasoning step.
      *
      * @param threadId thread to enqueue for
@@ -157,6 +160,7 @@ public class RunDispatcher {
     }
 
     /**
+     * {@summary Dispatches agent runs, handling busy-thread queueing. (Dispatches agent runs, handling busy-thread queueing.)}
      * Dispatches the reviewer agent on a PR URL. Used by {@link
      * io.agentscope.harness.coding.tools.RequestPrReviewTool} and the CLI {@code review} subcommand.
      *

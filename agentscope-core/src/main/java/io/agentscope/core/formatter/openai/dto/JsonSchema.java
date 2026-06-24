@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai.dto;
 
+/** {@summary JsonSchema (JsonSchema)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;

@@ -40,8 +40,7 @@ import java.util.zip.ZipOutputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * {@link AgentSkillRepository} backed by Nacos AI skill packages.
+/** {@summary AgentSkillRepository backed by Nacos AI skill packages (由Nacos AI技能包支持的AgentSkillRepository)} backed by Nacos AI skill packages.
  *
  * <p><strong>Loading:</strong> Downloads the skill ZIP through {@link AiService}, then builds
  * {@link AgentSkill} from it (including {@code SKILL.md}). Indented YAML frontmatter in Nacos

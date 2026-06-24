@@ -18,6 +18,7 @@ package io.agentscope.core.chat.completions.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
+ * {@summary Represents a tool call in OpenAI-compatible format. (Represents a tool call in OpenAI-compatible format.)}
  * Represents a tool call in OpenAI-compatible format.
  *
  * <p>This DTO is used to serialize tool calls in the conversation context, allowing clients to
@@ -65,6 +66,7 @@ public class ToolCall {
     public ToolCall() {}
 
     /**
+     * {@summary Represents a tool call in OpenAI-compatible format. (Represents a tool call in OpenAI-compatible format.)}
      * Creates a new tool call.
      *
      * @param id Unique identifier for this tool call
@@ -78,6 +80,7 @@ public class ToolCall {
     }
 
     /**
+     * {@summary Represents a tool call in OpenAI-compatible format. (Represents a tool call in OpenAI-compatible format.)}
      * Creates a new tool call with index (for streaming).
      *
      * @param index Index in the tool_calls array
@@ -135,6 +138,7 @@ public class ToolCall {
         public FunctionCall() {}
 
         /**
+         * {@summary Represents a tool call in OpenAI-compatible format. (Represents a tool call in OpenAI-compatible format.)}
          * Creates a new function call.
          *
          * @param name Function name

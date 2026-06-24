@@ -59,6 +59,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Skills management endpoints for an agent. Exposes two layers: (Skills management endpoints for an agent. Exposes two layers:)}
  * Skills management endpoints for an agent. Exposes two layers:
  *
  * <ul>
@@ -80,6 +81,7 @@ public class AgentSkillsController {
             Pattern.compile("^\\s*name\\s*:\\s*(.+?)\\s*$", Pattern.MULTILINE);
 
     /**
+     * {@summary Skills management endpoints for an agent. Exposes two layers: (Skills management endpoints for an agent. Exposes two layers:)}
      * Sidecar file written into a skill directory when the skill was installed from a marketplace
      * repository. Allows the UI to distinguish self-authored skills from market-installed ones
      * without rescanning each repository on every list request.
@@ -696,6 +698,7 @@ public class AgentSkillsController {
     }
 
     /**
+     * {@summary Skills management endpoints for an agent. Exposes two layers: (Skills management endpoints for an agent. Exposes two layers:)}
      * Runs {@code action} with a short-lived {@link WorkspaceManager} and closes its SQLite index
      * afterward. Required on Windows where an open {@code .index/workspace.db} handle prevents
      * {@code @TempDir} cleanup in unit tests.
@@ -750,6 +753,7 @@ public class AgentSkillsController {
             SkillMarketplaceMeta marketplace) {}
 
     /**
+     * {@summary Skills management endpoints for an agent. Exposes two layers: (Skills management endpoints for an agent. Exposes two layers:)}
      * Provenance for a workspace skill that was copied in from a marketplace repository. Stored
      * as {@code _install.meta.json} alongside the skill's {@code SKILL.md} so the install source
      * survives across server restarts. Persists across edits — editing a market-installed skill

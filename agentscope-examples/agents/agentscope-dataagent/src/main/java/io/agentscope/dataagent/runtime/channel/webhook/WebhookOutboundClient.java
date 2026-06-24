@@ -31,6 +31,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Posts the given reply text to the callback URL. Returns an empty Mono on success; logs and (Posts the given reply text to the callback URL. Returns an empty Mono on success; logs and)}
  * Posts agent replies to a caller-supplied {@code callbackUrl} for webhook channels operating in
  * {@code replyMode=callback}.
  *
@@ -55,6 +56,7 @@ public final class WebhookOutboundClient {
     }
 
     /**
+     * {@summary Posts the given reply text to the callback URL. Returns an empty Mono on success; logs and (Posts the given reply text to the callback URL. Returns an empty Mono on success; logs and)}
      * Posts the given reply text to the callback URL. Returns an empty Mono on success; logs and
      * swallows failures so a downstream callback outage cannot fail the dispatch pipeline.
      */

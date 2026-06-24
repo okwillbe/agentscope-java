@@ -23,6 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 /**
+ * {@summary Register a command. Idempotent on identical entries; throws if a different command with the (Register a command. Idempotent on identical entries; throws if a different command with the)}
  * Thread-safe registry of {@link AdminCommand} instances.
  *
  * <p>Built-in commands are populated by {@code BuiltinCommandRegistrar} at startup. Third-party
@@ -35,6 +36,7 @@ public final class AdminCommandRegistry {
     private final ConcurrentMap<String, AdminCommand> commands = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Register a command. Idempotent on identical entries; throws if a different command with the (Register a command. Idempotent on identical entries; throws if a different command with the)}
      * Register a command. Idempotent on identical entries; throws if a different command with the
      * same {@code id} already exists.
      */

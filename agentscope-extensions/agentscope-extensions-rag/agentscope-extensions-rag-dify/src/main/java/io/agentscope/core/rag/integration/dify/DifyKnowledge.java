@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
  * Dify Cloud Knowledge Base implementation.
  *
  * <p>This class provides integration with Dify Knowledge Base service, implementing
@@ -89,6 +90,7 @@ public class DifyKnowledge implements Knowledge {
     private final DifyRAGConfig config;
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Creates a new DifyKnowledge instance.
      *
      * @param client the Dify API client
@@ -106,6 +108,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Adds documents to the knowledge base.
      *
      * <p><b>Note:</b> This operation is not supported, consistent with Bailian RAG plugin.
@@ -132,6 +135,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Retrieves relevant documents based on a query.
      *
      * <p>This method searches the Dify knowledge base for documents relevant to
@@ -206,6 +210,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Gets the Dify API client.
      *
      * @return the client
@@ -215,6 +220,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Gets the Dify configuration.
      *
      * @return the configuration, or null if not available
@@ -224,6 +230,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Truncates a string to specified length with ellipsis.
      *
      * @param text the text to truncate
@@ -241,6 +248,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Creates a new builder for DifyKnowledge.
      *
      * @return a new Builder instance
@@ -250,6 +258,7 @@ public class DifyKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
      * Builder for DifyKnowledge.
      */
     public static class Builder {
@@ -259,6 +268,7 @@ public class DifyKnowledge implements Knowledge {
         private Builder() {}
 
         /**
+         * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
          * Sets the Dify configuration.
          *
          * <p>If this is set, a DifyRAGClient will be automatically created from the config.
@@ -273,6 +283,7 @@ public class DifyKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
          * Sets the Dify client directly.
          *
          * <p>Use this if you want to share a client instance across multiple
@@ -287,6 +298,7 @@ public class DifyKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Dify Cloud Knowledge Base implementation. (Dify Cloud Knowledge Base implementation.)}
          * Builds a new DifyKnowledge instance.
          *
          * @return a new DifyKnowledge instance

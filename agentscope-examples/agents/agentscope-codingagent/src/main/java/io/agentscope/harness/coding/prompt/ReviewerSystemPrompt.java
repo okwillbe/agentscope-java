@@ -16,6 +16,7 @@
 package io.agentscope.harness.coding.prompt;
 
 /**
+ * {@summary Constructs the system prompt for the reviewer agent. (Constructs the system prompt for the reviewer agent.)}
  * Constructs the system prompt for the reviewer agent.
  *
  * <p>Mirrors {@code REVIEWER_PROMPT_TEMPLATE} from open-swe-main's {@code agent/reviewer.py}.
@@ -27,6 +28,7 @@ public final class ReviewerSystemPrompt {
     private ReviewerSystemPrompt() {}
 
     /**
+     * {@summary Constructs the system prompt for the reviewer agent. (Constructs the system prompt for the reviewer agent.)}
      * Builds the reviewer system prompt.
      *
      * @param workingDir sandbox working directory

@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.harness.agent.HarnessAgent;
 
 /**
+ * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
  * Per-agent section in {@code agentscope.json} under {@code agents.<agentId>}.
  *
  * <p>After the agent is built, {@link HarnessAgent} automatically loads
@@ -41,6 +42,7 @@ public class AgentConfigEntry {
     private String sysPrompt;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Workspace root for this agent. Relative paths are resolved against the bootstrap working
      * directory.
      */

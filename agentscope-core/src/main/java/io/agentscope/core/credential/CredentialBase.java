@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.credential;
 
+/** {@summary CredentialBase (CredentialBase)} */
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.model.ChatModelBase;
 import java.util.List;

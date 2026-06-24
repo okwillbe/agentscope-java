@@ -21,6 +21,7 @@ import java.util.Optional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
+ * {@summary Abstraction over the user registry. (Abstraction over the user registry.)}
  * Abstraction over the user registry.
  *
  * <p>The only bundled implementation is
@@ -48,6 +49,7 @@ public interface UserStore {
     List<UserRecord> listAll();
 
     /**
+     * {@summary Abstraction over the user registry. (Abstraction over the user registry.)}
      * Creates a new user. Throws {@link IllegalArgumentException} if the userId or username is
      * already taken.
      */
@@ -63,12 +65,14 @@ public interface UserStore {
     Optional<UserRecord> updateRoles(String userId, List<String> newRoles);
 
     /**
+     * {@summary Abstraction over the user registry. (Abstraction over the user registry.)}
      * Deletes a user by userId. Returns {@code true} if the user existed and was removed. The
      * last admin cannot be deleted ({@link IllegalStateException}).
      */
     boolean deleteUser(String userId);
 
     /**
+     * {@summary Abstraction over the user registry. (Abstraction over the user registry.)}
      * JSON-serializable user record.
      *
      * @param userId stable unique identifier (used as HarnessAgent namespace key)

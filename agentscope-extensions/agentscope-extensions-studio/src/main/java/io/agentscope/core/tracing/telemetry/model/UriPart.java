@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-/** Represents an external referenced file sent to the model by URI. */
+/** {@summary Represents an external referenced file sent to the model by URI. (Represents an external referenced file sent to the model by URI.)} Represents an external referenced file sent to the model by URI. */
 @JsonClassDescription("Uri part")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class UriPart implements MessagePart {

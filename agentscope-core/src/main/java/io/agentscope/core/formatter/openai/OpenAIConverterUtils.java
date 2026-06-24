@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary OpenAIConverterUtils (OpenAIConverterUtils)} */
 import io.agentscope.core.message.Base64Source;
 import io.agentscope.core.message.Source;
 import io.agentscope.core.message.URLSource;

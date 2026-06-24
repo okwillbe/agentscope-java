@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
  * Long-term memory implementation using Mem0 as the store.
  *
  * <p>This implementation integrates with Mem0, a memory layer for AI applications that
@@ -118,6 +119,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     private final String runId;
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Custom metadata to be stored with memories and used for filtering during retrieval.
      *
      * <p>This metadata is:
@@ -136,6 +138,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     private final Map<String, Object> metadata;
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Private constructor - use Builder instead.
      */
     private Mem0LongTermMemory(Builder builder) {
@@ -154,6 +157,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Records messages to long-term memory.
      *
      * <p>This method converts each message to a Mem0Message object, preserving the
@@ -204,6 +208,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Converts a Msg to a Mem0Message.
      *
      * <p>Role mapping:
@@ -225,6 +230,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Builds a search request with the given query.
      *
      * <p>The search request includes:
@@ -254,6 +260,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Retrieves relevant memories based on the input message.
      *
      * <p>Uses semantic search to find memories relevant to the message content.
@@ -292,6 +299,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Creates a new builder for Mem0LongTermMemory.
      *
      * @return A new builder instance
@@ -301,6 +309,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
     }
 
     /**
+     * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
      * Builder for Mem0LongTermMemory.
      */
     public static class Builder {
@@ -314,6 +323,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         private Map<String, Object> metadata;
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the agent name identifier.
          *
          * @param agentName The agent's name
@@ -325,6 +335,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the user id identifier.
          *
          * @param userId The user's ID
@@ -336,6 +347,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the run name identifier.
          *
          * @param runName The run/session name or ID
@@ -347,6 +359,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the Mem0 API base URL.
          *
          * @param apiBaseUrl The base URL (e.g., "http://localhost:8000")
@@ -358,6 +371,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the Mem0 API key.
          *
          * @param apiKey The API key for authentication (optional for local deployments without
@@ -370,6 +384,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the HTTP request timeout.
          *
          * @param timeout The timeout duration
@@ -381,6 +396,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets the Mem0 API type.
          *
          * @param apiType API type enum
@@ -392,6 +408,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Sets custom metadata to be stored with memories and used for filtering.
          *
          * <p>This metadata will be:
@@ -423,6 +440,7 @@ public class Mem0LongTermMemory implements LongTermMemory {
         }
 
         /**
+         * {@summary Long-term memory implementation using Mem0 as the store. (Long-term memory implementation using Mem0 as the store.)}
          * Builds the Mem0LongTermMemory instance.
          *
          * @return A new Mem0LongTermMemory instance

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.gemini;
 
+/** {@summary GeminiChatFormatter (GeminiChatFormatter)} */
 import com.google.genai.types.Content;
 import com.google.genai.types.GenerateContentConfig;
 import com.google.genai.types.GenerateContentResponse;
@@ -37,9 +38,9 @@ import java.util.function.Function;
  *
  * <p>Converts between AgentScope Msg objects and Gemini SDK types:
  * <ul>
- *   <li>Msg → Content (request format)</li>
- *   <li>GenerateContentResponse → ChatResponse (response parsing)</li>
- *   <li>ToolSchema → Tool (tool definitions)</li>
+ *   <li>Msg 鈫?Content (request format)</li>
+ *   <li>GenerateContentResponse 鈫?ChatResponse (response parsing)</li>
+ *   <li>ToolSchema 鈫?Tool (tool definitions)</li>
  * </ul>
  *
  * <p><b>Important Gemini API Behaviors:</b>

@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary MessageMetadataKeys (MessageMetadataKeys)} */
+
 /**
  * Constants for well-known message metadata keys.
  *
@@ -115,7 +117,7 @@ public final class MessageMetadataKeys {
      * messages for caching, independent of the automatic cache control strategy configured via
      * {@link io.agentscope.core.model.GenerateOptions#getCacheControl()}.
      *
-     * <p>Manually marked messages take priority over the automatic strategy — they will not be
+     * <p>Manually marked messages take priority over the automatic strategy 鈥?they will not be
      * overwritten.
      *
      * <p><b>Type:</b> Boolean

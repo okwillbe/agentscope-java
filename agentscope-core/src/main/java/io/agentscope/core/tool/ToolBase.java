@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolBase (ToolBase)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.permission.PermissionBehavior;
 import io.agentscope.core.permission.PermissionContextState;

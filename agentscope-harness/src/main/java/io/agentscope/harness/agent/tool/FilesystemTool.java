@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary FilesystemTool (FilesystemTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;

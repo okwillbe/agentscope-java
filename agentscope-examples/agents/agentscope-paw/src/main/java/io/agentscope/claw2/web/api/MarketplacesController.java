@@ -44,6 +44,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Property keys never echoed back in API responses; passwords leak through history otherwise. (Property keys never echoed back in API responses; passwords leak through history otherwise.)}
  * Global marketplaces management. CRUD over the {@code marketplaces} map of
  * {@code agentscope.json} (via {@link MarketplacePersistence}), plus read-only browsing of
  * the skills exposed by each marketplace through {@link ClawMarketplaceRegistry}.
@@ -370,6 +371,7 @@ public class MarketplacesController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Property keys never echoed back in API responses; passwords leak through history otherwise. (Property keys never echoed back in API responses; passwords leak through history otherwise.)}
      * Write payload for create / update / test endpoints. {@code id} is required on create, ignored
      * on update (path wins), and used as a label on transient test. {@code properties} carries the
      * type-specific fields (git: remoteUrl, branch; nacos: serverAddr, namespaceId, username,

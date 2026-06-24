@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary RegisteredSkill (RegisteredSkill)} */
+
 /**
  * Metadata wrapper for registered skills.
  *

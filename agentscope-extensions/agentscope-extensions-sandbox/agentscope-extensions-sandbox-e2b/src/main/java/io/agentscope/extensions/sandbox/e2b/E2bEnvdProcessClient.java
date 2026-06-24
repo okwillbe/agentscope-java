@@ -39,6 +39,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 /**
+ * {@summary E2bEnvdProcessClient class ()}
  * Minimal Connect+protobuf client for envd {@code process.Process/Start} (server streaming),
  * sufficient for {@code sh -c} command execution and binary tar streaming on stdout.
  */

@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.bailian;
 
 /**
+ * {@summary Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval. (Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.)}
  * Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.
  *
  * <p>Query rewriting improves retrieval effectiveness by automatically adjusting the
@@ -30,6 +31,7 @@ public class RewriteConfig {
     }
 
     /**
+     * {@summary Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval. (Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.)}
      * Gets the rewrite model name.
      *
      * @return the model name
@@ -39,6 +41,7 @@ public class RewriteConfig {
     }
 
     /**
+     * {@summary Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval. (Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.)}
      * Creates a new builder.
      *
      * @return a new Builder instance
@@ -48,6 +51,7 @@ public class RewriteConfig {
     }
 
     /**
+     * {@summary Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval. (Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.)}
      * Builder for RewriteConfig.
      */
     public static class Builder {
@@ -56,6 +60,7 @@ public class RewriteConfig {
         private Builder() {}
 
         /**
+         * {@summary Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval. (Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.)}
          * Sets the rewrite model name.
          *
          * <p>Currently only supports:
@@ -72,6 +77,7 @@ public class RewriteConfig {
         }
 
         /**
+         * {@summary Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval. (Rewrite configuration for multi-turn conversation in Bailian knowledge base retrieval.)}
          * Builds a new RewriteConfig.
          *
          * @return a new RewriteConfig instance

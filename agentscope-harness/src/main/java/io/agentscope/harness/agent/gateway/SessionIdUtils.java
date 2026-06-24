@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary SessionIdUtils (SessionIdUtils)} */
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary StreamingHook (StreamingHook)} */
 import io.agentscope.core.hook.ActingChunkEvent;
 import io.agentscope.core.hook.Hook;
 import io.agentscope.core.hook.HookEvent;

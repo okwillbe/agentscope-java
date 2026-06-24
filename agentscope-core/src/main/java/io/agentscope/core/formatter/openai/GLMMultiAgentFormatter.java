@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary GLMMultiAgentFormatter (GLMMultiAgentFormatter)} */
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
 import io.agentscope.core.formatter.openai.dto.OpenAIRequest;
 import io.agentscope.core.message.Msg;

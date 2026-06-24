@@ -17,6 +17,7 @@
 package io.agentscope.spring.boot.nacos.properties.a2a;
 
 /**
+ * {@summary A2a properties for registering to Nacos A2A Registry. (A2a properties for registering to Nacos A2A Registry.)}
  * A2a properties for registering to Nacos A2A Registry.
  *
  * <p>This class contains the sub properties for registering Agents to Nacos A2A Registry. To help developers and users
@@ -37,6 +38,7 @@ package io.agentscope.spring.boot.nacos.properties.a2a;
 public class NacosA2aRegistryProperties {
 
     /**
+     * {@summary A2a properties for registering to Nacos A2A Registry. (A2a properties for registering to Nacos A2A Registry.)}
      * Whether to enable Nacos A2A Registry.
      *
      * <p>Default is {@code true}, which means the program will read the all information about this agent such as
@@ -46,6 +48,7 @@ public class NacosA2aRegistryProperties {
     private boolean enabled = true;
 
     /**
+     * {@summary A2a properties for registering to Nacos A2A Registry. (A2a properties for registering to Nacos A2A Registry.)}
      * Whether register current new version as the latest version of agent.
      *
      * <p>Default is {@code true}, which means register current new version as the latest version of agent.
@@ -59,6 +62,7 @@ public class NacosA2aRegistryProperties {
     private boolean registerAsLatest = true;
 
     /**
+     * {@summary A2a properties for registering to Nacos A2A Registry. (A2a properties for registering to Nacos A2A Registry.)}
      * Whether enable register transport endpoint(s) to Nacos under this agent.
      *
      * <p>Default is {@code true}, which means the program will read the A2A Transport information that needs to be
@@ -71,6 +75,7 @@ public class NacosA2aRegistryProperties {
     private boolean enabledRegisterEndpoint = true;
 
     /**
+     * {@summary A2a properties for registering to Nacos A2A Registry. (A2a properties for registering to Nacos A2A Registry.)}
      * If setting with this property, the preferredTransport and url in agentCard will be overwritten.
      *
      * <p>If not found the transport from agentscope and all properties, overwrite will be ignored.

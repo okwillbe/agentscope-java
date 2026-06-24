@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection. (Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection.)}
  * Maps a GitHub webhook delivery into an {@link InboundMessage}.
  *
  * <p>MVP handles two event types:
@@ -52,6 +53,7 @@ public final class GitHubInboundMapper {
     }
 
     /**
+     * {@summary Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection. (Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection.)}
      * Returns the {@code comment.id} used as the idempotency key. Immutable per GitHub: edits
      * arrive as {@code action=edited} on the same id which we ignore in MVP.
      */
@@ -64,6 +66,7 @@ public final class GitHubInboundMapper {
     }
 
     /**
+     * {@summary Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection. (Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection.)}
      * Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection.
      */
     public static Optional<Long> extractCommenterId(JsonNode payload) {
@@ -75,6 +78,7 @@ public final class GitHubInboundMapper {
     }
 
     /**
+     * {@summary Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection. (Returns the numeric id of the comment author. Used by the channel for bot-loop self-detection.)}
      * Maps an {@code issue_comment} or {@code pull_request_review_comment} payload into an
      * {@link InboundMessage}. Returns empty for unsupported actions (only {@code "created"} is
      * mapped) or malformed payloads.

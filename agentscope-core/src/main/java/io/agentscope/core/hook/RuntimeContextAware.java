@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary RuntimeContextAware (RuntimeContextAware)} */
 import io.agentscope.core.agent.RuntimeContext;
 
 /**

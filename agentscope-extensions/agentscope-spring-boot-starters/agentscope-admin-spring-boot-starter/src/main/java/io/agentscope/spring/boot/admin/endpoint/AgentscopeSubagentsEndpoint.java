@@ -22,6 +22,7 @@ import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
 /**
+ * {@summary AgentscopeSubagentsEndpoint class ()}
  * {@code GET /actuator/agentscope-subagents}: enumerate the registered subagents.
  *
  * <p>Populated by the {@link SubagentInventory} bean — defaults to scanning Spring beans of type

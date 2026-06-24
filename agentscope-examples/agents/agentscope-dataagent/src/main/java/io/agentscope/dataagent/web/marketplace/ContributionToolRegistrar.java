@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary ContributionToolRegistrar class ()}
  * Wires a singleton {@link ContributeWorkspaceTool} onto the built-in {@code data-agent} main
  * agent's toolkit at startup, so the agent can call {@code contribute_to_workspace} to nominate
  * skills / subagents / memory snippets for promotion to the shared workspace.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary HttpVersion (HttpVersion)} */
 import java.net.http.HttpClient;
 
 /**

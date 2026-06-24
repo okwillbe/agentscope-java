@@ -16,6 +16,7 @@
 
 package io.agentscope.core.model;
 
+/** {@summary ExecutionConfig (ExecutionConfig)} */
 import io.agentscope.core.model.exception.BadRequestException;
 import io.agentscope.core.model.exception.RateLimitException;
 import io.agentscope.core.model.transport.HttpTransportException;

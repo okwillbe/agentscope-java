@@ -21,11 +21,13 @@ import io.agentscope.core.a2a.server.transport.TransportProperties;
 import java.util.List;
 
 /**
+ * {@summary Agent Register Interface to Agent Registry. (Agent Register Interface to Agent Registry.)}
  * Agent Register Interface to Agent Registry.
  */
 public interface AgentRegistry {
 
     /**
+     * {@summary Agent Register Interface to Agent Registry. (Agent Register Interface to Agent Registry.)}
      * Registry Name.
      *
      * @return registry name
@@ -33,6 +35,7 @@ public interface AgentRegistry {
     String registryName();
 
     /**
+     * {@summary Agent Register Interface to Agent Registry. (Agent Register Interface to Agent Registry.)}
      * Do registry operation by AgentCard and deployProperties.
      *
      * @param agentCard           agent card of this agent

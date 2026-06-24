@@ -26,6 +26,7 @@ import java.time.Duration;
 import java.util.Map;
 
 /**
+ * {@summary Makes arbitrary HTTP requests with configurable method, headers, and body. (Makes arbitrary HTTP requests with configurable method, headers, and body.)}
  * Makes arbitrary HTTP requests with configurable method, headers, and body.
  */
 public class HttpRequestTool {

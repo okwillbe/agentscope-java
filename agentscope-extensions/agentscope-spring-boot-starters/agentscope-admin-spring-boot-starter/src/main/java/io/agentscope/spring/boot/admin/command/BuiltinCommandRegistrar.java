@@ -20,6 +20,7 @@ import jakarta.annotation.PostConstruct;
 import java.util.List;
 
 /**
+ * {@summary BuiltinCommandRegistrar class ()}
  * Registers the Phase-1 built-in {@link AdminCommand}s into the {@link AdminCommandRegistry}.
  *
  * <p>This class only declares metadata. The actual REST routes live in

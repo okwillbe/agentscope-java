@@ -15,7 +15,8 @@
  */
 package io.agentscope.extensions.mysql.store;
 
-/** MySQL / MariaDB dialect for {@link JdbcStore}. */
+/**
+ * {@summary MysqlJdbcStoreDialect (MysqlJdbcStoreDialect)} MySQL / MariaDB dialect for {@link JdbcStore}. */
 public class MysqlJdbcStoreDialect implements JdbcStoreDialect {
 
     @Override

@@ -35,6 +35,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * {@summary PlanModeAutoExample — Model-autonomous plan mode: the LLM decides on its own to call (PlanModeAutoExample — Model-autonomous plan mode: the LLM decides on its own to call)}
  * PlanModeAutoExample — Model-autonomous plan mode: the LLM decides on its own to call
  * {@code plan_enter}, writes a plan, calls {@code plan_exit} to get approval, then enters
  * build mode and starts executing.
@@ -244,6 +245,7 @@ public class PlanModeAutoExample {
     }
 
     /**
+     * {@summary PlanModeAutoExample — Model-autonomous plan mode: the LLM decides on its own to call (PlanModeAutoExample — Model-autonomous plan mode: the LLM decides on its own to call)}
      * Auto-approve every tool call the agent is waiting on, and build the resume message. A real
      * application would surface these to a human and let them approve / reject / edit; here we
      * approve unconditionally so the demo runs end-to-end.

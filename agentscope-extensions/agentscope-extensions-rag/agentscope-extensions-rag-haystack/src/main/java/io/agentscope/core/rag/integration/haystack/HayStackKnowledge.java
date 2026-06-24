@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary HayStack RAG Knowledge Base implementation. (HayStack RAG Knowledge Base implementation.)}
  * HayStack RAG Knowledge Base implementation.
  *
  * <p>This class provides integration with HayStack Knowledge Base service, implementing
@@ -86,6 +87,7 @@ public class HayStackKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary HayStack RAG Knowledge Base implementation. (HayStack RAG Knowledge Base implementation.)}
      * Adds documents to the Haystack knowledge base.
      *
      * <p><b>Note:</b> This operation is not supported.
@@ -116,6 +118,7 @@ public class HayStackKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary HayStack RAG Knowledge Base implementation. (HayStack RAG Knowledge Base implementation.)}
      * Retrieve documents from the HayStack knowledge base.
      *
      * <p>This method searches the HayStack dataset for documents relevant to the given query.

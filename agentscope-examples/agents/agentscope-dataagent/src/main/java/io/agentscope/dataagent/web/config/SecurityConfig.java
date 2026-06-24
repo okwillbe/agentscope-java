@@ -42,6 +42,7 @@ import org.springframework.web.server.WebFilterChain;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary WebFlux Security configuration for the agentscope-dataagent web application. (WebFlux Security configuration for the agentscope-dataagent web application.)}
  * WebFlux Security configuration for the agentscope-dataagent web application.
  *
  * <ul>

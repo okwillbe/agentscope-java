@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary SkillToolFactory (SkillToolFactory)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.tool.AgentTool;
 import io.agentscope.core.tool.ToolCallParam;
@@ -201,7 +202,7 @@ class SkillToolFactory {
             }
         }
 
-        // 3. Not found — enumerate from both sources so the model gets real options.
+        // 3. Not found 鈥?enumerate from both sources so the model gets real options.
         throw new IllegalArgumentException(
                 buildResourceNotFoundMessage(
                         skillId, path, resources, skill.getOriginDir().orElse(null)));

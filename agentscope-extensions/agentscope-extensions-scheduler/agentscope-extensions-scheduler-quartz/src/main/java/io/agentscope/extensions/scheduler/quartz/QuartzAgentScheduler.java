@@ -51,6 +51,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
  * AgentScheduler implementation based on Quartz Scheduler.
  *
  * <p>This scheduler integrates with Quartz to provide robust task scheduling capabilities
@@ -130,6 +131,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Register this scheduler instance in the registry.
      */
     private void register() {
@@ -137,6 +139,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Create a new Builder instance for QuartzAgentScheduler.
      *
      * @return A new Builder
@@ -146,6 +149,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Schedule an agent execution based on the provided configuration with default schedule.
      *
      * @param agentConfig The configuration for the agent to be scheduled
@@ -156,6 +160,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Schedule an agent execution based on the provided configuration with no initial input.
      *
      * <p>This is a convenience method that delegates to {@link #schedule(AgentConfig, ScheduleConfig, Msg)},
@@ -172,6 +177,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Schedule an agent execution based on the provided configuration and initial input message.
      *
      * <p>This method creates a Quartz Job and Trigger based on the schedule mode:
@@ -316,6 +322,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Cancel a scheduled agent task.
      *
      * <p>This removes the Job and Trigger from the Quartz scheduler.
@@ -345,6 +352,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Retrieve a scheduled agent task by name.
      *
      * @param name The name of the agent
@@ -366,6 +374,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Retrieve all scheduled agent tasks.
      *
      * <p>This method retrieves all tasks from both the local cache and the Quartz scheduler.
@@ -401,6 +410,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Shutdown the scheduler.
      *
      * <p>This stops the Quartz scheduler and releases resources.
@@ -426,6 +436,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Pause a scheduled task.
      *
      * @param name The name of the agent/task to pause
@@ -451,6 +462,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Resume a paused task.
      *
      * @param name The name of the agent/task to resume
@@ -476,6 +488,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Interrupt a running task.
      *
      * @param name The name of the agent/task to interrupt
@@ -501,6 +514,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Reschedules the task for the next execution based on the fixed delay.
      *
      * @param jobKey The JobKey of the task
@@ -527,6 +541,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Get the current status of a scheduled task.
      *
      * @param name The name of the agent/task
@@ -551,6 +566,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Load task information from the Quartz scheduler and reconstruct the QuartzScheduleAgentTask object.
      * This is very useful in a distributed environment or after an application restart.
      * Even if there is no task information in the local memory,
@@ -621,6 +637,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
     }
 
     /**
+     * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
      * Builder for {@link QuartzAgentScheduler}.
      */
     public static class Builder {
@@ -629,6 +646,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
         private String schedulerId = "default-scheduler";
 
         /**
+         * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
          * Set the scheduler ID.
          *
          * @param schedulerId The scheduler ID
@@ -640,6 +658,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
         }
 
         /**
+         * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
          * Set a custom Quartz Scheduler.
          *
          * @param scheduler The Scheduler to use
@@ -651,6 +670,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
         }
 
         /**
+         * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
          * Set whether to automatically start the scheduler upon build.
          * Default is {@code true}.
          *
@@ -663,6 +683,7 @@ public class QuartzAgentScheduler implements AgentScheduler {
         }
 
         /**
+         * {@summary AgentScheduler implementation based on Quartz Scheduler. (AgentScheduler implementation based on Quartz Scheduler.)}
          * Build the QuartzAgentScheduler instance.
          *
          * @return A new QuartzAgentScheduler

@@ -27,7 +27,8 @@ import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** {@link SandboxClient} for E2B. */
+/**
+ * {@summary E2bSandboxClient (E2bSandboxClient)} {@link SandboxClient} for E2B. */
 public class E2bSandboxClient implements SandboxClient<E2bSandboxClientOptions> {
 
     private static final Logger log = LoggerFactory.getLogger(E2bSandboxClient.class);

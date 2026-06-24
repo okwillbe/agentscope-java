@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary FuzzyTextMatcher (FuzzyTextMatcher)} */
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -22,22 +23,22 @@ import java.util.List;
 
 /**
  * Fuzziness ladder for {@code SkillManageTool#patch}. The LLM rarely reproduces whitespace
- * exactly — indentation drift, trailing-space normalisation in editors, and the parser's
+ * exactly ...indentation drift, trailing-space normalisation in editors, and the parser's
  * frontmatter-whitespace eat (see {@code MarkdownSkillParser.FRONTMATTER_PATTERN}) all create
  * mismatches that a strict {@code String.indexOf} would reject.
  *
  * <p>The matcher tries progressively looser comparisons and reports back which level made the
  * match so the caller can surface that to the LLM. Each looser level maintains a per-character
  * map back to the original {@code existing} string so the patch result is applied to the
- * unmodified bytes — we never touch whitespace the LLM didn't ask to change.
+ * unmodified bytes ...we never touch whitespace the LLM didn't ask to change.
  *
  * <ul>
- *   <li>{@link Level#EXACT} — strict {@code String.indexOf}, preserved for byte-for-byte fidelity
- *   <li>{@link Level#TRAILING_WS_STRIPPED} — same after stripping {@code ' '/'\t'} at the end of
+ *   <li>{@link Level#EXACT} ...strict {@code String.indexOf}, preserved for byte-for-byte fidelity
+ *   <li>{@link Level#TRAILING_WS_STRIPPED} ...same after stripping {@code ' '/'\t'} at the end of
  *       every line on both sides. Catches editor-side trailing-whitespace normalisation.
- *   <li>{@link Level#WHITESPACE_COLLAPSED} — same after also stripping leading whitespace per
+ *   <li>{@link Level#WHITESPACE_COLLAPSED} ...same after also stripping leading whitespace per
  *       line and collapsing every internal whitespace run to a single {@code ' '}. Catches
- *       indentation drift (tabs ↔ spaces, 2-space ↔ 4-space) and re-wrapped lines.
+ *       indentation drift (tabs 鈫?spaces, 2-space 鈫?4-space) and re-wrapped lines.
  * </ul>
  */
 final class FuzzyTextMatcher {
@@ -94,7 +95,7 @@ final class FuzzyTextMatcher {
         }
 
         // Level 3: full whitespace collapse (strip leading + trailing per line, collapse internal
-        // runs to single space). Most lenient — surfaced as a warning to the LLM.
+        // runs to single space). Most lenient ...surfaced as a warning to the LLM.
         Normalized existingWsc = collapseWhitespace(existing);
         Normalized needleWsc = collapseWhitespace(needle);
         List<MatchRange> wsc =

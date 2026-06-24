@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Middleware that injects queued messages into the system prompt before each LLM reasoning step. (Middleware that injects queued messages into the system prompt before each LLM reasoning step.)}
  * Middleware that injects queued messages into the system prompt before each LLM reasoning step.
  *
  * <ol>
@@ -52,6 +53,7 @@ public class MessageQueueMiddleware implements MiddlewareBase {
     private static final Logger log = LoggerFactory.getLogger(MessageQueueMiddleware.class);
 
     /**
+     * {@summary Middleware that injects queued messages into the system prompt before each LLM reasoning step. (Middleware that injects queued messages into the system prompt before each LLM reasoning step.)}
      * Thread-local carrying the current thread ID for the in-flight agent run. The dispatcher or
      * webhook handler must set this before calling {@code gateway.run()}.
      */

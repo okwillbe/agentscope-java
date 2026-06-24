@@ -28,6 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Copies every file from one agent's workspace view into another agent's workspace view. Operates (Copies every file from one agent's workspace view into another agent's workspace view. Operates)}
  * Copies every file from one agent's workspace view into another agent's workspace view. Operates
  * directly on two {@link AbstractFilesystem} instances obtained via {@code
  * HarnessAgent#workspaceFor(userId, null).getFilesystem()}, so it works identically against
@@ -48,6 +49,7 @@ public final class WorkspaceCopier {
     private WorkspaceCopier() {}
 
     /**
+     * {@summary Copies every file from one agent's workspace view into another agent's workspace view. Operates (Copies every file from one agent's workspace view into another agent's workspace view. Operates)}
      * Copies every user-data file from {@code srcFs} into {@code dstFs}. Only the routed/user-data
      * layer is copied — shared workspace content (AGENTS.md, tools.json, shared skills/, ...) that
      * lives on the read-only local layer is not duplicated per agent.

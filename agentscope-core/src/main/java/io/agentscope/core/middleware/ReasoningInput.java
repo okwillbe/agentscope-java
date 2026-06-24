@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.middleware;
 
+/** {@summary ReasoningInput (ReasoningInput)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.model.GenerateOptions;
 import io.agentscope.core.model.ToolSchema;

@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
  * Root document for {@code ${cwd}/.agentscope/agentscope.json}.
  *
  * <p>Contains a {@code main} entry id, an {@code agents} map keyed by agent id, and an optional
@@ -38,6 +39,7 @@ public class AgentscopeConfig {
     private String schema;
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Agent id of the default entry point. Programmatic {@link
      * ClawBootstrap.Builder#mainAgent(String)} overrides this when set.
      */
@@ -48,6 +50,7 @@ public class AgentscopeConfig {
     private Map<String, AgentConfigEntry> agents = new LinkedHashMap<>();
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Optional channel configurations keyed by channel id (e.g. {@code "chatui"}, {@code
      * "slack"}). The built-in {@code chatui} channel is auto-created from its entry when no
      * programmatic channel registration covers the same id. For other channel types, the entry
@@ -57,6 +60,7 @@ public class AgentscopeConfig {
     private Map<String, ChannelConfigEntry> channels = new LinkedHashMap<>();
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Optional session-lifecycle config (auto-reset, maintenance). Maps to runtime {@link
      * io.agentscope.claw2.runtime.session.SessionMaintenanceConfig} and an internal scheduler for
      * daily / idle resets.
@@ -65,6 +69,7 @@ public class AgentscopeConfig {
     private SessionLifecycleConfig session;
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Optional global skill marketplaces, keyed by a user-chosen id (e.g. {@code "team-git"},
      * {@code "prod-nacos"}). Materialised at startup into the claw-side
      * {@code ClawMarketplaceRegistry}; users browse and install skills from these into any

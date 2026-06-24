@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary SimpleExtendedModel (SimpleExtendedModel)} */
 import java.util.List;
 import java.util.Map;
 

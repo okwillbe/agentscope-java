@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary DirEntry (DirEntry)} */
 import java.util.LinkedHashMap;
 import java.util.Map;
 

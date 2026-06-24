@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope.dto;
 
+/** {@summary DashScopeMessage (DashScopeMessage)} */
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

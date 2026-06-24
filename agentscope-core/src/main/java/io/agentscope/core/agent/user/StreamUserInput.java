@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.user;
 
+/** {@summary StreamUserInput (StreamUserInput)} */
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.TextBlock;

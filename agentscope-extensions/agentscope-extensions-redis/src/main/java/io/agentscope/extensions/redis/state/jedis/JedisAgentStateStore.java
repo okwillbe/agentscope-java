@@ -31,6 +31,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 /**
+ * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
  * Redis-based session implementation using Jedis.
  *
  * @deprecated Use {@link io.agentscope.extensions.redis.state.RedisAgentStateStore} with jedisClient instead.
@@ -75,6 +76,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Creates a new builder for {@link JedisAgentStateStore}.
      *
      * @return a new Builder instance
@@ -100,6 +102,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Save a list of state values with hash-based change detection.
      *
      * <p>This method uses hash-based change detection to handle both append-only and mutable lists:
@@ -284,6 +287,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Clear all sessions stored in Redis (for testing or cleanup).
      *
      * @return Mono that completes with the number of deleted session keys
@@ -305,6 +309,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Get the Redis key for a single state value.
      *
      * @param sessionId the session ID
@@ -316,6 +321,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Get the Redis key for a list state value.
      *
      * @param sessionId the session ID
@@ -327,6 +333,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Get the Redis key for tracking session keys.
      *
      * @param sessionId the session ID
@@ -337,6 +344,7 @@ public class JedisAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Jedis. (Redis-based session implementation using Jedis.)}
      * Builder for {@link JedisAgentStateStore}.
      */
     public static class Builder {

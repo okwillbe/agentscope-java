@@ -27,6 +27,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
  * In-memory implementation of vector database storage.
  *
  * <p>This implementation stores vectors in memory using a ConcurrentHashMap for thread safety.
@@ -68,6 +69,7 @@ public class InMemoryStore implements VDBStoreBase {
     private final int dimensions;
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Creates a new InMemoryStore with the specified vector dimensions.
      *
      * @param dimensions the dimension of vectors that will be stored
@@ -185,6 +187,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Validates that an embedding has the correct dimensions.
      *
      * @param embedding the embedding to validate
@@ -206,6 +209,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Gets the number of documents currently stored.
      *
      * <p>This method is thread-safe and returns the current snapshot of the store size.
@@ -217,6 +221,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Checks if the store is empty.
      *
      * <p>Equivalent to {@code size() == 0}. This method is thread-safe.
@@ -228,6 +233,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Clears all documents from the store.
      *
      * <p>After this operation, {@link #size()} returns 0 and {@link #isEmpty()} returns true.
@@ -238,6 +244,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Gets the dimension of vectors stored in this store.
      *
      * @return the vector dimension
@@ -247,6 +254,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Creates a new builder for InMemoryStore.
      *
      * @return a new Builder instance
@@ -256,6 +264,7 @@ public class InMemoryStore implements VDBStoreBase {
     }
 
     /**
+     * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
      * Builder for InMemoryStore.
      */
     public static class Builder {
@@ -264,6 +273,7 @@ public class InMemoryStore implements VDBStoreBase {
         private Builder() {}
 
         /**
+         * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
          * Sets the vector dimensions.
          *
          * @param dimensions the dimension of vectors to be stored (must be positive)
@@ -275,6 +285,7 @@ public class InMemoryStore implements VDBStoreBase {
         }
 
         /**
+         * {@summary In-memory implementation of vector database storage. (In-memory implementation of vector database storage.)}
          * Builds a new InMemoryStore instance.
          *
          * @return a new InMemoryStore instance

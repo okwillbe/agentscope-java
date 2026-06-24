@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Trinity Feedback API Request (Trinity Feedback API Request)}
  * Trinity Feedback API Request
  */
 public class FeedbackRequest {

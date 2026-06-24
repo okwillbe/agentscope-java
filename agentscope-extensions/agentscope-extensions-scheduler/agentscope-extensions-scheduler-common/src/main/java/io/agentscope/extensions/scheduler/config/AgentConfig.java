@@ -20,6 +20,7 @@ import io.agentscope.extensions.scheduler.BaseScheduleAgentTask;
 import java.util.Objects;
 
 /**
+ * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
  * Serializable metadata configuration for Agent instances in scheduled tasks.
  *
  * <p>This class contains only serializable configuration metadata, making it suitable for
@@ -97,6 +98,7 @@ public class AgentConfig {
     }
 
     /**
+     * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
      * Validate the configuration.
      */
     private void validate() {
@@ -109,6 +111,7 @@ public class AgentConfig {
     }
 
     /**
+     * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
      * Create a new builder instance.
      *
      * @return A new AgentConfig.Builder
@@ -118,6 +121,7 @@ public class AgentConfig {
     }
 
     /**
+     * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
      * Get the agent name.
      *
      * <p>This name is used as the identifier for the scheduled agent and should be unique
@@ -131,6 +135,7 @@ public class AgentConfig {
     }
 
     /**
+     * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
      * Get the model configuration.
      *
      * @return The ModelConfig instance
@@ -140,6 +145,7 @@ public class AgentConfig {
     }
 
     /**
+     * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
      * Get the system prompt.
      *
      * @return The system prompt, may be null
@@ -178,6 +184,7 @@ public class AgentConfig {
     }
 
     /**
+     * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
      * Builder for creating AgentConfig instances.
      */
     public static class Builder {
@@ -188,6 +195,7 @@ public class AgentConfig {
         protected Builder() {}
 
         /**
+         * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
          * Set the agent name (required).
          *
          * <p>The name is used as the identifier for the scheduled agent and should be unique.
@@ -201,6 +209,7 @@ public class AgentConfig {
         }
 
         /**
+         * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
          * Set the model configuration (required).
          *
          * <p>ModelConfig provides a flexible way to configure model settings.
@@ -229,6 +238,7 @@ public class AgentConfig {
         }
 
         /**
+         * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
          * Set the system prompt (optional).
          *
          * <p>The system prompt defines the agent's role and behavior.
@@ -242,6 +252,7 @@ public class AgentConfig {
         }
 
         /**
+         * {@summary Serializable metadata configuration for Agent instances in scheduled tasks. (Serializable metadata configuration for Agent instances in scheduled tasks.)}
          * Build the AgentConfig instance.
          *
          * @return A new AgentConfig instance

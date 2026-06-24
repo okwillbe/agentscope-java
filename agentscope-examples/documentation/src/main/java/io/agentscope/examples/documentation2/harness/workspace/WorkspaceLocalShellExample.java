@@ -26,6 +26,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary WorkspaceLocalShellExample — Filesystem mode 3 (local + shell): the default mode where the}
  * WorkspaceLocalShellExample — Filesystem mode 3 (local + shell): the default mode where the
  * workspace lives on disk and shell commands execute on the host.
  *

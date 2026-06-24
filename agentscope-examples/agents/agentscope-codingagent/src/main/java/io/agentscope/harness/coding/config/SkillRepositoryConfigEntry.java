@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary SkillRepositoryConfigEntry class ()}
  * Declarative skill repository settings for {@code agentscope.json} (and similar) configs.
  *
  * <p>Use {@code type: "filesystem"} with {@link #path} or {@code type: "git"} with {@link
@@ -31,6 +32,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class SkillRepositoryConfigEntry {
 
     /**
+     * {@summary SkillRepositoryConfigEntry class ()}
      * {@code filesystem} — load from a directory ({@link #path}, relative to bootstrap {@code cwd}).
      *
      * <p>{@code git} — clone / sync a remote repository ({@link #remoteUrl}, optional {@link
@@ -50,6 +52,7 @@ public class SkillRepositoryConfigEntry {
     private String branch;
 
     /**
+     * {@summary SkillRepositoryConfigEntry class ()}
      * Local clone directory; when set, resolved relative to bootstrap {@code cwd}. Optional for
      * {@code git} (otherwise a temp directory is used by {@code GitSkillRepository}).
      */

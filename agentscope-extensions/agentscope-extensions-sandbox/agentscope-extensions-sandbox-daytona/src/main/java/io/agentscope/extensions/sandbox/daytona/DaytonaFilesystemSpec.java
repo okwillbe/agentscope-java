@@ -22,7 +22,8 @@ import io.agentscope.harness.agent.sandbox.WorkspaceSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.NoopSnapshotSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 
-/** {@link SandboxFilesystemSpec} for Daytona. */
+/**
+ * {@summary DaytonaFilesystemSpec (DaytonaFilesystemSpec)} {@link SandboxFilesystemSpec} for Daytona. */
 public class DaytonaFilesystemSpec extends SandboxFilesystemSpec {
 
     private SandboxClient<?> client;

@@ -41,6 +41,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
  * PostgreSQL pgvector database store implementation.
  *
  * <p>This class provides an interface for storing and searching vectors using PostgreSQL
@@ -118,6 +119,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     private static final String DEFAULT_SCHEMA = "public";
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Pattern for validating database identifiers (schema and table names).
      * Only allows alphanumeric characters and underscores, must start with a letter or underscore.
      * This prevents SQL injection attacks through malicious identifier names.
@@ -136,6 +138,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     private volatile boolean closed = false;
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Distance types supported by pgvector.
      */
     public enum DistanceType {
@@ -157,6 +160,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Gets the index operator class name for this distance type.
          *
          * <p>This is used when creating HNSW indexes in PostgreSQL with pgvector.
@@ -169,6 +173,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Gets the SQL operator for this distance type.
          *
          * <p>This operator is used in ORDER BY clauses to sort results by similarity.
@@ -182,6 +187,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Creates a new PgVectorStore using the builder configuration.
      *
      * @param builder the builder instance
@@ -243,6 +249,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Creates a new PgVectorStore with minimal configuration.
      *
      * @param jdbcUrl the PostgreSQL JDBC URL (e.g., "jdbc:postgresql://localhost:5432/mydb")
@@ -378,6 +385,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the underlying JDBC connection for advanced operations.
      *
      * <p>This method provides access to the connection for users who need to perform
@@ -398,6 +406,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Ensures the store is not closed before performing operations.
      *
      * @throws VectorStoreException if the store has been closed
@@ -409,6 +418,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the fully qualified table name including schema.
      *
      * <p>This method safely concatenates schema and table name. Both values are validated
@@ -422,6 +432,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Ensures the table exists, creating it if necessary.
      *
      * @param conn the Connection to use
@@ -469,6 +480,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Creates a new table with the specified dimensions and schema.
      *
      * @param conn the Connection to use
@@ -525,6 +537,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Adds multiple documents to PostgreSQL.
      *
      * <p>Uses upsert (INSERT ... ON CONFLICT DO UPDATE) to handle duplicate IDs.
@@ -608,6 +621,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Searches for similar documents in PostgreSQL.
      *
      * @param queryEmbedding the query embedding vector
@@ -681,6 +695,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Converts distance to similarity score based on distance type.
      *
      * @param distance the distance value from pgvector
@@ -701,6 +716,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Reconstructs a Document from PostgreSQL ResultSet.
      *
      * @param rs the ResultSet containing document data
@@ -766,6 +782,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Deletes documents from PostgreSQL by document ID.
      *
      * @param docId the document ID to delete
@@ -785,6 +802,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the JDBC URL.
      *
      * @return the JDBC URL
@@ -794,6 +812,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the schema name.
      *
      * @return the schema name
@@ -803,6 +822,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the table name.
      *
      * @return the table name
@@ -812,6 +832,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the vector dimensions.
      *
      * @return the dimensions
@@ -821,6 +842,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Gets the distance type used for similarity search.
      *
      * @return the distance type
@@ -830,6 +852,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Closes the PostgreSQL connection and releases all resources.
      *
      * <p>This method closes the JDBC connection, releasing all database resources.
@@ -876,6 +899,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Checks if this store has been closed.
      *
      * @return true if the store has been closed, false otherwise
@@ -885,6 +909,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Builder for creating PgVectorStore instances with fluent configuration.
      *
      * <p>Example usage:
@@ -914,6 +939,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         private Builder() {}
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the PostgreSQL JDBC URL.
          *
          * @param jdbcUrl the JDBC URL (e.g., "jdbc:postgresql://localhost:5432/mydb")
@@ -925,6 +951,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the database username.
          *
          * @param username the username
@@ -936,6 +963,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the database password.
          *
          * @param password the password
@@ -947,6 +975,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the database schema.
          *
          * <p>Default is "public". If the schema does not exist, it will be created automatically.
@@ -960,6 +989,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the table name.
          *
          * @param tableName the name of the table to use
@@ -971,6 +1001,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the vector dimensions.
          *
          * @param dimensions the dimension of vectors that will be stored
@@ -982,6 +1013,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the distance type for vector similarity search.
          *
          * <p>Default is COSINE. Other options include L2 (Euclidean) and INNER_PRODUCT.
@@ -995,6 +1027,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Sets the connection timeout in milliseconds.
          *
          * <p>Default is 30000 (30 seconds). Set to 0 or negative to disable timeout.
@@ -1008,6 +1041,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
          * Builds a new PgVectorStore instance.
          *
          * <p>The database connection is established immediately during construction. If the
@@ -1042,6 +1076,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Creates a new builder for constructing PgVectorStore instances.
      *
      * @return a new builder instance
@@ -1051,6 +1086,7 @@ public class PgVectorStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary PostgreSQL pgvector database store implementation. (PostgreSQL pgvector database store implementation.)}
      * Validates a database identifier (schema or table name) to prevent SQL injection.
      *
      * <p>This method ensures that identifiers only contain safe characters (alphanumeric and

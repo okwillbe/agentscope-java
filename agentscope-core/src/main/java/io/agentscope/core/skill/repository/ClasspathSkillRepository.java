@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill.repository;
 
+/** {@summary ClasspathSkillRepository (ClasspathSkillRepository)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.util.SkillFileSystemHelper;
 import java.io.IOException;
@@ -47,13 +48,13 @@ import org.slf4j.LoggerFactory;
  * <p><b>Directory Structure:</b>
  * <pre>
  * resources/
- * └── skills/              ← Pass "skills" to repository
- *     ├── skill-a/
- *     │   └── SKILL.md
- *     ├── skill-b/
- *     │   └── SKILL.md
- *     └── skill-c/
- *         └── SKILL.md
+ * 鈹斺攢鈹€ skills/              鈫?Pass "skills" to repository
+ *     鈹溾攢鈹€ skill-a/
+ *     鈹?  鈹斺攢鈹€ SKILL.md
+ *     鈹溾攢鈹€ skill-b/
+ *     鈹?  鈹斺攢鈹€ SKILL.md
+ *     鈹斺攢鈹€ skill-c/
+ *         鈹斺攢鈹€ SKILL.md
  * </pre>
  *
  * <p><b>Usage example:</b>

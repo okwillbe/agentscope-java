@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.subagent;
 
+/** {@summary SubAgentTool (SubAgentTool)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.Event;

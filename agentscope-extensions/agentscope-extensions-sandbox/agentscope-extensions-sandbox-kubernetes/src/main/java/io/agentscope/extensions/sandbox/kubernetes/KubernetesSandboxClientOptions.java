@@ -48,6 +48,7 @@ public class KubernetesSandboxClientOptions extends SandboxClientOptions {
     }
 
     /**
+     * {@summary KubernetesSandboxClientOptions class ()}
      * Returns an explicit Kubernetes client. When {@code null}, a client is built from {@link
      * #getKubernetesConfig()} or the in-cluster / default kubeconfig chain.
      */

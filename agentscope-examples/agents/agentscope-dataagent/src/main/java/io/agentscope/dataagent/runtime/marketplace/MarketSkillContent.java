@@ -18,6 +18,7 @@ package io.agentscope.dataagent.runtime.marketplace;
 import java.util.Map;
 
 /**
+ * {@summary MarketSkillContent class ()}
  * Full skill payload returned by {@link DataAgentMarketplace#fetch(String)}. {@code markdown} is the
  * SKILL.md body; {@code resources} are sibling files keyed by their workspace-relative path
  * (e.g. {@code "templates/intro.md"} → contents).

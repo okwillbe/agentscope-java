@@ -58,6 +58,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Tools management endpoints for an agent. Surfaces three layers: (Tools management endpoints for an agent. Surfaces three layers:)}
  * Tools management endpoints for an agent. Surfaces three layers:
  *
  * <ul>
@@ -78,6 +79,7 @@ public class AgentToolsController {
     private static final Logger log = LoggerFactory.getLogger(AgentToolsController.class);
 
     /**
+     * {@summary Tools management endpoints for an agent. Surfaces three layers: (Tools management endpoints for an agent. Surfaces three layers:)}
      * Canonical list of harness built-in tools. Mirrors the registrations performed in
      * {@code HarnessAgent.Builder.build()}. Used both for source attribution on {@code /active}
      * and as the {@code /catalog/builtins} response.
@@ -439,6 +441,7 @@ public class AgentToolsController {
     public record BuiltinToolInfo(String id, String description, String group) {}
 
     /**
+     * {@summary Tools management endpoints for an agent. Surfaces three layers: (Tools management endpoints for an agent. Surfaces three layers:)}
      * Bundled MCP server template loaded from {@code classpath:catalog/mcp-servers.json}. Mirrors
      * {@link McpServerConfig} plus a small bit of UI metadata ({@code id}, {@code name},
      * {@code description}, {@code requiredEnv}, {@code docsUrl}).
@@ -462,6 +465,7 @@ public class AgentToolsController {
     private record WorkspaceContext(Path workspace, WorkspaceManager manager) {}
 
     /**
+     * {@summary Tools management endpoints for an agent. Surfaces three layers: (Tools management endpoints for an agent. Surfaces three layers:)}
      * Stub model used while building the transient introspection agent. {@code stream()} is never
      * invoked — we only need {@link io.agentscope.core.tool.Toolkit#getToolSchemas()}.
      */

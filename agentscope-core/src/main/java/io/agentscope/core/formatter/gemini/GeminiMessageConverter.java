@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.gemini;
 
+/** {@summary GeminiMessageConverter (GeminiMessageConverter)} */
 import com.google.genai.types.Content;
 import com.google.genai.types.FunctionCall;
 import com.google.genai.types.FunctionResponse;
@@ -309,7 +310,7 @@ public class GeminiMessageConverter {
     /**
      * Save base64 data to a temporary file.
      *
-     * <p>The file extension is extracted from the MIME type (e.g., "audio/wav" → ".wav").
+     * <p>The file extension is extracted from the MIME type (e.g., "audio/wav" 鈫?".wav").
      * The file is created with prefix "agentscope_" and will not be automatically deleted.
      *
      * @param mediaType  The MIME type (e.g., "image/png", "audio/wav")
@@ -319,7 +320,7 @@ public class GeminiMessageConverter {
      */
     private String saveBase64DataToTempFile(String mediaType, String base64Data)
             throws IOException {
-        // Extract extension from MIME type (e.g., "audio/wav" → ".wav")
+        // Extract extension from MIME type (e.g., "audio/wav" 鈫?".wav")
         String extension = "." + (mediaType.contains("/") ? mediaType.split("/")[1] : mediaType);
 
         // Create temp file with extension

@@ -55,6 +55,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every)}
  * Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every
  * entrypoint is gated by {@link AgentAccessGuard} so cross-user access fails with 404 and all
  * workspace I/O goes through {@link HarnessAgent#workspaceFor(String, String)} so writes land in
@@ -83,6 +84,7 @@ public class AgentToolsController {
     private static final Logger log = LoggerFactory.getLogger(AgentToolsController.class);
 
     /**
+     * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every)}
      * Canonical list of harness built-in tools. Mirrors registrations performed in
      * {@code HarnessAgent.Builder.build()}; used for source attribution on {@code /active} and as
      * the {@code /catalog/builtins} response.
@@ -383,6 +385,7 @@ public class AgentToolsController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every)}
      * Returns a {@link WorkspaceManager} view of the running agent's filesystem. {@code tools.json}
      * lives on the shared local-disk layer (it is part of the agent's static configuration), so the
      * ctx-user is set to the agent's owner for user-custom agents and to the caller for globals —
@@ -432,6 +435,7 @@ public class AgentToolsController {
     public record BuiltinToolInfo(String id, String description, String group) {}
 
     /**
+     * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Every)}
      * Bundled MCP server template loaded from {@code classpath:catalog/mcp-servers.json}. Mirrors
      * {@link McpServerConfig} plus a small bit of UI metadata.
      */

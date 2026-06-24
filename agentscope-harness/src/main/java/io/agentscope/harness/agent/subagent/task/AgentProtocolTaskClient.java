@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent.task;
 
+/** {@summary AgentProtocolTaskClient (AgentProtocolTaskClient)} */
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
@@ -102,7 +103,7 @@ public final class AgentProtocolTaskClient {
     }
 
     /**
-     * {@code GET /tasks/{taskId}/wait?timeout_seconds=<n>} — blocks until the server completes
+     * {@code GET /tasks/{taskId}/wait?timeout_seconds=<n>} ...blocks until the server completes
      * the task. The HTTP read timeout is set to {@code timeoutSeconds + 60} seconds to give the
      * server time to respond.
      */

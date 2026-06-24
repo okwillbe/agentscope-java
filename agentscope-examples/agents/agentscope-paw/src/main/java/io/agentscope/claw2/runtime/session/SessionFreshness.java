@@ -16,6 +16,7 @@
 package io.agentscope.claw2.runtime.session;
 
 /**
+ * {@summary SessionFreshness class ()}
  * Result of evaluating a session's freshness against a {@link SessionResetPolicy}.
  *
  * @param fresh true if the session is still valid for reuse; false if it should be rolled over

@@ -30,6 +30,7 @@ import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 import org.springframework.boot.actuate.endpoint.annotation.Selector;
 
 /**
+ * {@summary AgentscopePermissionsEndpoint class ()}
  * {@code GET /actuator/agentscope-permissions}: enumerate the permission posture of every
  * registered {@link ReActAgent}.
  *

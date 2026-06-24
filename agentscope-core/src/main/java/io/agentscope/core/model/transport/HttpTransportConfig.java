@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary HttpTransportConfig (HttpTransportConfig)} */
 import java.time.Duration;
 
 /**

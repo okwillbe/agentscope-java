@@ -23,6 +23,7 @@ import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
 
 /**
+ * {@summary Constructs a new QuartzScheduleAgentTask. (Constructs a new QuartzScheduleAgentTask.)}
  * Implementation of {@link io.agentscope.extensions.scheduler.ScheduleAgentTask} for Quartz.
  *
  * <p>This class wraps the Quartz {@link JobKey} and provides access to the underlying
@@ -34,6 +35,7 @@ class QuartzScheduleAgentTask extends BaseScheduleAgentTask {
     private final Scheduler quartzScheduler;
 
     /**
+     * {@summary Constructs a new QuartzScheduleAgentTask. (Constructs a new QuartzScheduleAgentTask.)}
      * Constructs a new QuartzScheduleAgentTask.
      *
      * @param agentConfig    The agent configuration
@@ -54,6 +56,7 @@ class QuartzScheduleAgentTask extends BaseScheduleAgentTask {
     }
 
     /**
+     * {@summary Constructs a new QuartzScheduleAgentTask. (Constructs a new QuartzScheduleAgentTask.)}
      * Get the Quartz JobKey associated with this task.
      *
      * @return The JobKey for this task
@@ -63,6 +66,7 @@ class QuartzScheduleAgentTask extends BaseScheduleAgentTask {
     }
 
     /**
+     * {@summary Constructs a new QuartzScheduleAgentTask. (Constructs a new QuartzScheduleAgentTask.)}
      * Pause the Quartz job associated with this task.
      */
     void pause() {
@@ -74,6 +78,7 @@ class QuartzScheduleAgentTask extends BaseScheduleAgentTask {
     }
 
     /**
+     * {@summary Constructs a new QuartzScheduleAgentTask. (Constructs a new QuartzScheduleAgentTask.)}
      * Resume the Quartz job associated with this task.
      */
     void resume() {

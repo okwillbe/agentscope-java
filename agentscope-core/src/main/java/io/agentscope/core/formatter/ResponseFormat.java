@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter;
 
+/** {@summary ResponseFormat (ResponseFormat)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.formatter.openai.dto.JsonSchema;

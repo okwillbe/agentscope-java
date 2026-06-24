@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary MsgRole (MsgRole)} */
+
 /**
  * Defines the role of a message participant in agent conversations.
  *

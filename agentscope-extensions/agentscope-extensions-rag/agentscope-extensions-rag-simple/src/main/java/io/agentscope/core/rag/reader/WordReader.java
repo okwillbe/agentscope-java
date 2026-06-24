@@ -44,6 +44,7 @@ import org.apache.poi.xwpf.usermodel.XWPFTableRow;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
  * Word document reader that extracts text, tables, and images from Word files.
  *
  * <p>This reader supports comprehensive extraction of content from Word documents (.docx),
@@ -72,6 +73,7 @@ public class WordReader extends AbstractChunkingReader {
     private final TableFormat tableFormat;
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Creates a new WordReader with full configuration.
      *
      * @param chunkSize the target size for each chunk
@@ -99,6 +101,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Creates a new WordReader with default settings.
      *
      * <p>Defaults:
@@ -190,6 +193,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Extracts content blocks (text, tables, images) from a Word document.
      *
      * <p>This method processes the document sequentially and determines when to merge
@@ -279,6 +283,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Extracts text from a paragraph.
      *
      * <p>This implementation uses the standard POI API to extract text.
@@ -311,6 +316,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Extracts table data as a 2D list of strings.
      *
      * @param table the table to extract
@@ -344,6 +350,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Converts table data to Markdown format.
      *
      * @param tableData the 2D table data
@@ -383,6 +390,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Converts table data to JSON format.
      *
      * @param tableData the 2D table data
@@ -417,6 +425,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Escapes special characters for JSON strings.
      *
      * @param str the string to escape
@@ -430,6 +439,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Extracts images from a paragraph as Base64-encoded ImageBlocks.
      *
      * @param para the paragraph to extract images from
@@ -474,6 +484,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Converts Apache POI picture type to media type string.
      *
      * @param pictureType the POI picture type constant
@@ -499,6 +510,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Checks if image extraction is enabled.
      *
      * @return true if images are extracted
@@ -508,6 +520,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Checks if tables are separated into individual chunks.
      *
      * @return true if tables are separated
@@ -517,6 +530,7 @@ public class WordReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Word document reader that extracts text, tables, and images from Word files. (Word document reader that extracts text, tables, and images from Word files.)}
      * Gets the table format.
      *
      * @return the table format (MARKDOWN or JSON)

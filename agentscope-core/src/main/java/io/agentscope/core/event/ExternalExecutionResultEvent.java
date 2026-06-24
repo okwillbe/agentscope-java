@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary ExternalExecutionResultEvent (ExternalExecutionResultEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.message.ToolResultBlock;

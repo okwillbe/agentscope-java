@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary Tool (Tool)} */
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

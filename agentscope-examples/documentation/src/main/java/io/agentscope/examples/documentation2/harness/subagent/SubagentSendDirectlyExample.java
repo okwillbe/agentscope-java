@@ -28,6 +28,7 @@ import io.agentscope.harness.agent.gateway.channel.chatui.SendOptions;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * {@summary Runs the streaming + subagent example. (Runs the streaming + subagent example.)}
  * Streaming events via {@code sendStream()} and talking to
  * exposed subagents via {@link SubagentExposedEvent}.
  *
@@ -50,6 +51,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public class SubagentSendDirectlyExample {
 
     /**
+     * {@summary Runs the streaming + subagent example. (Runs the streaming + subagent example.)}
      * Runs the streaming + subagent example.
      *
      * @param args command-line arguments (ignored)

@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Agent registry service. (Agent registry service.)}
  * Agent registry service.
  *
  * <p>Do Register operation when A2A server is ready.
@@ -39,6 +40,7 @@ public class AgentRegistryService {
     }
 
     /**
+     * {@summary Agent registry service. (Agent registry service.)}
      * Traversal all agent registries and do register operation.
      *
      * @param agentCard             agent card to be registered

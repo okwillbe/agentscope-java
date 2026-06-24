@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.runtime;
 
+/** {@summary SkillPromptBuilder (SkillPromptBuilder)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.SkillFilter;
 import java.util.Collection;
@@ -87,7 +88,7 @@ public final class SkillPromptBuilder {
             2. List its files:    ls <files-root>/
             3. Run scripts:       python3 <files-root>/scripts/<script-name>
             4. Always use absolute paths derived from <files-root>; never invent paths
-            5. If a script exists for the task, run it directly — do not rewrite its logic inline
+            5. If a script exists for the task, run it directly ...do not rewrite its logic inline
             </code_execution>
             """;
 

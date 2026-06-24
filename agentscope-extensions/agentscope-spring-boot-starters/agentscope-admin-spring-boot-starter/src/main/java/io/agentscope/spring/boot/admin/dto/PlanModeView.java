@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.dto;
 import io.agentscope.core.state.PlanModeContextState;
 
 /**
+ * {@summary PlanModeView class ()}
  * Wire view of {@link PlanModeContextState}, plus a server-side flag indicating whether the
  * {@code PlanModeMiddleware} was wired into the agent at build time.
  *

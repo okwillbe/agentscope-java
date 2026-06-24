@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.remote.store;
 
+/** {@summary NamespaceFactory (NamespaceFactory)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.util.List;
 

@@ -20,6 +20,7 @@ import java.nio.file.Paths;
 import java.util.Objects;
 
 /**
+ * {@summary Resolves on-disk paths derived from the platform-wide shared workspace root, without composing (Resolves on-disk paths derived from the platform-wide shared workspace root, without composing)}
  * Resolves on-disk paths derived from the platform-wide shared workspace root, without composing
  * any filesystem instances. Owning the routing/composition responsibility is the harness; this
  * utility only exists so platform features that need a stable side-channel directory (notably the
@@ -35,6 +36,7 @@ public final class SharedWorkspacePaths {
     }
 
     /**
+     * {@summary Resolves on-disk paths derived from the platform-wide shared workspace root, without composing (Resolves on-disk paths derived from the platform-wide shared workspace root, without composing)}
      * Returns the on-disk root directory under which all shared workspace content lives. Callers
      * should append their own segments rather than walking the filesystem directly.
      */
@@ -43,6 +45,7 @@ public final class SharedWorkspacePaths {
     }
 
     /**
+     * {@summary Resolves on-disk paths derived from the platform-wide shared workspace root, without composing (Resolves on-disk paths derived from the platform-wide shared workspace root, without composing)}
      * Resolves the user-supplied workspace path for an agent into an absolute on-disk data root.
      *
      * <ul>

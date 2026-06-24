@@ -22,7 +22,8 @@ import java.util.Map;
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
-/** {@code GET /actuator/agentscope-status}: process-wide health summary. */
+/**
+ * {@summary AgentscopeStatusEndpoint (AgentscopeStatusEndpoint)} {@code GET /actuator/agentscope-status}: process-wide health summary. */
 @Endpoint(id = "agentscope-status")
 public class AgentscopeStatusEndpoint {
 

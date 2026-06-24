@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.exception;
 
 /**
+ * {@summary Exception thrown when vector store operations fail. (Exception thrown when vector store operations fail.)}
  * Exception thrown when vector store operations fail.
  *
  * <p>This exception is used to wrap errors from vector database operations, providing
@@ -24,6 +25,7 @@ package io.agentscope.core.rag.exception;
 public class VectorStoreException extends Exception {
 
     /**
+     * {@summary Exception thrown when vector store operations fail. (Exception thrown when vector store operations fail.)}
      * Creates a new VectorStoreException with the given message.
      *
      * @param message the error message
@@ -33,6 +35,7 @@ public class VectorStoreException extends Exception {
     }
 
     /**
+     * {@summary Exception thrown when vector store operations fail. (Exception thrown when vector store operations fail.)}
      * Creates a new VectorStoreException with the given message and cause.
      *
      * @param message the error message

@@ -89,6 +89,7 @@ public class AgentRunSandboxState extends SandboxState {
     }
 
     /**
+     * {@summary Serializable state for an AgentRun-backed sandbox. (Serializable state for an AgentRun-backed sandbox.)}
      * Returns whether {@link #workspaceRoot} lives on a NAS or OSS persistent mount.
      *
      * <p>When {@code true}, the workspace survives sandbox deletion and the adapter skips tar-based

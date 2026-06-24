@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.properties;
 
 /**
+ * {@summary Generic model selection properties that allow choosing which provider to use. (Generic model selection properties that allow choosing which provider to use.)}
  * Generic model selection properties that allow choosing which provider to use.
  *
  * <p>Example for selecting a provider:
@@ -29,6 +30,7 @@ package io.agentscope.spring.boot.properties;
 public class ModelProperties {
 
     /**
+     * {@summary Generic model selection properties that allow choosing which provider to use. (Generic model selection properties that allow choosing which provider to use.)}
      * Model provider identifier.
      *
      * <p>Supported values:

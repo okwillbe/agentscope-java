@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.Map;
 
 /**
+ * {@summary A single entry in an agent's per-namespace activity log. (A single entry in an agent's per-namespace activity log.)}
  * A single entry in an agent's per-namespace activity log.
  *
  * <p>Stored append-only as one JSON object per line in {@code activity.jsonl} within the agent's

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope;
 
+/** {@summary DashScopeChatFormatter (DashScopeChatFormatter)} */
 import io.agentscope.core.formatter.AbstractBaseFormatter;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeInput;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeMessage;

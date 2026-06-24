@@ -35,6 +35,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Group all admin routes under their own Swagger UI definition. (Group all admin routes under their own Swagger UI definition.)}
  * Wires the admin starter into springdoc-openapi <em>only when springdoc is on the classpath</em>.
  *
  * <p>Consumers opt in by adding {@code springdoc-openapi-starter-webmvc-ui} to their app pom (it
@@ -69,6 +70,7 @@ public class AdminOpenApiConfiguration {
     }
 
     /**
+     * {@summary Group all admin routes under their own Swagger UI definition. (Group all admin routes under their own Swagger UI definition.)}
      * Provide a default top-level {@link OpenAPI} bean if the consumer has not declared one.
      * Tags are seeded from the {@link AdminCommandRegistry} so each category AgentStateStore/Agent/System
      * gets its own labelled group in Swagger UI.

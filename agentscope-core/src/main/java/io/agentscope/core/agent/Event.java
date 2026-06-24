@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary Event (Event)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -34,7 +35,7 @@ import io.agentscope.core.message.Msg;
  *         switch (event.getType()) {
  *             case REASONING -> {
  *                 if (event.isLast()) {
- *                     System.out.println("✓ Reasoning complete");
+ *                     System.out.println("鉁?Reasoning complete");
  *                 } else {
  *                     System.out.print("...");  // Progress indicator
  *                 }
@@ -71,7 +72,7 @@ public class Event {
     private final EventSource source;
 
     /**
-     * Creates a new event (top-level agent — no source).
+     * Creates a new event (top-level agent 鈥?no source).
      *
      * @param type The event type (REASONING, TOOL_RESULT, etc.)
      * @param message The message content
@@ -152,7 +153,7 @@ public class Event {
      * <pre>
      * Event(type=REASONING, msg(id="abc", content=[...]), isLast=false)
      * Event(type=REASONING, msg(id="abc", content=[...]), isLast=false)
-     * Event(type=REASONING, msg(id="abc", content=[...]), isLast=true)  ← Final
+     * Event(type=REASONING, msg(id="abc", content=[...]), isLast=true)  鈫?Final
      * </pre>
      *
      * <p><b>Non-streaming behavior:</b>

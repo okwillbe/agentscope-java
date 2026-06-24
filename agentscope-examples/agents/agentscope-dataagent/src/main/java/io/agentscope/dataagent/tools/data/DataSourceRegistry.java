@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary Lists all configured data sources. (Lists all configured data sources.)}
  * SPI for the admin-curated set of {@link DataSource} descriptors a DataAgent deployment exposes.
  * Implementations live behind a Spring {@code @Bean} so operators can swap the in-memory stub for
  * a JPA-, Nacos-, or service-discovery-backed implementation without changing the toolkit code.

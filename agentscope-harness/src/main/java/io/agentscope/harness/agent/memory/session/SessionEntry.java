@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.session;
 
+/** {@summary SessionEntry (SessionEntry)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,9 +32,9 @@ import java.util.UUID;
  *
  * <p>Entry types:
  * <ul>
- *   <li>{@link MessageEntry} — wraps a single LLM message (user/assistant/tool/system)</li>
- *   <li>{@link CompactionEntry} — marks a compaction event (non-destructive)</li>
- *   <li>{@link SummaryEntry} — holds a compaction summary</li>
+ *   <li>{@link MessageEntry} ...wraps a single LLM message (user/assistant/tool/system)</li>
+ *   <li>{@link CompactionEntry} ...marks a compaction event (non-destructive)</li>
+ *   <li>{@link SummaryEntry} ...holds a compaction summary</li>
  * </ul>
  */
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
@@ -109,8 +110,7 @@ public abstract sealed class SessionEntry
     }
 
     /**
-     * Non-destructive compaction marker. Records which entry is the first kept entry —
-     * all entries before {@code firstKeptEntryId} are considered compacted (not visible
+     * Non-destructive compaction marker. Records which entry is the first kept entry ...     * all entries before {@code firstKeptEntryId} are considered compacted (not visible
      * to the LLM) but remain in the file for full history replay.
      */
     public static final class CompactionEntry extends SessionEntry {

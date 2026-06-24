@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.rag;
 
+/** {@summary GenericRAGHook (GenericRAGHook)} */
 import io.agentscope.core.hook.Hook;
 import io.agentscope.core.hook.HookEvent;
 import io.agentscope.core.hook.PreCallEvent;

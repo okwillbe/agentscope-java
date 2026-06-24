@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Provider-specific configuration for a single WeCom (企业微信) channel instance, sourced from the}
  * Provider-specific configuration for a single WeCom (企业微信) channel instance, sourced from the
  * {@code properties} block of {@code channels.<id>} in {@code agentscope.json}.
  *

@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-/** Represents a tool call result sent to the model or a built-in tool call outcome and details. */
+/** {@summary Represents a tool call result sent to the model or a built-in tool call outcome and details. (Represents a tool call result sent to the model or a built-in tool call outcome and details.)} Represents a tool call result sent to the model or a built-in tool call outcome and details. */
 @JsonClassDescription("Tool call response part")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ToolCallResponsePart implements MessagePart {

@@ -20,6 +20,7 @@ import io.agentscope.dataagent.web.share.AgentShareGrant;
 import java.util.List;
 
 /**
+ * {@summary API representation of an agent definition visible to the current user. (API representation of an agent definition visible to the current user.)}
  * API representation of an agent definition visible to the current user.
  *
  * <p>Two scopes exist:

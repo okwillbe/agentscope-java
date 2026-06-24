@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Response model for Dify knowledge base retrieval API. (Response model for Dify knowledge base retrieval API.)}
  * Response model for Dify knowledge base retrieval API.
  *
  * <p>This class maps the JSON response from Dify's retrieve endpoint:
@@ -64,6 +65,7 @@ public class DifyResponse {
     }
 
     /**
+     * {@summary Response model for Dify knowledge base retrieval API. (Response model for Dify knowledge base retrieval API.)}
      * Query information from the response.
      */
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -80,6 +82,7 @@ public class DifyResponse {
     }
 
     /**
+     * {@summary Response model for Dify knowledge base retrieval API. (Response model for Dify knowledge base retrieval API.)}
      * A single retrieval record containing segment and score.
      */
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -105,6 +108,7 @@ public class DifyResponse {
     }
 
     /**
+     * {@summary Response model for Dify knowledge base retrieval API. (Response model for Dify knowledge base retrieval API.)}
      * Segment information from a retrieved document chunk.
      */
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -341,6 +345,7 @@ public class DifyResponse {
     }
 
     /**
+     * {@summary Response model for Dify knowledge base retrieval API. (Response model for Dify knowledge base retrieval API.)}
      * Document information nested within a segment.
      */
     @JsonIgnoreProperties(ignoreUnknown = true)

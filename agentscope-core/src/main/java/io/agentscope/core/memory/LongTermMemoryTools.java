@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.memory;
 
+/** {@summary LongTermMemoryTools (LongTermMemoryTools)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.MsgRole;
 import io.agentscope.core.message.TextBlock;

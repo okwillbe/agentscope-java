@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.spec;
 
+/** {@summary SandboxFilesystemSpec (SandboxFilesystemSpec)} */
 import io.agentscope.harness.agent.IsolationScope;
 import io.agentscope.harness.agent.sandbox.SandboxClient;
 import io.agentscope.harness.agent.sandbox.SandboxClientOptions;

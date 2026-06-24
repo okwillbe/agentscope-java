@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary AgentScopeJvmShutdownHook (AgentScopeJvmShutdownHook)} */
 import io.agentscope.core.model.transport.HttpTransportFactory;
 import java.time.Duration;
 import java.util.concurrent.atomic.AtomicBoolean;

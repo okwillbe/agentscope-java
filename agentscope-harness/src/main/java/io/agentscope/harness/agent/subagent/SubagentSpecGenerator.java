@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent;
 
+/** {@summary SubagentSpecGenerator (SubagentSpecGenerator)} */
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.MsgRole;
@@ -68,11 +69,11 @@ public final class SubagentSpecGenerator {
             ---
 
             <System-prompt body in Markdown: describe the agent's role, capabilities, output
-             format, and constraints. Keep the body focused — this becomes the subagent's sysPrompt.>
+             format, and constraints. Keep the body focused ...this becomes the subagent's sysPrompt.>
 
             Output rules:
             - Return ONLY the markdown document. No prose, no code fences, no commentary.
-            - Do NOT include a `name:` field — the caller derives the name from the filename.
+            - Do NOT include a `name:` field ...the caller derives the name from the filename.
             - The description must be at most 200 characters.
             - The body must not be empty when no workspace.path is specified.
             """;

@@ -22,6 +22,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.LongAdder;
 
 /**
+ * {@summary Thread-safe accumulator for token usage counters, sliced by agent name and by model name. (Thread-safe accumulator for token usage counters, sliced by agent name and by model name.)}
  * Thread-safe accumulator for token usage counters, sliced by agent name and by model name.
  *
  * <p>Uses {@link LongAdder} so high-concurrency tool/model call paths don't contend on a single

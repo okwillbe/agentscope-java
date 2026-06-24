@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.admin.command;
 
 /**
+ * {@summary Which physical surface a command lives on. (Which physical surface a command lives on.)}
  * Which physical surface a command lives on.
  *
  * <ul>

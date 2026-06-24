@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.gemini;
 
+/** {@summary GeminiMultiAgentFormatter (GeminiMultiAgentFormatter)} */
 import com.google.genai.types.Content;
 import com.google.genai.types.GenerateContentConfig;
 import com.google.genai.types.GenerateContentResponse;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.workspace;
 
+/** {@summary WorkspaceIndex (WorkspaceIndex)} */
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -37,7 +38,7 @@ import org.slf4j.LoggerFactory;
  * {@code agents/&#42;/sessions/&#42;&#42;} and {@code memory/&#42;&#42;}. The index is used to speed up
  * {@code ls / glob / exists / grep} in remote-backed workspace mode by avoiding full-store
  * key scans when enumerating paths under a prefix. File <em>content</em> is never stored in
- * the index — {@code grep} still fetches each candidate file from the remote store
+ * the index ...{@code grep} still fetches each candidate file from the remote store
  * authoritatively.
  *
  * <p><strong>Consistency model:</strong> the index is best-effort and may lag remote changes.
@@ -73,7 +74,7 @@ public class WorkspaceIndex implements AutoCloseable {
     /**
      * Opens (or creates) the workspace index for the given workspace root.
      *
-     * <p>Returns {@code null} if the index cannot be initialized — callers should treat a
+     * <p>Returns {@code null} if the index cannot be initialized ...callers should treat a
      * {@code null} index as "unavailable" and fall back to remote scan.
      *
      * @param workspaceRoot absolute path to the workspace root directory

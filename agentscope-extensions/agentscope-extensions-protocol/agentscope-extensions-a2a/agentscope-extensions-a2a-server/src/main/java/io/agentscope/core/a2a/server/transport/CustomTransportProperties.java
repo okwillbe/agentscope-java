@@ -16,10 +16,12 @@
 package io.agentscope.core.a2a.server.transport;
 
 /**
+ * {@summary Interface for custom transport properties that can be converted to standard TransportProperties. (Interface for custom transport properties that can be converted to standard TransportProperties.)}
  * Interface for custom transport properties that can be converted to standard TransportProperties.
  */
 public interface CustomTransportProperties {
     /**
+     * {@summary Interface for custom transport properties that can be converted to standard TransportProperties. (Interface for custom transport properties that can be converted to standard TransportProperties.)}
      * Converts this custom properties object to standard TransportProperties.
      *
      * @return the TransportProperties representation of this custom properties.
@@ -27,12 +29,14 @@ public interface CustomTransportProperties {
     TransportProperties toTransportProperties();
 
     /**
+     * {@summary Interface for custom transport properties that can be converted to standard TransportProperties. (Interface for custom transport properties that can be converted to standard TransportProperties.)}
      * Sets the deployment properties.
      * @param deploymentProperties the deployment properties.
      */
     void setDeploymentProperties(DeploymentProperties deploymentProperties);
 
     /**
+     * {@summary Interface for custom transport properties that can be converted to standard TransportProperties. (Interface for custom transport properties that can be converted to standard TransportProperties.)}
      * Whether this transport is enabled.
      * @return true if enabled, false otherwise.
      */

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.sandbox;
 
+/** {@summary BaseSandboxFilesystem (BaseSandboxFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
 import io.agentscope.harness.agent.filesystem.model.EditResult;

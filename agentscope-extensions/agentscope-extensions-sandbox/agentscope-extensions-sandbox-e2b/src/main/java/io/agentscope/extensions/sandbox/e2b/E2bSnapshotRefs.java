@@ -20,6 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 /**
+ * {@summary Cross-language marker for E2B native snapshot references, aligned with openai-agents-python (Cross-language marker for E2B native snapshot references, aligned with openai-agents-python)}
  * Cross-language marker for E2B native snapshot references, aligned with openai-agents-python
  * {@code E2B_SANDBOX_SNAPSHOT_V1}.
  */

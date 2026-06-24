@@ -31,6 +31,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 /**
+ * {@summary SessionExample - Demonstrates persistent conversation sessions. (SessionExample - Demonstrates persistent conversation sessions.)}
  * SessionExample - Demonstrates persistent conversation sessions.
  *
  * <p>Migration notes (from documentation/quickstart):
@@ -51,6 +52,7 @@ public class StateExample {
             new BufferedReader(new InputStreamReader(System.in));
 
     /**
+     * {@summary SessionExample - Demonstrates persistent conversation sessions. (SessionExample - Demonstrates persistent conversation sessions.)}
      * Runs the session example.
      *
      * @param args command-line arguments (ignored)

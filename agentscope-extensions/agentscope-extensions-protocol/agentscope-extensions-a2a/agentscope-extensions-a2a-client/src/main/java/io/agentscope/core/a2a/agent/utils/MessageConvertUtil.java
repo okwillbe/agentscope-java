@@ -33,6 +33,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary MessageConvertUtil class ()}
  * Message Converter between Agentscope {@link Msg} and A2A {@link Message} or {@link Artifact}.
  */
 public class MessageConvertUtil {
@@ -43,6 +44,7 @@ public class MessageConvertUtil {
             new ContentBlockParserRouter();
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a single {@link Artifact} to {@link Msg}.
      *
      * @param artifact the artifact to convert
@@ -54,6 +56,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a list of {@link Artifact} to {@link Msg}.
      *
      * @param artifacts the list of artifacts to convert
@@ -79,6 +82,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a single {@link Message} to {@link Msg}.
      *
      * @param message   the message to convert
@@ -96,6 +100,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a list of {@link Msg} to {@link Message}.
      *
      * @param msgs the list of Msg to convert
@@ -144,6 +149,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Build metadata with content block type in {@link Part}.
      *
      * @param type the content block type, see {@link ContentBlock}.

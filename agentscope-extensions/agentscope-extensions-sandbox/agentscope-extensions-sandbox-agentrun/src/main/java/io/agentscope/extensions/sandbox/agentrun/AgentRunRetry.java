@@ -19,7 +19,8 @@ import io.agentscope.harness.agent.sandbox.SandboxException;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 
-/** Simple bounded retry for transient AgentRun HTTP failures (mirrors {@code DaytonaRetry}). */
+/**
+ * {@summary AgentRunRetry (AgentRunRetry)} Simple bounded retry for transient AgentRun HTTP failures (mirrors {@code DaytonaRetry}). */
 final class AgentRunRetry {
 
     private AgentRunRetry() {}

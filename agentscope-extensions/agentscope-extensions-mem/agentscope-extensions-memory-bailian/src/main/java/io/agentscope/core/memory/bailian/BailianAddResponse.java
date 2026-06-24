@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
  * Response object from Bailian Memory API's add memory operation.
  *
  * <p>This response is returned from the POST /api/v2/apps/memory/add endpoint
@@ -43,6 +44,7 @@ public class BailianAddResponse {
     public BailianAddResponse() {}
 
     /**
+     * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
      * Gets the request ID.
      *
      * @return the request ID
@@ -52,6 +54,7 @@ public class BailianAddResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
      * Sets the request ID.
      *
      * @param requestId the request ID
@@ -61,6 +64,7 @@ public class BailianAddResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
      * Gets the memory nodes.
      *
      * @return the memory nodes list
@@ -70,6 +74,7 @@ public class BailianAddResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
      * Sets the memory nodes.
      *
      * @param memoryNodes the memory nodes list
@@ -79,6 +84,7 @@ public class BailianAddResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
      * Represents a memory node in the response.
      */
     public static class BailianMemoryNode {
@@ -101,6 +107,7 @@ public class BailianAddResponse {
         public BailianMemoryNode() {}
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Gets the memory node ID.
          *
          * @return the memory node ID
@@ -110,6 +117,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Sets the memory node ID.
          *
          * @param memoryNodeId the memory node ID
@@ -119,6 +127,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Gets the content.
          *
          * @return the content
@@ -128,6 +137,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Sets the content.
          *
          * @param content the content
@@ -137,6 +147,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Gets the event type.
          *
          * @return the event type
@@ -146,6 +157,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Sets the event type.
          *
          * @param event the event type
@@ -155,6 +167,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Gets the old content.
          *
          * @return the old content
@@ -164,6 +177,7 @@ public class BailianAddResponse {
         }
 
         /**
+         * {@summary Response object from Bailian Memory API's add memory operation. (Response object from Bailian Memory API's add memory operation.)}
          * Sets the old content.
          *
          * @param oldContent the old content

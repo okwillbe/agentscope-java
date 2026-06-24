@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.subagent;
 
+/** {@summary SubAgentConfig (SubAgentConfig)} */
 import io.agentscope.core.agent.StreamOptions;
 import io.agentscope.core.state.AgentStateStore;
 import io.agentscope.core.state.InMemoryAgentStateStore;
@@ -38,7 +39,7 @@ import io.agentscope.core.state.JsonFileAgentStateStore;
  * <p><b>Default Behavior:</b>
  *
  * <ul>
- *   <li>Tool name: derived from agent name (e.g., "ResearchAgent" → "call_researchagent")
+ *   <li>Tool name: derived from agent name (e.g., "ResearchAgent" 鈫?"call_researchagent")
  *   <li>Description: uses agent's description, or generates a default
  *   <li>AgentStateStore: uses {@link InMemoryAgentStateStore} for conversation state management
  *   <li>Event forwarding: enabled by default

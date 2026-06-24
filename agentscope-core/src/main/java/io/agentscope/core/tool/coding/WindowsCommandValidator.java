@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.coding;
 
+/** {@summary WindowsCommandValidator (WindowsCommandValidator)} */
 import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,10 +26,10 @@ import org.slf4j.LoggerFactory;
  * <p><b>Validation Order:</b>
  * <ol>
  *   <li>Extract executable from command (remove quotes, handle paths with spaces, remove path, remove extensions, convert to lowercase)</li>
- *   <li>If no whitelist configured → allow (backward compatible)</li>
- *   <li>Check for multiple command separators → reject if found</li>
- *   <li>Check relative path safety (commands starting with {@code .\} or {@code ./}) → reject if escapes current directory</li>
- *   <li>Check whitelist (case-insensitive) → reject if not in whitelist</li>
+ *   <li>If no whitelist configured 鈫?allow (backward compatible)</li>
+ *   <li>Check for multiple command separators 鈫?reject if found</li>
+ *   <li>Check relative path safety (commands starting with {@code .\} or {@code ./}) 鈫?reject if escapes current directory</li>
+ *   <li>Check whitelist (case-insensitive) 鈫?reject if not in whitelist</li>
  * </ol>
  *
  * <p><b>Multiple Command Detection:</b> Detects Windows-specific separators:

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary Gateway (Gateway)} */
 import io.agentscope.core.event.AgentEvent;
 import io.agentscope.core.message.Msg;
 import io.agentscope.harness.agent.HarnessAgent;

@@ -40,6 +40,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls (AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls)}
  * AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls
  * the configured {@link Model} once with a low-temperature prompt and parses the JSON response into
  * an {@link AgentDraft}.
@@ -90,6 +91,7 @@ public class AgentDraftService {
     }
 
     /**
+     * {@summary AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls (AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls)}
      * Drafts an agent configuration from a free-text description. Errors:
      *
      * <ul>
@@ -123,6 +125,7 @@ public class AgentDraftService {
     }
 
     /**
+     * {@summary AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls (AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls)}
      * Subscribes to the model's streaming response and concatenates every emitted text block into a
      * single string. Blocks the caller until the stream completes or the timeout elapses.
      */
@@ -163,6 +166,7 @@ public class AgentDraftService {
     }
 
     /**
+     * {@summary AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls (AI-assisted drafting of a starter agent configuration. Given a one-sentence description, calls)}
      * Lenient JSON parsing: strips ```json fences and any leading/trailing prose, then deserializes
      * into {@link AgentDraft}. Throws 502 with the raw output on failure.
      */

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary DynamicSubagentsMiddleware (DynamicSubagentsMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -54,12 +55,12 @@ import reactor.core.publisher.Flux;
  * override semantics):
  *
  * <ol>
- *   <li><em>Layer 1 (override)</em> — {@code filesystem.glob("*.md", "subagents")} + per-file
+ *   <li><em>Layer 1 (override)</em> ...{@code filesystem.glob("*.md", "subagents")} + per-file
  *       {@code filesystem.read}. The backend's {@code NamespaceFactory} is applied transparently
  *       so each user sees their own slice of the store.
- *   <li><em>Layer 2 (base)</em> — {@code AgentSpecLoader.loadFromDirectory} reads the local
+ *   <li><em>Layer 2 (base)</em> ...{@code AgentSpecLoader.loadFromDirectory} reads the local
  *       workspace {@code subagents/} directory directly.
- *   <li><em>Merge</em> — same-name entries from Layer 1 override Layer 2; programmatic
+ *   <li><em>Merge</em> ...same-name entries from Layer 1 override Layer 2; programmatic
  *       (builder-registered) entries are preserved as the static prefix and same-name dynamic
  *       declarations override them too.
  * </ol>

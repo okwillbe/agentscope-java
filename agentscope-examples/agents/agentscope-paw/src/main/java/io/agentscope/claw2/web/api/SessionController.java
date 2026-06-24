@@ -51,6 +51,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
  * AgentStateStore management endpoints, scoped to a specific agent.
  *
  * <ul>
@@ -184,6 +185,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Computes the gateway routing key the chat-ui channel uses for {@code agentId}. Mirrors
      * {@code ChatController#resolveGateKey} so this controller can authorize against the same
      * key the gateway uses to register the session.
@@ -209,6 +211,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Authorizes a session against the URL agent. {@link SessionEntry#agentId()} holds the
      * HarnessAgent's internal UUID (not the gateway/catalog id), so we cannot match by agent id
      * directly. Instead we compare the session's {@code gateKey} (which is deterministically
@@ -245,6 +248,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Reads the chat content for a session. The actual transcript lives at the per-agent
      * workspace under {@code agents/<delegate-name>/sessions/<sessionId>.log.jsonl} (written by
      * the harness {@code MemoryFlushHook}/{@code SessionTree}). The {@link SessionAgentManager}

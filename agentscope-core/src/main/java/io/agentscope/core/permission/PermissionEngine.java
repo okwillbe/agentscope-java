@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.permission;
 
+/** {@summary PermissionEngine (PermissionEngine)} */
 import io.agentscope.core.tool.ToolBase;
 import java.util.ArrayList;
 import java.util.Collections;

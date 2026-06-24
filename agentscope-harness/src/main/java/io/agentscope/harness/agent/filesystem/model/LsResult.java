@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary LsResult (LsResult)} */
 import java.util.List;
 
 /**

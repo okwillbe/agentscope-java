@@ -16,6 +16,7 @@
 package io.agentscope.builder.runtime.session;
 
 /**
+ * {@summary Nested / inner hops that must not hold the parent lane slot (avoids deadlock in layered}
  * Scheduling lane for subagent / main work, aligned with OpenClaw gateway {@code CommandLane}
  * semantics.
  *
@@ -29,12 +30,14 @@ public enum CommandLane {
     MAIN,
 
     /**
+     * {@summary Nested / inner hops that must not hold the parent lane slot (avoids deadlock in layered}
      * Background subagent runs ({@code sessions_spawn} child work). Shares a process-wide semaphore
      * so many subagents can progress without unbounded parallelism.
      */
     SUBAGENT,
 
     /**
+     * {@summary Nested / inner hops that must not hold the parent lane slot (avoids deadlock in layered}
      * Nested / inner hops that must not hold the parent lane slot (avoids deadlock in layered
      * scheduling). Used sparingly for follow-on work that must not count against the subagent pool.
      */

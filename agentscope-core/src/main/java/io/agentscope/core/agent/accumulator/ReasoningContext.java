@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.accumulator;
 
+/** {@summary ReasoningContext (ReasoningContext)} */
 import io.agentscope.core.message.AssistantMessage;
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.MessageMetadataKeys;

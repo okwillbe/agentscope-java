@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.dify;
 
 /**
+ * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
  * Metadata filter condition for Dify knowledge base retrieval.
  *
  * <p>Each condition specifies a filter on document metadata fields.
@@ -42,6 +43,7 @@ public class MetadataFilterCondition {
     }
 
     /**
+     * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
      * Gets the metadata field name.
      *
      * @return the field name
@@ -51,6 +53,7 @@ public class MetadataFilterCondition {
     }
 
     /**
+     * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
      * Gets the comparison operator.
      *
      * @return the comparison operator (e.g., "equals", "contains", "not_equals")
@@ -60,6 +63,7 @@ public class MetadataFilterCondition {
     }
 
     /**
+     * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
      * Gets the filter value.
      *
      * @return the value to compare against
@@ -69,6 +73,7 @@ public class MetadataFilterCondition {
     }
 
     /**
+     * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
      * Creates a new builder for MetadataFilterCondition.
      *
      * @return a new Builder instance
@@ -78,6 +83,7 @@ public class MetadataFilterCondition {
     }
 
     /**
+     * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
      * Builder for MetadataFilterCondition.
      */
     public static class Builder {
@@ -88,6 +94,7 @@ public class MetadataFilterCondition {
         private Builder() {}
 
         /**
+         * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
          * Sets the metadata field name.
          *
          * @param name the field name
@@ -99,6 +106,7 @@ public class MetadataFilterCondition {
         }
 
         /**
+         * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
          * Sets the comparison operator.
          *
          * <p>Common operators:
@@ -120,6 +128,7 @@ public class MetadataFilterCondition {
         }
 
         /**
+         * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
          * Sets the filter value.
          *
          * @param value the value to compare against
@@ -131,6 +140,7 @@ public class MetadataFilterCondition {
         }
 
         /**
+         * {@summary Metadata filter condition for Dify knowledge base retrieval. (Metadata filter condition for Dify knowledge base retrieval.)}
          * Builds a new MetadataFilterCondition instance.
          *
          * @return a new MetadataFilterCondition instance

@@ -16,6 +16,7 @@
 
 package io.agentscope.core.agent;
 
+/** {@summary StreamOptions (StreamOptions)} */
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Set;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary ChatResponse (ChatResponse)} */
 import io.agentscope.core.message.ContentBlock;
 import java.util.List;
 import java.util.Map;

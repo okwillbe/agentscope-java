@@ -28,6 +28,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Execution channel for an AgentRun sandbox built on the AgentScope MCP client. (Execution channel for an AgentRun sandbox built on the AgentScope MCP client.)}
  * Execution channel for an AgentRun sandbox built on the AgentScope MCP client.
  *
  * <p>Reuses {@link McpClientBuilder#streamableHttpTransport(String)} with the AgentRun API-key
@@ -224,6 +225,7 @@ final class AgentRunMcpChannel implements AutoCloseable {
     }
 
     /**
+     * {@summary Execution channel for an AgentRun sandbox built on the AgentScope MCP client. (Execution channel for an AgentRun sandbox built on the AgentScope MCP client.)}
      * Parses an AgentRun exec MCP response. AgentRun returns either a JSON object such as
      * {@code {"exitCode":0,"stdout":"...","stderr":"..."}} or a plain stdout/stderr string. We
      * accept both shapes.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary AgentStartEvent (AgentStartEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

@@ -33,6 +33,7 @@ import java.util.function.Function;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary ModelCallMiddlewareExample - Demonstrates intercepting the model API call via (ModelCallMiddlewareExample - Demonstrates intercepting the model API call via)}
  * ModelCallMiddlewareExample - Demonstrates intercepting the model API call via
  * {@link MiddlewareBase#onModelCall(Agent, RuntimeContext, ModelCallInput, Function)}.
  *
@@ -66,6 +67,7 @@ import reactor.core.publisher.Flux;
 public class ModelCallMiddlewareExample {
 
     /**
+     * {@summary ModelCallMiddlewareExample - Demonstrates intercepting the model API call via (ModelCallMiddlewareExample - Demonstrates intercepting the model API call via)}
      * Runs the model call middleware example.
      *
      * @param args command-line arguments (ignored)
@@ -129,6 +131,7 @@ public class ModelCallMiddlewareExample {
     }
 
     /**
+     * {@summary ModelCallMiddlewareExample - Demonstrates intercepting the model API call via (ModelCallMiddlewareExample - Demonstrates intercepting the model API call via)}
      * Middleware that logs model call metadata and measures latency for every API call.
      */
     public static class AuditingMiddleware implements MiddlewareBase {
@@ -140,6 +143,7 @@ public class ModelCallMiddlewareExample {
         final AtomicLong eventCount = new AtomicLong();
 
         /**
+         * {@summary ModelCallMiddlewareExample - Demonstrates intercepting the model API call via (ModelCallMiddlewareExample - Demonstrates intercepting the model API call via)}
          * Intercepts every model call to log request metadata and measure latency.
          *
          * <p>The {@code next} function must always be called to forward the request.

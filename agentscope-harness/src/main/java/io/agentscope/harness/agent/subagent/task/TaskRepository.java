@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent.task;
 
+/** {@summary TaskRepository (TaskRepository)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.util.Collection;
 import java.util.List;
@@ -91,7 +92,7 @@ public interface TaskRepository {
     boolean cancelTask(RuntimeContext rc, String sessionId, String taskId);
 
     // ------------------------------------------------------------------------
-    // Phase B-3 — push delivery API.
+    // Phase B-3 ...push delivery API.
     //
     // Implementations that persist {@link TaskRecord} should override the three methods below to
     // surface "terminal-but-not-yet-delivered" tasks to the parent agent's reasoning loop. The
@@ -107,7 +108,7 @@ public interface TaskRepository {
      * <p>Implementations should order the result deterministically (typically by completion time
      * ascending) so the parent agent sees deliveries in the order they actually happened.
      *
-     * <p>Default returns an empty list — in-memory repositories do not currently support push.
+     * <p>Default returns an empty list ...in-memory repositories do not currently support push.
      */
     default List<TaskDelivery> findPendingDeliveries(RuntimeContext rc, String sessionId) {
         return List.of();

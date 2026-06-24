@@ -29,6 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Converter for transforming HayStack API responses to AgentScope Document objects. (Converter for transforming HayStack API responses to AgentScope Document objects.)}
  * Converter for transforming HayStack API responses to AgentScope Document objects.
  *
  * <p>This class handles the conversion between HayStack RAG's document format
@@ -44,6 +45,7 @@ public class HayStackDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming HayStack API responses to AgentScope Document objects. (Converter for transforming HayStack API responses to AgentScope Document objects.)}
      * Converts a list of HayStackDocuments to Documents.
      *
      * @param hayStackDocuments the hayStackDocuments from retrieve response
@@ -71,6 +73,7 @@ public class HayStackDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming HayStack API responses to AgentScope Document objects. (Converter for transforming HayStack API responses to AgentScope Document objects.)}
      * Converts a single HayStack chunk to a Document.
      *
      * @param hayStackDocument the HayStackDocument from retrieve response

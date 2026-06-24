@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel.chatui;
 
+/** {@summary OutboundEnvelope (OutboundEnvelope)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.harness.agent.gateway.channel.OutboundAddress;
 import java.util.List;

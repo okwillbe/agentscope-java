@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolkitAware (ToolkitAware)} */
+
 /**
  * Implemented by middleware (or other components) that hold a reference to a {@link Toolkit}.
  *

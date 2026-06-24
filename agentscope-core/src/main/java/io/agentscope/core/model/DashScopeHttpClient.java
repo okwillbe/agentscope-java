@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary DashScopeHttpClient (DashScopeHttpClient)} */
 import com.fasterxml.jackson.core.type.TypeReference;
 import io.agentscope.core.Version;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeParameters;
@@ -323,16 +324,16 @@ public class DashScopeHttpClient {
      *
      * <p>Routing logic:
      * <ul>
-     *   <li>If endpointType is {@link EndpointType#TEXT} → text generation API</li>
-     *   <li>If endpointType is {@link EndpointType#MULTIMODAL} → multimodal API</li>
+     *   <li>If endpointType is {@link EndpointType#TEXT} 鈫?text generation API</li>
+     *   <li>If endpointType is {@link EndpointType#MULTIMODAL} 鈫?multimodal API</li>
      *   <li>If endpointType is {@link EndpointType#AUTO}:
      *     <ul>
-     *       <li>Models starting with "qvq" → multimodal API</li>
-     *       <li>Models containing "-vl" → multimodal API</li>
-     *       <li>Models containing "-asr" → multimodal API</li>
-     *       <li>Models starting with "qwen3.5" → multimodal API</li>
-     *       <li>Models starting with "qwen3.6" → multimodal API</li>
-     *       <li>All other models → text generation API</li>
+     *       <li>Models starting with "qvq" 鈫?multimodal API</li>
+     *       <li>Models containing "-vl" 鈫?multimodal API</li>
+     *       <li>Models containing "-asr" 鈫?multimodal API</li>
+     *       <li>Models starting with "qwen3.5" 鈫?multimodal API</li>
+     *       <li>Models starting with "qwen3.6" 鈫?multimodal API</li>
+     *       <li>All other models 鈫?text generation API</li>
      *     </ul>
      *   </li>
      * </ul>
@@ -378,9 +379,9 @@ public class DashScopeHttpClient {
      *
      * <p>Reverse exclusion rules (models matching the patterns above but treated as non-multimodal):
      * <ul>
-     *   <li>"qwen3.6-max-preview" — text-only preview model.</li>
+     *   <li>"qwen3.6-max-preview" 鈥?text-only preview model.</li>
      *   <li>Models starting with "qwen3.7-max" (e.g., qwen3.7-max, qwen3.7-max-2026-05-20)
-     *       — text-only models that use the text-generation endpoint.</li>
+     *       鈥?text-only models that use the text-generation endpoint.</li>
      * </ul>
      *
      * @param modelName the model name

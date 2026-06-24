@@ -16,6 +16,7 @@
 package io.agentscope.builder.runtime.session;
 
 /**
+ * {@summary SessionView class ()}
  * Public view of a managed session. Returned by {@link SessionAgentManager#list} and {@link
  * SessionAgentManager#viewSession} to expose session information without internal mutable state.
  */

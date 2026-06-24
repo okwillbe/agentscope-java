@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.memory;
 
+/** {@summary StaticLongTermMemoryHook (StaticLongTermMemoryHook)} */
 import static io.agentscope.core.memory.LongTermMemoryTools.wrap;
 
 import io.agentscope.core.hook.Hook;

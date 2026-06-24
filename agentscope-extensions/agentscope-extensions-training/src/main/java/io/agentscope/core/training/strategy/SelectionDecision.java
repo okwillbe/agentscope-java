@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Selection Decision - Selection decision result (Selection Decision - Selection decision result)}
  * Selection Decision - Selection decision result
  *
  * <p>Encapsulates the decision of whether to train, along with related metadata (labels, reason, etc.)
@@ -51,6 +52,7 @@ public class SelectionDecision {
     }
 
     /**
+     * {@summary Selection Decision - Selection decision result (Selection Decision - Selection decision result)}
      * Create a "should train" decision
      */
     public static SelectionDecision accept(String reason) {
@@ -58,6 +60,7 @@ public class SelectionDecision {
     }
 
     /**
+     * {@summary Selection Decision - Selection decision result (Selection Decision - Selection decision result)}
      * Create a "should train" decision with labels
      */
     public static SelectionDecision accept(String reason, String... labels) {
@@ -65,6 +68,7 @@ public class SelectionDecision {
     }
 
     /**
+     * {@summary Selection Decision - Selection decision result (Selection Decision - Selection decision result)}
      * Create a "should train" decision with labels and metadata
      */
     public static SelectionDecision accept(
@@ -73,6 +77,7 @@ public class SelectionDecision {
     }
 
     /**
+     * {@summary Selection Decision - Selection decision result (Selection Decision - Selection decision result)}
      * Create a "should not train" decision
      */
     public static SelectionDecision reject(String reason) {

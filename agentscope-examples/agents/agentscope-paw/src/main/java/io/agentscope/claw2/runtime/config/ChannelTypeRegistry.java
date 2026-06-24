@@ -29,6 +29,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * {@summary Returns an immutable snapshot of registered type ids. (Returns an immutable snapshot of registered type ids.)}
  * Registry of {@link ChannelFactory} implementations keyed by {@code type}. Looked up by
  * {@link io.agentscope.claw2.runtime.ClawBootstrap} when auto-instantiating channels from
  * {@code agentscope.json}.
@@ -56,6 +57,7 @@ public final class ChannelTypeRegistry {
     private ChannelTypeRegistry() {}
 
     /**
+     * {@summary Returns an immutable snapshot of registered type ids. (Returns an immutable snapshot of registered type ids.)}
      * Registers (or replaces) a factory under {@code typeId}. Returns the previously registered
      * factory, if any.
      */

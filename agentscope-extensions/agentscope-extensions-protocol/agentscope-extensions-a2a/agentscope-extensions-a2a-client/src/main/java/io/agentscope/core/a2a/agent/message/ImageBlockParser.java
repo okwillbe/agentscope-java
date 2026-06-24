@@ -20,6 +20,7 @@ import io.a2a.spec.Part;
 import io.agentscope.core.message.ImageBlock;
 
 /**
+ * {@summary ImageBlockParser class ()}
  * Parser for {@link ImageBlock} to {@link io.a2a.spec.FilePart}.
  */
 public class ImageBlockParser extends BaseMediaBlockParser<ImageBlock> {

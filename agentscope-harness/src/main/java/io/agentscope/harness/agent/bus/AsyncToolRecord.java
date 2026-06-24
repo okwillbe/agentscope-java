@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.bus;
 
+/** {@summary AsyncToolRecord (AsyncToolRecord)} */
 import java.time.Instant;
 
 /**

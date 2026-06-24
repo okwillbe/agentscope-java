@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.properties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Root configuration properties for AgentScope Spring Boot starter. (Root configuration properties for AgentScope Spring Boot starter.)}
  * Root configuration properties for AgentScope Spring Boot starter.
  *
  * <p>At a high level, configuration is grouped as:

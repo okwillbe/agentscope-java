@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary GeminiChatModel (GeminiChatModel)} */
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.genai.Client;
 import com.google.genai.ResponseStream;
@@ -589,11 +590,11 @@ public class GeminiChatModel extends ChatModelBase {
             }
 
             if (clientOptions.proxyOptions().isEmpty()) {
-                // clientOptions set but no proxy configured → merge proxy into it
+                // clientOptions set but no proxy configured 鈫?merge proxy into it
                 return clientOptions.toBuilder().proxyOptions(googleProxy).build();
             }
 
-            // Both have proxy settings → clientOptions takes precedence, warn user
+            // Both have proxy settings 鈫?clientOptions takes precedence, warn user
             log.warn(
                     "GeminiChatModel: both proxy() and clientOptions.proxyOptions() are set. "
                             + "clientOptions.proxyOptions() takes precedence, proxy() is ignored.");

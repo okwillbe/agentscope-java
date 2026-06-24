@@ -27,6 +27,7 @@ import io.agentscope.core.tool.Toolkit;
 import java.util.List;
 
 /**
+ * {@summary ToolExecutionContextExample - Demonstrates passing per-call context to tools via (ToolExecutionContextExample - Demonstrates passing per-call context to tools via)}
  * ToolExecutionContextExample - Demonstrates passing per-call context to tools via
  * {@link RuntimeContext}.
  *
@@ -56,6 +57,7 @@ import java.util.List;
 public class ToolExecutionContextExample {
 
     /**
+     * {@summary ToolExecutionContextExample - Demonstrates passing per-call context to tools via (ToolExecutionContextExample - Demonstrates passing per-call context to tools via)}
      * Runs the RuntimeContext injection example.
      *
      * @param args command-line arguments (ignored)
@@ -129,6 +131,7 @@ public class ToolExecutionContextExample {
     }
 
     /**
+     * {@summary ToolExecutionContextExample - Demonstrates passing per-call context to tools via (ToolExecutionContextExample - Demonstrates passing per-call context to tools via)}
      * Per-call user context passed via RuntimeContext.
      *
      * <p>Instances of this class are injected automatically into {@code @Tool} methods
@@ -140,6 +143,7 @@ public class ToolExecutionContextExample {
     public static class PersonalizedTools {
 
         /**
+         * {@summary ToolExecutionContextExample - Demonstrates passing per-call context to tools via (ToolExecutionContextExample - Demonstrates passing per-call context to tools via)}
          * Greets the user by name using the injected {@link UserContext}.
          *
          * <p>The {@code userCtx} parameter has no {@code @ToolParam} annotation — the framework
@@ -160,6 +164,7 @@ public class ToolExecutionContextExample {
         }
 
         /**
+         * {@summary ToolExecutionContextExample - Demonstrates passing per-call context to tools via (ToolExecutionContextExample - Demonstrates passing per-call context to tools via)}
          * Returns the current user's display preferences from the injected {@link UserContext}.
          *
          * @param userCtx injected from RuntimeContext

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary MemoryMaintenanceMiddleware (MemoryMaintenanceMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -58,9 +59,9 @@ import reactor.core.scheduler.Schedulers;
  * <p>The throttle window is tracked per <em>isolation key</em>, which matches the memory data
  * isolation in use:
  * <ul>
- *   <li>{@link IsolationScope#USER} (default) — one window per {@code userId}.</li>
- *   <li>{@link IsolationScope#SESSION} — one window per {@code sessionId}.</li>
- *   <li>{@link IsolationScope#AGENT} / {@link IsolationScope#GLOBAL} — one shared window for
+ *   <li>{@link IsolationScope#USER} (default) ...one window per {@code userId}.</li>
+ *   <li>{@link IsolationScope#SESSION} ...one window per {@code sessionId}.</li>
+ *   <li>{@link IsolationScope#AGENT} / {@link IsolationScope#GLOBAL} ...one shared window for
  *       the whole agent instance (prevents concurrent maintenance races on shared memory files).</li>
  * </ul>
  */

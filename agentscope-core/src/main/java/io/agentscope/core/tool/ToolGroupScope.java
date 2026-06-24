@@ -15,14 +15,16 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolGroupScope (ToolGroupScope)} */
+
 /**
  * Defines who manages a {@link ToolGroup}'s activation lifecycle.
  *
  * <ul>
- *   <li>{@link #META} — managed by the agent via the {@code reset_equipped_tools} meta tool.
+ *   <li>{@link #META} 鈥?managed by the agent via the {@code reset_equipped_tools} meta tool.
  *       These groups appear in the meta tool's parameter enum and follow replacement semantics:
  *       only groups explicitly listed in the {@code to_activate} parameter remain active.</li>
- *   <li>{@link #EXTERNAL} — managed by developer code (e.g., programmatic activation/deactivation).
+ *   <li>{@link #EXTERNAL} 鈥?managed by developer code (e.g., programmatic activation/deactivation).
  *       These groups are invisible to the meta tool and unaffected by its calls.</li>
  * </ul>
  */

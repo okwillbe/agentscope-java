@@ -23,6 +23,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary DataToolkitConfig class ()}
  * Spring wiring for the DataAgent toolkit defaults. Exposes a {@link DataSourceRegistry} (empty
  * {@link InMemoryDataSourceRegistry}) and {@link ChartRenderer} ({@link StubChartRenderer}) so
  * operators can override either independently — e.g. a Spring profile that wires a JDBC-backed

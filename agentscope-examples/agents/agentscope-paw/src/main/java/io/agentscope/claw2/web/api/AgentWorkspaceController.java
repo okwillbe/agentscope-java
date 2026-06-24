@@ -59,6 +59,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root (Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root)}
  * Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root
  * under {@code ${clawHome}/agents/{agentId}/workspace/} (or a user-configured override) and are
  * validated to stay within that root.
@@ -458,6 +459,7 @@ public class AgentWorkspaceController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root (Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root)}
      * Resolves the workspace root for {@code agentId}. Built-in agents use {@link
      * ClawBootstrap#resolveWorkspace}; custom agents use the path stored on their
      * {@link UserAgentDefinitionStore.StoredEntry} (or the default
@@ -660,6 +662,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root (Generic workspace file CRUD for an agent. All paths are relative to the agent's workspace root)}
      * Ensures an ISOLATED subagent gets an absolute default {@code workspacePath} rooted at
      * {@code <clawHome>/agents/<subName>/workspace} when the caller didn't specify one. This
      * keeps every subagent's runtime data under the app home ({@code ~/.agentscope/claw/})

@@ -23,6 +23,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.context.annotation.Bean;
 
 /**
+ * {@summary Spring Boot auto-configuration for the agent registry. (Spring Boot auto-configuration for the agent registry.)}
  * Spring Boot auto-configuration for the agent registry.
  *
  * <p>This auto-configuration provides:
@@ -44,6 +45,7 @@ import org.springframework.context.annotation.Bean;
 public class AguiAgentRegistryAutoConfiguration {
 
     /**
+     * {@summary Spring Boot auto-configuration for the agent registry. (Spring Boot auto-configuration for the agent registry.)}
      * Creates the agent registry bean.
      *
      * @param customizerObjectProvider The agent registry customizer object provider
@@ -59,6 +61,7 @@ public class AguiAgentRegistryAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for the agent registry. (Spring Boot auto-configuration for the agent registry.)}
      * Creates the agent auto-registration bean.
      *
      * @param registry The agent registry

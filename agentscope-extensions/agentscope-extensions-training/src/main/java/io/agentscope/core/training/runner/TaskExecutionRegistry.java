@@ -28,6 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Task Execution Registry (Task Execution Registry)}
  * Task Execution Registry
  *
  * <p>Stores execution contexts for all Runs of all Tasks, supports querying and analysis.
@@ -70,6 +71,7 @@ public class TaskExecutionRegistry {
     private static final Logger logger = LoggerFactory.getLogger(TaskExecutionRegistry.class);
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Task ID → List of RunExecutionContext (sorted by Run ID)
      */
     private static final ConcurrentHashMap<String, List<RunExecutionContext>> registry =
@@ -79,6 +81,7 @@ public class TaskExecutionRegistry {
     private TaskExecutionRegistry() {}
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Register a RunExecutionContext
      *
      * <p><b>Use case:</b> Called by TrainingRouter after Shadow Agent execution completes.
@@ -110,6 +113,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get contexts for all Runs of specified Task
      *
      * <p><b>Return value:</b> Copy of list sorted by Run ID in ascending order.
@@ -136,6 +140,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get context for specified (Task, Run)
      *
      * @param taskId Task ID
@@ -161,6 +166,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get all Task IDs
      *
      * @return Set of all Task IDs
@@ -170,6 +176,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get Run count for specified Task
      *
      * @param taskId Task ID
@@ -184,6 +191,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get total Task count
      *
      * @return Task count
@@ -193,6 +201,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get total Run count (all Runs of all Tasks)
      *
      * @return Total Run count
@@ -202,6 +211,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Clean up all data for specified Task
      *
      * <p>Used to release memory and avoid memory leaks from long-running processes.
@@ -225,6 +235,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Clear all data
      *
      * <p><b>Warning:</b> This operation deletes all Run data for all Tasks, use with caution!
@@ -237,6 +248,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Get statistical summary
      *
      * @return Statistical information
@@ -246,6 +258,7 @@ public class TaskExecutionRegistry {
     }
 
     /**
+     * {@summary Task Execution Registry (Task Execution Registry)}
      * Statistical information
      */
     public static class RegistryStats {

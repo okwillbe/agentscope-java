@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Chat message representation for the Chat Completions API. (Chat message representation for the Chat Completions API.)}
  * Chat message representation for the Chat Completions API.
  *
  * <p>This DTO is compatible with OpenAI's chat message format and supports:
@@ -73,6 +74,7 @@ public class ChatMessage {
     public ChatMessage() {}
 
     /**
+     * {@summary Chat message representation for the Chat Completions API. (Chat message representation for the Chat Completions API.)}
      * Creates a simple text message.
      *
      * @param role Message role (user, assistant, system, tool)
@@ -84,6 +86,7 @@ public class ChatMessage {
     }
 
     /**
+     * {@summary Chat message representation for the Chat Completions API. (Chat message representation for the Chat Completions API.)}
      * Creates an assistant message with tool calls.
      *
      * @param content Optional text content
@@ -97,6 +100,7 @@ public class ChatMessage {
     }
 
     /**
+     * {@summary Chat message representation for the Chat Completions API. (Chat message representation for the Chat Completions API.)}
      * Creates a tool result message.
      *
      * @param toolCallId ID of the tool call being responded to

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.bus;
 
+/** {@summary WorkspaceAsyncToolRegistry (WorkspaceAsyncToolRegistry)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.util.JsonUtils;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
@@ -35,7 +36,7 @@ import reactor.core.publisher.Mono;
  *
  * <p>Each async tool record is persisted as a JSON file under
  * {@code {registryRoot}/async-tools/{sessionId}/{recordId}.json}. This ensures records survive
- * process crashes — {@link io.agentscope.harness.agent.middleware.InboxMiddleware} can detect
+ * process crashes ...{@link io.agentscope.harness.agent.middleware.InboxMiddleware} can detect
  * stale RUNNING records on session recovery and notify the LLM.
  *
  * <p>Works with any filesystem backend (local, remote, sandbox).

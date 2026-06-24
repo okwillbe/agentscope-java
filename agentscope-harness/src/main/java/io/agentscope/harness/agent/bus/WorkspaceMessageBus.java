@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.bus;
 
+/** {@summary WorkspaceMessageBus (WorkspaceMessageBus)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.util.JsonUtils;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
@@ -46,9 +47,9 @@ import reactor.core.scheduler.Schedulers;
  * <pre>
  * {busRoot}/
  *   queues/{key-hash}/
- *     {entryId}.json       — Mode A entries (drain = ls + read + delete)
+ *     {entryId}.json       ...Mode A entries (drain = ls + read + delete)
  *   logs/{key-hash}/
- *     {entryId}.json       — Mode C entries (append-only)
+ *     {entryId}.json       ...Mode C entries (append-only)
  * </pre>
  */
 public class WorkspaceMessageBus implements MessageBus {
@@ -99,7 +100,7 @@ public class WorkspaceMessageBus implements MessageBus {
                         String content = readFileContent(fi.path());
                         if (content == null) {
                             // Transient read failure (race with concurrent drain, I/O error).
-                            // Do NOT delete — preserve the entry so the next drain can retry it.
+                            // Do NOT delete ...preserve the entry so the next drain can retry it.
                             log.warn(
                                     "queueDrain: failed to read entry {}, skipping without delete",
                                     fi.path());

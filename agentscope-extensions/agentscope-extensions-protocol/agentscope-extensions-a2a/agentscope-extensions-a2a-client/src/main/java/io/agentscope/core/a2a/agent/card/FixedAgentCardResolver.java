@@ -19,6 +19,7 @@ package io.agentscope.core.a2a.agent.card;
 import io.a2a.spec.AgentCard;
 
 /**
+ * {@summary Agent Card Producer for Fixed AgentCard. (Agent Card Producer for Fixed AgentCard.)}
  * Agent Card Producer for Fixed AgentCard.
  */
 public class FixedAgentCardResolver implements AgentCardResolver {

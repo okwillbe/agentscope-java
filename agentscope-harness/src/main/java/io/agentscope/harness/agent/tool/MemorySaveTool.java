@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary MemorySaveTool (MemorySaveTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;
@@ -51,7 +52,7 @@ public class MemorySaveTool {
                     "Persist one or more facts to long-term memory. Use whenever the user asks you"
                         + " to remember something, or when you observe important preferences,"
                         + " decisions, or context worth keeping across conversations. Do NOT use"
-                        + " write_file or edit_file on MEMORY.md — always use this tool instead.")
+                        + " write_file or edit_file on MEMORY.md ...always use this tool instead.")
     public String memorySave(
             RuntimeContext runtimeContext,
             @ToolParam(
@@ -76,7 +77,7 @@ public class MemorySaveTool {
         String dailyPath = WorkspaceConstants.MEMORY_DIR + "/" + today + ".md";
         String dailyEntry =
                 String.format(
-                        "\n## Memory Save — %s\n%s\n", Instant.now().toString(), content.strip());
+                        "\n## Memory Save ...%s\n%s\n", Instant.now().toString(), content.strip());
         workspaceManager.appendUtf8WorkspaceRelative(rc, dailyPath, dailyEntry);
 
         long count = content.strip().lines().filter(l -> l.stripLeading().startsWith("-")).count();

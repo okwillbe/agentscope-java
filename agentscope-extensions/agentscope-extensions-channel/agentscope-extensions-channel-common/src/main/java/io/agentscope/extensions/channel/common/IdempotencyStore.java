@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * {@summary Bounded per-channel idempotency store for inbound webhook events. Webhook providers (notably}
  * Bounded per-channel idempotency store for inbound webhook events. Webhook providers (notably
  * WeCom) commonly retry the same message id under failure; this store de-duplicates by
  * {@code msgId}.
@@ -50,6 +51,7 @@ public final class IdempotencyStore {
     }
 
     /**
+     * {@summary Bounded per-channel idempotency store for inbound webhook events. Webhook providers (notably}
      * Records {@code key} as seen. Returns {@code true} when this is the first time {@code key} is
      * seen (the caller should proceed), {@code false} when it has already been seen within the TTL.
      */

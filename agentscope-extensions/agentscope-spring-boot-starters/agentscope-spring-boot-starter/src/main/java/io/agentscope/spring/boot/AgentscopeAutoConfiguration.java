@@ -33,6 +33,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Scope;
 
 /**
+ * {@summary Spring Boot auto-configuration that exposes default Model, Memory, Toolkit (Spring Boot auto-configuration that exposes default Model, Memory, Toolkit)}
  * Spring Boot auto-configuration that exposes default Model, Memory, Toolkit
  * and ReActAgent beans
  * for AgentScope.
@@ -128,6 +129,7 @@ import org.springframework.context.annotation.Scope;
 public class AgentscopeAutoConfiguration {
 
     /**
+     * {@summary Spring Boot auto-configuration that exposes default Model, Memory, Toolkit (Spring Boot auto-configuration that exposes default Model, Memory, Toolkit)}
      * Default Memory implementation backed by InMemoryMemory.
      *
      * <p>
@@ -146,6 +148,7 @@ public class AgentscopeAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration that exposes default Model, Memory, Toolkit (Spring Boot auto-configuration that exposes default Model, Memory, Toolkit)}
      * Default Toolkit implementation with an initially empty tool set.
      *
      * <p>
@@ -164,6 +167,7 @@ public class AgentscopeAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration that exposes default Model, Memory, Toolkit (Spring Boot auto-configuration that exposes default Model, Memory, Toolkit)}
      * Default Model implementation.
      *
      * <p>
@@ -180,6 +184,7 @@ public class AgentscopeAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration that exposes default Model, Memory, Toolkit (Spring Boot auto-configuration that exposes default Model, Memory, Toolkit)}
      * Default ReActAgent that wires together the configured Model, Memory and
      * Toolkit beans using
      * {@link AgentProperties}.

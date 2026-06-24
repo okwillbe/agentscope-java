@@ -20,6 +20,7 @@ import io.agentscope.core.tool.ToolParam;
 import java.util.function.Consumer;
 
 /**
+ * {@summary Tool for triggering the reviewer agent on a GitHub PR. When called by the coding agent, this (Tool for triggering the reviewer agent on a GitHub PR. When called by the coding agent, this)}
  * Tool for triggering the reviewer agent on a GitHub PR. When called by the coding agent, this
  * tool enqueues a reviewer run via the {@link Consumer} callback injected at construction time.
  */
@@ -28,6 +29,7 @@ public class RequestPrReviewTool {
     private final Consumer<String> reviewerDispatcher;
 
     /**
+     * {@summary Tool for triggering the reviewer agent on a GitHub PR. When called by the coding agent, this (Tool for triggering the reviewer agent on a GitHub PR. When called by the coding agent, this)}
      * @param reviewerDispatcher callback that accepts a PR URL and asynchronously dispatches the
      *     reviewer agent
      */

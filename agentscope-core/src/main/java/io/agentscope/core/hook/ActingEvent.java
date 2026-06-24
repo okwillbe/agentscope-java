@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary ActingEvent (ActingEvent)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.message.ToolUseBlock;
 import io.agentscope.core.tool.Toolkit;

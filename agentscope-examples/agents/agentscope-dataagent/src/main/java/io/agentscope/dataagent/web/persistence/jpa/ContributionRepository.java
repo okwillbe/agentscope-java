@@ -19,7 +19,8 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 
-/** JPA repository for {@link ContributionEntity}. */
+/**
+ * {@summary ContributionRepository (ContributionRepository)} JPA repository for {@link ContributionEntity}. */
 public interface ContributionRepository extends JpaRepository<ContributionEntity, Long> {
 
     List<ContributionEntity> findAllByStatusOrderByCreatedAtDesc(@Param("status") String status);

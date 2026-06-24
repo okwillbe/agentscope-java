@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.mcp;
 
+/** {@summary McpContentConverter (McpContentConverter)} */
 import io.agentscope.core.message.Base64Source;
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.ImageBlock;
@@ -32,10 +33,10 @@ import java.util.stream.Collectors;
  *
  * <p>Supported conversions:
  * <ul>
- *   <li>MCP CallToolResult → AgentScope ToolResultBlock</li>
- *   <li>MCP TextContent → AgentScope TextBlock</li>
- *   <li>MCP ImageContent → AgentScope ImageBlock</li>
- *   <li>MCP AudioContent → AgentScope AudioBlock (future)</li>
+ *   <li>MCP CallToolResult 鈫?AgentScope ToolResultBlock</li>
+ *   <li>MCP TextContent 鈫?AgentScope TextBlock</li>
+ *   <li>MCP ImageContent 鈫?AgentScope ImageBlock</li>
+ *   <li>MCP AudioContent 鈫?AgentScope AudioBlock (future)</li>
  * </ul>
  */
 public class McpContentConverter {

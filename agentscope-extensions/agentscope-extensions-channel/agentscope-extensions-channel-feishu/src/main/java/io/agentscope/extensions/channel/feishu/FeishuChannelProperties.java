@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Provider-specific configuration for a single Feishu (飞书 / Lark) channel instance, sourced from}
  * Provider-specific configuration for a single Feishu (飞书 / Lark) channel instance, sourced from
  * the {@code properties} block of {@code channels.<id>} in {@code agentscope.json}.
  *

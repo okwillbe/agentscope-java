@@ -23,11 +23,13 @@ import io.a2a.spec.TextPart;
 import io.agentscope.core.message.ContentBlock;
 
 /**
+ * {@summary PartParserRouter class ()}
  * The router for {@link PartParser} according to the {@link Part#getKind()}.
  */
 public class PartParserRouter {
 
     /**
+     * {@summary PartParserRouter class ()}
      * Parse {@link Part} to {@link ContentBlock}.
      *
      * @param part the part to parse

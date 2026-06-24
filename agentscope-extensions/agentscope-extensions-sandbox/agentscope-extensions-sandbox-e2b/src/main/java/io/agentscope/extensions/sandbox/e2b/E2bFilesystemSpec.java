@@ -22,7 +22,8 @@ import io.agentscope.harness.agent.sandbox.WorkspaceSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.NoopSnapshotSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 
-/** {@link SandboxFilesystemSpec} for E2B cloud sandboxes. */
+/**
+ * {@summary E2bFilesystemSpec (E2bFilesystemSpec)} {@link SandboxFilesystemSpec} for E2B cloud sandboxes. */
 public class E2bFilesystemSpec extends SandboxFilesystemSpec {
 
     private SandboxClient<?> client;

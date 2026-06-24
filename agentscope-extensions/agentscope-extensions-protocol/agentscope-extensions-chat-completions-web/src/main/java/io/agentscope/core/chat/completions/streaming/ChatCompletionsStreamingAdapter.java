@@ -36,6 +36,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
  * Framework-agnostic adapter for handling streaming chat completion responses.
  *
  * <p>This adapter converts agent events to OpenAI-compatible {@link ChatCompletionsChunk} objects.
@@ -73,6 +74,7 @@ public class ChatCompletionsStreamingAdapter {
     public ChatCompletionsStreamingAdapter() {}
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Stream agent events as OpenAI-compatible chunks.
      *
      * <p>Subscribes to agent's event stream and converts each event to one or more {@link
@@ -125,6 +127,7 @@ public class ChatCompletionsStreamingAdapter {
     }
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Convert an agent event to one or more streaming chunks.
      *
      * <p>A single event may produce multiple chunks if it contains both text and tool calls.
@@ -140,6 +143,7 @@ public class ChatCompletionsStreamingAdapter {
     }
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Convert an agent event to chunks, excluding text content.
      *
      * <p>This is used for final accumulated events in incremental mode where we want to keep tool
@@ -156,6 +160,7 @@ public class ChatCompletionsStreamingAdapter {
     }
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Internal method to convert an agent event to chunks with optional text filtering.
      *
      * @param event The agent event
@@ -275,6 +280,7 @@ public class ChatCompletionsStreamingAdapter {
     }
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Create an error chunk.
      *
      * <p>This can be used by framework adapters to handle errors in a consistent way.
@@ -290,6 +296,7 @@ public class ChatCompletionsStreamingAdapter {
     }
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Extract content from a ToolResultBlock.
      *
      * <p>Concatenates all TextBlock content from the tool result's output.
@@ -315,6 +322,7 @@ public class ChatCompletionsStreamingAdapter {
     }
 
     /**
+     * {@summary Framework-agnostic adapter for handling streaming chat completion responses. (Framework-agnostic adapter for handling streaming chat completion responses.)}
      * Serialize a Map to a JSON string.
      *
      * @param map The map to serialize

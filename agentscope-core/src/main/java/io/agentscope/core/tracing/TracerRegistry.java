@@ -16,6 +16,7 @@
 
 package io.agentscope.core.tracing;
 
+/** {@summary TracerRegistry (TracerRegistry)} */
 import org.reactivestreams.Subscription;
 import reactor.core.CoreSubscriber;
 import reactor.core.publisher.Hooks;

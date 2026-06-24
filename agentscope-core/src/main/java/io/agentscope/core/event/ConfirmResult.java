@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary ConfirmResult (ConfirmResult)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.message.ToolUseBlock;
@@ -26,7 +27,7 @@ import java.util.List;
  *
  * <p>When confirmed, the caller may supply a modified {@link #toolCall} (allowing the user to
  * tweak input) and/or new {@link #rules} that the {@code PermissionEngine} should remember for
- * future calls — e.g. "always allow this command going forward".
+ * future calls 鈥?e.g. "always allow this command going forward".
  */
 public class ConfirmResult {
 

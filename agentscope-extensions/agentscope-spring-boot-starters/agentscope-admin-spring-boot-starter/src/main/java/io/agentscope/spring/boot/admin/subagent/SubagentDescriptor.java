@@ -21,6 +21,7 @@ import io.agentscope.harness.agent.subagent.WorkspaceMode;
 import java.util.List;
 
 /**
+ * {@summary SubagentDescriptor class ()}
  * Wire view of a registered subagent — flattens whichever projection (a {@link SubagentEntry}
  * from a built agent, or a {@link SubagentDeclaration} loaded from a yaml/markdown spec) the
  * inventory adapter happens to hold.

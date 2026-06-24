@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary WebSocketRequest (WebSocketRequest)} */
 import java.time.Duration;
 import java.util.Collections;
 import java.util.LinkedHashMap;

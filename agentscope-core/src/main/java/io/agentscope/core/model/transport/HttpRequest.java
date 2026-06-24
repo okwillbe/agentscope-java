@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary HttpRequest (HttpRequest)} */
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

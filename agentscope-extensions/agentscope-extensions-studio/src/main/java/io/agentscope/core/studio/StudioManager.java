@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
  * Central manager for AgentScope Studio integration.
  *
  * <p>This class provides a simplified API for initializing Studio integration and accessing
@@ -62,6 +63,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Creates a new initialization builder.
      *
      * @return A new builder for configuring Studio integration
@@ -71,6 +73,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Gets the Studio HTTP client.
      *
      * @return The Studio HTTP client, or null if not initialized
@@ -80,6 +83,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Gets the Studio WebSocket client.
      *
      * @return The Studio WebSocket client, or null if not initialized
@@ -89,6 +93,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Gets the Studio configuration.
      *
      * @return The Studio configuration, or null if not initialized
@@ -98,6 +103,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Checks if Studio integration is initialized.
      *
      * @return true if Studio is initialized, false otherwise
@@ -107,6 +113,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Shuts down Studio integration and releases resources.
      */
     public static void shutdown() {
@@ -123,6 +130,7 @@ public class StudioManager {
     }
 
     /**
+     * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
      * Builder for configuring and initializing Studio integration.
      */
     public static class Builder {
@@ -133,6 +141,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Sets the Studio URL.
          *
          * @param studioUrl The Studio server URL (e.g., "http://localhost:8000")
@@ -144,6 +153,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Sets the tracing URL (defaults to {studioUrl}/v1/traces).
          *
          * @param tracingUrl The OpenTelemetry tracing endpoint URL
@@ -155,6 +165,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Sets the project name.
          *
          * @param project The project name
@@ -166,6 +177,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Sets the run name.
          *
          * @param runName The run name
@@ -177,6 +189,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Sets the maximum number of HTTP request retries.
          *
          * @param maxRetries Maximum retry count (default: 3)
@@ -188,6 +201,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Sets the number of WebSocket reconnection attempts.
          *
          * @param reconnectAttempts Maximum reconnection attempts (default: 3)
@@ -199,6 +213,7 @@ public class StudioManager {
         }
 
         /**
+         * {@summary Central manager for AgentScope Studio integration. (Central manager for AgentScope Studio integration.)}
          * Initializes Studio integration.
          *
          * <p>This method:

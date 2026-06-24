@@ -23,6 +23,7 @@ import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
 /**
+ * {@summary Convenience for callers asking only about a single agent. (Convenience for callers asking only about a single agent.)}
  * {@code GET /actuator/agentscope-usage}: process-cumulative token usage, sliced both by agent
  * name and by model name.
  *

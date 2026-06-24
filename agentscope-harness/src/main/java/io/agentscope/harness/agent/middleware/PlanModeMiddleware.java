@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary PlanModeMiddleware (PlanModeMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -86,7 +87,7 @@ public class PlanModeMiddleware implements MiddlewareBase {
             complete, call plan_exit to ask the user for approval; only after approval will you return
             to BUILD mode and be able to make changes.
             ACT, do not just narrate: when you decide to record or finish the plan, call plan_write
-            (or plan_exit) in the SAME step — never say you "will write the plan" without actually
+            (or plan_exit) in the SAME step ...never say you "will write the plan" without actually
             calling the tool, and never claim a plan exists unless you have called plan_write.
             If you cannot produce a concrete plan because you lack information (for example the system
             you were asked to work on is not present in this workspace), STOP and ask the user one
@@ -96,7 +97,7 @@ public class PlanModeMiddleware implements MiddlewareBase {
 
     private static final String BUILD_MODE_PLAN_HINT =
             "\n\n<system-reminder>You have switched from PLAN to BUILD mode; the read-only"
-                    + " restriction is lifted. An approved plan exists at %s — read it for the"
+                    + " restriction is lifted. An approved plan exists at %s ...read it for the"
                     + " details, then EXECUTE it step by step until the task is complete. Do NOT"
                     + " stop after merely producing the plan. If a todo list is available, capture"
                     + " the plan's steps with the todo_write tool and keep exactly one task"
@@ -127,7 +128,7 @@ public class PlanModeMiddleware implements MiddlewareBase {
      * @param readOnlyResolver resolves whether a tool (by name) is read-only; used to decide which
      *     calls are permitted while plan mode is active
      * @param additionalAllowed extra tool names that are permitted while plan mode is active even
-     *     when not read-only (opt-in escape hatch — e.g. {@code execute} for shell-based
+     *     when not read-only (opt-in escape hatch ...e.g. {@code execute} for shell-based
      *     investigation). The model is instructed via the plan banner to use them read-only only.
      */
     public PlanModeMiddleware(

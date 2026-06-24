@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Response payload for the Chat Completions HTTP API. (Response payload for the Chat Completions HTTP API.)}
  * Response payload for the Chat Completions HTTP API.
  *
  * <p>This response is <b>100% compatible with OpenAI's Chat Completions API format</b>. All fields
@@ -153,6 +154,7 @@ public class ChatCompletionsResponse {
     }
 
     /**
+     * {@summary Response payload for the Chat Completions HTTP API. (Response payload for the Chat Completions HTTP API.)}
      * Token usage statistics following OpenAI's format.
      *
      * <p>All fields use snake_case per OpenAI specification.

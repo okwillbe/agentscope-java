@@ -34,6 +34,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
+ * {@summary A2A Server Request Handler don't provider configurable way to set timeout. So temp use reflection to do. (A2A Server Request Handler don't provider configurable way to set timeout. So temp use reflection to do.)}
  * The Wrapper for Default {@link RequestHandler} implementation.
  */
 public class AgentScopeA2aRequestHandler extends DefaultRequestHandler implements RequestHandler {
@@ -124,6 +125,7 @@ public class AgentScopeA2aRequestHandler extends DefaultRequestHandler implement
         }
 
         /**
+         * {@summary A2A Server Request Handler don't provider configurable way to set timeout. So temp use reflection to do. (A2A Server Request Handler don't provider configurable way to set timeout. So temp use reflection to do.)}
          * A2A Server Request Handler don't provider configurable way to set timeout. So temp use reflection to do.
          *
          * <p>

@@ -28,6 +28,7 @@ import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 import org.springframework.boot.actuate.endpoint.annotation.WriteOperation;
 
 /**
+ * {@summary AgentscopeDrainEndpoint class ()}
  * {@code POST /actuator/agentscope-drain}: stop accepting new agent requests, wait for in-flight
  * ones to finish, but do NOT terminate the JVM.
  *

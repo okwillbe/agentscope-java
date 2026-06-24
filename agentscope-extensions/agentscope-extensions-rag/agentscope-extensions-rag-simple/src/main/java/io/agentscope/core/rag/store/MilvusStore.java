@@ -52,6 +52,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
  * Milvus vector database store implementation.
  *
  * <p>This class provides an interface for storing and searching vectors using Milvus, a
@@ -125,6 +126,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     private volatile boolean closed = false;
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Creates a new MilvusStore using the builder configuration.
      *
      * @param builder the builder instance
@@ -196,6 +198,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Creates a new MilvusStore with minimal configuration.
      *
      * @param uri the Milvus server URI (e.g., "http://localhost:19530")
@@ -323,6 +326,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Gets the underlying Milvus client for advanced operations.
      *
      * <p>This method provides access to the Milvus client for users who need to perform
@@ -343,6 +347,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Ensures the store is not closed before performing operations.
      *
      * @throws VectorStoreException if the store has been closed
@@ -354,6 +359,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Ensures the collection exists, creating it if necessary.
      *
      * @param client the MilvusClientV2 to use
@@ -384,6 +390,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Ensures the database exists, creating it if necessary.
      *
      * @param client the MilvusClientV2 to use
@@ -410,6 +417,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Creates a new collection with the specified dimensions and schema.
      *
      * @param client the MilvusClientV2 to use
@@ -483,6 +491,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Creates a new database with the specified properties.
      *
      * @param client             the MilvusClientV2 to use
@@ -498,6 +507,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Adds multiple documents to Milvus.
      *
      * <p>Point IDs are generated as deterministic UUIDs based on doc_id, chunk_id, and content,
@@ -565,6 +575,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Searches for similar documents in Milvus.
      *
      * @param queryEmbedding the query embedding vector
@@ -632,6 +643,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Reconstructs a Document from Milvus search result.
      *
      * @param result the search result from Milvus
@@ -685,6 +697,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Deletes a document from Milvus document ID.
      *
      * @param docId the document ID to delete
@@ -706,6 +719,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Gets the Milvus server URI.
      *
      * @return the URI
@@ -715,6 +729,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Gets the collection name.
      *
      * @return the collection name
@@ -724,6 +739,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Gets the vector dimensions.
      *
      * @return the dimensions
@@ -733,6 +749,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Gets the metric type used for similarity search.
      *
      * @return the metric type
@@ -742,6 +759,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Gets the database name.
      *
      * @return the database name
@@ -751,6 +769,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Closes the Milvus client and releases all resources.
      *
      * <p>This method closes the MilvusClientV2, releasing all connections and associated
@@ -797,6 +816,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Checks if this store has been closed.
      *
      * @return true if the store has been closed, false otherwise
@@ -806,6 +826,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Builder for creating MilvusStore instances with fluent configuration.
      *
      * <p>Example usage:
@@ -835,6 +856,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         private Builder() {}
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the Milvus server URI.
          *
          * @param uri the Milvus server URI (e.g., "http://localhost:19530")
@@ -846,6 +868,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the collection name.
          *
          * @param collectionName the name of the collection to use
@@ -857,6 +880,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the vector dimensions.
          *
          * @param dimensions the dimension of vectors that will be stored
@@ -868,6 +892,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the authentication token.
          *
          * <p>The token should be in the format "username:password" for basic authentication.
@@ -881,6 +906,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the username for authentication.
          *
          * <p>This is an alternative to using token(). If both are set, token takes precedence.
@@ -894,6 +920,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the password for authentication.
          *
          * <p>This should be used together with username().
@@ -907,6 +934,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the connection timeout in milliseconds.
          *
          * <p>Default is 30000 (30 seconds). Set to 0 or negative to disable timeout.
@@ -920,6 +948,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the metric type for vector similarity search.
          *
          * <p>Default is COSINE. Other options include L2 (Euclidean) and IP (Inner Product).
@@ -933,6 +962,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the database name.
          *
          * @param databaseName the database name
@@ -944,6 +974,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Sets the database properties.
          *
          * @param databaseProperties the database properties
@@ -955,6 +986,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
          * Builds a new MilvusStore instance.
          *
          * <p>The client connection is established immediately during construction. If the
@@ -985,6 +1017,7 @@ public class MilvusStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Milvus vector database store implementation. (Milvus vector database store implementation.)}
      * Creates a new builder for constructing MilvusStore instances.
      *
      * @return a new builder instance

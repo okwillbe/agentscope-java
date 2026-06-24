@@ -37,6 +37,7 @@ import java.util.Map;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
  * ToolBaseExample - Demonstrates how to implement a custom tool by extending {@link ToolBase}.
  *
  * <p>{@link ToolBase} is the preferred base class when you need to:
@@ -63,6 +64,7 @@ import reactor.core.publisher.Mono;
 public class ToolBaseExample {
 
     /**
+     * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
      * Runs the ToolBase example.
      *
      * @param args command-line arguments (ignored)
@@ -127,6 +129,7 @@ public class ToolBaseExample {
     }
 
     /**
+     * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
      * Custom tool that extends {@link ToolBase} to participate in permission evaluation.
      *
      * <p>The tool uses an explicit input schema (a raw JSON Schema map) rather than
@@ -135,6 +138,7 @@ public class ToolBaseExample {
     public static class TemperatureTool extends ToolBase {
 
         /**
+         * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
          * Constructs the TemperatureTool by providing metadata via the {@link ToolBase.Builder}.
          */
         public TemperatureTool() {
@@ -161,6 +165,7 @@ public class ToolBaseExample {
         }
 
         /**
+         * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
          * Performs the actual temperature lookup.
          *
          * <p>In a real implementation this would call a weather API. Here it simulates
@@ -182,6 +187,7 @@ public class ToolBaseExample {
         }
 
         /**
+         * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
          * Permission self-check for the temperature tool.
          *
          * <p>Locations containing suspicious path separators are denied. All other
@@ -205,6 +211,7 @@ public class ToolBaseExample {
         }
 
         /**
+         * {@summary Runs the ToolBase example. (Runs the ToolBase example.)}
          * Suggests a location-specific allow rule once the user approves a query.
          *
          * @param toolInput parsed tool arguments

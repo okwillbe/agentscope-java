@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary Build a marketplace instance from a config entry without registering it. Used by (Build a marketplace instance from a config entry without registering it. Used by)}
  * Live registry of per-user {@link BuilderMarketplace} instances, keyed by {@code userId} →
  * marketplace id.
  *
@@ -64,6 +65,7 @@ public class UserMarketplaceRegistry {
     }
 
     /**
+     * {@summary Build a marketplace instance from a config entry without registering it. Used by (Build a marketplace instance from a config entry without registering it. Used by)}
      * Snapshot of every live marketplace for {@code userId}, ordered by id. First call for a user
      * lazily hydrates the per-user map from the database.
      */
@@ -88,6 +90,7 @@ public class UserMarketplaceRegistry {
     }
 
     /**
+     * {@summary Build a marketplace instance from a config entry without registering it. Used by (Build a marketplace instance from a config entry without registering it. Used by)}
      * Replace (or first-time install) {@code userId}'s marketplace at {@code id} with one built
      * from {@code entry}. The previously registered instance, if any, is closed after the new one
      * is in place.
@@ -115,6 +118,7 @@ public class UserMarketplaceRegistry {
     }
 
     /**
+     * {@summary Build a marketplace instance from a config entry without registering it. Used by (Build a marketplace instance from a config entry without registering it. Used by)}
      * Build a marketplace instance from a config entry without registering it. Used by
      * {@code MarketplacesController#testTransient} so a connection probe runs against the same
      * code path a real registration would use, but without taking the (id) slot if the probe

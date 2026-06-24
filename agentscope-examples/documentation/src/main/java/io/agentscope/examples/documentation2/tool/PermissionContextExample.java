@@ -31,6 +31,7 @@ import io.agentscope.core.tool.Toolkit;
 import io.agentscope.harness.agent.middleware.AgentTraceMiddleware;
 
 /**
+ * {@summary Runs the permission context example. (Runs the permission context example.)}
  * PermissionContextExample - Demonstrates the {@link PermissionContextState} permission engine.
  *
  * <p>The permission engine gates every tool call before execution. Its behaviour is governed by:
@@ -61,6 +62,7 @@ import io.agentscope.harness.agent.middleware.AgentTraceMiddleware;
 public class PermissionContextExample {
 
     /**
+     * {@summary Runs the permission context example. (Runs the permission context example.)}
      * Runs the permission context example.
      *
      * @param args command-line arguments (ignored)
@@ -177,6 +179,7 @@ public class PermissionContextExample {
     public static class FileTools {
 
         /**
+         * {@summary Runs the permission context example. (Runs the permission context example.)}
          * Reads a file (simulated).
          *
          * @param path file path to read
@@ -189,6 +192,7 @@ public class PermissionContextExample {
         }
 
         /**
+         * {@summary Runs the permission context example. (Runs the permission context example.)}
          * Writes content to a file (simulated).
          *
          * @param path    destination path
@@ -204,6 +208,7 @@ public class PermissionContextExample {
         }
 
         /**
+         * {@summary Runs the permission context example. (Runs the permission context example.)}
          * Deletes a file (simulated).
          *
          * @param path file path to delete

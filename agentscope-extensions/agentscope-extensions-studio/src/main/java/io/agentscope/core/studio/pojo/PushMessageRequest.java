@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.message.Msg;
 
 /**
+ * {@summary Request payload for pushing a message to Studio. (Request payload for pushing a message to Studio.)}
  * Request payload for pushing a message to Studio.
  *
  * <p>This is sent via POST /trpc/pushMessage to display messages in the Studio UI.
@@ -48,6 +49,7 @@ public class PushMessageRequest {
     }
 
     /**
+     * {@summary Request payload for pushing a message to Studio. (Request payload for pushing a message to Studio.)}
      * Gets the run ID for this message.
      *
      * @return the run ID
@@ -57,6 +59,7 @@ public class PushMessageRequest {
     }
 
     /**
+     * {@summary Request payload for pushing a message to Studio. (Request payload for pushing a message to Studio.)}
      * Gets the reply ID for this message.
      *
      * @return the reply ID, or null if this is not a reply
@@ -66,6 +69,7 @@ public class PushMessageRequest {
     }
 
     /**
+     * {@summary Request payload for pushing a message to Studio. (Request payload for pushing a message to Studio.)}
      * Gets the agent name that produced this message.
      *
      * @return the agent name
@@ -75,6 +79,7 @@ public class PushMessageRequest {
     }
 
     /**
+     * {@summary Request payload for pushing a message to Studio. (Request payload for pushing a message to Studio.)}
      * Gets the role of the message sender.
      *
      * @return the role (e.g., "assistant", "user")
@@ -84,6 +89,7 @@ public class PushMessageRequest {
     }
 
     /**
+     * {@summary Request payload for pushing a message to Studio. (Request payload for pushing a message to Studio.)}
      * Gets the message content.
      *
      * @return the message object

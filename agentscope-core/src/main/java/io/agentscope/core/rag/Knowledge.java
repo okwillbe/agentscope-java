@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.rag;
 
+/** {@summary Knowledge (Knowledge)} */
 import io.agentscope.core.rag.model.Document;
 import io.agentscope.core.rag.model.RetrieveConfig;
 import java.util.List;

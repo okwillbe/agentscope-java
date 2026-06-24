@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.middleware;
 
+/** {@summary ActingInput (ActingInput)} */
 import io.agentscope.core.message.ToolUseBlock;
 import java.util.List;
 

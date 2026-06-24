@@ -17,6 +17,7 @@
 package io.agentscope.spring.boot.a2a.properties;
 
 /**
+ * {@summary AgentScope constants for spring boot autoconfiguration. (AgentScope constants for spring boot autoconfiguration.)}
  * AgentScope constants for spring boot autoconfiguration.
  */
 public class Constants {

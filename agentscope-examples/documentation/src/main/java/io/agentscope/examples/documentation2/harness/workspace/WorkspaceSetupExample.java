@@ -24,6 +24,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary WorkspaceSetupExample — Demonstrates the workspace directory layout and how each file is (WorkspaceSetupExample — Demonstrates the workspace directory layout and how each file is)}
  * WorkspaceSetupExample — Demonstrates the workspace directory layout and how each file is
  * loaded into the agent's system prompt.
  *

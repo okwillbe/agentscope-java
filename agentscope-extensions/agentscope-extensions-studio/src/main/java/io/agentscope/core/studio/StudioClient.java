@@ -38,6 +38,7 @@ import reactor.core.publisher.Mono;
 import reactor.util.retry.Retry;
 
 /**
+ * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
  * HTTP client for communicating with AgentScope Studio.
  *
  * <p>This client handles HTTP requests to Studio's REST API endpoints using OkHttp.
@@ -60,6 +61,7 @@ public class StudioClient {
     private final String baseUrl;
 
     /**
+     * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
      * Creates a new Studio HTTP client.
      *
      * @param config Configuration for Studio connection
@@ -77,6 +79,7 @@ public class StudioClient {
     }
 
     /**
+     * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
      * Registers a new run with Studio.
      *
      * <p>This must be called before sending any messages. It notifies Studio that a new agent
@@ -121,6 +124,7 @@ public class StudioClient {
     }
 
     /**
+     * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
      * Pushes a message to Studio for visualization.
      *
      * <p>This method is typically called automatically by StudioMessageHook after an agent
@@ -166,6 +170,7 @@ public class StudioClient {
     }
 
     /**
+     * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
      * Requests user input from Studio web interface.
      *
      * <p>This sends a request to Studio, which displays an input form to the user in the web UI.
@@ -214,6 +219,7 @@ public class StudioClient {
     }
 
     /**
+     * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
      * Shuts down the HTTP client and releases resources.
      */
     public void shutdown() {
@@ -222,6 +228,7 @@ public class StudioClient {
     }
 
     /**
+     * {@summary HTTP client for communicating with AgentScope Studio. (HTTP client for communicating with AgentScope Studio.)}
      * Executes a Studio API operation with automatic retry logic.
      *
      * @param operation The operation to execute

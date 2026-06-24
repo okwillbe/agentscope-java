@@ -31,6 +31,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * {@summary Persistent representation of a user-custom agent definition. Keyed by the synthetic (Persistent representation of a user-custom agent definition. Keyed by the synthetic)}
  * Persistent representation of a user-custom agent definition. Keyed by the synthetic
  * {@code row_id} and uniquely identified by the {@code (owner_id, agent_id)} pair.
  *
@@ -82,6 +83,7 @@ public class AgentEntity {
     private String agentId;
 
     /**
+     * {@summary Persistent representation of a user-custom agent definition. Keyed by the synthetic (Persistent representation of a user-custom agent definition. Keyed by the synthetic)}
      * User-supplied workspace path for this agent (verbatim, may be {@code null}). When non-null,
      * absolute paths are used as-is on disk; relative paths resolve under
      * {@code ${cwd}/.agentscope/}. When {@code null}, the agent id is used in place of the path.
@@ -145,6 +147,7 @@ public class AgentEntity {
     private String forkOf;
 
     /**
+     * {@summary Persistent representation of a user-custom agent definition. Keyed by the synthetic (Persistent representation of a user-custom agent definition. Keyed by the synthetic)}
      * JSON-serialised {@link io.agentscope.builder.runtime.config.SkillRepositoryConfigEntry} list
      * — same wire format as {@code agentscope.json}'s {@code skillRepositories} section so
      * configs migrate either direction. Null when the agent uses only the implicit workspace
@@ -155,6 +158,7 @@ public class AgentEntity {
     private String skillRepositoriesJson;
 
     /**
+     * {@summary Persistent representation of a user-custom agent definition. Keyed by the synthetic (Persistent representation of a user-custom agent definition. Keyed by the synthetic)}
      * Sandbox execution mode ({@code local} / {@code sandbox}); null falls back to the platform
      * default at runtime.
      */
@@ -162,6 +166,7 @@ public class AgentEntity {
     private String sandboxMode;
 
     /**
+     * {@summary Persistent representation of a user-custom agent definition. Keyed by the synthetic (Persistent representation of a user-custom agent definition. Keyed by the synthetic)}
      * Sandbox isolation scope ({@code SESSION} / {@code USER} / {@code AGENT} / {@code GLOBAL});
      * only meaningful when {@link #sandboxMode} is {@code sandbox}.
      */

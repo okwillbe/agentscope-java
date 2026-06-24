@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary ActingChunkEvent (ActingChunkEvent)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.message.ToolUseBlock;

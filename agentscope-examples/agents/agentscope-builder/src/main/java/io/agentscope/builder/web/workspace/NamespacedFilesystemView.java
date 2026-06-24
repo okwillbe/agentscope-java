@@ -33,6 +33,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Returns the underlying filesystem (unscoped). Useful for cross-namespace operations. (Returns the underlying filesystem (unscoped). Useful for cross-namespace operations.)}
  * Wraps any {@link AbstractFilesystem} and transparently prefixes every path argument with the
  * segments produced by a {@link NamespaceFactory}, scoping all operations to a logical subtree.
  *
@@ -166,6 +167,7 @@ public final class NamespacedFilesystemView implements AbstractFilesystem {
     // ==================== Path scoping ====================
 
     /**
+     * {@summary Returns the underlying filesystem (unscoped). Useful for cross-namespace operations. (Returns the underlying filesystem (unscoped). Useful for cross-namespace operations.)}
      * Prefixes {@code path} with the current namespace and returns an absolute (leading-slash)
      * path suitable for the delegate. Validates against {@code ..} traversal first.
      */

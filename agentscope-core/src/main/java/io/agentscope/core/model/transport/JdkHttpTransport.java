@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary JdkHttpTransport (JdkHttpTransport)} */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

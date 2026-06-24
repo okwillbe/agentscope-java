@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary GrepMatch (GrepMatch)} */
+
 /**
  * A single match from a grep search.
  *

@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.rag;
 
+/** {@summary RAGMode (RAGMode)} */
+
 /**
  * RAG (Retrieval-Augmented Generation) mode enumeration.
  *

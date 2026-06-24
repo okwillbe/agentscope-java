@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill.repository;
 
+/** {@summary AgentSkillRepository (AgentSkillRepository)} */
 import io.agentscope.core.skill.AgentSkill;
 import java.util.List;
 

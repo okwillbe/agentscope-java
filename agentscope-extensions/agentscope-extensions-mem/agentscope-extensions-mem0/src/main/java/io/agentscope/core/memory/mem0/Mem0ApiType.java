@@ -16,6 +16,7 @@
 package io.agentscope.core.memory.mem0;
 
 /**
+ * {@summary Enumeration of Mem0 API deployment types. (Enumeration of Mem0 API deployment types.)}
  * Enumeration of Mem0 API deployment types.
  *
  * <p>Mem0 provides two deployment options with different API endpoints and authentication:
@@ -34,6 +35,7 @@ public enum Mem0ApiType {
     SELF_HOSTED;
 
     /**
+     * {@summary Enumeration of Mem0 API deployment types. (Enumeration of Mem0 API deployment types.)}
      * Parses a string to Mem0ApiType (case-insensitive).
      *
      * @param value String value to parse

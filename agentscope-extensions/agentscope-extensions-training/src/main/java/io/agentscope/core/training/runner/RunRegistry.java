@@ -21,6 +21,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * {@summary Run ID Registry (Run ID Registry)}
  * Run ID Registry
  *
  * <p>Manages execution count (Run ID) for each Task ID.
@@ -50,6 +51,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 class RunRegistry {
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Task ID → Run counter
      * Each Task ID corresponds to an incrementing counter
      */
@@ -60,6 +62,7 @@ class RunRegistry {
     private RunRegistry() {}
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Allocate a new Run ID for the specified Task
      *
      * <p>Run ID increments from 0 (0, 1, 2, ...)
@@ -82,6 +85,7 @@ class RunRegistry {
     }
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Get current Run count for the specified Task
      *
      * @param taskId Task ID
@@ -96,6 +100,7 @@ class RunRegistry {
     }
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Clean up counter for specified Task
      *
      * <p>Used to release memory and avoid memory leaks from long-running processes.
@@ -115,6 +120,7 @@ class RunRegistry {
     }
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Clean up all counters
      *
      * <p><b>Warning:</b> This operation clears all Task counters, use with caution!
@@ -130,6 +136,7 @@ class RunRegistry {
     }
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Get number of Tasks in current registry
      *
      * @return Number of Tasks
@@ -139,6 +146,7 @@ class RunRegistry {
     }
 
     /**
+     * {@summary Run ID Registry (Run ID Registry)}
      * Periodically clean up old Task counters (reserved interface)
      *
      * <p>Can be extended in the future to: clean up Tasks unused for specified time.

@@ -33,6 +33,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
  * Simple implementation of a knowledge base.
  *
  * <p>This implementation integrates an embedding model and a vector store to provide
@@ -76,6 +77,7 @@ public class SimpleKnowledge implements Knowledge {
     private final VDBStoreBase embeddingStore;
 
     /**
+     * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
      * Creates a new SimpleKnowledge instance.
      *
      * @param embeddingModel the embedding model to use for generating vectors
@@ -174,6 +176,7 @@ public class SimpleKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
      * Gets the embedding model used by this knowledge base.
      *
      * @return the embedding model
@@ -183,6 +186,7 @@ public class SimpleKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
      * Gets the vector store used by this knowledge base.
      *
      * @return the vector store
@@ -192,6 +196,7 @@ public class SimpleKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
      * Extracts a ContentBlock from DocumentMetadata.
      *
      * <p>Since DocumentMetadata now directly stores ContentBlock, this method simply returns it.
@@ -207,6 +212,7 @@ public class SimpleKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
      * Creates a new builder for SimpleKnowledge.
      *
      * @return a new Builder instance
@@ -216,6 +222,7 @@ public class SimpleKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
      * Builder for SimpleKnowledge.
      */
     public static class Builder {
@@ -225,6 +232,7 @@ public class SimpleKnowledge implements Knowledge {
         private Builder() {}
 
         /**
+         * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
          * Sets the embedding model.
          *
          * @param embeddingModel the embedding model to use
@@ -236,6 +244,7 @@ public class SimpleKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
          * Sets the embedding store (vector database).
          *
          * @param embeddingStore the vector store to use
@@ -247,6 +256,7 @@ public class SimpleKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Simple implementation of a knowledge base. (Simple implementation of a knowledge base.)}
          * Builds a new SimpleKnowledge instance.
          *
          * @return a new SimpleKnowledge instance

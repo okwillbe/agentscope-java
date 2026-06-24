@@ -33,6 +33,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
+ * {@summary AgentSkillExample - Demonstrates loading skills from a file-system skill repository. (AgentSkillExample - Demonstrates loading skills from a file-system skill repository.)}
  * AgentSkillExample - Demonstrates loading skills from a file-system skill repository.
  *
  * <p><b>Note:</b> This example requires a {@code SKILLS_DIR} directory containing a
@@ -42,6 +43,7 @@ import java.nio.file.Paths;
 public class AgentSkillExample {
 
     /**
+     * {@summary AgentSkillExample - Demonstrates loading skills from a file-system skill repository. (AgentSkillExample - Demonstrates loading skills from a file-system skill repository.)}
      * Directory that contains skill subdirectories, each with a {@code SKILL.md} entry file.
      * Set this to the absolute path of your skills directory before running.
      */
@@ -49,12 +51,14 @@ public class AgentSkillExample {
             "agentscope-examples/documentation/quickstart/src/main/resources/skills";
 
     /**
+     * {@summary AgentSkillExample - Demonstrates loading skills from a file-system skill repository. (AgentSkillExample - Demonstrates loading skills from a file-system skill repository.)}
      * Output directory where the agent may write new skill files during the demo.
      */
     private static final String OUTPUT_DIR =
             "agentscope-examples/documentation2/target/skill-output";
 
     /**
+     * {@summary AgentSkillExample - Demonstrates loading skills from a file-system skill repository. (AgentSkillExample - Demonstrates loading skills from a file-system skill repository.)}
      * Runs the agent skill example.
      *
      * @param args command-line arguments (ignored)

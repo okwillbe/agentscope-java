@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary SkillBox (SkillBox)} */
 import io.agentscope.core.skill.util.SkillFileSystemHelper;
 import io.agentscope.core.tool.AgentTool;
 import io.agentscope.core.tool.ExtendedModel;

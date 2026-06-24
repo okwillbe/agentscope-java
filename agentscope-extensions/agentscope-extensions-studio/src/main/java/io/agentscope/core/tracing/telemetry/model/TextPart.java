@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-/** Represents text content sent to or received from the model. */
+/** {@summary Represents text content sent to or received from the model. (Represents text content sent to or received from the model.)} Represents text content sent to or received from the model. */
 @JsonClassDescription("Text part")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class TextPart implements MessagePart {

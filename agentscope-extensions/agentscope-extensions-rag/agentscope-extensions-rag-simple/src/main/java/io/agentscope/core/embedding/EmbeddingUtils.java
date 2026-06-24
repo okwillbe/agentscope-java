@@ -24,6 +24,7 @@ import reactor.core.publisher.Mono;
 import reactor.util.retry.Retry;
 
 /**
+ * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
  * Utility class for common EmbeddingModel operations.
  *
  * <p>This class provides shared functionality used across different EmbeddingModel implementations,
@@ -39,6 +40,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Applies timeout and retry configuration to an embedding Mono.
      *
      * <p>This method wraps the original Mono with timeout and retry operators based on the
@@ -143,6 +145,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Applies timeout and retry configuration to a single embedding Mono.
      *
      * <p>This is a convenience method that delegates to the generic
@@ -167,6 +170,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Applies timeout and retry configuration to a batch embedding Mono.
      *
      * <p>This is a convenience method that delegates to the generic
@@ -191,6 +195,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Ensures ExecutionConfig has MODEL_DEFAULTS applied.
      *
      * <p>This method applies the standard default execution configuration:
@@ -214,6 +219,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Converts a List of Double values to a double array.
      *
      * <p>This method is used to convert embedding vectors returned by DashScope SDK
@@ -231,6 +237,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Converts a List of Float values to a double array.
      *
      * <p>This method is used to convert embedding vectors returned by OpenAI SDK
@@ -248,6 +255,7 @@ public final class EmbeddingUtils {
     }
 
     /**
+     * {@summary Utility class for common EmbeddingModel operations. (Utility class for common EmbeddingModel operations.)}
      * Converts a float array to a double array.
      *
      * <p>This method is used to convert embedding vectors returned by Ollama SDK

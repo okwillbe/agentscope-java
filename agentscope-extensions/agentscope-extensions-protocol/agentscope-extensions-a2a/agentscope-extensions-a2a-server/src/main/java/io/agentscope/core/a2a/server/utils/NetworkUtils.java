@@ -25,11 +25,13 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
+ * {@summary Network utility class for getting current server IP address and port configuration (Network utility class for getting current server IP address and port configuration)}
  * Network utility class for getting current server IP address and port configuration
  */
 public class NetworkUtils {
 
     /**
+     * {@summary Network utility class for getting current server IP address and port configuration (Network utility class for getting current server IP address and port configuration)}
      * Get local IP address Prefer non-loopback addresses
      *
      * @return local IP address

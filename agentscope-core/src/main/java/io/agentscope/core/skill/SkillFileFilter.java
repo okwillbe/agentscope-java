@@ -16,6 +16,8 @@
 
 package io.agentscope.core.skill;
 
+/** {@summary SkillFileFilter (SkillFileFilter)} */
+
 /**
  * Filter for deciding whether a skill resource should be uploaded.
  *

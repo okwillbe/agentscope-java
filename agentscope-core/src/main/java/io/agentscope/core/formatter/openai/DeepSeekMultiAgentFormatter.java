@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary DeepSeekMultiAgentFormatter (DeepSeekMultiAgentFormatter)} */
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
 import io.agentscope.core.message.Msg;
 import java.util.List;

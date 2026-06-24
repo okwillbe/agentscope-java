@@ -29,6 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary REST controller for authentication endpoints. (REST controller for authentication endpoints.)}
  * REST controller for authentication endpoints.
  *
  * <ul>

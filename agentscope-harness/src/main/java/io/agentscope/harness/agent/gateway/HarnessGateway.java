@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary HarnessGateway (HarnessGateway)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
@@ -66,13 +67,13 @@ public final class HarnessGateway implements Gateway, WakeupDispatcher.WakeupTar
     private final ConcurrentHashMap<String, HarnessAgent> agentRegistry = new ConcurrentHashMap<>();
     private volatile String defaultAgentId = null;
 
-    /** canonicalKey → stable session id */
+    /** canonicalKey 鈫?stable session id */
     private final ConcurrentHashMap<String, String> sessionMap = new ConcurrentHashMap<>();
 
-    /** Reverse mapping: session id → canonicalKey (for wakeup-driven runs). */
+    /** Reverse mapping: session id 鈫?canonicalKey (for wakeup-driven runs). */
     private final ConcurrentHashMap<String, String> sessionToGateKey = new ConcurrentHashMap<>();
 
-    /** Live-agent cache for the fast same-node path: subagentId → exposed subagent session. */
+    /** Live-agent cache for the fast same-node path: subagentId 鈫?exposed subagent session. */
     private final ConcurrentHashMap<String, ExposedSession> exposedSessions =
             new ConcurrentHashMap<>();
 
@@ -85,12 +86,12 @@ public final class HarnessGateway implements Gateway, WakeupDispatcher.WakeupTar
 
     /**
      * Rebuilds a subagent {@link Agent} from its type id when the live instance is not present on
-     * this node (cross-node / post-restart). {@code null} disables recovery — only cached live
+     * this node (cross-node / post-restart). {@code null} disables recovery ...only cached live
      * sessions are addressable.
      */
     private volatile SubagentMaterializer subagentMaterializer;
 
-    /** session id → last outbound address (for proactive push delivery) */
+    /** session id 鈫?last outbound address (for proactive push delivery) */
     private final ConcurrentHashMap<String, OutboundAddress> lastRouteBySession =
             new ConcurrentHashMap<>();
 

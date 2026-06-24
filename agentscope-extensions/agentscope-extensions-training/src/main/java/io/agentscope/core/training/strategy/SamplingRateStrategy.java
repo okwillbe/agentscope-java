@@ -23,6 +23,7 @@ import java.util.Random;
 import reactor.util.context.ContextView;
 
 /**
+ * {@summary Sampling Rate Strategy - Selection strategy based on sampling rate (Sampling Rate Strategy - Selection strategy based on sampling rate)}
  * Sampling Rate Strategy - Selection strategy based on sampling rate
  *
  * <p>Randomly samples requests for training at a fixed probability
@@ -50,6 +51,7 @@ public class SamplingRateStrategy implements TrainingSelectionStrategy {
     }
 
     /**
+     * {@summary Sampling Rate Strategy - Selection strategy based on sampling rate (Sampling Rate Strategy - Selection strategy based on sampling rate)}
      * Create sampling rate strategy
      *
      * @param sampleRate Sampling rate, range [0, 1]

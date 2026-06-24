@@ -19,6 +19,7 @@ import com.fasterxml.jackson.databind.jsontype.NamedType;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 
 /**
+ * {@summary KubernetesHarnessSandboxJacksonModule class ()}
  * Registers Jackson {@link com.fasterxml.jackson.databind.jsontype.NamedType} entries for the
  * Kubernetes sandbox store. Combine with {@link
  * io.agentscope.harness.agent.sandbox.json.HarnessSandboxJacksonModule} on the same {@link

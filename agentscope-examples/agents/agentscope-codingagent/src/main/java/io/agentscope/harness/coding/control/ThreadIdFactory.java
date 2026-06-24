@@ -22,6 +22,7 @@ import java.util.HexFormat;
 import java.util.UUID;
 
 /**
+ * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
  * Generates deterministic thread IDs from GitHub issue/PR/reviewer context.
  *
  * <p>SHA-256 hash of a canonical key string is converted to a
@@ -34,6 +35,7 @@ public final class ThreadIdFactory {
     private ThreadIdFactory() {}
 
     /**
+     * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
      * Thread ID for a GitHub issue conversation.
      *
      * @param owner repo owner
@@ -45,6 +47,7 @@ public final class ThreadIdFactory {
     }
 
     /**
+     * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
      * Thread ID for a GitHub PR coding session (branch-stable).
      *
      * @param owner repo owner
@@ -56,6 +59,7 @@ public final class ThreadIdFactory {
     }
 
     /**
+     * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
      * Thread ID for a reviewer session on a specific PR.
      *
      * @param owner repo owner
@@ -67,6 +71,7 @@ public final class ThreadIdFactory {
     }
 
     /**
+     * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
      * Thread ID derived from a comment on a GitHub issue or PR.
      *
      * @param owner repo owner
@@ -78,6 +83,7 @@ public final class ThreadIdFactory {
     }
 
     /**
+     * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
      * Thread ID for a DingTalk conversation (DM or group). The same conversation always maps to the
      * same thread, so consecutive messages in the same chat share session state.
      *
@@ -89,6 +95,7 @@ public final class ThreadIdFactory {
     }
 
     /**
+     * {@summary Generates deterministic thread IDs from GitHub issue/PR/reviewer context. (Generates deterministic thread IDs from GitHub issue/PR/reviewer context.)}
      * Thread ID for a Feishu/Lark chat (DM, group, or thread).
      *
      * @param tenantKey Feishu tenant key (namespaces chat ids across tenants)

@@ -34,6 +34,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary HTTP client for RAGFlow API. (HTTP client for RAGFlow API.)}
  * HTTP client for RAGFlow API.
  *
  * <p>This client handles all HTTP communication with RAGFlow service, including:
@@ -66,6 +67,7 @@ public class RAGFlowClient {
     }
 
     /**
+     * {@summary HTTP client for RAGFlow API. (HTTP client for RAGFlow API.)}
      * Retrieve documents from RAGFlow knowledge base.
      *
      * <p>This method calls the RAGFlow retrieval API to search for relevant document chunks. The
@@ -301,6 +303,7 @@ public class RAGFlowClient {
     }
 
     /**
+     * {@summary HTTP client for RAGFlow API. (HTTP client for RAGFlow API.)}
      * Interceptor for retrying failed requests.
      */
     private static class RetryInterceptor implements Interceptor {
@@ -376,6 +379,7 @@ public class RAGFlowClient {
     }
 
     /**
+     * {@summary HTTP client for RAGFlow API. (HTTP client for RAGFlow API.)}
      * Interceptor for logging HTTP requests and responses.
      */
     private static class LoggingInterceptor implements Interceptor {

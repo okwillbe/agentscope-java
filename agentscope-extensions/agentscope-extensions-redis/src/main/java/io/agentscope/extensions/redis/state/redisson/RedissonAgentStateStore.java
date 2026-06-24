@@ -34,6 +34,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
  * Redis-based session implementation using Redisson.
  *
  * @deprecated Use {@link io.agentscope.extensions.redis.state.RedisAgentStateStore} with redissonClient instead.
@@ -77,6 +78,7 @@ public class RedissonAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
      * Creates a new builder for {@link RedissonAgentStateStore}.
      *
      * @return a new Builder instance
@@ -263,6 +265,7 @@ public class RedissonAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
      * Clear all sessions stored in Redis (for testing or cleanup).
      *
      * @return Mono that completes with the number of deleted session keys
@@ -293,6 +296,7 @@ public class RedissonAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
      * Get the Redis key for a single state value.
      *
      * @param sessionId the session ID
@@ -304,6 +308,7 @@ public class RedissonAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
      * Get the Redis key for a list state value.
      *
      * @param sessionId the session ID
@@ -315,6 +320,7 @@ public class RedissonAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
      * Get the Redis key for tracking session keys.
      *
      * @param sessionId the session ID
@@ -325,6 +331,7 @@ public class RedissonAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary Redis-based session implementation using Redisson. (Redis-based session implementation using Redisson.)}
      * Builder for {@link RedissonAgentStateStore}.
      */
     public static class Builder {

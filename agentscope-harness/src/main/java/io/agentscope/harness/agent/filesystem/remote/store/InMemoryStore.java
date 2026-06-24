@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.remote.store;
 
+/** {@summary InMemoryStore (InMemoryStore)} */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -68,7 +69,7 @@ public class InMemoryStore implements BaseStore {
                 (k, existing) -> {
                     long currentVersion = (existing != null) ? existing.version() : 0L;
                     if (currentVersion != expectedVersion) {
-                        return existing; // version mismatch — no update
+                        return existing; // version mismatch ...no update
                     }
                     written[0] = true;
                     return new StoreItem(key, value, currentVersion + 1);

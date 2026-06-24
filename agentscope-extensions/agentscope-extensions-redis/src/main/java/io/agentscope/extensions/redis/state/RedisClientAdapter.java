@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
+ * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
  * Adapter interface for Redis client operations.
  *
  * <p>This interface provides a unified abstraction over different Redis client implementations
@@ -36,6 +37,7 @@ import java.util.Set;
 public interface RedisClientAdapter {
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Set a string value.
      *
      * @param key the Redis key
@@ -44,6 +46,7 @@ public interface RedisClientAdapter {
     void set(String key, String value);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Get a string value.
      *
      * @param key the Redis key
@@ -52,6 +55,7 @@ public interface RedisClientAdapter {
     String get(String key);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Append a value to the right end of a list.
      *
      * @param key the Redis list key
@@ -60,6 +64,7 @@ public interface RedisClientAdapter {
     void rightPushList(String key, String value);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Get a range of elements from a list.
      *
      * @param key the Redis list key
@@ -70,6 +75,7 @@ public interface RedisClientAdapter {
     List<String> rangeList(String key, long start, long end);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Get the length of a list.
      *
      * @param key the Redis list key
@@ -78,6 +84,7 @@ public interface RedisClientAdapter {
     long getListLength(String key);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Delete one or more keys.
      *
      * @param keys the keys to delete
@@ -85,6 +92,7 @@ public interface RedisClientAdapter {
     void deleteKeys(String... keys);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Add a member to a set.
      *
      * @param key the Redis set key
@@ -93,6 +101,7 @@ public interface RedisClientAdapter {
     void addToSet(String key, String member);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Get all members of a set.
      *
      * @param key the Redis set key
@@ -101,6 +110,7 @@ public interface RedisClientAdapter {
     Set<String> getSetMembers(String key);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Get the number of members in a set.
      *
      * @param key the Redis set key
@@ -109,6 +119,7 @@ public interface RedisClientAdapter {
     long getSetSize(String key);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Check if a key exists.
      *
      * @param key the Redis key
@@ -117,6 +128,7 @@ public interface RedisClientAdapter {
     boolean keyExists(String key);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Find all keys matching a pattern.
      *
      * @param pattern the key pattern (e.g., "prefix:*")
@@ -125,6 +137,7 @@ public interface RedisClientAdapter {
     Set<String> findKeysByPattern(String pattern);
 
     /**
+     * {@summary Adapter interface for Redis client operations. (Adapter interface for Redis client operations.)}
      * Close the adapter and release resources.
      */
     void close();

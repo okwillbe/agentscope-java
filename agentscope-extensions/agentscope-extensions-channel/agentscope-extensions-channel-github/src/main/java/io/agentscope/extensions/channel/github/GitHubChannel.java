@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary GitHubChannel class ()}
  * GitHub channel adapter. Reacts to {@code issue_comment} and {@code pull_request_review_comment}
  * webhooks delivered to {@link GitHubWebhookController}; replies are posted as new comments via
  * {@link GitHubOutboundClient}.

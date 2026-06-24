@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary AgentBase (AgentBase)} */
 import com.fasterxml.jackson.databind.JsonNode;
 import io.agentscope.core.hook.ErrorEvent;
 import io.agentscope.core.hook.Hook;
@@ -236,7 +237,7 @@ public abstract class AgentBase implements Agent {
      * Reactor Context key carrying this call's graceful-shutdown {@code requestId} (issued by {@link
      * GracefulShutdownManager#registerRequest}). Threaded per-subscription so shutdown
      * interrupt/save target the exact in-flight call even when one agent instance serves many
-     * concurrent calls — keying shutdown tracking by agent id would otherwise collapse concurrent
+     * concurrent calls 閳?keying shutdown tracking by agent id would otherwise collapse concurrent
      * calls into a single entry.
      */
     public static final String SHUTDOWN_REQUEST_ID_KEY =
@@ -246,7 +247,7 @@ public abstract class AgentBase implements Agent {
      * Shared {@code call()} lifecycle: acquire execution, then (inside {@code deferContextual} so
      * the caller-supplied {@link RuntimeContext} is read per-subscription) run {@link
      * #beforeAgentExecution(List, RuntimeContext)} (which returns this call's per-call scope), carry
-     * that scope on the Reactor Context, and run the preCall → doCall → postCall chain with error
+     * that scope on the Reactor Context, and run the preCall 閳?doCall 閳?postCall chain with error
      * handling, releasing execution on terminate.
      */
     protected Mono<Msg> runLifecycle(List<Msg> msgs, Function<List<Msg>, Mono<Msg>> doCallFn) {
@@ -563,7 +564,7 @@ public abstract class AgentBase implements Agent {
      * per-call scope. The base implementation returns {@code null}; agents with per-call state
      * (e.g. {@code ReActAgent}) override this to return their active call scope's context. Because
      * the value is sourced from the agent's most-recently-activated scope, under concurrent calls
-     * on one instance this reflects the latest call — middlewares/tools that need their own call's
+     * on one instance this reflects the latest call 閳?middlewares/tools that need their own call's
      * context should read it from the per-subscription {@link RuntimeContext} they are handed.
      */
     public RuntimeContext getRuntimeContext() {
@@ -725,7 +726,7 @@ public abstract class AgentBase implements Agent {
      * a snapshot of the agent's current memory followed by the {@code callArgs} passed to
      * {@code call()}. Hooks may append non-SYSTEM messages to the tail. Injecting
      * {@link MsgRole#SYSTEM} messages via {@code setInputMessages} is forbidden and
-     * detected at the end of this method — use {@link PreCallEvent#setSystemMessage} or
+     * detected at the end of this method 閳?use {@link PreCallEvent#setSystemMessage} or
      * {@link PreCallEvent#appendSystemContent} instead.
      *
      * <p>After hooks run the system message is handed off via

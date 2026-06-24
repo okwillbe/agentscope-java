@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel.chatui;
 
+/** {@summary ChatUiChannel (ChatUiChannel)} */
 import io.agentscope.core.event.AgentEvent;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.MsgRole;
@@ -37,7 +38,7 @@ import reactor.core.publisher.Mono;
 
 /**
  * Default {@link Channel} implementation for direct Chat UI interactions: no external transport,
- * no webhook, no websocket — the caller submits a {@link ChatUiRequest} programmatically and
+ * no webhook, no websocket ...the caller submits a {@link ChatUiRequest} programmatically and
  * receives the agent reply reactively.
  *
  * <p>Suitable for:
@@ -204,7 +205,7 @@ public final class ChatUiChannel implements Channel {
 
     /**
      * Sends a plain-text message with explicit routing identity. The {@link SendOptions} determines
-     * the user identity and session key directly — no {@link DmScope} configuration required.
+     * the user identity and session key directly ...no {@link DmScope} configuration required.
      *
      * @see SendOptions#userId(String)
      * @see SendOptions#of(String, String)

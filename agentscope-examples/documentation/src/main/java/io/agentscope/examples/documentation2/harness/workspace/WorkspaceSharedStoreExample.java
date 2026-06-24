@@ -28,6 +28,7 @@ import java.nio.file.Path;
 import redis.clients.jedis.JedisPooled;
 
 /**
+ * {@summary WorkspaceSharedStoreExample class ()}
  * WorkspaceSharedStoreExample — Demonstrates the {@link DistributedStore} API for
  * one-line distributed configuration using Redis.
  *

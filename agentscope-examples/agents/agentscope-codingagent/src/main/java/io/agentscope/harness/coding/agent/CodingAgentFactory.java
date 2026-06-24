@@ -29,6 +29,7 @@ import io.agentscope.harness.coding.prompt.CodingSystemPrompt;
 import java.nio.file.Path;
 
 /**
+ * {@summary Factory for the coding agent. (Factory for the coding agent.)}
  * Factory for the coding agent.
  *
  * <ul>
@@ -50,6 +51,7 @@ public final class CodingAgentFactory {
     }
 
     /**
+     * {@summary Factory for the coding agent. (Factory for the coding agent.)}
      * Builds a coding agent.
      *
      * @param workspace agent workspace directory
@@ -110,6 +112,7 @@ public final class CodingAgentFactory {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Factory for the coding agent. (Factory for the coding agent.)}
      * Builds the model from the {@code CODING_MODEL_ID} environment variable.
      *
      * <p>Supported prefixes: {@code dashscope:<name>} (default), {@code openai:<name>},

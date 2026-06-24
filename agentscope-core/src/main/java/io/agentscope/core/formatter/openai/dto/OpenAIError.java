@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai.dto;
 
+/** {@summary OpenAIError (OpenAIError)} */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

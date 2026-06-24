@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
 /**
+ * {@summary Represents a piece of contextual information in the AG-UI protocol. (Represents a piece of contextual information in the AG-UI protocol.)}
  * Represents a piece of contextual information in the AG-UI protocol.
  *
  * <p>Context items provide additional information to the agent that may be relevant
@@ -32,6 +33,7 @@ public class AguiContext {
     private final String value;
 
     /**
+     * {@summary Represents a piece of contextual information in the AG-UI protocol. (Represents a piece of contextual information in the AG-UI protocol.)}
      * Creates a new AguiContext.
      *
      * @param description Description of what this context represents
@@ -45,6 +47,7 @@ public class AguiContext {
     }
 
     /**
+     * {@summary Represents a piece of contextual information in the AG-UI protocol. (Represents a piece of contextual information in the AG-UI protocol.)}
      * Get the context description.
      *
      * @return The description
@@ -54,6 +57,7 @@ public class AguiContext {
     }
 
     /**
+     * {@summary Represents a piece of contextual information in the AG-UI protocol. (Represents a piece of contextual information in the AG-UI protocol.)}
      * Get the context value.
      *
      * @return The value

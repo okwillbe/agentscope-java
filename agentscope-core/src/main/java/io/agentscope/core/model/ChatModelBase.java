@@ -16,6 +16,7 @@
 
 package io.agentscope.core.model;
 
+/** {@summary ChatModelBase (ChatModelBase)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.tracing.TracerRegistry;
 import java.util.List;

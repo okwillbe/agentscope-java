@@ -23,6 +23,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary TaskEventHandler class ()}
  * Handler for {@link TaskEvent}.
  */
 public class TaskEventHandler implements ClientEventHandler<TaskEvent> {

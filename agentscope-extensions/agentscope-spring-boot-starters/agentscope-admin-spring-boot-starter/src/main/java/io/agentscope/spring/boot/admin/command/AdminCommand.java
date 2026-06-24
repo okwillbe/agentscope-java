@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.command;
 import java.util.List;
 
 /**
+ * {@summary Self-describing record of an admin operation exposed by this starter. (Self-describing record of an admin operation exposed by this starter.)}
  * Self-describing record of an admin operation exposed by this starter.
  *
  * <p>The unified registry powers three views with the same metadata: REST routes, Actuator

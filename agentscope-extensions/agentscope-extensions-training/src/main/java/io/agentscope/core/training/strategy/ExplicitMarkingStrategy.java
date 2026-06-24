@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import reactor.util.context.ContextView;
 
 /**
+ * {@summary Explicit Marking Strategy - Selection strategy based on user explicit marking (Explicit Marking Strategy - Selection strategy based on user explicit marking)}
  * Explicit Marking Strategy - Selection strategy based on user explicit marking
  *
  * <p>Training only occurs when user explicitly marks via {@link TrainingContext}
@@ -51,6 +52,7 @@ public class ExplicitMarkingStrategy implements TrainingSelectionStrategy {
     }
 
     /**
+     * {@summary Explicit Marking Strategy - Selection strategy based on user explicit marking (Explicit Marking Strategy - Selection strategy based on user explicit marking)}
      * Create explicit marking strategy
      *
      * @return Strategy instance
@@ -60,6 +62,7 @@ public class ExplicitMarkingStrategy implements TrainingSelectionStrategy {
     }
 
     /**
+     * {@summary Explicit Marking Strategy - Selection strategy based on user explicit marking (Explicit Marking Strategy - Selection strategy based on user explicit marking)}
      * Create explicit marking strategy with specified TTL
      *
      * @param ttl Validity period of marking

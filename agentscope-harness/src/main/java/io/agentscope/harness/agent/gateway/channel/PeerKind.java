@@ -15,15 +15,17 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary PeerKind (PeerKind)} */
+
 /**
  * Classification of the conversation peer, used for session key construction and DM-scope
  * resolution.
  *
  * <ul>
- *   <li>{@link #DIRECT} — one-to-one DM / private conversation
- *   <li>{@link #CHANNEL} — public or private channel / room
- *   <li>{@link #GROUP} — group chat (WhatsApp group, Telegram supergroup, etc.)
- *   <li>{@link #THREAD} — thread nested inside a {@link #CHANNEL} or {@link #GROUP} peer
+ *   <li>{@link #DIRECT} ...one-to-one DM / private conversation
+ *   <li>{@link #CHANNEL} ...public or private channel / room
+ *   <li>{@link #GROUP} ...group chat (WhatsApp group, Telegram supergroup, etc.)
+ *   <li>{@link #THREAD} ...thread nested inside a {@link #CHANNEL} or {@link #GROUP} peer
  * </ul>
  */
 public enum PeerKind {

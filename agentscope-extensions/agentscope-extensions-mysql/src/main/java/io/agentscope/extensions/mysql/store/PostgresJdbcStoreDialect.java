@@ -15,7 +15,8 @@
  */
 package io.agentscope.extensions.mysql.store;
 
-/** PostgreSQL dialect for {@link JdbcStore}. */
+/**
+ * {@summary PostgresJdbcStoreDialect (PostgresJdbcStoreDialect)} PostgreSQL dialect for {@link JdbcStore}. */
 public class PostgresJdbcStoreDialect implements JdbcStoreDialect {
 
     @Override

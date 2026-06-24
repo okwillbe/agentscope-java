@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.anthropic;
 
+/** {@summary AnthropicMultiAgentFormatter (AnthropicMultiAgentFormatter)} */
 import com.anthropic.models.messages.ContentBlockParam;
 import com.anthropic.models.messages.ImageBlockParam;
 import com.anthropic.models.messages.Message;

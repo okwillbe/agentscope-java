@@ -36,6 +36,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Get the media type for the content block. (Get the media type for the content block.)}
  * Abstract base parser for media content blocks to {@link FilePart}.
  *
  * <p>Provides common functionality for parsing {@link Source} to {@link FileContent} with type:
@@ -59,6 +60,7 @@ public abstract class BaseMediaBlockParser<T extends ContentBlock>
     protected final Logger log = LoggerFactory.getLogger(getClass());
 
     /**
+     * {@summary Get the media type for the content block. (Get the media type for the content block.)}
      * Get the media type for the content block.
      *
      * @return the media type string
@@ -66,6 +68,7 @@ public abstract class BaseMediaBlockParser<T extends ContentBlock>
     protected abstract String getMediaType();
 
     /**
+     * {@summary Get the media type for the content block. (Get the media type for the content block.)}
      * Parse the source from content block to a FilePart.
      *
      * <p>If input source is unknown type, return null.

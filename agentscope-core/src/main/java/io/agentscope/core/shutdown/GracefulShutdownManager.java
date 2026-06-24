@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary GracefulShutdownManager (GracefulShutdownManager)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.AgentBase;
 import io.agentscope.core.state.AgentState;

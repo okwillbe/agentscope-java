@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook.recorder;
 
+/** {@summary JsonlTraceExporter (JsonlTraceExporter)} */
 import io.agentscope.core.hook.ActingChunkEvent;
 import io.agentscope.core.hook.ErrorEvent;
 import io.agentscope.core.hook.Hook;
@@ -103,7 +104,7 @@ public final class JsonlTraceExporter implements Hook, AutoCloseable {
 
     // WeakHashMap keeps per-agent run state from accumulating indefinitely after agent instances
     // become unreachable. Concurrency safety does not rely on WeakHashMap itself: all access to
-    // this map is serialized through the exporter’s single-threaded queue.
+    // this map is serialized through the exporter鈥檚 single-threaded queue.
     private final Map<String, RunState> runStates = new WeakHashMap<>();
 
     private JsonlTraceExporter(

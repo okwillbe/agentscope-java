@@ -29,6 +29,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 /**
+ * {@summary RuntimeContextExample class ()}
  * Demonstrates how to thread per-call metadata through {@link RuntimeContext} and
  * combine it with persistent {@link AgentStateStore} storage so the same agent instance can
  * pick up history across runs.

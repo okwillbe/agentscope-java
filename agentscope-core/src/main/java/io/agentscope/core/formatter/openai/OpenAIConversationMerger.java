@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary OpenAIConversationMerger (OpenAIConversationMerger)} */
 import io.agentscope.core.formatter.openai.dto.OpenAIContentPart;
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
 import io.agentscope.core.message.AudioBlock;
@@ -68,7 +69,7 @@ public class OpenAIConversationMerger {
      * ContentParts in the multimodal format.
      *
      * @param msgs List of conversation messages to merge
-     * @param roleFormatter Function to format role labels (e.g., USER → "User")
+     * @param roleFormatter Function to format role labels (e.g., USER 鈫?"User")
      * @param toolResultConverter Function to convert tool result blocks to strings
      * @return Single merged OpenAIMessage for OpenAI API
      */

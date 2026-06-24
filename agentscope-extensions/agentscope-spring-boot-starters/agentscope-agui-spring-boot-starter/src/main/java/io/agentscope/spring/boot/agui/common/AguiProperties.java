@@ -21,6 +21,7 @@ import java.util.List;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
  * Configuration properties for AG-UI integration.
  *
  * <p>These properties can be configured in application.yml or application.properties:
@@ -65,6 +66,7 @@ public class AguiProperties {
     private boolean emitToolCallArgs = true;
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * Whether to enable reasoning/thinking content output.
      *
      * <p>When enabled, ThinkingBlock content will be converted to REASONING_* events
@@ -77,36 +79,42 @@ public class AguiProperties {
     private String defaultAgentId = "default";
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * Whether to manage conversation memory on the backend by threadId. When enabled, the store
      * maintains agent instances per threadId, preserving conversation history across requests.
      */
     private boolean serverSideMemory = false;
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * Maximum number of thread sessions to keep in memory. Only used when serverSideMemory is
      * enabled.
      */
     private int maxThreadSessions = 1000;
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * AgentStateStore timeout in minutes. Sessions inactive for longer than this will be removed. Set to 0
      * for no timeout. Only used when serverSideMemory is enabled.
      */
     private int sessionTimeoutMinutes = 30;
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * HTTP header name to read agent ID from. The agent ID can be passed via this header when
      * making requests.
      */
     private String agentIdHeader = "X-Agent-Id";
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * Whether to enable path variable routing for agent ID. When enabled, requests can be made to
      * /agui/run/{agentId}.
      */
     private boolean enablePathRouting = true;
 
     /**
+     * {@summary Configuration properties for AG-UI integration. (Configuration properties for AG-UI integration.)}
      * Timeout for SSE emitter in milliseconds. This is the maximum time an SSE connection can stay
      * open.
      */

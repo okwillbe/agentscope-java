@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.user;
 
+/** {@summary UserInputData (UserInputData)} */
 import io.agentscope.core.message.ContentBlock;
 import java.util.List;
 import java.util.Map;

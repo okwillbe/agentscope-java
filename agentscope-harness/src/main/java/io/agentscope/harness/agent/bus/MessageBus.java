@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.bus;
 
+/** {@summary MessageBus (MessageBus)} */
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,11 +27,11 @@ import reactor.core.publisher.Mono;
  *
  * <p>Three consumption modes are exposed:
  * <ul>
- *   <li><b>Drain queue</b> (Mode A) — single-consumer, ack-on-read. Each entry is returned at
+ *   <li><b>Drain queue</b> (Mode A) ...single-consumer, ack-on-read. Each entry is returned at
  *       most once; storage drops it the moment it is read.</li>
- *   <li><b>Replay log</b> (Mode C) — multi-consumer, externally bounded. Each reader tracks its
+ *   <li><b>Replay log</b> (Mode C) ...multi-consumer, externally bounded. Each reader tracks its
  *       own cursor; entries persist until trimmed or capped by maxLen.</li>
- *   <li><b>Transient broadcast</b> (Mode D) — fire-and-forget pub/sub. Only currently-subscribed
+ *   <li><b>Transient broadcast</b> (Mode D) ...fire-and-forget pub/sub. Only currently-subscribed
  *       listeners receive a payload; no history is retained.</li>
  * </ul>
  *
@@ -39,7 +40,7 @@ import reactor.core.publisher.Mono;
  *
  * <p>Implementations:
  * <ul>
- *   <li>{@code WorkspaceMessageBus} — single-process, no external dependencies</li>
+ *   <li>{@code WorkspaceMessageBus} ...single-process, no external dependencies</li>
  * </ul>
  */
 public interface MessageBus extends AutoCloseable {
@@ -112,7 +113,7 @@ public interface MessageBus extends AutoCloseable {
      * Non-destructive: the same entries can be returned to any number of readers.
      *
      * @param key      log identifier
-     * @param since    cursor — return entries strictly newer than this id. {@code null} reads from
+     * @param since    cursor ...return entries strictly newer than this id. {@code null} reads from
      *                 the beginning.
      * @param maxCount maximum number of entries to return
      * @return entries in append order; empty list when no entries are newer than {@code since}
@@ -138,7 +139,7 @@ public interface MessageBus extends AutoCloseable {
 
     /**
      * Subscribe to a broadcast channel. Yields payloads published after subscription is
-     * established. The caller owns the subscription's lifetime — cancelling the Flux ends it.
+     * established. The caller owns the subscription's lifetime ...cancelling the Flux ends it.
      *
      * @param key channel identifier
      * @return stream of payloads
@@ -232,7 +233,7 @@ public interface MessageBus extends AutoCloseable {
      * Read events from a session's replay log for catch-up / reconnection.
      *
      * @param sessionId the session whose events to read
-     * @param since     cursor — return entries strictly newer than this id; {@code null} reads all
+     * @param since     cursor ...return entries strictly newer than this id; {@code null} reads all
      * @param maxCount  maximum events to return
      * @return entries in append order
      */

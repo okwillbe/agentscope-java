@@ -63,6 +63,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors)}
  * Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors
  * claw's {@code AgentToolsController} 1:1 in URL/payload shape, but every entrypoint is gated by
  * {@link AgentAccessGuard} so cross-user access fails with 403, and all workspace I/O goes through
@@ -92,6 +93,7 @@ public class AgentToolsController {
     private static final Logger log = LoggerFactory.getLogger(AgentToolsController.class);
 
     /**
+     * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors)}
      * Canonical list of harness built-in tools. Mirrors registrations performed in
      * {@code HarnessAgent.Builder.build()}; used for source attribution on {@code /active} and as
      * the {@code /catalog/builtins} response.
@@ -394,6 +396,7 @@ public class AgentToolsController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors)}
      * Builds the {@link WorkspaceManager} the agent would use at run time. For globals the user is
      * passed as both userId and agentId-owner — only runtime data routes are per-(userId, agentId);
      * the shared workspace content is read from the local disk root. For user-custom agents we look
@@ -443,6 +446,7 @@ public class AgentToolsController {
     public record BuiltinToolInfo(String id, String description, String group) {}
 
     /**
+     * {@summary Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors (Tools management endpoints for an agent under the platform's multi-tenant guardrails. Mirrors)}
      * Bundled MCP server template loaded from {@code classpath:catalog/mcp-servers.json}. Mirrors
      * {@link McpServerConfig} plus a small bit of UI metadata.
      */

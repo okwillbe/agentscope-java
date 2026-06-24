@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
  * OpenAI Text Embedding Model implementation.
  *
  * <p>This implementation provides access to OpenAI's text embedding API, supporting both
@@ -55,6 +56,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
     private final String baseUrl;
 
     /**
+     * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
      * Creates a new OpenAI text embedding model instance.
      *
      * @param apiKey the API key for OpenAI authentication
@@ -78,6 +80,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
      * Creates a new builder for OpenAITextEmbedding.
      *
      * @return a new Builder instance
@@ -229,6 +232,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
      * Builder for OpenAITextEmbedding.
      */
     public static class Builder {
@@ -239,6 +243,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
         private String baseUrl;
 
         /**
+         * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
          * Sets the API key for OpenAI authentication.
          *
          * @param apiKey the API key
@@ -250,6 +255,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
          * Sets the model name to use.
          *
          * @param modelName the model name (e.g., "text-embedding-3-small")
@@ -261,6 +267,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
          * Sets the dimension of embedding vectors.
          *
          * @param dimensions the dimension
@@ -272,6 +279,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
          * Sets the default execution configuration.
          *
          * @param config the execution config (null for defaults)
@@ -283,6 +291,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
          * Sets a custom base URL for OpenAI API.
          *
          * @param baseUrl the base URL (null for default)
@@ -294,6 +303,7 @@ public class OpenAITextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary OpenAI Text Embedding Model implementation. (OpenAI Text Embedding Model implementation.)}
          * Builds the OpenAITextEmbedding instance.
          *
          * <p>This method validates required parameters and ensures that the defaultExecutionConfig

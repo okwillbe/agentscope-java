@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillAuditLog (SkillAuditLog)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -112,7 +113,7 @@ public class SkillAuditLog {
             if (workspaceManager != null) {
                 workspaceManager.appendUtf8WorkspaceRelative(RuntimeContext.empty(), path, content);
             } else if (filesystem != null) {
-                // Fallback when no WorkspaceManager — read existing then upload concatenated.
+                // Fallback when no WorkspaceManager ...read existing then upload concatenated.
                 String existing = "";
                 try {
                     var rr = filesystem.read(RuntimeContext.empty(), path, 0, 0);

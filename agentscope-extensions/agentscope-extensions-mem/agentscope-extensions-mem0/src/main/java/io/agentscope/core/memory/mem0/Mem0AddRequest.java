@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
  * Request object for adding memories to Mem0 API.
  *
  * <p>This request is sent to the Mem0 API's {@code POST /v1/memories/} endpoint to
@@ -68,6 +69,7 @@ public class Mem0AddRequest {
     private Boolean infer;
 
     /**
+     * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
      * Output format version (v1.0 or v1.1, default: v1.1).
      * v1.0 (deprecated) returns array directly, v1.1 returns object with 'results' key.
      */
@@ -108,6 +110,7 @@ public class Mem0AddRequest {
     private String version;
 
     /**
+     * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
      * Type of memory (e.g., "semantic", "procedural").
      *
      * @deprecated Not in official API spec, kept for backward compatibility
@@ -279,6 +282,7 @@ public class Mem0AddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
      * Gets the memory type.
      *
      * @return The memory type
@@ -290,6 +294,7 @@ public class Mem0AddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
      * Sets the memory type.
      *
      * @param memoryType The memory type
@@ -301,6 +306,7 @@ public class Mem0AddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
      * Creates a new builder for Mem0AddRequest.
      *
      * @return A new builder instance
@@ -428,6 +434,7 @@ public class Mem0AddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Mem0 API. (Request object for adding memories to Mem0 API.)}
          * Sets the memory type.
          *
          * @param memoryType The memory type

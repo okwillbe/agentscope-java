@@ -22,6 +22,7 @@ import io.agentscope.core.a2a.server.executor.runner.BaseReActAgentRunner;
 import org.springframework.beans.factory.ObjectProvider;
 
 /**
+ * {@summary ReActAgentWithStarterRunner class ()}
  * Default Implementation for {@link AgentRunner} by {@link ReActAgent}.
  *
  * <p>Use {@link ReActAgent} directly to handler request from A2A client. In this implementation, {@link ReActAgent}
@@ -47,6 +48,7 @@ public class ReActAgentWithStarterRunner extends BaseReActAgentRunner implements
     }
 
     /**
+     * {@summary ReActAgentWithStarterRunner class ()}
      * Build new {@link ReActAgentWithStarterRunner} instance from
      * {@link org.springframework.beans.factory.ObjectProvider}.
      *

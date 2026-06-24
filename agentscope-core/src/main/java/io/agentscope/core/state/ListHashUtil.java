@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary ListHashUtil (ListHashUtil)} */
 import java.util.List;
 
 /**
@@ -26,7 +27,7 @@ import java.util.List;
  * <p>The hash computation uses a sampling strategy to avoid iterating over large lists:
  *
  * <ul>
- *   <li>For small lists (≤5 elements): all elements are included
+ *   <li>For small lists (鈮? elements): all elements are included
  *   <li>For large lists: samples at positions 0, 1/4, 1/2, 3/4, and last
  * </ul>
  *
@@ -100,7 +101,7 @@ public final class ListHashUtil {
      * <p>Sampling strategy:
      *
      * <ul>
-     *   <li>For size ≤ 5: returns all indices [0, 1, 2, ..., size-1]
+     *   <li>For size 鈮?5: returns all indices [0, 1, 2, ..., size-1]
      *   <li>For size > 5: returns [0, size/4, size/2, size*3/4, size-1]
      * </ul>
      *

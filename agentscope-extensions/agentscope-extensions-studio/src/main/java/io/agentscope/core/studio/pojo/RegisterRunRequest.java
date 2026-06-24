@@ -18,6 +18,7 @@ package io.agentscope.core.studio.pojo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
  * Request payload for registering a run with Studio.
  *
  * <p>This is sent via POST /trpc/registerRun when initializing Studio integration.
@@ -55,6 +56,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the unique identifier for this run.
      *
      * @return the run ID
@@ -64,6 +66,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the project name for this run.
      *
      * @return the project name
@@ -73,6 +76,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the run name.
      *
      * @return the run name
@@ -82,6 +86,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the timestamp when this run was created.
      *
      * @return the timestamp in ISO 8601 format
@@ -91,6 +96,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the process ID of the running application.
      *
      * @return the process ID
@@ -100,6 +106,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the current status of the run.
      *
      * @return the status (e.g., "running", "completed", "failed")
@@ -109,6 +116,7 @@ public class RegisterRunRequest {
     }
 
     /**
+     * {@summary Request payload for registering a run with Studio. (Request payload for registering a run with Studio.)}
      * Gets the directory where run artifacts are stored.
      *
      * @return the run directory path

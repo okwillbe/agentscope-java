@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.json;
 
+/** {@summary HarnessSandboxJacksonModule (HarnessSandboxJacksonModule)} */
 import com.fasterxml.jackson.databind.jsontype.NamedType;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import io.agentscope.harness.agent.sandbox.impl.docker.DockerSandboxState;

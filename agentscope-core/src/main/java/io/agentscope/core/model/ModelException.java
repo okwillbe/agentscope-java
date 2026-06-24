@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary ModelException (ModelException)} */
+
 /**
  * Exception thrown when model operations fail.
  * This exception provides a unified way to handle errors from different model providers.

@@ -21,6 +21,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
 /**
+ * {@summary Evaluates whether a session is still "fresh" based on its last activity time and the configured (Evaluates whether a session is still "fresh" based on its last activity time and the configured)}
  * Evaluates whether a session is still "fresh" based on its last activity time and the configured
  * {@link SessionResetPolicy}.
  *
@@ -38,6 +39,7 @@ public final class SessionFreshnessEvaluator {
     private SessionFreshnessEvaluator() {}
 
     /**
+     * {@summary Evaluates whether a session is still "fresh" based on its last activity time and the configured (Evaluates whether a session is still "fresh" based on its last activity time and the configured)}
      * Evaluates freshness of a session.
      *
      * @param updatedAtMs the session's last activity timestamp (epoch millis)
@@ -76,6 +78,7 @@ public final class SessionFreshnessEvaluator {
     }
 
     /**
+     * {@summary Evaluates whether a session is still "fresh" based on its last activity time and the configured (Evaluates whether a session is still "fresh" based on its last activity time and the configured)}
      * Computes the most recent daily reset boundary at the given hour. If the current time is
      * before today's boundary, uses yesterday's boundary.
      */

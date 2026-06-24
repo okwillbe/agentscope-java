@@ -28,6 +28,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary GitHub API tool — plan option B (Java-side direct calls).}
  * GitHub API tool — plan option B (Java-side direct calls).
  *
  * <p>Replaces the Python-side {@code GH_TOKEN=dummy gh} pattern. The GitHub token is resolved
@@ -133,6 +134,7 @@ public class GitHubApiTool {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary GitHub API tool — plan option B (Java-side direct calls).}
      * Resolves the GitHub token from (in priority order):
      *
      * <ol>

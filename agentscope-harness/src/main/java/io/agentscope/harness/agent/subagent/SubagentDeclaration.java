@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent;
 
+/** {@summary SubagentDeclaration (SubagentDeclaration)} */
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
@@ -26,11 +27,11 @@ import java.util.Map;
  * <p>A declaration binds to exactly one of two <em>source modes</em>:
  *
  * <ol>
- *   <li><b>Definition workspace</b> — {@link #getWorkspacePath()} points to a workspace directory
+ *   <li><b>Definition workspace</b> ...{@link #getWorkspacePath()} points to a workspace directory
  *       containing at least {@code AGENTS.md}. That file is used as the subagent's system-prompt
  *       body. Skills, knowledge, and MEMORY in the definition directory are available when the
  *       {@link WorkspaceMode} is {@link WorkspaceMode#ISOLATED}.
- *   <li><b>Remote HTTP</b> — {@link #getUrl()} points to an AgentScope task HTTP server. No local
+ *   <li><b>Remote HTTP</b> ...{@link #getUrl()} points to an AgentScope task HTTP server. No local
  *       definition workspace or inline body; the subagent runs out-of-process. Mutually exclusive
  *       with definition workspace and inline body.
  * </ol>
@@ -69,7 +70,7 @@ public final class SubagentDeclaration {
      * <p>The {@link io.agentscope.harness.agent.subagent.DefaultAgentManager#createAgentIfPresent}
      * path rejects spawn requests for {@link #PRIMARY}-only declarations so they can never be
      * invoked as workers; conversely, top-level launchers may want to reject {@link #SUBAGENT}
-     * declarations as entry points (current core does not own that check — top-level launch goes
+     * declarations as entry points (current core does not own that check ...top-level launch goes
      * through {@code HarnessAgent.builder()} directly, not through a declaration).
      */
     public enum Mode {
@@ -172,7 +173,7 @@ public final class SubagentDeclaration {
     /**
      * Maximum reasoning iterations. Defaults to 10.
      *
-     * @deprecated since Phase A — use {@link #getSteps()}. Returns the same value; kept for source
+     * @deprecated since Phase A ...use {@link #getSteps()}. Returns the same value; kept for source
      *     compatibility with callers built before the {@code steps} field existed.
      */
     @Deprecated
@@ -205,15 +206,14 @@ public final class SubagentDeclaration {
     /**
      * Optional model variant identifier (e.g. {@code "thinking"} for DashScope thinking-mode
      * variants). When {@code null} or blank, no variant transform is applied; the parent's
-     * variant — if any — is inherited via builder copy.
+     * variant ...if any ...is inherited via builder copy.
      */
     public String getVariant() {
         return variant;
     }
 
     /**
-     * The {@link Mode} of this declaration. Defaults to {@link Mode#ALL} when not specified —
-     * both spawnable and primary-capable.
+     * The {@link Mode} of this declaration. Defaults to {@link Mode#ALL} when not specified ...     * both spawnable and primary-capable.
      */
     public Mode getMode() {
         return mode;
@@ -252,9 +252,9 @@ public final class SubagentDeclaration {
      * <p>Tri-state:
      *
      * <ul>
-     *   <li>{@code TRUE} — always expose, regardless of what the LLM requests on {@code agent_spawn}
-     *   <li>{@code FALSE} — never expose (hard opt-out), overriding an LLM {@code expose_to_user=true}
-     *   <li>{@code null} (default) — no opinion; defer to the per-call {@code RuntimeContext} override
+     *   <li>{@code TRUE} ...always expose, regardless of what the LLM requests on {@code agent_spawn}
+     *   <li>{@code FALSE} ...never expose (hard opt-out), overriding an LLM {@code expose_to_user=true}
+     *   <li>{@code null} (default) ...no opinion; defer to the per-call {@code RuntimeContext} override
      *       and then the LLM's {@code expose_to_user} argument
      * </ul>
      *
@@ -390,7 +390,7 @@ public final class SubagentDeclaration {
         /**
          * Maximum reasoning iterations (default 10).
          *
-         * @deprecated since Phase A — use {@link #steps(int)}. Equivalent in behaviour.
+         * @deprecated since Phase A ...use {@link #steps(int)}. Equivalent in behaviour.
          */
         @Deprecated
         public Builder maxIters(int maxIters) {
@@ -406,7 +406,7 @@ public final class SubagentDeclaration {
 
         /**
          * Optional sampling temperature override. {@code null} (default) means inherit the parent
-         * agent's value. Typical range {@code 0.0 – 2.0}.
+         * agent's value. Typical range {@code 0.0 ...2.0}.
          */
         public Builder temperature(Double temperature) {
             this.temperature = temperature;
@@ -415,7 +415,7 @@ public final class SubagentDeclaration {
 
         /**
          * Optional nucleus-sampling (top-p) override. {@code null} (default) means inherit the
-         * parent. Typical range {@code 0.0 – 1.0}.
+         * parent. Typical range {@code 0.0 ...1.0}.
          */
         public Builder topP(Double topP) {
             this.topP = topP;
@@ -424,8 +424,7 @@ public final class SubagentDeclaration {
 
         /**
          * Optional model-variant identifier (e.g. {@code "thinking"} for DashScope thinking-mode
-         * variants). Blank / {@code null} means no variant transform; parent variant — if any —
-         * is inherited via builder copy.
+         * variants). Blank / {@code null} means no variant transform; parent variant ...if any ...         * is inherited via builder copy.
          */
         public Builder variant(String variant) {
             this.variant = variant;

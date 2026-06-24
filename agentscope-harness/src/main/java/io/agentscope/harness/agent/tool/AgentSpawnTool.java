@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary AgentSpawnTool (AgentSpawnTool)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.EventSource;
@@ -61,9 +62,9 @@ import reactor.core.publisher.Mono;
  * Simple subagent tool for agent-internal use. Much lighter than {@code SessionsTool}:
  *
  * <ul>
- *   <li>{@code agent_spawn} — spawn a subagent, run task, return result (sync or async)
- *   <li>{@code agent_send} — send follow-up message to a previously spawned subagent
- *   <li>{@code agent_list} — list active subagents
+ *   <li>{@code agent_spawn} ...spawn a subagent, run task, return result (sync or async)
+ *   <li>{@code agent_send} ...send follow-up message to a previously spawned subagent
+ *   <li>{@code agent_list} ...list active subagents
  * </ul>
  *
  * <p>No sessions, no lanes, no run registry, no announce dispatch. Just "create agent, invoke,
@@ -105,9 +106,9 @@ public class AgentSpawnTool {
      *     .build();
      * }</pre>
      *
-     * <p>Resolution precedence (highest first): this context value → the spawned subagent's
-     * {@link SubagentDeclaration#getExposeToUser()} policy → the LLM's {@code expose_to_user}
-     * argument → {@code false}.
+     * <p>Resolution precedence (highest first): this context value 鈫?the spawned subagent's
+     * {@link SubagentDeclaration#getExposeToUser()} policy 鈫?the LLM's {@code expose_to_user}
+     * argument 鈫?{@code false}.
      */
     public static final String CTX_EXPOSE_TO_USER = "agentscope.subagent.expose_to_user";
 
@@ -117,7 +118,7 @@ public class AgentSpawnTool {
             task_id: %s
             Use task_output(task_id='%s', block=false) to check status, \
             task_cancel(task_id='%s') to cancel, or task_list() to see all tasks. \
-            Do NOT call task_output immediately — the task has just started.\
+            Do NOT call task_output immediately ...the task has just started.\
             """;
 
     private final DefaultAgentManager agentManager;
@@ -133,7 +134,7 @@ public class AgentSpawnTool {
 
     /**
      * Creates an {@code AgentSpawnTool} that derives the active user-id from each tool call's
-     * {@link RuntimeContext}, rather than a shared supplier — this prevents identity races when a
+     * {@link RuntimeContext}, rather than a shared supplier ...this prevents identity races when a
      * single agent instance serves concurrent callers.
      *
      * @param agentManager factory and invoker for subagents
@@ -168,7 +169,7 @@ public class AgentSpawnTool {
     /**
      * Wires (or re-wires) the gateway bridge used to expose subagents as user-addressable threads.
      *
-     * <p>Mutating the bridge on the live instance — rather than constructing a replacement — is
+     * <p>Mutating the bridge on the live instance ...rather than constructing a replacement ...is
      * essential: the toolkit binds {@code agent_spawn} to this exact object at orchestration time,
      * so a replacement tool would never receive calls. The bridge is typically supplied lazily,
      * after the agent is built, when its internal gateway is created (see
@@ -189,7 +190,7 @@ public class AgentSpawnTool {
                     Every response starts with three lines: agent_key (pass this verbatim to \
                     agent_send as agent_key), agent_id (the subagent type name), and session_id \
                     (internal; do not use as agent_key). Sync mode returns the reply below that; \
-                    async (timeout_seconds=0) adds task_id for task_output — task_id is NOT agent_key.\
+                    async (timeout_seconds=0) adds task_id for task_output ...task_id is NOT agent_key.\
                     """)
     public Mono<String> agentSpawn(
             RuntimeContext runtimeContext,
@@ -279,7 +280,7 @@ public class AgentSpawnTool {
             sessionId = "sub-" + UUID.randomUUID();
         }
 
-        // Label uniqueness check — skipped above for persist=true reuse path (already returned).
+        // Label uniqueness check ...skipped above for persist=true reuse path (already returned).
         if (canonLabel != null && labelToKey.containsKey(canonLabel.toLowerCase())) {
             return Mono.just("Error: Label already in use: " + canonLabel);
         }
@@ -307,7 +308,7 @@ public class AgentSpawnTool {
 
         // Expose subagent to user via gateway bridge if requested. The effective decision combines
         // (in priority order) a per-call RuntimeContext override, the declaration policy, and the
-        // LLM-supplied argument — so application code can force or forbid exposure regardless of
+        // LLM-supplied argument ...so application code can force or forbid exposure regardless of
         // what the model decides.
         boolean effectiveExpose = resolveExposeToUser(exposeToUser, declOpt, runtimeContext);
         String subagentId = null;
@@ -594,12 +595,12 @@ public class AgentSpawnTool {
      * <p>Three paths, checked in order:
      *
      * <ol>
-     *   <li><b>{@code streamEvents()} path</b> — an {@link AgentEventEmitter} is present in the
+     *   <li><b>{@code streamEvents()} path</b> ...an {@link AgentEventEmitter} is present in the
      *       Reactor Context (set by {@code ReActAgent.streamEvents}). Child events are forwarded
      *       into the parent's {@code Flux<AgentEvent>} via a source-tagging wrapper emitter.
-     *   <li><b>{@code stream()} path</b> (deprecated) — a {@link SubagentEventBus} is present.
+     *   <li><b>{@code stream()} path</b> (deprecated) ...a {@link SubagentEventBus} is present.
      *       Child events are forwarded via the bus with {@link EventSource} metadata.
-     *   <li><b>Non-streaming path</b> — plain {@code call()}, no event forwarding.
+     *   <li><b>Non-streaming path</b> ...plain {@code call()}, no event forwarding.
      * </ol>
      *
      * <p><b>Context propagation note:</b> this method returns a {@code Mono} whose
@@ -617,7 +618,7 @@ public class AgentSpawnTool {
             RuntimeContext parentCtx) {
         return Mono.deferContextual(
                 ctxView -> {
-                    // ── Path 1: streamEvents() — AgentEvent forwarding ──
+                    // 鈹€鈹€ Path 1: streamEvents() ...AgentEvent forwarding 鈹€鈹€
                     Optional<AgentEventEmitter> emitterOpt = AgentEventEmitter.fromContext(ctxView);
                     if (emitterOpt.isPresent()) {
                         AgentEventEmitter parentEmitter = emitterOpt.get();
@@ -643,7 +644,7 @@ public class AgentSpawnTool {
                                                                 .withSource(sourcePath)));
                     }
 
-                    // ── Path 2: stream() (deprecated) — SubagentEventBus forwarding ──
+                    // 鈹€鈹€ Path 2: stream() (deprecated) ...SubagentEventBus forwarding 鈹€鈹€
                     if (ctxView.hasKey(SubagentEventBus.CONTEXT_KEY)) {
                         SubagentEventBus bus = ctxView.get(SubagentEventBus.CONTEXT_KEY);
                         EventSource childSource = buildChildSource(spawned, parentCtx);
@@ -676,7 +677,7 @@ public class AgentSpawnTool {
                                                                 agent, sessionId, userId, prompt)));
                     }
 
-                    // ── Path 3: non-streaming ──
+                    // 鈹€鈹€ Path 3: non-streaming 鈹€鈹€
                     return agentManager.invokeAgent(agent, sessionId, userId, prompt);
                 });
     }
@@ -693,10 +694,10 @@ public class AgentSpawnTool {
      * original:
      *
      * <ul>
-     *   <li>Agent finishes before timeout → normal result returned
-     *   <li>Timeout fires first → bridge (still running) is registered in {@link TaskRepository}
+     *   <li>Agent finishes before timeout 鈫?normal result returned
+     *   <li>Timeout fires first 鈫?bridge (still running) is registered in {@link TaskRepository}
      *       as an {@link TaskRunSpec.AdoptedTaskRunSpec}, and a {@code task_id} is returned
-     *   <li>Agent errors → error message returned
+     *   <li>Agent errors 鈫?error message returned
      * </ul>
      */
     private Mono<String> execWithTimeoutPromotion(
@@ -763,7 +764,7 @@ public class AgentSpawnTool {
 
     /**
      * Handles errors from the race future in {@link #execWithTimeoutPromotion}. Separated to keep
-     * the lambda readable — it distinguishes timeout (→ promote) from real errors (→ report).
+     * the lambda readable ...it distinguishes timeout (鈫?promote) from real errors (鈫?report).
      */
     private void handleExecError(
             Throwable err,
@@ -880,7 +881,7 @@ public class AgentSpawnTool {
                 task_id: %s
                 The task exceeded the %ds sync timeout but is still running in the background. \
                 Use task_output(task_id='%s', block=false) to check status, \
-                or wait — completed tasks are pushed back to you automatically. \
+                or wait ...completed tasks are pushed back to you automatically. \
                 Do NOT retry the same task.\
                 """,
                 taskId, timeoutMs / 1000, taskId);
@@ -967,9 +968,9 @@ public class AgentSpawnTool {
      * <p>Precedence (highest first):
      *
      * <ol>
-     *   <li>A per-call {@link RuntimeContext} value under {@link #CTX_EXPOSE_TO_USER} — lets the
+     *   <li>A per-call {@link RuntimeContext} value under {@link #CTX_EXPOSE_TO_USER} ...lets the
      *       embedding application force/forbid exposure for the whole call.
-     *   <li>The spawned subagent's {@link SubagentDeclaration#getExposeToUser()} policy — a static
+     *   <li>The spawned subagent's {@link SubagentDeclaration#getExposeToUser()} policy ...a static
      *       per-type default; {@code null} means "no opinion".
      *   <li>The LLM-supplied {@code expose_to_user} tool argument.
      *   <li>{@code false} when none of the above expresses an opinion.

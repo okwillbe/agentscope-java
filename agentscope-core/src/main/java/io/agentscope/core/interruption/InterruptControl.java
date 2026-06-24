@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.interruption;
 
+/** {@summary InterruptControl (InterruptControl)} */
 import io.agentscope.core.message.Msg;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;

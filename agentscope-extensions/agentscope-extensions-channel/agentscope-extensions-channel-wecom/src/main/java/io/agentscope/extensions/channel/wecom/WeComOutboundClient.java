@@ -32,6 +32,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary WeComOutboundClient class ()}
  * WeCom outbound HTTP client. Wraps {@code /cgi-bin/message/send} (DM) and
  * {@code /cgi-bin/appchat/send} (app group chat). The first {@link Msg#getTextContent() text
  * content} of each {@link Msg} is sent.
@@ -57,6 +58,7 @@ public final class WeComOutboundClient {
     }
 
     /**
+     * {@summary WeComOutboundClient class ()}
      * Sends each {@code msg} to the resolved peer. The address's {@code to} field has the form
      * {@code "channelId:peerKey"} where {@code peerKey} is {@code "DIRECT:userid"} or
      * {@code "GROUP:chatid"}.

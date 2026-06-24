@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary HttpTransport (HttpTransport)} */
 import reactor.core.publisher.Flux;
 
 /**

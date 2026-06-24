@@ -28,6 +28,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary GitHub outbound HTTP client. Posts a comment via (GitHub outbound HTTP client. Posts a comment via)}
  * GitHub outbound HTTP client. Posts a comment via
  * {@code POST /repos/{owner}/{repo}/issues/{number}/comments} (works for both Issues and Pull
  * Requests — GitHub treats PR conversation comments as issue comments).
@@ -99,6 +100,7 @@ public final class GitHubOutboundClient {
     }
 
     /**
+     * {@summary GitHub outbound HTTP client. Posts a comment via (GitHub outbound HTTP client. Posts a comment via)}
      * Parses an outbound address of the form {@code "channelId:thread:owner/repo#number"}. Returns
      * null on malformed input — caller surfaces an error.
      */

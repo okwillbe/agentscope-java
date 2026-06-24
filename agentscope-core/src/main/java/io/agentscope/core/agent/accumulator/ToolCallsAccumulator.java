@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.accumulator;
 
+/** {@summary ToolCallsAccumulator (ToolCallsAccumulator)} */
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.ToolUseBlock;
 import io.agentscope.core.util.JsonUtils;

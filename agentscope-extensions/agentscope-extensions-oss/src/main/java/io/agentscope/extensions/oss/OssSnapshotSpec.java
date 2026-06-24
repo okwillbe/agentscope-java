@@ -21,11 +21,13 @@ import io.agentscope.harness.agent.sandbox.snapshot.RemoteSnapshotSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 
 /**
+ * {@summary Creates an OSS snapshot spec from an existing OSS client. (Creates an OSS snapshot spec from an existing OSS client.)}
  * Convenience {@link SandboxSnapshotSpec} for Alibaba Cloud OSS snapshot storage.
  */
 public class OssSnapshotSpec extends RemoteSnapshotSpec {
 
     /**
+     * {@summary Creates an OSS snapshot spec from an existing OSS client. (Creates an OSS snapshot spec from an existing OSS client.)}
      * Creates an OSS snapshot spec from an existing OSS client.
      *
      * @param ossClient initialized OSS client
@@ -37,6 +39,7 @@ public class OssSnapshotSpec extends RemoteSnapshotSpec {
     }
 
     /**
+     * {@summary Creates an OSS snapshot spec from an existing OSS client. (Creates an OSS snapshot spec from an existing OSS client.)}
      * Creates an OSS snapshot spec from endpoint/credential settings.
      *
      * @param endpoint OSS endpoint (e.g. oss-cn-hangzhou.aliyuncs.com)

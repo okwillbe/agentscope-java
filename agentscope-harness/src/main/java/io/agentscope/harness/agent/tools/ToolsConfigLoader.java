@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tools;
 
+/** {@summary ToolsConfigLoader (ToolsConfigLoader)} */
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import io.agentscope.core.agent.RuntimeContext;
@@ -35,7 +36,7 @@ import org.slf4j.LoggerFactory;
  * filesystem-overlay (sandbox / remote) path is honoured exactly like {@code AGENTS.md}. Performs
  * {@code ${ENV_VAR}} substitution against {@link System#getenv} on the raw JSON text before
  * parsing so that secrets in headers, env entries, urls, etc. are kept out of the file. Parse
- * failures never throw — they log and return {@link Optional#empty()} so the agent still builds
+ * failures never throw ...they log and return {@link Optional#empty()} so the agent still builds
  * with its default toolkit.
  */
 public final class ToolsConfigLoader {
@@ -64,8 +65,8 @@ public final class ToolsConfigLoader {
                     wsManager.readManagedWorkspaceFileUtf8(
                             RuntimeContext.empty(), WorkspaceConstants.TOOLS_JSON);
         } catch (Exception e) {
-            // Sandbox/remote filesystems may not be reachable at build time. Fall back silently —
-            // the agent should still build.
+            // Sandbox/remote filesystems may not be reachable at build time. Fall back silently ...
+            //            // the agent should still build.
             log.debug(
                     "Could not read {} via workspace manager ({}); skipping.",
                     WorkspaceConstants.TOOLS_JSON,

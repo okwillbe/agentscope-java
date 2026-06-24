@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.skill.repository;
 
+/** {@summary AgentSkillRepositoryInfo (AgentSkillRepositoryInfo)} */
+
 /**
  * Metadata about a skill repository.
  *

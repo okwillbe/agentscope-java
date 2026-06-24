@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Training Runner - Training Process Controller (Training Runner - Training Process Controller)}
  * Training Runner - Training Process Controller
  *
  * <p>Responsible for:
@@ -110,6 +111,7 @@ public class TrainingRunner {
     }
 
     /**
+     * {@summary Training Runner - Training Process Controller (Training Runner - Training Process Controller)}
      * Start training runner
      */
     public synchronized void start() {
@@ -134,6 +136,7 @@ public class TrainingRunner {
     }
 
     /**
+     * {@summary Training Runner - Training Process Controller (Training Runner - Training Process Controller)}
      * Stop training runner
      */
     public synchronized void stop() {
@@ -169,6 +172,7 @@ public class TrainingRunner {
     }
 
     /**
+     * {@summary Training Runner - Training Process Controller (Training Runner - Training Process Controller)}
      * Manually trigger commit
      */
     public Mono<Void> commit() {
@@ -180,6 +184,7 @@ public class TrainingRunner {
     }
 
     /**
+     * {@summary Training Runner - Training Process Controller (Training Runner - Training Process Controller)}
      * Start periodic commit scheduler
      */
     private void startCommitScheduler() {
@@ -226,6 +231,7 @@ public class TrainingRunner {
     }
 
     /**
+     * {@summary Training Runner - Training Process Controller (Training Runner - Training Process Controller)}
      * Builder for TrainingRunner
      */
     public static class Builder {

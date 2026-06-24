@@ -21,6 +21,7 @@ import io.a2a.spec.AgentCard;
 import java.util.Map;
 
 /**
+ * {@summary Agent Card Producer from well known url. (Agent Card Producer from well known url.)}
  * Agent Card Producer from well known url.
  *
  * <p>Following <a href="https://a2a-protocol.org/latest/topics/agent-discovery/#1-well-known-uri">Well-Known URI</a> define.
@@ -55,6 +56,7 @@ public class WellKnownAgentCardResolver implements AgentCardResolver {
     }
 
     /**
+     * {@summary Agent Card Producer from well known url. (Agent Card Producer from well known url.)}
      * Create a new {@link Builder} instance for {@link WellKnownAgentCardResolver}.
      *
      * @return new builder instance
@@ -77,6 +79,7 @@ public class WellKnownAgentCardResolver implements AgentCardResolver {
         }
 
         /**
+         * {@summary Agent Card Producer from well known url. (Agent Card Producer from well known url.)}
          * Set the base URL for the agent card resolver.
          *
          * @param baseUrl the base URL to set
@@ -88,6 +91,7 @@ public class WellKnownAgentCardResolver implements AgentCardResolver {
         }
 
         /**
+         * {@summary Agent Card Producer from well known url. (Agent Card Producer from well known url.)}
          * Set the relative card path for the agent card resolver.
          *
          * @param relativeCardPath the relative card path to set
@@ -99,6 +103,7 @@ public class WellKnownAgentCardResolver implements AgentCardResolver {
         }
 
         /**
+         * {@summary Agent Card Producer from well known url. (Agent Card Producer from well known url.)}
          * Set the authentication headers for the agent card resolver.
          *
          * @param authHeaders the authentication headers to set
@@ -110,6 +115,7 @@ public class WellKnownAgentCardResolver implements AgentCardResolver {
         }
 
         /**
+         * {@summary Agent Card Producer from well known url. (Agent Card Producer from well known url.)}
          * Build the WellKnownAgentCardResolver instance.
          *
          * @return the built WellKnownAgentCardResolver instance

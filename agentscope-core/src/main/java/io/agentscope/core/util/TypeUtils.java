@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.util;
 
+/** {@summary TypeUtils (TypeUtils)} */
 import java.util.Optional;
 
 /**

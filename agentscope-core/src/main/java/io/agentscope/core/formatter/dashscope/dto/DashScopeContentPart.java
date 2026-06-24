@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope.dto;
 
+/** {@summary DashScopeContentPart (DashScopeContentPart)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
@@ -75,7 +76,7 @@ public class DashScopeContentPart {
     @JsonProperty("max_pixels")
     private Integer maxPixels;
 
-    /** Used to limit the total pixels of all frames extracted from the video (single image pixels × total frames). */
+    /** Used to limit the total pixels of all frames extracted from the video (single image pixels 脳 total frames). */
     @JsonProperty("total_pixels")
     private Integer totalPixels;
 

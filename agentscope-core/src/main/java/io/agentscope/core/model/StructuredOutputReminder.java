@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary StructuredOutputReminder (StructuredOutputReminder)} */
+
 /**
  * Configuration for how to ensure the model calls generate_response tool in structured output
  * mode.

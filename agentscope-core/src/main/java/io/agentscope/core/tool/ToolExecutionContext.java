@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolExecutionContext (ToolExecutionContext)} */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,7 +26,7 @@ import java.util.Objects;
  *
  * <p>Two-layer architecture: External interface + Storage layer ({@link ContextStore}).
  *
- * <p>Priority chain: Call → Agent → Toolkit → Spring (highest to lowest)
+ * <p>Priority chain: Call 鈫?Agent 鈫?Toolkit 鈫?Spring (highest to lowest)
  *
  * <p>Example:
  *

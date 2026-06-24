@@ -37,6 +37,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
  * Git-based read-only implementation of AgentSkillRepository.
  *
  * <p>This repository clones a remote Git repository to a local temporary directory and accesses
@@ -114,6 +115,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     private volatile String lastRemoteRef;
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL using the default branch.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -125,6 +127,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL and local path.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -137,6 +140,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL and branch.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -149,6 +153,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL, local path, and source.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -162,6 +167,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL, branch, and local path.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -175,6 +181,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL and auto-update option.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -187,6 +194,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL, branch, local path, and source.
      *
      * @param remoteUrl The Git repository URL (HTTPS or SSH)
@@ -201,6 +209,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with the specified remote URL, branch, local path, source,
      * and auto-update option.
      *
@@ -218,6 +227,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Creates a GitSkillRepository with an explicit in-repo skills root directory.
      *
      * <p>{@code skillsRoot} pins where inside the cloned repository the skill folders live (each
@@ -299,6 +309,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Triggers a manual synchronization of the repository.
      */
     public void sync() {
@@ -329,6 +340,7 @@ public class GitSkillRepository implements AgentSkillRepository {
 
     @Override
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Performs manual cleanup of the temporary local repository directory.
      *
      * <p>This is optional: temporary directories are also deleted automatically when the JVM
@@ -376,6 +388,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Extracts a concise repository identifier from a Git URL.
      *
      * <p>Examples:
@@ -413,6 +426,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Validates a user-supplied in-repo skills root.
      *
      * <p>Rejects absolute paths and paths whose segments contain {@code ".."}, so a malicious or
@@ -442,6 +456,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Ensures the Git repository is synchronized (cloned or pulled) before accessing skills.
      *
      * @throws IllegalStateException if local path exists but is not a valid Git repository
@@ -539,6 +554,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Checks if a directory is empty.
      *
      * @param path The directory path to check
@@ -552,6 +568,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Checks if a path is a Git repository.
      *
      * @param path The path to check
@@ -562,6 +579,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Clones the remote Git repository to the local path.
      *
      * @throws RuntimeException if clone operation fails with detailed error messages
@@ -661,6 +679,7 @@ public class GitSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary Git-based read-only implementation of AgentSkillRepository. (Git-based read-only implementation of AgentSkillRepository.)}
      * Pulls updates from the remote Git repository.
      *
      * @throws RuntimeException if pull operation fails

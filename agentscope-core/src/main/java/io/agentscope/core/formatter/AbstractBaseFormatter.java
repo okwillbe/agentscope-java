@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter;
 
+/** {@summary AbstractBaseFormatter (AbstractBaseFormatter)} */
 import io.agentscope.core.message.AudioBlock;
 import io.agentscope.core.message.Base64Source;
 import io.agentscope.core.message.ContentBlock;
@@ -286,7 +287,7 @@ public abstract class AbstractBaseFormatter<TReq, TResp, TParams>
      */
     protected String saveBase64DataToTempFile(String mediaType, String base64Data)
             throws IOException {
-        // Extract extension from MIME type (e.g., "image/png" → ".png")
+        // Extract extension from MIME type (e.g., "image/png" 鈫?".png")
         String extension = "." + (mediaType.contains("/") ? mediaType.split("/")[1] : mediaType);
 
         // Create temp file with extension

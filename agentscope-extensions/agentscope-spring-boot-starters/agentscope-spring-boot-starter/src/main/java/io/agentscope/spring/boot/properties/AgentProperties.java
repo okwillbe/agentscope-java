@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.properties;
 
 /**
+ * {@summary Configuration properties for the default ReActAgent bean. (Configuration properties for the default ReActAgent bean.)}
  * Configuration properties for the default ReActAgent bean.
  *
  * <p>Typical {@code application.yml} configuration:
@@ -32,21 +33,25 @@ package io.agentscope.spring.boot.properties;
 public class AgentProperties {
 
     /**
+     * {@summary Configuration properties for the default ReActAgent bean. (Configuration properties for the default ReActAgent bean.)}
      * Whether to create the default ReActAgent bean.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary Configuration properties for the default ReActAgent bean. (Configuration properties for the default ReActAgent bean.)}
      * Default agent name.
      */
     private String name = "Assistant";
 
     /**
+     * {@summary Configuration properties for the default ReActAgent bean. (Configuration properties for the default ReActAgent bean.)}
      * Default system prompt used by the agent.
      */
     private String sysPrompt = "You are a helpful AI assistant.";
 
     /**
+     * {@summary Configuration properties for the default ReActAgent bean. (Configuration properties for the default ReActAgent bean.)}
      * Maximum number of ReAct iterations for a single request.
      */
     private int maxIters = 10;

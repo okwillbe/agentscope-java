@@ -38,6 +38,7 @@ import java.util.stream.Collectors;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware. (MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware.)}
  * MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware.
  *
  * <p>Migration notes (from documentation/quickstart):
@@ -56,6 +57,7 @@ import reactor.core.publisher.Flux;
 public class MultiModalToolExample {
 
     /**
+     * {@summary MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware. (MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware.)}
      * Runs the multimodal tool example.
      *
      * @param args command-line arguments (ignored)
@@ -164,6 +166,7 @@ public class MultiModalToolExample {
     }
 
     /**
+     * {@summary MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware. (MultiModalToolExample - Demonstrates multimodal tools with a tool-call logging middleware.)}
      * Middleware that logs tool call names / inputs before execution,
      * and logs tool result text deltas and final state after execution.
      */

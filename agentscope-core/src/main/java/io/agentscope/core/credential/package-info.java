@@ -15,13 +15,19 @@
  */
 
 /**
- * Provider credentials for model authentication.
+ * {@summary Provider credentials for model authentication (用于模型认证的提供商凭证)}
  *
  * <p>{@link io.agentscope.core.credential.CredentialBase} carries the {@code id} field and exposes
  * {@code getChatModelClass()} (the consuming {@link io.agentscope.core.model.ChatModelBase}
- * subclass) plus {@code listModels()} (model catalog discovery). Concrete subclasses cover
- * Anthropic, OpenAI, DashScope, Gemini, Ollama, DeepSeek, Kimi, and xAI. Credentials whose Java
- * model class is not yet implemented throw {@link UnsupportedOperationException} from {@code
- * getChatModelClass()} while still round-tripping through JSON for storage compatibility.
+ * subclass) plus {@code listModels()} (model catalog discovery).
+ * <p>{@link io.agentscope.core.credential.CredentialBase}携带{@code id}字段，并暴露{@code getChatModelClass()}
+ * （消费的{@link io.agentscope.core.model.ChatModelBase}子类）以及{@code listModels()}（模型目录发现）。
+ *
+ * <p>Concrete subclasses cover Anthropic, OpenAI, DashScope, Gemini, Ollama, DeepSeek, Kimi, and xAI.
+ * Credentials whose Java model class is not yet implemented throw {@link UnsupportedOperationException}
+ * from {@code getChatModelClass()} while still round-tripping through JSON for storage compatibility.
+ * <p>具体子类涵盖Anthropic、OpenAI、DashScope、Gemini、Ollama、DeepSeek、Kimi和xAI。
+ * Java模型类尚未实现的凭证从{@code getChatModelClass()}抛出{@link UnsupportedOperationException}，
+ * 同时仍通过JSON进行往返以保持存储兼容性。
  */
 package io.agentscope.core.credential;

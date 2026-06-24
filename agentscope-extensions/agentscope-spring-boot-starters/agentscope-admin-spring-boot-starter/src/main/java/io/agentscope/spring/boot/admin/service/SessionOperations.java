@@ -41,6 +41,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Business logic for the per-session data-plane admin actions. (Business logic for the per-session data-plane admin actions.)}
  * Business logic for the per-session data-plane admin actions.
  *
  * <p>Designed so that the REST controller is a thin shell: it parses the request, defers to one
@@ -146,6 +147,7 @@ public final class SessionOperations {
     }
 
     /**
+     * {@summary Business logic for the per-session data-plane admin actions. (Business logic for the per-session data-plane admin actions.)}
      * Compact a session: summarize the older portion of the context, truncate to the last
      * {@code keepLast} messages, and persist via the agent's {@link AgentStateStore}.
      *
@@ -215,6 +217,7 @@ public final class SessionOperations {
     }
 
     /**
+     * {@summary Business logic for the per-session data-plane admin actions. (Business logic for the per-session data-plane admin actions.)}
      * Restore the agent's state to the snapshot stored before the most recent mutation. Returns
      * empty (not an error) if there is no undo history.
      */
@@ -293,6 +296,7 @@ public final class SessionOperations {
     }
 
     /**
+     * {@summary Business logic for the per-session data-plane admin actions. (Business logic for the per-session data-plane admin actions.)}
      * Switch the agent into plan mode. Only supported on {@link HarnessAgent} — the {@code
      * PlanModeManager} that enforces read-only behavior is configured by HarnessAgent.Builder, and
      * flipping the AgentState flag on a bare ReActAgent would silently bypass the enforcement
@@ -412,6 +416,7 @@ public final class SessionOperations {
     }
 
     /**
+     * {@summary Business logic for the per-session data-plane admin actions. (Business logic for the per-session data-plane admin actions.)}
      * Resolves the {@link ReActAgent} that backs the given id, unwrapping a {@link HarnessAgent}
      * to its delegate when needed. All read-only admin accessors (model, AgentState, middlewares,
      * session, sessionKey) are defined on the delegate, so reading via the unwrapped instance is

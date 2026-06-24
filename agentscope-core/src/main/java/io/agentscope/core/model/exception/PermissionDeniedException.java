@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary PermissionDeniedException (PermissionDeniedException)} */
+
 /**
  * Exception thrown when permission is denied (HTTP 403).
  *

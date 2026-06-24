@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxIsolationKey (SandboxIsolationKey)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.IsolationScope;
 import java.util.Objects;
@@ -49,14 +50,14 @@ public final class SandboxIsolationKey {
      *
      * <p>Resolution rules:
      * <ul>
-     *   <li>{@code SESSION} – requires a non-null {@code sessionId}; value =
+     *   <li>{@code SESSION} ...requires a non-null {@code sessionId}; value =
      *       {@code sessionId}. Returns empty if absent.</li>
-     *   <li>{@code USER} – uses {@code userId} when present. When userId is absent,
+     *   <li>{@code USER} ...uses {@code userId} when present. When userId is absent,
      *       falls back to {@code SESSION} scope using the sessionId. Returns empty
      *       only when both userId and sessionId are absent.</li>
-     *   <li>{@code AGENT} – value = {@code agentId} (always present).</li>
-     *   <li>{@code GLOBAL} – value = {@value #GLOBAL_VALUE} (always present).</li>
-     *   <li>{@code null} scope – treated as {@code USER}.</li>
+     *   <li>{@code AGENT} ...value = {@code agentId} (always present).</li>
+     *   <li>{@code GLOBAL} ...value = {@value #GLOBAL_VALUE} (always present).</li>
+     *   <li>{@code null} scope ...treated as {@code USER}.</li>
      * </ul>
      *
      * @param scope     the desired isolation scope; {@code null} defaults to {@code USER}
@@ -84,13 +85,13 @@ public final class SandboxIsolationKey {
                 if (ctx != null && ctx.getSessionId() != null && !ctx.getSessionId().isBlank()) {
                     log.debug(
                             "[sandbox] USER isolation scope requested but userId is absent"
-                                    + " — falling back to SESSION scope using sessionId");
+                                    + " ...falling back to SESSION scope using sessionId");
                     yield Optional.of(
                             new SandboxIsolationKey(IsolationScope.SESSION, ctx.getSessionId()));
                 }
                 log.warn(
                         "[sandbox] USER isolation scope requested but both userId and sessionId"
-                                + " are absent — skipping state lookup; a fresh sandbox will be"
+                                + " are absent ...skipping state lookup; a fresh sandbox will be"
                                 + " created");
                 yield Optional.empty();
             }

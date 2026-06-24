@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.impl.docker;
 
+/** {@summary DockerSandboxState (DockerSandboxState)} */
 import io.agentscope.harness.agent.sandbox.SandboxState;
 import java.util.ArrayList;
 import java.util.List;

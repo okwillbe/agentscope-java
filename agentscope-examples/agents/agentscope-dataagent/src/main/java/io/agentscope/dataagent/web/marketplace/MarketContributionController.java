@@ -33,6 +33,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary User-facing REST surface for nominating workspace artifacts for promotion to the shared (User-facing REST surface for nominating workspace artifacts for promotion to the shared)}
  * User-facing REST surface for nominating workspace artifacts for promotion to the shared
  * workspace via admin approval.
  *

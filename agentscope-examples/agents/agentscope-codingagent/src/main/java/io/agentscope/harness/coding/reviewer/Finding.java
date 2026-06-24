@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary Finding class ()}
  * A single reviewer finding — mirrors open-swe's {@code Finding} model in {@code
  * agent/reviewer_findings.py}.
  *

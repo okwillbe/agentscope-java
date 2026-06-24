@@ -17,7 +17,7 @@
 package io.agentscope.core.nacos.a2a.registry.constants;
 
 /**
- * Constants for Nacos A2A registry.
+ * {@summary Constants for Nacos A2A registry. (Constants for Nacos A2A registry.)}
  */
 public class Constants {
 

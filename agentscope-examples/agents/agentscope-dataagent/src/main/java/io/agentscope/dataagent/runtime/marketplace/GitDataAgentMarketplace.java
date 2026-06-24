@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary GitDataAgentMarketplace class ()}
  * Git-backed per-user marketplace. Delegates clone / pull / file walking to {@link
  * GitSkillRepository} from the {@code agentscope-extensions-skill-git-repository} module.
  *
@@ -47,6 +48,7 @@ public class GitDataAgentMarketplace implements DataAgentMarketplace {
     private final GitSkillRepository repo;
 
     /**
+     * {@summary GitDataAgentMarketplace class ()}
      * @param id stable marketplace id chosen by the user
      * @param remoteUrl HTTPS or SSH URL of the upstream git repository
      * @param branch optional branch (null → remote default)

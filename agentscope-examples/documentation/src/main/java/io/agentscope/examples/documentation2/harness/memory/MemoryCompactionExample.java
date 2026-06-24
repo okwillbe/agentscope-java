@@ -29,6 +29,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 /**
+ * {@summary MemoryCompactionExample — Demonstrates the two-layer memory system and conversation compaction. (MemoryCompactionExample — Demonstrates the two-layer memory system and conversation compaction.)}
  * MemoryCompactionExample — Demonstrates the two-layer memory system and conversation compaction.
  *
  * <p>What this example shows:

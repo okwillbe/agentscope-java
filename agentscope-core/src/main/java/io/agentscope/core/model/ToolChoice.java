@@ -16,6 +16,8 @@
 
 package io.agentscope.core.model;
 
+/** {@summary ToolChoice (ToolChoice)} */
+
 /**
  * Represents the tool choice behavior for LLM model calls.
  *

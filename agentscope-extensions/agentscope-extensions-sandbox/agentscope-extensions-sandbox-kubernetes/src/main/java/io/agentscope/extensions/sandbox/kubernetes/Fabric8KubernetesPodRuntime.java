@@ -50,7 +50,7 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** Kubernetes Pod operations using the Fabric8 client. */
+/** {@summary Kubernetes Pod operations using the Fabric8 client. (Kubernetes Pod operations using the Fabric8 client.)} Kubernetes Pod operations using the Fabric8 client. */
 public class Fabric8KubernetesPodRuntime {
 
     private static final Logger log = LoggerFactory.getLogger(Fabric8KubernetesPodRuntime.class);

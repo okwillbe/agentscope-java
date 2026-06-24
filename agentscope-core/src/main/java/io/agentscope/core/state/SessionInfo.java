@@ -16,6 +16,8 @@
 
 package io.agentscope.core.state;
 
+/** {@summary SessionInfo (SessionInfo)} */
+
 /**
  * Information about a session.
  * <p>

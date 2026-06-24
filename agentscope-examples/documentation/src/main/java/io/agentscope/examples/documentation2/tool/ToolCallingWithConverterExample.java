@@ -49,6 +49,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
+ * {@summary Runs the converter example. (Runs the converter example.)}
  * ToolCallingWithConverterExample - Demonstrates customizing {@link DefaultToolResultConverter}.
  *
  * <p>Shows two converter patterns:
@@ -65,6 +66,7 @@ import java.util.regex.Pattern;
 public class ToolCallingWithConverterExample {
 
     /**
+     * {@summary Runs the converter example. (Runs the converter example.)}
      * Runs the converter example.
      *
      * @param args command-line arguments (ignored)
@@ -134,6 +136,7 @@ public class ToolCallingWithConverterExample {
     public static class SimpleTools {
 
         /**
+         * {@summary Runs the converter example. (Runs the converter example.)}
          * Returns user information for the given user ID, with sensitive fields masked.
          *
          * @param userId the user ID
@@ -155,6 +158,7 @@ public class ToolCallingWithConverterExample {
         }
 
         /**
+         * {@summary Runs the converter example. (Runs the converter example.)}
          * Returns a list of orders for the given user ID, with JSON Schema appended.
          *
          * @param userId the user ID
@@ -193,6 +197,7 @@ public class ToolCallingWithConverterExample {
     // ==================== Custom Converters ====================
 
     /**
+     * {@summary Runs the converter example. (Runs the converter example.)}
      * Masks sensitive fields (password, apiKey, creditCard, etc.) in the tool result.
      */
     public static class SensitiveDataMaskingConverter extends DefaultToolResultConverter {
@@ -275,6 +280,7 @@ public class ToolCallingWithConverterExample {
     }
 
     /**
+     * {@summary Runs the converter example. (Runs the converter example.)}
      * Appends the JSON Schema of the return type to the tool result.
      */
     public static class SchemaEnhancementConverter extends DefaultToolResultConverter {
@@ -328,6 +334,7 @@ public class ToolCallingWithConverterExample {
         public UserInfo() {}
 
         /**
+         * {@summary Runs the converter example. (Runs the converter example.)}
          * Creates a new UserInfo instance.
          *
          * @param userId     user ID
@@ -459,6 +466,7 @@ public class ToolCallingWithConverterExample {
         public Order() {}
 
         /**
+         * {@summary Runs the converter example. (Runs the converter example.)}
          * Creates a new Order instance.
          *
          * @param id          order ID

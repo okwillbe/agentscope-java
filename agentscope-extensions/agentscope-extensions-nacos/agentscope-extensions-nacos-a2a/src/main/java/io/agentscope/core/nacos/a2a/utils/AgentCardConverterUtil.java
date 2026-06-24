@@ -30,7 +30,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- * AgentCard Converter between Nacos {@link AgentCard} and A2A specification {@link io.a2a.spec.AgentCard}.
+ * {@summary AgentCard Converter between Nacos {@link AgentCard} and A2A specification {@link io.a2a.spec.AgentCard}. (AgentCard Converter between Nacos {@link AgentCard} and A2A specification {@link io.a2a.spec.AgentCard}.)}
  *
  * <p>This utility also converts sub-specifications when converting AgentCard:
  * <ul>

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.subagent;
 
+/** {@summary SubAgentProvider (SubAgentProvider)} */
 import io.agentscope.core.agent.Agent;
 
 /**

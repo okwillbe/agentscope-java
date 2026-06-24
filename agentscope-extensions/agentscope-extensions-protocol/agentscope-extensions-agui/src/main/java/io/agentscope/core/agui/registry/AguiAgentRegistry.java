@@ -22,6 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
 
 /**
+ * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
  * Registry for managing agents accessible via the AG-UI protocol.
  *
  * <p>This registry supports two types of agent registration:
@@ -50,6 +51,7 @@ public class AguiAgentRegistry {
     private final Map<String, Supplier<Agent>> agentFactories = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Register a singleton agent with the given ID.
      *
      * <p>The same agent instance will be returned for all requests with this ID.
@@ -68,6 +70,7 @@ public class AguiAgentRegistry {
     }
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Register an agent factory with the given ID.
      *
      * <p>A new agent instance will be created for each request with this ID.
@@ -87,6 +90,7 @@ public class AguiAgentRegistry {
     }
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Get an agent by ID.
      *
      * <p>The agent is resolved in the following order:
@@ -110,6 +114,7 @@ public class AguiAgentRegistry {
     }
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Check if an agent is registered with the given ID.
      *
      * @param agentId The agent ID
@@ -120,6 +125,7 @@ public class AguiAgentRegistry {
     }
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Unregister an agent by ID.
      *
      * @param agentId The agent ID
@@ -132,6 +138,7 @@ public class AguiAgentRegistry {
     }
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Clear all registered agents.
      */
     public void clear() {
@@ -140,6 +147,7 @@ public class AguiAgentRegistry {
     }
 
     /**
+     * {@summary Registry for managing agents accessible via the AG-UI protocol. (Registry for managing agents accessible via the AG-UI protocol.)}
      * Get the number of registered agents (both factories and singletons).
      *
      * @return The total count of registered agents

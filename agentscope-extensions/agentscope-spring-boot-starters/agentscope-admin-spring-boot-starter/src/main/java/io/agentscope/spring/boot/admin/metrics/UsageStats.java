@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.admin.metrics;
 
 /**
+ * {@summary Immutable snapshot of accumulated usage counters for a single bucket (agent or model).}
  * Immutable snapshot of accumulated usage counters for a single bucket (agent or model).
  *
  * <p>{@code totalTokens} mirrors {@link io.agentscope.core.model.ChatUsage#getTotalTokens()} —

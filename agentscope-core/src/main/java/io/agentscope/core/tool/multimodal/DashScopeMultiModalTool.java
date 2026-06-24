@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.multimodal;
 
+/** {@summary DashScopeMultiModalTool (DashScopeMultiModalTool)} */
 import com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesis;
 import com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesisOutput;
 import com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesisParam;

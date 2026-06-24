@@ -22,6 +22,7 @@ import java.util.List;
 import reactor.util.context.ContextView;
 
 /**
+ * {@summary Training Selection Strategy - Training request filtering strategy (Training Selection Strategy - Training request filtering strategy)}
  * Training Selection Strategy - Training request filtering strategy
  *
  * <p>Unified interface for deciding which Agent requests should be used for training.
@@ -41,6 +42,7 @@ import reactor.util.context.ContextView;
 public interface TrainingSelectionStrategy {
 
     /**
+     * {@summary Training Selection Strategy - Training request filtering strategy (Training Selection Strategy - Training request filtering strategy)}
      * Decide whether the current Agent call should be used for training
      *
      * @param agent The Agent being called
@@ -53,6 +55,7 @@ public interface TrainingSelectionStrategy {
             Agent agent, List<Msg> inputMessages, Msg outputMessage, ContextView reactorContext);
 
     /**
+     * {@summary Training Selection Strategy - Training request filtering strategy (Training Selection Strategy - Training request filtering strategy)}
      * Priority of the strategy (lower number means higher priority)
      *
      * <p>When multiple strategies are combined, higher priority strategies execute first
@@ -64,6 +67,7 @@ public interface TrainingSelectionStrategy {
     }
 
     /**
+     * {@summary Training Selection Strategy - Training request filtering strategy (Training Selection Strategy - Training request filtering strategy)}
      * Name of the strategy (for logging and debugging)
      *
      * @return Strategy name

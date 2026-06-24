@@ -27,7 +27,8 @@ import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** {@link SandboxClient} for Daytona. */
+/**
+ * {@summary DaytonaSandboxClient (DaytonaSandboxClient)} {@link SandboxClient} for Daytona. */
 public class DaytonaSandboxClient implements SandboxClient<DaytonaSandboxClientOptions> {
 
     private static final Logger log = LoggerFactory.getLogger(DaytonaSandboxClient.class);

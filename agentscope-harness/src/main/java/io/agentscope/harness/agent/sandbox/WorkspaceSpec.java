@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary WorkspaceSpec (WorkspaceSpec)} */
 import io.agentscope.harness.agent.sandbox.layout.WorkspaceEntry;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -25,11 +26,11 @@ import java.util.Map;
  *
  * <p>Fields:
  * <ul>
- *   <li>{@code root} — workspace path inside the sandbox (default: {@code /workspace})
- *   <li>{@code entries} — files, directories, and optional {@code bind_mount} entries to apply at
+ *   <li>{@code root} ...workspace path inside the sandbox (default: {@code /workspace})
+ *   <li>{@code entries} ...files, directories, and optional {@code bind_mount} entries to apply at
  *       startup (bind mounts are enforced by Docker/Kubernetes stores, not materialized as
  *       copied files)
- *   <li>{@code environment} — environment variables to inject into every exec command
+ *   <li>{@code environment} ...environment variables to inject into every exec command
  * </ul>
  *
  * <p>Usage example:

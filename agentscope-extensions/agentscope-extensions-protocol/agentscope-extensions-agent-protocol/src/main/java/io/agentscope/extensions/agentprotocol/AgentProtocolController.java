@@ -27,7 +27,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/** Internal AgentScope task protocol ({@code /tasks/...}). */
+/**
+ * {@summary AgentProtocolController (AgentProtocolController)} Internal AgentScope task protocol ({@code /tasks/...}). */
 @RestController
 public class AgentProtocolController {
 
@@ -61,7 +62,8 @@ public class AgentProtocolController {
         return store.snapshot(taskId);
     }
 
-    /** Blocks until the task completes. {@code timeout_seconds} defaults to 7200 (2 hours). */
+    /**
+     * {@summary AgentProtocolController (AgentProtocolController)} Blocks until the task completes. {@code timeout_seconds} defaults to 7200 (2 hours). */
     @GetMapping(value = "/tasks/{taskId}/wait", produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> waitFor(
             @PathVariable("taskId") String taskId,

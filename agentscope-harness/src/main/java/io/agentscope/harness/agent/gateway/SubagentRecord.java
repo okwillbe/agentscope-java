@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary SubagentRecord (SubagentRecord)} */
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;

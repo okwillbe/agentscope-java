@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary AgentStateStore (AgentStateStore)} */
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -30,8 +31,8 @@ import java.util.Set;
  * <p>Slot addressing is intentionally simple:
  *
  * <ul>
- *   <li>{@code sessionId} — non-null, non-blank; identifies a conversation / session.
- *   <li>{@code userId} — nullable. {@code null} represents an anonymous / single-tenant
+ *   <li>{@code sessionId} 鈥?non-null, non-blank; identifies a conversation / session.
+ *   <li>{@code userId} 鈥?nullable. {@code null} represents an anonymous / single-tenant
  *       caller (CLI usage, tests). Implementations group all anonymous sessions under a
  *       single namespace.
  * </ul>
@@ -78,8 +79,8 @@ public interface AgentStateStore {
      * <p>Different implementations may use different storage strategies:
      *
      * <ul>
-     *   <li>{@link JsonFileAgentStateStore}: incremental append — only new elements are written
-     *   <li>{@link InMemoryAgentStateStore}: full replacement — replaces the entire list
+     *   <li>{@link JsonFileAgentStateStore}: incremental append 鈥?only new elements are written
+     *   <li>{@link InMemoryAgentStateStore}: full replacement 鈥?replaces the entire list
      * </ul>
      *
      * <p>Callers should always pass the full list. The implementation decides the storage strategy.
@@ -148,7 +149,7 @@ public interface AgentStateStore {
      * List session identifiers visible under the given user namespace.
      *
      * <p>Use {@code userId == null} to list anonymous sessions. Pass a concrete user to list
-     * only that user's sessions. There is no API to list across users in one call — that is
+     * only that user's sessions. There is no API to list across users in one call 鈥?that is
      * a separate administrative concern (admin starter handles it by iterating known users).
      *
      * @param userId nullable user identifier

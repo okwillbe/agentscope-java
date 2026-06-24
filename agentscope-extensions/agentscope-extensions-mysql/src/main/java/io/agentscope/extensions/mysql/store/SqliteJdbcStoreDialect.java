@@ -16,6 +16,7 @@
 package io.agentscope.extensions.mysql.store;
 
 /**
+ * {@summary SqliteJdbcStoreDialect class ()}
  * SQLite dialect for {@link JdbcStore}. Requires SQLite 3.24 or newer for {@code ON CONFLICT
  * ... DO UPDATE} (UPSERT) support.
  */

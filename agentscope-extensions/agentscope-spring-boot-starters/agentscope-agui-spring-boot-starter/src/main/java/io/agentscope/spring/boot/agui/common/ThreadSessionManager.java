@@ -27,6 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
  * Manages agent sessions by threadId for server-side memory management.
  *
  * <p>This manager maintains a pool of agent instances, each associated with a threadId. When
@@ -57,6 +58,7 @@ public class ThreadSessionManager {
     private final int sessionTimeoutMinutes;
 
     /**
+     * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
      * Creates a new ThreadSessionManager.
      *
      * @param maxSessions Maximum number of sessions to maintain
@@ -68,6 +70,7 @@ public class ThreadSessionManager {
     }
 
     /**
+     * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
      * Get or create an agent for the given threadId.
      *
      * <p>This method is thread-safe. It uses atomic operations to ensure that concurrent requests
@@ -116,6 +119,7 @@ public class ThreadSessionManager {
     }
 
     /**
+     * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
      * Check if a session exists and has memory for the given threadId.
      *
      * @param threadId The thread identifier
@@ -138,6 +142,7 @@ public class ThreadSessionManager {
     }
 
     /**
+     * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
      * Get the session for a threadId if it exists.
      *
      * @param threadId The thread identifier
@@ -148,6 +153,7 @@ public class ThreadSessionManager {
     }
 
     /**
+     * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
      * Remove a session by threadId.
      *
      * @param threadId The thread identifier
@@ -199,6 +205,7 @@ public class ThreadSessionManager {
     }
 
     /**
+     * {@summary Manages agent sessions by threadId for server-side memory management. (Manages agent sessions by threadId for server-side memory management.)}
      * Get the current number of active sessions.
      *
      * @return Number of sessions

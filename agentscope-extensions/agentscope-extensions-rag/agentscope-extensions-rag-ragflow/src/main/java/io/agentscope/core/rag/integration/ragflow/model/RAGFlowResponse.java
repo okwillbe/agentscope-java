@@ -21,6 +21,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import java.util.List;
 
 /**
+ * {@summary RAGFlow API response model. (RAGFlow API response model.)}
  * RAGFlow API response model.
  *
  * <p><b>Note:</b> The {@code data} field may be {@code false}, {@code null}, or an object
@@ -104,6 +105,7 @@ public class RAGFlowResponse {
     }
 
     /**
+     * {@summary RAGFlow API response model. (RAGFlow API response model.)}
      * Document aggregation information.
      *
      * <p>This class represents document-level aggregation data returned by RAGFlow API, showing

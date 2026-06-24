@@ -30,6 +30,7 @@ import java.util.List;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Decorator that wraps any Model and forces the fallback structured output path (Decorator that wraps any Model and forces the fallback structured output path)}
  * Structured output example using the {@code generate_response} tool fallback path.
  *
  * <p>When a model does not support native structured output ({@code response_format}
@@ -137,6 +138,7 @@ public class StructuredOutputFallbackExample {
     }
 
     /**
+     * {@summary Decorator that wraps any Model and forces the fallback structured output path (Decorator that wraps any Model and forces the fallback structured output path)}
      * Decorator that wraps any Model and forces the fallback structured output path
      * by returning {@code false} from {@link #supportsNativeStructuredOutput()}.
      */

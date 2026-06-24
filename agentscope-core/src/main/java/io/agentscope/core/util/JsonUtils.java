@@ -16,6 +16,7 @@
 
 package io.agentscope.core.util;
 
+/** {@summary JsonUtils (JsonUtils)} */
 import io.agentscope.core.message.ToolUseBlock;
 import java.util.Map;
 import org.slf4j.Logger;

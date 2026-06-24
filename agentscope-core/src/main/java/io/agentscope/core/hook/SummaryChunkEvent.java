@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary SummaryChunkEvent (SummaryChunkEvent)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.model.GenerateOptions;

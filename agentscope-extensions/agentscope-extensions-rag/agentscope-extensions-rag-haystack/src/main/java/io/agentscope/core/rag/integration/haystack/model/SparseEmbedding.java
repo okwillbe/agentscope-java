@@ -48,6 +48,7 @@ public class SparseEmbedding {
         private List<Float> values;
 
         /**
+         * {@summary List of indices of non-zero elements in the embedding. (List of indices of non-zero elements in the embedding.)}
          * List of indices of non-zero elements in the embedding.
          *
          * @param indices list of indices
@@ -59,6 +60,7 @@ public class SparseEmbedding {
         }
 
         /**
+         * {@summary List of indices of non-zero elements in the embedding. (List of indices of non-zero elements in the embedding.)}
          * List of values of non-zero elements in the embedding.
          *
          * @param values list of values

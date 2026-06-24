@@ -16,6 +16,7 @@
 package io.agentscope.extensions.sandbox.e2b.mounts;
 
 /**
+ * {@summary Placeholder for E2B cloud bucket mount configuration. (Placeholder for E2B cloud bucket mount configuration.)}
  * Placeholder for E2B cloud bucket mount configuration.
  */
 public interface E2bCloudBucketMountStrategy {

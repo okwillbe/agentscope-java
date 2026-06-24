@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary AtPathExpansionMiddleware (AtPathExpansionMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -50,13 +51,12 @@ import reactor.core.publisher.Flux;
  * call site):
  *
  * <ul>
- *   <li><b>Local</b> ({@link OverlayFilesystem} wrapping {@link LocalFilesystemWithShell}) —
- *       attempts {@code fs.read}; success triggers attachment, failure (typically because the
+ *   <li><b>Local</b> ({@link OverlayFilesystem} wrapping {@link LocalFilesystemWithShell}) ... *       attempts {@code fs.read}; success triggers attachment, failure (typically because the
  *       path falls outside the {@code PathPolicy} allow-list) leaves the {@code @path} text
  *       untouched.
- *   <li><b>Sandbox</b> ({@link AbstractSandboxFilesystem}, not wrapped in overlay) — treats the
+ *   <li><b>Sandbox</b> ({@link AbstractSandboxFilesystem}, not wrapped in overlay) ...treats the
  *       reference as a path inside the sandbox; host-path upload is out of scope for this stage.
- *   <li><b>Remote</b> ({@link CompositeFilesystem}) — disabled. The agent is not co-located with
+ *   <li><b>Remote</b> ({@link CompositeFilesystem}) ...disabled. The agent is not co-located with
  *       the user so {@code @path} has no meaningful resolution; references are left as-is.
  * </ul>
  *
@@ -125,7 +125,7 @@ public class AtPathExpansionMiddleware implements MiddlewareBase {
         if (fs == null) {
             return false;
         }
-        // Remote (CompositeFilesystem) — distributed deployment, no host paths.
+        // Remote (CompositeFilesystem) ...distributed deployment, no host paths.
         if (fs instanceof CompositeFilesystem) {
             return false;
         }
@@ -172,7 +172,7 @@ public class AtPathExpansionMiddleware implements MiddlewareBase {
             ReadResult r = fs.read(rc, resolved, 0, MAX_ATTACHED_LINES);
             if (r.isSuccess() && r.fileData() != null && r.fileData().content() != null) {
                 String content = r.fileData().content();
-                // Skip binary attachments — base64 in a user message is rarely useful and just
+                // Skip binary attachments ...base64 in a user message is rarely useful and just
                 // burns tokens.
                 if ("base64".equals(r.fileData().encoding())) {
                     return null;

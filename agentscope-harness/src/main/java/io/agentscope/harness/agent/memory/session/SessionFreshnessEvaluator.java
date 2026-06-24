@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.session;
 
+/** {@summary SessionFreshnessEvaluator (SessionFreshnessEvaluator)} */
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalTime;

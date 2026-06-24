@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.dify;
 
 /**
+ * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
  * Rerank configuration for Dify knowledge base retrieval.
  *
  * <p>Reranking improves retrieval quality by re-scoring documents using a specialized
@@ -46,6 +47,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
      * Gets the rerank provider name.
      *
      * @return the provider name (e.g., "cohere", "jina"), or null if using default
@@ -55,6 +57,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
      * Gets the rerank model name.
      *
      * @return the model name, or null if using default
@@ -64,6 +67,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
      * Creates a new builder for RerankConfig.
      *
      * @return a new Builder instance
@@ -73,6 +77,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
      * Builder for RerankConfig.
      */
     public static class Builder {
@@ -82,6 +87,7 @@ public class RerankConfig {
         private Builder() {}
 
         /**
+         * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
          * Sets the rerank provider name.
          *
          * <p>This specifies which reranking service provider to use.
@@ -102,6 +108,7 @@ public class RerankConfig {
         }
 
         /**
+         * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
          * Sets the rerank model name.
          *
          * <p>This is the name of the reranking model provided by the specified provider.
@@ -125,6 +132,7 @@ public class RerankConfig {
         }
 
         /**
+         * {@summary Rerank configuration for Dify knowledge base retrieval. (Rerank configuration for Dify knowledge base retrieval.)}
          * Builds a new RerankConfig instance.
          *
          * @return a new RerankConfig instance

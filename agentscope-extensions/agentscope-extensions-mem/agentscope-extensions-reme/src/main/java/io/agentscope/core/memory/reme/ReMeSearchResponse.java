@@ -23,6 +23,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
+ * {@summary Response object from ReMe's search memory API. (Response object from ReMe's search memory API.)}
  * Response object from ReMe's search memory API.
  *
  * <p>This response is returned from the {@code POST /retrieve_personal_memory} endpoint
@@ -86,6 +87,7 @@ public class ReMeSearchResponse {
     }
 
     /**
+     * {@summary Response object from ReMe's search memory API. (Response object from ReMe's search memory API.)}
      * Gets the list of memory fragments from metadata as strings.
      *
      * <p>This method extracts the content from each memory item for backward compatibility.

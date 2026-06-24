@@ -30,6 +30,7 @@ import io.agentscope.core.tool.ToolParam;
 import io.agentscope.core.tool.Toolkit;
 
 /**
+ * {@summary ToolStreamingExample class ()}
  * ToolStreamingExample - Demonstrates how tools emit streaming progress via {@link ToolEmitter}
  * and how the caller receives them as {@link ToolResultTextDeltaEvent} / {@link
  * ToolResultDataDeltaEvent} through {@code streamEvents()}.
@@ -116,6 +117,7 @@ public class ToolStreamingExample {
     }
 
     /**
+     * {@summary ToolStreamingExample class ()}
      * Example tool class that uses {@link ToolEmitter} to stream progress updates.
      *
      * <p>The key pattern: declare a {@code ToolEmitter} parameter in your @Tool method.

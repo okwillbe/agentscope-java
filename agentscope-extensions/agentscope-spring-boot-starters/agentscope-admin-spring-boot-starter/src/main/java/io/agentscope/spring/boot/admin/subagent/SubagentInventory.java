@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.subagent;
 import java.util.List;
 
 /**
+ * {@summary SPI for enumerating the subagents available to this process. (SPI for enumerating the subagents available to this process.)}
  * SPI for enumerating the subagents available to this process.
  *
  * <p>Why an SPI: a built {@code HarnessAgent} does not expose its registered subagent list — the

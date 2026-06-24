@@ -34,6 +34,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Handles GitHub webhook deliveries. Single endpoint at (Handles GitHub webhook deliveries. Single endpoint at)}
  * Handles GitHub webhook deliveries. Single endpoint at
  * {@code POST /api/channels/github/{channelId}/webhook}. The body is JSON (received as a raw
  * byte[] so the HMAC-SHA256 signature can be computed over the exact bytes GitHub signed).

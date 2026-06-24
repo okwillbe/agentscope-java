@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary LegacyStateLoader (LegacyStateLoader)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.state.legacy.ToolkitState;
 import java.util.List;
@@ -36,8 +37,8 @@ public final class LegacyStateLoader {
      *
      * <p>Reads:
      * <ul>
-     *   <li>{@code memory_messages} — conversation history</li>
-     *   <li>{@code toolkit_activeGroups} — tool activation state</li>
+     *   <li>{@code memory_messages} 鈥?conversation history</li>
+     *   <li>{@code toolkit_activeGroups} 鈥?tool activation state</li>
      * </ul>
      *
      * @param stateStore the state store to read from

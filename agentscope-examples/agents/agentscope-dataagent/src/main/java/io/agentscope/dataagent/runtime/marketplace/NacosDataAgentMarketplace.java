@@ -33,6 +33,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Nacos-backed per-user marketplace. Uses the maintainer client (not the regular AiService client,}
  * Nacos-backed per-user marketplace. Uses the maintainer client (not the regular AiService client,
  * which only exposes downloads) to drive the paged {@code listSkills} API and pull SKILL.md via
  * {@code getSkillVersionDetail(..., "LATEST")}.

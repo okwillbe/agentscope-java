@@ -37,6 +37,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary REST controller for the agent catalog. (REST controller for the agent catalog.)}
  * REST controller for the agent catalog.
  *
  * <ul>
@@ -68,6 +69,7 @@ public class AgentCatalogController {
     }
 
     /**
+     * {@summary REST controller for the agent catalog. (REST controller for the agent catalog.)}
      * Lists all agent definitions visible to the authenticated user: global agents first, then
      * the user's own custom agents.
      */
@@ -101,6 +103,7 @@ public class AgentCatalogController {
     }
 
     /**
+     * {@summary REST controller for the agent catalog. (REST controller for the agent catalog.)}
      * Decorates an {@link AgentDefinition} returned to the frontend with the calling user's
      * effective tier so the UI can gate tabs and affordances without re-implementing ACL.
      */
@@ -128,6 +131,7 @@ public class AgentCatalogController {
     }
 
     /**
+     * {@summary REST controller for the agent catalog. (REST controller for the agent catalog.)}
      * Updates a user-custom agent definition. Owner or any EDIT-tier grantee may update; the
      * change is persisted to the owner's namespace regardless of who triggered it.
      */
@@ -155,6 +159,7 @@ public class AgentCatalogController {
     }
 
     /**
+     * {@summary REST controller for the agent catalog. (REST controller for the agent catalog.)}
      * Deletes a user-custom agent definition. Owner or EDIT-tier grantee may delete; only the
      * owner's namespace copy is removed.
      */

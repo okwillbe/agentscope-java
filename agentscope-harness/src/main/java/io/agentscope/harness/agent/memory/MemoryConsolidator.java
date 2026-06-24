@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory;
 
+/** {@summary MemoryConsolidator (MemoryConsolidator)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.MsgRole;
@@ -37,9 +38,9 @@ import reactor.core.publisher.Mono;
  *
  * <p>This component owns the second layer of the two-layer memory model:
  * <ul>
- *   <li><b>Layer 1 — daily ledger</b>: {@code memory/YYYY-MM-DD.md} files written by
+ *   <li><b>Layer 1 ...daily ledger</b>: {@code memory/YYYY-MM-DD.md} files written by
  *       {@link MemoryFlushManager}, append-only, one section per compaction flush.</li>
- *   <li><b>Layer 2 — curated MEMORY.md</b>: Owned by this class. Periodically reads the
+ *   <li><b>Layer 2 ...curated MEMORY.md</b>: Owned by this class. Periodically reads the
  *       daily ledgers (those modified since the last consolidation watermark) plus the
  *       current MEMORY.md, asks the LLM to merge / dedupe / trim, and overwrites
  *       MEMORY.md with the result.</li>
@@ -47,7 +48,7 @@ import reactor.core.publisher.Mono;
  *
  * <p>A small state file ({@code memory/.consolidation_state}) records the timestamp of
  * the last successful consolidation. Daily files whose {@code modifiedAt} is at or before
- * that timestamp are skipped — reducing token usage and protecting MEMORY.md from being
+ * that timestamp are skipped ...reducing token usage and protecting MEMORY.md from being
  * re-rewritten with stale content.
  *
  * <p>All file I/O is performed via the {@link AbstractFilesystem} obtained from the
@@ -80,7 +81,7 @@ public class MemoryConsolidator {
             Rules:
             - MEMORY.md is the single source of truth for cross-day, cross-session knowledge. \
             Keep it stable and authoritative.
-            - Daily ledger entries are stream-of-consciousness flush logs — they may be noisy, \
+            - Daily ledger entries are stream-of-consciousness flush logs ...they may be noisy, \
             redundant with MEMORY.md, or redundant with each other. Promote only what is \
             durable and reusable.
             - Deduplicate: if a new entry restates something MEMORY.md already covers, skip it.
@@ -138,7 +139,7 @@ public class MemoryConsolidator {
         String dailyEntries = readDailyEntries(rc, watermark);
 
         if (dailyEntries.isBlank()) {
-            log.debug("No fresh daily entries since {} — skipping consolidation", watermark);
+            log.debug("No fresh daily entries since {} ...skipping consolidation", watermark);
             return Mono.empty();
         }
 
@@ -244,7 +245,7 @@ public class MemoryConsolidator {
     private static boolean isModifiedAfter(FileInfo fi, Instant watermark) {
         String modifiedAt = fi.modifiedAt();
         if (modifiedAt == null || modifiedAt.isBlank()) {
-            return true; // be safe — include on unknown mtime
+            return true; // be safe ...include on unknown mtime
         }
         try {
             return Instant.parse(modifiedAt).isAfter(watermark);
@@ -291,7 +292,7 @@ public class MemoryConsolidator {
             return Instant.parse(value.strip());
         } catch (Exception e) {
             log.warn(
-                    "Failed to read consolidation watermark at {}: {} — treating as EPOCH",
+                    "Failed to read consolidation watermark at {}: {} ...treating as EPOCH",
                     STATE_REL_PATH,
                     e.getMessage());
             return Instant.EPOCH;

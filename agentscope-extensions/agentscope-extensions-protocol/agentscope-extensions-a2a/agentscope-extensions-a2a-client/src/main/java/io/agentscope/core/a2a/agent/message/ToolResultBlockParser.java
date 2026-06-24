@@ -23,6 +23,7 @@ import io.agentscope.core.message.ToolResultBlock;
 import java.util.Map;
 
 /**
+ * {@summary ToolResultBlockParser class ()}
  * Parser for {@link ToolResultBlock} to {@link DataPart}.
  */
 public class ToolResultBlockParser implements ContentBlockParser<ToolResultBlock> {

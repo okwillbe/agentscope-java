@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillUsageStore (SkillUsageStore)} */
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -43,7 +44,7 @@ import org.slf4j.LoggerFactory;
  *
  * <p>Persists {@link SkillUsageRecord} instances (one per skill) as a single JSON object at
  * {@code <workspace>/skills/.usage.json}. Reads / writes go through {@link AbstractFilesystem}
- * with {@link RuntimeContext#empty()} — telemetry is agent-scoped, not user-scoped, so we
+ * with {@link RuntimeContext#empty()} ...telemetry is agent-scoped, not user-scoped, so we
  * intentionally bypass per-user namespacing.
  *
  * <p><b>Concurrency</b>: a {@link ReentrantLock} serialises in-process read-modify-write cycles.
@@ -67,7 +68,7 @@ public class SkillUsageStore {
                     .registerModule(new JavaTimeModule())
                     .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
                     .enable(SerializationFeature.INDENT_OUTPUT)
-                    // Tolerate fields the schema doesn't expect — e.g. {@code agentCreated}
+                    // Tolerate fields the schema doesn't expect ...e.g. {@code agentCreated}
                     // which Jackson's default getter discovery emits from {@code
                     // SkillUsageRecord.isAgentCreated()}, plus any field added in a future
                     // schema bump that an older binary needs to load gracefully.

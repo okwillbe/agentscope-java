@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary DashScopeEncryptionUtils (DashScopeEncryptionUtils)} */
 import java.nio.charset.StandardCharsets;
 import java.security.KeyFactory;
 import java.security.PublicKey;

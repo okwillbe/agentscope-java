@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.workspace;
 
+/** {@summary WorkspaceManager (WorkspaceManager)} */
 import static io.agentscope.harness.agent.workspace.WorkspaceConstants.AGENTS_DIR;
 import static io.agentscope.harness.agent.workspace.WorkspaceConstants.AGENTS_MD;
 import static io.agentscope.harness.agent.workspace.WorkspaceConstants.KNOWLEDGE_DIR;
@@ -82,16 +83,16 @@ import org.slf4j.LoggerFactory;
  *
  * <pre>
  * workspace/
- * ├── AGENTS.md
- * ├── MEMORY.md
- * ├── memory/YYYY-MM-DD.md
- * ├── skills/&lt;skill-name&gt;/SKILL.md
- * ├── knowledge/KNOWLEDGE.md
- * ├── knowledge/*
- * ├── subagents/&lt;id&gt;.md                     (subagent declarations)
- * ├── agents/&lt;agentId&gt;/workspace/           (isolated subagent runtime root, auto-created)
- * ├── agents/&lt;agentId&gt;/sessions/sessions.json
- * └── agents/&lt;agentId&gt;/sessions/&lt;sessionId&gt;.log.jsonl
+ * 鈹溾攢鈹€ AGENTS.md
+ * 鈹溾攢鈹€ MEMORY.md
+ * 鈹溾攢鈹€ memory/YYYY-MM-DD.md
+ * 鈹溾攢鈹€ skills/&lt;skill-name&gt;/SKILL.md
+ * 鈹溾攢鈹€ knowledge/KNOWLEDGE.md
+ * 鈹溾攢鈹€ knowledge/*
+ * 鈹溾攢鈹€ subagents/&lt;id&gt;.md                     (subagent declarations)
+ * 鈹溾攢鈹€ agents/&lt;agentId&gt;/workspace/           (isolated subagent runtime root, auto-created)
+ * 鈹溾攢鈹€ agents/&lt;agentId&gt;/sessions/sessions.json
+ * 鈹斺攢鈹€ agents/&lt;agentId&gt;/sessions/&lt;sessionId&gt;.log.jsonl
  * </pre>
  */
 public class WorkspaceManager implements AutoCloseable {
@@ -360,7 +361,7 @@ public class WorkspaceManager implements AutoCloseable {
      * All writes go through the {@link AbstractFilesystem}.
      *
      * <p>A per-path {@link ReentrantLock} serialises concurrent callers so that the
-     * read→merge→write cycle is atomic within this process. For cross-process / multi-node
+     * read鈫抦erge鈫抴rite cycle is atomic within this process. For cross-process / multi-node
      * deployments the {@link AbstractFilesystem} backend must additionally provide server-side
      * concurrency control.
      */
@@ -398,7 +399,7 @@ public class WorkspaceManager implements AutoCloseable {
      * (small mutable JSON, keyed by {@code sessionId}).
      *
      * <p>A per-path {@link ReentrantLock} serialises concurrent callers so that the
-     * read→merge→write cycle is atomic within this process.
+     * read鈫抦erge鈫抴rite cycle is atomic within this process.
      */
     public void updateSessionIndex(
             RuntimeContext rc, String agentId, String sessionId, String summary) {
@@ -530,7 +531,7 @@ public class WorkspaceManager implements AutoCloseable {
         Instant cutoff = Instant.now().minus(recentWindow);
         String tasksRelDir = AGENTS_DIR + "/" + agentId + "/" + TASKS_DIR;
 
-        // workspace-relative path → Optional<Instant> last-modified (empty = mtime unknown)
+        // workspace-relative path 鈫?Optional<Instant> last-modified (empty = mtime unknown)
         Map<String, Optional<Instant>> relPaths = new LinkedHashMap<>();
 
         if (filesystem != null) {
@@ -639,7 +640,7 @@ public class WorkspaceManager implements AutoCloseable {
     /**
      * Acquires the per-file lock before delegating to {@link #readTaskMap(String)}, so that reads
      * are mutually exclusive with the read-modify-write cycle in {@link #writeTaskRecord}. This
-     * prevents a concurrent writer's non-atomic file update (truncate → write) from being observed
+     * prevents a concurrent writer's non-atomic file update (truncate 鈫?write) from being observed
      * as a partial JSON read.
      */
     private Map<String, TaskRecord> readTaskMapLocked(RuntimeContext rc, String rel) {
@@ -785,13 +786,13 @@ public class WorkspaceManager implements AutoCloseable {
                                             normalized, content.getBytes(StandardCharsets.UTF_8))));
             return;
         }
-        // Default path — same as writeUtf8WorkspaceRelative.
+        // Default path ...same as writeUtf8WorkspaceRelative.
         writeUtf8WorkspaceRelative(rc, relativePath, content);
     }
 
     /**
      * Move a directory inside the workspace (used by promotion: {@code skills/_drafts/<x>}
-     * → {@code skills/<x>}). Best-effort — falls back to the underlying filesystem's native
+     * 鈫?{@code skills/<x>}). Best-effort ...falls back to the underlying filesystem's native
      * {@code move} when available; returns {@code true} on success.
      */
     public boolean moveSkill(RuntimeContext rc, String fromRelative, String toRelative) {
@@ -810,7 +811,7 @@ public class WorkspaceManager implements AutoCloseable {
             WriteResult r = filesystem.move(rc, src, dst);
             return r.isSuccess();
         } catch (Exception e) {
-            log.warn("moveSkill {} → {} failed: {}", src, dst, e.getMessage());
+            log.warn("moveSkill {} 鈫?{} failed: {}", src, dst, e.getMessage());
             return false;
         }
     }

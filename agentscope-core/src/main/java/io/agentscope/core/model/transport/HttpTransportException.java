@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary HttpTransportException (HttpTransportException)} */
+
 /**
  * Exception thrown when HTTP transport operations fail.
  *

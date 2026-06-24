@@ -16,6 +16,7 @@
 
 package io.agentscope.core.util;
 
+/** {@summary JsonCodec (JsonCodec)} */
 import com.fasterxml.jackson.core.type.TypeReference;
 import java.lang.reflect.Type;
 

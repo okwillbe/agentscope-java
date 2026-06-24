@@ -22,6 +22,7 @@ import io.agentscope.core.training.strategy.TrainingSelectionStrategy;
 import java.time.Duration;
 
 /**
+ * {@summary Configuration for Training Runner. (Configuration for Training Runner.)}
  * Configuration for Training Runner.
  *
  * <p>Configures various parameters for the training process, including Trinity service address, training model, selection strategy, reward calculator, etc.
@@ -111,6 +112,7 @@ public class TrainingConfig {
     }
 
     /**
+     * {@summary Configuration for Training Runner. (Configuration for Training Runner.)}
      * Get current sampling rate
      *
      * @return Sampling rate (0.0 ~ 1.0), returns -1 if using non-sampling strategy
@@ -152,6 +154,7 @@ public class TrainingConfig {
         }
 
         /**
+         * {@summary Configuration for Training Runner. (Configuration for Training Runner.)}
          * Set training request filtering strategy
          *
          * <p>Supports multiple strategies:
@@ -170,6 +173,7 @@ public class TrainingConfig {
         }
 
         /**
+         * {@summary Configuration for Training Runner. (Configuration for Training Runner.)}
          * Shortcut method: Set simple sampling rate strategy
          *
          * @param sampleRate Sampling rate (0.0 ~ 1.0)
@@ -216,6 +220,7 @@ public class TrainingConfig {
         }
 
         /**
+         * {@summary Configuration for Training Runner. (Configuration for Training Runner.)}
          * Set repeat execution count for each task
          *
          * <p>When a request is selected for training, it will run repeatTime times with the same taskId,

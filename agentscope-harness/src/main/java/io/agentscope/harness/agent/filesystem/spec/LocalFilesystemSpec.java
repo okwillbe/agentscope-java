@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.spec;
 
+/** {@summary LocalFilesystemSpec (LocalFilesystemSpec)} */
 import io.agentscope.harness.agent.IsolationScope;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
 import io.agentscope.harness.agent.filesystem.OverlayFilesystem;

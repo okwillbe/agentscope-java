@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary CustomEvent (CustomEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
@@ -26,13 +27,13 @@ import java.util.Map;
  * progress, team membership, permission updates, etc.) without polluting the core agent event enum
  * with application-specific types.
  *
- * <p>Front-end implementations should handle unknown {@link #getName()} values gracefully — skip
+ * <p>Front-end implementations should handle unknown {@link #getName()} values gracefully 鈥?skip
  * with no error.
  *
  * <p>Well-known {@code name} values:
  * <ul>
- *   <li>{@code "state_updated"} — agent state (tasks / permission) changed during a tool call</li>
- *   <li>{@code "team_updated"} — team membership changed (member added / team created or
+ *   <li>{@code "state_updated"} 鈥?agent state (tasks / permission) changed during a tool call</li>
+ *   <li>{@code "team_updated"} 鈥?team membership changed (member added / team created or
  *   dissolved)</li>
  * </ul>
  */

@@ -27,6 +27,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
+ * {@summary SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of (SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of)}
  * SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of
  * {@link ReActAgent} when wired with a {@link AgentStateStore}.
  *
@@ -60,6 +61,7 @@ public class StateAutoSaveExample {
     private static final String SESSION_DIR = "/tmp/agentscope-sessions";
 
     /**
+     * {@summary SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of (SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of)}
      * Runs the session auto-save demonstration.
      *
      * @param args command-line arguments (ignored)
@@ -128,6 +130,7 @@ public class StateAutoSaveExample {
     }
 
     /**
+     * {@summary SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of (SessionAutoSaveExample - Demonstrates the automatic save/restore lifecycle of)}
      * Builds a {@link ReActAgent} wired to a {@link JsonFileAgentStateStore} with the given user ID.
      *
      * <p>The {@code sessionKey} scopes history to a specific user so multiple users can

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary SkillToolGroup (SkillToolGroup)} */
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;

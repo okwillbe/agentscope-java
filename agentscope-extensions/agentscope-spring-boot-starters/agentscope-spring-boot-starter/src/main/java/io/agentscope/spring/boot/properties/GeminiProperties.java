@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.properties;
 
 /**
+ * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
  * Gemini provider specific settings.
  *
  * <p>Example configuration using direct Gemini API:
@@ -49,36 +50,43 @@ package io.agentscope.spring.boot.properties;
 public class GeminiProperties {
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Whether Gemini model auto-configuration is enabled.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Gemini API key (for direct Gemini API usage).
      */
     private String apiKey;
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Gemini model name, for example {@code gemini-2.0-flash}.
      */
     private String modelName = "gemini-2.0-flash";
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Whether streaming responses are enabled.
      */
     private boolean stream = true;
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Google Cloud project ID (for Vertex AI usage).
      */
     private String project;
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Google Cloud location, for example {@code us-central1}.
      */
     private String location;
 
     /**
+     * {@summary Gemini provider specific settings. (Gemini provider specific settings.)}
      * Whether to use Vertex AI (true) instead of direct Gemini API.
      */
     private Boolean vertexAI;

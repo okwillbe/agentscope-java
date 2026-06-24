@@ -23,7 +23,8 @@ import io.agentscope.harness.agent.sandbox.snapshot.NoopSnapshotSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 import java.util.Map;
 
-/** {@link SandboxFilesystemSpec} for the Kubernetes Pod sandbox store. */
+/**
+ * {@summary KubernetesFilesystemSpec (KubernetesFilesystemSpec)} {@link SandboxFilesystemSpec} for the Kubernetes Pod sandbox store. */
 public class KubernetesFilesystemSpec extends SandboxFilesystemSpec {
 
     private SandboxClient<?> client;

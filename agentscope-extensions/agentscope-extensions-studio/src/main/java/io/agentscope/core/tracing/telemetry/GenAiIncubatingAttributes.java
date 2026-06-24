@@ -25,6 +25,7 @@ import io.opentelemetry.api.common.AttributeKey;
 import java.util.List;
 
 /**
+ * {@summary GenAiIncubatingAttributes class ()}
  * Copied from <a href=https://github.com/open-telemetry/semantic-conventions/blob/v1.37.0/model/gen-ai/registry.yaml>OpenTelemetry semantic conventions 1.37.0</a>.
  * */
 public final class GenAiIncubatingAttributes {

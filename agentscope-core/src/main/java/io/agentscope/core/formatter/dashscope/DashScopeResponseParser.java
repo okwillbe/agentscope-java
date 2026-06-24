@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope;
 
+/** {@summary DashScopeResponseParser (DashScopeResponseParser)} */
 import io.agentscope.core.formatter.FormatterException;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeChoice;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeFunction;

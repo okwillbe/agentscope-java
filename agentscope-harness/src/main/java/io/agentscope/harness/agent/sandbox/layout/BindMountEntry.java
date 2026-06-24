@@ -15,13 +15,14 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary BindMountEntry (BindMountEntry)} */
+
 /**
  * Declares a host directory (or file on Kubernetes) bind-mounted into the sandbox workspace at
  * the map key path under {@link io.agentscope.harness.agent.sandbox.WorkspaceSpec#getRoot()}.
  *
  * <p>The {@link io.agentscope.harness.agent.sandbox.WorkspaceSpec} entry <strong>key</strong> is
- * the relative path inside the workspace (for example key {@code cache} →
- * {@code <workspaceRoot>/cache}). The {@link #hostPath} is an absolute path on the host (Docker)
+ * the relative path inside the workspace (for example key {@code cache} 鈫? * {@code <workspaceRoot>/cache}). The {@link #hostPath} is an absolute path on the host (Docker)
  * or on the Kubernetes node (HostPath volume).
  *
  * <p><strong>Backends:</strong> {@link io.agentscope.harness.agent.sandbox.impl.docker.DockerSandbox}

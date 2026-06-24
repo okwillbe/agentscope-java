@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.remote;
 
+/** {@summary RemoteFilesystem (RemoteFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
 import io.agentscope.harness.agent.filesystem.model.EditResult;
@@ -116,10 +117,10 @@ public class RemoteFilesystem implements AbstractFilesystem {
      * <p>Fallback semantics differ per operation:
      *
      * <ul>
-     *   <li>{@code ls}, {@code glob}, {@code exists} — when the index has no matching prefix
+     *   <li>{@code ls}, {@code glob}, {@code exists} ...when the index has no matching prefix
      *       the operation falls back to a full remote-store scan, so results remain correct
      *       even if this node's index is stale.
-     *   <li>{@code grep} — when the index is non-{@code null} the operation first enumerates
+     *   <li>{@code grep} ...when the index is non-{@code null} the operation first enumerates
      *       candidates from the index. If the index path yields zero matches, the operation
      *       falls back to a full remote-store scan so that sibling-node writes not yet seen by
      *       this node's index are not silently missed. Content for each candidate is always
@@ -316,7 +317,7 @@ public class RemoteFilesystem implements AbstractFilesystem {
             if (ok) {
                 return EditResult.ok(filePath, occurrences);
             }
-            // Version mismatch — another writer raced us. Re-read and retry.
+            // Version mismatch ...another writer raced us. Re-read and retry.
         }
         return EditResult.fail(
                 "Edit conflict on '"
@@ -372,7 +373,7 @@ public class RemoteFilesystem implements AbstractFilesystem {
                     }
                 }
             }
-            // Index returned matches — return them. Otherwise fall through to the authoritative
+            // Index returned matches ...return them. Otherwise fall through to the authoritative
             // store scan: on a multi-node deployment, this node's index may not yet know about
             // files written via another node, and we must not silently miss them.
             if (!matches.isEmpty()) {
@@ -554,7 +555,7 @@ public class RemoteFilesystem implements AbstractFilesystem {
             if (index.hasPrefix(normalized + "/")) {
                 return true;
             }
-            // Index miss — fall through to remote (may not be indexed yet)
+            // Index miss ...fall through to remote (may not be indexed yet)
         }
 
         List<String> ns = getNamespace(runtimeContext);
@@ -586,7 +587,7 @@ public class RemoteFilesystem implements AbstractFilesystem {
                 }
             }
         }
-        // idempotent — not found is still success
+        // idempotent ...not found is still success
         return WriteResult.ok(path);
     }
 

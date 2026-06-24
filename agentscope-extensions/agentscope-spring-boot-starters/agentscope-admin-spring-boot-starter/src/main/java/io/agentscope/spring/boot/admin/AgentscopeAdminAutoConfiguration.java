@@ -72,6 +72,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Spring Boot auto-configuration for the AgentScope admin/ops starter. (Spring Boot auto-configuration for the AgentScope admin/ops starter.)}
  * Spring Boot auto-configuration for the AgentScope admin/ops starter.
  *
  * <p>Activation rules:
@@ -97,6 +98,7 @@ public class AgentscopeAdminAutoConfiguration {
             LoggerFactory.getLogger(AgentscopeAdminAutoConfiguration.class);
 
     /**
+     * {@summary Spring Boot auto-configuration for the AgentScope admin/ops starter. (Spring Boot auto-configuration for the AgentScope admin/ops starter.)}
      * Default {@link AgentRegistry}. Auto-seeded from any singleton {@link Agent} beans found in
      * the context — applications using prototype-scoped agents (the AgentScope default) must call
      * {@link AgentRegistry#register(Agent)} themselves when they create an agent.
@@ -194,6 +196,7 @@ public class AgentscopeAdminAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for the AgentScope admin/ops starter. (Spring Boot auto-configuration for the AgentScope admin/ops starter.)}
      * Registers a {@link MetricsHook} into {@link AgentBase#addSystemHook(Hook)}
      * at startup so every subsequently constructed agent contributes token-usage counters.
      *
@@ -235,6 +238,7 @@ public class AgentscopeAdminAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for the AgentScope admin/ops starter. (Spring Boot auto-configuration for the AgentScope admin/ops starter.)}
      * Data-plane REST surface. Only loaded for Servlet web applications.
      */
     @Configuration(proxyBeanMethods = false)
@@ -261,6 +265,7 @@ public class AgentscopeAdminAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for the AgentScope admin/ops starter. (Spring Boot auto-configuration for the AgentScope admin/ops starter.)}
      * Control-plane Actuator endpoints. Loaded only when Spring Boot Actuator's
      * {@code @Endpoint} type is on the classpath; each endpoint registration still respects the
      * standard {@code management.endpoint.<id>.enabled} / {@code management.endpoints.web.exposure}

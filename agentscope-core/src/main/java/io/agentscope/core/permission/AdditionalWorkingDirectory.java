@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.permission;
 
+/** {@summary AdditionalWorkingDirectory (AdditionalWorkingDirectory)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;

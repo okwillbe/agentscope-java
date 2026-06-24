@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary WorkspaceProjectionEntry (WorkspaceProjectionEntry)} */
 import java.util.ArrayList;
 import java.util.List;
 

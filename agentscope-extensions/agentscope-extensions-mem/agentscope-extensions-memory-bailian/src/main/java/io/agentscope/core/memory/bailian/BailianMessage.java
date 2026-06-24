@@ -18,6 +18,7 @@ package io.agentscope.core.memory.bailian;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
+ * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
  * Represents a message in the Bailian Memory API format.
  *
  * <p>Messages are used for both adding memories and searching for relevant memories.
@@ -36,6 +37,7 @@ public class BailianMessage {
     public BailianMessage() {}
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Creates a new BailianMessage with specified role and content.
      *
      * @param role the role (e.g., "user", "assistant")
@@ -47,6 +49,7 @@ public class BailianMessage {
     }
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Gets the role.
      *
      * @return the role
@@ -56,6 +59,7 @@ public class BailianMessage {
     }
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Sets the role.
      *
      * @param role the role
@@ -65,6 +69,7 @@ public class BailianMessage {
     }
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Gets the content.
      *
      * @return the content
@@ -74,6 +79,7 @@ public class BailianMessage {
     }
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Sets the content.
      *
      * @param content the content
@@ -83,6 +89,7 @@ public class BailianMessage {
     }
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Creates a new builder for BailianMessage.
      *
      * @return a new Builder instance
@@ -92,6 +99,7 @@ public class BailianMessage {
     }
 
     /**
+     * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
      * Builder for BailianMessage.
      */
     public static class Builder {
@@ -99,6 +107,7 @@ public class BailianMessage {
         private String content;
 
         /**
+         * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
          * Sets the role.
          *
          * @param role the role
@@ -110,6 +119,7 @@ public class BailianMessage {
         }
 
         /**
+         * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
          * Sets the content.
          *
          * @param content the content
@@ -121,6 +131,7 @@ public class BailianMessage {
         }
 
         /**
+         * {@summary Represents a message in the Bailian Memory API format. (Represents a message in the Bailian Memory API format.)}
          * Builds the BailianMessage instance.
          *
          * @return a new BailianMessage instance

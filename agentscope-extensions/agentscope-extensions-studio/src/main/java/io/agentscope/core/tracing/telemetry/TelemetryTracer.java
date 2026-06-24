@@ -265,6 +265,7 @@ public class TelemetryTracer implements Tracer {
         }
 
         /**
+         * {@summary Adds a header to be included in OTLP HTTP requests. (Adds a header to be included in OTLP HTTP requests.)}
          * Adds a header to be included in OTLP HTTP requests.
          *
          * @param key   The header name
@@ -277,6 +278,7 @@ public class TelemetryTracer implements Tracer {
         }
 
         /**
+         * {@summary Adds a header to be included in OTLP HTTP requests. (Adds a header to be included in OTLP HTTP requests.)}
          * Sets all headers to be included in OTLP HTTP requests.
          *
          * @param headers Map of header name to value

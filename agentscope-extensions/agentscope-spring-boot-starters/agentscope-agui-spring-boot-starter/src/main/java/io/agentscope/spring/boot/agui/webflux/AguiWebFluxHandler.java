@@ -35,6 +35,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
  * WebFlux handler for AG-UI protocol requests.
  *
  * <p>This handler processes AG-UI run requests and returns Server-Sent Events (SSE)
@@ -94,6 +95,7 @@ public class AguiWebFluxHandler {
     }
 
     /**
+     * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
      * Handle an AG-UI run request.
      *
      * <p>This method parses the request body as {@link RunAgentInput}, resolves the
@@ -109,6 +111,7 @@ public class AguiWebFluxHandler {
     }
 
     /**
+     * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
      * Handle an AG-UI run request with agent ID in the URL path.
      *
      * <p>This method handles requests to {@code /agui/run/{agentId}}.
@@ -188,6 +191,7 @@ public class AguiWebFluxHandler {
     }
 
     /**
+     * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
      * Create an SSE stream containing error and finish events.
      *
      * @param threadId The thread ID
@@ -209,6 +213,7 @@ public class AguiWebFluxHandler {
     }
 
     /**
+     * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
      * Creates a new builder for AguiWebFluxHandler.
      *
      * @return A new builder instance
@@ -227,6 +232,7 @@ public class AguiWebFluxHandler {
         private String agentIdHeader;
 
         /**
+         * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
          * Set the agent registry.
          *
          * @param registry The agent registry
@@ -238,6 +244,7 @@ public class AguiWebFluxHandler {
         }
 
         /**
+         * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
          * Set the thread session manager for server-side memory support.
          *
          * @param sessionManager The session manager
@@ -249,6 +256,7 @@ public class AguiWebFluxHandler {
         }
 
         /**
+         * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
          * Enable or disable server-side memory management.
          *
          * @param enabled Whether to enable server-side memory
@@ -260,6 +268,7 @@ public class AguiWebFluxHandler {
         }
 
         /**
+         * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
          * Set the adapter configuration.
          *
          * @param config The adapter configuration
@@ -271,6 +280,7 @@ public class AguiWebFluxHandler {
         }
 
         /**
+         * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
          * Set the HTTP header name to read agent ID from.
          *
          * @param agentIdHeader The header name (default: X-Agent-Id)
@@ -282,6 +292,7 @@ public class AguiWebFluxHandler {
         }
 
         /**
+         * {@summary WebFlux handler for AG-UI protocol requests. (WebFlux handler for AG-UI protocol requests.)}
          * Build the handler.
          *
          * @return The built handler

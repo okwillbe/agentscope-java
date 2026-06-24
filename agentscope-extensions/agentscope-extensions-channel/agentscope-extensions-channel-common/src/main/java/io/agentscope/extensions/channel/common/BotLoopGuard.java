@@ -20,6 +20,7 @@ import java.util.Deque;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * {@summary Per-peer sliding-window throttle for inbound channel events. Protects the bot from being looped (Per-peer sliding-window throttle for inbound channel events. Protects the bot from being looped)}
  * Per-peer sliding-window throttle for inbound channel events. Protects the bot from being looped
  * into runaway interaction with another bot (or a stuck user/script).
  *
@@ -48,6 +49,7 @@ public final class BotLoopGuard {
     }
 
     /**
+     * {@summary Per-peer sliding-window throttle for inbound channel events. Protects the bot from being looped (Per-peer sliding-window throttle for inbound channel events. Protects the bot from being looped)}
      * Records an event for {@code peerKey} and returns {@code true} when the peer is within budget
      * (caller may proceed). When the per-window cap is exceeded, the peer enters cooldown and this
      * method returns {@code false} until the cooldown elapses.

@@ -20,12 +20,14 @@ import io.a2a.spec.Part;
 import io.agentscope.core.message.ContentBlock;
 
 /**
+ * {@summary Parse the given part and convert it to a ContentBlock. (Parse the given part and convert it to a ContentBlock.)}
  * {@link Part} parser interface, used to parse {@link Part} and convert to
  * {@link ContentBlock}.
  */
 public interface PartParser<T extends Part<?>> {
 
     /**
+     * {@summary Parse the given part and convert it to a ContentBlock. (Parse the given part and convert it to a ContentBlock.)}
      * Parse the given part and convert it to a ContentBlock.
      *
      * @param part the part to parse, not null

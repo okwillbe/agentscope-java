@@ -32,6 +32,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Admin REST surface for reviewing contributions and promoting them into the shared workspace. (Admin REST surface for reviewing contributions and promoting them into the shared workspace.)}
  * Admin REST surface for reviewing contributions and promoting them into the shared workspace.
  *
  * <ul>

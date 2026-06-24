@@ -19,6 +19,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * {@summary Entry point for the agentscope-dataagent Spring Boot application. (Entry point for the agentscope-dataagent Spring Boot application.)}
  * Entry point for the agentscope-dataagent Spring Boot application.
  *
  * <p>DataAgent is a multi-tenant, distributed-deployable agent product built on

@@ -27,6 +27,7 @@ import reactor.util.context.Context;
 import reactor.util.context.ContextView;
 
 /**
+ * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
  * TrainingContext provides API for marking agent calls for training.
  *
  * <p>This class uses Reactor Context for propagating training markers across thread boundaries.
@@ -65,6 +66,7 @@ public class TrainingContext {
     public static final String REACTOR_KEY = "agentscope.training.marker";
 
     /**
+     * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
      * Mark current Agent call for training (basic version)
      *
      * <p>Returns Reactor Context write function, must be used via {@code .contextWrite()}.
@@ -85,6 +87,7 @@ public class TrainingContext {
     }
 
     /**
+     * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
      * Mark current Agent call for training (with labels)
      *
      * <p>Returns Reactor Context write function, must be used via {@code .contextWrite()}.
@@ -109,6 +112,7 @@ public class TrainingContext {
     }
 
     /**
+     * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
      * Mark current Agent call for training (with labels and metadata)
      *
      * <p>Returns Reactor Context write function, must be used via {@code .contextWrite()}.
@@ -138,6 +142,7 @@ public class TrainingContext {
     }
 
     /**
+     * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
      * Mark current Agent call for training (metadata only)
      *
      * @param metadata Metadata
@@ -148,6 +153,7 @@ public class TrainingContext {
     }
 
     /**
+     * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
      * Get the current training marker from Reactor Context.
      *
      * @param reactorContext Reactor context
@@ -163,6 +169,7 @@ public class TrainingContext {
     }
 
     /**
+     * {@summary TrainingContext provides API for marking agent calls for training. (TrainingContext provides API for marking agent calls for training.)}
      * Check if a marker has expired based on TTL.
      *
      * @param annotation The annotation to check

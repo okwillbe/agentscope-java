@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary AgentShuttingDownException (AgentShuttingDownException)} */
+
 /**
  * Exception thrown when request is rejected or interrupted during shutdown.
  */

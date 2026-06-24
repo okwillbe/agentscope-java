@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary AbstractAgentCreatedFilter (AbstractAgentCreatedFilter)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.skill.AgentSkill;
 import java.util.ArrayList;

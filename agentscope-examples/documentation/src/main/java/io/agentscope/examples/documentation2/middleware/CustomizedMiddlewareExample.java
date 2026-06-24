@@ -42,6 +42,7 @@ import java.util.stream.Collectors;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Runs the hook / middleware monitoring example. (Runs the hook / middleware monitoring example.)}
  * HookExample - Demonstrates lifecycle monitoring via {@link MiddlewareBase}.
  *
  * <p>Migration notes (from documentation/quickstart):
@@ -59,6 +60,7 @@ import reactor.core.publisher.Flux;
 public class CustomizedMiddlewareExample {
 
     /**
+     * {@summary Runs the hook / middleware monitoring example. (Runs the hook / middleware monitoring example.)}
      * Runs the hook / middleware monitoring example.
      *
      * @param args command-line arguments (ignored)
@@ -129,6 +131,7 @@ public class CustomizedMiddlewareExample {
     }
 
     /**
+     * {@summary Runs the hook / middleware monitoring example. (Runs the hook / middleware monitoring example.)}
      * Middleware that logs all lifecycle events: agent start/end, reasoning,
      * tool call start/end, and tool progress chunks.
      */
@@ -191,6 +194,7 @@ public class CustomizedMiddlewareExample {
     public static class ProgressTools {
 
         /**
+         * {@summary Runs the hook / middleware monitoring example. (Runs the hook / middleware monitoring example.)}
          * Processes a named dataset and emits progress chunks.
          *
          * @param datasetName name of the dataset

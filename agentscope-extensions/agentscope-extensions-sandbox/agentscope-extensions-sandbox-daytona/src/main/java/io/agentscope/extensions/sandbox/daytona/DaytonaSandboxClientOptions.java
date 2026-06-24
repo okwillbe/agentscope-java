@@ -19,7 +19,8 @@ import io.agentscope.harness.agent.sandbox.SandboxClient;
 import io.agentscope.harness.agent.sandbox.SandboxClientOptions;
 import okhttp3.OkHttpClient;
 
-/** Options for {@link DaytonaSandboxClient}. */
+/**
+ * {@summary DaytonaSandboxClientOptions (DaytonaSandboxClientOptions)} Options for {@link DaytonaSandboxClient}. */
 public class DaytonaSandboxClientOptions extends SandboxClientOptions {
 
     private OkHttpClient httpClient;

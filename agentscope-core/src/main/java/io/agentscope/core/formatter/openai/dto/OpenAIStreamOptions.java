@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai.dto;
 
+/** {@summary OpenAIStreamOptions (OpenAIStreamOptions)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

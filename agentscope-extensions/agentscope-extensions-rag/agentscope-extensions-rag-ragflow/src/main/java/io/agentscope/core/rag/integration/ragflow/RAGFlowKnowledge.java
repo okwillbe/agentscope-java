@@ -25,6 +25,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary RAGFlow Knowledge Base implementation. (RAGFlow Knowledge Base implementation.)}
  * RAGFlow Knowledge Base implementation.
  *
  * <p>This class provides integration with RAGFlow Knowledge Base service, implementing
@@ -94,6 +95,7 @@ public class RAGFlowKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary RAGFlow Knowledge Base implementation. (RAGFlow Knowledge Base implementation.)}
      * Retrieve documents from the RAGFlow knowledge base.
      *
      * <p>This method searches the RAGFlow dataset for documents relevant to the given query. The
@@ -164,6 +166,7 @@ public class RAGFlowKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary RAGFlow Knowledge Base implementation. (RAGFlow Knowledge Base implementation.)}
      * Adds documents to the knowledge base.
      *
      * <p><b>Note:</b> This operation is not supported, consistent with Bailian and Dify RAG

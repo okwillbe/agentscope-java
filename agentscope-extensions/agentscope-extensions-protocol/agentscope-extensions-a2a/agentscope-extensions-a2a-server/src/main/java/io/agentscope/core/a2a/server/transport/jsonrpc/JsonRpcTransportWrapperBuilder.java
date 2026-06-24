@@ -24,6 +24,7 @@ import io.agentscope.core.a2a.server.transport.TransportWrapperBuilder;
 import java.util.concurrent.Executor;
 
 /**
+ * {@summary JsonRpcTransportWrapperBuilder class ()}
  * Builder implementation for {@link JsonRpcTransportWrapper}.
  */
 public class JsonRpcTransportWrapperBuilder

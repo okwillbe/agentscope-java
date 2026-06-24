@@ -33,6 +33,7 @@ import okhttp3.Response;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
  * Generic external API document parsing reader that supports integration with any third-party
  * document parsing service.
  *
@@ -105,6 +106,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
     private final List<String> supportedFormats;
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Private constructor, use Builder pattern to create instances.
      */
     private ExternalApiReader(Builder builder) {
@@ -173,6 +175,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Calls external API for document parsing.
      *
      * @param filePath File path
@@ -225,6 +228,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Validates if file exists.
      *
      * @param filePath The file path to validate
@@ -238,6 +242,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Creates list of Document objects.
      */
     private List<Document> createDocuments(List<String> chunks, String filePath) {
@@ -254,6 +259,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Creates Builder instance.
      *
      * @return A new {@link Builder} instance for constructing {@link ExternalApiReader}
@@ -263,12 +269,14 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Request builder functional interface.
      * Allows users to customize how to build HTTP requests.
      */
     @FunctionalInterface
     public interface RequestBuilder {
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Builds HTTP request based on file path.
          *
          * @param filePath File path
@@ -280,12 +288,14 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Response parser functional interface.
      * Allows users to customize how to extract markdown from API response.
      */
     @FunctionalInterface
     public interface ResponseParser {
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Parses markdown text from HTTP response.
          *
          * @param response OkHttp Response object
@@ -297,6 +307,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
      * Builder class for constructing ExternalApiReader instances.
      */
     public static class Builder {
@@ -314,6 +325,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         private List<String> supportedFormats;
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the request builder.
          */
         public Builder requestBuilder(RequestBuilder requestBuilder) {
@@ -322,6 +334,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the response parser.
          */
         public Builder responseParser(ResponseParser responseParser) {
@@ -330,6 +343,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the chunk size.
          */
         public Builder chunkSize(int chunkSize) {
@@ -338,6 +352,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the split strategy.
          */
         public Builder splitStrategy(SplitStrategy splitStrategy) {
@@ -346,6 +361,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the overlap size.
          */
         public Builder overlapSize(int overlapSize) {
@@ -354,6 +370,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the connection timeout.
          */
         public Builder connectTimeout(Duration connectTimeout) {
@@ -362,6 +379,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the read timeout.
          */
         public Builder readTimeout(Duration readTimeout) {
@@ -370,6 +388,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the write timeout.
          */
         public Builder writeTimeout(Duration writeTimeout) {
@@ -378,6 +397,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the maximum number of retries.
          */
         public Builder maxRetries(int maxRetries) {
@@ -386,6 +406,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the retry delay.
          */
         public Builder retryDelay(Duration retryDelay) {
@@ -394,6 +415,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Adds an OkHttp interceptor (for logging, authentication, etc.).
          */
         public Builder addInterceptor(okhttp3.Interceptor interceptor) {
@@ -405,6 +427,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the supported file formats.
          *
          * <p>If not set or empty, the reader will attempt to process any file format,
@@ -419,6 +442,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Sets the supported file formats (varargs version).
          *
          * <p>If not set or empty, the reader will attempt to process any file format,
@@ -433,6 +457,7 @@ public class ExternalApiReader extends AbstractChunkingReader {
         }
 
         /**
+         * {@summary Generic external API document parsing reader that supports integration with any third-party (Generic external API document parsing reader that supports integration with any third-party)}
          * Builds the ExternalApiReader instance.
          */
         public ExternalApiReader build() {

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolSchemaProvider (ToolSchemaProvider)} */
 import io.agentscope.core.model.ToolSchema;
 import java.util.ArrayList;
 import java.util.Collection;

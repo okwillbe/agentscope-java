@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Feishu (飞书 / Lark) channel adapter.}
  * Feishu (飞书 / Lark) channel adapter.
  *
  * <p>Inbound: relies on Spring-managed {@link FeishuCallbackController} which receives the URL

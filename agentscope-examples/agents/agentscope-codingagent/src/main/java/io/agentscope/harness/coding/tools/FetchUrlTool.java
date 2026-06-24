@@ -26,6 +26,7 @@ import java.time.Duration;
 import java.util.regex.Pattern;
 
 /**
+ * {@summary Fetches a URL and returns a simplified text representation (strips most HTML tags).}
  * Fetches a URL and returns a simplified text representation (strips most HTML tags).
  */
 public class FetchUrlTool {

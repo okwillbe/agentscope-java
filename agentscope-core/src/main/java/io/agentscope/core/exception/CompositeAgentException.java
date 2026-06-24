@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.exception;
 
+/** {@summary CompositeAgentException (CompositeAgentException)} */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.middleware;
 
+/** {@summary MiddlewareChain (MiddlewareChain)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;

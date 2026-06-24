@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary OkHttpTransport (OkHttpTransport)} */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

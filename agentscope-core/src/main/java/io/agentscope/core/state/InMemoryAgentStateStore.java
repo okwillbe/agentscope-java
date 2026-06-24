@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary InMemoryAgentStateStore (InMemoryAgentStateStore)} */
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -48,7 +49,7 @@ public class InMemoryAgentStateStore implements AgentStateStore {
     /** Sentinel namespace for callers that pass {@code userId == null}. */
     private static final String ANON_USER = "__anon__";
 
-    /** users → (sessionId → SessionData) */
+    /** users 鈫?(sessionId 鈫?SessionData) */
     private final Map<String, Map<String, SessionData>> users = new ConcurrentHashMap<>();
 
     @Override

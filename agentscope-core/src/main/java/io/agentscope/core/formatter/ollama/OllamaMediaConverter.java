@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.ollama;
 
+/** {@summary OllamaMediaConverter (OllamaMediaConverter)} */
 import io.agentscope.core.formatter.MediaUtils;
 import io.agentscope.core.message.Base64Source;
 import io.agentscope.core.message.ImageBlock;
@@ -38,9 +39,9 @@ public class OllamaMediaConverter {
      * <p>Ollama API expects an array of base64-encoded strings for images.
      * This method handles:
      * <ul>
-     *   <li>Base64 sources → Returns raw base64 data</li>
-     *   <li>Local file URLs → Reads file and converts to base64</li>
-     *   <li>Remote URLs → Downloads content and converts to base64</li>
+     *   <li>Base64 sources 鈫?Returns raw base64 data</li>
+     *   <li>Local file URLs 鈫?Reads file and converts to base64</li>
+     *   <li>Remote URLs 鈫?Downloads content and converts to base64</li>
      * </ul>
      *
      * @param imageBlock The image block to convert

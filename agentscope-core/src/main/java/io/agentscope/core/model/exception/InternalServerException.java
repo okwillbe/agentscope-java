@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary InternalServerException (InternalServerException)} */
+
 /**
  * Exception thrown when the server encounters an internal error (HTTP 5xx).
  *

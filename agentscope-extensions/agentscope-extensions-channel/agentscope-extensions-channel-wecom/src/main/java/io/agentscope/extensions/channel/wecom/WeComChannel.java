@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary WeCom (企业微信) channel adapter.}
  * WeCom (企业微信) channel adapter.
  *
  * <p>Inbound: relies on Spring-managed {@link WeComCallbackController} that receives the URL
@@ -90,6 +91,7 @@ public final class WeComChannel implements Channel {
     }
 
     /**
+     * {@summary WeCom (企业微信) channel adapter.}
      * Factory used by {@link io.agentscope.harness.agent.gateway.channel.ChannelFactory}.
      *
      * @param channelId the channel id (key in {@code agentscope.json#channels})

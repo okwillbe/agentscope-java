@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill.repository;
 
+/** {@summary FileSystemSkillRepository (FileSystemSkillRepository)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.util.SkillFileSystemHelper;
 import java.io.IOException;
@@ -40,13 +41,13 @@ import org.slf4j.LoggerFactory;
  * <p>Directory structure:
  * <pre>{@code
  * baseDir/
- * ├── skill-name-1/
- * │   ├── SKILL.md          # Required: Entry file with YAML frontmatter
- * │   ├── references/       # Optional: Reference documentation
- * │   ├── examples/         # Optional: Example files
- * │   └── scripts/          # Optional: Script files
- * └── skill-name-2/
- *     └── SKILL.md
+ * 鈹溾攢鈹€ skill-name-1/
+ * 鈹?  鈹溾攢鈹€ SKILL.md          # Required: Entry file with YAML frontmatter
+ * 鈹?  鈹溾攢鈹€ references/       # Optional: Reference documentation
+ * 鈹?  鈹溾攢鈹€ examples/         # Optional: Example files
+ * 鈹?  鈹斺攢鈹€ scripts/          # Optional: Script files
+ * 鈹斺攢鈹€ skill-name-2/
+ *     鈹斺攢鈹€ SKILL.md
  * }</pre>
  *
  * <p>Example usage:
@@ -75,7 +76,7 @@ public class FileSystemSkillRepository implements AgentSkillRepository {
     private final boolean lazy;
 
     /**
-     * Memoises (skillDirAbsolutePath → snapshot) so that repeated {@link #getAllSkills()} calls
+     * Memoises (skillDirAbsolutePath 鈫?snapshot) so that repeated {@link #getAllSkills()} calls
      * skip the {@code readString} of any SKILL.md whose mtime + size are unchanged.
      */
     private final Map<Path, Snapshot> skillCache = new ConcurrentHashMap<>();

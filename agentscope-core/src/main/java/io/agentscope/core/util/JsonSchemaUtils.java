@@ -16,6 +16,7 @@
 
 package io.agentscope.core.util;
 
+/** {@summary JsonSchemaUtils (JsonSchemaUtils)} */
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.victools.jsonschema.generator.Option;

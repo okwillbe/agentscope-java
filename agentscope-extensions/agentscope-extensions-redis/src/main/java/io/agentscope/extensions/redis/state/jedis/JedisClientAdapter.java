@@ -27,6 +27,7 @@ import redis.clients.jedis.params.ScanParams;
 import redis.clients.jedis.resps.ScanResult;
 
 /**
+ * {@summary Adapter for Jedis Redis client. (Adapter for Jedis Redis client.)}
  * Adapter for Jedis Redis client.
  *
  * <p>This adapter supports all Jedis client types:
@@ -92,6 +93,7 @@ public class JedisClientAdapter implements RedisClientAdapter {
     }
 
     /**
+     * {@summary Adapter for Jedis Redis client. (Adapter for Jedis Redis client.)}
      * Create adapter from UnifiedJedis.
      *
      * @param unifiedJedis the UnifiedJedis instance (any subclass)

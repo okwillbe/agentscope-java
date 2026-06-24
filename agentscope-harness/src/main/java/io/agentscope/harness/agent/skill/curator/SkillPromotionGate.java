@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillPromotionGate (SkillPromotionGate)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.time.Duration;
 import java.time.Instant;
@@ -26,10 +27,10 @@ import reactor.core.publisher.Mono;
  *
  * <p>Implementations:
  * <ul>
- *   <li>{@code RejectAllGate} — defers everything; only programmatic
+ *   <li>{@code RejectAllGate} ...defers everything; only programmatic
  *       {@code HarnessAgent.promoteSkill(...)} can move drafts forward (enterprise default)</li>
- *   <li>{@code LocalApprovalGate} — single-replica HITL via the host shell / CLI prompt</li>
- *   <li>{@code NotifyAndWaitGate} — multi-replica: writes a {@code .review_request.json}
+ *   <li>{@code LocalApprovalGate} ...single-replica HITL via the host shell / CLI prompt</li>
+ *   <li>{@code NotifyAndWaitGate} ...multi-replica: writes a {@code .review_request.json}
  *       file next to the draft and notifies one or more {@code NotificationSink}s; waits
  *       for an external system to call {@code promoteSkill} again</li>
  * </ul>

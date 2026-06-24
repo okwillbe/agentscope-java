@@ -32,6 +32,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Feishu outbound HTTP client. Posts a text message via (Feishu outbound HTTP client. Posts a text message via)}
  * Feishu outbound HTTP client. Posts a text message via
  * {@code POST /open-apis/im/v1/messages?receive_id_type=(open_id|chat_id)}.
  *

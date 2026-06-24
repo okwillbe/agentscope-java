@@ -19,6 +19,7 @@ import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agui.AguiException;
 
 /**
+ * {@summary Interface for resolving agents from various sources. (Interface for resolving agents from various sources.)}
  * Interface for resolving agents from various sources.
  *
  * <p>This interface abstracts the agent resolution logic, allowing different
@@ -28,6 +29,7 @@ import io.agentscope.core.agui.AguiException;
 public interface AgentResolver {
 
     /**
+     * {@summary Interface for resolving agents from various sources. (Interface for resolving agents from various sources.)}
      * Resolve an agent by its ID and thread ID.
      *
      * @param agentId The agent ID to resolve
@@ -38,6 +40,7 @@ public interface AgentResolver {
     Agent resolveAgent(String agentId, String threadId);
 
     /**
+     * {@summary Interface for resolving agents from various sources. (Interface for resolving agents from various sources.)}
      * Check if a thread has existing memory/conversation history.
      *
      * <p>This is used to determine whether to use frontend-provided history

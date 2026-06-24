@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary MetaToolFactory (MetaToolFactory)} */
 import io.agentscope.core.message.ToolResultBlock;
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -34,6 +34,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
+ * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
  * Service for building Chat Completions API responses.
  *
  * <p>This builder handles the construction of response objects that are 100% compatible with
@@ -78,6 +79,7 @@ public class ChatCompletionsResponseBuilder {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     /**
+     * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
      * Build a successful chat completion response.
      *
      * @param request The original request
@@ -117,6 +119,7 @@ public class ChatCompletionsResponseBuilder {
     }
 
     /**
+     * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
      * Build an error response.
      *
      * @param request The original request
@@ -146,6 +149,7 @@ public class ChatCompletionsResponseBuilder {
     }
 
     /**
+     * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
      * Convert an internal Msg to an external ChatMessage.
      *
      * <p>Handles text content and tool calls for OpenAI compatibility.
@@ -195,6 +199,7 @@ public class ChatCompletionsResponseBuilder {
     }
 
     /**
+     * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
      * Extract text content from a Msg safely.
      *
      * @param msg The message to extract text from
@@ -210,6 +215,7 @@ public class ChatCompletionsResponseBuilder {
     }
 
     /**
+     * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
      * Convert a ToolUseBlock to a ToolCall, serializing the input Map to JSON string.
      *
      * <p>Prioritizes the content field (raw JSON string) over the input Map, as some providers
@@ -239,6 +245,7 @@ public class ChatCompletionsResponseBuilder {
     }
 
     /**
+     * {@summary Service for building Chat Completions API responses. (Service for building Chat Completions API responses.)}
      * Serialize a Map to a JSON string.
      *
      * @param map The map to serialize

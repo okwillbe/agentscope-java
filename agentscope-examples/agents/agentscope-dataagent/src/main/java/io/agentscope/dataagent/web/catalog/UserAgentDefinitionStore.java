@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary Abstraction over the per-user custom agent definition registry. (Abstraction over the per-user custom agent definition registry.)}
  * Abstraction over the per-user custom agent definition registry.
  *
  * <p>Agent definitions carry the user-facing metadata for every custom agent (id, name,
@@ -48,6 +49,7 @@ public interface UserAgentDefinitionStore {
     Optional<StoredEntry> findById(String userId, String agentId);
 
     /**
+     * {@summary Abstraction over the per-user custom agent definition registry. (Abstraction over the per-user custom agent definition registry.)}
      * Saves (creates or updates) an agent definition for the given user. Implementations persist
      * atomically.
      */
@@ -61,6 +63,7 @@ public interface UserAgentDefinitionStore {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Abstraction over the per-user custom agent definition registry. (Abstraction over the per-user custom agent definition registry.)}
      * JSON-serializable agent definition stored per user. All fields are optional except {@code
      * id}.
      */

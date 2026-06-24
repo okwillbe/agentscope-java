@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary RequestStopEvent (RequestStopEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.message.GenerateReason;
@@ -29,7 +30,7 @@ import io.agentscope.core.message.GenerateReason;
  *
  * <p>The pending state is persisted via {@link io.agentscope.core.message.ToolCallState} in
  * {@code AgentState.context}, so callers can resume by issuing a second {@code agent.call(...)}
- * — pending tool calls will be picked up automatically and execution continues.
+ * 鈥?pending tool calls will be picked up automatically and execution continues.
  *
  * <p>Typical use cases:
  * <ul>

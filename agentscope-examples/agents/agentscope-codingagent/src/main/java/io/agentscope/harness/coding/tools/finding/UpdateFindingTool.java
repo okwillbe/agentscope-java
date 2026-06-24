@@ -22,6 +22,7 @@ import io.agentscope.harness.coding.reviewer.Finding;
 import io.agentscope.harness.coding.reviewer.ReviewerFindingsService;
 
 /**
+ * {@summary Updates an existing reviewer finding. (Updates an existing reviewer finding.)}
  * Updates an existing reviewer finding.
  */
 public class UpdateFindingTool {

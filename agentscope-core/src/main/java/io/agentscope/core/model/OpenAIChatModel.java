@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary OpenAIChatModel (OpenAIChatModel)} */
 import io.agentscope.core.formatter.Formatter;
 import io.agentscope.core.formatter.openai.OpenAIBaseFormatter;
 import io.agentscope.core.formatter.openai.OpenAIChatFormatter;
@@ -443,13 +444,13 @@ public class OpenAIChatModel extends ChatModelBase {
             }
 
             if (proxyConfig != null) {
-                // Only proxy() called → use default transport with proxy
+                // Only proxy() called 鈫?use default transport with proxy
                 return OkHttpTransport.builder()
                         .config(HttpTransportConfig.builder().proxy(proxyConfig).build())
                         .build();
             }
 
-            // Neither called → use factory default
+            // Neither called 鈫?use factory default
             return HttpTransportFactory.getDefault();
         }
     }

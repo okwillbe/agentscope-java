@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary SessionSearchTool (SessionSearchTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;
@@ -129,7 +130,7 @@ public class SessionSearchTool {
             return storeContent;
         }
 
-        // List sessions from local cache only — remote sync is handled at write time.
+        // List sessions from local cache only ...remote sync is handled at write time.
         Path sessionDir = workspaceManager.getSessionDir(rc, agentId);
         if (!Files.isDirectory(sessionDir)) {
             return "No sessions found for agent: " + agentId;
@@ -289,7 +290,7 @@ public class SessionSearchTool {
                             content.length() > 200 ? content.substring(0, 200) + "..." : content;
                     results.add(
                             String.format(
-                                    "  [%s] %s — [%s]: %s",
+                                    "  [%s] %s ...[%s]: %s",
                                     relPath, msg.getId(), msg.getRole(), preview));
                 }
             }

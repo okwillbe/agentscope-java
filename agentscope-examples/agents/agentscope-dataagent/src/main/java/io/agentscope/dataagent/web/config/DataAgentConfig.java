@@ -49,6 +49,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
  * Spring Boot configuration for the agentscope-dataagent web module.
  *
  * <p>Assembles a {@link DataAgentBootstrap} from {@code .agentscope/agentscope.json} in the working
@@ -127,6 +128,7 @@ public class DataAgentConfig {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
      * Creates a {@link DashScopeChatModel} bean when {@code dataagent.dashscope.api-key} is
      * configured and no other {@link Model} bean is present. Skipped entirely when the property is
      * blank so that {@code Optional<Model>} injection sites receive {@code Optional.empty()}
@@ -150,6 +152,7 @@ public class DataAgentConfig {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
      * Assembles the {@link DataAgentBootstrap}, loading agent config from {@code agentscope.json}
      * and starting the {@link ChatUiChannel} for per-user isolated sessions.
      *
@@ -248,6 +251,7 @@ public class DataAgentConfig {
     }
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
      * Registers the {@link LocalApprovalMarketplace} factory under the {@code "local"} type so
      * {@code UserMarketplaceRegistry} can hydrate per-user marketplaces backed by approved
      * contributions on disk.
@@ -276,6 +280,7 @@ public class DataAgentConfig {
     }
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
      * Registers the {@link GitDataAgentMarketplace} factory under the {@code "git"} type. Each
      * per-user marketplace gets its own clone target under
      * {@code ${dataagent.workspace}/.cache/marketplaces/{userId}/{marketplaceId}} so distinct
@@ -302,6 +307,7 @@ public class DataAgentConfig {
     }
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
      * Registers the {@link NacosDataAgentMarketplace} factory under the {@code "nacos"} type.
      *
      * <p>Properties: {@code serverAddr} (required), {@code namespaceId} (optional, defaults to
@@ -366,6 +372,7 @@ public class DataAgentConfig {
     }
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-dataagent web module. (Spring Boot configuration for the agentscope-dataagent web module.)}
      * Auto-generates a minimal {@code ~/.agentscope/dataagent/agentscope.json} if it doesn't
      * exist, so the app can start without manual setup. The generated config defines a single
      * GLOBAL {@code data-agent} pre-wired with the {@code chatui} channel and lets the bootstrap

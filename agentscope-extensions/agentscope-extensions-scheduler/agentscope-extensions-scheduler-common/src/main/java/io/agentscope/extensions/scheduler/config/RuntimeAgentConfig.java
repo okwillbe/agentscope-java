@@ -23,6 +23,7 @@ import java.util.Objects;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
+ * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
  * Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.
  *
  * <p>This subclass adds runtime objects like Toolkit and Hooks that cannot be serialized.
@@ -86,6 +87,7 @@ public class RuntimeAgentConfig extends AgentConfig {
     }
 
     /**
+     * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
      * Create a new builder instance.
      *
      * @return A new RuntimeAgentConfig.Builder
@@ -95,6 +97,7 @@ public class RuntimeAgentConfig extends AgentConfig {
     }
 
     /**
+     * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
      * Get the toolkit.
      *
      * @return The toolkit instance, may be null
@@ -104,6 +107,7 @@ public class RuntimeAgentConfig extends AgentConfig {
     }
 
     /**
+     * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
      * Get the hooks.
      *
      * @return The list of hooks, never null but may be empty
@@ -113,6 +117,7 @@ public class RuntimeAgentConfig extends AgentConfig {
     }
 
     /**
+     * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
      * Get the pre-created Model instance.
      *
      * <p>The model is automatically created from ModelConfig during the build process.
@@ -161,6 +166,7 @@ public class RuntimeAgentConfig extends AgentConfig {
     }
 
     /**
+     * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
      * Builder for creating RuntimeAgentConfig instances.
      */
     public static class Builder extends AgentConfig.Builder {
@@ -174,6 +180,7 @@ public class RuntimeAgentConfig extends AgentConfig {
         private Builder() {}
 
         /**
+         * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
          * Set the agent name (required).
          *
          * @param name The agent name
@@ -186,6 +193,7 @@ public class RuntimeAgentConfig extends AgentConfig {
         }
 
         /**
+         * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
          * Set the model configuration (required).
          *
          * <p>This method automatically creates the Model instance from the ModelConfig
@@ -202,6 +210,7 @@ public class RuntimeAgentConfig extends AgentConfig {
         }
 
         /**
+         * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
          * Set the system prompt (optional).
          *
          * @param sysPrompt The system prompt
@@ -214,6 +223,7 @@ public class RuntimeAgentConfig extends AgentConfig {
         }
 
         /**
+         * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
          * Set the toolkit (optional).
          *
          * <p>The toolkit provides tools that the agent can use during execution.
@@ -227,6 +237,7 @@ public class RuntimeAgentConfig extends AgentConfig {
         }
 
         /**
+         * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
          * Set the hooks (optional).
          *
          * <p>The hooks provide extension points for agent lifecycle events.
@@ -240,6 +251,7 @@ public class RuntimeAgentConfig extends AgentConfig {
         }
 
         /**
+         * {@summary Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects. (Runtime Agent configuration that extends AgentConfig with non-serializable runtime objects.)}
          * Build the RuntimeAgentConfig instance.
          *
          * @return A new RuntimeAgentConfig instance

@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.dify.exception;
 
 /**
+ * {@summary Exception thrown when Dify API authentication fails. (Exception thrown when Dify API authentication fails.)}
  * Exception thrown when Dify API authentication fails.
  *
  * <p>This exception is a specialized version of {@link DifyApiException} for
@@ -40,6 +41,7 @@ package io.agentscope.core.rag.integration.dify.exception;
 public class DifyAuthException extends DifyApiException {
 
     /**
+     * {@summary Exception thrown when Dify API authentication fails. (Exception thrown when Dify API authentication fails.)}
      * Creates a new DifyAuthException with a message.
      *
      * @param message the error message
@@ -49,6 +51,7 @@ public class DifyAuthException extends DifyApiException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API authentication fails. (Exception thrown when Dify API authentication fails.)}
      * Creates a new DifyAuthException with a message and cause.
      *
      * @param message the error message
@@ -59,6 +62,7 @@ public class DifyAuthException extends DifyApiException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API authentication fails. (Exception thrown when Dify API authentication fails.)}
      * Creates a new DifyAuthException with custom status code.
      *
      * <p>Use this constructor for permission-related errors (403 Forbidden).

@@ -20,6 +20,7 @@ import io.agentscope.core.agent.Agent;
 import io.agentscope.harness.agent.HarnessAgent;
 
 /**
+ * {@summary AgentResolver class ()}
  * Small unwrap helper that hides the {@code HarnessAgent} composition from admin call sites.
  *
  * <p>{@link HarnessAgent} wraps a {@link ReActAgent} delegate via composition, so {@code agent
@@ -33,6 +34,7 @@ public final class AgentResolver {
     private AgentResolver() {}
 
     /**
+     * {@summary AgentResolver class ()}
      * Returns the underlying {@link ReActAgent} for both bare {@code ReActAgent} instances and for
      * {@link HarnessAgent}-wrapped agents (via {@link HarnessAgent#getDelegate()}). Returns
      * {@code null} for any other {@link Agent} implementation, so callers can short-circuit

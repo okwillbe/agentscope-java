@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary AgentTool (AgentTool)} */
 import io.agentscope.core.message.ToolResultBlock;
 import java.util.Map;
 import reactor.core.publisher.Mono;

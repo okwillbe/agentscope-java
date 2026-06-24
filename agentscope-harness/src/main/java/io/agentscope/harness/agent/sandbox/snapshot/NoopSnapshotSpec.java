@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary NoopSnapshotSpec (NoopSnapshotSpec)} */
+
 /**
  * Snapshot spec that creates {@link NoopSandboxSnapshot} instances.
  *

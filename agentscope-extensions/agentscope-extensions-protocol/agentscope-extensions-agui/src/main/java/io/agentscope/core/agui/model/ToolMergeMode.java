@@ -16,6 +16,7 @@
 package io.agentscope.core.agui.model;
 
 /**
+ * {@summary Enum defining how tools from the frontend should be merged with agent's toolkit. (Enum defining how tools from the frontend should be merged with agent's toolkit.)}
  * Enum defining how tools from the frontend should be merged with agent's toolkit.
  *
  * <p>The AG-UI protocol allows tools to be defined from the frontend. This enum
@@ -24,6 +25,7 @@ package io.agentscope.core.agui.model;
 public enum ToolMergeMode {
 
     /**
+     * {@summary Enum defining how tools from the frontend should be merged with agent's toolkit. (Enum defining how tools from the frontend should be merged with agent's toolkit.)}
      * Use only tools provided from the frontend.
      *
      * <p>The agent's existing toolkit is ignored completely.
@@ -32,6 +34,7 @@ public enum ToolMergeMode {
     FRONTEND_ONLY,
 
     /**
+     * {@summary Enum defining how tools from the frontend should be merged with agent's toolkit. (Enum defining how tools from the frontend should be merged with agent's toolkit.)}
      * Use only the agent's existing toolkit.
      *
      * <p>Tools provided from the frontend are ignored.
@@ -40,6 +43,7 @@ public enum ToolMergeMode {
     AGENT_ONLY,
 
     /**
+     * {@summary Enum defining how tools from the frontend should be merged with agent's toolkit. (Enum defining how tools from the frontend should be merged with agent's toolkit.)}
      * Merge frontend tools with agent's toolkit, frontend takes priority.
      *
      * <p>Both frontend tools and agent toolkit tools are available.

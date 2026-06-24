@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.runtime;
 
+/** {@summary HarnessSkillEntry (HarnessSkillEntry)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.harness.agent.skill.SkillResources;
 

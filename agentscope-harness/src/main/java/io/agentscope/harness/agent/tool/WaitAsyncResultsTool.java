@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary WaitAsyncResultsTool (WaitAsyncResultsTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;
@@ -48,7 +49,7 @@ public class WaitAsyncResultsTool {
                     "Wait for background async tool or subagent results to arrive. "
                             + "Call this when you have launched async tasks and want to wait for "
                             + "their completion instead of returning to the user. After this tool "
-                            + "returns successfully, continue reasoning — the results will be "
+                            + "returns successfully, continue reasoning ...the results will be "
                             + "automatically injected into your context.",
             readOnly = true)
     public String waitForResults(
@@ -83,7 +84,7 @@ public class WaitAsyncResultsTool {
             Boolean hasMessages = messageBus.inboxHasMessages(sessionId).block();
             if (Boolean.TRUE.equals(hasMessages)) {
                 log.info("wait_async_results: inbox has messages, session={}", sessionId);
-                return "Async results have arrived. Continue reasoning — "
+                return "Async results have arrived. Continue reasoning ..."
                         + "the results will be injected into your context automatically.";
             }
             // Cap sleep to the remaining budget so the tool never overshoots the caller's timeout.

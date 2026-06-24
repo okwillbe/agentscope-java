@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent;
 
+/** {@summary HarnessAgentBuilderSupport (HarnessAgentBuilderSupport)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.hook.Hook;
@@ -90,11 +91,11 @@ final class HarnessAgentBuilderSupport {
             - You are NOT the main agent. Don't try to be.
 
             ## Rules
-            1. **Stay focused** — Do your assigned task, nothing else
-            2. **Complete the task** — Your final message will be automatically reported to the main agent
-            3. **Don't initiate** — No heartbeats, no proactive actions, no side quests
-            4. **Be ephemeral** — You may be terminated after task completion. That's fine.
-            5. **Recover from truncated tool output** — If you see `[truncated: output exceeded context limit]`, re-read only what you need using smaller chunks (read with offset/limit, or targeted grep/head/tail) instead of full re-reads
+            1. **Stay focused** ...Do your assigned task, nothing else
+            2. **Complete the task** ...Your final message will be automatically reported to the main agent
+            3. **Don't initiate** ...No heartbeats, no proactive actions, no side quests
+            4. **Be ephemeral** ...You may be terminated after task completion. That's fine.
+            5. **Recover from truncated tool output** ...If you see `[truncated: output exceeded context limit]`, re-read only what you need using smaller chunks (read with offset/limit, or targeted grep/head/tail) instead of full re-reads
 
             ## Output Format
             When complete, your final response should include:
@@ -104,7 +105,7 @@ final class HarnessAgentBuilderSupport {
 
             ## What You DON'T Do
             - NO user conversations (that's the main agent's job)
-            - NO spawning further subagents — you are a leaf worker
+            - NO spawning further subagents ...you are a leaf worker
             - NO pretending to be the main agent
             - Return plain text results; let the main agent deliver them to the user
             """;
@@ -217,7 +218,7 @@ final class HarnessAgentBuilderSupport {
                     new SubagentEntry(
                             custom.name(),
                             custom.name(),
-                            // custom factory uses Function<String, Agent> — pre-B-0 signature
+                            // custom factory uses Function<String, Agent> ...pre-B-0 signature
                             // doesn't accept RuntimeContext. Bridge by ignoring rc here; users
                             // that need parent-aware isolation should register a programmatic
                             // SubagentEntry directly with a B-0 SubagentFactory lambda.
@@ -260,7 +261,7 @@ final class HarnessAgentBuilderSupport {
                     new SubagentEntry(
                             custom.name(),
                             custom.name(),
-                            // custom factory uses Function<String, Agent> — pre-B-0 signature
+                            // custom factory uses Function<String, Agent> ...pre-B-0 signature
                             // doesn't accept RuntimeContext. Bridge by ignoring rc here; users
                             // that need parent-aware isolation should register a programmatic
                             // SubagentEntry directly with a B-0 SubagentFactory lambda.
@@ -305,7 +306,7 @@ final class HarnessAgentBuilderSupport {
         final int capturedMaxContextTokens = b.maxContextTokens;
         // Propagate the parent's (distributed) state store so an exposed subagent can be
         // re-materialized on another node / after a restart and still load its conversation
-        // history by sessionId. Null in purely local default deployments — children then keep
+        // history by sessionId. Null in purely local default deployments ...children then keep
         // their own local store, preserving legacy behaviour.
         final io.agentscope.core.state.AgentStateStore capturedStateStore = b.stateStoreOverride;
 
@@ -512,13 +513,12 @@ final class HarnessAgentBuilderSupport {
      * {declarationName}[@{parentSessionId}][#{userId}]
      * </pre>
      *
-     * <p>Empty / blank uid or sid segments are dropped — keeps single-tenant demos working with
+     * <p>Empty / blank uid or sid segments are dropped ...keeps single-tenant demos working with
      * the legacy single-bucket form. {@link WorkspaceMode#SHARED} subagents intentionally fall
      * back to the legacy single-bucket form: they're sharing the parent's full state tree by
      * design.
      *
-     * <p>This works uniformly across {@link io.agentscope.core.state.AgentStateStore} stores —
-     * Workspace, Redis, InMemory, or custom — because all of them bucket {@code save}/{@code get}
+     * <p>This works uniformly across {@link io.agentscope.core.state.AgentStateStore} stores ...     * Workspace, Redis, InMemory, or custom ...because all of them bucket {@code save}/{@code get}
      * by session ID. (Phase B-0)
      */
     static String deriveChildSessionId(SubagentDeclaration decl, RuntimeContext parentRc) {

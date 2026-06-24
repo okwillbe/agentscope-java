@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.runtime.session;
 
 /**
+ * {@summary Configuration for session store maintenance. Controls automated pruning of stale sessions and (Configuration for session store maintenance. Controls automated pruning of stale sessions and)}
  * Configuration for session store maintenance. Controls automated pruning of stale sessions and
  * capping total entry count, mirroring OpenClaw's session maintenance modes.
  *
@@ -31,6 +32,7 @@ public record SessionMaintenanceConfig(boolean enabled, long pruneAfterMs, int m
     }
 
     /**
+     * {@summary Configuration for session store maintenance. Controls automated pruning of stale sessions and (Configuration for session store maintenance. Controls automated pruning of stale sessions and)}
      * @param pruneAfterMs prune sessions older than this many milliseconds (e.g. 7 days =
      *     604_800_000)
      * @param maxEntries maximum sessions to keep (evicts oldest first); 0 = unlimited

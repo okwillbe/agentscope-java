@@ -27,6 +27,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary REST controller for self-service user account operations. (REST controller for self-service user account operations.)}
  * REST controller for self-service user account operations.
  *
  * <ul>

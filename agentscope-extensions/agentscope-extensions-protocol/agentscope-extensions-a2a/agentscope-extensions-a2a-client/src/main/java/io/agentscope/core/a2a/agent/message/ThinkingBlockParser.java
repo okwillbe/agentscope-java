@@ -22,6 +22,7 @@ import io.agentscope.core.a2a.agent.utils.MessageConvertUtil;
 import io.agentscope.core.message.ThinkingBlock;
 
 /**
+ * {@summary ThinkingBlockParser class ()}
  * Parser for {@link ThinkingBlock} to {@link TextPart}.
  */
 public class ThinkingBlockParser implements ContentBlockParser<ThinkingBlock> {

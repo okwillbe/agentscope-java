@@ -28,6 +28,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
+ * {@summary McpStreamableHttpExample - MCP integration via Streamable HTTP transport. (McpStreamableHttpExample - MCP integration via Streamable HTTP transport.)}
  * McpStreamableHttpExample - MCP integration via Streamable HTTP transport.
  *
  * <p>Streamable HTTP is a newer transport that uses a single HTTP endpoint with streaming
@@ -50,6 +51,7 @@ import java.io.InputStreamReader;
 public class McpStreamableHttpExample {
 
     /**
+     * {@summary McpStreamableHttpExample - MCP integration via Streamable HTTP transport. (McpStreamableHttpExample - MCP integration via Streamable HTTP transport.)}
      * Runs the streamable HTTP MCP example.
      *
      * @param args command-line arguments (ignored)

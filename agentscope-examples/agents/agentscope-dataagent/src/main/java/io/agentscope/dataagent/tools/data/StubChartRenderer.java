@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.tools.data;
 
 /**
+ * {@summary StubChartRenderer class ()}
  * No-op {@link ChartRenderer} returned by default. Echoes the spec back so the SPA can pick it up
  * and render it client-side (the v1 frontend already understands Vega-Lite specs). Operators
  * wanting server-side rendering should register their own bean implementing this SPI.

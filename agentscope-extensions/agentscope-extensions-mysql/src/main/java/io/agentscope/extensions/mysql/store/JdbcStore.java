@@ -36,6 +36,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
  * JDBC-backed {@link BaseStore}. Supports MySQL, PostgreSQL, SQLite, and H2 out of the box via
  * {@link JdbcStoreDialect}.
  *
@@ -76,6 +77,7 @@ public class JdbcStore implements BaseStore {
     private static final Logger LOG = LoggerFactory.getLogger(JdbcStore.class);
 
     /**
+     * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
      * ASCII unit separator (U+001F) used between namespace segments inside {@code namespace_path}.
      * Picked because it does not collide with printable identifiers and is rare in JSON / user
      * input. Namespace segments containing it are rejected.
@@ -283,6 +285,7 @@ public class JdbcStore implements BaseStore {
     }
 
     /**
+     * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
      * Joins namespace segments with the unit separator, always trailing the result with one so
      * prefix queries can distinguish {@code "a/b"} from {@code "a/bc"}.
      */
@@ -322,6 +325,7 @@ public class JdbcStore implements BaseStore {
     }
 
     /**
+     * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
      * Returns {@code true} if the given exception represents a primary-key / unique-constraint
      * violation. Different JDBC drivers signal this differently:
      *
@@ -365,6 +369,7 @@ public class JdbcStore implements BaseStore {
         }
 
         /**
+         * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
          * Sets the dialect explicitly. When omitted, the dialect is auto-detected via
          * {@link JdbcStoreDialect#from(DataSource)} on {@link #build()}.
          */
@@ -380,6 +385,7 @@ public class JdbcStore implements BaseStore {
         }
 
         /**
+         * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
          * Overrides the table name. Must match the regex {@code [A-Za-z_][A-Za-z0-9_]*}; this is
          * the only place a table identifier ever flows into the SQL string verbatim, so the
          * validation here is the SQL-injection guard.
@@ -396,6 +402,7 @@ public class JdbcStore implements BaseStore {
         }
 
         /**
+         * {@summary Joins namespace segments with the unit separator, always trailing the result with one so (Joins namespace segments with the unit separator, always trailing the result with one so)}
          * When {@code true}, runs the dialect's {@code CREATE TABLE IF NOT EXISTS} during
          * construction. Defaults to {@code false} — production deployments usually own their
          * schema via migration tooling.

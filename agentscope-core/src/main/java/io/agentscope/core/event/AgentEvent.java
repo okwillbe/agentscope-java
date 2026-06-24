@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary AgentEvent (AgentEvent)} */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonSubTypes;

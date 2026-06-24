@@ -23,6 +23,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 /**
+ * {@summary InMemoryDataSourceRegistry class ()}
  * Default {@link DataSourceRegistry} backed by an in-memory {@link LinkedHashMap}. Seeded once at
  * construction; operators can replace the bean with a JPA- or Nacos-backed implementation. The
  * collection is unmodifiable after construction — call sites that need to add entries dynamically

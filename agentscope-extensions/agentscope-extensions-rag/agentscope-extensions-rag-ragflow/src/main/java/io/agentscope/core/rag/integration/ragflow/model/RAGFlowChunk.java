@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary RAGFlow chunk (document segment) model.}
  * RAGFlow chunk (document segment) model.
  *
  * <p>This class represents a chunk (text segment) returned by RAGFlow's retrieval API.
@@ -242,6 +243,7 @@ public class RAGFlowChunk {
     }
 
     /**
+     * {@summary RAGFlow chunk (document segment) model.}
      * Gets the similarity score.
      *
      * <p>RAGFlow API returns {@code similarity} as the primary score field. This method provides

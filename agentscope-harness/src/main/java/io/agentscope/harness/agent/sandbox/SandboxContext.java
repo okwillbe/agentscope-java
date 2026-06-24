@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxContext (SandboxContext)} */
 import io.agentscope.harness.agent.IsolationScope;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 

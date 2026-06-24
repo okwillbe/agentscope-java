@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * {@summary Converter between AG-UI tools and AgentScope tool schemas. (Converter between AG-UI tools and AgentScope tool schemas.)}
  * Converter between AG-UI tools and AgentScope tool schemas.
  *
  * <p>This class handles the bidirectional conversion between the AG-UI protocol's
@@ -29,6 +30,7 @@ import java.util.stream.Collectors;
 public class AguiToolConverter {
 
     /**
+     * {@summary Converter between AG-UI tools and AgentScope tool schemas. (Converter between AG-UI tools and AgentScope tool schemas.)}
      * Convert an AG-UI tool to an AgentScope ToolSchema.
      *
      * @param aguiTool The AG-UI tool to convert
@@ -43,6 +45,7 @@ public class AguiToolConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI tools and AgentScope tool schemas. (Converter between AG-UI tools and AgentScope tool schemas.)}
      * Convert an AgentScope ToolSchema to an AG-UI tool.
      *
      * @param schema The AgentScope ToolSchema to convert
@@ -53,6 +56,7 @@ public class AguiToolConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI tools and AgentScope tool schemas. (Converter between AG-UI tools and AgentScope tool schemas.)}
      * Convert a list of AG-UI tools to AgentScope ToolSchemas.
      *
      * @param aguiTools The AG-UI tools to convert
@@ -63,6 +67,7 @@ public class AguiToolConverter {
     }
 
     /**
+     * {@summary Converter between AG-UI tools and AgentScope tool schemas. (Converter between AG-UI tools and AgentScope tool schemas.)}
      * Convert a list of AgentScope ToolSchemas to AG-UI tools.
      *
      * @param schemas The AgentScope ToolSchemas to convert

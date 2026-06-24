@@ -18,6 +18,7 @@ package io.agentscope.core.chat.completions.model;
 import java.util.List;
 
 /**
+ * {@summary Request payload for the Chat Completions HTTP API. (Request payload for the Chat Completions HTTP API.)}
  * Request payload for the Chat Completions HTTP API.
  *
  * <p>This request is <b>100% compatible with OpenAI's Chat Completions API</b>. All fields follow
@@ -61,6 +62,7 @@ public class ChatCompletionsRequest {
     private String model;
 
     /**
+     * {@summary Request payload for the Chat Completions HTTP API. (Request payload for the Chat Completions HTTP API.)}
      * A list of messages comprising the conversation so far.
      *
      * <p>Required field. The client must send the complete conversation history for stateless
@@ -72,6 +74,7 @@ public class ChatCompletionsRequest {
     private Boolean stream;
 
     /**
+     * {@summary Request payload for the Chat Completions HTTP API. (Request payload for the Chat Completions HTTP API.)}
      * A list of tools the model may call. Currently, only functions are supported as a tool.
      *
      * <p>When tools are provided, they are registered as schema-only tools. When the agent decides

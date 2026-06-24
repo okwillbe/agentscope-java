@@ -16,6 +16,7 @@
 package io.agentscope.core.training.backend.dto;
 
 /**
+ * {@summary Trinity Common Status Response (Trinity Common Status Response)}
  * Trinity Common Status Response
  */
 public class StatusResponse {

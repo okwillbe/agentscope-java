@@ -27,6 +27,7 @@ import java.util.List;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary StructuredOutputExample - Demonstrates structured output generation. (StructuredOutputExample - Demonstrates structured output generation.)}
  * StructuredOutputExample - Demonstrates structured output generation.
  *
  * <p>Migration notes:
@@ -37,6 +38,7 @@ import reactor.core.publisher.Flux;
 public class StructuredOutputExample {
 
     /**
+     * {@summary StructuredOutputExample - Demonstrates structured output generation. (StructuredOutputExample - Demonstrates structured output generation.)}
      * Runs the structured output example.
      *
      * @param args command-line arguments (ignored)

@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
  * Per-agent section in {@code agentscope.json} under {@code agents.<agentId>}.
  *
  * <p>After the agent is built, {@link HarnessAgent} automatically loads additional
@@ -53,6 +54,7 @@ public class AgentConfigEntry {
     private String sysPrompt;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Workspace root for this agent. Relative paths are resolved against the bootstrap working
      * directory.
      */
@@ -66,6 +68,7 @@ public class AgentConfigEntry {
     private String environmentMemory;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Legacy single-value skill repository. Retained for backwards-compatible deserialisation of
      * older {@code agentscope.json} files; if present it is folded into
      * {@link #skillRepositories} at the head when the effective list is materialised.
@@ -78,6 +81,7 @@ public class AgentConfigEntry {
     private SkillRepositoryConfigEntry skillRepository;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Layered skill repositories. Each entry is appended to the agent's effective
      * {@link io.agentscope.core.skill.repository.SkillRepository} list in order, so earlier entries
      * win on skill-name conflicts. The {@code workspace/skills/} overlay is implicit and is added
@@ -88,6 +92,7 @@ public class AgentConfigEntry {
     private List<SkillRepositoryConfigEntry> skillRepositories;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Optional model id override (e.g. {@code "anthropic/claude-opus-4-7"}). When null the
      * bootstrap-level model is used.
      */
@@ -95,6 +100,7 @@ public class AgentConfigEntry {
     private String model;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Tool allow / deny lists. Only tools whose name is in {@code allow} are offered to the agent
      * (when non-empty). Tools in {@code deny} are always removed regardless of {@code allow}.
      */
@@ -184,6 +190,7 @@ public class AgentConfigEntry {
     }
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Returns the effective ordered list of skill repository entries, folding the legacy
      * {@link #skillRepository} value (if any) into the head so older configs continue to load
      * unchanged. Never null; may be empty.
@@ -308,6 +315,7 @@ public class AgentConfigEntry {
     public static class GroupChatConfig {
 
         /**
+         * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
          * List of patterns (exact strings or prefixes) that trigger the agent in group messages.
          * When empty the agent responds to all messages in the group.
          */
@@ -315,6 +323,7 @@ public class AgentConfigEntry {
         private List<String> mentionPatterns;
 
         /**
+         * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
          * When {@code true} the agent only responds when a mention pattern matches. Defaults to
          * {@code false} (respond to all).
          */

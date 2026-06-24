@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
 /**
+ * {@summary Represents a function call within a tool call in the AG-UI protocol. (Represents a function call within a tool call in the AG-UI protocol.)}
  * Represents a function call within a tool call in the AG-UI protocol.
  *
  * <p>This class contains the function name and its arguments as a JSON string.
@@ -30,6 +31,7 @@ public class AguiFunctionCall {
     private final String arguments;
 
     /**
+     * {@summary Represents a function call within a tool call in the AG-UI protocol. (Represents a function call within a tool call in the AG-UI protocol.)}
      * Creates a new AguiFunctionCall.
      *
      * @param name The function name
@@ -43,6 +45,7 @@ public class AguiFunctionCall {
     }
 
     /**
+     * {@summary Represents a function call within a tool call in the AG-UI protocol. (Represents a function call within a tool call in the AG-UI protocol.)}
      * Get the function name.
      *
      * @return The function name
@@ -52,6 +55,7 @@ public class AguiFunctionCall {
     }
 
     /**
+     * {@summary Represents a function call within a tool call in the AG-UI protocol. (Represents a function call within a tool call in the AG-UI protocol.)}
      * Get the function arguments as a JSON string.
      *
      * @return The arguments JSON string

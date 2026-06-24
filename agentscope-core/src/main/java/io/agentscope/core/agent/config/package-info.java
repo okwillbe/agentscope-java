@@ -15,8 +15,14 @@
  */
 
 /**
- * Agent configuration value objects: {@link io.agentscope.core.agent.config.ModelConfig} for
- * retry / fallback wiring and {@link io.agentscope.core.agent.config.ReactConfig} for
- * reasoning-loop bounds.
+ * {@summary Agent configuration value objects (智能体配置值对象)}
+ *
+ * <p>This package contains:
+ * <ul>
+ *   <li>{@link io.agentscope.core.agent.config.ModelConfig} - Model configuration with retry/fallback wiring
+ *   <p>模型配置，包含重试/回退逻辑</li>
+ *   <li>{@link io.agentscope.core.agent.config.ReactConfig} - Reasoning-loop bounds configuration
+ *   <p>推理循环边界配置</li>
+ * </ul>
  */
 package io.agentscope.core.agent.config;

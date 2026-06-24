@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.accumulator;
 
+/** {@summary ContentAccumulator (ContentAccumulator)} */
 import io.agentscope.core.message.ContentBlock;
 
 /**

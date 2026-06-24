@@ -26,6 +26,7 @@ import org.springframework.web.cors.reactive.CorsConfigurationSource;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
 /**
+ * {@summary WebFlux security configuration for agentscope-claw — the single-user local assistant. (WebFlux security configuration for agentscope-claw — the single-user local assistant.)}
  * WebFlux security configuration for agentscope-claw — the single-user local assistant.
  *
  * <p>The app is intended to run on the user's personal computer; there is no authentication and

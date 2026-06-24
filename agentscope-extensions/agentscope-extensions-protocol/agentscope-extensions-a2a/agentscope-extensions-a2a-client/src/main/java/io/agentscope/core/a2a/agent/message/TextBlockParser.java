@@ -22,6 +22,7 @@ import io.agentscope.core.a2a.agent.utils.MessageConvertUtil;
 import io.agentscope.core.message.TextBlock;
 
 /**
+ * {@summary TextBlockParser class ()}
  * Parser for {@link TextBlock} to {@link TextPart}.
  */
 public class TextBlockParser implements ContentBlockParser<TextBlock> {

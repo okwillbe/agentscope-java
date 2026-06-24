@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.credential;
 
+/** {@summary ModelCard (ModelCard)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

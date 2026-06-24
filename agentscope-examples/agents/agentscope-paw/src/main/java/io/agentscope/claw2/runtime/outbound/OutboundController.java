@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary HTTP entry point for agent-initiated / external outbound messages. (HTTP entry point for agent-initiated / external outbound messages.)}
  * HTTP entry point for agent-initiated / external outbound messages.
  *
  * <pre>

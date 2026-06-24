@@ -30,6 +30,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
  * Client for interacting with Alibaba Cloud Bailian Knowledge Base API.
  *
  * <p>This class wraps the Bailian SDK and provides reactive API methods
@@ -57,6 +58,7 @@ public class BailianClient {
     private final BailianConfig config;
 
     /**
+     * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
      * Creates a new BailianClient instance.
      *
      * @param config the Bailian configuration
@@ -78,6 +80,7 @@ public class BailianClient {
     }
 
     /**
+     * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
      * Package-private constructor for testing purposes.
      *
      * <p>This constructor allows injecting a mock SDK client for unit testing
@@ -103,6 +106,7 @@ public class BailianClient {
     }
 
     /**
+     * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
      * Retrieves relevant documents from a knowledge base with a limit.
      *
      * <p>This method searches the specified knowledge base (index) for documents
@@ -119,6 +123,7 @@ public class BailianClient {
     }
 
     /**
+     * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
      * Retrieves relevant documents from a knowledge base with conversation history.
      *
      * <p>This method searches the specified knowledge base (index) for documents
@@ -277,6 +282,7 @@ public class BailianClient {
     }
 
     /**
+     * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
      * Gets the workspace ID associated with this client.
      *
      * @return the workspace ID
@@ -286,6 +292,7 @@ public class BailianClient {
     }
 
     /**
+     * {@summary Client for interacting with Alibaba Cloud Bailian Knowledge Base API. (Client for interacting with Alibaba Cloud Bailian Knowledge Base API.)}
      * Creates and configures the Bailian SDK client.
      *
      * @param config the Bailian configuration

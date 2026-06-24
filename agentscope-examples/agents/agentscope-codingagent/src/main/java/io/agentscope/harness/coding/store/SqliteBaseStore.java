@@ -30,6 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Counts items in a namespace. (Counts items in a namespace.)}
  * SQLite-backed implementation of {@link BaseStore}.
  *
  * <p>All items are stored in a single table with columns: {@code namespace} (text), {@code key}
@@ -140,6 +141,7 @@ public class SqliteBaseStore implements BaseStore, AutoCloseable {
     }
 
     /**
+     * {@summary Counts items in a namespace. (Counts items in a namespace.)}
      * Atomic compare-and-swap backed by SQLite. When {@code expectedVersion == 0}, the operation
      * succeeds only if the row does not yet exist (create-if-absent). Otherwise it succeeds only
      * if the stored row has {@code version == expectedVersion}.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.impl.docker;
 
+/** {@summary DockerSandboxClientOptions (DockerSandboxClientOptions)} */
 import io.agentscope.harness.agent.sandbox.SandboxClient;
 import io.agentscope.harness.agent.sandbox.SandboxClientOptions;
 import java.util.ArrayList;

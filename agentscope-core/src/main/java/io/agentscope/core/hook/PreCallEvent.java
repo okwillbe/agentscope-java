@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary PreCallEvent (PreCallEvent)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.message.Msg;
 import java.util.ArrayList;

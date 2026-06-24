@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary OpenAIException (OpenAIException)} */
+
 /**
  * Base exception for all OpenAI API errors.
  *

@@ -53,6 +53,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.SignalType;
 
 /**
+ * {@summary Process streaming output data (Process streaming output data)}
  * Implementation of A2A {@link AgentExecutor} for AgentScope.
  *
  * <p>For Current Implementation, will create a new {@link io.agentscope.core.agent.Agent} for each request.
@@ -208,6 +209,7 @@ public class AgentScopeAgentExecutor implements AgentExecutor {
     }
 
     /**
+     * {@summary Process streaming output data (Process streaming output data)}
      * Process streaming output data
      */
     private void processStreamingOutput(
@@ -270,6 +272,7 @@ public class AgentScopeAgentExecutor implements AgentExecutor {
         }
 
         /**
+         * {@summary Process streaming output data (Process streaming output data)}
          * Template for Flux doOnNext to handle event.
          *
          * @param output output event from agent stream execute.
@@ -283,11 +286,13 @@ public class AgentScopeAgentExecutor implements AgentExecutor {
         }
 
         /**
+         * {@summary Process streaming output data (Process streaming output data)}
          * Handle agent execute complete with Flux doOnComplete.
          */
         abstract void doOnComplete();
 
         /**
+         * {@summary Process streaming output data (Process streaming output data)}
          * Handle agent execute error with Flux doOnError.
          *
          * @param t the error during Flux execution
@@ -308,6 +313,7 @@ public class AgentScopeAgentExecutor implements AgentExecutor {
         }
 
         /**
+         * {@summary Process streaming output data (Process streaming output data)}
          * Determines whether the given event should not be sent as a response to the A2A client,
          * for example, tool-call-related events or duplicate result messages.
          *
@@ -334,6 +340,7 @@ public class AgentScopeAgentExecutor implements AgentExecutor {
         }
 
         /**
+         * {@summary Process streaming output data (Process streaming output data)}
          * Handle the event.
          *
          * @param output output event from agent stream execute.
@@ -341,6 +348,7 @@ public class AgentScopeAgentExecutor implements AgentExecutor {
         protected abstract void handleEvent(Event output);
 
         /**
+         * {@summary Process streaming output data (Process streaming output data)}
          * Send error message to A2A Client.
          *
          * @param errorMessage error message to send to A2A Client.

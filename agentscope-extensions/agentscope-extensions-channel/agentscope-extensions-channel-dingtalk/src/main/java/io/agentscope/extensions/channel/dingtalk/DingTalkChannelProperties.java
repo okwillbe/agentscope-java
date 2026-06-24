@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Configuration for a single DingTalk (钉钉) channel instance using the Stream protocol over a}
  * Configuration for a single DingTalk (钉钉) channel instance using the Stream protocol over a
  * persistent WebSocket connection.
  *

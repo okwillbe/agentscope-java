@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.anthropic;
 
+/** {@summary AnthropicChatFormatter (AnthropicChatFormatter)} */
 import com.anthropic.models.messages.Message;
 import com.anthropic.models.messages.MessageParam;
 import io.agentscope.core.message.Msg;

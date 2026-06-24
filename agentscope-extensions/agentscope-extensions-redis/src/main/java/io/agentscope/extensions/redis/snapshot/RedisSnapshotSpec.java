@@ -20,11 +20,13 @@ import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 import redis.clients.jedis.UnifiedJedis;
 
 /**
+ * {@summary Creates a Redis snapshot spec. (Creates a Redis snapshot spec.)}
  * Convenience {@link SandboxSnapshotSpec} for Redis-backed snapshot storage.
  */
 public class RedisSnapshotSpec extends RemoteSnapshotSpec {
 
     /**
+     * {@summary Creates a Redis snapshot spec. (Creates a Redis snapshot spec.)}
      * Creates a Redis snapshot spec.
      *
      * @param jedis initialized jedis client

@@ -16,6 +16,7 @@
 package io.agentscope.extensions.sandbox.agentrun;
 
 /**
+ * {@summary NAS mount configuration for an AgentRun sandbox. (NAS mount configuration for an AgentRun sandbox.)}
  * NAS mount configuration for an AgentRun sandbox.
  *
  * <p>NAS mounts are configured at sandbox creation time and provide instance-level persistent
@@ -33,6 +34,7 @@ public class AgentRunNasMountConfig {
     public AgentRunNasMountConfig() {}
 
     /**
+     * {@summary NAS mount configuration for an AgentRun sandbox. (NAS mount configuration for an AgentRun sandbox.)}
      * Returns the NAS server address (e.g. {@code 12345-abc.cn-hangzhou.nas.aliyuncs.com}).
      *
      * @return NAS server address
@@ -47,6 +49,7 @@ public class AgentRunNasMountConfig {
     }
 
     /**
+     * {@summary NAS mount configuration for an AgentRun sandbox. (NAS mount configuration for an AgentRun sandbox.)}
      * Returns the in-sandbox mount directory (must start with {@code /home}, {@code /mnt} or
      * {@code /data}).
      *
@@ -62,6 +65,7 @@ public class AgentRunNasMountConfig {
     }
 
     /**
+     * {@summary NAS mount configuration for an AgentRun sandbox. (NAS mount configuration for an AgentRun sandbox.)}
      * Returns the remote path on the NAS filesystem to mount.
      *
      * @return remote path, defaults to {@code "/"}
@@ -76,6 +80,7 @@ public class AgentRunNasMountConfig {
     }
 
     /**
+     * {@summary NAS mount configuration for an AgentRun sandbox. (NAS mount configuration for an AgentRun sandbox.)}
      * Returns whether TLS is enabled for the NAS connection.
      *
      * @return true when TLS is enabled

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.compaction;
 
+/** {@summary CompactionConfig (CompactionConfig)} */
 import io.agentscope.core.model.Model;
 import io.agentscope.core.model.ModelRegistry;
 import java.util.Set;
@@ -23,8 +24,8 @@ import java.util.Set;
  * Configuration for conversation compaction (summarization).
  *
  * <ul>
- *   <li><b>trigger</b> — when to run compaction (by token count or message count)</li>
- *   <li><b>keep</b> — how many recent messages to preserve verbatim after compaction</li>
+ *   <li><b>trigger</b> ...when to run compaction (by token count or message count)</li>
+ *   <li><b>keep</b> ...how many recent messages to preserve verbatim after compaction</li>
  * </ul>
  *
  * <p>Defaults (dynamic mode):
@@ -34,7 +35,7 @@ import java.util.Set;
  *       window, or at 50 messages (whichever comes first)</li>
  *   <li>Keep tail: dynamically computed as {@code min(8k, max(2k, usable * 0.25))} tokens.
  *       Falls back to 20 messages when the model does not report its context window</li>
- *   <li>Prune: enabled by default — aggregates old tool result outputs and trims them when the
+ *   <li>Prune: enabled by default ...aggregates old tool result outputs and trims them when the
  *       prunable total exceeds 20k tokens (protects the most recent 40k tokens)</li>
  *   <li>Summarization is enabled; memory flush and offload are both enabled before summary</li>
  * </ul>
@@ -45,12 +46,12 @@ import java.util.Set;
  * in two complementary config classes:
  *
  * <ul>
- *   <li><b>Compaction summary</b> — distills the conversation prefix into one summary
+ *   <li><b>Compaction summary</b> ...distills the conversation prefix into one summary
  *       message before reasoning. Prompt: {@link #getSummaryPrompt()} on <em>this</em>
  *       class.</li>
- *   <li><b>Flush</b> — extracts long-term memories into today's daily ledger. Prompt:
+ *   <li><b>Flush</b> ...extracts long-term memories into today's daily ledger. Prompt:
  *       {@code MemoryConfig.flushPrompt()}.</li>
- *   <li><b>Consolidation</b> — periodically merges daily ledgers into {@code MEMORY.md}.
+ *   <li><b>Consolidation</b> ...periodically merges daily ledgers into {@code MEMORY.md}.
  *       Prompt: {@code MemoryConfig.consolidationPrompt()}.</li>
  * </ul>
  *
@@ -179,9 +180,9 @@ public class CompactionConfig {
     /**
      * Token budget for the preserved tail.
      * <ul>
-     *   <li>{@code > 0}: static budget — scan from end until this budget is exhausted</li>
+     *   <li>{@code > 0}: static budget ...scan from end until this budget is exhausted</li>
      *   <li>{@code 0}: use {@link #getKeepMessages()} instead (message-count mode)</li>
-     *   <li>{@code -1}: dynamic — compute as
+     *   <li>{@code -1}: dynamic ...compute as
      *       {@code min(keepTokensMax, max(keepTokensMin, usable * keepTokensRatio))}</li>
      * </ul>
      */

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent.task;
 
+/** {@summary WorkspaceTaskRepository (WorkspaceTaskRepository)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.workspace.WorkspaceManager;
 import java.time.Duration;
@@ -42,8 +43,8 @@ import org.slf4j.LoggerFactory;
  * truth source for task state, while maintaining in-memory {@link BackgroundTask} handles as a
  * local performance overlay for tasks running on the current node.
  *
- * <p>Storage layout: {@code agents/<parentAgentId>/tasks/<sessionId>.json} — a JSON map of
- * {@code taskId → TaskRecord}, consistent with how sessions are stored. In distributed deployments
+ * <p>Storage layout: {@code agents/<parentAgentId>/tasks/<sessionId>.json} ...a JSON map of
+ * {@code taskId 鈫?TaskRecord}, consistent with how sessions are stored. In distributed deployments
  * using {@code RemoteFilesystemSpec}, this path is automatically routed to shared storage, making
  * task state visible to any node.
  *
@@ -97,13 +98,13 @@ public class WorkspaceTaskRepository implements TaskRepository {
     private final Map<String, BackgroundTask> localTasks = new ConcurrentHashMap<>();
 
     /**
-     * Maps {@code localKey} → {@code sessionId} so the heartbeat can iterate running tasks without
+     * Maps {@code localKey} 鈫?{@code sessionId} so the heartbeat can iterate running tasks without
      * needing to parse the composite key string.
      */
     private final Map<String, String> localTaskSessionIds = new ConcurrentHashMap<>();
 
     /**
-     * Maps {@code localKey} → {@link RuntimeContext} captured at {@code putTask} time so the
+     * Maps {@code localKey} 鈫?{@link RuntimeContext} captured at {@code putTask} time so the
      * background future and the heartbeat thread can persist task state under the originating
      * user's namespace.
      */
@@ -412,7 +413,7 @@ public class WorkspaceTaskRepository implements TaskRepository {
         if (local != null) {
             return local;
         }
-        // Fall back to workspace record — construct a synthetic completed/failed BackgroundTask
+        // Fall back to workspace record ...construct a synthetic completed/failed BackgroundTask
         Optional<TaskRecord> record =
                 workspaceManager.readTaskRecord(
                         rc != null ? rc : RuntimeContext.empty(), parentAgentId, sessionId, taskId);
@@ -519,7 +520,7 @@ public class WorkspaceTaskRepository implements TaskRepository {
     }
 
     /**
-     * Stamps {@code deliveredAt} on the persisted record. Idempotent — the first non-null write
+     * Stamps {@code deliveredAt} on the persisted record. Idempotent ...the first non-null write
      * wins; subsequent calls bail out without touching workspace storage. Uses an independent
      * read-modify-write path rather than going through {@link #updateStatus} so the heartbeat /
      * orphan-sweeper cannot accidentally clobber the field via their RUNNING/FAILED writes
@@ -631,19 +632,19 @@ public class WorkspaceTaskRepository implements TaskRepository {
 
         // Best-effort distributed throttle: if another node already completed a sweep
         // within the last SWEEP_INTERVAL_MINUTES, skip this cycle entirely.
-        // No locking — two nodes may occasionally both sweep, which is safe (idempotent).
+        // No locking ...two nodes may occasionally both sweep, which is safe (idempotent).
         Duration sweepInterval = Duration.ofSeconds(SWEEP_INTERVAL_MINUTES * 60L);
         Optional<Instant> lastSweep = workspaceManager.readSweepMarker(rc, parentAgentId);
         if (lastSweep.isPresent() && lastSweep.get().isAfter(Instant.now().minus(sweepInterval))) {
             log.debug(
-                    "Skipping orphan sweep for {} — another node swept at {}",
+                    "Skipping orphan sweep for {} ...another node swept at {}",
                     parentAgentId,
                     lastSweep.get());
             return;
         }
 
-        // recentWindow = 2× orphan timeout + 1 sweep cycle.
-        // The 2× factor ensures we never miss a task right at the orphan threshold
+        // recentWindow = 2脳 orphan timeout + 1 sweep cycle.
+        // The 2脳 factor ensures we never miss a task right at the orphan threshold
         // (the file could have been written exactly orphanTimeout ago).
         // The +1 cycle buffer handles clock skew and sweep scheduling jitter.
         Duration orphanTimeout = Duration.ofMinutes(ORPHAN_TIMEOUT_MINUTES);
@@ -699,7 +700,7 @@ public class WorkspaceTaskRepository implements TaskRepository {
                 }
                 String sid = record.getParentSessionId();
                 String tid = record.getTaskId();
-                // Skip if this node still has an active local future — heartbeat is live.
+                // Skip if this node still has an active local future ...heartbeat is live.
                 String key = localKey(sid, tid);
                 BackgroundTask local = localTasks.get(key);
                 if (local != null && !local.isCompleted()) {
@@ -751,7 +752,7 @@ public class WorkspaceTaskRepository implements TaskRepository {
             String error) {
         Optional<TaskRecord> existing =
                 workspaceManager.readTaskRecord(rc, parentAgentId, sessionId, taskId);
-        // Guard 1: terminal states are immutable — never overwrite COMPLETED, FAILED, or CANCELLED
+        // Guard 1: terminal states are immutable ...never overwrite COMPLETED, FAILED, or CANCELLED
         // with any other status. This prevents a late COMPLETED/FAILED write from a still-running
         // thread from clobbering a CANCELLED status set concurrently by cancelTask().
         if (existing.isPresent()
@@ -853,7 +854,7 @@ public class WorkspaceTaskRepository implements TaskRepository {
                     localTaskContexts.putIfAbsent(lk, capturedRc);
                     return cached;
                 } else {
-                    // PENDING or RUNNING but no local future — cross-node local task.
+                    // PENDING or RUNNING but no local future ...cross-node local task.
                     future = new CompletableFuture<>();
                 }
             }

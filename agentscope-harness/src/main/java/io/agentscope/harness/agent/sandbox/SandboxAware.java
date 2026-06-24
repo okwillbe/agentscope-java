@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxAware (SandboxAware)} */
 import io.agentscope.harness.agent.filesystem.sandbox.SandboxBackedFilesystem;
 
 /**

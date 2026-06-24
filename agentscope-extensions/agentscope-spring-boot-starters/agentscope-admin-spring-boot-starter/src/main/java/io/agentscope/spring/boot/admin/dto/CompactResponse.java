@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.admin.dto;
 
 /**
+ * {@summary CompactResponse class ()}
  * Response body for {@code POST /v1/admin/sessions/{id}:compact}.
  *
  * @param sessionId target session

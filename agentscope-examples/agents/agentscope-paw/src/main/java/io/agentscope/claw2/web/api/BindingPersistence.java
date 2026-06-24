@@ -43,6 +43,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Re-registers the given channel from its on-disk config so binding edits take effect for (Re-registers the given channel from its on-disk config so binding edits take effect for)}
  * Helper that loads, mutates, and atomically rewrites {@code agentscope.json} for binding /
  * channel-default edits, then re-registers the affected channel with the live
  * {@link ChannelManager} so changes take effect immediately.
@@ -70,6 +71,7 @@ public class BindingPersistence {
     }
 
     /**
+     * {@summary Re-registers the given channel from its on-disk config so binding edits take effect for (Re-registers the given channel from its on-disk config so binding edits take effect for)}
      * Apply {@code mutator} to the live channels map of {@code agentscope.json}, persist the
      * result atomically, and re-register the supplied channel ids in the live
      * {@link ChannelManager}. Returns the value produced by {@code mutator} so callers can shape
@@ -98,6 +100,7 @@ public class BindingPersistence {
     }
 
     /**
+     * {@summary Re-registers the given channel from its on-disk config so binding edits take effect for (Re-registers the given channel from its on-disk config so binding edits take effect for)}
      * Reads the current {@code agentscope.json} from disk (no lock — caller should not mutate the
      * returned config in place). Used by read-only endpoints that need the freshest channel state
      * after recent mutations, since {@link ClawBootstrap#loadedConfig()} is a bootstrap-time
@@ -161,6 +164,7 @@ public class BindingPersistence {
     }
 
     /**
+     * {@summary Re-registers the given channel from its on-disk config so binding edits take effect for (Re-registers the given channel from its on-disk config so binding edits take effect for)}
      * Re-registers the given channel from its on-disk config so binding edits take effect for
      * subsequent inbound messages. Resolves the implementation via {@link ChannelTypeRegistry}
      * using the entry's {@code type}, so every adapter (chatui, dingtalk, wecom, feishu, github,

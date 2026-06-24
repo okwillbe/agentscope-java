@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.mcp;
 
+/** {@summary McpMeta (McpMeta)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.modelcontextprotocol.spec.McpSchema;
 import java.util.Collections;
@@ -30,7 +31,7 @@ import java.util.Objects;
  * entries automatically included as the {@code meta} field of every MCP
  * {@link McpSchema.CallToolRequest} sent through {@link McpTool}.
  *
- * <p>Only objects registered under the {@code McpMeta.class} type key are extracted — other
+ * <p>Only objects registered under the {@code McpMeta.class} type key are extracted 鈥?other
  * context objects (DI beans, configs, etc.) are never leaked into MCP meta.
  *
  * <p><b>Usage examples:</b>

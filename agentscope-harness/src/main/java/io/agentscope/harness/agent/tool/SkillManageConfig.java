@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary SkillManageConfig (SkillManageConfig)} */
+
 /**
  * Configuration for {@link SkillManageTool}.
  *
@@ -23,7 +25,7 @@ package io.agentscope.harness.agent.tool;
  * silently overwrite an existing skill via {@code create}.
  *
  * <p>For personal-assistant / experimental use the recommended override is
- * {@code SkillManageConfig.builder().autoPromote(true).build()} — agent writes go straight to the
+ * {@code SkillManageConfig.builder().autoPromote(true).build()} ...agent writes go straight to the
  * live skills root, becoming visible on the next reasoning turn.
  */
 public final class SkillManageConfig {

@@ -22,6 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 /**
+ * {@summary In-memory undo/redo stacks per session. (In-memory undo/redo stacks per session.)}
  * In-memory undo/redo stacks per session.
  *
  * <p>Stacks store the serialized JSON form of {@link io.agentscope.core.state.AgentState} —
@@ -59,6 +60,7 @@ public final class SnapshotStore {
     }
 
     /**
+     * {@summary In-memory undo/redo stacks per session. (In-memory undo/redo stacks per session.)}
      * Pop the most recent undo snapshot, and atomically push {@code currentJson} onto the redo
      * stack so a subsequent {@link #redo(String, String)} can restore it.
      *
@@ -80,6 +82,7 @@ public final class SnapshotStore {
     }
 
     /**
+     * {@summary In-memory undo/redo stacks per session. (In-memory undo/redo stacks per session.)}
      * Pop the most recent redo snapshot, and push {@code currentJson} onto the undo stack so a
      * subsequent {@link #undo(String, String)} can revert it.
      */

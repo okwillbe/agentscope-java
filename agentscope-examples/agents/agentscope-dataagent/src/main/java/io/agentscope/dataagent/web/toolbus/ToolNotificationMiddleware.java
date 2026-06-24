@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary ToolNotificationMiddleware class ()}
  * {@link MiddlewareBase} implementation that publishes tool-call events to {@link ToolEventBus}
  * before each tool-call execution, enabling real-time SSE streaming of tool calls in
  * {@link io.agentscope.dataagent.web.api.ChatController}.

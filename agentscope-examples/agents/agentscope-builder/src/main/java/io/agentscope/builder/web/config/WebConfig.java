@@ -24,6 +24,7 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 /**
+ * {@summary WebFlux router configuration for the React SPA fallback. (WebFlux router configuration for the React SPA fallback.)}
  * WebFlux router configuration for the React SPA fallback.
  *
  * <p>Any request that:

@@ -19,11 +19,13 @@ package io.agentscope.core.a2a.agent.card;
 import io.a2a.spec.AgentCard;
 
 /**
+ * {@summary The Resolver for AgentCard of A2A. (The Resolver for AgentCard of A2A.)}
  * The Resolver for AgentCard of A2A.
  */
 public interface AgentCardResolver {
 
     /**
+     * {@summary The Resolver for AgentCard of A2A. (The Resolver for AgentCard of A2A.)}
      * Produce AgentCard for target agent name.
      *
      * @param agentName name of agent

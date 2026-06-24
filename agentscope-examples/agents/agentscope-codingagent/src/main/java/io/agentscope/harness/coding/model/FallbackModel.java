@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary FallbackModel class ()}
  * {@link Model} decorator that falls back to a secondary model on retryable errors.
  *
  * <p>The call is transparently retried using the

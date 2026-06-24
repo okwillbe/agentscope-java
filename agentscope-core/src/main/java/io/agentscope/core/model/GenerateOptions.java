@@ -16,6 +16,7 @@
 
 package io.agentscope.core.model;
 
+/** {@summary GenerateOptions (GenerateOptions)} */
 import io.agentscope.core.formatter.ResponseFormat;
 import java.util.Collections;
 import java.util.HashMap;

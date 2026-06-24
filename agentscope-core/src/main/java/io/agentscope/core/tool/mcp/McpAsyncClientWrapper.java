@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.mcp;
 
+/** {@summary McpAsyncClientWrapper (McpAsyncClientWrapper)} */
 import io.modelcontextprotocol.client.McpAsyncClient;
 import io.modelcontextprotocol.spec.McpSchema;
 import java.util.List;

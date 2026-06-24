@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary GitRepoEntry (GitRepoEntry)} */
+
 /**
  * Layout entry that clones a Git repository into the sandbox workspace.
  *

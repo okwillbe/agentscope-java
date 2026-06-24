@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory;
 
+/** {@summary MemoryConfig (MemoryConfig)} */
 import io.agentscope.core.model.Model;
 import io.agentscope.core.model.ModelRegistry;
 import io.agentscope.harness.agent.memory.compaction.CompactionConfig;
@@ -29,15 +30,15 @@ import java.util.Objects;
  * triggering rules:
  *
  * <ol>
- *   <li><b>Flush</b> — extracts long-term memories from a conversation window into today's
+ *   <li><b>Flush</b> ...extracts long-term memories from a conversation window into today's
  *       daily ledger ({@code memory/YYYY-MM-DD.md}). Prompt: {@link #flushPrompt()},
  *       defaults to {@link MemoryFlushManager#DEFAULT_FLUSH_PROMPT}. Trigger:
  *       {@link #flushTrigger()}.</li>
- *   <li><b>Consolidation</b> — periodically merges daily ledgers into the curated
+ *   <li><b>Consolidation</b> ...periodically merges daily ledgers into the curated
  *       {@code MEMORY.md}. Prompt: {@link #consolidationPrompt()}, defaults to
  *       {@link MemoryConsolidator#DEFAULT_CONSOLIDATION_PROMPT}. Run cadence:
  *       {@link #consolidationMinGap()}.</li>
- *   <li><b>Compaction summary</b> — distills the conversation prefix into one summary
+ *   <li><b>Compaction summary</b> ...distills the conversation prefix into one summary
  *       message before reasoning. Prompt lives on {@link CompactionConfig#getSummaryPrompt()};
  *       configure via {@code .compaction(CompactionConfig...)} rather than here.</li>
  * </ol>
@@ -50,7 +51,7 @@ public final class MemoryConfig {
     /** Default {@code consolidationMaxTokens}. */
     public static final int DEFAULT_CONSOLIDATION_MAX_TOKENS = 4_000;
 
-    /** Default {@code consolidationMinGap} — matches {@code MemoryMaintenanceMiddleware}. */
+    /** Default {@code consolidationMinGap} ...matches {@code MemoryMaintenanceMiddleware}. */
     public static final Duration DEFAULT_CONSOLIDATION_MIN_GAP = Duration.ofMinutes(30);
 
     /** Default retention before a daily ledger is archived. */
@@ -250,7 +251,7 @@ public final class MemoryConfig {
         /**
          * Overrides the prompt used by {@link MemoryFlushManager#flushMemories}.
          * {@code null} restores the default. The text is passed verbatim as a SYSTEM
-         * message — it does not need any placeholders.
+         * message ...it does not need any placeholders.
          */
         public Builder flushPrompt(String flushPrompt) {
             this.flushPrompt = flushPrompt;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tools;
 
+/** {@summary McpServerConfig (McpServerConfig)} */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,9 +33,9 @@ import java.util.Map;
  * <p>{@code transport} is the discriminator:
  *
  * <ul>
- *   <li>{@code stdio} — uses {@link #command} + {@link #args} + {@link #env}.
- *   <li>{@code sse} — uses {@link #url} + {@link #headers} + {@link #queryParams}.
- *   <li>{@code http} — streamable HTTP, same fields as {@code sse}.
+ *   <li>{@code stdio} ...uses {@link #command} + {@link #args} + {@link #env}.
+ *   <li>{@code sse} ...uses {@link #url} + {@link #headers} + {@link #queryParams}.
+ *   <li>{@code http} ...streamable HTTP, same fields as {@code sse}.
  * </ul>
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)

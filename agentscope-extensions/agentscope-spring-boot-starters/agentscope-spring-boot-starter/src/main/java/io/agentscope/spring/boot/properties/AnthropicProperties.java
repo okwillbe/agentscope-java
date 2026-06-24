@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.properties;
 
 /**
+ * {@summary Anthropic provider specific settings. (Anthropic provider specific settings.)}
  * Anthropic provider specific settings.
  *
  * <p>Example configuration:
@@ -35,26 +36,31 @@ package io.agentscope.spring.boot.properties;
 public class AnthropicProperties {
 
     /**
+     * {@summary Anthropic provider specific settings. (Anthropic provider specific settings.)}
      * Whether Anthropic model auto-configuration is enabled.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary Anthropic provider specific settings. (Anthropic provider specific settings.)}
      * Anthropic API key.
      */
     private String apiKey;
 
     /**
+     * {@summary Anthropic provider specific settings. (Anthropic provider specific settings.)}
      * Anthropic API base URL (optional).
      */
     private String baseUrl;
 
     /**
+     * {@summary Anthropic provider specific settings. (Anthropic provider specific settings.)}
      * Anthropic model name, for example {@code claude-sonnet-4.5}.
      */
     private String modelName = "claude-sonnet-4.5";
 
     /**
+     * {@summary Anthropic provider specific settings. (Anthropic provider specific settings.)}
      * Whether streaming responses are enabled.
      */
     private boolean stream = true;

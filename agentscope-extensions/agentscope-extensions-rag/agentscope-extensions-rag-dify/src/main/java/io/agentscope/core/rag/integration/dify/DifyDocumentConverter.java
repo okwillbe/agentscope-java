@@ -27,6 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Converter for transforming Dify API responses to AgentScope Document objects. (Converter for transforming Dify API responses to AgentScope Document objects.)}
  * Converter for transforming Dify API responses to AgentScope Document objects.
  *
  * <p>This class handles the conversion between Dify's retrieve response format
@@ -66,6 +67,7 @@ public class DifyDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming Dify API responses to AgentScope Document objects. (Converter for transforming Dify API responses to AgentScope Document objects.)}
      * Converts Dify API response to a list of Documents.
      *
      * <p>This method extracts records from the Dify response and converts
@@ -104,6 +106,7 @@ public class DifyDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming Dify API responses to AgentScope Document objects. (Converter for transforming Dify API responses to AgentScope Document objects.)}
      * Converts a single Dify record to a Document.
      *
      * <p>This method extracts the segment content, score, and metadata from a Dify record
@@ -183,6 +186,7 @@ public class DifyDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming Dify API responses to AgentScope Document objects. (Converter for transforming Dify API responses to AgentScope Document objects.)}
      * Builds payload map from Dify segment metadata.
      *
      * <p>This method extracts relevant metadata fields from the Dify Segment object

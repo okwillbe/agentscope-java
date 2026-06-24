@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.runtime;
 
+/** {@summary MarketplaceStager (MarketplaceStager)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.repository.AgentSkillRepository;
 import io.agentscope.harness.agent.skill.WorkspaceSkillRepository;
@@ -77,7 +78,7 @@ public final class MarketplaceStager {
      * Stage all eligible inputs and return a map from {@code skill.name} to its resolved
      * {@link StageResult}. Inputs whose source repository is a
      * {@link WorkspaceSkillRepository} are returned as {@link StageResult.WorkspaceNative}
-     * — they need no staging because the workspace tree already contains them.
+     * ...they need no staging because the workspace tree already contains them.
      *
      * <p>The white-list of staged directories is rebuilt every call; any pre-existing
      * directory under {@code .skills-cache/<source-ns>/} not in the white-list is removed
@@ -209,12 +210,12 @@ public final class MarketplaceStager {
         Files.write(target, bytes);
         // Heuristic exec-bit recovery: the ingestion path turns files into Strings and discards
         // POSIX mode, so we re-derive +x from a shebang / known script extension. Not a true
-        // mode preservation — pure-static skill assets (.json/.md/.txt) stay 644.
+        // mode preservation ...pure-static skill assets (.json/.md/.txt) stay 644.
         maybeMarkExecutable(target, bytes);
     }
 
     /**
-     * Script-detection heuristic: shebang at byte 0/1 OR a known-script suffix. Match → add
+     * Script-detection heuristic: shebang at byte 0/1 OR a known-script suffix. Match 鈫?add
      * owner-exec on POSIX filesystems. Non-POSIX (Windows) silently no-op.
      */
     private static void maybeMarkExecutable(Path target, byte[] bytes) {
@@ -247,13 +248,13 @@ public final class MarketplaceStager {
         }
     }
 
-    /** Known interpreter / script suffixes. Conservative — we only mark "obvious" scripts. */
+    /** Known interpreter / script suffixes. Conservative ...we only mark "obvious" scripts. */
     private static final Set<String> SCRIPT_SUFFIXES =
             Set.of(".sh", ".bash", ".zsh", ".ksh", ".py", ".rb", ".pl", ".js", ".mjs");
 
     /** Package-private for direct heuristic testing without spinning up {@link #stage}. */
     static boolean shouldBeExecutable(Path target, byte[] bytes) {
-        // 1. Shebang detection — strongest signal regardless of filename.
+        // 1. Shebang detection ...strongest signal regardless of filename.
         if (bytes != null && bytes.length >= 2 && bytes[0] == '#' && bytes[1] == '!') {
             return true;
         }
@@ -423,7 +424,7 @@ public final class MarketplaceStager {
     public sealed interface StageResult {
         StageResult NONE = new None();
 
-        /** No staging applied — skill source has no shell-reachable representation. */
+        /** No staging applied ...skill source has no shell-reachable representation. */
         record None() implements StageResult {}
 
         /** Skill comes from {@link WorkspaceSkillRepository} (already in workspace/skills/). */

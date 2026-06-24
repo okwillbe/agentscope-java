@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.admin.dto;
 
 /**
+ * {@summary CompactRequest class ()}
  * Request body for {@code POST /v1/admin/sessions/{id}:compact}. All fields are optional; nulls
  * fall back to the starter defaults.
  *

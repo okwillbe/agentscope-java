@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary SkillUsageMiddleware (SkillUsageMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -32,12 +33,11 @@ import reactor.core.publisher.Mono;
 
 /**
  * Bumps {@link SkillUsageStore} counters whenever the agent invokes a SkillBox-registered skill
- * loader (e.g. {@code load_skill_through_path}). Provenance gating happens inside the store —
- * only skills tagged {@code created_by="agent"} or {@code "agent-draft"} are recorded.
+ * loader (e.g. {@code load_skill_through_path}). Provenance gating happens inside the store ... * only skills tagged {@code created_by="agent"} or {@code "agent-draft"} are recorded.
  *
  * <p>Counter bumping is best-effort and runs eagerly when {@code onActing} is entered (before
  * the actual tool call returns). The semantics are "the model decided to invoke this skill on
- * this turn" — not "the call succeeded". This matches hermes-agent's telemetry shape and is
+ * this turn" ...not "the call succeeded". This matches hermes-agent's telemetry shape and is
  * cheap to compute.
  */
 public class SkillUsageMiddleware implements MiddlewareBase {
@@ -77,7 +77,7 @@ public class SkillUsageMiddleware implements MiddlewareBase {
     /**
      * If {@code call} targets a SkillBox loader / user, extract the {@code skillId} parameter
      * (or fallback equivalents) and bump the right counter on the store. Failures are swallowed
-     * — telemetry must never break the agent loop.
+     * ...telemetry must never break the agent loop.
      */
     private void trackInvocation(ToolUseBlock call) {
         if (call == null || call.getName() == null) {

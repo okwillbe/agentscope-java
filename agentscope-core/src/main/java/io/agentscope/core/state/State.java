@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary State (State)} */
+
 /**
  * Marker interface for persistable state objects.
  *

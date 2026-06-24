@@ -37,6 +37,7 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
+ * {@summary MessageConvertUtil class ()}
  * Message Converter between Agentscope {@link Msg} and A2A {@link Message} or {@link Artifact}.
  */
 public class MessageConvertUtil {
@@ -47,6 +48,7 @@ public class MessageConvertUtil {
             new ContentBlockParserRouter();
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a list of {@link Msg} to {@link Message}.
      *
      * @param msgs the list of Msg to convert
@@ -60,6 +62,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a {@link Msg} to {@link Message}.
      *
      * @param msg the Msg to convert
@@ -82,6 +85,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert content blocks in {@link Msg} to list of {@link Part}.
      *
      * @param msg the Msg saved content blocks to convert
@@ -105,6 +109,7 @@ public class MessageConvertUtil {
     }
 
     /**
+     * {@summary MessageConvertUtil class ()}
      * Convert a A2A {@link Message} to List of {@link Msg}.
      *
      * <p>Convert rule is revert from List of {@link Msg} to A2A {@link Message} in A2aAgent, step with following:

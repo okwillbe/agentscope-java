@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.reader;
 
 /**
+ * {@summary Strategy for splitting text into chunks. (Strategy for splitting text into chunks.)}
  * Strategy for splitting text into chunks.
  *
  * <p>Different strategies are suitable for different types of content:
@@ -28,6 +29,7 @@ package io.agentscope.core.rag.reader;
  */
 public enum SplitStrategy {
     /**
+     * {@summary Strategy for splitting text into chunks. (Strategy for splitting text into chunks.)}
      * Split text by character count.
      *
      * <p>This is the simplest strategy - it splits text into fixed-size chunks
@@ -36,6 +38,7 @@ public enum SplitStrategy {
     CHARACTER,
 
     /**
+     * {@summary Strategy for splitting text into chunks. (Strategy for splitting text into chunks.)}
      * Split text by paragraphs.
      *
      * <p>This strategy splits text at paragraph boundaries (double newlines),
@@ -44,6 +47,7 @@ public enum SplitStrategy {
     PARAGRAPH,
 
     /**
+     * {@summary Strategy for splitting text into chunks. (Strategy for splitting text into chunks.)}
      * Split text by token count (approximate).
      *
      * <p>This strategy attempts to split text based on approximate token count,
@@ -53,6 +57,7 @@ public enum SplitStrategy {
     TOKEN,
 
     /**
+     * {@summary Strategy for splitting text into chunks. (Strategy for splitting text into chunks.)}
      * Split text by semantic boundaries.
      *
      * <p>This strategy would split text at semantic boundaries (sentences,

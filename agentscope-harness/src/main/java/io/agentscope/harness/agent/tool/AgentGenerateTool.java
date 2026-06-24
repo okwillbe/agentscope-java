@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary AgentGenerateTool (AgentGenerateTool)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;
@@ -78,7 +79,7 @@ public class AgentGenerateTool {
             @ToolParam(
                             name = "description",
                             description =
-                                    "What the agent should do — its purpose, expected output, and"
+                                    "What the agent should do ...its purpose, expected output, and"
                                             + " when to use it.")
                     String description,
             @ToolParam(
@@ -122,7 +123,7 @@ public class AgentGenerateTool {
                                         + spec.markdown();
                             }
                             if (filesystem == null) {
-                                return "Error: no filesystem configured for AgentGenerateTool —"
+                                return "Error: no filesystem configured for AgentGenerateTool -"
                                         + " cannot persist spec. Use dry_run=true to preview.";
                             }
                             String path = "subagents/" + trimmed + ".md";

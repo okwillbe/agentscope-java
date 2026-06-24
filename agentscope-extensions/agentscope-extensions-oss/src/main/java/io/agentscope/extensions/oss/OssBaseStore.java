@@ -34,6 +34,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary OssBaseStore class ()}
  * Alibaba Cloud OSS backed {@link BaseStore} for the harness remote filesystem.
  *
  * <p>Items are stored as JSON objects in OSS. The object key layout is:

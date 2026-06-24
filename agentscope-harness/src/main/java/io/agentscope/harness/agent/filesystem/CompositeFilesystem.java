@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem;
 
+/** {@summary CompositeFilesystem (CompositeFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.local.LocalFilesystemWithShell;
 import io.agentscope.harness.agent.filesystem.model.EditResult;
@@ -43,7 +44,7 @@ import java.util.Map;
  * <p>Paths are matched against route prefixes (longest first). Unmatched paths fall through to the
  * default store.
  *
- * <p>Composite deliberately implements only {@link AbstractFilesystem} — it is the unified,
+ * <p>Composite deliberately implements only {@link AbstractFilesystem} ...it is the unified,
  * non-sandbox view that blends a local workspace with remote-store-backed paths. Shell execution
  * is intentionally not supported in this mode: routing shell commands across stores is
  * ambiguous, and the primary use case (distributed memory with per-user/session isolation) does
@@ -57,8 +58,8 @@ import java.util.Map;
  *     localFs,
  *     Map.of("/memories/", storeFs, "/cache/", inMemoryFs)
  * );
- * fs.read(RuntimeContext.empty(), "/memories/notes.md", 0, 100);  // → storeFs.read(...)
- * fs.read(RuntimeContext.empty(), "/src/Main.java", 0, 100);      // → localFs.read(...)
+ * fs.read(RuntimeContext.empty(), "/memories/notes.md", 0, 100);  // 鈫?storeFs.read(...)
+ * fs.read(RuntimeContext.empty(), "/src/Main.java", 0, 100);      // 鈫?localFs.read(...)
  * }</pre>
  */
 public class CompositeFilesystem implements AbstractFilesystem {
@@ -143,7 +144,7 @@ public class CompositeFilesystem implements AbstractFilesystem {
 
     private static String prependRoute(String routePrefix, String backendPath) {
         // Exact-file route: the backend holds one logical key, so the externally visible path
-        // is the route prefix itself — appending the backend's "/<file>" would yield
+        // is the route prefix itself ...appending the backend's "/<file>" would yield
         // "AGENTS.md/AGENTS.md".
         if (!routePrefix.endsWith("/")) {
             return routePrefix;
@@ -345,7 +346,7 @@ public class CompositeFilesystem implements AbstractFilesystem {
         PathMatcher fileMatcher =
                 FileSystems.getDefault().getPathMatcher("glob:" + effectivePattern);
         // Java NIO's PathMatcher requires at least one separator for patterns like `**/*`, so
-        // root-level files (e.g. AGENTS.md, MEMORY.md, tools.json — registered as exact-file
+        // root-level files (e.g. AGENTS.md, MEMORY.md, tools.json ...registered as exact-file
         // routes with no separator in their prefix) never satisfy the recursive matcher alone.
         // Mirror what {@link LocalFilesystem#glob} does: build a "direct" matcher by stripping
         // the leading `**/` so depth-1 entries also match. A pattern that already lacks the
@@ -480,7 +481,7 @@ public class CompositeFilesystem implements AbstractFilesystem {
             return result;
         }
 
-        // Cross-backend move: read → write → delete
+        // Cross-backend move: read 鈫?write 鈫?delete
         var readResult = srcRoute.backend().read(runtimeContext, srcRoute.backendPath(), 0, 0);
         if (!readResult.isSuccess() || readResult.fileData() == null) {
             return WriteResult.fail("Cannot read source for cross-backend move: " + fromPath);

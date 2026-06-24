@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary HookEventType (HookEventType)} */
+
 /**
  * Enum representing all hook event types.
  *

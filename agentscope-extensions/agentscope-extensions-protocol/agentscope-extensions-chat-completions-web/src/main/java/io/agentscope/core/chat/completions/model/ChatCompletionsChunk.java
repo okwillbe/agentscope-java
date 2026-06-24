@@ -20,6 +20,7 @@ import java.time.Instant;
 import java.util.List;
 
 /**
+ * {@summary Streaming chunk for Chat Completions API. (Streaming chunk for Chat Completions API.)}
  * Streaming chunk for Chat Completions API.
  *
  * <p>This follows OpenAI's streaming response format for chat completions. Each chunk contains a
@@ -83,6 +84,7 @@ public class ChatCompletionsChunk {
     }
 
     /**
+     * {@summary Streaming chunk for Chat Completions API. (Streaming chunk for Chat Completions API.)}
      * Create a chunk with basic info.
      *
      * @param id Request ID
@@ -95,6 +97,7 @@ public class ChatCompletionsChunk {
     }
 
     /**
+     * {@summary Streaming chunk for Chat Completions API. (Streaming chunk for Chat Completions API.)}
      * Create a text content chunk.
      *
      * @param id Request ID
@@ -118,6 +121,7 @@ public class ChatCompletionsChunk {
     }
 
     /**
+     * {@summary Streaming chunk for Chat Completions API. (Streaming chunk for Chat Completions API.)}
      * Create a tool call chunk.
      *
      * @param id Request ID
@@ -142,6 +146,7 @@ public class ChatCompletionsChunk {
     }
 
     /**
+     * {@summary Streaming chunk for Chat Completions API. (Streaming chunk for Chat Completions API.)}
      * Create a tool result chunk.
      *
      * <p>This represents the result of a tool execution in streaming format. While not part of the
@@ -196,6 +201,7 @@ public class ChatCompletionsChunk {
     }
 
     /**
+     * {@summary Streaming chunk for Chat Completions API. (Streaming chunk for Chat Completions API.)}
      * Create a finish chunk.
      *
      * @param id Request ID

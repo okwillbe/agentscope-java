@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary TextBlock (TextBlock)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

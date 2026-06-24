@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary WebSocketTransportException (WebSocketTransportException)} */
 import java.util.Collections;
 import java.util.Map;
 

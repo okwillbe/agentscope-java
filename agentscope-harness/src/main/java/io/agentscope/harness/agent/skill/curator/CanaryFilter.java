@@ -15,18 +15,19 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary CanaryFilter (CanaryFilter)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.skill.AgentSkill;
 import java.nio.charset.StandardCharsets;
 
 /**
- * Percentage-based rollout for agent-authored skills. Hashes {@code userId × skillName}, and
+ * Percentage-based rollout for agent-authored skills. Hashes {@code userId 脳 skillName}, and
  * admits the skill iff {@code hash mod 100 < percent}.
  *
  * <p>Only applies to agent-authored skills (via {@link AbstractAgentCreatedFilter}). Hand-
  * authored / hub-installed skills always pass through.
  *
- * <p>The {@code rampUpDays} parameter is currently a placeholder — accepted on construction
+ * <p>The {@code rampUpDays} parameter is currently a placeholder ...accepted on construction
  * but the current implementation does not yet ramp; it always uses the configured static
  * percentage. A future version will interpolate using {@code SkillUsageRecord.promotedAt}.
  */
@@ -69,7 +70,7 @@ public class CanaryFilter extends AbstractAgentCreatedFilter {
         return bucket < percent;
     }
 
-    /** Stable hash → bucket. Uses Java's String.hashCode so behavior is deterministic. */
+    /** Stable hash 鈫?bucket. Uses Java's String.hashCode so behavior is deterministic. */
     static int stableBucket(String key, int modulus) {
         // Avoid signed-overflow surprises; use absolute value of a 32-bit rolling hash.
         int h = 0;

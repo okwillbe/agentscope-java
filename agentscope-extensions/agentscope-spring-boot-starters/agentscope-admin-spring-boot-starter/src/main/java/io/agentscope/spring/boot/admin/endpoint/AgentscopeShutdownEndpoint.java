@@ -29,6 +29,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
+ * {@summary AgentscopeShutdownEndpoint class ()}
  * {@code POST /actuator/agentscope-shutdown}: drain, then schedule a JVM-level shutdown.
  *
  * <p>Distinct from Spring Boot's own {@code /actuator/shutdown} in that it first calls

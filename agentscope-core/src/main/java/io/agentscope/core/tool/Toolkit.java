@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary Toolkit (Toolkit)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.message.ToolUseBlock;
@@ -312,7 +313,7 @@ public class Toolkit {
      * Check if a tool is an external tool (requires execution outside the framework).
      *
      * <p>A tool is considered external when it extends {@link ToolBase} and reports
-     * {@code isExternalTool() == true} — for example {@link SchemaOnlyTool}, or any
+     * {@code isExternalTool() == true} 鈥?for example {@link SchemaOnlyTool}, or any
      * {@code @Tool(externalTool=true)} method. When this returns true, the framework will skip
      * execution and surface the tool call to the user via {@code TOOL_SUSPENDED}.
      *

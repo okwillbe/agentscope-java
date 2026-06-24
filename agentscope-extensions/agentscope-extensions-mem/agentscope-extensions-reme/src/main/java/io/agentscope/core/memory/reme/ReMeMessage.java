@@ -18,6 +18,7 @@ package io.agentscope.core.memory.reme;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
+ * {@summary Represents a message in the ReMe API format. (Represents a message in the ReMe API format.)}
  * Represents a message in the ReMe API format.
  *
  * <p>Messages are the primary input format for ReMe's memory recording. Each message
@@ -36,6 +37,7 @@ public class ReMeMessage {
     public ReMeMessage() {}
 
     /**
+     * {@summary Represents a message in the ReMe API format. (Represents a message in the ReMe API format.)}
      * Creates a new ReMeMessage with specified role and content.
      *
      * @param role The role (e.g., "user", "assistant")
@@ -65,6 +67,7 @@ public class ReMeMessage {
     }
 
     /**
+     * {@summary Represents a message in the ReMe API format. (Represents a message in the ReMe API format.)}
      * Builder for creating ReMeMessage instances.
      *
      * @return A new builder instance

@@ -26,6 +26,7 @@ import io.agentscope.spring.boot.admin.registry.AgentResolver;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary MetricsHook class ()}
  * Legacy {@link Hook} that observes {@link PostCallEvent} and forwards the per-call token usage
  * to a {@link MetricsRecorder}.
  *

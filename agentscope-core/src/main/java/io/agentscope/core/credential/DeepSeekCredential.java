@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.credential;
 
+/** {@summary DeepSeekCredential (DeepSeekCredential)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

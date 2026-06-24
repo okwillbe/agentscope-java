@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent;
 
+/** {@summary HarnessAgent (HarnessAgent)} */
 import com.fasterxml.jackson.databind.JsonNode;
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
@@ -161,7 +162,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
     private final SandboxLifecycleMiddleware sandboxLifecycleMw;
     private final List<AgentSkillRepository> skillRepositories;
     private final PlanModeManager planModeManager;
-    // Skill self-learning — null unless enableSkillManageTool / enableSkillCurator.
+    // Skill self-learning ...null unless enableSkillManageTool / enableSkillCurator.
     private final SkillPromoter skillPromoter;
     private final SkillUsageStore skillUsageStore;
     private final SkillCurator skillCurator;
@@ -229,7 +230,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
     /**
      * Returns a {@link WorkspaceManager} view whose filesystem and namespace are bound to the
      * given {@code (userId, sessionId)} for the duration of the returned view's IO. Unlike
-     * {@link #getWorkspaceManager()}, this does not mutate any shared state on this agent — so it
+     * {@link #getWorkspaceManager()}, this does not mutate any shared state on this agent ...so it
      * is safe to call concurrently from per-request controllers without racing with active chats.
      */
     public WorkspaceManager workspaceFor(String userId, String sessionId) {
@@ -700,7 +701,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
         return wrappedStream(effective, () -> delegate.stream(msgs, options, schema, effective));
     }
 
-    // ==================== streamEvents (AgentEvent — v2 aligned) ====================
+    // ==================== streamEvents (AgentEvent ...v2 aligned) ====================
 
     /**
      * @deprecated Use {@link #streamEvents(Msg, RuntimeContext)} with explicit runtime context.
@@ -1083,7 +1084,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
         RemoteFilesystemSpec remoteFilesystemSpec;
         LocalFilesystemSpec localFilesystemSpec;
 
-        // AgentStateStore — mirrored only to pass through to inner; the user-set AgentStateStore
+        // AgentStateStore ...mirrored only to pass through to inner; the user-set AgentStateStore
         // can also be replaced inside orchestration when none is provided (defaults to a
         // JsonFileAgentStateStore rooted at ~/.agentscope/state/<agentId>/, outside any workspace).
         AgentStateStore stateStoreOverride;
@@ -1102,7 +1103,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
          *
          * <p>This is a <b>partial</b> migration helper. The caller still needs to set every
          * harness-specific concern explicitly (workspace, filesystem, sandbox, subagents, skills,
-         * plan mode, etc.) — those have no analog on a vanilla {@link ReActAgent}, so they cannot
+         * plan mode, etc.) ...those have no analog on a vanilla {@link ReActAgent}, so they cannot
          * be derived from {@code agent}.
          *
          * <h4>What this method copies</h4>
@@ -1152,7 +1153,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
          *
          * <h4>What this method does <b>not</b> copy</h4>
          *
-         * <p><b>Skipped — harness-only, has no source on a {@code ReActAgent}.</b> These
+         * <p><b>Skipped ...harness-only, has no source on a {@code ReActAgent}.</b> These
          * <i>must</i> be configured on the returned builder if you want HarnessAgent semantics:
          * <ul>
          *   <li>Workspace &amp; filesystem: {@link #workspace(Path)}, {@link #filesystem(SandboxFilesystemSpec)},
@@ -1244,7 +1245,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
             b.enablePendingToolRecovery(agent.isPendingToolRecoveryEnabled());
             b.checkRunning(agent.isCheckRunning());
 
-            // Permission context (same instance — carries rules registered on the source).
+            // Permission context (same instance ...carries rules registered on the source).
             PermissionContextState srcPerm = agent.getPermissionContext();
             if (srcPerm != null) {
                 b.permissionContext(srcPerm);
@@ -1304,7 +1305,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
 
         public Builder toolkit(Toolkit toolkit) {
             this.toolkit = toolkit != null ? toolkit : new Toolkit();
-            // Don't push to inner yet — orchestration will register harness tools on this toolkit
+            // Don't push to inner yet ...orchestration will register harness tools on this toolkit
             // and then push the final result via inner.toolkit(...) at build() time.
             return this;
         }
@@ -1521,19 +1522,19 @@ public class HarnessAgent implements Agent, AutoCloseable {
             return this;
         }
 
-        /** Configures Mode 2 — sandbox filesystem. */
+        /** Configures Mode 2 ...sandbox filesystem. */
         public Builder filesystem(SandboxFilesystemSpec spec) {
             this.sandboxFilesystemSpec = spec;
             return this;
         }
 
-        /** Configures Mode 1 — composite (non-sandbox) filesystem. */
+        /** Configures Mode 1 ...composite (non-sandbox) filesystem. */
         public Builder filesystem(RemoteFilesystemSpec spec) {
             this.remoteFilesystemSpec = spec;
             return this;
         }
 
-        /** Configures Mode 3 — local filesystem with shell. */
+        /** Configures Mode 3 ...local filesystem with shell. */
         public Builder filesystem(LocalFilesystemSpec spec) {
             this.localFilesystemSpec = spec;
             return this;
@@ -2214,7 +2215,7 @@ public class HarnessAgent implements Agent, AutoCloseable {
                 // Local overlay mode. ShellAwareOverlay is instanceof AbstractSandboxFilesystem,
                 // so this branch must come before the sandbox check below to avoid using the
                 // sandbox "/workspace" prefix for real host paths.
-                // Only strip the workspace prefix — NOT the project prefix. Project absolute
+                // Only strip the workspace prefix ...NOT the project prefix. Project absolute
                 // paths are handled correctly by the ROOTED pathPolicy, and stripping them
                 // would produce relative paths whose lower-layer virtual entries (/src/...)
                 // then fail in the upper layer's ROOTED check.

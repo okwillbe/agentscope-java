@@ -19,6 +19,7 @@ import io.agentscope.core.agui.model.ToolMergeMode;
 import java.time.Duration;
 
 /**
+ * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
  * Configuration for the AG-UI agent adapter.
  *
  * <p>This class provides configuration options for how the adapter handles
@@ -43,6 +44,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Get the tool merge mode.
      *
      * @return The tool merge mode
@@ -52,6 +54,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Check if state events should be emitted.
      *
      * @return true if state events should be emitted
@@ -61,6 +64,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Check if tool call arguments should be streamed.
      *
      * @return true if tool call args events should be emitted
@@ -70,6 +74,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Check if reasoning/thinking content should be emitted.
      *
      * <p>When enabled, ThinkingBlock content will be converted to REASONING_* events
@@ -83,6 +88,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Get the run timeout duration.
      *
      * @return The run timeout
@@ -92,6 +98,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Get the default agent ID.
      *
      * @return The default agent ID, or null if not set
@@ -101,6 +108,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Creates a new builder for AguiAdapterConfig.
      *
      * @return A new builder instance
@@ -110,6 +118,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Creates a default configuration.
      *
      * @return Default configuration
@@ -119,6 +128,7 @@ public class AguiAdapterConfig {
     }
 
     /**
+     * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
      * Builder for AguiAdapterConfig.
      */
     public static class Builder {
@@ -131,6 +141,7 @@ public class AguiAdapterConfig {
         private String defaultAgentId;
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Set the tool merge mode.
          *
          * @param toolMergeMode The tool merge mode
@@ -142,6 +153,7 @@ public class AguiAdapterConfig {
         }
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Set whether to emit state events.
          *
          * @param emitStateEvents true to emit state events
@@ -153,6 +165,7 @@ public class AguiAdapterConfig {
         }
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Set whether to emit tool call argument events.
          *
          * @param emitToolCallArgs true to emit tool call args events
@@ -164,6 +177,7 @@ public class AguiAdapterConfig {
         }
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Set whether to enable reasoning/thinking content output.
          *
          * <p>When enabled, ThinkingBlock content will be converted to REASONING_* events
@@ -179,6 +193,7 @@ public class AguiAdapterConfig {
         }
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Set the run timeout duration.
          *
          * @param runTimeout The timeout duration
@@ -190,6 +205,7 @@ public class AguiAdapterConfig {
         }
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Set the default agent ID.
          *
          * @param defaultAgentId The default agent ID
@@ -201,6 +217,7 @@ public class AguiAdapterConfig {
         }
 
         /**
+         * {@summary Configuration for the AG-UI agent adapter. (Configuration for the AG-UI agent adapter.)}
          * Build the configuration.
          *
          * @return The built configuration

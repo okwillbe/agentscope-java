@@ -34,6 +34,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Loads all entries from the store file into memory. Call once on startup. If the file does not (Loads all entries from the store file into memory. Call once on startup. If the file does not)}
  * Durable session registry backed by a JSON file ({@code sessions.json}). Mirrors OpenClaw's
  * {@code sessions.json} store that tracks session metadata across restarts.
  *
@@ -55,6 +56,7 @@ public final class SessionStore {
     private final Map<String, StoredEntry> entries = new LinkedHashMap<>();
 
     /**
+     * {@summary Loads all entries from the store file into memory. Call once on startup. If the file does not (Loads all entries from the store file into memory. Call once on startup. If the file does not)}
      * JSON-serializable subset of {@link SessionEntry} for disk persistence. Uses
      * {@code @JsonIgnoreProperties(ignoreUnknown = true)} for forward compatibility when new
      * fields are added.
@@ -116,6 +118,7 @@ public final class SessionStore {
     }
 
     /**
+     * {@summary Loads all entries from the store file into memory. Call once on startup. If the file does not (Loads all entries from the store file into memory. Call once on startup. If the file does not)}
      * Loads all entries from the store file into memory. Call once on startup. If the file does not
      * exist or is empty, the store starts empty.
      */

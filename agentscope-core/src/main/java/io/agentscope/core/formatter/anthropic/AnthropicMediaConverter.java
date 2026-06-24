@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.anthropic;
 
+/** {@summary AnthropicMediaConverter (AnthropicMediaConverter)} */
 import com.anthropic.models.messages.Base64ImageSource;
 import com.anthropic.models.messages.ImageBlockParam;
 import com.anthropic.models.messages.UrlImageSource;

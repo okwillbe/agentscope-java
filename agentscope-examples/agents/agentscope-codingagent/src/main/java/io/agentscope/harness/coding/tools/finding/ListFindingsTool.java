@@ -22,6 +22,7 @@ import io.agentscope.harness.coding.reviewer.ReviewerFindingsService;
 import java.util.List;
 
 /**
+ * {@summary Lists all current reviewer findings. (Lists all current reviewer findings.)}
  * Lists all current reviewer findings.
  */
 public class ListFindingsTool {

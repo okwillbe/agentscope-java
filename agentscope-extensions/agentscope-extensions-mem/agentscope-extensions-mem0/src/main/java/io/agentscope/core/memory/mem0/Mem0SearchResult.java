@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
  * Represents a single memory search result from Mem0 v2 API.
  *
  * <p>Each search result contains:
@@ -75,11 +76,13 @@ public class Mem0SearchResult {
     private OffsetDateTime updatedAt;
 
     /**
+     * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
      * Relevance score returned by v2 search API.
      */
     private Double score;
 
     /**
+     * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
      * Structured temporal attributes extracted from the memory.
      * Contains fields like day, month, year, hour, minute, day_of_week, etc.
      */
@@ -164,6 +167,7 @@ public class Mem0SearchResult {
     }
 
     /**
+     * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
      * Gets the relevance score.
      *
      * @return The relevance score
@@ -173,6 +177,7 @@ public class Mem0SearchResult {
     }
 
     /**
+     * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
      * Sets the relevance score.
      *
      * @param score The relevance score
@@ -182,6 +187,7 @@ public class Mem0SearchResult {
     }
 
     /**
+     * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
      * Gets the structured temporal attributes.
      *
      * @return The structured attributes map
@@ -191,6 +197,7 @@ public class Mem0SearchResult {
     }
 
     /**
+     * {@summary Represents a single memory search result from Mem0 v2 API. (Represents a single memory search result from Mem0 v2 API.)}
      * Sets the structured temporal attributes.
      *
      * @param structuredAttributes The structured attributes map

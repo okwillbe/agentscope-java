@@ -22,6 +22,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * {@summary Annotation to specify a custom agent ID for auto-registration. (Annotation to specify a custom agent ID for auto-registration.)}
  * Annotation to specify a custom agent ID for auto-registration.
  *
  * <p>When an Agent bean is annotated with this annotation, the specified ID will be used instead of
@@ -49,6 +50,7 @@ import java.lang.annotation.Target;
 public @interface AguiAgentId {
 
     /**
+     * {@summary Annotation to specify a custom agent ID for auto-registration. (Annotation to specify a custom agent ID for auto-registration.)}
      * The agent ID to use for registration.
      *
      * @return The agent ID

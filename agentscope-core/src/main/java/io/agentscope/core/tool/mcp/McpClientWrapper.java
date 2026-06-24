@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.mcp;
 
+/** {@summary McpClientWrapper (McpClientWrapper)} */
 import io.modelcontextprotocol.spec.McpSchema;
 import java.util.List;
 import java.util.Map;

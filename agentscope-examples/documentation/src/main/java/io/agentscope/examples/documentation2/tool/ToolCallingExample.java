@@ -31,6 +31,7 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 /**
+ * {@summary ToolCallingExample - Demonstrates equipping an Agent with custom tools. (ToolCallingExample - Demonstrates equipping an Agent with custom tools.)}
  * ToolCallingExample - Demonstrates equipping an Agent with custom tools.
  *
  * <p>Migration notes:
@@ -41,6 +42,7 @@ import java.time.format.DateTimeFormatter;
 public class ToolCallingExample {
 
     /**
+     * {@summary ToolCallingExample - Demonstrates equipping an Agent with custom tools. (ToolCallingExample - Demonstrates equipping an Agent with custom tools.)}
      * Runs the tool calling example.
      *
      * @param args command-line arguments (ignored)
@@ -113,12 +115,14 @@ public class ToolCallingExample {
     }
 
     /**
+     * {@summary ToolCallingExample - Demonstrates equipping an Agent with custom tools. (ToolCallingExample - Demonstrates equipping an Agent with custom tools.)}
      * Simple tools for demonstration. Each {@code @Tool}-annotated method
      * becomes a callable tool for the agent.
      */
     public static class SimpleTools {
 
         /**
+         * {@summary ToolCallingExample - Demonstrates equipping an Agent with custom tools. (ToolCallingExample - Demonstrates equipping an Agent with custom tools.)}
          * Returns the current time in the specified timezone.
          *
          * @param timezone IANA timezone name, e.g. {@code "Asia/Tokyo"}
@@ -145,6 +149,7 @@ public class ToolCallingExample {
         }
 
         /**
+         * {@summary ToolCallingExample - Demonstrates equipping an Agent with custom tools. (ToolCallingExample - Demonstrates equipping an Agent with custom tools.)}
          * Evaluates a simple arithmetic expression.
          *
          * @param expression the expression to evaluate, e.g. {@code "123 + 456"}
@@ -181,6 +186,7 @@ public class ToolCallingExample {
         }
 
         /**
+         * {@summary ToolCallingExample - Demonstrates equipping an Agent with custom tools. (ToolCallingExample - Demonstrates equipping an Agent with custom tools.)}
          * Simulates a web search and returns placeholder results.
          *
          * @param query the search query

@@ -20,6 +20,7 @@ import io.a2a.spec.Part;
 import io.agentscope.core.message.VideoBlock;
 
 /**
+ * {@summary VideoBlockParser class ()}
  * Parser for {@link VideoBlock} to {@link io.a2a.spec.FilePart}.
  */
 public class VideoBlockParser extends BaseMediaBlockParser<VideoBlock> {

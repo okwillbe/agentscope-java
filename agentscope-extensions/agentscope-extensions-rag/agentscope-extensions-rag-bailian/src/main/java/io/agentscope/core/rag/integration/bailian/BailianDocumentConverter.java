@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Converter for transforming Bailian API responses to AgentScope Document objects. (Converter for transforming Bailian API responses to AgentScope Document objects.)}
  * Converter for transforming Bailian API responses to AgentScope Document objects.
  *
  * <p>This class handles the conversion between Bailian's retrieve response format
@@ -38,6 +39,7 @@ public class BailianDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming Bailian API responses to AgentScope Document objects. (Converter for transforming Bailian API responses to AgentScope Document objects.)}
      * Converts Bailian retrieve response to a list of Documents.
      *
      * @param response the Bailian retrieve response
@@ -65,6 +67,7 @@ public class BailianDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming Bailian API responses to AgentScope Document objects. (Converter for transforming Bailian API responses to AgentScope Document objects.)}
      * Converts a single Bailian node to a Document.
      *
      * @param node the Bailian node from retrieve response
@@ -133,6 +136,7 @@ public class BailianDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming Bailian API responses to AgentScope Document objects. (Converter for transforming Bailian API responses to AgentScope Document objects.)}
      * Safely extracts a string value from metadata map.
      *
      * @param metadata the metadata map

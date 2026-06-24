@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary SPI for tracking live agents the admin surface can inspect or act on. (SPI for tracking live agents the admin surface can inspect or act on.)}
  * SPI for tracking live agents the admin surface can inspect or act on.
  *
  * <p>AgentScope-Java exposes {@code ReActAgent} as a prototype-scoped bean by default, so a

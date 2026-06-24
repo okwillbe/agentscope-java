@@ -61,6 +61,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Read-only filesystem for browsing — RUN-tier callers, no owner mutation. (Read-only filesystem for browsing — RUN-tier callers, no owner mutation.)}
  * Per-agent skills management for the platform. Mirrors claw's {@code AgentSkillsController} in
  * URL/payload shape, but every operation is gated by {@link AgentAccessGuard} (RUN to browse, EDIT
  * to mutate) and every file I/O goes through the per-(owner, agent) workspace returned by
@@ -658,6 +659,7 @@ public class AgentSkillsController {
     }
 
     /**
+     * {@summary Read-only filesystem for browsing — RUN-tier callers, no owner mutation. (Read-only filesystem for browsing — RUN-tier callers, no owner mutation.)}
      * Recursively walks {@code rootAbs} on the abstract filesystem, invoking {@code visitor} for
      * each regular file with the path relative to {@code rootAbs + "/"}. Tolerant of ls failures
      * (silently treated as empty).
@@ -703,6 +705,7 @@ public class AgentSkillsController {
     }
 
     /**
+     * {@summary Read-only filesystem for browsing — RUN-tier callers, no owner mutation. (Read-only filesystem for browsing — RUN-tier callers, no owner mutation.)}
      * Returns the last path segment of {@code absolutePath}, tolerating the trailing slash that
      * {@link io.agentscope.harness.agent.filesystem.local.LocalFilesystem#ls} appends to every
      * directory entry it returns (e.g. {@code "skills/example-skill/"}). A naive

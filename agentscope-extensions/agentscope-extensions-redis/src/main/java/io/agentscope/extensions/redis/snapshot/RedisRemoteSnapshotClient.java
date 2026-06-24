@@ -24,6 +24,7 @@ import java.util.Objects;
 import redis.clients.jedis.UnifiedJedis;
 
 /**
+ * {@summary Creates a Redis-backed snapshot client. (Creates a Redis-backed snapshot client.)}
  * {@link RemoteSnapshotClient} backed by Redis binary values.
  */
 public class RedisRemoteSnapshotClient implements RemoteSnapshotClient {
@@ -33,6 +34,7 @@ public class RedisRemoteSnapshotClient implements RemoteSnapshotClient {
     private final Integer ttlSeconds;
 
     /**
+     * {@summary Creates a Redis-backed snapshot client. (Creates a Redis-backed snapshot client.)}
      * Creates a Redis-backed snapshot client.
      *
      * @param jedis initialized jedis client

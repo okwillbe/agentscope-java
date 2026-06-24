@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary SandboxLifecycleMiddleware (SandboxLifecycleMiddleware)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.middleware.MiddlewareBase;
 import io.agentscope.harness.agent.filesystem.sandbox.SandboxBackedFilesystem;
@@ -45,7 +46,7 @@ import org.slf4j.LoggerFactory;
  *   <li>Clear the session reference from the filesystem proxy</li>
  * </ol>
  *
- * <p>Post-call failures (persist, release) are logged but do not propagate — this ensures
+ * <p>Post-call failures (persist, release) are logged but do not propagate ...this ensures
  * the agent call result is always returned to the caller even if sandbox cleanup fails.
  */
 public class SandboxLifecycleMiddleware implements MiddlewareBase {

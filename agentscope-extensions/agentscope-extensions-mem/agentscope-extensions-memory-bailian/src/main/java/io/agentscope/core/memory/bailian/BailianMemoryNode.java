@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
  * Represents a memory node in the response.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -54,6 +55,7 @@ public class BailianMemoryNode {
     public BailianMemoryNode() {}
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Gets the memory node ID.
      *
      * @return the memory node ID
@@ -63,6 +65,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Sets the memory node ID.
      *
      * @param memoryNodeId the memory node ID
@@ -72,6 +75,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Gets the content.
      *
      * @return the content
@@ -81,6 +85,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Sets the content.
      *
      * @param content the content
@@ -90,6 +95,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Gets the event type.
      *
      * @return the event type
@@ -99,6 +105,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Sets the event type.
      *
      * @param event the event type
@@ -108,6 +115,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Gets the old content.
      *
      * @return the old content
@@ -117,6 +125,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Sets the old content.
      *
      * @param oldContent the old content
@@ -126,6 +135,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Gets the creation timestamp.
      *
      * @return the creation timestamp
@@ -135,6 +145,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Sets the creation timestamp.
      *
      * @param createdAt the creation timestamp
@@ -144,6 +155,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Gets the update timestamp.
      *
      * @return the update timestamp
@@ -153,6 +165,7 @@ public class BailianMemoryNode {
     }
 
     /**
+     * {@summary Represents a memory node in the response. (Represents a memory node in the response.)}
      * Sets the update timestamp.
      *
      * @param updatedAt the update timestamp

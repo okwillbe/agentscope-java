@@ -23,6 +23,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Convenience gate for controllers: resolve an agent by id (across globals, own, shared-in) and}
  * Convenience gate for controllers: resolve an agent by id (across globals, own, shared-in) and
  * verify the caller holds at least the required tier. Keeps the {@code findVisible + can} pattern
  * out of every controller while staying explicit at the call site (no AOP magic).
@@ -39,6 +40,7 @@ public class AgentAccessGuard {
     }
 
     /**
+     * {@summary Convenience gate for controllers: resolve an agent by id (across globals, own, shared-in) and}
      * Resolves the agent and returns it iff {@code userId} holds at least {@code required}.
      *
      * @throws ResponseStatusException 404 if the agent is invisible to the user, 403 if visible

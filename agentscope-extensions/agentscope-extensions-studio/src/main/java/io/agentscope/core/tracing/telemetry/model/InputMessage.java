@@ -27,7 +27,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import java.util.List;
 
-/** Represents an input message sent to the model. */
+/** {@summary Represents an input message sent to the model. (Represents an input message sent to the model.)} Represents an input message sent to the model. */
 @JsonClassDescription("Input message")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class InputMessage {

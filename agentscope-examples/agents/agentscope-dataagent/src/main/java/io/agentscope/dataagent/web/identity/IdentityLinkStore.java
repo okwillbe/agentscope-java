@@ -32,6 +32,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Returns a snapshot of the entire user → channel → externalId map. (Returns a snapshot of the entire user → channel → externalId map.)}
  * Persistent registry that maps a claw {@code userId} to that user's identity on other channels
  * (Slack, Discord, GitHub, ...). The data is stored at
  * {@code {cwd}/.agentscope/identity-links.json} as:
@@ -92,6 +93,7 @@ public class IdentityLinkStore {
     }
 
     /**
+     * {@summary Returns a snapshot of the entire user → channel → externalId map. (Returns a snapshot of the entire user → channel → externalId map.)}
      * Reverse lookup: returns the claw {@code userId} whose link for {@code channelId} matches
      * {@code externalId}. Useful for inbound delivery to translate a channel-native id into the
      * canonical user id.
@@ -111,6 +113,7 @@ public class IdentityLinkStore {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Returns a snapshot of the entire user → channel → externalId map. (Returns a snapshot of the entire user → channel → externalId map.)}
      * Records that {@code userId} is known as {@code externalId} on {@code channelId}. Replaces
      * any prior value for the same (user, channel) pair.
      */

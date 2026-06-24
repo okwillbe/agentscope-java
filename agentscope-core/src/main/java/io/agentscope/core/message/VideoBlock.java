@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary VideoBlock (VideoBlock)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -64,7 +65,7 @@ public final class VideoBlock extends ContentBlock {
      * @param maxFrames The maximum number of frames captured in the video.
      * @param minPixels Used to set the minimum pixel threshold for input video frames.
      * @param maxPixels Used to set the maximum pixel threshold for input video frames.
-     * @param totalPixels Used to limit the total pixels of all frames extracted from the video (single image pixels × total frames).
+     * @param totalPixels Used to limit the total pixels of all frames extracted from the video (single image pixels 脳 total frames).
      */
     @JsonCreator
     private VideoBlock(
@@ -128,7 +129,7 @@ public final class VideoBlock extends ContentBlock {
     }
 
     /**
-     * Gets the total pixels of all frames extracted from the video (single image pixels × total frames).
+     * Gets the total pixels of all frames extracted from the video (single image pixels 脳 total frames).
      * @return The total pixels
      */
     public Integer getTotalPixels() {
@@ -217,7 +218,7 @@ public final class VideoBlock extends ContentBlock {
         }
 
         /**
-         * Sets the total pixels of all frames extracted from the video (single image pixels × total frames).
+         * Sets the total pixels of all frames extracted from the video (single image pixels 脳 total frames).
          *
          * @param totalPixels The total pixels
          * @return This builder for chaining

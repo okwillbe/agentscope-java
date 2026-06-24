@@ -44,6 +44,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
  * Full session management implementation built on top of {@link DefaultAgentManager}. Owns <em>all
  * </em> session-related state and concurrency controls:
  *
@@ -73,6 +74,7 @@ public class SessionAgentManager {
     @FunctionalInterface
     public interface AnnounceDispatcher {
         /**
+         * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
          * @param completion structured announce payload for the requester
          * @return {@code true} if this dispatcher fully handled announce (skip pending queue)
          */
@@ -113,6 +115,7 @@ public class SessionAgentManager {
             new ConcurrentHashMap<>();
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * @param delegate agent factory/invoker
      * @param config concurrency and announce tuning
      * @param runRegistry run lifecycle tracking
@@ -143,6 +146,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Restores in-memory session registry from the durable {@link SessionStore}. Called once
      * during construction when a store is provided.
      */
@@ -253,6 +257,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Registers a new subagent session, optionally inheriting the {@code userId} from its parent
      * for continued namespace isolation.
      */
@@ -365,6 +370,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Registers a new MAIN session, optionally recording the {@code gateKey} for gateway routing
      * persistence and {@code userId} for HarnessAgent namespace isolation.
      */
@@ -556,6 +562,7 @@ public class SessionAgentManager {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Resets a session: assigns a fresh {@code sessionId} (and consequently sessionFilePath) while
      * preserving the {@code sessionKey}, ownership ({@code userId}, {@code gateKey}), label, and
      * agent binding. The previous transcript is left on disk (deleted only by maintenance) but the
@@ -607,6 +614,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Resets every session whose {@code lastActivityMs} is older than {@code now - idleMs}.
      *
      * @return number of sessions reset
@@ -643,6 +651,7 @@ public class SessionAgentManager {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Runs session maintenance: prunes stale sessions and caps total entries. Called automatically
      * after session registration when maintenance is enabled, or can be invoked manually.
      *
@@ -688,6 +697,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Runs session maintenance: prunes stale sessions and caps total entries. Called automatically (Runs session maintenance: prunes stale sessions and caps total entries. Called automatically)}
      * Removes a session from all registries (in-memory, store, agent cache). Does not delete the
      * session's transcript files on disk — that is left to the caller or a separate disk-budget
      * sweep.

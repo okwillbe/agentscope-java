@@ -52,6 +52,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary The implementation of Agent for A2A(Agent2Agent).}
  * The implementation of Agent for A2A(Agent2Agent).
  *
  * <p>Agent description should get from AgentCard. If AgentCard get failed, description will be default value from
@@ -85,11 +86,13 @@ public class A2aAgent extends AgentBase {
     private Client a2aClient;
 
     /**
+     * {@summary The implementation of Agent for A2A(Agent2Agent).}
      * According to the design, one agent should not be call with multiple threads and tasks at the same time.
      */
     private String currentRequestId;
 
     /**
+     * {@summary The implementation of Agent for A2A(Agent2Agent).}
      * The context of client event, one agent should not be call with multiple threads and tasks at the same time.
      */
     private ClientEventContext clientEventContext;
@@ -171,6 +174,7 @@ public class A2aAgent extends AgentBase {
     }
 
     /**
+     * {@summary The implementation of Agent for A2A(Agent2Agent).}
      * Create a new {@link Builder} instance for {@link A2aAgent}.
      *
      * @return new builder instance
@@ -216,6 +220,7 @@ public class A2aAgent extends AgentBase {
     private class A2aClientLifecycleHook implements Hook {
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * According to {@link Hook#priority()} comment, value `500` is the lowest priority in Normal(business logic).
          */
         private static final int HOOK_PRIORITY = 500;
@@ -274,6 +279,7 @@ public class A2aAgent extends AgentBase {
         private final List<Hook> hooks = new ArrayList<>();
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Set the name of the A2aAgent.
          *
          * @param name the name to set
@@ -285,6 +291,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Set the {@link AgentCard} for the A2aAgent.
          *
          * <p>It will be auto-generated to {@link FixedAgentCardResolver}.
@@ -298,6 +305,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Set the {@link AgentCardResolver} for the A2aAgent.
          *
          * <p>When both {@link #agentCard(AgentCard)} and this method are called on the same builder, the later call
@@ -322,6 +330,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Set the {@link A2aAgentConfig} for the A2aAgent.
          *
          * @param a2aAgentConfig the A2aAgentConfig to set
@@ -333,6 +342,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Set the {@link Memory} for the A2aAgent.
          *
          * <p>Default is {@link InMemoryMemory}
@@ -346,6 +356,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Set whether to check the running status of the A2aAgent.
          *
          * <p>Default is true
@@ -359,6 +370,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Add a {@link Hook} to the A2aAgent.
          *
          * @param hook the Hook to add
@@ -370,6 +382,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Add multiple {@link Hook}s to the A2aAgent.
          *
          * @param hooks the list of Hooks to add
@@ -381,6 +394,7 @@ public class A2aAgent extends AgentBase {
         }
 
         /**
+         * {@summary The implementation of Agent for A2A(Agent2Agent).}
          * Build the A2aAgent instance.
          *
          * @return the built A2aAgent instance

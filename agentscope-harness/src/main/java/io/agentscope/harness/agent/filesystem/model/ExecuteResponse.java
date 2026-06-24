@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary ExecuteResponse (ExecuteResponse)} */
+
 /**
  * Result of code/shell execution.
  *

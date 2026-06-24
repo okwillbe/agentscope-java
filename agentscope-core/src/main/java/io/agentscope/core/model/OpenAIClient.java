@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary OpenAIClient (OpenAIClient)} */
 import io.agentscope.core.Version;
 import io.agentscope.core.formatter.openai.dto.OpenAIRequest;
 import io.agentscope.core.formatter.openai.dto.OpenAIResponse;

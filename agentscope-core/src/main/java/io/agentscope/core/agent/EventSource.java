@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary EventSource (EventSource)} */
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -50,7 +51,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
  *       <td>AgentStateStore ID of the parent agent that issued the {@code agent_spawn} call.</td></tr>
  *   <tr><td>{@code taskId}</td>
  *       <td>Reserved; non-null only when the subagent runs as a background task (async
- *       streaming, not yet implemented — see extension points below).</td></tr>
+ *       streaming, not yet implemented 鈥?see extension points below).</td></tr>
  *   <tr><td>{@code depth}</td>
  *       <td>Nesting depth: {@code 1} = direct child of the top-level agent, {@code 2} =
  *       grandchild, and so on.</td></tr>

@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillCuratorConfig (SkillCuratorConfig)} */
+
 /**
  * Configuration knobs for {@link SkillCurator}. Defaults match the conservative enterprise
  * profile from the design plan: 7-day cycle, 30/90 day stale/archive cutoffs, dry-run only

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary RegisteredToolFunction (RegisteredToolFunction)} */
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

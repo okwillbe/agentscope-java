@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.local;
 
+/** {@summary LocalFilesystem (LocalFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
 import io.agentscope.harness.agent.filesystem.model.EditResult;
@@ -65,11 +66,11 @@ import org.slf4j.LoggerFactory;
  * <p>Path-resolution behaviour is controlled by the {@link LocalFsMode} passed at construction:
  *
  * <ul>
- *   <li>{@link LocalFsMode#SANDBOXED} — paths anchored to {@code rootDir}, {@code ..} and
+ *   <li>{@link LocalFsMode#SANDBOXED} ...paths anchored to {@code rootDir}, {@code ..} and
  *       outside-root absolute paths blocked. Equivalent to legacy {@code virtualMode=true}.
- *   <li>{@link LocalFsMode#ROOTED} — absolute paths accepted only when they fall under one of
+ *   <li>{@link LocalFsMode#ROOTED} ...absolute paths accepted only when they fall under one of
  *       the configured {@link PathPolicy} roots; relative paths anchor to {@code rootDir}.
- *   <li>{@link LocalFsMode#UNRESTRICTED} — absolute paths pass through; relative paths anchor
+ *   <li>{@link LocalFsMode#UNRESTRICTED} ...absolute paths pass through; relative paths anchor
  *       to {@code rootDir}. Equivalent to legacy {@code virtualMode=false}.
  * </ul>
  */
@@ -656,7 +657,7 @@ public class LocalFilesystem implements AbstractFilesystem {
         }
         // Absolute paths identify specific host locations and must not be namespace-scoped.
         // Prepending a namespace prefix would turn them into relative paths, causing them to
-        // resolve incorrectly under the workspace root (e.g. /abs/path → ns//abs/path).
+        // resolve incorrectly under the workspace root (e.g. /abs/path 鈫?ns//abs/path).
         // On Windows, absolute paths start with a drive letter ("C:\") or UNC prefix ("\\"),
         // not "/", so we must check for those forms explicitly.
         if (isAbsolutePathString(key)) {

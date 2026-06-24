@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ContextStore (ContextStore)} */
+
 /**
  * Storage layer abstraction for tool execution context.
  *

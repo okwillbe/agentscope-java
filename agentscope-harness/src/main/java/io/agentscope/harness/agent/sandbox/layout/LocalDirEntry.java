@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary LocalDirEntry (LocalDirEntry)} */
+
 /**
  * Layout entry that recursively copies a directory from the host filesystem into the sandbox
  * workspace.

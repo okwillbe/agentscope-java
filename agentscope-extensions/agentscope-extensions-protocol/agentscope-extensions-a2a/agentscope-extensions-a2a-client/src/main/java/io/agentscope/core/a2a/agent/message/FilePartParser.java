@@ -29,6 +29,7 @@ import io.agentscope.core.message.URLSource;
 import io.agentscope.core.message.VideoBlock;
 
 /**
+ * {@summary FilePartParser class ()}
  * Parser for {@link FilePart} to {@link ContentBlock}.
  *
  * <ul>

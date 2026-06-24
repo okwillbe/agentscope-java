@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary ChannelFactory (ChannelFactory)} */
 import java.util.Map;
 
 /**

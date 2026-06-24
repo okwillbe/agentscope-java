@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary Hook (Hook)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.tool.AgentTool;
 import io.agentscope.core.tool.Toolkit;

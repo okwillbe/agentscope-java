@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent;
 
+/** {@summary DistributedStore (DistributedStore)} */
 import io.agentscope.core.state.AgentStateStore;
 import io.agentscope.harness.agent.bus.AsyncToolRegistry;
 import io.agentscope.harness.agent.bus.MessageBus;
@@ -33,10 +34,10 @@ import java.util.Objects;
  * {@link HarnessAgent.Builder#distributedStore(DistributedStore)}:
  *
  * <pre>{@code
- * // Single store — all components from Redis
+ * // Single store ...all components from Redis
  * DistributedStore store = RedisDistributedStore.fromJedis(jedis);
  *
- * // Mixed stores — MySQL for state/files, Redis for sandbox lock/snapshot
+ * // Mixed stores ...MySQL for state/files, Redis for sandbox lock/snapshot
  * DistributedStore store = DistributedStore.builder()
  *     .agentStateStore(mysqlStore.agentStateStore())
  *     .baseStore(mysqlStore.baseStore())
@@ -58,9 +59,9 @@ import java.util.Objects;
  *
  * <p>Implementations are provided by extension modules:
  * <ul>
- *   <li>{@code agentscope-extensions-redis} — {@code RedisDistributedStore}</li>
- *   <li>{@code agentscope-extensions-oss} — {@code OssDistributedStore}</li>
- *   <li>{@code agentscope-extensions-mysql} — {@code MysqlDistributedStore}</li>
+ *   <li>{@code agentscope-extensions-redis} ...{@code RedisDistributedStore}</li>
+ *   <li>{@code agentscope-extensions-oss} ...{@code OssDistributedStore}</li>
+ *   <li>{@code agentscope-extensions-mysql} ...{@code MysqlDistributedStore}</li>
  * </ul>
  *
  * <p><b>Priority:</b> explicit builder methods ({@code .stateStore()}, {@code .filesystem()})
@@ -135,7 +136,7 @@ public interface DistributedStore {
      * Creates a builder for composing a {@link DistributedStore} from individual components,
      * potentially sourced from different store implementations.
      *
-     * <p>Example — MySQL for state and files, Redis for sandbox:
+     * <p>Example ...MySQL for state and files, Redis for sandbox:
      * <pre>{@code
      * DistributedStore mysql = MysqlDistributedStore.create(dataSource);
      * DistributedStore redis = RedisDistributedStore.fromJedis(jedis);

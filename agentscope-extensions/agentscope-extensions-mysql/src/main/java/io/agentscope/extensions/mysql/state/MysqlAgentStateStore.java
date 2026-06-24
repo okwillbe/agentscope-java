@@ -32,6 +32,7 @@ import java.util.regex.Pattern;
 import javax.sql.DataSource;
 
 /**
+ * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
  * MySQL database-based session implementation.
  *
  * <p>This implementation stores session state in MySQL database tables with the following
@@ -77,6 +78,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     private static final int SINGLE_STATE_INDEX = 0;
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Pattern for validating database and table names. Only allows alphanumeric characters,
      * underscores, and hyphens, must start with letter or underscore. This prevents SQL injection
      * attacks through malicious database/table names.
@@ -97,6 +99,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Create a MysqlAgentStateStore with default settings.
      *
      * <p>This constructor uses default database name ({@code agentscope}) and table name ({@code
@@ -112,6 +115,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Create a MysqlAgentStateStore with optional auto-creation of database and table.
      *
      * <p>This constructor uses default database name ({@code agentscope}) and table name ({@code
@@ -129,6 +133,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Create a MysqlAgentStateStore with custom database name, table name, and optional auto-creation.
      *
      * <p>If {@code createIfNotExist} is true, the database and table will be created automatically
@@ -177,6 +182,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Create the database if it doesn't exist.
      *
      * <p>Creates the database with UTF-8 (utf8mb4) character set and unicode collation for proper
@@ -198,6 +204,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Create the sessions table if it doesn't exist.
      *
      * <p>Uses backtick escaping for the table name to safely handle identifiers with special
@@ -223,6 +230,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Verify that the database exists.
      *
      * @throws IllegalStateException if database does not exist
@@ -249,6 +257,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Verify that the sessions table exists.
      *
      * @throws IllegalStateException if table does not exist
@@ -279,6 +288,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Get the full table name with database prefix, properly escaped with backticks.
      *
      * <p>Uses backticks to escape identifiers that may contain special characters like hyphens,
@@ -291,6 +301,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Execute a write operation in an explicit transaction.
      *
      * <p>MysqlAgentStateStore obtains and owns a fresh JDBC connection for each write method call. This
@@ -356,6 +367,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Save a list of state values with hash-based change detection.
      *
      * <p>This method uses hash-based change detection to handle both append-only and mutable lists:
@@ -411,6 +423,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Get stored hash value for a list.
      *
      * @param conn database connection
@@ -440,6 +453,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Save hash value for a list.
      *
      * @param conn database connection
@@ -466,6 +480,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Delete all items for a list state.
      *
      * @param conn database connection
@@ -485,6 +500,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Insert all items for a list state.
      *
      * @param conn database connection
@@ -499,6 +515,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Insert items for a list state starting at a given index.
      *
      * @param conn database connection
@@ -536,6 +553,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Get the count of items in a list state (max index + 1).
      */
     private int getListCount(Connection conn, String sessionId, String key) throws SQLException {
@@ -701,6 +719,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Combine {@code (userId, sessionId)} into the single {@code session_id} column value.
      * Uses {@code :} as the separator so existing {@link #validateSessionId(String)} (which
      * forbids {@code /} and {@code \\}) still accepts the combined string.
@@ -713,6 +732,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Close the session and release any resources.
      *
      * <p>Note: This implementation does not close the DataSource as it may be shared across
@@ -724,6 +744,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Get the database name used for storing sessions.
      *
      * @return The database name
@@ -733,6 +754,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Get the table name used for storing sessions.
      *
      * @return The table name
@@ -742,6 +764,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Get the DataSource used for database connections.
      *
      * @return The DataSource instance
@@ -751,6 +774,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Clear all sessions from the database (for testing or cleanup).
      *
      * @return Number of rows deleted
@@ -776,6 +800,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Truncate session table from the database (for testing or cleanup).
      *
      * <p>This method clears all session records by executing a TRUNCATE TABLE statement on the
@@ -803,6 +828,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Validate a session ID format.
      *
      * @param sessionId AgentStateStore ID to validate
@@ -821,6 +847,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Validate a state key format.
      *
      * @param key State key to validate
@@ -836,6 +863,7 @@ public class MysqlAgentStateStore implements AgentStateStore {
     }
 
     /**
+     * {@summary MySQL database-based session implementation. (MySQL database-based session implementation.)}
      * Validate a database or table identifier to prevent SQL injection.
      *
      * <p>This method ensures that identifiers only contain safe characters (alphanumeric,

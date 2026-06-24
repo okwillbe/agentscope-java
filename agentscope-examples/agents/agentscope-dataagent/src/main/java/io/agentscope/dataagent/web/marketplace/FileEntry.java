@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.web.marketplace;
 
 /**
+ * {@summary One file's content + relative path inside a contribution payload. (One file's content + relative path inside a contribution payload.)}
  * One file's content + relative path inside a contribution payload.
  *
  * <p>A contribution's payload is always a list of {@code FileEntry}s, persisted as JSON in

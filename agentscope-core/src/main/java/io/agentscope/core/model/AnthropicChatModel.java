@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary AnthropicChatModel (AnthropicChatModel)} */
 import com.anthropic.client.AnthropicClient;
 import com.anthropic.client.okhttp.AnthropicOkHttpClient;
 import com.anthropic.core.http.StreamResponse;

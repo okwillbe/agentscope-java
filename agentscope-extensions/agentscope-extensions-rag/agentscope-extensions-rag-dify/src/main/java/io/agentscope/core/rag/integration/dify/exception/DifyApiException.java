@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.dify.exception;
 
 /**
+ * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
  * Exception thrown when Dify API returns an error response.
  *
  * <p>This exception encapsulates error information from Dify API responses,
@@ -37,6 +38,7 @@ public class DifyApiException extends RuntimeException {
     private final String errorCode;
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Creates a new DifyApiException with a message.
      *
      * @param message the error message
@@ -48,6 +50,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Creates a new DifyApiException with a message and cause.
      *
      * @param message the error message
@@ -60,6 +63,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Creates a new DifyApiException with HTTP status code.
      *
      * @param statusCode the HTTP status code
@@ -72,6 +76,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Creates a new DifyApiException with full error details.
      *
      * @param statusCode the HTTP status code
@@ -85,6 +90,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Creates a new DifyApiException with full error details and cause.
      *
      * @param statusCode the HTTP status code
@@ -99,6 +105,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Gets the HTTP status code.
      *
      * @return the status code, or -1 if not available
@@ -108,6 +115,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Gets the Dify error code.
      *
      * @return the error code, or null if not available
@@ -117,6 +125,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Checks if this is a client error (4xx status code).
      *
      * @return true if status code is 4xx
@@ -126,6 +135,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Checks if this is a server error (5xx status code).
      *
      * @return true if status code is 5xx
@@ -135,6 +145,7 @@ public class DifyApiException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when Dify API returns an error response. (Exception thrown when Dify API returns an error response.)}
      * Checks if this is a rate limit error (429 status code).
      *
      * @return true if status code is 429

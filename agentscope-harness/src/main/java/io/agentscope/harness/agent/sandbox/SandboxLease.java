@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxLease (SandboxLease)} */
+
 /**
  * A handle that represents a held execution right on a sandbox isolation slot.
  *

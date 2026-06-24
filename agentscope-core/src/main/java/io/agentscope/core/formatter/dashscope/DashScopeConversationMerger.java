@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope;
 
+/** {@summary DashScopeConversationMerger (DashScopeConversationMerger)} */
 import io.agentscope.core.formatter.dashscope.dto.DashScopeContentPart;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeMessage;
 import io.agentscope.core.message.AudioBlock;

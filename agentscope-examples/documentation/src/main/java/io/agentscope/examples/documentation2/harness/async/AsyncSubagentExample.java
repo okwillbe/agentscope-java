@@ -33,6 +33,7 @@ import io.agentscope.harness.agent.gateway.WakeupDispatcher;
 import java.nio.file.Path;
 
 /**
+ * {@summary Demonstrates async subagent execution with wakeup-driven result delivery (Mode B).}
  * Demonstrates async subagent execution with wakeup-driven result delivery (Mode B).
  *
  * <p>The Gateway + WakeupDispatcher require a shared {@link MessageBus} instance, so this

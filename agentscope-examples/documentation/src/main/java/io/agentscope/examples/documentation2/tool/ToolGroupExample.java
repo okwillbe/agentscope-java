@@ -32,6 +32,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
+ * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
  * ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.
  *
  * <p>Migration notes:
@@ -42,6 +43,7 @@ import java.nio.file.Paths;
 public class ToolGroupExample {
 
     /**
+     * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
      * Runs the tool group example.
      *
      * @param args command-line arguments (ignored)
@@ -150,6 +152,7 @@ public class ToolGroupExample {
     public static class FileTools {
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Reads the contents of a file.
          *
          * @param path file path to read
@@ -169,6 +172,7 @@ public class ToolGroupExample {
         }
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Writes content to a file.
          *
          * @param path    file path to write
@@ -188,6 +192,7 @@ public class ToolGroupExample {
         }
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Lists files in a directory.
          *
          * @param directory directory path
@@ -215,6 +220,7 @@ public class ToolGroupExample {
     public static class MathTools {
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Calculates the factorial of a non-negative integer.
          *
          * @param n number (0–20)
@@ -236,6 +242,7 @@ public class ToolGroupExample {
         }
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Checks whether a number is prime.
          *
          * @param n the number to check
@@ -259,6 +266,7 @@ public class ToolGroupExample {
     public static class NetworkTools {
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Simulates a ping to a host.
          *
          * @param host host to ping
@@ -271,6 +279,7 @@ public class ToolGroupExample {
         }
 
         /**
+         * {@summary ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool. (ToolGroupExample - Demonstrates agent autonomously managing tool groups with a meta-tool.)}
          * Simulates a DNS lookup for a domain.
          *
          * @param domain domain name

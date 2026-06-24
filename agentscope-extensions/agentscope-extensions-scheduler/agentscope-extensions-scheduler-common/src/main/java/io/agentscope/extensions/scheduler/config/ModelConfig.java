@@ -18,6 +18,7 @@ package io.agentscope.extensions.scheduler.config;
 import io.agentscope.core.model.Model;
 
 /**
+ * {@summary Configuration interface for model settings in scheduled tasks. (Configuration interface for model settings in scheduled tasks.)}
  * Configuration interface for model settings in scheduled tasks.
  *
  * <p>This interface defines a contract for model configuration objects that encapsulate
@@ -54,6 +55,7 @@ import io.agentscope.core.model.Model;
 public interface ModelConfig {
 
     /**
+     * {@summary Configuration interface for model settings in scheduled tasks. (Configuration interface for model settings in scheduled tasks.)}
      * Get the model name or identifier.
      *
      * <p>This is used for logging, identification, and routing purposes.
@@ -63,6 +65,7 @@ public interface ModelConfig {
     String getModelName();
 
     /**
+     * {@summary Configuration interface for model settings in scheduled tasks. (Configuration interface for model settings in scheduled tasks.)}
      * Create a Model instance from this configuration.
      *
      * <p>This method converts the configuration into an actual Model object

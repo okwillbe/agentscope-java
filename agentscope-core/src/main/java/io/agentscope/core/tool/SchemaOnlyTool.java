@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary SchemaOnlyTool (SchemaOnlyTool)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.model.ToolSchema;
 import java.util.Collections;

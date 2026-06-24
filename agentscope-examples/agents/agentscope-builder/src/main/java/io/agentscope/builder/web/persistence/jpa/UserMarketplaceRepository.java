@@ -19,7 +19,8 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-/** Spring Data repository for {@link UserMarketplaceEntity}. */
+/**
+ * {@summary UserMarketplaceRepository (UserMarketplaceRepository)} Spring Data repository for {@link UserMarketplaceEntity}. */
 public interface UserMarketplaceRepository extends JpaRepository<UserMarketplaceEntity, Long> {
 
     List<UserMarketplaceEntity> findByUserIdOrderByMarketplaceIdAsc(String userId);

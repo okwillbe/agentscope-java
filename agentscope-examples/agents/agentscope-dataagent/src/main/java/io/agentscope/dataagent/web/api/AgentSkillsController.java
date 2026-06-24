@@ -64,6 +64,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Read-only filesystem for browsing — RUN-tier callers, no owner mutation. (Read-only filesystem for browsing — RUN-tier callers, no owner mutation.)}
  * Per-agent skills management for the platform. Mirrors claw's {@code AgentSkillsController} in
  * URL/payload shape, but every operation is gated by {@link AgentAccessGuard} (RUN to browse, EDIT
  * to mutate) and every file I/O goes through the per-(owner, agent) filesystem returned by
@@ -660,6 +661,7 @@ public class AgentSkillsController {
     }
 
     /**
+     * {@summary Read-only filesystem for browsing — RUN-tier callers, no owner mutation. (Read-only filesystem for browsing — RUN-tier callers, no owner mutation.)}
      * Recursively walks {@code rootAbs} on the abstract filesystem, invoking {@code visitor} for
      * each regular file with the path relative to {@code rootAbs + "/"}. Tolerant of ls failures
      * (silently treated as empty).

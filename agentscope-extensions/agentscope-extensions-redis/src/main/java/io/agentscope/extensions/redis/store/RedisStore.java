@@ -26,6 +26,7 @@ import java.util.Objects;
 import redis.clients.jedis.UnifiedJedis;
 
 /**
+ * {@summary Atomic put: increments the version unconditionally, writes value + version + index entry. (Atomic put: increments the version unconditionally, writes value + version + index entry.)}
  * Redis-backed {@link BaseStore} implementation.
  *
  * <h2>Key layout</h2>
@@ -62,6 +63,7 @@ public class RedisStore implements BaseStore {
     private static final String NS_SEPARATOR = "\0";
 
     /**
+     * {@summary Atomic put: increments the version unconditionally, writes value + version + index entry. (Atomic put: increments the version unconditionally, writes value + version + index entry.)}
      * Atomic put: increments the version unconditionally, writes value + version + index entry.
      * Returns the new version as a string.
      */
@@ -72,6 +74,7 @@ public class RedisStore implements BaseStore {
                     + "return tostring(v)";
 
     /**
+     * {@summary Atomic put: increments the version unconditionally, writes value + version + index entry. (Atomic put: increments the version unconditionally, writes value + version + index entry.)}
      * Atomic CAS put: writes only when the stored version equals ARGV[3]. Returns the new version
      * on success, the literal string {@code "0"} on version mismatch. An expected version of
      * {@code 0} means "create only if absent".
@@ -93,6 +96,7 @@ public class RedisStore implements BaseStore {
     private final ObjectMapper objectMapper;
 
     /**
+     * {@summary Atomic put: increments the version unconditionally, writes value + version + index entry. (Atomic put: increments the version unconditionally, writes value + version + index entry.)}
      * Creates a Redis-backed store with the {@linkplain #DEFAULT_KEY_PREFIX default key prefix}.
      *
      * @param jedis initialized Jedis client; must not be {@code null}
@@ -102,6 +106,7 @@ public class RedisStore implements BaseStore {
     }
 
     /**
+     * {@summary Atomic put: increments the version unconditionally, writes value + version + index entry. (Atomic put: increments the version unconditionally, writes value + version + index entry.)}
      * Creates a Redis-backed store.
      *
      * @param jedis initialized Jedis client; must not be {@code null}
@@ -113,6 +118,7 @@ public class RedisStore implements BaseStore {
     }
 
     /**
+     * {@summary Atomic put: increments the version unconditionally, writes value + version + index entry. (Atomic put: increments the version unconditionally, writes value + version + index entry.)}
      * Creates a Redis-backed store with a custom JSON mapper.
      *
      * @param jedis initialized Jedis client; must not be {@code null}

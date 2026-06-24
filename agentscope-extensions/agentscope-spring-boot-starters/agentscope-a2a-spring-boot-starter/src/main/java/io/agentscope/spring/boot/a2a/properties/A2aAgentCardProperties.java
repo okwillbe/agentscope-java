@@ -25,6 +25,7 @@ import java.util.Map;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary A2a server agent card properties. (A2a server agent card properties.)}
  * A2a server agent card properties.
  */
 @ConfigurationProperties(Constants.A2A_SERVER_CARD_PREFIX)

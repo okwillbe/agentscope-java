@@ -31,6 +31,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 
 /**
+ * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
  * Auto-configuration for exposing a Chat Completions style HTTP API.
  *
  * <p>This configuration assumes that the core {@code agentscope-spring-boot-starter} is already on
@@ -61,6 +62,7 @@ import org.springframework.context.annotation.Bean;
 public class ChatCompletionsWebAutoConfiguration {
 
     /**
+     * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
      * Create the message converter bean.
      *
      * @return A new {@link ChatMessageConverter} instance for converting HTTP DTOs to framework
@@ -73,6 +75,7 @@ public class ChatCompletionsWebAutoConfiguration {
     }
 
     /**
+     * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
      * Create the OpenAI tool converter bean.
      *
      * @return A new {@link OpenAIToolConverter} instance for converting OpenAI tools to ToolSchema
@@ -84,6 +87,7 @@ public class ChatCompletionsWebAutoConfiguration {
     }
 
     /**
+     * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
      * Create the response builder bean.
      *
      * @return A new {@link ChatCompletionsResponseBuilder} instance for building chat completion
@@ -96,6 +100,7 @@ public class ChatCompletionsWebAutoConfiguration {
     }
 
     /**
+     * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
      * Create the streaming adapter bean.
      *
      * <p>This is the framework-agnostic adapter that handles core streaming logic.
@@ -109,6 +114,7 @@ public class ChatCompletionsWebAutoConfiguration {
     }
 
     /**
+     * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
      * Create the streaming service bean.
      *
      * <p>This is the Spring-specific adapter that converts chunks to SSE events.
@@ -124,6 +130,7 @@ public class ChatCompletionsWebAutoConfiguration {
     }
 
     /**
+     * {@summary Auto-configuration for exposing a Chat Completions style HTTP API. (Auto-configuration for exposing a Chat Completions style HTTP API.)}
      * Create the chat completions controller bean.
      *
      * <p>The controller uses {@link ObjectProvider} to create a fresh prototype-scoped agent for

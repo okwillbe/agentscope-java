@@ -35,6 +35,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Read-only activity log for an agent. (Read-only activity log for an agent.)}
  * Read-only activity log for an agent.
  *
  * <p>{@code GET /api/agents/{id}/activity?since={ms}&limit={n}} — requires at least RUN. Events

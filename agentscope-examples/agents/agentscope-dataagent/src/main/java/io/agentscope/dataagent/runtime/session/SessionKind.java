@@ -15,7 +15,7 @@
  */
 package io.agentscope.dataagent.runtime.session;
 
-/** AgentStateStore classification, matching OpenClaw session kinds. */
+/** {@summary AgentStateStore classification, matching OpenClaw session kinds. (AgentStateStore classification, matching OpenClaw session kinds.)} AgentStateStore classification, matching OpenClaw session kinds. */
 public enum SessionKind {
     SUBAGENT("subagent"),
     MAIN("main");

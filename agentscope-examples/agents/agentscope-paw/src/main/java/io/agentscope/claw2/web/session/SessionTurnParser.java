@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Parses the JSONL session transcript produced by HarnessAgent into structured turn entries. (Parses the JSONL session transcript produced by HarnessAgent into structured turn entries.)}
  * Parses the JSONL session transcript produced by HarnessAgent into structured turn entries.
  *
  * <p>Each line of the JSONL file is a JSON object with at minimum the fields:
@@ -44,6 +45,7 @@ public final class SessionTurnParser {
     private SessionTurnParser() {}
 
     /**
+     * {@summary Parses the JSONL session transcript produced by HarnessAgent into structured turn entries. (Parses the JSONL session transcript produced by HarnessAgent into structured turn entries.)}
      * Parses a JSONL string into a list of {@link TurnEntry} objects.
      *
      * @param jsonl the full JSONL content of a session transcript (may be blank)
@@ -96,6 +98,7 @@ public final class SessionTurnParser {
     }
 
     /**
+     * {@summary Parses the JSONL session transcript produced by HarnessAgent into structured turn entries. (Parses the JSONL session transcript produced by HarnessAgent into structured turn entries.)}
      * A single parsed entry from a session JSONL transcript.
      *
      * @param id entry id

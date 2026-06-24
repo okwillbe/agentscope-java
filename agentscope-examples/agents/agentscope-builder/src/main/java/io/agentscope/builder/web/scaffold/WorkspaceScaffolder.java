@@ -23,6 +23,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 /**
+ * {@summary Materializes the default builder agent's workspace folder by copying classpath resources from (Materializes the default builder agent's workspace folder by copying classpath resources from)}
  * Materializes the default builder agent's workspace folder by copying classpath resources from
  * {@code scaffold/default/} into the target directory with write-if-missing semantics.
  *
@@ -55,6 +56,7 @@ public final class WorkspaceScaffolder {
     private static final String RESOURCE_ROOT = "scaffold/default";
 
     /**
+     * {@summary Materializes the default builder agent's workspace folder by copying classpath resources from (Materializes the default builder agent's workspace folder by copying classpath resources from)}
      * Files copied verbatim from {@code scaffold/default/<rel>} into {@code workspace/<rel>}.
      * Keep this list narrow — anything you add here ships in every fresh workspace, so prefer the
      * opt-in {@link io.agentscope.builder.web.template.TemplateRegistry} for richer starter packs.
@@ -65,6 +67,7 @@ public final class WorkspaceScaffolder {
     private WorkspaceScaffolder() {}
 
     /**
+     * {@summary Materializes the default builder agent's workspace folder by copying classpath resources from (Materializes the default builder agent's workspace folder by copying classpath resources from)}
      * Materializes the workspace folder for an agent. Safe to call repeatedly: only files that do
      * not already exist are created.
      *
@@ -90,6 +93,7 @@ public final class WorkspaceScaffolder {
     }
 
     /**
+     * {@summary Materializes the default builder agent's workspace folder by copying classpath resources from (Materializes the default builder agent's workspace folder by copying classpath resources from)}
      * Loads the AGENTS.md template resource and substitutes the supplied agent identity into the
      * {@code {{NAME}}} / {@code {{SYSPROMPT}}} placeholders. Falls back to {@code "agent"} and
      * {@code "You are a helpful assistant."} when either input is blank, so the generated file is
@@ -106,6 +110,7 @@ public final class WorkspaceScaffolder {
     }
 
     /**
+     * {@summary Materializes the default builder agent's workspace folder by copying classpath resources from (Materializes the default builder agent's workspace folder by copying classpath resources from)}
      * Loads a UTF-8 classpath resource as a string. Throws {@link IOException} if the resource is
      * missing so a packaging mistake (renamed or excluded resource) surfaces loudly at startup
      * instead of silently producing an empty workspace.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary ShutdownSessionBinding (ShutdownSessionBinding)} */
 import io.agentscope.core.state.AgentStateStore;
 import java.util.Objects;
 

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent;
 
+/** {@summary DefaultAgentManager (DefaultAgentManager)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.Event;
@@ -35,7 +36,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Pure agent factory and invoker — knows how to create agents from registered factories and invoke
+ * Pure agent factory and invoker ...knows how to create agents from registered factories and invoke
  * them with a prompt.
  *
  * <p>This is the <em>agent-internal</em> layer. It has <strong>no</strong> session registry, no lane
@@ -89,7 +90,7 @@ public final class DefaultAgentManager {
      * Atomic alias of {@link #refreshEntries(List)} used by
      * {@link io.agentscope.harness.agent.middleware.DynamicSubagentsMiddleware} to swap the registered
      * subagent set on every reasoning step. The two volatile reference assignments below ensure
-     * any concurrent reader observes either the previous snapshot or the new one fully — never a
+     * any concurrent reader observes either the previous snapshot or the new one fully ...never a
      * partial state.
      */
     public void replaceAgents(List<SubagentEntry> entries) {

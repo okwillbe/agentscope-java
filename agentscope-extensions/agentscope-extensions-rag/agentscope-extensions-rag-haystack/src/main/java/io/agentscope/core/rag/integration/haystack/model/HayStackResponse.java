@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary HayStack RAG API response model. (HayStack RAG API response model.)}
  * HayStack RAG API response model.
  *
  * <p>Since Haystack does not provide a standard REST API format,

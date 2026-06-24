@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.reader;
 
 /**
+ * {@summary Abstract base class for readers that support text chunking. (Abstract base class for readers that support text chunking.)}
  * Abstract base class for readers that support text chunking.
  *
  * <p>This class provides common functionality for document readers that split content
@@ -32,6 +33,7 @@ public abstract class AbstractChunkingReader implements Reader {
     protected final int overlapSize;
 
     /**
+     * {@summary Abstract base class for readers that support text chunking. (Abstract base class for readers that support text chunking.)}
      * Creates a new AbstractChunkingReader with the specified configuration.
      *
      * @param chunkSize the target size for each chunk (interpreted based on strategy)
@@ -47,6 +49,7 @@ public abstract class AbstractChunkingReader implements Reader {
     }
 
     /**
+     * {@summary Abstract base class for readers that support text chunking. (Abstract base class for readers that support text chunking.)}
      * Validates chunking parameters.
      *
      * @param chunkSize the chunk size to validate
@@ -71,6 +74,7 @@ public abstract class AbstractChunkingReader implements Reader {
     }
 
     /**
+     * {@summary Abstract base class for readers that support text chunking. (Abstract base class for readers that support text chunking.)}
      * Gets the chunk size.
      *
      * @return the chunk size
@@ -80,6 +84,7 @@ public abstract class AbstractChunkingReader implements Reader {
     }
 
     /**
+     * {@summary Abstract base class for readers that support text chunking. (Abstract base class for readers that support text chunking.)}
      * Gets the split strategy.
      *
      * @return the split strategy
@@ -89,6 +94,7 @@ public abstract class AbstractChunkingReader implements Reader {
     }
 
     /**
+     * {@summary Abstract base class for readers that support text chunking. (Abstract base class for readers that support text chunking.)}
      * Gets the overlap size.
      *
      * @return the overlap size

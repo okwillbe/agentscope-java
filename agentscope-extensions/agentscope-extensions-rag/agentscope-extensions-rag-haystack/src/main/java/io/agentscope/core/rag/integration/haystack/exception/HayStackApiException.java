@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.haystack.exception;
 
 /**
+ * {@summary Exception thrown when HayStack API call fails. (Exception thrown when HayStack API call fails.)}
  * Exception thrown when HayStack API call fails.
  */
 public class HayStackApiException extends RuntimeException {

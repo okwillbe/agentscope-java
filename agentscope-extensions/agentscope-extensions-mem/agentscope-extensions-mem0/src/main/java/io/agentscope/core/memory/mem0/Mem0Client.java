@@ -30,6 +30,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
  * HTTP client for interacting with the Mem0 API.
  *
  * <p>Supports both Platform Mem0 and self-hosted Mem0 deployments:
@@ -62,6 +63,7 @@ public class Mem0Client {
     private final String searchEndpoint;
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Creates a new Mem0Client with specified configuration (defaults to Platform Mem0).
      *
      * @param apiBaseUrl The base URL of the Mem0 API (e.g., "http://localhost:8000")
@@ -73,6 +75,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Creates a new Mem0Client with custom timeout (defaults to Platform Mem0).
      *
      * @param apiBaseUrl The base URL of the Mem0 API
@@ -85,6 +88,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Creates a new Mem0Client with API type specification.
      *
      * @param apiBaseUrl The base URL of the Mem0 API
@@ -120,6 +124,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Executes a POST request and returns the raw response body as a string.
      *
      * <p>This is a low-level method that handles HTTP communication, JSON serialization,
@@ -186,6 +191,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Executes a POST request to the Mem0 API and parses the response.
      *
      * <p>This is a generic method that handles HTTP communication, JSON serialization,
@@ -207,6 +213,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Adds memories to Mem0 by sending messages for processing.
      *
      * <p>This method calls the {@code POST /v1/memories} endpoint. Mem0 will process
@@ -224,6 +231,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Searches memories in Mem0 using semantic similarity.
      *
      * <p>This method calls the {@code POST /v2/memories/search/} endpoint to find
@@ -267,6 +275,7 @@ public class Mem0Client {
     }
 
     /**
+     * {@summary HTTP client for interacting with the Mem0 API. (HTTP client for interacting with the Mem0 API.)}
      * Shuts down the HTTP client and releases resources.
      *
      * <p>This method should be called when the client is no longer needed.

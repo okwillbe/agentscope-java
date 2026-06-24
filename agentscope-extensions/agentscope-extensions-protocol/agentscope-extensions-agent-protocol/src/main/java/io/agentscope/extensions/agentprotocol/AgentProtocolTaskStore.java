@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Starts a background task. Idempotent while running: if a non-terminal task with the same id (Starts a background task. Idempotent while running: if a non-terminal task with the same id)}
  * In-memory execution handles with workspace-backed {@link TaskRecord} persistence.
  *
  * <p>Each submitted task obtains a {@link HarnessAgent} instance via the {@code agentSupplier}.
@@ -62,6 +63,7 @@ public final class AgentProtocolTaskStore {
     private final Map<String, CompletableFuture<String>> futures = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Starts a background task. Idempotent while running: if a non-terminal task with the same id (Starts a background task. Idempotent while running: if a non-terminal task with the same id)}
      * Creates the store with an agent factory. Each task invocation calls {@code agentSupplier}
      * once; for true concurrent execution supply a prototype-scoped factory.
      */
@@ -77,6 +79,7 @@ public final class AgentProtocolTaskStore {
     }
 
     /**
+     * {@summary Starts a background task. Idempotent while running: if a non-terminal task with the same id (Starts a background task. Idempotent while running: if a non-terminal task with the same id)}
      * Starts a background task. Idempotent while running: if a non-terminal task with the same id
      * already exists, returns without starting a duplicate run.
      *
@@ -204,6 +207,7 @@ public final class AgentProtocolTaskStore {
     }
 
     /**
+     * {@summary Starts a background task. Idempotent while running: if a non-terminal task with the same id (Starts a background task. Idempotent while running: if a non-terminal task with the same id)}
      * Blocks until the task reaches a terminal state or the timeout elapses.
      *
      * @param taskId task to wait for

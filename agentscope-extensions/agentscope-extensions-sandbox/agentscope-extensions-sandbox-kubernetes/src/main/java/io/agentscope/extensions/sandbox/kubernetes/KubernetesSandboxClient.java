@@ -46,6 +46,7 @@ public class KubernetesSandboxClient implements SandboxClient<KubernetesSandboxC
     }
 
     /**
+     * {@summary KubernetesSandboxClient class ()}
      * @param defaultOptions template options merged into each {@link #create} call
      * @param objectMapper optional mapper; when null a default mapper is created with harness and
      *     Kubernetes Jackson modules

@@ -32,6 +32,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary JPA-backed marketplace persistence. Persists each user's marketplace set as one row in (JPA-backed marketplace persistence. Persists each user's marketplace set as one row in)}
  * JPA-backed marketplace persistence. Persists each user's marketplace set as one row in
  * {@code dataagent_user_marketplace} keyed by {@code (user_id, marketplace_id)}. Does
  * <em>not</em> touch {@code agentscope.json} — DataAgent treats this as platform state, not
@@ -58,6 +59,7 @@ public class UserMarketplacePersistence {
     }
 
     /**
+     * {@summary JPA-backed marketplace persistence. Persists each user's marketplace set as one row in (JPA-backed marketplace persistence. Persists each user's marketplace set as one row in)}
      * Load every marketplace owned by {@code userId} as a {@code (id → entry)} map, ordered by id.
      * The map is suitable for direct hydration into {@link UserMarketplaceRegistry}.
      */
@@ -89,6 +91,7 @@ public class UserMarketplacePersistence {
     }
 
     /**
+     * {@summary JPA-backed marketplace persistence. Persists each user's marketplace set as one row in (JPA-backed marketplace persistence. Persists each user's marketplace set as one row in)}
      * Insert a new marketplace row for {@code userId}. The caller is responsible for ensuring the
      * id does not already exist — use {@link #exists(String, String)} first to surface a 409 to
      * the user.

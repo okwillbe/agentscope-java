@@ -28,6 +28,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
+ * {@summary McpStdioExample - MCP (Model Context Protocol) integration via stdio subprocess.}
  * McpStdioExample - MCP (Model Context Protocol) integration via stdio subprocess.
  *
  * <p>Stdio transport spawns a local process and communicates over its stdin/stdout.
@@ -49,6 +50,7 @@ import java.io.InputStreamReader;
 public class McpStdioExample {
 
     /**
+     * {@summary McpStdioExample - MCP (Model Context Protocol) integration via stdio subprocess.}
      * Runs the stdio MCP example.
      *
      * @param args command-line arguments (ignored)

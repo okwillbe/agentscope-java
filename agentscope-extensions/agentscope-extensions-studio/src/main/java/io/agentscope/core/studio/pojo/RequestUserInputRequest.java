@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 /**
+ * {@summary Request payload for requesting user input from Studio web interface. (Request payload for requesting user input from Studio web interface.)}
  * Request payload for requesting user input from Studio web interface.
  *
  * <p>This is sent via POST /trpc/requestUserInput to prompt the user for input.
@@ -48,6 +49,7 @@ public class RequestUserInputRequest {
     }
 
     /**
+     * {@summary Request payload for requesting user input from Studio web interface. (Request payload for requesting user input from Studio web interface.)}
      * Gets the unique identifier for this user input request.
      *
      * @return the request ID
@@ -57,6 +59,7 @@ public class RequestUserInputRequest {
     }
 
     /**
+     * {@summary Request payload for requesting user input from Studio web interface. (Request payload for requesting user input from Studio web interface.)}
      * Gets the run ID associated with this input request.
      *
      * @return the run ID
@@ -66,6 +69,7 @@ public class RequestUserInputRequest {
     }
 
     /**
+     * {@summary Request payload for requesting user input from Studio web interface. (Request payload for requesting user input from Studio web interface.)}
      * Gets the ID of the agent requesting input.
      *
      * @return the agent ID
@@ -75,6 +79,7 @@ public class RequestUserInputRequest {
     }
 
     /**
+     * {@summary Request payload for requesting user input from Studio web interface. (Request payload for requesting user input from Studio web interface.)}
      * Gets the name of the agent requesting input.
      *
      * @return the agent name
@@ -84,6 +89,7 @@ public class RequestUserInputRequest {
     }
 
     /**
+     * {@summary Request payload for requesting user input from Studio web interface. (Request payload for requesting user input from Studio web interface.)}
      * Gets the structured input schema (if any).
      *
      * @return the structured input schema, or an empty map if not specified

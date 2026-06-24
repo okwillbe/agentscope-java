@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary WebSocketTransport (WebSocketTransport)} */
 import io.agentscope.core.model.transport.websocket.WebSocketConnection;
 import io.agentscope.core.model.transport.websocket.WebSocketRequest;
 import reactor.core.publisher.Mono;

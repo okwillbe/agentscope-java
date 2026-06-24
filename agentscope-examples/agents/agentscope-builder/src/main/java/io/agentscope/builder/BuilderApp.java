@@ -19,6 +19,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * {@summary Entry point for the agentscope-builder platform. (Entry point for the agentscope-builder platform.)}
  * Entry point for the agentscope-builder platform.
  *
  * <p>Starts a Spring Boot WebFlux server that hosts:

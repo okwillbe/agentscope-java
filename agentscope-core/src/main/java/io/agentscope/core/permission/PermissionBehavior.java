@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.permission;
 
+/** {@summary PermissionBehavior (PermissionBehavior)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.Locale;

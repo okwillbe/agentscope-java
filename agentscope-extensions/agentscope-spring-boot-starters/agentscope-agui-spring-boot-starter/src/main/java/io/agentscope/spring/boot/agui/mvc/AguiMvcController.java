@@ -35,6 +35,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import reactor.core.Disposable;
 
 /**
+ * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
  * MVC controller for AG-UI protocol requests.
  *
  * <p>This controller processes AG-UI run requests and returns Server-Sent Events (SSE)
@@ -92,6 +93,7 @@ public class AguiMvcController {
     }
 
     /**
+     * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
      * Handle an AG-UI run request.
      *
      * @param input The run agent input
@@ -103,6 +105,7 @@ public class AguiMvcController {
     }
 
     /**
+     * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
      * Handle an AG-UI run request with agent ID in the URL path.
      *
      * @param input The run agent input
@@ -218,6 +221,7 @@ public class AguiMvcController {
     }
 
     /**
+     * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
      * Get the agent ID header name.
      *
      * @return The header name
@@ -227,6 +231,7 @@ public class AguiMvcController {
     }
 
     /**
+     * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
      * Creates a new builder for AguiMvcController.
      *
      * @return A new builder instance
@@ -246,6 +251,7 @@ public class AguiMvcController {
         private long sseTimeout = 600000L;
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Set the agent registry.
          *
          * @param registry The agent registry
@@ -257,6 +263,7 @@ public class AguiMvcController {
         }
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Set the thread session manager for server-side memory support.
          *
          * @param sessionManager The session manager
@@ -268,6 +275,7 @@ public class AguiMvcController {
         }
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Enable or disable server-side memory management.
          *
          * @param enabled Whether to enable server-side memory
@@ -279,6 +287,7 @@ public class AguiMvcController {
         }
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Set the adapter configuration.
          *
          * @param config The adapter configuration
@@ -290,6 +299,7 @@ public class AguiMvcController {
         }
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Set the HTTP header name to read agent ID from.
          *
          * @param agentIdHeader The header name (default: X-Agent-Id)
@@ -301,6 +311,7 @@ public class AguiMvcController {
         }
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Set the SSE timeout in milliseconds.
          *
          * @param sseTimeout The timeout value
@@ -312,6 +323,7 @@ public class AguiMvcController {
         }
 
         /**
+         * {@summary MVC controller for AG-UI protocol requests. (MVC controller for AG-UI protocol requests.)}
          * Build the controller.
          *
          * @return The built controller

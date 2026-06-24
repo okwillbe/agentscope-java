@@ -27,6 +27,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
+ * {@summary JpaUserStore class ()}
  * JPA-backed {@link UserStore}. This is the only {@link UserStore} implementation shipped with
  * the builder; it is always wired in by {@link JpaPersistenceConfig}.
  *

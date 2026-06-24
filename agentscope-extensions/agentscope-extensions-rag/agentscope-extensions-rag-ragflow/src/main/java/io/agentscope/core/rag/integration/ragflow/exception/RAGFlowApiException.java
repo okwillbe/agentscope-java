@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.ragflow.exception;
 
 /**
+ * {@summary Exception thrown when RAGFlow API call fails. (Exception thrown when RAGFlow API call fails.)}
  * Exception thrown when RAGFlow API call fails.
  *
  * @author RAGFlow Integration Team

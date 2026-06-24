@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
+ * {@summary Run Execution Context (Run Execution Context)}
  * Run Execution Context
  *
  * <p>Encapsulates the complete execution information for <b>a single Run</b>.
@@ -88,6 +89,7 @@ public class RunExecutionContext {
     private final long startTime;
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Private constructor
      *
      * @param taskId Task ID
@@ -109,6 +111,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Create new Run execution context
      *
      * <p><b>Usage scenario:</b> Created by TrainingRouter after intercepting Agent call.
@@ -123,6 +126,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Add Message ID
      *
      * <p>Message ID is extracted from Trinity Chat API response ({@code response.getId()}).
@@ -138,6 +142,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get all Message IDs
      *
      * <p><b>Return value:</b> Returns a new List copy to prevent external modification.
@@ -149,6 +154,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get Message IDs count
      *
      * @return Number of msg_ids
@@ -158,6 +164,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get Task ID
      *
      * @return Task ID
@@ -167,6 +174,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get Run ID
      *
      * @return Run ID
@@ -176,6 +184,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get Run start time
      *
      * @return Start time (millisecond timestamp)
@@ -185,6 +194,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get Run execution duration
      *
      * @return Execution duration (milliseconds)
@@ -194,6 +204,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Check if msg_ids have been collected
      *
      * @return true if at least one msg_id exists
@@ -203,6 +214,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Add Message
      *
      * <p><b>Thread-safe:</b> This method can be called concurrently.
@@ -216,6 +228,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Batch set Messages (usually obtained from agent memory)
      *
      * <p>Clears existing messages and adds new message list.
@@ -232,6 +245,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get all Messages
      *
      * <p><b>Return value:</b> Returns a new List copy to prevent external modification.
@@ -243,6 +257,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Get Messages count
      *
      * @return Number of msgs
@@ -252,6 +267,7 @@ public class RunExecutionContext {
     }
 
     /**
+     * {@summary Run Execution Context (Run Execution Context)}
      * Check if messages have been collected
      *
      * @return true if at least one message exists

@@ -29,6 +29,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * {@summary Publishes reviewer findings to a GitHub PR as inline comments. (Publishes reviewer findings to a GitHub PR as inline comments.)}
  * Publishes reviewer findings to a GitHub PR as inline comments.
  *
  * <p>Creates a single GitHub pull request review with inline comment for each finding. Resolves
@@ -56,6 +57,7 @@ public class GitHubReviewPublisher {
     }
 
     /**
+     * {@summary Publishes reviewer findings to a GitHub PR as inline comments. (Publishes reviewer findings to a GitHub PR as inline comments.)}
      * Publishes accumulated findings for {@code threadId} as a single GitHub PR review.
      *
      * @param threadId session thread ID

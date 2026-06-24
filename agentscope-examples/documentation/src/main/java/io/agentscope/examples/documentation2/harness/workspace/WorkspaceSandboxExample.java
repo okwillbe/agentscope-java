@@ -27,6 +27,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary WorkspaceSandboxExample — Filesystem mode 2 (sandbox): files and commands run inside an}
  * WorkspaceSandboxExample — Filesystem mode 2 (sandbox): files and commands run inside an
  * isolated Docker container. The host is untouched and the sandbox workspace survives across
  * calls.

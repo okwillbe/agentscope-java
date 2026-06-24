@@ -19,6 +19,7 @@ import io.agentscope.harness.agent.subagent.task.BackgroundTask;
 import java.time.Instant;
 
 /**
+ * {@summary SubagentTaskView class ()}
  * Wire view of a {@link BackgroundTask} dispatched to a subagent. Distinct from
  * {@link AgentTaskView}, which is the in-{@code AgentState} TodoWrite-style record.
  *

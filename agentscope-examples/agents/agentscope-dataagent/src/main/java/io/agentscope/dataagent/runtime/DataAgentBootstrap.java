@@ -58,6 +58,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
  * Single API class for assembling, configuring, and running the agentscope harness.
  *
  * <h2>Build phase — {@link #builder()}</h2>
@@ -81,6 +82,7 @@ public final class DataAgentBootstrap {
     private static final String DEFAULT_MAIN_ID = "default";
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Default workspace root for every data-agent instance. Lives outside the project tree so the
      * shared workspace root (templates, default {@code AGENTS.md} / skills / subagents) and
      * per-tenant remote namespaces don't pollute the cwd the app was launched from, and so two
@@ -90,6 +92,7 @@ public final class DataAgentBootstrap {
             Paths.get(System.getProperty("user.home"), ".agentscope", "dataagent", "workspace");
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Default location of the {@code agentscope.json} config file. Pinned to the per-app home
      * directory ({@code ~/.agentscope/dataagent/}) so the dataagent web app never picks up a stale
      * config left behind by another harness app (e.g. builder, codingagent) in the cwd it was
@@ -249,6 +252,7 @@ public final class DataAgentBootstrap {
     }
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Resolves the workspace {@link Path} for a given agent id using the same logic as the
      * build phase.
      *
@@ -334,6 +338,7 @@ public final class DataAgentBootstrap {
     }
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Translates the optional {@code session.maintenance} block of {@code agentscope.json} into a
      * runtime {@link AgentManagerConfig}. Falls back to {@link AgentManagerConfig#defaults()} when
      * no block is present.
@@ -465,6 +470,7 @@ public final class DataAgentBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Registers a customizer that will be applied to <em>every</em> agent builder, in addition
          * to any per-agent customizers. Useful for injecting cross-cutting concerns like hooks.
          */
@@ -485,6 +491,7 @@ public final class DataAgentBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Assembles all agents and channels, wires the internal gateway, and returns a fully
          * initialized {@link DataAgentBootstrap}.
          *

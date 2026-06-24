@@ -28,6 +28,7 @@ import io.agentscope.harness.agent.HarnessAgent;
 import java.time.Duration;
 
 /**
+ * {@summary Demonstrates async tool execution — tools that exceed a timeout are automatically offloaded (Demonstrates async tool execution — tools that exceed a timeout are automatically offloaded)}
  * Demonstrates async tool execution — tools that exceed a timeout are automatically offloaded
  * to background, and results are delivered via the inbox mechanism.
  *
@@ -124,6 +125,7 @@ public class AsyncToolExample {
     }
 
     /**
+     * {@summary Demonstrates async tool execution — tools that exceed a timeout are automatically offloaded (Demonstrates async tool execution — tools that exceed a timeout are automatically offloaded)}
      * Tools with a deliberately slow operation to demonstrate async offloading.
      */
     public static class SlowTools {

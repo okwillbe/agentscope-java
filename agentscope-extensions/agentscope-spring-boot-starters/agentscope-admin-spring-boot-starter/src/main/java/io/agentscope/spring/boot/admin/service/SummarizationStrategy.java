@@ -21,6 +21,7 @@ import java.util.List;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Produce a new rolling summary. (Produce a new rolling summary.)}
  * Strategy for the {@code session:compact} action.
  *
  * <p>Receives the current conversation buffer + any prior rolling summary, and returns the new
@@ -30,6 +31,7 @@ import reactor.core.publisher.Mono;
 public interface SummarizationStrategy {
 
     /**
+     * {@summary Produce a new rolling summary. (Produce a new rolling summary.)}
      * Produce a new rolling summary.
      *
      * @param model the model to use (must not be null)

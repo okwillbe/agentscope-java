@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.workspace;
 
+/** {@summary LocalFsMode (LocalFsMode)} */
+
 /**
  * Path-resolution policy mode for host-rooted filesystems
  * ({@link io.agentscope.harness.agent.filesystem.local.LocalFilesystem} and friends).
@@ -22,14 +24,14 @@ package io.agentscope.harness.agent.workspace;
  * <p>Controls what happens when the agent supplies an absolute path:
  *
  * <ul>
- *   <li>{@link #SANDBOXED} — anchor every path to the filesystem root, reject {@code ..} and
+ *   <li>{@link #SANDBOXED} ...anchor every path to the filesystem root, reject {@code ..} and
  *       absolute paths leaving the root. Equivalent to the legacy {@code virtualMode=true}.
- *   <li>{@link #ROOTED} — absolute paths are accepted only when they fall under one of the
+ *   <li>{@link #ROOTED} ...absolute paths are accepted only when they fall under one of the
  *       roots in the configured {@link PathPolicy} (project + workspace + additional roots).
  *       Relative paths still resolve against the filesystem root. This is the default for
  *       Local-mode agents and matches the Claude-Code-style "project + additional dirs"
  *       allow-list.
- *   <li>{@link #UNRESTRICTED} — absolute paths pass through unchanged. Equivalent to the legacy
+ *   <li>{@link #UNRESTRICTED} ...absolute paths pass through unchanged. Equivalent to the legacy
  *       {@code virtualMode=false}. Escape hatch for tools or tests that need to read arbitrary
  *       host paths.
  * </ul>

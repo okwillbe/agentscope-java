@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.local;
 
+/** {@summary LocalFilesystemWithShell (LocalFilesystemWithShell)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.model.ExecuteResponse;
 import io.agentscope.harness.agent.filesystem.remote.store.NamespaceFactory;

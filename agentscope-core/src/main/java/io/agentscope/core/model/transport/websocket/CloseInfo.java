@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary CloseInfo (CloseInfo)} */
+
 /**
  * WebSocket connection close information.
  *

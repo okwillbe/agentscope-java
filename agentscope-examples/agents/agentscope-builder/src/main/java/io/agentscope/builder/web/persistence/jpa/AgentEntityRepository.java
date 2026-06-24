@@ -19,12 +19,15 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-/** Spring Data repository for {@link AgentEntity}. */
+/**
+ * {@summary AgentEntityRepository (AgentEntityRepository)} Spring Data repository for {@link AgentEntity}. */
 public interface AgentEntityRepository extends JpaRepository<AgentEntity, Long> {
 
-    /** All agent definitions owned by {@code ownerId}, oldest first. */
+    /**
+     * {@summary AgentEntityRepository (AgentEntityRepository)} All agent definitions owned by {@code ownerId}, oldest first. */
     List<AgentEntity> findByOwnerIdOrderByCreatedAtAsc(String ownerId);
 
-    /** Single definition lookup by the {@code (ownerId, agentId)} pair. */
+    /**
+     * {@summary AgentEntityRepository (AgentEntityRepository)} Single definition lookup by the {@code (ownerId, agentId)} pair. */
     Optional<AgentEntity> findByOwnerIdAndAgentId(String ownerId, String agentId);
 }

@@ -27,6 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Agent Cloning Utility Class (Agent Cloning Utility Class)}
  * Agent Cloning Utility Class
  *
  * <p>Uses reflection to extract Agent configuration, then rebuilds new Agent instance with Builder
@@ -42,6 +43,7 @@ public class AgentCloner {
     private static final Logger logger = LoggerFactory.getLogger(AgentCloner.class);
 
     /**
+     * {@summary Agent Cloning Utility Class (Agent Cloning Utility Class)}
      * Clone Agent and replace model
      *
      * @param original Original Agent
@@ -61,6 +63,7 @@ public class AgentCloner {
     }
 
     /**
+     * {@summary Agent Cloning Utility Class (Agent Cloning Utility Class)}
      * Clone ReActAgent
      */
     private static ReActAgent cloneReActAgent(ReActAgent original, Model newModel) {
@@ -116,6 +119,7 @@ public class AgentCloner {
     }
 
     /**
+     * {@summary Agent Cloning Utility Class (Agent Cloning Utility Class)}
      * Extract private final fields using reflection
      */
     @SuppressWarnings("unchecked")

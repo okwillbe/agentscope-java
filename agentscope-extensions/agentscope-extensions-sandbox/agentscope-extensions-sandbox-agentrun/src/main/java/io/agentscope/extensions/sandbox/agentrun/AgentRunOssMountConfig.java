@@ -16,6 +16,7 @@
 package io.agentscope.extensions.sandbox.agentrun;
 
 /**
+ * {@summary OSS instance-level mount configuration for an AgentRun sandbox. (OSS instance-level mount configuration for an AgentRun sandbox.)}
  * OSS instance-level mount configuration for an AgentRun sandbox.
  *
  * <p>OSS mounts use ossfs FUSE and apply per-sandbox instance. Up to five mounts per sandbox
@@ -34,6 +35,7 @@ public class AgentRunOssMountConfig {
     public AgentRunOssMountConfig() {}
 
     /**
+     * {@summary OSS instance-level mount configuration for an AgentRun sandbox. (OSS instance-level mount configuration for an AgentRun sandbox.)}
      * Returns the OSS bucket name to mount.
      *
      * @return bucket name
@@ -48,6 +50,7 @@ public class AgentRunOssMountConfig {
     }
 
     /**
+     * {@summary OSS instance-level mount configuration for an AgentRun sandbox. (OSS instance-level mount configuration for an AgentRun sandbox.)}
      * Returns the OSS bucket sub-path to mount.
      *
      * @return bucket path, defaults to {@code "/"}
@@ -62,6 +65,7 @@ public class AgentRunOssMountConfig {
     }
 
     /**
+     * {@summary OSS instance-level mount configuration for an AgentRun sandbox. (OSS instance-level mount configuration for an AgentRun sandbox.)}
      * Returns the OSS endpoint (e.g. {@code oss-cn-hangzhou-internal.aliyuncs.com}).
      *
      * @return OSS endpoint
@@ -76,6 +80,7 @@ public class AgentRunOssMountConfig {
     }
 
     /**
+     * {@summary OSS instance-level mount configuration for an AgentRun sandbox. (OSS instance-level mount configuration for an AgentRun sandbox.)}
      * Returns the in-sandbox mount directory.
      *
      * @return absolute mount path (must start with {@code /home}, {@code /mnt} or {@code /data})
@@ -90,6 +95,7 @@ public class AgentRunOssMountConfig {
     }
 
     /**
+     * {@summary OSS instance-level mount configuration for an AgentRun sandbox. (OSS instance-level mount configuration for an AgentRun sandbox.)}
      * Returns whether the mount is read-only.
      *
      * @return true when read-only

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary DataBlock (DataBlock)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,7 @@ import java.util.UUID;
  * Unified data block for arbitrary binary media (image / audio / video / file).
  *
  * <p>Unlike the legacy {@link ImageBlock}, {@link AudioBlock}, {@link VideoBlock}
- * subclasses — which the SDK retains for back-compat — {@code DataBlock} is the
+ * subclasses 鈥?which the SDK retains for back-compat 鈥?{@code DataBlock} is the
  * forward-looking polymorphic container for every binary modality. New code
  * should prefer {@code DataBlock} over the legacy subclasses; the legacy types
  * stay around as valid {@link MsgRole#USER} payloads to keep existing pipelines

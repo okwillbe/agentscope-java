@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Configurable attribute for export agent card of this agent. (Configurable attribute for export agent card of this agent.)}
  * Configurable attribute for export agent card of this agent.
  *
  * <p>

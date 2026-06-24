@@ -36,6 +36,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Per-agent channel binding management. (Per-agent channel binding management.)}
  * Per-agent channel binding management.
  *
  * <ul>
@@ -213,6 +214,7 @@ public class AgentBindingController {
     }
 
     /**
+     * {@summary Per-agent channel binding management. (Per-agent channel binding management.)}
      * Derives the matching tier label for the frontend, using the same priority order as
      * {@link io.agentscope.harness.agent.gateway.channel.ChannelRouter}.
      */

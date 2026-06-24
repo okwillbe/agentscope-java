@@ -15,5 +15,5 @@
  */
 package io.agentscope.dataagent.runtime.session;
 
-/** Result of executing a prompt against a managed session. */
+/** {@summary Result of executing a prompt against a managed session. (Result of executing a prompt against a managed session.)} Result of executing a prompt against a managed session. */
 public record SendResult(String sessionKey, String status, String reply, String error) {}

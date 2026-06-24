@@ -20,6 +20,7 @@ import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 
 /**
+ * {@summary Centralized Micrometer metrics for the coding agent. (Centralized Micrometer metrics for the coding agent.)}
  * Centralized Micrometer metrics for the coding agent.
  *
  * <p>Metrics are exposed via Spring Boot Actuator ({@code /actuator/prometheus}) and can be

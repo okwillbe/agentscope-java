@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillCurator (SkillCurator)} */
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -38,7 +39,7 @@ import org.slf4j.LoggerFactory;
  * lifecycle:
  * <ul>
  *   <li>Pure-function {@code applyAutomaticTransitions}: walk every agent-tracked
- *       skill, transition {@code ACTIVE → STALE → ARCHIVED} based on the latest activity
+ *       skill, transition {@code ACTIVE 鈫?STALE 鈫?ARCHIVED} based on the latest activity
  *       timestamp from the sidecar. Pinned + DRAFT skills are skipped.</li>
  *   <li>LLM umbrella pass: produces a markdown report of consolidation candidates;
  *       in {@code DRY_RUN_ONLY} mode (default) it does not call {@code skill_manage}, just
@@ -51,7 +52,7 @@ import org.slf4j.LoggerFactory;
  * <ul>
  *   <li>Only touches sidecar entries with {@code createdBy != null} (agent-authored skills).</li>
  *   <li>Pinned skills bypass every auto-transition.</li>
- *   <li>Never deletes — only archives.</li>
+ *   <li>Never deletes ...only archives.</li>
  *   <li>{@code DRAFT} state is owned by the promotion gate, not the curator.</li>
  * </ul>
  */
@@ -140,7 +141,7 @@ public class SkillCurator {
     /**
      * Idle-and-interval gate. Returns true iff the curator should fire now: enabled, not
      * paused, last_run_at older than {@code intervalHours}. First-run behaviour seeds
-     * last_run_at without firing — a fresh deployment doesn't get LLM'd until at least one
+     * last_run_at without firing ...a fresh deployment doesn't get LLM'd until at least one
      * interval has elapsed.
      */
     public boolean shouldRunNow(Instant now) {
@@ -155,7 +156,7 @@ public class SkillCurator {
                             now,
                             s.runCount(),
                             s.paused(),
-                            "deferred first run — curator seeded",
+                            "deferred first run ...curator seeded",
                             null,
                             null));
             return false;

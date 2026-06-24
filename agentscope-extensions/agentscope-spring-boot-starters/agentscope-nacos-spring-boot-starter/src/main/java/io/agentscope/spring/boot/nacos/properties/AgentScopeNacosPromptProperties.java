@@ -22,6 +22,7 @@ import java.util.Map;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Configuration properties for AgentScope Nacos Prompt integration. (Configuration properties for AgentScope Nacos Prompt integration.)}
  * Configuration properties for AgentScope Nacos Prompt integration.
  *
  * <p>This configuration allows users to drive the Agent's system prompt from Nacos. The
@@ -54,28 +55,33 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class AgentScopeNacosPromptProperties extends BaseNacosProperties {
 
     /**
+     * {@summary Configuration properties for AgentScope Nacos Prompt integration. (Configuration properties for AgentScope Nacos Prompt integration.)}
      * Whether Nacos prompt integration is enabled.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary Configuration properties for AgentScope Nacos Prompt integration. (Configuration properties for AgentScope Nacos Prompt integration.)}
      * The promptKey used to locate the system prompt in Nacos.
      */
     private String sysPromptKey;
 
     /**
+     * {@summary Configuration properties for AgentScope Nacos Prompt integration. (Configuration properties for AgentScope Nacos Prompt integration.)}
      * Target prompt version (e.g. "1.0.0"). Mutually exclusive with {@link #label}.
      * When both are null, the latest version is used.
      */
     private String version;
 
     /**
+     * {@summary Configuration properties for AgentScope Nacos Prompt integration. (Configuration properties for AgentScope Nacos Prompt integration.)}
      * Target prompt label (e.g. "prod", "staging"). Mutually exclusive with {@link #version}.
      * When both are null, the latest version is used.
      */
     private String label;
 
     /**
+     * {@summary Configuration properties for AgentScope Nacos Prompt integration. (Configuration properties for AgentScope Nacos Prompt integration.)}
      * Template variables used to render the Nacos prompt with {{}} placeholders.
      */
     private Map<String, String> variables = new HashMap<>();

@@ -28,6 +28,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Middleware that enforces per-thread token and model-call budgets. (Middleware that enforces per-thread token and model-call budgets.)}
  * Middleware that enforces per-thread token and model-call budgets.
  *
  * <p>Tracks cumulative model call counts per thread (using

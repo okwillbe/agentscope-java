@@ -28,6 +28,7 @@ import org.redisson.api.options.KeysScanOptions;
 import org.redisson.client.codec.StringCodec;
 
 /**
+ * {@summary Adapter for Redisson Redis client. (Adapter for Redisson Redis client.)}
  * Adapter for Redisson Redis client.
  *
  * <p>Redisson provides a comprehensive Redis client that automatically handles different deployment
@@ -123,6 +124,7 @@ public class RedissonClientAdapter implements RedisClientAdapter {
     }
 
     /**
+     * {@summary Adapter for Redisson Redis client. (Adapter for Redisson Redis client.)}
      * Create adapter from RedissonClient.
      *
      * <p>The RedissonClient can be configured for any deployment mode (standalone, cluster, sentinel, master/slave),

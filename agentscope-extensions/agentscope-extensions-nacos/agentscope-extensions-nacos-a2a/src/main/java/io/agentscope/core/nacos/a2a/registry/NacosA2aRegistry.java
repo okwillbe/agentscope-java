@@ -32,7 +32,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * AgentScope Extensions for Registry A2A AgentCard and A2A instance endpoint to Nacos.
+ * {@summary AgentScope Extensions for Registry A2A AgentCard and A2A instance endpoint to Nacos. (AgentScope Extensions for Registry A2A AgentCard and A2A instance endpoint to Nacos.)}
  */
 public class NacosA2aRegistry {
 

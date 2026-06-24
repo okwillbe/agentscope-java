@@ -34,6 +34,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Handles GitLab webhook deliveries. Single endpoint at (Handles GitLab webhook deliveries. Single endpoint at)}
  * Handles GitLab webhook deliveries. Single endpoint at
  * {@code POST /api/channels/gitlab/{channelId}/webhook}.
  *

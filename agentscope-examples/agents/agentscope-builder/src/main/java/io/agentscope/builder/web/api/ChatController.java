@@ -58,6 +58,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.publisher.Sinks;
 
 /**
+ * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
  * Chat endpoints, scoped to a specific agent.
  *
  * <ul>
@@ -87,6 +88,7 @@ public class ChatController {
     private final AgentActivityStore activity;
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * AgentStateStore keys for which we have already recorded a RUN_SESSION event. Each (userId, agentId)
      * pair gets one entry per process lifetime so the activity log shows one row per session, not
      * one per turn.
@@ -119,6 +121,7 @@ public class ChatController {
     public record ChatResponse(String reply, String sessionKey) {}
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Response for {@link #currentSession}. {@code exists} is {@code true} when a session entry has
      * already been created (i.e. the user has sent at least one message); the frontend uses this to
      * decide whether to fetch turns on mount.
@@ -126,6 +129,7 @@ public class ChatController {
     public record CurrentSessionResponse(String sessionKey, boolean exists) {}
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * SSE streaming endpoint. Emits, in order:
      *
      * <ul>
@@ -212,6 +216,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Returns the deterministic session key for the current (userId, agentId) pair. Used by the
      * Chat tab on mount to rehydrate prior turns before any new message is sent. {@code exists}
      * reflects whether a session entry has been registered yet — when {@code false}, callers should
@@ -280,6 +285,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Emits a single {@code RUN_SESSION} event the first time a (userId, agentId) pair starts a
      * chat in this process. Subsequent turns within the same session are silent. Resetting the
      * session via {@code /reset} clears the cached marker so a fresh session is logged again.
@@ -304,6 +310,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Computes the gateway routing key for a given (userId, agentId) pair. This is the
      * {@link MsgContext#canonicalKey()} the gateway uses to look up (or create) the underlying
      * session — it is <em>not</em> the {@code SessionEntry.sessionKey()} the storage layer uses.
@@ -326,6 +333,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Translates a gateway routing key into the real {@code SessionEntry.sessionKey()}, by
      * scanning registered MAIN sessions for the matching {@code gateKey}. Returns {@code null}
      * when no session has been registered yet (e.g. before the first turn).
@@ -342,6 +350,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * If {@code message} is a recognised slash command, applies the side-effect (e.g. resets the
      * session for this user+agent pair) and returns a synthetic confirmation reply. Returns
      * {@code null} for ordinary messages.
@@ -418,6 +427,7 @@ public class ChatController {
     private record CommandResult(String message) {}
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Core dispatch logic. Always routes through {@link ChatUiChannel#dispatch} so that the
      * {@link io.agentscope.harness.agent.gateway.channel.ChannelRouter} runs uniformly — including for
      * the path-mapped Web UI calls. The URL-supplied {@code agentId} is passed as

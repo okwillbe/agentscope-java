@@ -16,6 +16,7 @@
 package io.agentscope.claw2.runtime.session;
 
 /**
+ * {@summary Scheduling lane for subagent / main work. (Scheduling lane for subagent / main work.)}
  * Scheduling lane for subagent / main work.
  *
  * <p>AgentStateStore serialization (one embedded run at a time per {@code sessionKey}) is implemented
@@ -28,12 +29,14 @@ public enum CommandLane {
     MAIN,
 
     /**
+     * {@summary Scheduling lane for subagent / main work. (Scheduling lane for subagent / main work.)}
      * Background subagent runs ({@code sessions_spawn} child work). Shares a process-wide semaphore
      * so many subagents can progress without unbounded parallelism.
      */
     SUBAGENT,
 
     /**
+     * {@summary Scheduling lane for subagent / main work. (Scheduling lane for subagent / main work.)}
      * Nested / inner hops that must not hold the parent lane slot (avoids deadlock in layered
      * scheduling). Used sparingly for follow-on work that must not count against the subagent pool.
      */

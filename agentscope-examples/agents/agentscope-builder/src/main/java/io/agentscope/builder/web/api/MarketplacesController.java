@@ -45,6 +45,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Per-user skill marketplaces. Each authenticated user manages their own private set of git/nacos (Per-user skill marketplaces. Each authenticated user manages their own private set of git/nacos)}
  * Per-user skill marketplaces. Each authenticated user manages their own private set of git/nacos
  * marketplaces; entries are scoped by the principal's {@code userId} and invisible to anyone else.
  *

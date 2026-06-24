@@ -19,6 +19,7 @@ import java.time.Duration;
 import java.util.UUID;
 
 /**
+ * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
  * Configuration for AgentScope Studio integration.
  *
  * <p>This class holds all configuration parameters needed to connect to and communicate with
@@ -66,6 +67,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the Studio server base URL.
      *
      * @return the Studio URL (default: "http://localhost:3000")
@@ -75,6 +77,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the tracing endpoint URL for pushing messages.
      *
      * @return the tracing URL (default: studioUrl + "/v1/traces")
@@ -84,6 +87,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the project name for this run.
      *
      * @return the project name (default: "UnnamedProject")
@@ -93,6 +97,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the human-readable name for this run.
      *
      * @return the run name (default: "run_" + timestamp)
@@ -102,6 +107,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the unique identifier for this run.
      *
      * @return the run ID (default: random UUID)
@@ -111,6 +117,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the maximum number of HTTP request retries.
      *
      * @return the max retries (default: 3)
@@ -120,6 +127,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the maximum number of WebSocket reconnection attempts.
      *
      * @return the reconnect attempts (default: 3)
@@ -129,6 +137,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the initial delay between reconnection attempts.
      *
      * @return the reconnect delay (default: 1 second)
@@ -138,6 +147,7 @@ public class StudioConfig {
     }
 
     /**
+     * {@summary Configuration for AgentScope Studio integration. (Configuration for AgentScope Studio integration.)}
      * Gets the maximum delay between reconnection attempts.
      *
      * @return the maximum reconnect delay (default: 5 seconds)

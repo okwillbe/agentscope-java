@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope;
 
+/** {@summary DashScopeMultiAgentFormatter (DashScopeMultiAgentFormatter)} */
 import io.agentscope.core.formatter.AbstractBaseFormatter;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeContentPart;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeInput;

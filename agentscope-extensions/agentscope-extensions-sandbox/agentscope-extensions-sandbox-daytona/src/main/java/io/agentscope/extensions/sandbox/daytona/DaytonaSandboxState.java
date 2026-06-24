@@ -17,7 +17,7 @@ package io.agentscope.extensions.sandbox.daytona;
 
 import io.agentscope.harness.agent.sandbox.SandboxState;
 
-/** Serializable state for a Daytona-backed sandbox. */
+/** {@summary Serializable state for a Daytona-backed sandbox. (Serializable state for a Daytona-backed sandbox.)} Serializable state for a Daytona-backed sandbox. */
 public class DaytonaSandboxState extends SandboxState {
 
     public static final String DEFAULT_WORKSPACE_ROOT = "/home/daytona/workspace";

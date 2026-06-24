@@ -45,6 +45,7 @@ import org.xml.sax.SAXException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary TikaReader is a document reader that uses Apache Tika to extract text from various document formats. (TikaReader is a document reader that uses Apache Tika to extract text from various document formats.)}
  * TikaReader is a document reader that uses Apache Tika to extract text from various document formats.
  *
  * <p>It supports various document formats (e.g. DOC, XSL, PDF, PPT ...) and splitting strategies.
@@ -61,11 +62,13 @@ public class TikaReader extends AbstractChunkingReader {
     private static final Logger log = LoggerFactory.getLogger(TikaReader.class);
 
     /**
+     * {@summary TikaReader is a document reader that uses Apache Tika to extract text from various document formats. (TikaReader is a document reader that uses Apache Tika to extract text from various document formats.)}
      * Handler to manage content extraction.
      */
     private final ContentHandler handler;
 
     /**
+     * {@summary TikaReader is a document reader that uses Apache Tika to extract text from various document formats. (TikaReader is a document reader that uses Apache Tika to extract text from various document formats.)}
      * Creates a new TikaReader with the specified configuration.
      *
      * @param chunkSize     the target size for each chunk (interpreted based on strategy)
@@ -84,6 +87,7 @@ public class TikaReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary TikaReader is a document reader that uses Apache Tika to extract text from various document formats. (TikaReader is a document reader that uses Apache Tika to extract text from various document formats.)}
      * Creates a new TikaReader with default settings.
      *
      * <p>Defaults: chunkSize=512, strategy=PARAGRAPH, overlapSize=50, handler=BodyContentHandler(-1)
@@ -151,6 +155,7 @@ public class TikaReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary TikaReader is a document reader that uses Apache Tika to extract text from various document formats. (TikaReader is a document reader that uses Apache Tika to extract text from various document formats.)}
      * Creates Document objects from text chunks with deterministic doc_id.
      *
      * @param chunks the list of text chunks

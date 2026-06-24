@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary LocalSandboxSnapshot (LocalSandboxSnapshot)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,7 @@ import java.util.UUID;
  * <p>Archives are written atomically: the data is first written to a temporary file
  * (prefixed with {@code .}) in the same directory, then moved to the final path using
  * {@link StandardCopyOption#ATOMIC_MOVE}. This ensures the snapshot is either fully
- * written or not present — never partially written.
+ * written or not present ...never partially written.
  *
  * <p>Security: {@code id} must be a single path segment with no {@code /} or {@code ..}
  * characters to prevent path traversal attacks.

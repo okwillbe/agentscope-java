@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Configuration for a single generic-webhook channel — the lightweight HTTP-in / HTTP-out (Configuration for a single generic-webhook channel — the lightweight HTTP-in / HTTP-out)}
  * Configuration for a single generic-webhook channel — the lightweight HTTP-in / HTTP-out
  * side-channel used to invoke a DataAgent from IM / ticketing / CI systems without opening the
  * primary Chat UI.

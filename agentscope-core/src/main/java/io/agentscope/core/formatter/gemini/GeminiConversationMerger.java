@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.gemini;
 
+/** {@summary GeminiConversationMerger (GeminiConversationMerger)} */
 import com.google.genai.types.Content;
 import com.google.genai.types.Part;
 import io.agentscope.core.message.AudioBlock;

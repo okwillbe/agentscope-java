@@ -22,6 +22,7 @@ import io.agentscope.harness.agent.HarnessAgent;
 import java.util.List;
 
 /**
+ * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
  * Per-agent section in {@code agentscope.json} under {@code agents.<agentId>}.
  *
  * <p>After the agent is built, {@link HarnessAgent} automatically loads additional
@@ -51,6 +52,7 @@ public class AgentConfigEntry {
     private String sysPrompt;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Workspace root for this agent. Relative paths are resolved against the bootstrap working
      * directory.
      */
@@ -64,6 +66,7 @@ public class AgentConfigEntry {
     private String environmentMemory;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Legacy single-repository field. Retained for backward compatibility with existing {@code
      * agentscope.json} files. New configurations should prefer {@link #skillRepositories}. When
      * both are set the singular value is prepended to the list.
@@ -76,6 +79,7 @@ public class AgentConfigEntry {
     private List<SkillRepositoryConfigEntry> skillRepositories;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Optional model id override (e.g. {@code "anthropic/claude-opus-4-7"}). When null the
      * bootstrap-level model is used.
      */
@@ -83,6 +87,7 @@ public class AgentConfigEntry {
     private String model;
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Tool allow / deny lists. Only tools whose name is in {@code allow} are offered to the agent
      * (when non-empty). Tools in {@code deny} are always removed regardless of {@code allow}.
      */
@@ -174,6 +179,7 @@ public class AgentConfigEntry {
     }
 
     /**
+     * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
      * Returns the effective ordered list of skill repository configs, merging the legacy {@link
      * #skillRepository} (singular) into the head of {@link #skillRepositories}. Returns an empty
      * list when neither is set.
@@ -306,6 +312,7 @@ public class AgentConfigEntry {
     public static class GroupChatConfig {
 
         /**
+         * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
          * List of patterns (exact strings or prefixes) that trigger the agent in group messages.
          * When empty the agent responds to all messages in the group.
          */
@@ -313,6 +320,7 @@ public class AgentConfigEntry {
         private List<String> mentionPatterns;
 
         /**
+         * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
          * When {@code true} the agent only responds when a mention pattern matches. Defaults to
          * {@code false} (respond to all).
          */
@@ -341,6 +349,7 @@ public class AgentConfigEntry {
     public static class SandboxConfig {
 
         /**
+         * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
          * Sandbox mode. One of: {@code "off"} (default, no sandbox), {@code "all"} (always
          * sandboxed), {@code "prompt"} (user-approved per session).
          */
@@ -348,6 +357,7 @@ public class AgentConfigEntry {
         private String mode;
 
         /**
+         * {@summary Workspace root for this agent. Relative paths are resolved against the bootstrap working (Workspace root for this agent. Relative paths are resolved against the bootstrap working)}
          * Sandbox scope. One of: {@code "agent"} (one container per agent), {@code "session"}
          * (one container per session), {@code "shared"} (shared across agents).
          */

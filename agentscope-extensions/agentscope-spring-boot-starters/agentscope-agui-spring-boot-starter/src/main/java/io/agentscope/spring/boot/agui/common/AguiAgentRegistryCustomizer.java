@@ -19,6 +19,7 @@ import io.agentscope.core.agui.registry.AguiAgentRegistry;
 import java.util.function.Consumer;
 
 /**
+ * {@summary Accept and invoke the given agent registry. (Accept and invoke the given agent registry.)}
  * Customizer for {@link AguiAgentRegistry}.
  *
  * <p>Example usage:
@@ -39,6 +40,7 @@ import java.util.function.Consumer;
 public interface AguiAgentRegistryCustomizer extends Consumer<AguiAgentRegistry> {
 
     /**
+     * {@summary Accept and invoke the given agent registry. (Accept and invoke the given agent registry.)}
      * Customize the {@link AguiAgentRegistry}.
      *
      * @param registry the registry to customize
@@ -46,6 +48,7 @@ public interface AguiAgentRegistryCustomizer extends Consumer<AguiAgentRegistry>
     void customize(AguiAgentRegistry registry);
 
     /**
+     * {@summary Accept and invoke the given agent registry. (Accept and invoke the given agent registry.)}
      * Accept and invoke the given agent registry.
      * @param registry the agent registry
      */

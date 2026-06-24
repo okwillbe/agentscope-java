@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary Channel (Channel)} */
 import io.agentscope.core.event.AgentEvent;
 import io.agentscope.core.message.Msg;
 import io.agentscope.harness.agent.gateway.Gateway;
@@ -23,21 +24,21 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Channel adapter — ingests inbound messages from one messaging platform (or a programmatic
+ * Channel adapter ...ingests inbound messages from one messaging platform (or a programmatic
  * caller), routes them through {@link ChannelRouter} to resolve the target agent and session, and
  * delegates execution to {@link Gateway}.
  *
  * <h2>Lifecycle</h2>
  *
  * <ol>
- *   <li>{@link #init(Gateway)} — called by the gateway bootstrap to inject the auto-wired
+ *   <li>{@link #init(Gateway)} ...called by the gateway bootstrap to inject the auto-wired
  *       {@link Gateway} before start-up. Implementations should store the gateway and perform any
  *       pre-connection setup. The default is a no-op for channels that receive the gateway at
  *       construction time.
- *   <li>{@link #start()} — connects to the external event source (webhook endpoint, long-poll,
+ *   <li>{@link #start()} ...connects to the external event source (webhook endpoint, long-poll,
  *       websocket, etc.) and begins dispatching inbound messages. Programmatic channels may
  *       implement this as a no-op.
- *   <li>{@link #stop()} — disconnects and releases resources.
+ *   <li>{@link #stop()} ...disconnects and releases resources.
  * </ol>
  *
  * <h2>Message dispatch</h2>

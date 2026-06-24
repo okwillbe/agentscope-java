@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary AbstractBaseSandbox (AbstractBaseSandbox)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshot;
 import java.io.ByteArrayInputStream;
@@ -29,20 +30,20 @@ import org.slf4j.LoggerFactory;
  *
  * <h2>4-Branch Start Logic</h2>
  * <pre>
- * Branch A: workspaceRootReady=true  &amp; workspace dir exists   → apply ephemeral-only entries
- * Branch B: workspaceRootReady=true  &amp; workspace dir missing  → restore from snapshot + ephemeral entries
- * Branch C: workspaceRootReady=false &amp; snapshot is restorable → hydrate from snapshot + all entries
- * Branch D: workspaceRootReady=false &amp; no restorable snapshot → fresh init from full workspace spec
+ * Branch A: workspaceRootReady=true  &amp; workspace dir exists   鈫?apply ephemeral-only entries
+ * Branch B: workspaceRootReady=true  &amp; workspace dir missing  鈫?restore from snapshot + ephemeral entries
+ * Branch C: workspaceRootReady=false &amp; snapshot is restorable 鈫?hydrate from snapshot + all entries
+ * Branch D: workspaceRootReady=false &amp; no restorable snapshot 鈫?fresh init from full workspace spec
  * </pre>
  *
  * <p>Subclasses implement the backend-specific operations:
  * <ul>
- *   <li>{@link #doExec(RuntimeContext, String, int)} — execute a shell command in the workspace</li>
- *   <li>{@link #doPersistWorkspace()} — create a tar archive of the workspace</li>
- *   <li>{@link #doHydrateWorkspace(InputStream)} — extract a tar archive into the workspace</li>
- *   <li>{@link #doSetupWorkspace()} — create the workspace root directory</li>
- *   <li>{@link #doDestroyWorkspace()} — delete the workspace root directory (on shutdown)</li>
- *   <li>{@link #getWorkspaceRoot()} — return the workspace root path string</li>
+ *   <li>{@link #doExec(RuntimeContext, String, int)} ...execute a shell command in the workspace</li>
+ *   <li>{@link #doPersistWorkspace()} ...create a tar archive of the workspace</li>
+ *   <li>{@link #doHydrateWorkspace(InputStream)} ...extract a tar archive into the workspace</li>
+ *   <li>{@link #doSetupWorkspace()} ...create the workspace root directory</li>
+ *   <li>{@link #doDestroyWorkspace()} ...delete the workspace root directory (on shutdown)</li>
+ *   <li>{@link #getWorkspaceRoot()} ...return the workspace root path string</li>
  * </ul>
  */
 public abstract class AbstractBaseSandbox implements Sandbox {
@@ -73,15 +74,15 @@ public abstract class AbstractBaseSandbox implements Sandbox {
 
         try {
             if (state.isWorkspaceRootReady()) {
-                // Workspace was ready at last stop — check if it still exists
+                // Workspace was ready at last stop ...check if it still exists
                 boolean stillExists = probeWorkspaceRootForPreservedResume();
                 if (stillExists) {
-                    // Branch A: workspace preserved — only apply ephemeral entries
+                    // Branch A: workspace preserved ...only apply ephemeral entries
                     log.debug(
                             "[sandbox] Branch A: workspace preserved, applying ephemeral entries");
                     workspaceSpecApplier.applyWorkspaceSpec(spec, true);
                 } else {
-                    // Branch B: workspace was lost — restore from snapshot + ephemeral entries
+                    // Branch B: workspace was lost ...restore from snapshot + ephemeral entries
                     log.debug("[sandbox] Branch B: workspace lost, restoring from snapshot");
                     if (snapshot != null && snapshot.isRestorable()) {
                         doSetupWorkspace();

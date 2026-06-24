@@ -32,6 +32,7 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 /**
+ * {@summary Spring Boot auto-configuration for AG-UI WebFlux integration. (Spring Boot auto-configuration for AG-UI WebFlux integration.)}
  * Spring Boot auto-configuration for AG-UI WebFlux integration.
  *
  * <p>This auto-configuration provides:
@@ -53,6 +54,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 public class AgentscopeAguiWebFluxAutoConfiguration {
 
     /**
+     * {@summary Spring Boot auto-configuration for AG-UI WebFlux integration. (Spring Boot auto-configuration for AG-UI WebFlux integration.)}
      * Creates the thread session manager bean.
      *
      * @param props The configuration properties
@@ -66,6 +68,7 @@ public class AgentscopeAguiWebFluxAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for AG-UI WebFlux integration. (Spring Boot auto-configuration for AG-UI WebFlux integration.)}
      * Creates the AG-UI WebFlux handler bean.
      *
      * @param registry The agent registry
@@ -97,6 +100,7 @@ public class AgentscopeAguiWebFluxAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for AG-UI WebFlux integration. (Spring Boot auto-configuration for AG-UI WebFlux integration.)}
      * Creates the router function for AG-UI endpoints.
      *
      * <p>Provides two routes:

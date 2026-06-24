@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * {@summary Register a QuartzAgentScheduler instance with the given ID. (Register a QuartzAgentScheduler instance with the given ID.)}
  * Registry for {@link QuartzAgentScheduler} instances.
  *
  * <p>This registry allows {@link AgentQuartzJob}s to locate the scheduler instance
@@ -30,6 +31,7 @@ class QuartzAgentSchedulerRegistry {
     private static final Map<String, QuartzAgentScheduler> REGISTRY = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Register a QuartzAgentScheduler instance with the given ID. (Register a QuartzAgentScheduler instance with the given ID.)}
      * Register a QuartzAgentScheduler instance with the given ID.
      *
      * @param id       The ID to associate with the scheduler
@@ -40,6 +42,7 @@ class QuartzAgentSchedulerRegistry {
     }
 
     /**
+     * {@summary Register a QuartzAgentScheduler instance with the given ID. (Register a QuartzAgentScheduler instance with the given ID.)}
      * Unregister the QuartzAgentScheduler instance associated with the given ID.
      *
      * @param id The ID of the scheduler to unregister
@@ -49,6 +52,7 @@ class QuartzAgentSchedulerRegistry {
     }
 
     /**
+     * {@summary Register a QuartzAgentScheduler instance with the given ID. (Register a QuartzAgentScheduler instance with the given ID.)}
      * Get the QuartzAgentScheduler instance associated with the given ID.
      *
      * @param id The ID of the scheduler to retrieve

@@ -27,6 +27,7 @@ import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
 /**
+ * {@summary AgentscopeDoctorEndpoint class ()}
  * {@code GET /actuator/agentscope-doctor}: opinionated self-check.
  *
  * <p>Each check has an outcome ({@code ok}, {@code warn}, {@code error}) plus a short message.

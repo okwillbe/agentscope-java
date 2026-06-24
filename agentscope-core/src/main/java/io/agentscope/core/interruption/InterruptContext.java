@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.interruption;
 
+/** {@summary InterruptContext (InterruptContext)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.ToolUseBlock;
 import java.time.Instant;

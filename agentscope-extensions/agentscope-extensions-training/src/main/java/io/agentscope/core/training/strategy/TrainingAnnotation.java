@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
  * TrainingAnnotation represents a training annotation for an agent call.
  *
  * <p>It contains:
@@ -53,6 +54,7 @@ public class TrainingAnnotation {
     private final long timestamp;
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Private constructor for builder pattern.
      */
     private TrainingAnnotation(
@@ -90,6 +92,7 @@ public class TrainingAnnotation {
     }
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Check if this annotation has expired based on the given TTL.
      *
      * @param ttlMillis Time-to-live in milliseconds
@@ -100,6 +103,7 @@ public class TrainingAnnotation {
     }
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Create a simple enabled annotation without labels or metadata.
      */
     public static TrainingAnnotation enabled() {
@@ -107,6 +111,7 @@ public class TrainingAnnotation {
     }
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Create an enabled annotation with labels.
      */
     public static TrainingAnnotation withLabels(String... labels) {
@@ -114,6 +119,7 @@ public class TrainingAnnotation {
     }
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Create an enabled annotation with labels and metadata.
      */
     public static TrainingAnnotation withLabelsAndMetadata(
@@ -126,6 +132,7 @@ public class TrainingAnnotation {
     }
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Create a builder for TrainingAnnotation.
      */
     public static Builder builder() {
@@ -166,6 +173,7 @@ public class TrainingAnnotation {
     }
 
     /**
+     * {@summary TrainingAnnotation represents a training annotation for an agent call. (TrainingAnnotation represents a training annotation for an agent call.)}
      * Builder class for TrainingAnnotation.
      */
     public static class Builder {

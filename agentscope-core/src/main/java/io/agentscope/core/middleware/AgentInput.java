@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.middleware;
 
+/** {@summary AgentInput (AgentInput)} */
 import io.agentscope.core.message.Msg;
 import java.util.List;
 

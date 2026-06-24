@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.compaction;
 
+/** {@summary ToolResultEvictionConfig (ToolResultEvictionConfig)} */
 import java.util.Set;
 
 /**
@@ -28,8 +29,8 @@ import java.util.Set;
  *
  * <p>This mechanism is <b>orthogonal</b> to conversation summarization ({@link CompactionConfig}):
  * <ul>
- *   <li><b>Eviction</b> addresses context <em>width</em> — individual messages that are too large.</li>
- *   <li><b>Compaction</b> addresses context <em>depth</em> — too many accumulated messages.</li>
+ *   <li><b>Eviction</b> addresses context <em>width</em> ...individual messages that are too large.</li>
+ *   <li><b>Compaction</b> addresses context <em>depth</em> ...too many accumulated messages.</li>
  * </ul>
  * Both operate independently on different trigger conditions and different lifecycle events.
  *
@@ -42,7 +43,7 @@ import java.util.Set;
  */
 public class ToolResultEvictionConfig {
 
-    /** ~20 K tokens × 4 chars/token — default eviction threshold. */
+    /** ~20 K tokens 脳 4 chars/token ...default eviction threshold. */
     public static final int DEFAULT_MAX_RESULT_CHARS = 80_000;
 
     /** Characters to show at head and tail in the eviction placeholder preview. */
@@ -55,10 +56,10 @@ public class ToolResultEvictionConfig {
      * Tools excluded from eviction by default.
      *
      * <ul>
-     *   <li>{@code read_file} — evicting would cause re-read loops; pagination handles size</li>
-     *   <li>{@code write_file}, {@code edit_file} — return tiny success messages</li>
-     *   <li>{@code grep_files}, {@code glob_files}, {@code list_files} — self-limiting outputs</li>
-     *   <li>{@code memory_search}, {@code memory_get}, {@code session_search} — small/paginated results</li>
+     *   <li>{@code read_file} ...evicting would cause re-read loops; pagination handles size</li>
+     *   <li>{@code write_file}, {@code edit_file} ...return tiny success messages</li>
+     *   <li>{@code grep_files}, {@code glob_files}, {@code list_files} ...self-limiting outputs</li>
+     *   <li>{@code memory_search}, {@code memory_get}, {@code session_search} ...small/paginated results</li>
      * </ul>
      *
      * Shell ({@code execute}) is intentionally NOT excluded: command output can be very large.

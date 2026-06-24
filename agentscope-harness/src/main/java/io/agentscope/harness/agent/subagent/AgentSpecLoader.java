@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent;
 
+/** {@summary AgentSpecLoader (AgentSpecLoader)} */
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import io.agentscope.core.agent.RuntimeContext;
@@ -258,7 +259,7 @@ public final class AgentSpecLoader {
         if (workspacePath != null && !body.isBlank()) {
             log.warn(
                     "Subagent declaration '{}' has both workspace.path and a non-empty body;"
-                            + " body will be ignored — put the system prompt in"
+                            + " body will be ignored ...put the system prompt in"
                             + " {}/AGENTS.md instead",
                     name,
                     workspacePath);
@@ -394,7 +395,7 @@ public final class AgentSpecLoader {
         try {
             return Double.parseDouble(s);
         } catch (NumberFormatException e) {
-            log.warn("Failed to parse numeric value '{}' — treating as unset", s);
+            log.warn("Failed to parse numeric value '{}' ...treating as unset", s);
             return null;
         }
     }

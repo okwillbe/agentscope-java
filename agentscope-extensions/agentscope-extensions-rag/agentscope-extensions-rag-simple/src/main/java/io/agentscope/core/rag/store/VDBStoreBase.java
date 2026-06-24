@@ -21,6 +21,7 @@ import java.util.List;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Interface for vector database storage. (Interface for vector database storage.)}
  * Interface for vector database storage.
  *
  * <p>This interface provides a unified API for storing and searching vector embeddings.
@@ -39,6 +40,7 @@ import reactor.core.publisher.Mono;
 public interface VDBStoreBase {
 
     /**
+     * {@summary Interface for vector database storage. (Interface for vector database storage.)}
      * Adds multiple documents to the store.
      *
      * <p>All documents must have embedding vectors set. The store will persist both
@@ -53,6 +55,7 @@ public interface VDBStoreBase {
     Mono<Void> add(List<Document> documents);
 
     /**
+     * {@summary Interface for vector database storage. (Interface for vector database storage.)}
      * Searches for similar documents.
      *
      * <p>This method performs vector similarity search and returns the most similar documents.
@@ -66,6 +69,7 @@ public interface VDBStoreBase {
     Mono<List<Document>> search(SearchDocumentDto searchDocumentDto);
 
     /**
+     * {@summary Interface for vector database storage. (Interface for vector database storage.)}
      * Deletes a document from the store (optional).
      *
      * <p>Default implementation throws UnsupportedOperationException. Vector stores

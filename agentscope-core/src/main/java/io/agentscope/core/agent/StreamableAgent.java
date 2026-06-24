@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary StreamableAgent (StreamableAgent)} */
 import com.fasterxml.jackson.databind.JsonNode;
 import io.agentscope.core.message.Msg;
 import java.util.List;
@@ -35,7 +36,7 @@ import reactor.core.publisher.Flux;
  *
  * @deprecated since 2.0.0, for removal in a future minor release. Every {@code stream(...)}
  *     method on this interface returns the coarse-grained {@link Event} type, which is a v1
- *     carry-over. Use {@code ReActAgent#streamEvents(...)} instead — it returns
+ *     carry-over. Use {@code ReActAgent#streamEvents(...)} instead 鈥?it returns
  *     {@code Flux<io.agentscope.core.event.AgentEvent>}, the fine-grained event hierarchy that
  *     covers the full agent lifecycle (28 typed events including HITL) and is the single
  *     streaming surface going forward. See the v2 changelog section B.4 for migration details.

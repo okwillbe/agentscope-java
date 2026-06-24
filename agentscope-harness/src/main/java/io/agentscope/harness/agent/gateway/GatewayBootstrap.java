@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary GatewayBootstrap (GatewayBootstrap)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.harness.agent.DistributedStore;
 import io.agentscope.harness.agent.HarnessAgent;
@@ -35,7 +36,7 @@ import java.util.function.Consumer;
  * Multi-agent + channel routing bootstrap. The primary user-facing entry point for building a
  * gateway-managed agent system.
  *
- * <h2>Minimal usage — single agent + ChatUI</h2>
+ * <h2>Minimal usage ...single agent + ChatUI</h2>
  *
  * <pre>{@code
  * HarnessAgent agent = HarnessAgent.builder()

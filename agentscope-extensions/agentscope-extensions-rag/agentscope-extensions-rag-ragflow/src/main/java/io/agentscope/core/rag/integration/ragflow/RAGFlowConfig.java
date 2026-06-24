@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
  * Configuration for RAGFlow integration.
  *
  * <p>This class holds the configuration for connecting to RAGFlow service, including
@@ -125,6 +126,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the dataset IDs.
      *
      * <p>These IDs are used in the API request body: {@code "dataset_ids": ["id1", "id2"]}
@@ -136,6 +138,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the document IDs to filter retrieval.
      *
      * <p>Optional: If specified, only search within these documents.
@@ -147,6 +150,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the top K value for retrieval.
      *
      * <p>Default value: 5 (as per RAGFlow API documentation)
@@ -158,6 +162,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the similarity threshold for filtering results.
      *
      * <p>Default value: 0.2 (as per RAGFlow API documentation)
@@ -169,6 +174,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the vector similarity weight.
      *
      * <p>The weight of vector cosine similarity. If x represents the weight,
@@ -183,6 +189,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the page number for pagination.
      *
      * <p>Default value: 1
@@ -194,6 +201,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the page size for pagination.
      *
      * <p>Default value: 30
@@ -205,6 +213,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets whether to use knowledge graph for multi-hop queries.
      *
      * <p>Default value: false
@@ -216,6 +225,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets whether to use TOC (Table of Contents) enhancement.
      *
      * <p>Default value: false
@@ -227,6 +237,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the rerank model ID.
      *
      * @return the rerank model ID, or null if not set
@@ -236,6 +247,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets whether keyword-based matching is enabled.
      *
      * <p>Default value: false
@@ -247,6 +259,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets whether highlighting of matched terms is enabled.
      *
      * <p>Default value: false
@@ -258,6 +271,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the list of languages for cross-language retrieval.
      *
      * @return the list of target languages, or null if not set
@@ -267,6 +281,7 @@ public class RAGFlowConfig {
     }
 
     /**
+     * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
      * Gets the metadata filtering conditions.
      *
      * <p>This is used to filter chunks based on their metadata fields. For example:
@@ -337,6 +352,7 @@ public class RAGFlowConfig {
         private Map<String, String> customHeaders = new HashMap<>();
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the RAGFlow API key.
          *
          * @param apiKey the API key (required)
@@ -348,6 +364,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the RAGFlow base URL.
          *
          * <p>Default: http://localhost:9380
@@ -361,6 +378,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the dataset IDs (replaces existing list).
          *
          * <p>These are the IDs of RAGFlow datasets to search in. You can find these IDs in the
@@ -375,6 +393,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Adds a single dataset ID to the list.
          *
          * @param datasetId the dataset ID to add
@@ -386,6 +405,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the document IDs to filter retrieval (optional).
          *
          * <p>If specified, only search within these documents.
@@ -399,6 +419,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Adds a single document ID to the filter list.
          *
          * @param documentId the document ID to add
@@ -413,6 +434,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the top K value for retrieval.
          *
          * <p>Default: 5
@@ -429,6 +451,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the similarity threshold.
          *
          * <p>Only chunks with similarity >= threshold will be returned.
@@ -449,6 +472,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the vector similarity weight.
          *
          * <p>The weight of vector cosine similarity. If x represents the weight,
@@ -470,6 +494,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the page number for pagination.
          *
          * <p>Default: 1
@@ -486,6 +511,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the page size for pagination.
          *
          * <p>Default: 30
@@ -502,6 +528,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets whether to use knowledge graph for multi-hop queries.
          *
          * <p>Before enabling this, ensure you have successfully constructed
@@ -518,6 +545,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets whether to use TOC (Table of Contents) enhancement.
          *
          * <p>Before enabling this, ensure you have enabled TOC_Enhance and
@@ -534,6 +562,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the rerank model ID.
          *
          * @param rerankId the rerank model ID
@@ -545,6 +574,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets whether to enable keyword-based matching.
          *
          * <p>Default: false
@@ -558,6 +588,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets whether to enable highlighting of matched terms in results.
          *
          * <p>Default: false
@@ -571,6 +602,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the languages for cross-language retrieval.
          *
          * <p>The languages that should be translated into, in order to achieve
@@ -585,6 +617,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Adds a language for cross-language retrieval.
          *
          * @param language the target language to add
@@ -599,6 +632,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the metadata filtering condition.
          *
          * <p>Use this to filter chunks based on their metadata. For example:
@@ -620,6 +654,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the HTTP timeout.
          *
          * <p>Default: 30 seconds
@@ -633,6 +668,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets the maximum number of retries for failed requests.
          *
          * <p>Default: 3
@@ -649,6 +685,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Sets custom HTTP headers.
          *
          * @param customHeaders the custom headers map
@@ -660,6 +697,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Adds a custom HTTP header.
          *
          * @param key the header name
@@ -672,6 +710,7 @@ public class RAGFlowConfig {
         }
 
         /**
+         * {@summary Configuration for RAGFlow integration. (Configuration for RAGFlow integration.)}
          * Builds the RAGFlowConfig instance.
          *
          * <p>Either dataset_ids or document_ids must be set (or both).

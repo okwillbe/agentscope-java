@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.properties;
 
 /**
+ * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
  * OpenAI provider specific settings.
  *
  * <p>Example configuration:
@@ -36,26 +37,31 @@ package io.agentscope.spring.boot.properties;
 public class OpenAIProperties {
 
     /**
+     * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
      * Whether OpenAI model auto-configuration is enabled.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
      * OpenAI API key.
      */
     private String apiKey;
 
     /**
+     * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
      * OpenAI model name, for example {@code gpt-4.1-mini}.
      */
     private String modelName = "gpt-4.1-mini";
 
     /**
+     * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
      * Optional base URL for compatible OpenAI endpoints.
      */
     private String baseUrl;
 
     /**
+     * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
      * Optional endpoint path for compatible OpenAI endpoints.
      * <p>Allows customization for OpenAI-compatible APIs that use different
      * endpoint paths than the standard OpenAI API (e.g., "/v4/chat/completions").
@@ -63,6 +69,7 @@ public class OpenAIProperties {
     private String endpointPath;
 
     /**
+     * {@summary OpenAI provider specific settings. (OpenAI provider specific settings.)}
      * Whether streaming responses are enabled.
      */
     private boolean stream = true;

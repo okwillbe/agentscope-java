@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary ChannelRouter (ChannelRouter)} */
 import io.agentscope.harness.agent.gateway.MsgContext;
 import java.util.List;
 import java.util.Map;
@@ -27,18 +28,18 @@ import java.util.Objects;
  * <h2>Binding evaluation tiers (highest to lowest priority)</h2>
  *
  * <ol>
- *   <li><b>explicit</b> — {@link InboundMessage#preferredAgentId()} short-circuit when the caller
+ *   <li><b>explicit</b> ...{@link InboundMessage#preferredAgentId()} short-circuit when the caller
  *       has already nominated a specific agent. Bindings are still consulted to determine
  *       {@code sessionScope} and outbound addressing.
- *   <li><b>peer</b> — exact {@link Peer#key()} match (e.g. {@code "direct:u_42"})
- *   <li><b>peer.parent</b> — exact match on the thread-parent peer's key
- *   <li><b>guild + roles</b> — guild id matches AND sender holds at least one of the binding's
+ *   <li><b>peer</b> ...exact {@link Peer#key()} match (e.g. {@code "direct:u_42"})
+ *   <li><b>peer.parent</b> ...exact match on the thread-parent peer's key
+ *   <li><b>guild + roles</b> ...guild id matches AND sender holds at least one of the binding's
  *       roles
- *   <li><b>guild</b> — guild id matches (no role constraint)
- *   <li><b>team</b> — team id matches
- *   <li><b>account</b> — account id matches
- *   <li><b>channel</b> — channel id matches
- *   <li><b>default</b> — {@link ChannelConfig#defaultAgentId()} or {@code globalDefaultAgentId}
+ *   <li><b>guild</b> ...guild id matches (no role constraint)
+ *   <li><b>team</b> ...team id matches
+ *   <li><b>account</b> ...account id matches
+ *   <li><b>channel</b> ...channel id matches
+ *   <li><b>default</b> ...{@link ChannelConfig#defaultAgentId()} or {@code globalDefaultAgentId}
  * </ol>
  *
  * <p>Within each tier the first binding in {@link ChannelConfig#bindings()} list order that
@@ -50,10 +51,10 @@ import java.util.Objects;
  * MsgContext#canonicalKey()} produces a stable session key:
  *
  * <ul>
- *   <li>DM + {@link DmScope#MAIN} — {@code channel} field only; all DMs share one session
- *   <li>DM + other scopes — room = peerId (optionally group = accountId)
- *   <li>Thread — room = parentPeer id, threadId = peer id
- *   <li>Non-DM channel/group — room = peer id, group = guild
+ *   <li>DM + {@link DmScope#MAIN} ...{@code channel} field only; all DMs share one session
+ *   <li>DM + other scopes ...room = peerId (optionally group = accountId)
+ *   <li>Thread ...room = parentPeer id, threadId = peer id
+ *   <li>Non-DM channel/group ...room = peer id, group = guild
  * </ul>
  *
  * The resolved {@code agentId} is always included in {@link MsgContext#extra()} under key {@code

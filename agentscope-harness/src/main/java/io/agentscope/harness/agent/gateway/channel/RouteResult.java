@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary RouteResult (RouteResult)} */
 import io.agentscope.harness.agent.gateway.MsgContext;
 
 /**

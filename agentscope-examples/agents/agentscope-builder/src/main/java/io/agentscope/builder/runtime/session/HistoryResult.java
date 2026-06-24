@@ -15,6 +15,6 @@
  */
 package io.agentscope.builder.runtime.session;
 
-/** Result of reading a session transcript file. */
+/** {@summary Result of reading a session transcript file. (Result of reading a session transcript file.)} Result of reading a session transcript file. */
 public record HistoryResult(
         String sessionKey, String sessionFilePath, String content, String error) {}

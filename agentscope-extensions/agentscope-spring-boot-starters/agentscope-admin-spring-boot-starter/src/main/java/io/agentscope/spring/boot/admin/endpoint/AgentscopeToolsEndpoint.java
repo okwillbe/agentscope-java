@@ -21,7 +21,8 @@ import java.util.Map;
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
-/** {@code GET /actuator/agentscope-tools}: per-Toolkit-bean list of registered tools. */
+/**
+ * {@summary AgentscopeToolsEndpoint (AgentscopeToolsEndpoint)} {@code GET /actuator/agentscope-tools}: per-Toolkit-bean list of registered tools. */
 @Endpoint(id = "agentscope-tools")
 public class AgentscopeToolsEndpoint {
 

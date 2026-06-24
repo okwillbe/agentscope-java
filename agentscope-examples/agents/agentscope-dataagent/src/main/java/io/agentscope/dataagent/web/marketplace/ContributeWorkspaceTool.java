@@ -27,6 +27,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
+ * {@summary Agent-facing tool for nominating workspace files for promotion to the shared workspace. The (Agent-facing tool for nominating workspace files for promotion to the shared workspace. The)}
  * Agent-facing tool for nominating workspace files for promotion to the shared workspace. The
  * tool records a {@code PENDING} {@link ContributionEntity}; an admin must approve before the
  * payload is materialised under {@code shared/agents/<targetAgentId>/<type>/<path>}.
@@ -135,6 +136,7 @@ public final class ContributeWorkspaceTool {
     }
 
     /**
+     * {@summary Agent-facing tool for nominating workspace files for promotion to the shared workspace. The (Agent-facing tool for nominating workspace files for promotion to the shared workspace. The)}
      * Reads each comma-separated source path from the caller's sandbox and builds the FileEntry
      * list. For multi-file skill bundles the FileEntry's relPath is set to the file's basename;
      * for single-file target types the relPath is empty (the service routes it to the appropriate

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary AgentEventType (AgentEventType)} */
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -27,12 +28,12 @@ import com.fasterxml.jackson.annotation.JsonValue;
  *
  * <p>Legacy aliases recognised on deserialization:
  * <ul>
- *   <li>{@code RUN_STARTED}, {@code REPLY_START} → {@link #AGENT_START}</li>
- *   <li>{@code RUN_FINISHED}, {@code REPLY_END} → {@link #AGENT_END}</li>
- *   <li>{@code MODEL_CALL_STARTED} → {@link #MODEL_CALL_START}</li>
- *   <li>{@code MODEL_CALL_ENDED} → {@link #MODEL_CALL_END}</li>
- *   <li>{@code BINARY_BLOCK_*} → {@code DATA_BLOCK_*}</li>
- *   <li>{@code TOOL_RESULT_BINARY_DELTA} → {@link #TOOL_RESULT_DATA_DELTA}</li>
+ *   <li>{@code RUN_STARTED}, {@code REPLY_START} 鈫?{@link #AGENT_START}</li>
+ *   <li>{@code RUN_FINISHED}, {@code REPLY_END} 鈫?{@link #AGENT_END}</li>
+ *   <li>{@code MODEL_CALL_STARTED} 鈫?{@link #MODEL_CALL_START}</li>
+ *   <li>{@code MODEL_CALL_ENDED} 鈫?{@link #MODEL_CALL_END}</li>
+ *   <li>{@code BINARY_BLOCK_*} 鈫?{@code DATA_BLOCK_*}</li>
+ *   <li>{@code TOOL_RESULT_BINARY_DELTA} 鈫?{@link #TOOL_RESULT_DATA_DELTA}</li>
  * </ul>
  *
  * <p>Serialization always emits the canonical form.
@@ -119,7 +120,7 @@ public enum AgentEventType {
                 return type;
             }
         }
-        // Legacy aliases — keep the mapping co-located with the enum for grep-ability.
+        // Legacy aliases 鈥?keep the mapping co-located with the enum for grep-ability.
         return switch (raw) {
             case "RUN_STARTED", "REPLY_START" -> AGENT_START;
             case "RUN_FINISHED", "REPLY_END" -> AGENT_END;

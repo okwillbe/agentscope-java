@@ -21,6 +21,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary Constructs the system prompt for the coding agent. (Constructs the system prompt for the coding agent.)}
  * Constructs the system prompt for the coding agent.
  *
  * <p>Mirrors {@code agent/prompt.py} from open-swe-main. The prompt is assembled from sections:
@@ -44,6 +45,7 @@ public final class CodingSystemPrompt {
     }
 
     /**
+     * {@summary Constructs the system prompt for the coding agent. (Constructs the system prompt for the coding agent.)}
      * Builds the full system prompt.
      *
      * @param workingDir sandbox working directory

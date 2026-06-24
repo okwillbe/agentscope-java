@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.rag.model;
 
+/** {@summary RetrieveConfig (RetrieveConfig)} */
 import io.agentscope.core.message.Msg;
 import java.util.List;
 

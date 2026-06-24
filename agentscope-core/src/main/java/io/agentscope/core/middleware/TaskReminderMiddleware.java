@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.middleware;
 
+/** {@summary TaskReminderMiddleware (TaskReminderMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -60,7 +61,7 @@ public class TaskReminderMiddleware implements MiddlewareBase {
             You have a `todo_write` tool that maintains a structured task list for this session.
             Use it for multi-step work: capture the plan as todos, keep exactly one task
             `in_progress`, and update the whole list as you make progress. Your current list (if
-            any) is shown to you before each step inside a `<system-reminder>` block — treat that
+            any) is shown to you before each step inside a `<system-reminder>` block 鈥?treat that
             block as the source of truth for task status.\
             """;
 
@@ -103,7 +104,7 @@ public class TaskReminderMiddleware implements MiddlewareBase {
         StringBuilder sb = new StringBuilder();
         sb.append("<system-reminder>\n");
         sb.append(
-                "Your current todo list is shown below. This is the source of truth — do not"
+                "Your current todo list is shown below. This is the source of truth 鈥?do not"
                         + " assume earlier statuses still hold. Keep exactly one task in_progress."
                         + " Update the whole list with todo_write as you progress.\n\n");
         for (Task t : tasks) {

@@ -38,6 +38,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Spring WebFlux handler for GitHub webhooks. (Spring WebFlux handler for GitHub webhooks.)}
  * Spring WebFlux handler for GitHub webhooks.
  *
  * <ul>
@@ -284,6 +285,7 @@ public class GitHubWebhookHandler {
     }
 
     /**
+     * {@summary Spring WebFlux handler for GitHub webhooks. (Spring WebFlux handler for GitHub webhooks.)}
      * Wraps an external comment body in {@code <UNTRUSTED_GITHUB_COMMENT>} tags so the model
      * treats it as data — not as instructions to follow.
      */
@@ -293,6 +295,7 @@ public class GitHubWebhookHandler {
     }
 
     /**
+     * {@summary Spring WebFlux handler for GitHub webhooks. (Spring WebFlux handler for GitHub webhooks.)}
      * Returns {@code true} when the commenter login matches {@code GITHUB_BOT_LOGIN}, so the
      * agent doesn't endlessly react to comments it just posted itself.
      */

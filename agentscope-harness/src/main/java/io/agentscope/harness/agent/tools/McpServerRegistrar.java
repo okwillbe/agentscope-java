@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tools;
 
+/** {@summary McpServerRegistrar (McpServerRegistrar)} */
 import io.agentscope.core.tool.Toolkit;
 import io.agentscope.core.tool.mcp.McpClientBuilder;
 import io.agentscope.core.tool.mcp.McpClientWrapper;

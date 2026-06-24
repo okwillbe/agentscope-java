@@ -43,6 +43,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Sharing endpoints on user-custom agents. Globals are not share-managed (they're config-defined,}
  * Sharing endpoints on user-custom agents. Globals are not share-managed (they're config-defined,
  * RUN-to-everyone via the ACL service).
  *

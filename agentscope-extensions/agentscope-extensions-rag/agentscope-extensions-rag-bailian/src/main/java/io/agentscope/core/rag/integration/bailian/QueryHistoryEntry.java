@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.bailian;
 
 /**
+ * {@summary Query history entry for multi-turn conversation rewrite. (Query history entry for multi-turn conversation rewrite.)}
  * Query history entry for multi-turn conversation rewrite.
  *
  * <p>This class represents a single message in the conversation history, used for
@@ -27,6 +28,7 @@ public class QueryHistoryEntry {
     private final String content;
 
     /**
+     * {@summary Query history entry for multi-turn conversation rewrite. (Query history entry for multi-turn conversation rewrite.)}
      * Creates a new QueryHistoryEntry.
      *
      * @param role the role (user or assistant)
@@ -41,6 +43,7 @@ public class QueryHistoryEntry {
     }
 
     /**
+     * {@summary Query history entry for multi-turn conversation rewrite. (Query history entry for multi-turn conversation rewrite.)}
      * Gets the role of this message.
      *
      * @return the role (user or assistant)
@@ -50,6 +53,7 @@ public class QueryHistoryEntry {
     }
 
     /**
+     * {@summary Query history entry for multi-turn conversation rewrite. (Query history entry for multi-turn conversation rewrite.)}
      * Gets the content of this message.
      *
      * @return the message content
@@ -59,6 +63,7 @@ public class QueryHistoryEntry {
     }
 
     /**
+     * {@summary Query history entry for multi-turn conversation rewrite. (Query history entry for multi-turn conversation rewrite.)}
      * Creates a user message entry.
      *
      * @param content the user's message
@@ -69,6 +74,7 @@ public class QueryHistoryEntry {
     }
 
     /**
+     * {@summary Query history entry for multi-turn conversation rewrite. (Query history entry for multi-turn conversation rewrite.)}
      * Creates an assistant message entry.
      *
      * @param content the assistant's response

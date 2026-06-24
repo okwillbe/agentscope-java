@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.spec;
 
+/** {@summary RemoteFilesystemSpec (RemoteFilesystemSpec)} */
 import io.agentscope.harness.agent.IsolationScope;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
 import io.agentscope.harness.agent.filesystem.CompositeFilesystem;
@@ -46,30 +47,30 @@ import java.util.Set;
  * </ul>
  *
  * <p>Because the default backend is {@link LocalFilesystem} (not {@link LocalFilesystemWithShell}),
- * shell execution is intentionally not available in this mode — use a sandbox filesystem spec or
+ * shell execution is intentionally not available in this mode ...use a sandbox filesystem spec or
  * {@link LocalFilesystemWithShell} if shell is required.
  *
  * <p>Default shared routes (each gets an isolated store namespace segment):
  *
  * <ul>
- *   <li>{@code AGENTS.md}, {@code MEMORY.md} → segment {@code root}
- *   <li>{@code memory/} → segment {@code memory}
- *   <li>{@code skills/} → segment {@code skills}
- *   <li>{@code subagents/} → segment {@code subagents}
- *   <li>{@code knowledge/} → segment {@code knowledge}
- *   <li>{@code plans/} → segment {@code plans}
- *   <li>{@code agents/<agentId>/sessions/} → segment {@code sessions}
- *   <li>{@code agents/<agentId>/tasks/} → segment {@code tasks}
+ *   <li>{@code AGENTS.md}, {@code MEMORY.md} 鈫?segment {@code root}
+ *   <li>{@code memory/} 鈫?segment {@code memory}
+ *   <li>{@code skills/} 鈫?segment {@code skills}
+ *   <li>{@code subagents/} 鈫?segment {@code subagents}
+ *   <li>{@code knowledge/} 鈫?segment {@code knowledge}
+ *   <li>{@code plans/} 鈫?segment {@code plans}
+ *   <li>{@code agents/<agentId>/sessions/} 鈫?segment {@code sessions}
+ *   <li>{@code agents/<agentId>/tasks/} 鈫?segment {@code tasks}
  * </ul>
  *
  * <p>The store namespace for shared files is controlled by {@link #isolationScope(IsolationScope)},
  * which mirrors the sandbox isolation semantics:
  *
  * <ul>
- *   <li>{@link IsolationScope#SESSION} — namespace per session</li>
- *   <li>{@link IsolationScope#USER} (default) — namespace per user, shared across sessions</li>
- *   <li>{@link IsolationScope#AGENT} — namespace per agent, shared across all users</li>
- *   <li>{@link IsolationScope#GLOBAL} — single global namespace</li>
+ *   <li>{@link IsolationScope#SESSION} ...namespace per session</li>
+ *   <li>{@link IsolationScope#USER} (default) ...namespace per user, shared across sessions</li>
+ *   <li>{@link IsolationScope#AGENT} ...namespace per agent, shared across all users</li>
+ *   <li>{@link IsolationScope#GLOBAL} ...single global namespace</li>
  * </ul>
  */
 public class RemoteFilesystemSpec {

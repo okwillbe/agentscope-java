@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent;
 
+/** {@summary SubagentEventBus (SubagentEventBus)} */
 import java.util.Optional;
 import reactor.util.context.ContextView;
 

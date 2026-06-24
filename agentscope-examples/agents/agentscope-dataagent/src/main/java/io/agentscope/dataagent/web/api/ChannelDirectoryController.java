@@ -37,6 +37,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Channel directory and channel-default management. (Channel directory and channel-default management.)}
  * Channel directory and channel-default management.
  *
  * <ul>
@@ -103,6 +104,7 @@ public class ChannelDirectoryController {
     }
 
     /**
+     * {@summary Channel directory and channel-default management. (Channel directory and channel-default management.)}
      * Returns the channel types the runtime knows how to instantiate (chatui, dingtalk, wecom,
      * feishu, github, gitlab, plus any types registered via
      * {@link ChannelTypeRegistry#register(String, io.agentscope.harness.agent.gateway.channel.ChannelFactory)}).

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.runtime;
 
+/** {@summary SkillCatalog (SkillCatalog)} */
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedHashMap;

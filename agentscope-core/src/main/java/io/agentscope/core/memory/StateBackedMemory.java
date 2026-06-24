@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.memory;
 
+/** {@summary StateBackedMemory (StateBackedMemory)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.state.AgentState;
 import io.agentscope.core.state.AgentStateStore;

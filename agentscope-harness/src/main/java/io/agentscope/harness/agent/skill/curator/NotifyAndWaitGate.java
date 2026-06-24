@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary NotifyAndWaitGate (NotifyAndWaitGate)} */
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -31,7 +32,7 @@ import reactor.core.publisher.Mono;
  * Multi-replica gate. On {@code review} writes a {@code .review_request.json} file next to the
  * draft skill (so the file is visible to whichever replica gets the eventual approval call) and
  * fires every configured {@link NotificationSink} concurrently. Always returns
- * {@link SkillPromotionGate.PromotionDecision.Defer} — the actual approval comes from the
+ * {@link SkillPromotionGate.PromotionDecision.Defer} ...the actual approval comes from the
  * external system calling {@code HarnessAgent.promoteSkill(...)} on any replica.
  *
  * <p>Sinks are best-effort. A failed sink is logged but does not block the gate or the agent.

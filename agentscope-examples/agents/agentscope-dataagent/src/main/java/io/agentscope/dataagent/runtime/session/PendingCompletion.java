@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.runtime.session;
 
 /**
+ * {@summary PendingCompletion class ()}
  * Best-effort completion handoff to the requester session (OpenClaw {@code announce} analogue).
  * The {@link #announceText()} is suitable for ingestion as internal context on the parent's next
  * turn; it is not a raw tool return from the child.

@@ -50,6 +50,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
  * Gateway-style gateway: routes inbound turns by {@link MsgContext}, and dispatches subagent
  * completion announces as new {@link HarnessAgent} runs on the root requester (OpenClaw gateway
  * analogue).
@@ -79,6 +80,7 @@ public final class HarnessGateway implements Gateway {
     private final ChannelManager channelManager;
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Optional registry that owns one live Docker {@link Sandbox} per {@code (userId, agentId)}.
      * When non-null, every {@link #run} / {@link #tryDispatchAnnounce} turn injects that sandbox
      * into the {@link RuntimeContext} as a {@link SandboxContext#getExternalSandbox()} so the
@@ -99,6 +101,7 @@ public final class HarnessGateway implements Gateway {
     private volatile String defaultAgentId = null;
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * gateKey -> main session key (in SessionAgentManager). Populated on first {@link #run} per
      * key; used to resume the same MAIN session across turns.
      */
@@ -106,18 +109,21 @@ public final class HarnessGateway implements Gateway {
             new ConcurrentHashMap<>();
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * main session key -> gateKey. Populated when a MAIN session is created. Used by {@link
      * #tryDispatchAnnounce} to deliver completion announces on the correct channel gate.
      */
     private final ConcurrentHashMap<String, String> sessionKeyToGateKey = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * main session key -> agentId. Used by {@link #tryDispatchAnnounce} to route the completion
      * announce to the same agent that originated the run.
      */
     private final ConcurrentHashMap<String, String> sessionKeyToAgentId = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * session key -> last outbound address. Updated on every inbound {@link #run} call so
      * proactive outbound messages (announces) can be delivered to the correct channel/peer.
      */
@@ -136,6 +142,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Creates a gateway wired to the given {@link SessionAgentManager}, {@link ChannelManager},
      * and {@link UserSandboxRegistry}. Sets up the announce dispatcher and spawn interceptor on
      * the session manager, and restores persisted MAIN session routing maps from the session
@@ -184,6 +191,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at
      * application startup — typically called by Spring config after {@link
      * io.agentscope.dataagent.runtime.DataAgentBootstrap} has produced the gateway, since the
@@ -194,6 +202,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Restores gateway routing maps from persisted MAIN sessions in the session store. Only
      * fresh sessions (per the configured {@link SessionResetPolicy}) are restored; stale
      * sessions are skipped so a new session will be created on the next inbound turn.
@@ -232,6 +241,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Binds the primary harness agent. Also registers it under its {@link
      * HarnessAgent#getAgentId()} for routing.
      */
@@ -252,6 +262,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Returns the {@link HarnessAgent} registered under {@code gatewayId} (typically either a
      * global agent id or a {@code uca-{userId}-{agentId}} namespaced id), or {@code null} if no
      * agent is currently registered for that id. Exposed so platform controllers can introspect
@@ -264,6 +275,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Direct or channel-originated turn. Resolves or creates a MAIN session keyed by {@link
      * MsgContext#canonicalKey()}, routes to the appropriate agent, and runs the turn under the
      * per-key {@link SessionTurnGate}.
@@ -274,6 +286,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Inbound turn with outbound address tracking. Records the {@code outboundAddress} as the
      * session's "last route" so proactive outbound messages (subagent announces) can be delivered
      * to the correct channel/peer.
@@ -316,6 +329,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Spawn interceptor: records gate-key, agent-id, and last-route mappings so announces for
      * child sessions route to the correct channel gate, agent, and outbound delivery target.
      */
@@ -337,6 +351,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Attempts gateway-style dispatch on subagent completion: schedules a new agent turn carrying
      * {@link PendingCompletion#announceText()} on the requester's gate, then delivers the agent's
      * reply through the originating channel via {@link ChannelManager}.
@@ -408,6 +423,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Delivers the agent's announce reply through the channel manager. If no channel manager or no
      * last route is available, the reply is logged but not delivered.
      */
@@ -496,6 +512,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Attach (or replace) the per-user sandbox registry. Intended for one-shot wiring at}
      * Borrows the per-{@code (userId, agentId)} {@link Sandbox} from the registry (if configured)
      * and attaches it to the {@link RuntimeContext} as a {@link SandboxContext#getExternalSandbox()
      * external sandbox}, so {@code SandboxManager.acquire} takes its Priority-1 path and the agent

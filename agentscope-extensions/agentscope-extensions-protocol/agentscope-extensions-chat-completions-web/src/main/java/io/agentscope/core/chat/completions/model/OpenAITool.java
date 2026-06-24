@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary OpenAI tool definition for Chat Completions API requests. (OpenAI tool definition for Chat Completions API requests.)}
  * OpenAI tool definition for Chat Completions API requests.
  *
  * <p>This class represents a tool that can be called by the model, following OpenAI's format.
@@ -56,6 +57,7 @@ public class OpenAITool {
     public OpenAITool() {}
 
     /**
+     * {@summary OpenAI tool definition for Chat Completions API requests. (OpenAI tool definition for Chat Completions API requests.)}
      * Creates a new OpenAITool with the specified function.
      *
      * @param function The function definition

@@ -36,6 +36,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
  * MySQL database-based implementation of AgentSkillRepository.
  *
  * <p>This implementation stores skills in MySQL database tables with the following structure:
@@ -132,6 +133,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     private static final String DEFAULT_RESOURCES_TABLE_NAME = "agentscope_skill_resources";
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Pattern for validating database and table names.
      * Only allows alphanumeric characters and underscores, must start with letter
      * or underscore.
@@ -156,6 +158,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     private boolean writeable;
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Create a MysqlSkillRepository with default database and table names.
      *
      * <p>
@@ -183,6 +186,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Create a MysqlSkillRepository with custom database name, table names, and
      * options.
      *
@@ -266,6 +270,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Create the database if it doesn't exist.
      *
      * <p>
@@ -288,6 +293,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Create the skills and resources tables if they don't exist.
      *
      * <p>Newly created skills tables include the optional {@code metadata_json} column so complete
@@ -335,6 +341,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Verify that the database exists.
      *
      * @throws IllegalStateException if database does not exist
@@ -361,6 +368,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Verify that the required tables exist.
      *
      * @throws IllegalStateException if any table does not exist
@@ -371,6 +379,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Verify that a specific table exists.
      *
      * @param tableName the table name to check
@@ -402,6 +411,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Get the full table name with database prefix.
      *
      * @param tableName the table name
@@ -412,6 +422,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Detect whether the current skills table supports the optional {@code metadata_json} column.
      *
      * <p>This capability is cached at repository construction time and drives the read/write
@@ -682,6 +693,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Insert a skill into the database and return the generated id.
      *
      * @param conn  the database connection
@@ -729,6 +741,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Insert resources for a skill using batch processing.
      *
      * <p>
@@ -834,6 +847,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Delete a skill and its resources from the database.
      *
      * <p>
@@ -869,6 +883,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Check if a skill exists using an existing connection.
      *
      * @param conn      the database connection
@@ -916,6 +931,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Get the database name used for storing skills.
      *
      * @return the database name
@@ -925,6 +941,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Get the skills table name.
      *
      * @return the skills table name
@@ -934,6 +951,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Get the resources table name.
      *
      * @return the resources table name
@@ -943,6 +961,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Get the DataSource used for database connections.
      *
      * @return the DataSource instance
@@ -952,6 +971,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Exposes whether the connected skills table supports {@code metadata_json}.
      *
      * <p>Package-private for tests.
@@ -961,6 +981,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Build an {@link AgentSkill} from SQL row data, restoring full metadata when available and
      * otherwise falling back to legacy core metadata.
      */
@@ -976,6 +997,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Deserialize {@code metadata_json} when present, then overlay the authoritative SQL columns
      * for {@code name} and {@code description}.
      */
@@ -1010,6 +1032,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Check whether metadata contains fields beyond the legacy core columns.
      *
      * <p>This is used only to emit a downgrade warning when writing to a legacy schema.
@@ -1047,6 +1070,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Clear all skills from the database (for testing or cleanup).
      *
      * <p>
@@ -1089,6 +1113,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Safely restore auto-commit mode on a connection.
      *
      * <p>
@@ -1107,6 +1132,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Validate a skill name.
      *
      * @param skillName the skill name to validate
@@ -1127,6 +1153,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Validate a resource path.
      *
      * @param path the resource path to validate
@@ -1143,6 +1170,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Validate a database or table identifier to prevent SQL injection.
      *
      * <p>
@@ -1177,6 +1205,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Create a new Builder for MysqlSkillRepository.
      *
      * <p>
@@ -1201,6 +1230,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
      * Builder for creating MysqlSkillRepository instances with custom configuration.
      *
      * <p>
@@ -1217,6 +1247,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         private boolean writeable = true;
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Create a new Builder with the required DataSource.
          *
          * @param dataSource DataSource for database connections
@@ -1230,6 +1261,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Set the database name for storing skills.
          *
          * @param databaseName the database name (default: "agentscope")
@@ -1241,6 +1273,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Set the skills table name.
          *
          * @param skillsTableName the skills table name (default: "agentscope_skills")
@@ -1252,6 +1285,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Set the resources table name.
          *
          * @param resourcesTableName the resources table name (default:
@@ -1264,6 +1298,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Set whether to create database and tables if they don't exist.
          *
          * @param createIfNotExist true to auto-create, false to require existing
@@ -1276,6 +1311,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Set whether the repository supports write operations.
          *
          * @param writeable true to enable write operations, false for read-only
@@ -1288,6 +1324,7 @@ public class MysqlSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary MySQL database-based implementation of AgentSkillRepository. (MySQL database-based implementation of AgentSkillRepository.)}
          * Build the MysqlSkillRepository instance.
          *
          * @return a new MysqlSkillRepository instance

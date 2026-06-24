@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary GitLabChannel class ()}
  * GitLab channel adapter. Reacts to {@code Note Hook} webhooks delivered to
  * {@link GitLabWebhookController}; replies are posted as new notes via {@link GitLabOutboundClient}.
  */

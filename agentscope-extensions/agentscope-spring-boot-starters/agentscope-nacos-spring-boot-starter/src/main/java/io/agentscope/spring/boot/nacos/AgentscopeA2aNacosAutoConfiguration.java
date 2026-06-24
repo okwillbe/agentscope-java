@@ -39,6 +39,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 
 /**
+ * {@summary Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope.)}
  * Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope.
  *
  * <p>This AutoConfiguration will create a nacos client {@link AiService} to do A2A discovery and registry. This is to
@@ -63,6 +64,7 @@ public class AgentscopeA2aNacosAutoConfiguration implements Closeable {
     private final AiService a2aService;
 
     /**
+     * {@summary Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope.)}
      * Constructs a new instance of {@link AgentscopeA2aNacosAutoConfiguration}.
      *
      * @param nacosProperties the basic Nacos properties
@@ -86,6 +88,7 @@ public class AgentscopeA2aNacosAutoConfiguration implements Closeable {
     }
 
     /**
+     * {@summary Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope.)}
      * Closes the Nacos A2A service by shutting it down.
      *
      * @throws IOException if there is an error during the shutdown process
@@ -103,6 +106,7 @@ public class AgentscopeA2aNacosAutoConfiguration implements Closeable {
     }
 
     /**
+     * {@summary Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope.)}
      * Creates a bean for resolving agent cards from Nacos.
      *
      * @return an instance of {@link NacosAgentCardResolver}
@@ -118,6 +122,7 @@ public class AgentscopeA2aNacosAutoConfiguration implements Closeable {
     }
 
     /**
+     * {@summary Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A Nacos beans for AgentScope.)}
      * Creates a bean for registering agents to Nacos.
      *
      * @param a2aNacosProperties the A2A Nacos properties

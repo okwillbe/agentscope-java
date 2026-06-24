@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolRegistry (ToolRegistry)} */
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;

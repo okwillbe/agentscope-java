@@ -25,6 +25,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary BaseReActAgentRunner class ()}
  * Abstract Implementation for {@link AgentRunner} by {@link ReActAgent}.
  *
  * <p>Use {@link ReActAgent} directly to handler request from A2A client. In this implementation, {@link ReActAgent}
@@ -69,6 +70,7 @@ public abstract class BaseReActAgentRunner implements AgentRunner {
     }
 
     /**
+     * {@summary BaseReActAgentRunner class ()}
      * Build {@link ReActAgent} to run new request.
      *
      * @return {@link ReActAgent} instance

@@ -61,6 +61,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
  * Generic workspace file CRUD for an agent.
  *
  * <ul>
@@ -604,6 +605,7 @@ public class AgentWorkspaceController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Resolves the (workspace path, {@link WorkspaceManager}) tuple for an agent.
      *
      * <p>Both SCOPE_USER and global agents route through a {@link WorkspaceManager} backed by the
@@ -634,6 +636,7 @@ public class AgentWorkspaceController {
     private record WorkspaceContext(Path workspace, WorkspaceManager manager, String ownerId) {}
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Validates a caller-supplied workspace-relative path. Rejects null/blank, absolute paths,
      * and any segment equal to {@code ".."} or starting with {@code "."}. Returns the trimmed
      * value with backslashes normalised to forward slashes.
@@ -674,6 +677,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Recursively walks the composite filesystem starting at {@code absPath} (an absolute path
      * understood by the filesystem — {@code "/"} for root, {@code "/memory"} for a subdir),
      * building {@link FileNode}s with workspace-relative paths suitable for the public API.
@@ -723,6 +727,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Returns whether {@code relPath} exists in {@code fs} as a directory entry. Implemented by
      * listing the parent directory and matching basenames — there is no dedicated
      * {@code isDirectory} on {@link AbstractFilesystem}.
@@ -770,6 +775,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Computes the summary via the composite filesystem so that user-isolated routed content
      * (MEMORY.md, memory/, sessions/, skills/, subagents/) is correctly reflected — disk-only
      * probes would miss everything stored in the {@link BaseStore}.

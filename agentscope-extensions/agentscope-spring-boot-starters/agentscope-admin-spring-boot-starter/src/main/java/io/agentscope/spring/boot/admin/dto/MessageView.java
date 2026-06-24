@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.dto;
 import io.agentscope.core.message.Msg;
 
 /**
+ * {@summary MessageView class ()}
  * Slim projection of a {@link io.agentscope.core.message.Msg} for admin listings. Avoids leaking
  * internal content-block hierarchies through the admin surface.
  */

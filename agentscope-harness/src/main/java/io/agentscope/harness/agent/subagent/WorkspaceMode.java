@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.subagent;
 
+/** {@summary WorkspaceMode (WorkspaceMode)} */
+
 /**
  * Controls how a declared subagent's runtime workspace root is determined.
  *
@@ -22,7 +24,7 @@ package io.agentscope.harness.agent.subagent;
  *
  * <pre>
  * workspacePath  mode      runtime-workspace-root
- * ─────────────────────────────────────────────────────────────────────────────
+ * 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
  * set            ISOLATED  workspacePath  (definition dir is also the runtime root)
  * set            SHARED    mainWorkspace  (definition skills/knowledge ignored)
  * null           ISOLATED  mainWorkspace/agents/&lt;name&gt;/workspace/  (auto-created)
@@ -30,14 +32,14 @@ package io.agentscope.harness.agent.subagent;
  * (general-purpose, always SHARED)       mainWorkspace  (fully mirrors main agent)
  * </pre>
  *
- * <p><b>Phase B-0 — persisted session bucketing:</b> ISOLATED-mode subagents bucket their
+ * <p><b>Phase B-0 ...persisted session bucketing:</b> ISOLATED-mode subagents bucket their
  * persisted state by parent ({@code userId},
  * {@code parentSessionId}) when the spawn-time {@link io.agentscope.core.agent.RuntimeContext}
  * carries those fields. The composed key has form
  * {@code {declarationName}[@{parentSessionId}][#{userId}]} and is applied uniformly across
  * {@link io.agentscope.core.state.AgentStateStore} stores (Workspace, Redis, InMemory, custom),
  * because all of them already partition state by {@code (userId, sessionId)}. SHARED-mode is unchanged
- * — those subagents intentionally use the parent's bucket and do not multi-tenant.
+ * ...those subagents intentionally use the parent's bucket and do not multi-tenant.
  */
 public enum WorkspaceMode {
 

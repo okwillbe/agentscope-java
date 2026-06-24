@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem;
 
+/** {@summary AbstractFilesystem (AbstractFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.local.LocalFilesystem;
 import io.agentscope.harness.agent.filesystem.local.LocalFilesystemWithShell;

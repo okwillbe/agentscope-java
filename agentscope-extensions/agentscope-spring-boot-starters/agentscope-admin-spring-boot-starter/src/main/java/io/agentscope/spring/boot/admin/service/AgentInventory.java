@@ -30,6 +30,7 @@ import java.util.Set;
 import org.springframework.beans.factory.ObjectProvider;
 
 /**
+ * {@summary AgentInventory class ()}
  * Aggregates inventory information across {@link AgentRegistry}, Spring-managed {@link Toolkit}
  * and {@link Model} beans, and the {@link GracefulShutdownManager}.
  *

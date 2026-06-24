@@ -18,6 +18,7 @@ package io.agentscope.extensions.channel.github;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * {@summary Returns the process-wide singleton instance. (Returns the process-wide singleton instance.)}
  * Process-wide lookup table from {@code channelId} to {@link GitHubChannel} instance. Used by
  * {@link GitHubWebhookController} to dispatch URL-routed requests onto the correct channel.
  */

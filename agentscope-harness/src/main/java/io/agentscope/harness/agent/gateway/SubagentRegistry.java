@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary SubagentRegistry (SubagentRegistry)} */
 import java.util.Optional;
 
 /**
@@ -28,9 +29,9 @@ import java.util.Optional;
  * <p>Implementations:
  *
  * <ul>
- *   <li>{@link InMemorySubagentRegistry} — default, single-process, equivalent to the legacy
+ *   <li>{@link InMemorySubagentRegistry} ...default, single-process, equivalent to the legacy
  *       behaviour.
- *   <li>{@link StoreBackedSubagentRegistry} — backed by a distributed
+ *   <li>{@link StoreBackedSubagentRegistry} ...backed by a distributed
  *       {@link io.agentscope.harness.agent.filesystem.remote.store.BaseStore} (Redis / OSS / MySQL
  *       via {@link io.agentscope.harness.agent.DistributedStore#baseStore()}).
  * </ul>
@@ -40,7 +41,7 @@ import java.util.Optional;
 public interface SubagentRegistry {
 
     /**
-     * Persists an exposure record. Idempotent on {@link SubagentRecord#subagentId()} — re-registering
+     * Persists an exposure record. Idempotent on {@link SubagentRecord#subagentId()} ...re-registering
      * the same id overwrites the previous record.
      *
      * @param record the record to persist (must carry a non-null {@code subagentId})

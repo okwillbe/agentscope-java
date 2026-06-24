@@ -19,6 +19,7 @@ package io.agentscope.core.training.backend.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary Trinity Commit API Request (Trinity Commit API Request)}
  * Trinity Commit API Request
  */
 public class CommitRequest {

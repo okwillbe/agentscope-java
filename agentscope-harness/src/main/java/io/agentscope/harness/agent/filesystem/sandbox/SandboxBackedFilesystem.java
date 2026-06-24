@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.sandbox;
 
+/** {@summary SandboxBackedFilesystem (SandboxBackedFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.model.ExecuteResponse;
 import io.agentscope.harness.agent.filesystem.model.FileDownloadResponse;
@@ -175,7 +176,7 @@ public class SandboxBackedFilesystem extends BaseSandboxFilesystem implements Sa
         Sandbox s = sandbox;
         if (s == null) {
             throw new SandboxException.SandboxConfigurationException(
-                    "No active sandbox — sandbox filesystem used outside of a call context");
+                    "No active sandbox ...sandbox filesystem used outside of a call context");
         }
         return s;
     }

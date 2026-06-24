@@ -37,6 +37,7 @@ import java.util.function.Function;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
  * HookStopAgentExample - Human-in-the-loop tool confirmation via {@link MiddlewareBase}.
  *
  * <p>Migration notes (from documentation/quickstart):
@@ -56,6 +57,7 @@ public class HookStopAgentExample {
     private static final Set<String> DANGEROUS_TOOLS = Set.of("delete_file", "send_email");
 
     /**
+     * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
      * Runs the hook stop-agent example.
      *
      * @param args command-line arguments (ignored)
@@ -108,6 +110,7 @@ public class HookStopAgentExample {
     }
 
     /**
+     * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
      * Interactive chat loop that handles tool confirmation.
      *
      * @param agent the agent to chat with
@@ -165,6 +168,7 @@ public class HookStopAgentExample {
     }
 
     /**
+     * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
      * Middleware that intercepts tool execution and pauses the agent when a
      * dangerous tool is about to run.
      */
@@ -205,6 +209,7 @@ public class HookStopAgentExample {
     public static class SensitiveTools {
 
         /**
+         * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
          * Simulates deleting a file.
          *
          * @param filename the name of the file to delete
@@ -219,6 +224,7 @@ public class HookStopAgentExample {
         }
 
         /**
+         * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
          * Simulates sending an email.
          *
          * @param to      recipient address
@@ -236,6 +242,7 @@ public class HookStopAgentExample {
         }
 
         /**
+         * {@summary Runs the hook stop-agent example. (Runs the hook stop-agent example.)}
          * Simulates a web search (no confirmation required).
          *
          * @param query the search query

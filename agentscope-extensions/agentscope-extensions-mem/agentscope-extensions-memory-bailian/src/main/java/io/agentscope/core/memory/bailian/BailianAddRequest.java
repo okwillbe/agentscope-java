@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
  * Request object for adding memories to Bailian Memory API.
  *
  * <p>This request is sent to the POST /api/v2/apps/memory/add endpoint to
@@ -64,6 +65,7 @@ public class BailianAddRequest {
     public BailianAddRequest() {}
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the user ID.
      *
      * @return the user ID
@@ -73,6 +75,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the user ID.
      *
      * @param userId the user ID
@@ -82,6 +85,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the messages.
      *
      * @return the messages list
@@ -91,6 +95,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the messages.
      *
      * @param messages the messages list
@@ -100,6 +105,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the custom content.
      *
      * @return the custom content
@@ -109,6 +115,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the custom content.
      *
      * @param customContent the custom content
@@ -118,6 +125,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the memory library ID.
      *
      * @return the memory library ID
@@ -127,6 +135,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the memory library ID.
      *
      * @param memoryLibraryId the memory library ID
@@ -136,6 +145,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the project ID.
      *
      * @return the project ID
@@ -145,6 +155,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the project ID.
      *
      * @param projectId the project ID
@@ -154,6 +165,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the profile schema.
      *
      * @return the profile schema
@@ -163,6 +175,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the profile schema.
      *
      * @param profileSchema the profile schema
@@ -172,6 +185,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Gets the metadata.
      *
      * @return the metadata map
@@ -181,6 +195,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Sets the metadata.
      *
      * @param metadata the metadata map
@@ -190,6 +205,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Creates a new builder for BailianAddRequest.
      *
      * @return a new Builder instance
@@ -199,6 +215,7 @@ public class BailianAddRequest {
     }
 
     /**
+     * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
      * Builder for BailianAddRequest.
      */
     public static class Builder {
@@ -211,6 +228,7 @@ public class BailianAddRequest {
         private Map<String, Object> metadata;
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the user ID.
          *
          * @param userId the user ID
@@ -222,6 +240,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the messages.
          *
          * @param messages the messages list
@@ -233,6 +252,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the custom content.
          *
          * @param customContent the custom content
@@ -244,6 +264,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the memory library ID.
          *
          * @param memoryLibraryId the memory library ID
@@ -255,6 +276,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the project ID.
          *
          * @param projectId the project ID
@@ -266,6 +288,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the profile schema.
          *
          * @param profileSchema the profile schema
@@ -277,6 +300,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Sets the metadata.
          *
          * @param metadata the metadata map
@@ -288,6 +312,7 @@ public class BailianAddRequest {
         }
 
         /**
+         * {@summary Request object for adding memories to Bailian Memory API. (Request object for adding memories to Bailian Memory API.)}
          * Builds the BailianAddRequest instance.
          *
          * @return a new BailianAddRequest instance

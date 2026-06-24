@@ -15,7 +15,7 @@
  */
 package io.agentscope.dataagent.runtime.session;
 
-/** Result of registering a managed subagent session. */
+/** {@summary Result of registering a managed subagent session. (Result of registering a managed subagent session.)} Result of registering a managed subagent session. */
 public record SpawnResult(
         String runId,
         String sessionKey,

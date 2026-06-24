@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary GitLabInboundMapper class ()}
  * Maps a GitLab {@code Note Hook} payload into an {@link InboundMessage}.
  *
  * <p>Only Issue and MergeRequest notes are mapped in MVP; Commit and Snippet notes are dropped.
@@ -66,6 +67,7 @@ public final class GitLabInboundMapper {
     }
 
     /**
+     * {@summary GitLabInboundMapper class ()}
      * Maps a Note Hook payload into an {@link InboundMessage}. Returns empty for unsupported
      * noteable types (Commit / Snippet), system notes, or malformed payloads.
      */

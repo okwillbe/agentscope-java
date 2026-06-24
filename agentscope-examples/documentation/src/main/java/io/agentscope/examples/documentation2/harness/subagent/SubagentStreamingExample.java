@@ -28,6 +28,7 @@ import io.agentscope.harness.agent.HarnessAgent;
 import io.agentscope.harness.agent.subagent.SubagentDeclaration;
 
 /**
+ * {@summary Demonstrates live subagent event forwarding via (Demonstrates live subagent event forwarding via)}
  * Demonstrates live subagent event forwarding via
  * {@code streamEvents()}.
  *

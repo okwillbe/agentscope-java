@@ -37,6 +37,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.publisher.Sinks;
 
 /**
+ * {@summary Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external (Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external)}
  * Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external
  * systems (IM bots, ticketing, CI) invoke a DataAgent without opening the primary Chat UI.
  *
@@ -180,6 +181,7 @@ public final class WebhookChannel implements Channel {
     }
 
     /**
+     * {@summary Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external (Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external)}
      * Ingest a freshly-authenticated inbound request. Returns the response payload to send back
      * to the caller (containing the assigned {@code inboundId} and — when in poll mode — the
      * actual reply once available).
@@ -267,6 +269,7 @@ public final class WebhookChannel implements Channel {
     }
 
     /**
+     * {@summary Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external (Generic webhook channel — the "side tool" form: an HTTP-in / HTTP-out adapter that lets external)}
      * Long-poll fetch of a previously parked reply. Returns empty when the poll timeout elapses
      * without a reply landing; callers should re-poll.
      */

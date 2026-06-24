@@ -27,6 +27,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary DataPartParser class ()}
  * Parser for {@link DataPart} to {@link ContentBlock}.
  *
  * <p>According to the metadata, the parser will convert the {@link DataPart} to different {@link ContentBlock}:

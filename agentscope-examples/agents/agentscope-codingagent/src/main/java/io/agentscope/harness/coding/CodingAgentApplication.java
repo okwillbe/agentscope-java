@@ -42,6 +42,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
+ * {@summary Spring Boot application entry point for the coding agent webhook service. (Spring Boot application entry point for the coding agent webhook service.)}
  * Spring Boot application entry point for the coding agent webhook service.
  *
  * <p>Assembles all components:

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary JdkWebSocketConnection (JdkWebSocketConnection)} */
 import java.net.http.WebSocket;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;

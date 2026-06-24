@@ -27,6 +27,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary SubagentTaskOperations class ()}
  * Read/cancel operations over a {@link TaskRepository}-managed pool of subagent background tasks.
  *
  * <p>The {@code TaskRepository} bean is optional. When absent (no user wired one into Spring),

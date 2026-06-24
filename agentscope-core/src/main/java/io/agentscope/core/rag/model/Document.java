@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.rag.model;
 
+/** {@summary Document (Document)} */
 import io.agentscope.core.util.JsonUtils;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;

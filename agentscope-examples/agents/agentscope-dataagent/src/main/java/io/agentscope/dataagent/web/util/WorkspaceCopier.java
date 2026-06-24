@@ -29,6 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Copies every file from one agent's per-user workspace into another's. Operates over (Copies every file from one agent's per-user workspace into another's. Operates over)}
  * Copies every file from one agent's per-user workspace into another's. Operates over
  * {@link AbstractFilesystem} so the same code works against any backing implementation — today
  * that is the per-{@code (userId, agentId)} sandbox view supplied by
@@ -48,6 +49,7 @@ public final class WorkspaceCopier {
     private WorkspaceCopier() {}
 
     /**
+     * {@summary Copies every file from one agent's per-user workspace into another's. Operates over (Copies every file from one agent's per-user workspace into another's. Operates over)}
      * Copies every user-data file from {@code (srcOwnerId, srcAgentId)} into {@code (dstOwnerId,
      * dstAgentId)} via the supplied factory. Only the user-isolated layer is copied — shared
      * workspace content (AGENTS.md, tools.json, shared skills/, ...) lives once at the workspace

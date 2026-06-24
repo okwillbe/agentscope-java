@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Some deployment relative properties, such as server default export port and host and path. (Some deployment relative properties, such as server default export port and host and path.)}
  * Some deployment relative properties, such as server default export port and host and path.
  *
  * <p>When developers don't specified target {@link TransportProperties}, and want to use default transport, developers

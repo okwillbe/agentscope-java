@@ -16,6 +16,7 @@
 package io.agentscope.claw2.runtime.session;
 
 /**
+ * {@summary Backwards-compatible constructor without gateKey. (Backwards-compatible constructor without gateKey.)}
  * Internal metadata for a registered managed session (used by {@link SessionAgentManager}).
  *
  * @param gateKey routing key used by the gateway to map this session back to a channel context;

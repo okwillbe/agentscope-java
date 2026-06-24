@@ -16,6 +16,7 @@
 
 package io.agentscope.core.tracing;
 
+/** {@summary Tracer (Tracer)} */
 import io.agentscope.core.agent.AgentBase;
 import io.agentscope.core.formatter.AbstractBaseFormatter;
 import io.agentscope.core.message.Msg;

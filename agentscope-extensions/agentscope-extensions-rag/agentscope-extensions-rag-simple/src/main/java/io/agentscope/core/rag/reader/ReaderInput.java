@@ -21,6 +21,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
  * Input wrapper for document readers.
  *
  * <p>This class provides a unified interface for different types of input sources
@@ -37,6 +38,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Creates a ReaderInput from a text string.
      *
      * @param text the text content
@@ -50,6 +52,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Creates a ReaderInput from a file path.
      *
      * @param filePath the path to the file
@@ -64,6 +67,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Creates a ReaderInput from a file path.
      *
      * @param filePath the path to the file
@@ -82,6 +86,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Creates a ReaderInput from a File object.
      *
      * @param file the file object
@@ -96,6 +101,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Creates a ReaderInput from a File path string.
      *
      * @param path the file path string
@@ -110,6 +116,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Creates a ReaderInput from a File path.
      *
      * @param path the file path
@@ -129,6 +136,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Gets the input content as a string.
      *
      * @return the content string
@@ -138,6 +146,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Gets the input type.
      *
      * @return the input type
@@ -147,6 +156,7 @@ public class ReaderInput {
     }
 
     /**
+     * {@summary Input wrapper for document readers. (Input wrapper for document readers.)}
      * Input type enumeration.
      */
     public enum InputType {

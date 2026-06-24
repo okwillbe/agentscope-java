@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Trinity Model Adapter (Trinity Model Adapter)}
  * Trinity Model Adapter
  *
  * <p>Lightweight adapter using <b>composition pattern</b> to wrap OpenAIChatModel for:
@@ -60,6 +61,7 @@ public class TrinityModelAdapter extends ChatModelBase {
     private final RunExecutionContext executionContext;
 
     /**
+     * {@summary Trinity Model Adapter (Trinity Model Adapter)}
      * Private constructor
      *
      * @param delegate OpenAIChatModel instance
@@ -104,6 +106,7 @@ public class TrinityModelAdapter extends ChatModelBase {
     }
 
     /**
+     * {@summary Trinity Model Adapter (Trinity Model Adapter)}
      * Get task execution context
      *
      * @return Execution context (may be null)
@@ -113,6 +116,7 @@ public class TrinityModelAdapter extends ChatModelBase {
     }
 
     /**
+     * {@summary Trinity Model Adapter (Trinity Model Adapter)}
      * Create Builder
      */
     public static Builder builder() {
@@ -120,6 +124,7 @@ public class TrinityModelAdapter extends ChatModelBase {
     }
 
     /**
+     * {@summary Trinity Model Adapter (Trinity Model Adapter)}
      * Builder for TrinityModelAdapter
      */
     public static class Builder {
@@ -144,6 +149,7 @@ public class TrinityModelAdapter extends ChatModelBase {
         }
 
         /**
+         * {@summary Trinity Model Adapter (Trinity Model Adapter)}
          * Set task execution context (internal method, not visible to users)
          *
          * <p>Called by TrainingRouter for automatic msg_ids collection.
@@ -157,6 +163,7 @@ public class TrinityModelAdapter extends ChatModelBase {
         }
 
         /**
+         * {@summary Trinity Model Adapter (Trinity Model Adapter)}
          * Build TrinityModelAdapter
          *
          * @return TrinityModelAdapter instance

@@ -29,6 +29,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary GitLab outbound HTTP client. Posts a note via (GitLab outbound HTTP client. Posts a note via)}
  * GitLab outbound HTTP client. Posts a note via
  * {@code POST /api/v4/projects/{id}/{issues|merge_requests}/{iid}/notes} where {@code id} is the
  * URL-encoded {@code path_with_namespace}.
@@ -84,6 +85,7 @@ public final class GitLabOutboundClient {
     }
 
     /**
+     * {@summary GitLab outbound HTTP client. Posts a note via (GitLab outbound HTTP client. Posts a note via)}
      * Parses an outbound address of the form
      * {@code "channelId:thread:path/with/namespace#iid:Issue|MergeRequest"}. Returns null on
      * malformed input.

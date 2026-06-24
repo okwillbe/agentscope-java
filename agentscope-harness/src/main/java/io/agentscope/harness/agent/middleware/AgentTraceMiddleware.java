@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary AgentTraceMiddleware (AgentTraceMiddleware)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
@@ -135,12 +136,12 @@ public class AgentTraceMiddleware implements MiddlewareBase {
                             }
                             if (toolCalls.isEmpty()) {
                                 // No tool call ends the ReAct loop. If there was also no text, the
-                                // model returned an empty completion — make that explicit instead
+                                // model returned an empty completion ...make that explicit instead
                                 // of logging a misleading "<empty>" that looks like normal output.
                                 if (!hasText) {
                                     log.info(
                                             "[{}] POST_REASONING | empty completion (no text, no"
-                                                    + " tool call) — ReAct loop will terminate",
+                                                    + " tool call) ...ReAct loop will terminate",
                                             name);
                                 }
                             } else {

@@ -24,6 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
+ * {@summary MarketplaceConfigEntry class ()}
  * One entry under the top-level {@code marketplaces} map in {@code agentscope.json}. Holds
  * a {@code type} discriminator ({@code "git"} / {@code "nacos"}) plus an open bag of
  * type-specific configuration captured via Jackson's any-setter, so adding a new marketplace

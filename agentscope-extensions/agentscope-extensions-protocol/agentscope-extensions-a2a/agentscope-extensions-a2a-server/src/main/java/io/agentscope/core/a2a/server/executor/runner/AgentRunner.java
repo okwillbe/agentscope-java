@@ -22,6 +22,7 @@ import java.util.List;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Interface for running agents in A2A Server. (Interface for running agents in A2A Server.)}
  * Interface for running agents in A2A Server.
  *
  * <p>This interface defines the core contract for running agents in the A2A Server.
@@ -35,6 +36,7 @@ import reactor.core.publisher.Flux;
 public interface AgentRunner {
 
     /**
+     * {@summary Interface for running agents in A2A Server. (Interface for running agents in A2A Server.)}
      * Get agent name to build AgentCard.
      *
      * @return agent name
@@ -42,6 +44,7 @@ public interface AgentRunner {
     String getAgentName();
 
     /**
+     * {@summary Interface for running agents in A2A Server. (Interface for running agents in A2A Server.)}
      * Get agent description to build AgentCard.
      *
      * @return agent description
@@ -49,6 +52,7 @@ public interface AgentRunner {
     String getAgentDescription();
 
     /**
+     * {@summary Interface for running agents in A2A Server. (Interface for running agents in A2A Server.)}
      * Start to handle agent request with streaming output.
      *
      * @param requestMessages the messages from a2a client
@@ -58,6 +62,7 @@ public interface AgentRunner {
     Flux<Event> stream(List<Msg> requestMessages, AgentRequestOptions options);
 
     /**
+     * {@summary Interface for running agents in A2A Server. (Interface for running agents in A2A Server.)}
      * Stop to handle agent request.
      *
      * @param taskId the taskId of request needed to stop

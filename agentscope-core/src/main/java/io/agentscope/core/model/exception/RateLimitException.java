@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary RateLimitException (RateLimitException)} */
+
 /**
  * Exception thrown when rate limits are exceeded (HTTP 429).
  *

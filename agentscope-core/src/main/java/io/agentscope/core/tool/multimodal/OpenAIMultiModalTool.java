@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.multimodal;
 
+/** {@summary OpenAIMultiModalTool (OpenAIMultiModalTool)} */
 import com.fasterxml.jackson.core.type.TypeReference;
 import io.agentscope.core.formatter.MediaUtils;
 import io.agentscope.core.message.Base64Source;

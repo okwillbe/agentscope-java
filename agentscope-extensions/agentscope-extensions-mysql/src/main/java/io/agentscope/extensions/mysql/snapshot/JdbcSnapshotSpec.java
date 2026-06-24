@@ -19,6 +19,7 @@ import io.agentscope.harness.agent.sandbox.snapshot.RemoteSnapshotSpec;
 import javax.sql.DataSource;
 
 /**
+ * {@summary JdbcSnapshotSpec class ()}
  * Convenience {@link io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec}
  * for JDBC-backed snapshot storage.
  *

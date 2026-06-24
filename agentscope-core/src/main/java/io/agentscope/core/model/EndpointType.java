@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary EndpointType (EndpointType)} */
+
 /**
  * Enum representing the endpoint type for DashScope models.
  *

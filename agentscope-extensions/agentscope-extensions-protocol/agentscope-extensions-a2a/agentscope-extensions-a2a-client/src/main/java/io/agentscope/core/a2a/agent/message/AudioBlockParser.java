@@ -20,6 +20,7 @@ import io.a2a.spec.Part;
 import io.agentscope.core.message.AudioBlock;
 
 /**
+ * {@summary AudioBlockParser class ()}
  * Parser for {@link AudioBlock} to {@link io.a2a.spec.FilePart}.
  */
 public class AudioBlockParser extends BaseMediaBlockParser<AudioBlock> {

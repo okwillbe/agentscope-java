@@ -34,6 +34,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary Build every marketplace declared in the bootstrap-time config. Called once on startup (Build every marketplace declared in the bootstrap-time config. Called once on startup)}
  * Live registry of claw-managed {@link ClawMarketplace} instances, keyed by user-chosen id.
  *
  * <p>The registry is the only place that knows how to map a {@link MarketplaceConfigEntry} to a
@@ -59,6 +60,7 @@ public class ClawMarketplaceRegistry {
     }
 
     /**
+     * {@summary Build every marketplace declared in the bootstrap-time config. Called once on startup (Build every marketplace declared in the bootstrap-time config. Called once on startup)}
      * Build every marketplace declared in the bootstrap-time config. Called once on startup
      * after the Spring context is wired. Failures for individual marketplaces are logged but
      * do not abort startup — claw should still come up if one upstream is misconfigured.
@@ -104,6 +106,7 @@ public class ClawMarketplaceRegistry {
     }
 
     /**
+     * {@summary Build every marketplace declared in the bootstrap-time config. Called once on startup (Build every marketplace declared in the bootstrap-time config. Called once on startup)}
      * Replace (or first-time install) the marketplace at {@code id} with one built from
      * {@code entry}. The previously registered instance, if any, is {@link
      * ClawMarketplace#close() closed} after the new one is in place so callers continue to see a
@@ -136,6 +139,7 @@ public class ClawMarketplaceRegistry {
     }
 
     /**
+     * {@summary Build every marketplace declared in the bootstrap-time config. Called once on startup (Build every marketplace declared in the bootstrap-time config. Called once on startup)}
      * Build a marketplace instance from a config entry without registering it. Used by
      * {@code MarketplacesController#test} so a connection probe runs against the same code path
      * a real registration would use, but without taking the (id) slot if the probe fails.

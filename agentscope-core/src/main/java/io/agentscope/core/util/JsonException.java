@@ -16,6 +16,8 @@
 
 package io.agentscope.core.util;
 
+/** {@summary JsonException (JsonException)} */
+
 /**
  * Runtime exception for JSON processing errors.
  *

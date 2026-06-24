@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxExecutionGuard (SandboxExecutionGuard)} */
 import io.agentscope.harness.agent.IsolationScope;
 
 /**
@@ -30,8 +31,8 @@ import io.agentscope.harness.agent.IsolationScope;
  * Providing a guard serialises such callers without requiring changes to the surrounding
  * infrastructure.
  *
- * <p>Implementations may use any backend — JVM semaphores, Redis {@code SET NX} leases,
- * ZooKeeper, database advisory locks, etc. — and must be thread-safe.
+ * <p>Implementations may use any backend ...JVM semaphores, Redis {@code SET NX} leases,
+ * ZooKeeper, database advisory locks, etc. ...and must be thread-safe.
  *
  * <h2>Usage</h2>
  *
@@ -53,7 +54,7 @@ import io.agentscope.harness.agent.IsolationScope;
  *
  * <p>The harness calls {@link #tryEnter} before sandbox acquire/resume and closes the returned
  * {@link SandboxLease} after {@link SandboxManager#release} completes, so the guard covers the
- * full call window: {@code acquire → start → (call) → stop → release → lease.close()}.
+ * full call window: {@code acquire 鈫?start 鈫?(call) 鈫?stop 鈫?release 鈫?lease.close()}.
  */
 @FunctionalInterface
 public interface SandboxExecutionGuard {
@@ -73,7 +74,7 @@ public interface SandboxExecutionGuard {
 
     /**
      * Returns the default no-op guard: execution is always allowed immediately and the returned
-     * {@link SandboxLease} is a no-op. This is the built-in default — no configuration required.
+     * {@link SandboxLease} is a no-op. This is the built-in default ...no configuration required.
      */
     static SandboxExecutionGuard noop() {
         return NoopSandboxExecutionGuard.INSTANCE;

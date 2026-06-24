@@ -25,6 +25,7 @@ import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 
 /**
+ * {@summary One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact (One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact)}
  * One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact
  * for promotion to the shared workspace under admin approval.
  *
@@ -80,6 +81,7 @@ public class ContributionEntity {
     private String sourceAgentId;
 
     /**
+     * {@summary One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact (One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact)}
      * Agent id the contribution is being promoted to. Defaults to {@code sourceAgentId} at submit
      * time when omitted; explicit when the contributor wants to seed a different agent's shared
      * layer. Approval writes under {@code shared/agents/<targetAgentId>/}.
@@ -88,6 +90,7 @@ public class ContributionEntity {
     private String targetAgentId;
 
     /**
+     * {@summary One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact (One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact)}
      * One of {@link #TARGET_SKILL}, {@link #TARGET_SUBAGENT}, {@link #TARGET_MEMORY},
      * {@link #TARGET_AGENTS_MD}, {@link #TARGET_KNOWLEDGE}.
      */
@@ -95,6 +98,7 @@ public class ContributionEntity {
     private String targetType;
 
     /**
+     * {@summary One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact (One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact)}
      * Workspace-relative path the payload should land at within
      * {@code shared/agents/<targetAgentId>/<targetType>/}. For skills this is the skill
      * directory name (e.g. {@code "cohort-builder"}); for subagents the subagent file name
@@ -109,6 +113,7 @@ public class ContributionEntity {
     private String rationale;
 
     /**
+     * {@summary One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact (One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact)}
      * Verbatim snapshot of the payload at nomination time, JSON-serialized as a {@code
      * FileEntry[]}. Preserved across approval for audit.
      */
@@ -117,6 +122,7 @@ public class ContributionEntity {
     private String payload;
 
     /**
+     * {@summary One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact (One user-submitted nomination of a skill / subagent / memory / AGENTS.md / knowledge artifact)}
      * Admin-edited payload (also JSON-serialized {@code FileEntry[]}). When set, approval writes
      * this instead of {@link #payload}. Null when the admin accepted the original as-is.
      */

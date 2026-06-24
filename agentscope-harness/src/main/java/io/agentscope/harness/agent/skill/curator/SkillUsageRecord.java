@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillUsageRecord (SkillUsageRecord)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -33,10 +34,10 @@ import java.util.List;
  *
  * <p>{@code createdBy} provenance values:
  * <ul>
- *   <li>{@code null} — user-authored / hub-installed / pre-existing skill (NOT eligible for
+ *   <li>{@code null} ...user-authored / hub-installed / pre-existing skill (NOT eligible for
  *       curator auto-management or canary gating)</li>
- *   <li>{@code "agent-draft"} — agent created via {@code skill_manage} but not yet promoted</li>
- *   <li>{@code "agent"} — agent-created skill that has been promoted to the live skills root</li>
+ *   <li>{@code "agent-draft"} ...agent created via {@code skill_manage} but not yet promoted</li>
+ *   <li>{@code "agent"} ...agent-created skill that has been promoted to the live skills root</li>
  * </ul>
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)

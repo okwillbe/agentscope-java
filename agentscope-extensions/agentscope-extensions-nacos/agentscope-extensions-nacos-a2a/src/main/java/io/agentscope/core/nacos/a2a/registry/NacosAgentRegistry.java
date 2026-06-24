@@ -37,7 +37,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The implementation of {@link AgentRegistry} for Nacos A2A Registry.
+ * {@summary The implementation of {@link AgentRegistry} for Nacos A2A Registry. (The implementation of {@link AgentRegistry} for Nacos A2A Registry.)}
  */
 public class NacosAgentRegistry implements AgentRegistry {
 

@@ -28,6 +28,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
  * HTTP client for interacting with Bailian Long Term Memory API.
  *
  * <p>This client provides reactive API methods for memory operations including
@@ -77,6 +78,7 @@ public class BailianMemoryClient {
     private final JsonCodec jsonCodec;
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Creates a new {@link BailianMemoryClient} instance.
      *
      * @param builder the builder for configuring the client
@@ -98,6 +100,7 @@ public class BailianMemoryClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Adds memories to Bailian Long Term Memory.
      *
      * <p>This method calls the POST /api/v2/apps/memory/add endpoint to store
@@ -112,6 +115,7 @@ public class BailianMemoryClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Searches for relevant memories based on semantic similarity.
      *
      * <p>This method calls the POST /api/v2/apps/memory/memory_nodes/search endpoint
@@ -127,6 +131,7 @@ public class BailianMemoryClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Executes a POST request to the Bailian API.
      *
      * <p>This method serializes the request object to JSON, sends it to the
@@ -195,6 +200,7 @@ public class BailianMemoryClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Closes the HTTP transport and releases resources.
      */
     public void close() {
@@ -204,6 +210,7 @@ public class BailianMemoryClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Creates a new builder for {@link BailianMemoryClient}.
      * @return a new Builder instance
      */
@@ -212,6 +219,7 @@ public class BailianMemoryClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
      * Builder for {@link BailianMemoryClient}.
      */
     public static class Builder {
@@ -220,6 +228,7 @@ public class BailianMemoryClient {
         private HttpTransport httpTransport = HttpTransportFactory.getDefault();
 
         /**
+         * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
          * Sets the base URL for the Bailian API.
          *
          * @param apiBaseUrl the base URL for the Bailian API
@@ -231,6 +240,7 @@ public class BailianMemoryClient {
         }
 
         /**
+         * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
          * Sets the API key for authentication.
          *
          * @param apiKey the Bailian API key
@@ -242,6 +252,7 @@ public class BailianMemoryClient {
         }
 
         /**
+         * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
          * Sets the HTTP transport for API requests.
          *
          * <p>If not specified, the default HTTP transport from
@@ -256,6 +267,7 @@ public class BailianMemoryClient {
         }
 
         /**
+         * {@summary HTTP client for interacting with Bailian Long Term Memory API. (HTTP client for interacting with Bailian Long Term Memory API.)}
          * Builds the {@link BailianMemoryClient} instance.
          *
          * @return a new {@link BailianMemoryClient} instance

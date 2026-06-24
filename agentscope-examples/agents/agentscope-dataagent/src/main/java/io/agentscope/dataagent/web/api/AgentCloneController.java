@@ -39,6 +39,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Cloning endpoint: produce an owner-private copy of an agent the caller has at least CLONE tier (Cloning endpoint: produce an owner-private copy of an agent the caller has at least CLONE tier)}
  * Cloning endpoint: produce an owner-private copy of an agent the caller has at least CLONE tier
  * on.
  *

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.impl.docker;
 
+/** {@summary DockerSandbox (DockerSandbox)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.sandbox.AbstractBaseSandbox;
 import io.agentscope.harness.agent.sandbox.ExecResult;
@@ -361,9 +362,9 @@ public class DockerSandbox extends AbstractBaseSandbox {
      *
      * <p>Priority:
      * <ol>
-     *   <li>If container exists and is running — reuse it.</li>
-     *   <li>If container exists and is stopped — restart it.</li>
-     *   <li>If container is missing or unknown — create a new container, reset
+     *   <li>If container exists and is running ...reuse it.</li>
+     *   <li>If container exists and is stopped ...restart it.</li>
+     *   <li>If container is missing or unknown ...create a new container, reset
      *       {@code workspaceRootReady} to force full workspace reinitialisation.</li>
      * </ol>
      */
@@ -381,7 +382,7 @@ public class DockerSandbox extends AbstractBaseSandbox {
                         CONTAINER_START_TIMEOUT_SECONDS, "docker", "start", containerId);
                 return;
             }
-            // Container not found — fall through to create a new one
+            // Container not found ...fall through to create a new one
             log.warn("[sandbox-docker] Container {} not found, creating a new one", containerId);
             dockerState.setWorkspaceRootReady(false);
         }

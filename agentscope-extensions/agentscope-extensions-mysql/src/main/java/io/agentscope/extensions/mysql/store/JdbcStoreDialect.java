@@ -24,6 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
  * Database-specific SQL for {@link JdbcStore}.
  *
  * <p>Each dialect renders the four SQL statements that vary between vendors:
@@ -52,6 +53,7 @@ public interface JdbcStoreDialect {
     Logger LOG = LoggerFactory.getLogger(JdbcStoreDialect.class);
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to create the store table if it does not yet exist.
      *
      * <p>The table must have columns: {@code namespace_path VARCHAR(2048)},
@@ -63,6 +65,7 @@ public interface JdbcStoreDialect {
     String getCreateTableSql();
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to insert-or-update an item, incrementing {@code version} on update.
      *
      * <p>Bind parameters in order: {@code (namespace_path, item_key, value_json, updated_at)} —
@@ -74,6 +77,7 @@ public interface JdbcStoreDialect {
     String getUpsertSql();
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to insert a new row with {@code version=1}.
      *
      * <p>Bind parameters in order: {@code (namespace_path, item_key, value_json, updated_at)}.
@@ -85,6 +89,7 @@ public interface JdbcStoreDialect {
     String getInsertSql();
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to conditionally update an item only when the stored version matches.
      *
      * <p>Bind parameters in order:
@@ -97,6 +102,7 @@ public interface JdbcStoreDialect {
     String getCasUpdateSql();
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to fetch a single item.
      *
      * <p>Bind parameters in order: {@code (namespace_path, item_key)}. Projection must be
@@ -107,6 +113,7 @@ public interface JdbcStoreDialect {
     }
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to delete a single item.
      *
      * <p>Bind parameters in order: {@code (namespace_path, item_key)}.
@@ -116,6 +123,7 @@ public interface JdbcStoreDialect {
     }
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Returns the SQL to list items whose namespace_path matches a {@code LIKE} pattern.
      *
      * <p>Bind parameters in order: {@code (namespace_like_pattern, limit, offset)}. Projection
@@ -134,6 +142,7 @@ public interface JdbcStoreDialect {
     }
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * The escape character paired with {@link #getSearchSql}'s {@code ESCAPE} clause. Callers must
      * use this when building the {@code LIKE} pattern to escape literal {@code %}, {@code _}, and
      * the escape character itself.
@@ -143,6 +152,7 @@ public interface JdbcStoreDialect {
     }
 
     /**
+     * {@summary Returns the SQL to create the store table if it does not yet exist. (Returns the SQL to create the store table if it does not yet exist.)}
      * Detects the dialect from the {@link DataSource}'s database product name.
      *
      * <p>Defaults to {@link PostgresJdbcStoreDialect} when the product cannot be determined or is

@@ -20,6 +20,7 @@ import java.util.List;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Interface for document readers. (Interface for document readers.)}
  * Interface for document readers.
  *
  * <p>This interface provides a unified API for reading various types of documents
@@ -29,6 +30,7 @@ import reactor.core.publisher.Mono;
 public interface Reader {
 
     /**
+     * {@summary Interface for document readers. (Interface for document readers.)}
      * Reads a document and returns a list of chunked Document objects.
      *
      * <p>Errors during reading are propagated through the Mono via {@code Mono.error()}.
@@ -39,6 +41,7 @@ public interface Reader {
     Mono<List<Document>> read(ReaderInput input);
 
     /**
+     * {@summary Interface for document readers. (Interface for document readers.)}
      * Gets the list of file formats supported by this reader.
      *
      * @return a list of supported file extensions (e.g., "txt", "md", "pdf")

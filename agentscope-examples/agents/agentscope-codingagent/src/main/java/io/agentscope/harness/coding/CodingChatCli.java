@@ -31,6 +31,7 @@ import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
 /**
+ * {@summary Local CLI entry point for the Coding Agent. (Local CLI entry point for the Coding Agent.)}
  * Local CLI entry point for the Coding Agent.
  *
  * <p>Starts the {@link CodingBootstrap}, obtains the {@link ChatUiChannel}, and runs an

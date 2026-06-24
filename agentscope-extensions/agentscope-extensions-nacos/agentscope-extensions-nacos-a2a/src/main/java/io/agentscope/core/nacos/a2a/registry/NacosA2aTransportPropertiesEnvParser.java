@@ -25,7 +25,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Parser for {@link NacosA2aRegistryTransportProperties} from Environment.
+ * {@summary Parser for {@link NacosA2aRegistryTransportProperties} from Environment. (Parser for {@link NacosA2aRegistryTransportProperties} from Environment.)}
  *
  * <p>
  * The ENV of A2A transport properties is prefixed with {@link Constants#PROPERTIES_ENV_PREFIX}, and is appended with

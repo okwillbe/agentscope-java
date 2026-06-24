@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
  * Configuration for Alibaba Cloud Bailian Knowledge Base.
  *
  * <p>This class contains all the necessary configuration parameters to connect
@@ -107,6 +108,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the Alibaba Cloud Access Key ID.
      *
      * @return the access key ID
@@ -116,6 +118,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the Alibaba Cloud Access Key Secret.
      *
      * @return the access key secret
@@ -125,6 +128,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the Bailian workspace ID.
      *
      * @return the workspace ID
@@ -134,6 +138,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the knowledge base index ID.
      *
      * @return the index ID, or null if not set
@@ -143,6 +148,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the Bailian API endpoint.
      *
      * @return the API endpoint
@@ -152,6 +158,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the dense similarity top K value.
      *
      * @return the dense similarity top K (0-100), or null if not set
@@ -161,6 +168,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the sparse similarity top K value.
      *
      * @return the sparse similarity top K (0-100), or null if not set
@@ -170,6 +178,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Checks if reranking is enabled.
      *
      * @return true if reranking is enabled, null if not configured
@@ -179,6 +188,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the rerank configuration.
      *
      * @return the rerank config, or null if not set
@@ -188,6 +198,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Checks if query rewrite is enabled.
      *
      * @return true if rewrite is enabled, null if not configured
@@ -197,6 +208,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the rewrite configuration.
      *
      * @return the rewrite config, or null if not set
@@ -206,6 +218,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Gets the search filters.
      *
      * @return the search filters list, or null if not set
@@ -215,6 +228,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Checks if retriever history should be saved.
      *
      * @return true if history should be saved, null if not configured
@@ -224,6 +238,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Creates a new builder for BailianConfig.
      *
      * @return a new Builder instance
@@ -233,6 +248,7 @@ public class BailianConfig {
     }
 
     /**
+     * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
      * Builder for BailianConfig.
      */
     public static class Builder {
@@ -256,6 +272,7 @@ public class BailianConfig {
         private Builder() {}
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the Alibaba Cloud Access Key ID.
          *
          * @param accessKeyId the access key ID
@@ -267,6 +284,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the Alibaba Cloud Access Key Secret.
          *
          * @param accessKeySecret the access key secret
@@ -278,6 +296,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the Bailian workspace ID.
          *
          * @param workspaceId the workspace ID
@@ -289,6 +308,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the knowledge base index ID.
          *
          * <p>This is optional for configuration, but required when calling retrieve().
@@ -302,6 +322,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the Bailian API endpoint.
          *
          * <p>If not set, defaults to "bailian.cn-beijing.aliyuncs.com".
@@ -323,6 +344,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the dense similarity top K.
          *
          * <p>Vector retrieval top K. Range: [0-100], default: 100.
@@ -341,6 +363,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the sparse similarity top K.
          *
          * <p>Keyword retrieval top K. Range: [0-100], default: 100.
@@ -360,6 +383,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets whether to enable reranking.
          *
          * <p>Default: true (enabled)
@@ -373,6 +397,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the rerank configuration.
          *
          * @param rerankConfig the rerank config
@@ -384,6 +409,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets whether to enable multi-turn conversation rewrite.
          *
          * <p>Default: false (disabled)
@@ -397,6 +423,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets the rewrite configuration.
          *
          * @param rewriteConfig the rewrite config
@@ -408,6 +435,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets search filters for personalized retrieval.
          *
          * <p>Filters can be used to exclude irrelevant information based on tags
@@ -422,6 +450,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Sets whether to save retriever history.
          *
          * <p>Default: false
@@ -435,6 +464,7 @@ public class BailianConfig {
         }
 
         /**
+         * {@summary Configuration for Alibaba Cloud Bailian Knowledge Base. (Configuration for Alibaba Cloud Bailian Knowledge Base.)}
          * Builds a new BailianConfig instance.
          *
          * @return a new BailianConfig instance

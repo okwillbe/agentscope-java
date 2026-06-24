@@ -32,6 +32,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
  * PDF reader implementation that reads and extracts text from PDF files.
  *
  * <p>This reader extracts text content from PDF files and chunks it according
@@ -55,6 +56,7 @@ public class PDFReader extends AbstractChunkingReader {
     private final boolean extractImages;
 
     /**
+     * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
      * Creates a new PDFReader with the specified configuration.
      *
      * @param chunkSize the target size for each chunk
@@ -67,6 +69,7 @@ public class PDFReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
      * Creates a new PDFReader with the specified configuration.
      *
      * @param chunkSize the target size for each chunk
@@ -83,6 +86,7 @@ public class PDFReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
      * Creates a new PDFReader with default settings.
      *
      * <p>Defaults: chunkSize=512, strategy=PARAGRAPH, overlapSize=50
@@ -119,6 +123,7 @@ public class PDFReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
      * Extracts text from a PDF file using Apache PDFBox.
      *
      * <p>This method loads the PDF document and extracts text page by page,
@@ -159,6 +164,7 @@ public class PDFReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
      * Creates Document objects from text chunks with deterministic doc_id.
      *
      * @param chunks the list of text chunks
@@ -180,6 +186,7 @@ public class PDFReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary PDF reader implementation that reads and extracts text from PDF files. (PDF reader implementation that reads and extracts text from PDF files.)}
      * Checks if image extraction is enabled.
      *
      * @return true if image extraction is enabled

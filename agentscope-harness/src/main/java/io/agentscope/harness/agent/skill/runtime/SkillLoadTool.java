@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.runtime;
 
+/** {@summary SkillLoadTool (SkillLoadTool)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.util.MarkdownSkillParser;
@@ -37,12 +38,12 @@ import reactor.core.publisher.Mono;
  * <p>Query order for any {@code path} other than {@code SKILL.md}:
  *
  * <ol>
- *   <li>{@code skill.getResources().get(path)} — in-memory map (Layer 1/3 host repositories and
+ *   <li>{@code skill.getResources().get(path)} ...in-memory map (Layer 1/3 host repositories and
  *       marketplace repositories that preload everything)
- *   <li>{@code entry.lazyResources().read(path)} — filesystem fallback for sources that
+ *   <li>{@code entry.lazyResources().read(path)} ...filesystem fallback for sources that
  *       implement {@link io.agentscope.harness.agent.skill.LazyResourceCapable}
  *       (e.g. {@code WorkspaceSkillRepository})
- *   <li>Not found → error with a deduped enumeration of {@code SKILL.md} + in-memory keys +
+ *   <li>Not found 鈫?error with a deduped enumeration of {@code SKILL.md} + in-memory keys +
  *       lazy listing
  * </ol>
  *

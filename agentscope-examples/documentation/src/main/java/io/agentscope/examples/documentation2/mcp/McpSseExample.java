@@ -28,6 +28,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
+ * {@summary McpSseExample - MCP (Model Context Protocol) integration via SSE (Server-Sent Events).}
  * McpSseExample - MCP (Model Context Protocol) integration via SSE (Server-Sent Events).
  *
  * <p>SSE transport connects to a running MCP server over HTTP using the
@@ -51,6 +52,7 @@ import java.io.InputStreamReader;
 public class McpSseExample {
 
     /**
+     * {@summary McpSseExample - MCP (Model Context Protocol) integration via SSE (Server-Sent Events).}
      * Runs the SSE MCP example.
      *
      * @param args command-line arguments (ignored)

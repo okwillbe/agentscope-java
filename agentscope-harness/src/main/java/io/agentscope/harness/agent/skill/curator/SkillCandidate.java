@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillCandidate (SkillCandidate)} */
 import java.util.List;
 
 /**

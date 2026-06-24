@@ -25,6 +25,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Returns a valid access token, refreshing in-band when the cached one is missing or close to (Returns a valid access token, refreshing in-band when the cached one is missing or close to)}
  * Fetches and caches a DingTalk OpenAPI {@code accessToken} for one {@code appKey + appSecret}
  * pair. Tokens are valid for ~7200 s; this provider proactively refreshes at ~80% of TTL.
  *
@@ -47,6 +48,7 @@ public final class DingTalkAccessTokenProvider {
     }
 
     /**
+     * {@summary Returns a valid access token, refreshing in-band when the cached one is missing or close to (Returns a valid access token, refreshing in-band when the cached one is missing or close to)}
      * Returns a valid access token, refreshing in-band when the cached one is missing or close to
      * expiring.
      */

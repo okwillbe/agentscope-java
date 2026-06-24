@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary AssistantMessage (AssistantMessage)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.model.ChatUsage;

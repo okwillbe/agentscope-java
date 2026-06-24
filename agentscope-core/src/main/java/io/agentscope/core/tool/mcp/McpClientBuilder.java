@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.mcp;
 
+/** {@summary McpClientBuilder (McpClientBuilder)} */
 import static io.agentscope.core.Version.VERSION;
 
 import io.agentscope.core.Version;

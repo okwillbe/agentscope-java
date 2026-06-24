@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary LocalSnapshotSpec (LocalSnapshotSpec)} */
 import java.nio.file.Path;
 
 /**

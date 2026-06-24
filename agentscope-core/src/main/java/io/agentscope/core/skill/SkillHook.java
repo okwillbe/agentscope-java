@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary SkillHook (SkillHook)} */
 import io.agentscope.core.hook.Hook;
 import io.agentscope.core.hook.HookEvent;
 import io.agentscope.core.hook.PreCallEvent;
@@ -26,7 +27,7 @@ import reactor.core.publisher.Mono;
  *
  * <p>Uses priority {@link #SKILL_HOOK_PRIORITY} so that, in typical {@code HarnessAgent} wiring,
  * this hook runs after {@code SubagentsHook} (80) and before {@code WorkspaceContextHook} (900),
- * yielding append order: base prompt → subagents → skills → workspace context.
+ * yielding append order: base prompt 鈫?subagents 鈫?skills 鈫?workspace context.
  *
  * <p>The skill prompt is appended to the transient system message and is never stored in
  * the agent's persistent {@code Memory}.

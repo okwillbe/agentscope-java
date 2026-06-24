@@ -20,6 +20,7 @@ public enum E2bPersistenceMode {
     /** Tar archive bytes (default, compatible with other Harness snapshots). */
     TAR,
     /**
+     * {@summary How workspace bytes are persisted for E2B sandboxes. (How workspace bytes are persisted for E2B sandboxes.)}
      * E2B {@code POST /sandboxes/{id}/snapshots} plus {@link E2bSnapshotRefs} marker bytes in the
      * Harness snapshot stream (restore recreates a sandbox with the snapshot id as {@code templateID}).
      */

@@ -46,6 +46,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
  * Gateway-style gateway: routes inbound turns by {@link MsgContext}, and dispatches subagent
  * completion announces as new {@link HarnessAgent} runs on the root requester.
  *
@@ -83,6 +84,7 @@ public final class HarnessGateway implements Gateway {
     private volatile String defaultAgentId = null;
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * gateKey -> main session key (in SessionAgentManager). Populated on first {@link #run} per
      * key; used to resume the same MAIN session across turns.
      */
@@ -90,18 +92,21 @@ public final class HarnessGateway implements Gateway {
             new ConcurrentHashMap<>();
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * main session key -> gateKey. Populated when a MAIN session is created. Used by {@link
      * #tryDispatchAnnounce} to deliver completion announces on the correct channel gate.
      */
     private final ConcurrentHashMap<String, String> sessionKeyToGateKey = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * main session key -> agentId. Used by {@link #tryDispatchAnnounce} to route the completion
      * announce to the same agent that originated the run.
      */
     private final ConcurrentHashMap<String, String> sessionKeyToAgentId = new ConcurrentHashMap<>();
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * session key -> last outbound address. Updated on every inbound {@link #run} call so
      * proactive outbound messages (announces) can be delivered to the correct channel/peer.
      */
@@ -116,6 +121,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Creates a gateway wired to the given {@link SessionAgentManager} and {@link ChannelManager}.
      * Sets up the announce dispatcher and spawn interceptor on the session manager, and restores
      * persisted MAIN session routing maps from the session store (if available).
@@ -150,6 +156,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Restores gateway routing maps from persisted MAIN sessions in the session store. Only
      * fresh sessions (per the configured {@link SessionResetPolicy}) are restored; stale
      * sessions are skipped so a new session will be created on the next inbound turn.
@@ -188,6 +195,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Binds the primary harness agent. Also registers it under its {@link
      * HarnessAgent#getAgentId()} for routing.
      */
@@ -208,6 +216,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Looks up a registered {@link HarnessAgent} by agent id. The registry holds both
      * catalog ids (registered via {@link #registerAgent}) and the main agent's UUID
      * (registered via {@link #bindMainAgent}), so callers may pass either.
@@ -222,6 +231,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Direct or channel-originated turn. Resolves or creates a MAIN session keyed by {@link
      * MsgContext#canonicalKey()}, routes to the appropriate agent, and runs the turn under the
      * per-key {@link SessionTurnGate}.
@@ -232,6 +242,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Inbound turn with outbound address tracking. Records the {@code outboundAddress} as the
      * session's "last route" so proactive outbound messages (subagent announces) can be delivered
      * to the correct channel/peer.
@@ -270,6 +281,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Spawn interceptor: records gate-key, agent-id, and last-route mappings so announces for
      * child sessions route to the correct channel gate, agent, and outbound delivery target.
      */
@@ -291,6 +303,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Attempts gateway-style dispatch on subagent completion: schedules a new agent turn carrying
      * {@link PendingCompletion#announceText()} on the requester's gate, then delivers the agent's
      * reply through the originating channel via {@link ChannelManager}.
@@ -354,6 +367,7 @@ public final class HarnessGateway implements Gateway {
     }
 
     /**
+     * {@summary Restores gateway routing maps from persisted MAIN sessions in the session store. Only (Restores gateway routing maps from persisted MAIN sessions in the session store. Only)}
      * Delivers the agent's announce reply through the channel manager. If no channel manager or no
      * last route is available, the reply is logged but not delivered.
      */

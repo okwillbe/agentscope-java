@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary ToolResultEvictionMiddleware (ToolResultEvictionMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -53,7 +54,7 @@ import reactor.core.publisher.Flux;
  * </ol>
  *
  * <p>Tools listed in {@link ToolResultEvictionConfig#getExcludedToolNames()} are never evicted
- * (e.g. {@code readFile} — evicting would cause re-read loops).
+ * (e.g. {@code readFile} ...evicting would cause re-read loops).
  */
 public class ToolResultEvictionMiddleware implements MiddlewareBase {
 

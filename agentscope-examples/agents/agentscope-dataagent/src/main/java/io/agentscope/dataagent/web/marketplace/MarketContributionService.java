@@ -36,6 +36,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
+ * {@summary Application service backing the user-contribution + admin-approval flow. (Application service backing the user-contribution + admin-approval flow.)}
  * Application service backing the user-contribution + admin-approval flow.
  *
  * <p>Users nominate one or more workspace files (skills, sub-agents, memory snippets, AGENTS.md,
@@ -84,6 +85,7 @@ public class MarketContributionService {
     }
 
     /**
+     * {@summary Application service backing the user-contribution + admin-approval flow. (Application service backing the user-contribution + admin-approval flow.)}
      * Records a new pending contribution. The {@code payload} is taken at face value — callers
      * are responsible for having harvested file contents from the source user's workspace.
      *
@@ -157,6 +159,7 @@ public class MarketContributionService {
     }
 
     /**
+     * {@summary Application service backing the user-contribution + admin-approval flow. (Application service backing the user-contribution + admin-approval flow.)}
      * Approves the contribution, materialises its (possibly admin-edited) payload under
      * {@code ${dataagentHome}/shared/agents/<targetAgentId>/<type>/<path>}, and transitions to
      * {@code APPROVED}.
@@ -241,6 +244,7 @@ public class MarketContributionService {
     }
 
     /**
+     * {@summary Application service backing the user-contribution + admin-approval flow. (Application service backing the user-contribution + admin-approval flow.)}
      * Resolves the on-disk targets for a contribution. Single-file target types
      * (subagent / memory / agents_md / knowledge) require exactly one FileEntry. Skills allow one
      * or more entries; an entry with empty {@code relPath} maps to {@code SKILL.md}.

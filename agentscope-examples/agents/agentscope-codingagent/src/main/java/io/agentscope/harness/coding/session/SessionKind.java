@@ -15,11 +15,11 @@
  */
 package io.agentscope.harness.coding.session;
 
-/** AgentStateStore classification, matching OpenClaw session kinds. */
+/** {@summary AgentStateStore classification, matching OpenClaw session kinds. (AgentStateStore classification, matching OpenClaw session kinds.)} AgentStateStore classification, matching OpenClaw session kinds. */
 public enum SessionKind {
     SUBAGENT("subagent"),
     MAIN("main"),
-    /** Reviewer agent session — runs independently from the main coding session. */
+    /** {@summary AgentStateStore classification, matching OpenClaw session kinds. (AgentStateStore classification, matching OpenClaw session kinds.)} Reviewer agent session — runs independently from the main coding session. */
     REVIEWER("reviewer");
 
     private final String value;

@@ -23,6 +23,7 @@ import java.io.InputStream;
 import java.util.Objects;
 
 /**
+ * {@summary Creates an OSS-backed snapshot client. (Creates an OSS-backed snapshot client.)}
  * {@link RemoteSnapshotClient} backed by Alibaba Cloud OSS.
  */
 public class OssRemoteSnapshotClient implements RemoteSnapshotClient {
@@ -32,6 +33,7 @@ public class OssRemoteSnapshotClient implements RemoteSnapshotClient {
     private final String keyPrefix;
 
     /**
+     * {@summary Creates an OSS-backed snapshot client. (Creates an OSS-backed snapshot client.)}
      * Creates an OSS-backed snapshot client.
      *
      * @param ossClient initialized OSS client

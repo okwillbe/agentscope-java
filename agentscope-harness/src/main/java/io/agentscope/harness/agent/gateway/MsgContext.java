@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary MsgContext (MsgContext)} */
 import java.util.Map;
 import java.util.Objects;
 
@@ -25,7 +26,7 @@ import java.util.Objects;
  * <p>The {@link #userId} field carries the message sender's identity for multi-tenant namespace
  * isolation in {@link io.agentscope.harness.agent.HarnessAgent}. It is derived from
  * {@link io.agentscope.harness.agent.gateway.channel.InboundMessage#senderId()} and does
- * <em>not</em> participate in {@link #canonicalKey()} computation — the same user's conversations
+ * <em>not</em> participate in {@link #canonicalKey()} computation ...the same user's conversations
  * always map to the same session key regardless of how userId is set.
  *
  * @param channel logical channel name (e.g. slack, discord, web)

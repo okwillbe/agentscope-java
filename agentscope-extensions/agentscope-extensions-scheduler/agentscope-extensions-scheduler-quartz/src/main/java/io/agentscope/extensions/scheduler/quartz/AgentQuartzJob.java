@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Quartz Job implementation that executes an AgentScope agent task. (Quartz Job implementation that executes an AgentScope agent task.)}
  * Quartz Job implementation that executes an AgentScope agent task.
  *
  * <p>This job retrieves the corresponding {@link QuartzAgentScheduler} and
@@ -39,6 +40,7 @@ public class AgentQuartzJob implements InterruptableJob {
     private volatile boolean interrupted;
 
     /**
+     * {@summary Quartz Job implementation that executes an AgentScope agent task. (Quartz Job implementation that executes an AgentScope agent task.)}
      * Executes the agent task.
      *
      * @param context The Quartz JobExecutionContext
@@ -115,6 +117,7 @@ public class AgentQuartzJob implements InterruptableJob {
     }
 
     /**
+     * {@summary Quartz Job implementation that executes an AgentScope agent task. (Quartz Job implementation that executes an AgentScope agent task.)}
      * Interrupts the currently running job.
      */
     @Override

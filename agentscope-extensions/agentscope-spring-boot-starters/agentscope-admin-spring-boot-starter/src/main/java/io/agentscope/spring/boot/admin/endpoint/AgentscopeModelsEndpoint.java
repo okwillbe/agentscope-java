@@ -20,7 +20,8 @@ import java.util.Map;
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
-/** {@code GET /actuator/agentscope-models}: {beanName -> modelName} map. */
+/**
+ * {@summary AgentscopeModelsEndpoint (AgentscopeModelsEndpoint)} {@code GET /actuator/agentscope-models}: {beanName -> modelName} map. */
 @Endpoint(id = "agentscope-models")
 public class AgentscopeModelsEndpoint {
 

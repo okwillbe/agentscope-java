@@ -53,6 +53,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.publisher.Sinks;
 
 /**
+ * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
  * Chat endpoints, scoped to a specific agent.
  *
  * <ul>
@@ -97,6 +98,7 @@ public class ChatController {
     public record ChatResponse(String reply, String sessionKey) {}
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Response for {@link #currentSession}. {@code exists} is {@code true} when a session entry has
      * already been created (i.e. the user has sent at least one message); the frontend uses this to
      * decide whether to fetch turns on mount.
@@ -223,6 +225,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Computes the gateway routing key for the given agent by running the same {@link
      * ChannelRouter} pass that {@link ChatUiChannel#dispatch} will use, then taking the
      * {@link MsgContext#canonicalKey()} of the resolved context. This guarantees the key matches
@@ -240,6 +243,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Builds the inbound for a chat request and runs it through the chatui channel's router. The
      * router-resolved {@link RouteResult} drives both session-key lookup and {@link
      * HarnessGateway#run} so bindings, channel-default, and requested-agent hints all use a single
@@ -276,6 +280,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Translates a gateway routing key into the real {@code SessionEntry.sessionKey()} by scanning
      * registered MAIN sessions. Returns {@code null} when no session has been registered yet.
      */
@@ -290,6 +295,7 @@ public class ChatController {
     }
 
     /**
+     * {@summary Chat endpoints, scoped to a specific agent. (Chat endpoints, scoped to a specific agent.)}
      * Handles {@code /new} and {@code /reset}. Returns {@code null} for ordinary messages or
      * unknown slash commands.
      */

@@ -26,6 +26,7 @@ import org.springframework.http.codec.ServerSentEvent;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Spring-specific service for streaming chat completion responses. (Spring-specific service for streaming chat completion responses.)}
  * Spring-specific service for streaming chat completion responses.
  *
  * <p>This service is a thin adapter layer that:
@@ -56,6 +57,7 @@ public class ChatCompletionsStreamingService {
     private final ChatCompletionsStreamingAdapter streamingAdapter;
 
     /**
+     * {@summary Spring-specific service for streaming chat completion responses. (Spring-specific service for streaming chat completion responses.)}
      * Constructs a new {@code ChatCompletionsStreamingService}.
      *
      * @param streamingAdapter The framework-agnostic streaming adapter
@@ -65,6 +67,7 @@ public class ChatCompletionsStreamingService {
     }
 
     /**
+     * {@summary Spring-specific service for streaming chat completion responses. (Spring-specific service for streaming chat completion responses.)}
      * Stream agent events as Server-Sent Events (SSE).
      *
      * <p>Each SSE "data" field contains a JSON-serialized {@link ChatCompletionsChunk} following
@@ -84,6 +87,7 @@ public class ChatCompletionsStreamingService {
     }
 
     /**
+     * {@summary Spring-specific service for streaming chat completion responses. (Spring-specific service for streaming chat completion responses.)}
      * Convert a chunk to an SSE event.
      *
      * @param chunk The chunk to convert
@@ -101,6 +105,7 @@ public class ChatCompletionsStreamingService {
     }
 
     /**
+     * {@summary Spring-specific service for streaming chat completion responses. (Spring-specific service for streaming chat completion responses.)}
      * Create a done event to signal stream completion.
      *
      * @return The done SSE event with "[DONE]" data
@@ -110,6 +115,7 @@ public class ChatCompletionsStreamingService {
     }
 
     /**
+     * {@summary Spring-specific service for streaming chat completion responses. (Spring-specific service for streaming chat completion responses.)}
      * Create an error SSE event.
      *
      * @param error The error that occurred

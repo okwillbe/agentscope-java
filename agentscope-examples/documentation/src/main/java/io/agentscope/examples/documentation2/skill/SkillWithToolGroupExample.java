@@ -34,6 +34,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
+ * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
  * SkillWithToolGroupExample - Demonstrates combining {@link FileSystemSkillRepository} with
  * a {@link io.agentscope.core.tool.SkillToolGroup}.
  *
@@ -67,6 +68,7 @@ import java.nio.file.Paths;
 public class SkillWithToolGroupExample {
 
     /**
+     * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
      * Skills directory containing a {@code data-analysis/SKILL.md} entry.
      * Adjust to match your workspace layout.
      */
@@ -74,17 +76,20 @@ public class SkillWithToolGroupExample {
             "agentscope-examples/documentation/src/main/resources/skills";
 
     /**
+     * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
      * Name of the skill that activates the tool group.
      * Must match the {@code name:} field in the corresponding SKILL.md.
      */
     private static final String ACTIVATING_SKILL = "data-analysis";
 
     /**
+     * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
      * Name of the tool group bound to the skill.
      */
     private static final String TOOL_GROUP = "skill-tools";
 
     /**
+     * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
      * Runs the skill-with-tool-group example.
      *
      * @param args command-line arguments (ignored)
@@ -204,6 +209,7 @@ public class SkillWithToolGroupExample {
     public static class DataTools {
 
         /**
+         * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
          * Analyzes a list of numbers and returns basic statistics.
          *
          * @param numbers comma-separated numbers
@@ -235,6 +241,7 @@ public class SkillWithToolGroupExample {
         }
 
         /**
+         * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
          * Writes a text summary to a temporary file.
          *
          * @param content text to write
@@ -257,6 +264,7 @@ public class SkillWithToolGroupExample {
     public static class InfoTool {
 
         /**
+         * {@summary Name of the skill that activates the tool group. (Name of the skill that activates the tool group.)}
          * Returns the current UTC timestamp.
          *
          * @return ISO-8601 timestamp

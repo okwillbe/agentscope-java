@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill;
 
+/** {@summary SkillResources (SkillResources)} */
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;

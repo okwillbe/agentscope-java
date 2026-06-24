@@ -33,6 +33,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
  * Default implementation of {@link ScheduleAgentTask}.
  *
  * <p>This class represents a scheduled agent task that manages the lifecycle and execution
@@ -99,6 +100,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     private final AtomicLong executionCount;
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Constructor for BaseScheduleAgentTask.
      *
      * @param agentConfig The runtime agent configuration containing model, toolkit, and hooks
@@ -120,6 +122,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     // ==================== ScheduleAgentTask Interface Implementation ====================
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Get the unique identifier of this scheduled task.
      *
      * <p>The ID is automatically generated as a UUID when the task is created.
@@ -132,6 +135,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Get the name of this scheduled task.
      *
      * <p>The name is derived from the agent configuration.
@@ -144,6 +148,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Execute the scheduled task immediately.
      *
      * <p>This method creates a fresh Agent instance and executes it with the provided input messages.
@@ -169,6 +174,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Cancel this scheduled task permanently.
      *
      * <p>This method marks the task as cancelled and delegates to the scheduler
@@ -184,6 +190,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     // ==================== Additional Methods for Task Management ====================
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Check if this task has been cancelled.
      *
      * <p>A cancelled task will not be executed by the scheduler and cannot be manually run.
@@ -195,6 +202,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Get the schedule configuration used for this agent.
      *
      * <p>Returns the configuration that was provided when this agent was scheduled,
@@ -207,6 +215,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Get the runtime agent configuration.
      *
      * <p>Returns the {@link RuntimeAgentConfig} containing all configuration including
@@ -219,6 +228,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Create and return a fresh Agent instance.
      *
      * <p>This method is intended for internal use by the scheduler. It creates a new ReActAgent
@@ -256,6 +266,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Get the total number of times this task has been executed.
      *
      * <p>This count includes both scheduled executions and manual executions via {@link #run(Msg...)}.
@@ -268,6 +279,7 @@ public class BaseScheduleAgentTask implements ScheduleAgentTask<Msg> {
     }
 
     /**
+     * {@summary Constructor for BaseScheduleAgentTask. (Constructor for BaseScheduleAgentTask.)}
      * Increment the execution count.
      *
      * <p>This method is called internally after each execution and is intended for

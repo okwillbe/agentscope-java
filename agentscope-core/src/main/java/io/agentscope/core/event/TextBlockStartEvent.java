@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary TextBlockStartEvent (TextBlockStartEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

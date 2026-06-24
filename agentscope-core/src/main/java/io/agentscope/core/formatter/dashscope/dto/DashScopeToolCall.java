@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope.dto;
 
+/** {@summary DashScopeToolCall (DashScopeToolCall)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

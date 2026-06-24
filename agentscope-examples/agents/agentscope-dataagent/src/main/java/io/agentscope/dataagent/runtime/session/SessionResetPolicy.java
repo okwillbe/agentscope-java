@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.runtime.session;
 
 /**
+ * {@summary Policy controlling when a session is considered "stale" and should be rolled over to a new (Policy controlling when a session is considered "stale" and should be rolled over to a new)}
  * Policy controlling when a session is considered "stale" and should be rolled over to a new
  * session, mirroring OpenClaw's {@code resolveSessionResetPolicy}.
  *

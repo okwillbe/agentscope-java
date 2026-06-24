@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.ollama.dto;
 
+/** {@summary OllamaToolCall (OllamaToolCall)} */
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

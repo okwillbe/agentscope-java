@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary NoopSandboxSnapshot (NoopSandboxSnapshot)} */
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -35,7 +36,7 @@ public class NoopSandboxSnapshot implements SandboxSnapshot {
     /**
      * {@inheritDoc}
      *
-     * <p>Returns {@code false} — workspace archiving is skipped entirely when this
+     * <p>Returns {@code false} ...workspace archiving is skipped entirely when this
      * snapshot is in use, so this method is never called in normal operation.
      */
     @Override
@@ -50,7 +51,7 @@ public class NoopSandboxSnapshot implements SandboxSnapshot {
      */
     @Override
     public void persist(InputStream workspaceArchive) throws Exception {
-        // Intentionally discard — no-op snapshot does not persist anything
+        // Intentionally discard ...no-op snapshot does not persist anything
         if (workspaceArchive != null) {
             workspaceArchive.transferTo(OutputStream.nullOutputStream());
         }

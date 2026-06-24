@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.workspace.plan;
 
+/** {@summary PlanModeManager (PlanModeManager)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.state.AgentState;
 import io.agentscope.core.state.PlanModeContextState;
@@ -26,7 +27,7 @@ import java.util.Objects;
  *
  * <p>State (whether plan mode is active and which markdown file holds the current plan) lives in
  * {@link PlanModeContextState} inside the agent's {@link AgentState}, so it is persisted with the
- * session and survives restarts / cross-node hand-offs — this is the mechanism that makes dynamic
+ * session and survives restarts / cross-node hand-offs ...this is the mechanism that makes dynamic
  * (runtime) plan-mode switching work in a distributed setting, where an in-process boolean would be
  * lost.
  *

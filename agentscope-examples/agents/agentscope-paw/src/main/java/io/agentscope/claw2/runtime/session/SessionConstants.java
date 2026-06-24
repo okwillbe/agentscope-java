@@ -15,18 +15,18 @@
  */
 package io.agentscope.claw2.runtime.session;
 
-/** Shared constants for managed session / subagent flows. */
+/** {@summary Shared constants for managed session / subagent flows. (Shared constants for managed session / subagent flows.)} Shared constants for managed session / subagent flows. */
 public final class SessionConstants {
 
-    /** Maximum allowed spawn depth to prevent runaway recursion (main=0, sub=1, sub-sub=2…). */
+    /** {@summary Shared constants for managed session / subagent flows. (Shared constants for managed session / subagent flows.)} Maximum allowed spawn depth to prevent runaway recursion (main=0, sub=1, sub-sub=2…). */
     public static final int MAX_SPAWN_DEPTH = 3;
 
-    /** Synthetic requester key when the tool owner is the top-level harness (no parent session). */
+    /** {@summary Shared constants for managed session / subagent flows. (Shared constants for managed session / subagent flows.)} Synthetic requester key when the tool owner is the top-level harness (no parent session). */
     public static final String ROOT_REQUESTER_SESSION_KEY = "agent:main:root";
 
     private SessionConstants() {}
 
-    /** Resolves the requester key: explicit parent or {@link #ROOT_REQUESTER_SESSION_KEY}. */
+    /** {@summary Shared constants for managed session / subagent flows. (Shared constants for managed session / subagent flows.)} Resolves the requester key: explicit parent or {@link #ROOT_REQUESTER_SESSION_KEY}. */
     public static String resolveRequesterKey(String parentSessionKey) {
         if (parentSessionKey != null && !parentSessionKey.isBlank()) {
             return parentSessionKey.trim();

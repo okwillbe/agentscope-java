@@ -40,6 +40,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
  * Owns the per-{@code (userId, agentId)} live {@link Sandbox} instances used by the DataAgent web
  * tier.
  *
@@ -78,6 +79,7 @@ public final class UserSandboxRegistry {
     private final ScheduledExecutorService evictor;
 
     /**
+     * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
      * @param client backend client used to {@link SandboxClient#create create} new sandboxes
      * @param hostWorkspaceRoot directory under which per-agent shared seed lives, organised as
      *     {@code <hostWorkspaceRoot>/agents/<agentId>/{AGENTS.md, skills/, subagents/, knowledge/}}.
@@ -118,6 +120,7 @@ public final class UserSandboxRegistry {
     }
 
     /**
+     * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
      * Returns the live {@link Sandbox} for {@code (userId, agentId)}, creating + starting it on
      * first call. Subsequent calls within the {@link #idleTtl} window return the same instance
      * and bump its idle timer.
@@ -140,6 +143,7 @@ public final class UserSandboxRegistry {
     }
 
     /**
+     * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
      * Returns the live {@link Sandbox} for {@code (userId, agentId)} if one is already cached.
      * Does NOT create a new container — useful for callers (e.g. file-tree rendering on a freshly
      * loaded UI) that should not pay the cold-start cost when nothing has happened yet.
@@ -156,6 +160,7 @@ public final class UserSandboxRegistry {
     }
 
     /**
+     * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
      * Closes and removes cached sandboxes matching {@code (userId, agentId)}.
      *
      * <ul>
@@ -195,6 +200,7 @@ public final class UserSandboxRegistry {
     }
 
     /**
+     * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
      * Visible for tests. Closes every sandbox whose last access time is older than {@link
      * #idleTtl}.
      */
@@ -251,6 +257,7 @@ public final class UserSandboxRegistry {
     }
 
     /**
+     * {@summary Composite key used to scope a sandbox to one user + agent. (Composite key used to scope a sandbox to one user + agent.)}
      * Builds the workspace projection spec for {@code key}: the source root is the per-agent slice
      * under {@link #hostWorkspaceRoot} so the container only sees its own agent's shared layer.
      * The directory is created on demand to avoid a Docker mount failure when the agent's slice

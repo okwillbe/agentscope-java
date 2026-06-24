@@ -20,6 +20,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Pre-flight gate for write operations. (Pre-flight gate for write operations.)}
  * Pre-flight gate for write operations.
  *
  * <p>Throws {@link ResponseStatusException} when the request must be rejected. Designed to be
@@ -35,6 +36,7 @@ final class WriteGuard {
     }
 
     /**
+     * {@summary Pre-flight gate for write operations. (Pre-flight gate for write operations.)}
      * @param suppliedToken value of the {@code X-Agentscope-Admin-Token} header (may be null)
      */
     void check(String suppliedToken) {

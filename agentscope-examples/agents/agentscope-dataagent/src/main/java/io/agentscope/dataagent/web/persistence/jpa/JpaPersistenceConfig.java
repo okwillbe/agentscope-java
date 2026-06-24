@@ -26,6 +26,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
+ * {@summary JpaPersistenceConfig class ()}
  * Wires the JPA-backed {@link UserStore} and {@link UserAgentDefinitionStore}. This is the only
  * persistence backend the builder ships with.
  *

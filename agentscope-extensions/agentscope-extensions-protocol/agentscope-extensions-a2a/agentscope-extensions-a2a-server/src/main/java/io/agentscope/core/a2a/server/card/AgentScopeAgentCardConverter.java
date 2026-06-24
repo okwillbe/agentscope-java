@@ -29,6 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Agent Card Builder For Agent Scope A2A Server. (Agent Card Builder For Agent Scope A2A Server.)}
  * Agent Card Builder For Agent Scope A2A Server.
  *
  * <p> The Converter will convert input {@link ConfigurableAgentCard} to an {@link AgentCard} instance, available

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary ChannelManager (ChannelManager)} */
 import io.agentscope.core.message.Msg;
 import io.agentscope.harness.agent.gateway.channel.Channel;
 import io.agentscope.harness.agent.gateway.channel.OutboundAddress;
@@ -33,10 +34,10 @@ import org.slf4j.LoggerFactory;
  * <h2>Lifecycle</h2>
  *
  * <ol>
- *   <li>{@link #register(Channel)} — add a channel to the registry
- *   <li>{@link #initAll(Gateway)} — inject the gateway into all registered channels
- *   <li>{@link #startAll()} — start all channels (connect to external transports)
- *   <li>{@link #stopAll()} — stop all channels and release resources
+ *   <li>{@link #register(Channel)} ...add a channel to the registry
+ *   <li>{@link #initAll(Gateway)} ...inject the gateway into all registered channels
+ *   <li>{@link #startAll()} ...start all channels (connect to external transports)
+ *   <li>{@link #stopAll()} ...stop all channels and release resources
  * </ol>
  *
  * <h2>Outbound delivery</h2>

@@ -29,6 +29,7 @@ import io.agentscope.spring.boot.properties.OpenAIProperties;
 import java.util.Locale;
 
 /**
+ * {@summary ModelProviderType class ()}
  * Enum-based strategy for creating concrete {@link Model} instances from configuration.
  */
 public enum ModelProviderType {
@@ -155,11 +156,13 @@ public enum ModelProviderType {
     }
 
     /**
+     * {@summary ModelProviderType class ()}
      * Create a concrete {@link Model} instance using the given properties.
      */
     public abstract Model createModel(AgentscopeProperties properties);
 
     /**
+     * {@summary ModelProviderType class ()}
      * Resolve provider from root properties. Defaults to {@link #DASHSCOPE} when provider is not
      * configured.
      *

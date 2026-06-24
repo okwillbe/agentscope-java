@@ -35,6 +35,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary SharedSandboxFilesystem class ()}
  * {@link AbstractFilesystem} that delegates to a fixed {@link Sandbox} reference owned by
  * {@link UserSandboxRegistry}.
  *

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolResultConverter (ToolResultConverter)} */
 import io.agentscope.core.message.ToolResultBlock;
 import java.lang.reflect.Type;
 

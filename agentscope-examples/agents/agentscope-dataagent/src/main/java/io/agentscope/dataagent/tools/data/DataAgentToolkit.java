@@ -22,6 +22,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 /**
+ * {@summary Agent-facing toolkit for data-analysis primitives: list configured sources, describe a table, (Agent-facing toolkit for data-analysis primitives: list configured sources, describe a table,)}
  * Agent-facing toolkit for data-analysis primitives: list configured sources, describe a table,
  * preview a SQL query, render a chart. Stateless singleton; backing connectors are resolved
  * through a {@link DataSourceRegistry} and {@link ChartRenderer} so operators can swap in real

@@ -20,6 +20,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ * {@summary Utility class for common reader operations. (Utility class for common reader operations.)}
  * Utility class for common reader operations.
  *
  * <p>This class provides shared functionality for document readers, including:
@@ -35,6 +36,7 @@ public final class ReaderUtils {
     }
 
     /**
+     * {@summary Utility class for common reader operations. (Utility class for common reader operations.)}
      * Generates a deterministic document ID using the specified hash algorithm.
      *
      * <p>This method is useful for creating consistent document IDs based on file paths
@@ -56,6 +58,7 @@ public final class ReaderUtils {
     }
 
     /**
+     * {@summary Utility class for common reader operations. (Utility class for common reader operations.)}
      * Generates a deterministic document ID using MD5 hash.
      *
      * <p>This is a convenience method that uses MD5 as the hash algorithm.
@@ -68,6 +71,7 @@ public final class ReaderUtils {
     }
 
     /**
+     * {@summary Utility class for common reader operations. (Utility class for common reader operations.)}
      * Generates a deterministic document ID using SHA-256 hash.
      *
      * <p>This is a convenience method that uses SHA-256 as the hash algorithm.
@@ -80,6 +84,7 @@ public final class ReaderUtils {
     }
 
     /**
+     * {@summary Utility class for common reader operations. (Utility class for common reader operations.)}
      * Converts byte array to hexadecimal string.
      *
      * @param bytes the byte array to convert

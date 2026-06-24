@@ -26,6 +26,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Returns a valid tenant_access_token, refreshing in-band when missing or near-expiry. (Returns a valid tenant_access_token, refreshing in-band when missing or near-expiry.)}
  * Fetches and caches a Feishu {@code tenant_access_token} for one {@code app_id + app_secret}
  * pair. Tokens are valid for ~7200 s; this provider proactively refreshes at ~80% of TTL.
  *

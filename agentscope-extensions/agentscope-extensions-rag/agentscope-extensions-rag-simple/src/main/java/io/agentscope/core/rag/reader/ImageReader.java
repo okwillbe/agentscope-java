@@ -24,6 +24,7 @@ import java.util.List;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
  * Image reader implementation that reads image files.
  *
  * <p>This reader supports various image formats and can optionally extract text
@@ -42,6 +43,7 @@ public class ImageReader implements Reader {
     private final boolean enableOCR;
 
     /**
+     * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
      * Creates a new ImageReader with OCR disabled.
      */
     public ImageReader() {
@@ -49,6 +51,7 @@ public class ImageReader implements Reader {
     }
 
     /**
+     * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
      * Creates a new ImageReader with the specified OCR setting.
      *
      * @param enableOCR true to enable OCR text extraction from images
@@ -81,6 +84,7 @@ public class ImageReader implements Reader {
     }
 
     /**
+     * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
      * Loads an image document from the given path.
      *
      * @param imagePath the path to the image file (can be local file path or URL)
@@ -112,6 +116,7 @@ public class ImageReader implements Reader {
     }
 
     /**
+     * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
      * Checks if the given path is a URL.
      *
      * @param path the path to check
@@ -128,6 +133,7 @@ public class ImageReader implements Reader {
     }
 
     /**
+     * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
      * Extracts text from an image using OCR.
      *
      * <p>This is a placeholder method. Actual OCR implementation would require
@@ -146,6 +152,7 @@ public class ImageReader implements Reader {
     }
 
     /**
+     * {@summary Image reader implementation that reads image files. (Image reader implementation that reads image files.)}
      * Checks if OCR is enabled.
      *
      * @return true if OCR is enabled

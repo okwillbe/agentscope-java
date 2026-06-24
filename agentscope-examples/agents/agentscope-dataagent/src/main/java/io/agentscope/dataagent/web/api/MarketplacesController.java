@@ -45,6 +45,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Property keys never echoed back in API responses; passwords leak through history otherwise. (Property keys never echoed back in API responses; passwords leak through history otherwise.)}
  * Per-user marketplaces management. CRUD over rows in {@code dataagent_user_marketplace} (via
  * {@link UserMarketplacePersistence}) plus read-only browsing of the skills exposed by each
  * marketplace through {@link UserMarketplaceRegistry}.

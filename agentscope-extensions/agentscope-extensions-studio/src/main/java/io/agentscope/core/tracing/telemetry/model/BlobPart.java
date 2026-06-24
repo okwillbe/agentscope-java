@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-/** Represents blob binary data sent inline to the model. */
+/** {@summary Represents blob binary data sent inline to the model. (Represents blob binary data sent inline to the model.)} Represents blob binary data sent inline to the model. */
 @JsonClassDescription("Blob part")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class BlobPart implements MessagePart {

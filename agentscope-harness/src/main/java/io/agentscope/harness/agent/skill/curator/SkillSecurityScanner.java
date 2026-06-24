@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillSecurityScanner (SkillSecurityScanner)} */
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,16 +24,16 @@ import java.util.regex.Pattern;
 
 /**
  * Static-analysis scanner for SKILL.md and skill support files. Ported from hermes-agent's
- * {@code tools/skills_guard.py} regex library plus the trust-level × verdict install policy.
+ * {@code tools/skills_guard.py} regex library plus the trust-level 脳 verdict install policy.
  *
  * <p>Detection categories (one or more regexes per category):
  * <ul>
- *   <li>{@link Category#EXFILTRATION} — data exfiltration via curl/wget POST</li>
- *   <li>{@link Category#INJECTION} — prompt-injection markers in markdown</li>
- *   <li>{@link Category#DESTRUCTIVE} — {@code rm -rf /}, {@code mkfs}, {@code dd of=/dev}</li>
- *   <li>{@link Category#PERSISTENCE} — crontab / systemd / shell-rc tampering</li>
- *   <li>{@link Category#NETWORK} — listen sockets / reverse shells</li>
- *   <li>{@link Category#OBFUSCATION} — base64 → bash, eval $(curl …), etc.</li>
+ *   <li>{@link Category#EXFILTRATION} ...data exfiltration via curl/wget POST</li>
+ *   <li>{@link Category#INJECTION} ...prompt-injection markers in markdown</li>
+ *   <li>{@link Category#DESTRUCTIVE} ...{@code rm -rf /}, {@code mkfs}, {@code dd of=/dev}</li>
+ *   <li>{@link Category#PERSISTENCE} ...crontab / systemd / shell-rc tampering</li>
+ *   <li>{@link Category#NETWORK} ...listen sockets / reverse shells</li>
+ *   <li>{@link Category#OBFUSCATION} ...base64 鈫?bash, eval $(curl ..., etc.</li>
  * </ul>
  *
  * <p>The scan returns a {@link Verdict} (SAFE / CAUTION / DANGEROUS) plus the list of findings.
@@ -106,21 +107,21 @@ public final class SkillSecurityScanner {
                         Severity.HIGH,
                         Category.EXFILTRATION,
                         Pattern.compile("curl\\s+[^\\n]*\\s(-d|--data|-F|--data-binary)\\s"),
-                        "curl POST upload — possible data exfiltration"));
+                        "curl POST upload ...possible data exfiltration"));
         rules.add(
                 new Rule(
                         "exfil-wget-post",
                         Severity.HIGH,
                         Category.EXFILTRATION,
                         Pattern.compile("wget\\s+(?:[^\\n]*\\s)?--post-data\\b"),
-                        "wget --post-data — possible data exfiltration"));
+                        "wget --post-data ...possible data exfiltration"));
         rules.add(
                 new Rule(
                         "exfil-nc-pipe",
                         Severity.HIGH,
                         Category.EXFILTRATION,
                         Pattern.compile("\\b(cat|tar|gzip)\\s+[^\\n]*\\|\\s*nc\\s"),
-                        "piping local data into netcat — exfiltration"));
+                        "piping local data into netcat ...exfiltration"));
 
         // INJECTION -------------------------------------------------------
         rules.add(
@@ -153,14 +154,14 @@ public final class SkillSecurityScanner {
                         Severity.CRITICAL,
                         Category.DESTRUCTIVE,
                         Pattern.compile("rm\\s+-rf?\\s+(--no-preserve-root\\s+)?/(\\s|$)"),
-                        "rm -rf / — destroys filesystem"));
+                        "rm -rf / ...destroys filesystem"));
         rules.add(
                 new Rule(
                         "dest-mkfs",
                         Severity.CRITICAL,
                         Category.DESTRUCTIVE,
                         Pattern.compile("\\bmkfs(\\.[a-z0-9]+)?\\s+/dev/"),
-                        "mkfs on a block device — destroys data"));
+                        "mkfs on a block device ...destroys data"));
         rules.add(
                 new Rule(
                         "dest-dd-dev",
@@ -183,7 +184,7 @@ public final class SkillSecurityScanner {
                         Severity.HIGH,
                         Category.PERSISTENCE,
                         Pattern.compile("\\b(crontab\\s+-)|(echo\\s+[^\\n]*\\s+>>\\s+/etc/cron)"),
-                        "installs crontab entry — persistence"));
+                        "installs crontab entry ...persistence"));
         rules.add(
                 new Rule(
                         "pers-systemd-install",
@@ -192,14 +193,14 @@ public final class SkillSecurityScanner {
                         Pattern.compile(
                                 "(systemctl\\s+enable\\s+|cp\\s+[^\\n]*\\.service\\s+/etc/systemd"
                                         + "/system|/etc/systemd/system/[^\\s]+\\.service)"),
-                        "installs systemd unit — persistence"));
+                        "installs systemd unit ...persistence"));
         rules.add(
                 new Rule(
                         "pers-rc-tamper",
                         Severity.MEDIUM,
                         Category.PERSISTENCE,
                         Pattern.compile("echo\\s+[^\\n]*>>\\s+~?/?(\\.bashrc|\\.zshrc|\\.profile)"),
-                        "writes shell-rc — persistence"));
+                        "writes shell-rc ...persistence"));
 
         // NETWORK ---------------------------------------------------------
         rules.add(
@@ -231,21 +232,21 @@ public final class SkillSecurityScanner {
                         Severity.HIGH,
                         Category.OBFUSCATION,
                         Pattern.compile("base64\\s+(-d|--decode)\\b[^\\n]*\\|\\s*(bash|sh|zsh)"),
-                        "base64 -d | shell — obfuscated execution"));
+                        "base64 -d | shell ...obfuscated execution"));
         rules.add(
                 new Rule(
                         "obf-eval-curl",
                         Severity.CRITICAL,
                         Category.OBFUSCATION,
                         Pattern.compile("\\beval\\s+[^\\n]*\\$\\(\\s*(curl|wget)\\b"),
-                        "eval $(curl ...) — remote-code execution"));
+                        "eval $(curl ...) ...remote-code execution"));
         rules.add(
                 new Rule(
                         "obf-curl-pipe-shell",
                         Severity.HIGH,
                         Category.OBFUSCATION,
                         Pattern.compile("(curl|wget)\\s+[^\\n]*\\|\\s*(bash|sh|zsh)"),
-                        "curl/wget piped to shell — remote-code execution"));
+                        "curl/wget piped to shell ...remote-code execution"));
 
         return List.copyOf(rules);
     }
@@ -256,7 +257,7 @@ public final class SkillSecurityScanner {
 
     /**
      * Scan a complete skill: SKILL.md + every support file. {@code resources} is a map of
-     * relative path → content (matching {@code AgentSkill.getResources()}). Returns
+     * relative path 鈫?content (matching {@code AgentSkill.getResources()}). Returns
      * the most severe verdict across all files.
      */
     public static ScanResult scan(String skillName, String skillMd, Map<String, String> resources) {
@@ -284,7 +285,7 @@ public final class SkillSecurityScanner {
     }
 
     /**
-     * Map (trust × verdict) to an install decision. Mirrors hermes
+     * Map (trust 脳 verdict) to an install decision. Mirrors hermes
      * {@code tools/skills_guard.py::INSTALL_POLICY}.
      *
      * @return {@code true} if writing the skill should proceed; {@code false} if it must be
@@ -297,7 +298,7 @@ public final class SkillSecurityScanner {
             case COMMUNITY -> verdict == Verdict.SAFE;
             case AGENT_CREATED ->
                     // SAFE / CAUTION allowed; DANGEROUS blocked. Hermes' "ASK" mode collapses
-                    // to BLOCK in the Java port — the agent will have to revise its skill body
+                    // to BLOCK in the Java port ...the agent will have to revise its skill body
                     // rather than be prompted; matching enterprise default.
                     verdict != Verdict.DANGEROUS;
         };
@@ -319,7 +320,7 @@ public final class SkillSecurityScanner {
                 int line = lineNumberAt(content, m.start());
                 String text = m.group();
                 if (text.length() > 200) {
-                    text = text.substring(0, 200) + "…";
+                    text = text.substring(0, 200) + "...";
                 }
                 findings.add(
                         new Finding(
@@ -359,7 +360,7 @@ public final class SkillSecurityScanner {
 
     private static String formatReport(String title, Verdict verdict, List<Finding> findings) {
         StringBuilder sb = new StringBuilder();
-        sb.append("Security scan: ").append(title).append(" — ").append(verdict).append("\n");
+        sb.append("Security scan: ").append(title).append(" ...").append(verdict).append("\n");
         if (findings.isEmpty()) {
             sb.append("  (no findings)\n");
             return sb.toString();
@@ -375,7 +376,7 @@ public final class SkillSecurityScanner {
                     .append(f.file())
                     .append(":")
                     .append(f.line())
-                    .append(" — ")
+                    .append(" ...")
                     .append(f.description())
                     .append("\n      match: ")
                     .append(f.matchText())

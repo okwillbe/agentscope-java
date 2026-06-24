@@ -15,14 +15,14 @@
  */
 package io.agentscope.extensions.agentprotocol;
 
-/** Workspace partitioning for persisted task records served by the protocol endpoints. */
+/** {@summary Workspace partitioning for persisted task records served by the protocol endpoints. (Workspace partitioning for persisted task records served by the protocol endpoints.)} Workspace partitioning for persisted task records served by the protocol endpoints. */
 public final class AgentProtocolConstants {
 
     private AgentProtocolConstants() {}
 
-    /** Synthetic parent agent id for {@code agents/&lt;id&gt;/tasks/} paths. */
+    /** {@summary Workspace partitioning for persisted task records served by the protocol endpoints. (Workspace partitioning for persisted task records served by the protocol endpoints.)} Synthetic parent agent id for {@code agents/&lt;id&gt;/tasks/} paths. */
     public static final String PROTOCOL_AGENT_ID = "_agentscope_protocol";
 
-    /** Single session bucket file holding all protocol tasks as a task-id map. */
+    /** {@summary Workspace partitioning for persisted task records served by the protocol endpoints. (Workspace partitioning for persisted task records served by the protocol endpoints.)} Single session bucket file holding all protocol tasks as a task-id map. */
     public static final String PROTOCOL_SESSION_ID = "_tasks";
 }

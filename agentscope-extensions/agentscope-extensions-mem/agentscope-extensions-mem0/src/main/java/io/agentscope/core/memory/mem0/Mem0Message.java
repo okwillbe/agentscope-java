@@ -18,6 +18,7 @@ package io.agentscope.core.memory.mem0;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
+ * {@summary Represents a message in the Mem0 API format. (Represents a message in the Mem0 API format.)}
  * Represents a message in the Mem0 API format.
  *
  * <p>Messages are the primary input format for Mem0's memory recording. Each message
@@ -42,6 +43,7 @@ public class Mem0Message {
     public Mem0Message() {}
 
     /**
+     * {@summary Represents a message in the Mem0 API format. (Represents a message in the Mem0 API format.)}
      * Creates a new Mem0Message with specified role and content.
      *
      * @param role The role (e.g., "user", "assistant")
@@ -53,6 +55,7 @@ public class Mem0Message {
     }
 
     /**
+     * {@summary Represents a message in the Mem0 API format. (Represents a message in the Mem0 API format.)}
      * Creates a new Mem0Message with role, content, and name.
      *
      * @param role The role (e.g., "user", "assistant")
@@ -92,6 +95,7 @@ public class Mem0Message {
     }
 
     /**
+     * {@summary Represents a message in the Mem0 API format. (Represents a message in the Mem0 API format.)}
      * Builder for creating Mem0Message instances.
      *
      * @return A new builder instance

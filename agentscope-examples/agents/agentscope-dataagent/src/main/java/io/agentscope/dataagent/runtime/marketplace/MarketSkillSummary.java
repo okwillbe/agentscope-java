@@ -16,6 +16,7 @@
 package io.agentscope.dataagent.runtime.marketplace;
 
 /**
+ * {@summary MarketSkillSummary class ()}
  * Lightweight skill descriptor returned by {@link DataAgentMarketplace#list()}. Used to populate
  * the marketplace browser without paying the cost of downloading every SKILL.md.
  *

@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary FileUploadResponse (FileUploadResponse)} */
+
 /**
  * Result of a single file upload operation.
  *

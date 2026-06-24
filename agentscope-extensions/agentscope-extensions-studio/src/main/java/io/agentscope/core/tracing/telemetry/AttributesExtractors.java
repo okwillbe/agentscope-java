@@ -113,6 +113,7 @@ final class AttributesExtractors {
     private static final Logger LOGGER = LoggerFactory.getLogger(AttributesExtractors.class);
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get agent request attributes for OpenTelemetry tracing.
      *
      * <p>Extracts request parameters from agent calls into GenAI attributes.
@@ -137,6 +138,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get agent response attributes for OpenTelemetry tracing.
      *
      * <p>Extracts response parameters from agent calls responses into GenAI attributes.
@@ -153,6 +155,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get LLM request attributes for OpenTelemetry tracing.
      *
      * <p>Extracts request parameters from LLM model calls into GenAI attributes.
@@ -204,6 +207,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get LLM response attributes for OpenTelemetry tracing.
      *
      * <p>Extracts response parameters from LLM model responses into GenAI attributes.
@@ -237,6 +241,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get tool request attributes for OpenTelemetry tracing.
      *
      * <p>Extracts request parameters from tool calls into GenAI attributes.
@@ -268,6 +273,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get tool response attributes for OpenTelemetry tracing.
      *
      * <p>Extracts response parameters from tool responses into GenAI attributes.
@@ -287,6 +293,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get format request attributes for OpenTelemetry tracing.
      *
      * <p>Extracts request parameters from format invocations into GenAI attributes.
@@ -311,6 +318,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get format response attributes for OpenTelemetry tracing.
      *
      * <p>Extracts response parameters from format invocations into GenAI attributes.
@@ -328,6 +336,7 @@ final class AttributesExtractors {
     }
 
     /**
+     * {@summary Get agent request attributes for OpenTelemetry tracing. (Get agent request attributes for OpenTelemetry tracing.)}
      * Get AgentScope function name for OpenTelemetry tracing.
      *
      * @param instance The invoked instance

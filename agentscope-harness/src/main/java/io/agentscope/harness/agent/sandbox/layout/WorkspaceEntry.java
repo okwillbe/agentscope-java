@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary WorkspaceEntry (WorkspaceEntry)} */
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 

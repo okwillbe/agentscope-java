@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary ProxyType (ProxyType)} */
+
 /**
  * Enumeration of supported proxy types.
  *

@@ -15,13 +15,14 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillCuratorState (SkillCuratorState)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.Instant;
 
 /**
- * Persistent state for {@link SkillCurator} — kept in {@code skills/.curator_state.json}.
+ * Persistent state for {@link SkillCurator} ...kept in {@code skills/.curator_state.json}.
  * Records the last run timestamp, run count, paused flag, and a brief human-readable summary.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)

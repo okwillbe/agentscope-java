@@ -22,6 +22,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEventPublisher;
 
 /**
+ * {@summary Default audit sink: logs at INFO via SLF4J and (optionally) republishes the record as a Spring}
  * Default audit sink: logs at INFO via SLF4J and (optionally) republishes the record as a Spring
  * {@code ApplicationEvent} so other components can subscribe with {@code @EventListener}.
  *

@@ -28,6 +28,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
  * HTTP client for interacting with the ReMe API.
  */
 public class ReMeClient {
@@ -40,6 +41,7 @@ public class ReMeClient {
     private final String apiBaseUrl;
 
     /**
+     * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
      * Creates a new ReMeClient with specified configuration.
      *
      * @param apiBaseUrl The base URL of the ReMe API (e.g., "http://localhost:8002")
@@ -49,6 +51,7 @@ public class ReMeClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
      * Creates a new ReMeClient with custom timeout.
      *
      * @param apiBaseUrl The base URL of the ReMe API
@@ -68,6 +71,7 @@ public class ReMeClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
      * Executes a POST request to the ReMe API and parses the response.
      *
      * <p>This is a generic method that handles HTTP communication, JSON serialization,
@@ -131,6 +135,7 @@ public class ReMeClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
      * Adds memories to ReMe by sending trajectories for processing.
      *
      * <p>This method calls the {@code POST /summary_personal_memory} endpoint. ReMe will
@@ -148,6 +153,7 @@ public class ReMeClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
      * Searches memories in ReMe using the provided query.
      *
      * <p>This method calls the {@code POST /retrieve_personal_memory} endpoint to find
@@ -165,6 +171,7 @@ public class ReMeClient {
     }
 
     /**
+     * {@summary HTTP client for interacting with the ReMe API. (HTTP client for interacting with the ReMe API.)}
      * Shuts down the HTTP client and releases resources.
      *
      * <p>This method should be called when the client is no longer needed.

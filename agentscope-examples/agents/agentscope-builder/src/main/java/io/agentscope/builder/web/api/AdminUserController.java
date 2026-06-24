@@ -44,6 +44,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Admin-only user management endpoints. (Admin-only user management endpoints.)}
  * Admin-only user management endpoints.
  *
  * <ul>
@@ -273,6 +274,7 @@ public class AdminUserController {
     }
 
     /**
+     * {@summary Admin-only user management endpoints. (Admin-only user management endpoints.)}
      * Generates a temporary password using a small unambiguous alphabet (no 0/O/1/l). The plaintext
      * is shown to the admin exactly once at creation time; on the wire, the response is HTTPS-only
      * (the SPA fetches over the same origin) and is never logged.

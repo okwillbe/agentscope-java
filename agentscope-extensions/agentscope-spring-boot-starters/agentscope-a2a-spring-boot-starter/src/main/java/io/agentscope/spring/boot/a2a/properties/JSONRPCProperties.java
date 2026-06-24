@@ -22,21 +22,25 @@ import io.agentscope.core.a2a.server.transport.TransportProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Configuration properties for JSON-RPC transport. (Configuration properties for JSON-RPC transport.)}
  * Configuration properties for JSON-RPC transport.
  */
 @ConfigurationProperties(Constants.A2A_JSON_RPC_SERVER_PREFIX)
 public class JSONRPCProperties implements CustomTransportProperties {
     /**
+     * {@summary Configuration properties for JSON-RPC transport. (Configuration properties for JSON-RPC transport.)}
      * Whether JSON-RPC transport is enabled.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary Configuration properties for JSON-RPC transport. (Configuration properties for JSON-RPC transport.)}
      * Deployment configuration including host and port.
      */
     private DeploymentProperties deploymentProperties;
 
     /**
+     * {@summary Configuration properties for JSON-RPC transport. (Configuration properties for JSON-RPC transport.)}
      * Converts to {@link TransportProperties}.
      *
      * @return the transport properties

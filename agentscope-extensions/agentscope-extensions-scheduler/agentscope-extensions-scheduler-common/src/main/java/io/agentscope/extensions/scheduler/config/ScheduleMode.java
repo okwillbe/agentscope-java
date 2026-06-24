@@ -16,6 +16,7 @@
 package io.agentscope.extensions.scheduler.config;
 
 /**
+ * {@summary Enumeration of scheduling modes supported by the scheduler. (Enumeration of scheduling modes supported by the scheduler.)}
  * Enumeration of scheduling modes supported by the scheduler.
  *
  * <p>This enum defines the different timing strategies that can be used to schedule
@@ -26,6 +27,7 @@ package io.agentscope.extensions.scheduler.config;
 public enum ScheduleMode {
 
     /**
+     * {@summary Enumeration of scheduling modes supported by the scheduler. (Enumeration of scheduling modes supported by the scheduler.)}
      * No scheduling - the agent will not be automatically scheduled.
      *
      * <p>This is the default mode. When set to NONE, the agent will not be executed
@@ -37,6 +39,7 @@ public enum ScheduleMode {
     NONE,
 
     /**
+     * {@summary Enumeration of scheduling modes supported by the scheduler. (Enumeration of scheduling modes supported by the scheduler.)}
      * Cron-based scheduling using cron expressions.
      *
      * <p>Allows flexible scheduling based on cron syntax, supporting complex patterns
@@ -53,6 +56,7 @@ public enum ScheduleMode {
     CRON,
 
     /**
+     * {@summary Enumeration of scheduling modes supported by the scheduler. (Enumeration of scheduling modes supported by the scheduler.)}
      * Fixed-rate scheduling with constant intervals between execution starts.
      *
      * <p>The task executes at fixed intervals regardless of execution duration.
@@ -66,6 +70,7 @@ public enum ScheduleMode {
     FIXED_RATE,
 
     /**
+     * {@summary Enumeration of scheduling modes supported by the scheduler. (Enumeration of scheduling modes supported by the scheduler.)}
      * Fixed-delay scheduling with constant delays between execution completion and next start.
      *
      * <p>The task waits for a fixed duration after completion before starting the next execution.

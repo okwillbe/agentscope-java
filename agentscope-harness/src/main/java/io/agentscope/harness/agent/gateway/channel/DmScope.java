@@ -15,16 +15,18 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary DmScope (DmScope)} */
+
 /**
  * Controls how DM ({@link PeerKind#DIRECT}) session keys are scoped.
  *
  * <ul>
- *   <li>{@link #MAIN} — all DMs for a given agent share a single session. Suitable for single-user
+ *   <li>{@link #MAIN} ...all DMs for a given agent share a single session. Suitable for single-user
  *       or shared assistant scenarios.
- *   <li>{@link #PER_PEER} — one session per peer id. Most common for multi-user deployments.
- *   <li>{@link #PER_CHANNEL_PEER} — like {@code PER_PEER} but the channel name is included in the
+ *   <li>{@link #PER_PEER} ...one session per peer id. Most common for multi-user deployments.
+ *   <li>{@link #PER_CHANNEL_PEER} ...like {@code PER_PEER} but the channel name is included in the
  *       key, disambiguating the same peer across channels.
- *   <li>{@link #PER_ACCOUNT_CHANNEL_PEER} — extends {@code PER_CHANNEL_PEER} with the account id,
+ *   <li>{@link #PER_ACCOUNT_CHANNEL_PEER} ...extends {@code PER_CHANNEL_PEER} with the account id,
  *       useful for multi-account (multi-bot) deployments on the same channel platform.
  * </ul>
  */

@@ -17,11 +17,11 @@ package io.agentscope.extensions.agentprotocol;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/** Configuration for the AgentScope task HTTP protocol endpoints. */
+/** {@summary Configuration for the AgentScope task HTTP protocol endpoints. (Configuration for the AgentScope task HTTP protocol endpoints.)} Configuration for the AgentScope task HTTP protocol endpoints. */
 @ConfigurationProperties(prefix = "agentscope.agent-protocol")
 public class AgentProtocolProperties {
 
-    /** When {@code true}, registers {@code /tasks} REST endpoints. */
+    /** {@summary Configuration for the AgentScope task HTTP protocol endpoints. (Configuration for the AgentScope task HTTP protocol endpoints.)} When {@code true}, registers {@code /tasks} REST endpoints. */
     private boolean enabled = false;
 
     public boolean isEnabled() {

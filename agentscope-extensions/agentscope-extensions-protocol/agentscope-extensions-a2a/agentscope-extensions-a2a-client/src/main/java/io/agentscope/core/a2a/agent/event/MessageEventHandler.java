@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary MessageEventHandler class ()}
  * Handler for {@link MessageEvent}.
  */
 public class MessageEventHandler implements ClientEventHandler<MessageEvent> {

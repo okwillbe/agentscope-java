@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.formatter;
 
+/** {@summary FormatterException (FormatterException)} */
+
 /**
  * Exception thrown when formatter encounters an error during message formatting or response parsing.
  *

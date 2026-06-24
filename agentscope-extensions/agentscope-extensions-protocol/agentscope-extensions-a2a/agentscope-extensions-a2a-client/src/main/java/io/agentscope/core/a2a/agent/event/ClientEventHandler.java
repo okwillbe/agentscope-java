@@ -19,11 +19,13 @@ package io.agentscope.core.a2a.agent.event;
 import io.a2a.client.ClientEvent;
 
 /**
+ * {@summary Get handle event class. (Get handle event class.)}
  * Handler Interface to handle Different {@link ClientEvent}.
  */
 public interface ClientEventHandler<T extends ClientEvent> {
 
     /**
+     * {@summary Get handle event class. (Get handle event class.)}
      * Get handle event class.
      *
      * @return handle event class
@@ -31,6 +33,7 @@ public interface ClientEventHandler<T extends ClientEvent> {
     Class<T> getHandleEventType();
 
     /**
+     * {@summary Get handle event class. (Get handle event class.)}
      * Handle {@link ClientEvent} By event type.
      *
      * @param event   client event from A2A server

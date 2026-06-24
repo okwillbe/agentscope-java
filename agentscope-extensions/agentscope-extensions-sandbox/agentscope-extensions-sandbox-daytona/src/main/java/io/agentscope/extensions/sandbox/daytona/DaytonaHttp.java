@@ -29,7 +29,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/** Minimal HTTP client for the Daytona control plane and toolbox process API. */
+/** {@summary Minimal HTTP client for the Daytona control plane and toolbox process API. (Minimal HTTP client for the Daytona control plane and toolbox process API.)} Minimal HTTP client for the Daytona control plane and toolbox process API. */
 final class DaytonaHttp {
 
     private static final MediaType JSON = MediaType.get("application/json; charset=utf-8");

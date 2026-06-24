@@ -16,6 +16,7 @@
 package io.agentscope.claw2.runtime.session;
 
 /**
+ * {@summary Tunable concurrency, announce behavior, session reset policy, and maintenance configuration for (Tunable concurrency, announce behavior, session reset policy, and maintenance configuration for)}
  * Tunable concurrency, announce behavior, session reset policy, and maintenance configuration for
  * {@link SessionAgentManager}.
  */

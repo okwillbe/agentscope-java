@@ -19,6 +19,7 @@ package io.agentscope.spring.boot.nacos.constants;
 import io.agentscope.spring.boot.a2a.properties.Constants;
 
 /**
+ * {@summary Constants for Nacos. (Constants for Nacos.)}
  * Constants for Nacos.
  *
  * <p>Includes prefixes for Nacos configuration properties. These prefixes follow the agentscope spring boot starter

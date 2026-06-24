@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.dify;
 
 /**
+ * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
  * Dify retrieval modes for knowledge base search.
  *
  * <p>Different retrieval modes use different strategies to find relevant documents:
@@ -36,6 +37,7 @@ package io.agentscope.core.rag.integration.dify;
 public enum RetrievalMode {
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Keyword-based retrieval using BM25 or similar algorithms.
      *
      * <p>Best for: Exact term matching, proper nouns, technical terms
@@ -43,6 +45,7 @@ public enum RetrievalMode {
     KEYWORD_SEARCH("keyword_search"),
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Semantic retrieval using vector embeddings and similarity search.
      *
      * <p>Best for: Conceptual queries, paraphrased questions, semantic understanding
@@ -50,6 +53,7 @@ public enum RetrievalMode {
     SEMANTIC_SEARCH("semantic_search"),
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Hybrid retrieval combining keyword and semantic approaches.
      *
      * <p>This is the recommended mode as it provides the best of both worlds.
@@ -60,6 +64,7 @@ public enum RetrievalMode {
     HYBRID_SEARCH("hybrid_search"),
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Full-text search across all document content.
      *
      * <p>Best for: Complex queries, searching within large text bodies
@@ -69,6 +74,7 @@ public enum RetrievalMode {
     private final String value;
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Creates a new RetrievalMode enum constant.
      *
      * @param value the string value used in Dify API
@@ -78,6 +84,7 @@ public enum RetrievalMode {
     }
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Gets the string value for use in Dify API requests.
      *
      * @return the API value
@@ -87,6 +94,7 @@ public enum RetrievalMode {
     }
 
     /**
+     * {@summary Dify retrieval modes for knowledge base search. (Dify retrieval modes for knowledge base search.)}
      * Converts a string value to the corresponding RetrievalMode enum.
      *
      * @param value the string value

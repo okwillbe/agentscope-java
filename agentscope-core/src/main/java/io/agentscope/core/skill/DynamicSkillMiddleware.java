@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.skill;
 
+/** {@summary DynamicSkillMiddleware (DynamicSkillMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.middleware.MiddlewareBase;
@@ -53,7 +54,7 @@ import reactor.core.publisher.Mono;
  * cheap.
  *
  * <p>Subclasses can plug runtime visibility logic (canary lists, environment gates, etc.) by
- * overriding {@link #filterVisible(List, RuntimeContext)} — the default implementation returns
+ * overriding {@link #filterVisible(List, RuntimeContext)} 鈥?the default implementation returns
  * the input list unchanged.
  */
 @SuppressWarnings("deprecation")
@@ -75,7 +76,7 @@ public class DynamicSkillMiddleware implements MiddlewareBase, ToolkitAware {
 
     private volatile SkillBox currentSkillBox;
 
-    /** Hash of the last merged-and-filtered skill view; identical hash ⇒ reuse {@link #currentSkillBox}. */
+    /** Hash of the last merged-and-filtered skill view; identical hash 鈬?reuse {@link #currentSkillBox}. */
     private volatile String lastSignature;
 
     public DynamicSkillMiddleware(List<AgentSkillRepository> repositories, Toolkit toolkit) {
@@ -97,7 +98,7 @@ public class DynamicSkillMiddleware implements MiddlewareBase, ToolkitAware {
      *                             block. Set this only when the agent has a shell-like tool wired
      *                             in; otherwise the prompt asks the model to do things it cannot.
      * @param workDir              stable working directory for {@code uploadSkillFiles}; {@code null}
-     *                             ⇒ the middleware mkdtemps one on first reload and reuses it
+     *                             鈬?the middleware mkdtemps one on first reload and reuses it
      */
     public DynamicSkillMiddleware(
             List<AgentSkillRepository> repositories,
@@ -144,7 +145,7 @@ public class DynamicSkillMiddleware implements MiddlewareBase, ToolkitAware {
 
     /**
      * Hook for subclasses to drop skills that should not be visible in the current request
-     * (canary releases, allow-lists, environment gates, …). Called once per {@code call()},
+     * (canary releases, allow-lists, environment gates, 鈥?. Called once per {@code call()},
      * after merging across repositories and before the {@link SkillBox} is rebuilt.
      *
      * <p>Default implementation returns {@code raw} unchanged.
@@ -217,7 +218,7 @@ public class DynamicSkillMiddleware implements MiddlewareBase, ToolkitAware {
 
         // Content-keyed short-circuit: if the (sorted) merged view hashes to the same value as
         // the previous call AND we already have a SkillBox, skip the entire rebuild + upload.
-        // This is the common case once the agent has been running for a while — repos don't
+        // This is the common case once the agent has been running for a while 鈥?repos don't
         // change between most turns.
         String signature = computeSignature(visible);
         if (signature.equals(lastSignature) && currentSkillBox != null) {

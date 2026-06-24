@@ -15,13 +15,14 @@
  */
 package io.agentscope.core.agent.config;
 
+/** {@summary ModelConfig (ModelConfig)} */
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.agentscope.core.model.Model;
 
 /**
  * Model invocation configuration. {@link #maxRetries()} bounds the retry count on a single
  * model call; {@link #fallbackModel()} (nullable) is invoked if the primary model still fails
- * after exhausting retries — the fallback shares the same {@code maxRetries} budget.
+ * after exhausting retries 鈥?the fallback shares the same {@code maxRetries} budget.
  *
  * <p>The {@code fallbackModel} field is intentionally excluded from JSON serialisation
  * ({@code @JsonIgnore}): model instances hold credentials/connections that don't round-trip

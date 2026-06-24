@@ -22,6 +22,7 @@ import io.agentscope.harness.coding.prompt.ReviewerSystemPrompt;
 import java.nio.file.Path;
 
 /**
+ * {@summary Factory for the reviewer agent. (Factory for the reviewer agent.)}
  * Factory for the reviewer agent.
  *
  *
@@ -42,6 +43,7 @@ public final class ReviewerAgentFactory {
     }
 
     /**
+     * {@summary Factory for the reviewer agent. (Factory for the reviewer agent.)}
      * Builds a reviewer agent with PR context baked into the system prompt.
      *
      * @param workspace reviewer agent workspace directory

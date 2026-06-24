@@ -23,6 +23,7 @@ import io.agentscope.harness.coding.reviewer.ReviewerFindingsService;
 import java.util.UUID;
 
 /**
+ * {@summary Adds a new finding to the reviewer findings store. (Adds a new finding to the reviewer findings store.)}
  * Adds a new finding to the reviewer findings store.
  */
 public class AddFindingTool {

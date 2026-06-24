@@ -20,6 +20,7 @@ import io.agentscope.spring.boot.nacos.constants.NacosConstants;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Spring Boot configuration properties for AgentScope Nacos integration. (Spring Boot configuration properties for AgentScope Nacos integration.)}
  * Spring Boot configuration properties for AgentScope Nacos integration.
  *
  * <p>This class extends {@link BaseNacosProperties} to provide Nacos configuration

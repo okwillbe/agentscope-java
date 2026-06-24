@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary Returns the URL verification challenge if the envelope is a verification request. (Returns the URL verification challenge if the envelope is a verification request.)}
  * Parses a decrypted Feishu Event Subscription v2 envelope into an {@link InboundMessage}.
  *
  * <p>Schema 2.0 envelope shape:
@@ -108,6 +109,7 @@ public final class FeishuInboundMapper {
     }
 
     /**
+     * {@summary Returns the URL verification challenge if the envelope is a verification request. (Returns the URL verification challenge if the envelope is a verification request.)}
      * Maps a decrypted Schema 2.0 envelope into an {@link InboundMessage}. Returns empty for
      * non-text or malformed events so the caller can ack without dispatching.
      */

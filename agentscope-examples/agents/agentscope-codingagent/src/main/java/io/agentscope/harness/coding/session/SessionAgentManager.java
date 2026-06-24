@@ -44,6 +44,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
  * Full session management implementation built on top of {@link DefaultAgentManager}. Owns <em>all
  * </em> session-related state and concurrency controls:
  *
@@ -73,6 +74,7 @@ public class SessionAgentManager {
     @FunctionalInterface
     public interface AnnounceDispatcher {
         /**
+         * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
          * @param completion structured announce payload for the requester
          * @return {@code true} if this dispatcher fully handled announce (skip pending queue)
          */
@@ -113,6 +115,7 @@ public class SessionAgentManager {
             new ConcurrentHashMap<>();
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * @param delegate agent factory/invoker
      * @param config concurrency and announce tuning
      * @param runRegistry run lifecycle tracking
@@ -143,6 +146,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Restores in-memory session registry from the durable {@link SessionStore}. Called once
      * during construction when a store is provided.
      */
@@ -253,6 +257,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Registers a new subagent session, optionally inheriting the {@code userId} from its parent
      * for continued namespace isolation.
      */
@@ -365,6 +370,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Registers a new MAIN session, optionally recording the {@code gateKey} for gateway routing
      * persistence and {@code userId} for HarnessAgent namespace isolation.
      */
@@ -413,6 +419,7 @@ public class SessionAgentManager {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Registers a new REVIEWER session. Reviewer sessions are independent from the main coding
      * session and run the reviewer agent against a specific PR.
      */
@@ -572,6 +579,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Returns a cached agent instance for the session, or creates a new one and restores its state
      * from the persistent {@link AgentStateStore} if available.
      */
@@ -604,6 +612,7 @@ public class SessionAgentManager {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Runs session maintenance: prunes stale sessions and caps total entries. Called automatically
      * after session registration when maintenance is enabled, or can be invoked manually.
      *
@@ -649,6 +658,7 @@ public class SessionAgentManager {
     }
 
     /**
+     * {@summary Registers a new REVIEWER session. Reviewer sessions are independent from the main coding (Registers a new REVIEWER session. Reviewer sessions are independent from the main coding)}
      * Removes a session from all registries (in-memory, store, agent cache). Does not delete the
      * session's transcript files on disk — that is left to the caller or a separate disk-budget
      * sweep.

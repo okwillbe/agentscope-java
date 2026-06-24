@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.impl.docker;
 
+/** {@summary DockerFilesystemSpec (DockerFilesystemSpec)} */
 import io.agentscope.harness.agent.filesystem.spec.SandboxFilesystemSpec;
 import io.agentscope.harness.agent.sandbox.SandboxClient;
 import io.agentscope.harness.agent.sandbox.SandboxClientOptions;

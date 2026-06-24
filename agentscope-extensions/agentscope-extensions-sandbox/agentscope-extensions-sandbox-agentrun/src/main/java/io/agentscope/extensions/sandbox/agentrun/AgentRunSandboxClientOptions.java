@@ -58,6 +58,7 @@ public class AgentRunSandboxClientOptions extends SandboxClientOptions {
     }
 
     /**
+     * {@summary Validates option invariants that are independent of any active sandbox. (Validates option invariants that are independent of any active sandbox.)}
      * Validates option invariants that are independent of any active sandbox.
      *
      * @throws SandboxException.SandboxConfigurationException when a constraint is violated
@@ -111,6 +112,7 @@ public class AgentRunSandboxClientOptions extends SandboxClientOptions {
     }
 
     /**
+     * {@summary Validates option invariants that are independent of any active sandbox. (Validates option invariants that are independent of any active sandbox.)}
      * Returns the resolved data-plane base URL, deriving it from {@code accountId}/{@code region}
      * when not explicitly set.
      *

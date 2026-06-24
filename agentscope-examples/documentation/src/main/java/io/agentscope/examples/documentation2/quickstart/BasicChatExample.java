@@ -24,6 +24,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
+ * {@summary BasicChatExample - The simplest Agent conversation example. (BasicChatExample - The simplest Agent conversation example.)}
  * BasicChatExample - The simplest Agent conversation example.
  *
  * <p>Demonstrates:

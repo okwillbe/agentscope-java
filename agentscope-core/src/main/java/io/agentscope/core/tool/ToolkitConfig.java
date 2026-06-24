@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolkitConfig (ToolkitConfig)} */
 import io.agentscope.core.model.ExecutionConfig;
 import java.util.concurrent.ExecutorService;
 

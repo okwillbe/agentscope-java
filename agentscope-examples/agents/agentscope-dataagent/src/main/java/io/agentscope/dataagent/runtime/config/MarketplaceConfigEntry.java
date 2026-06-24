@@ -24,6 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
+ * {@summary MarketplaceConfigEntry class ()}
  * Marketplace configuration carrier — a {@code type} discriminator ({@code "git"} / {@code
  * "nacos"}) plus an open bag of type-specific properties. Unlike claw's variant, builder does
  * <em>not</em> persist this in {@code agentscope.json}; instead each user's marketplaces are

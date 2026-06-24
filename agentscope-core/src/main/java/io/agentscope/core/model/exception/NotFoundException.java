@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary NotFoundException (NotFoundException)} */
+
 /**
  * Exception thrown when the requested resource is not found (HTTP 404).
  *

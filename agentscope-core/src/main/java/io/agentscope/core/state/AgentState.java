@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary AgentState (AgentState)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

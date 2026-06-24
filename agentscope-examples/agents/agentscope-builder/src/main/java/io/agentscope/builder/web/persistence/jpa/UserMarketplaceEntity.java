@@ -27,6 +27,7 @@ import jakarta.persistence.UniqueConstraint;
 import java.time.Instant;
 
 /**
+ * {@summary Persistent representation of a single user-owned skill marketplace. (Persistent representation of a single user-owned skill marketplace.)}
  * Persistent representation of a single user-owned skill marketplace.
  *
  * <p>Differs from claw's {@code marketplaces} block in {@code agentscope.json}: in builder every
@@ -59,6 +60,7 @@ public class UserMarketplaceEntity {
     private String type;
 
     /**
+     * {@summary Persistent representation of a single user-owned skill marketplace. (Persistent representation of a single user-owned skill marketplace.)}
      * Provider properties serialised as JSON. We store the raw JSON to keep schema neutral across
      * MySQL/PostgreSQL/H2 — Hibernate's JSON column types vary between dialects.
      */

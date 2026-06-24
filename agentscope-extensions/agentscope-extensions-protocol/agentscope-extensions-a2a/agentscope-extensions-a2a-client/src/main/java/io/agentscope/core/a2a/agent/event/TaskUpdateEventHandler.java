@@ -31,6 +31,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary TaskUpdateEventHandler class ()}
  * Handler for {@link TaskUpdateEvent}.
  */
 public class TaskUpdateEventHandler implements ClientEventHandler<TaskUpdateEvent> {

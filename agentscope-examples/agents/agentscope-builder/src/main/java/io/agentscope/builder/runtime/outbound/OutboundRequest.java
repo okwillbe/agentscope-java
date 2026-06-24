@@ -18,6 +18,7 @@ package io.agentscope.builder.runtime.outbound;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
+ * {@summary Agent-initiated outbound message request. (Agent-initiated outbound message request.)}
  * Agent-initiated outbound message request.
  *
  * <p>A request describes <em>where</em> the message should be delivered (channel + peer kind +

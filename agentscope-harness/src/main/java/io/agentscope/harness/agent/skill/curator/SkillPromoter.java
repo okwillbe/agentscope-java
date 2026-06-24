@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillPromoter (SkillPromoter)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.harness.agent.skill.WorkspaceSkillRepository;
@@ -27,8 +28,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
- * Orchestrates the promotion pipeline: locate draft → run security scan → call gate →
- * physically move {@code _drafts/<name>/} to {@code skills/<name>/} → update sidecar.
+ * Orchestrates the promotion pipeline: locate draft 鈫?run security scan 鈫?call gate 鈫? * physically move {@code _drafts/<name>/} to {@code skills/<name>/} 鈫?update sidecar.
  *
  * <p>Surfaced via {@code ReActAgent.promoteSkill(name, reviewerId)}; standalone here so it can
  * be unit tested without spinning up a full agent.
@@ -98,7 +98,7 @@ public class SkillPromoter {
             return Mono.just(PromotionResult.invalid("draft '" + name + "' not found"));
         }
 
-        // 1. Security scan (always — even when SkillManageTool already scanned, this is the
+        // 1. Security scan (always ...even when SkillManageTool already scanned, this is the
         //    last gate before going live). Pull resources off disk because the repository's
         //    {@code getSkill(name)} only loads SKILL.md.
         java.util.Map<String, String> resources = loadDraftResources(name);
@@ -134,7 +134,7 @@ public class SkillPromoter {
             return PromotionResult.invalid("unknown decision type");
         }
 
-        // 3. Physically move _drafts/<name>/ → <mainDir>/<name>/
+        // 3. Physically move _drafts/<name>/ 鈫?<mainDir>/<name>/
         String src = draftsDir + "/" + name;
         String dst = mainDir + "/" + name;
         if (workspaceManager == null) {
@@ -229,7 +229,7 @@ public class SkillPromoter {
 
     /**
      * Read every support file under the draft skill (scripts/, references/, templates/,
-     * assets/) so the security scanner sees the full payload — the repository's
+     * assets/) so the security scanner sees the full payload ...the repository's
      * {@code getSkill} only deserialises SKILL.md.
      */
     private java.util.Map<String, String> loadDraftResources(String skillName) {
@@ -251,7 +251,7 @@ public class SkillPromoter {
                     String path = fi.path();
                     if (path == null) continue;
                     // Reduce to "<sub>/<filename>"; strip everything before "<sub>/".
-                    // Normalize separator first — glob can return backslashes on Windows.
+                    // Normalize separator first ...glob can return backslashes on Windows.
                     String pathSlash = path.replace('\\', '/');
                     int idx = pathSlash.indexOf("/" + sub + "/");
                     if (idx < 0) continue;

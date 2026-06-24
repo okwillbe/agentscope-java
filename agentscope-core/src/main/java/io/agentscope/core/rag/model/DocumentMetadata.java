@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.rag.model;
 
+/** {@summary DocumentMetadata (DocumentMetadata)} */
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.TextBlock;
 import java.util.Collections;

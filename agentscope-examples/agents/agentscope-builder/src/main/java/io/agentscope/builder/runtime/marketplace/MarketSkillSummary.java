@@ -16,6 +16,7 @@
 package io.agentscope.builder.runtime.marketplace;
 
 /**
+ * {@summary MarketSkillSummary class ()}
  * Lightweight skill descriptor returned by {@link BuilderMarketplace#list()}. Used to populate
  * the marketplace browser without paying the cost of downloading every SKILL.md.
  *

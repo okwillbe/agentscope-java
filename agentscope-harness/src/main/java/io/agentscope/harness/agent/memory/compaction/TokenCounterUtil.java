@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.compaction;
 
+/** {@summary TokenCounterUtil (TokenCounterUtil)} */
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.Msg;
 import io.agentscope.core.message.TextBlock;

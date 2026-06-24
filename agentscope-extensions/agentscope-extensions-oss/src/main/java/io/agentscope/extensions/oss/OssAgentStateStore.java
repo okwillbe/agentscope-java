@@ -37,6 +37,7 @@ import java.util.Optional;
 import java.util.Set;
 
 /**
+ * {@summary OssAgentStateStore class ()}
  * Alibaba Cloud OSS backed {@link AgentStateStore}.
  *
  * <p>State objects are stored as JSON files in an OSS bucket with the following key layout:

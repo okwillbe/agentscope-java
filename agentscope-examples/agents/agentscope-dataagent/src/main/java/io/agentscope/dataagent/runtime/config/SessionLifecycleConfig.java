@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary If a session is idle (no activity) for this many minutes, it is considered eligible for}
  * Optional {@code session} block in {@code agentscope.json} controlling session lifecycle and
  * maintenance.
  *
@@ -74,6 +75,7 @@ public class SessionLifecycleConfig {
     public static class ResetConfig {
 
         /**
+         * {@summary If a session is idle (no activity) for this many minutes, it is considered eligible for}
          * 24-hour clock time ({@code "HH:mm"}) at which all sessions are auto-reset daily. Null /
          * blank to disable. Time is interpreted in the JVM's default timezone.
          */
@@ -81,6 +83,7 @@ public class SessionLifecycleConfig {
         private String dailyAt;
 
         /**
+         * {@summary If a session is idle (no activity) for this many minutes, it is considered eligible for}
          * If a session is idle (no activity) for this many minutes, it is considered eligible for
          * auto-reset on the next inbound message. {@code 0} disables.
          */
@@ -117,6 +120,7 @@ public class SessionLifecycleConfig {
         private String mode;
 
         /**
+         * {@summary If a session is idle (no activity) for this many minutes, it is considered eligible for}
          * Maximum age before a session is considered stale and removed. Accepts durations like
          * {@code "7d"}, {@code "24h"}, {@code "60m"}, or a raw milliseconds long.
          */

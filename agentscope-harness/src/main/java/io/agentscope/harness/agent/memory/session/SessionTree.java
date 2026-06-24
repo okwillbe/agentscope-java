@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.memory.session;
 
+/** {@summary SessionTree (SessionTree)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.util.JsonUtils;
 import io.agentscope.harness.agent.filesystem.AbstractFilesystem;
@@ -49,8 +50,8 @@ import org.slf4j.LoggerFactory;
  *
  * <h2>File layout</h2>
  * <pre>
- *   agents/{agentId}/sessions/{sessionId}.jsonl      — LLM context (compacted)
- *   agents/{agentId}/sessions/{sessionId}.log.jsonl   — full history (append-only, never compacted)
+ *   agents/{agentId}/sessions/{sessionId}.jsonl      ...LLM context (compacted)
+ *   agents/{agentId}/sessions/{sessionId}.log.jsonl   ...full history (append-only, never compacted)
  * </pre>
  *
  * <h2>Persistence model</h2>
@@ -217,7 +218,7 @@ public class SessionTree {
      * does not, the local file is overwritten with the merged content and the new entries are
      * appended to the local log file.
      *
-     * <p>This is a <b>network operation</b> — call it only when cross-machine consistency is
+     * <p>This is a <b>network operation</b> ...call it only when cross-machine consistency is
      * required (typically in write paths such as
      * {@link io.agentscope.harness.agent.memory.MemoryFlushManager}). Read-only tools should use
      * {@link #load()} alone to keep queries fast and local.
@@ -583,7 +584,7 @@ public class SessionTree {
         try {
             byte[] bytes = Files.readAllBytes(file);
             filesystem.uploadFiles(fsRc, List.of(Map.entry(relativePath, bytes)));
-            // Best-effort: the local file already exists — update index with its current stats
+            // Best-effort: the local file already exists ...update index with its current stats
             if (index != null) {
                 index.upsertFromLocalFile(relativePath, file);
             }

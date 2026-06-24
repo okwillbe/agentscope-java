@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.store;
 
 /**
+ * {@summary Utility class for calculating distances and similarities between vectors. (Utility class for calculating distances and similarities between vectors.)}
  * Utility class for calculating distances and similarities between vectors.
  *
  * <p>This class provides static methods for computing various distance metrics
@@ -29,6 +30,7 @@ class DistanceCalculator {
     }
 
     /**
+     * {@summary Utility class for calculating distances and similarities between vectors. (Utility class for calculating distances and similarities between vectors.)}
      * Calculates the cosine similarity between two vectors.
      *
      * <p>Cosine similarity measures the cosine of the angle between two vectors,
@@ -66,6 +68,7 @@ class DistanceCalculator {
     }
 
     /**
+     * {@summary Utility class for calculating distances and similarities between vectors. (Utility class for calculating distances and similarities between vectors.)}
      * Calculates the Euclidean distance between two vectors.
      *
      * <p>Euclidean distance measures the straight-line distance between two points
@@ -83,6 +86,7 @@ class DistanceCalculator {
     }
 
     /**
+     * {@summary Utility class for calculating distances and similarities between vectors. (Utility class for calculating distances and similarities between vectors.)}
      * Calculates the squared Euclidean distance between two vectors.
      *
      * <p>This is a faster version that avoids the square root operation.
@@ -106,6 +110,7 @@ class DistanceCalculator {
     }
 
     /**
+     * {@summary Utility class for calculating distances and similarities between vectors. (Utility class for calculating distances and similarities between vectors.)}
      * Validates that two vectors are not null, not empty, and have the same length.
      *
      * @param vector1 the first vector

@@ -16,6 +16,7 @@
 
 package io.agentscope.core.skill.util;
 
+/** {@summary MarkdownSkillParser (MarkdownSkillParser)} */
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;

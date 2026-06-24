@@ -26,6 +26,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary AI-assisted agent drafting endpoint. (AI-assisted agent drafting endpoint.)}
  * AI-assisted agent drafting endpoint.
  *
  * <ul>

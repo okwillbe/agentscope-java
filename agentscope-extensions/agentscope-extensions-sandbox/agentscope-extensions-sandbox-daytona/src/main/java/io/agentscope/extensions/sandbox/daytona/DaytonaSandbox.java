@@ -29,7 +29,8 @@ import java.util.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** {@link io.agentscope.harness.agent.sandbox.Sandbox} backed by Daytona cloud sandboxes. */
+/**
+ * {@summary DaytonaSandbox (DaytonaSandbox)} {@link io.agentscope.harness.agent.sandbox.Sandbox} backed by Daytona cloud sandboxes. */
 public class DaytonaSandbox extends AbstractBaseSandbox {
 
     private static final Logger log = LoggerFactory.getLogger(DaytonaSandbox.class);

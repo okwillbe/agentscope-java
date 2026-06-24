@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary ReasoningEvent (ReasoningEvent)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.model.GenerateOptions;
 import java.util.Objects;

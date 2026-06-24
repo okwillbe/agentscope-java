@@ -46,6 +46,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
  * Business logic for the agent catalog: merges global agent definitions (loaded from
  * {@code agentscope.json}) with per-user custom agent definitions, and dynamically instantiates
  * user-custom agents on demand.
@@ -81,6 +82,7 @@ public class AgentCatalogService {
     private final AgentAclService aclService;
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * In-flight cache of dynamically-registered gateway agent IDs. Key: {@code {userId}/{agentId}},
      * Value: the gateway agent ID (e.g. {@code uca-{userId}-{agentId}}).
      */
@@ -110,6 +112,7 @@ public class AgentCatalogService {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Lists all agent definitions visible to the given user: global agents, the user's own
      * custom agents, and any user-custom agents shared with the user via a {@link
      * io.agentscope.dataagent.web.share.AgentShareGrant} (USER or WORKSPACE grantee).
@@ -139,6 +142,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Finds a single visible agent definition by id. Checks global agents first, then user-custom
      * (own or shared-in).
      */
@@ -147,6 +151,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Returns the owner of a user-custom agent, or {@link Optional#empty()} for globals / unknown
      * ids. Used by share, clone, and EDIT-delegated-mutation flows to resolve the storage
      * namespace.
@@ -270,6 +275,7 @@ public class AgentCatalogService {
     static final String WORKSPACE_DIR_SUFFIX = "-workspace";
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Trims user-supplied workspace path input. Returns {@code null} for blank input (let the
      * resolver fall back to the agent id at runtime). Absolute paths are passed through unchanged.
      * Relative paths are rejected if they contain {@code ..} traversal segments. If the final
@@ -305,6 +311,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Materializes an AI-suggested agent into the workspace folder: {@code AGENTS.md} from
      * {@code (name, description, sysPrompt)}, {@code tools.json} from {@code suggestedTools},
      * one skill file per {@code suggestedSkills} entry, one subagent file per
@@ -458,6 +465,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Materializes a clone of {@code (srcOwnerId, srcAgentId)} in {@code newOwnerId}'s namespace.
      * The clone copies settings (name/description/sysPrompt/tools/skills/identity) and
      * marks {@code forkOf = srcAgentId}. Shares, sessions, and channel bindings start empty —
@@ -569,6 +577,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Drops the cached UCA registration for {@code (userId, agentId)} so the next chat call
      * rebuilds the {@link HarnessAgent} from the current {@link UserAgentDefinitionStore} entry.
      * Intended for controllers that mutate per-agent runtime resources (tools.json, skills/, etc.)
@@ -580,6 +589,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Resolves the running {@link HarnessAgent} for {@code (userId, agentId)}, building and
      * registering the UCA on first access. For globals, returns the bootstrap-registered instance
      * directly. Returns {@code null} if the user has no visibility on the agent. Intended for
@@ -603,6 +613,7 @@ public class AgentCatalogService {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Resolves the gateway agent ID to use when routing a chat message to the given agent.
      *
      * <ul>
@@ -631,6 +642,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Returns the gateway agent id that {@link #resolveGatewayAgentId} would produce, without
      * building or registering the agent. Useful for read-only lookups (session filtering, audit
      * checks) that just need the id format.
@@ -815,6 +827,7 @@ public class AgentCatalogService {
             String sandboxScope) {}
 
     /**
+     * {@summary Business logic for the agent catalog: merges global agent definitions (loaded from}
      * Optional AI-generated draft attached to a creation request. Carries the suggested
      * configuration plus optional skill/subagent files to scaffold into the new agent's workspace.
      * Wiring into {@link #createUserAgent(String, AgentCreateRequest)} happens in a later phase.

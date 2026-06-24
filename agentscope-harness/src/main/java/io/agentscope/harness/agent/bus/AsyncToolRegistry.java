@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.bus;
 
+/** {@summary AsyncToolRegistry (AsyncToolRegistry)} */
 import java.time.Duration;
 import java.util.List;
 import reactor.core.publisher.Mono;
@@ -31,7 +32,7 @@ import reactor.core.publisher.Mono;
  *
  * <p>Implementations:
  * <ul>
- *   <li>{@code WorkspaceAsyncToolRegistry} — single-process, suitable for testing</li>
+ *   <li>{@code WorkspaceAsyncToolRegistry} ...single-process, suitable for testing</li>
  * </ul>
  */
 public interface AsyncToolRegistry {

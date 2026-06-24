@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
+ * {@summary A single sharing grant on an agent. (A single sharing grant on an agent.)}
  * A single sharing grant on an agent.
  *
  * <p>Two dimensions:

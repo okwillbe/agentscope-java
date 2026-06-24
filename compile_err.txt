@@ -1,0 +1,96 @@
+﻿[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.agentscope:agentscope-core:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ io.agentscope:agentscope-core:${revision}, D:\github\agentscope-java\agentscope-core\pom.xml, line 237, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< io.agentscope:agentscope-core >--------------------
+[INFO] Building AgentScope Java - Core 2.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ agentscope-core ---
+[INFO] argLine set to -javaagent:C:\\Users\\zhaowei\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=D:\\github\\agentscope-java\\agentscope-core\\target\\jacoco.exec -Xms512m -Xmx1024m
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ agentscope-core ---
+[INFO] skip non existing resourceDirectory D:\github\agentscope-java\agentscope-core\src\main\resources
+[INFO] 
+[INFO] --- flatten:1.5.0:flatten (flatten) @ agentscope-core ---
+[INFO] Generating flattened POM of project io.agentscope:agentscope-core:jar:2.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ agentscope-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- spotless:3.4.0:check (default) @ agentscope-core ---
+[INFO] Spotless.Java is keeping 688 files clean - 356 needs changes to be clean, 0 were already clean, 332 were skipped because caching determined they were already clean
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.747 s
+[INFO] Finished at: 2026-06-24T11:32:13+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.diffplug.spotless:spotless-maven-plugin:3.4.0:check (default) on project agentscope-core: The following files had format violations:
+[ERROR]     src\main\java\io\agentscope\core\agent\accumulator\ContentAccumulator.java
+[ERROR]         @@ -16,7 +16,6 @@
+[ERROR]          package��io.agentscope.core.agent.accumulator;
+[ERROR]          
+[ERROR]          /**��{@summary��ContentAccumulator��(ContentAccumulator)}��*/
+[ERROR]         -
+[ERROR]          import��io.agentscope.core.message.ContentBlock;
+[ERROR]          
+[ERROR]          /**
+[ERROR]     src\main\java\io\agentscope\core\agent\accumulator\ReasoningContext.java
+[ERROR]         @@ -16,7 +16,6 @@
+[ERROR]          package��io.agentscope.core.agent.accumulator;
+[ERROR]          
+[ERROR]          /**��{@summary��ReasoningContext��(ReasoningContext)}��*/
+[ERROR]         -
+[ERROR]          import��io.agentscope.core.message.AssistantMessage;
+[ERROR]          import��io.agentscope.core.message.ContentBlock;
+[ERROR]          import��io.agentscope.core.message.MessageMetadataKeys;
+[ERROR]     src\main\java\io\agentscope\core\agent\accumulator\TextAccumulator.java
+[ERROR]         @@ -16,7 +16,6 @@
+[ERROR]          package��io.agentscope.core.agent.accumulator;
+[ERROR]          
+[ERROR]          /**��{@summary��TextAccumulator��(TextAccumulator)}��*/
+[ERROR]         -
+[ERROR]          import��io.agentscope.core.message.ContentBlock;
+[ERROR]          import��io.agentscope.core.message.TextBlock;
+[ERROR]          
+[ERROR]     src\main\java\io\agentscope\core\agent\accumulator\ThinkingAccumulator.java
+[ERROR]         @@ -16,7 +16,6 @@
+[ERROR]          package��io.agentscope.core.agent.accumulator;
+[ERROR]          
+[ERROR]          /**��{@summary��ThinkingAccumulator��(ThinkingAccumulator)}��*/
+[ERROR]         -
+[ERROR]          import��io.agentscope.core.message.ContentBlock;
+[ERROR]          import��io.agentscope.core.message.ThinkingBlock;
+[ERROR]          
+[ERROR]     src\main\java\io\agentscope\core\agent\accumulator\ToolCallsAccumulator.java
+[ERROR]         @@ -16,7 +16,6 @@
+[ERROR]          package��io.agentscope.core.agent.accumulator;
+[ERROR]          
+[ERROR]          /**��{@summary��ToolCallsAccumulator��(ToolCallsAccumulator)}��*/
+[ERROR]         -
+[ERROR]          import��io.agentscope.core.message.ContentBlock;
+[ERROR]          import��io.agentscope.core.message.ToolUseBlock;
+[ERROR]          import��io.agentscope.core.util.JsonUtils;
+[ERROR]     src\main\java\io\agentscope\core\agent\config\ModelConfig.java
+[ERROR]         @@ -16,7 +16,6 @@
+[ERROR]          package��io.agentscope.core.agent.config;
+[ERROR]          
+[ERROR]          /**��{@summary��ModelConfig��(ModelConfig)}��*/
+[ERROR]     ... (4 more lines that didn't fit)
+[ERROR] Violations also present in 350 other files.
+[ERROR] Run 'mvn spotless:apply' to fix these violations.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -28,13 +28,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Represents the result of calling the x_higress_tool_search tool.
+ * {@summary Represents the result of calling the x_higress_tool_search tool (表示调用x_higress_tool_search工具的结果)}
  *
  * <p>The x_higress_tool_search tool returns a list of recommended tools based on
  * semantic similarity to the query. This class provides methods to parse and access
  * the search results.
+ * <p>x_higress_tool_search工具根据查询的语义相似度返回推荐工具列表。此类提供解析和访问搜索结果的方法。
  *
- * <p>Example response structure from Higress:
+ * <p>Example response structure from Higress (Higress响应结构示例):
  * <pre>{@code
  * {
  *   "content": [
@@ -47,7 +48,7 @@ import org.slf4j.LoggerFactory;
  *     "tools": [
  *       {
  *         "name": "map___maps_weather",
- *         "description": "根据城市名称或者标准adcode查询指定城市的天气",
+ *         "description": "query weather for a specified city",
  *         "title": "maps_weather",
  *         "inputSchema": {...},
  *         "outputSchema": {}
@@ -73,10 +74,10 @@ public class HigressToolSearchResult {
     }
 
     /**
-     * Parses the tool search result from MCP CallToolResult.
+     * {@summary Parses the tool search result from MCP CallToolResult (从MCP CallToolResult解析工具搜索结果)}
      *
-     * @param callToolResult the result from calling x_higress_tool_search
-     * @return parsed HigressToolSearchResult
+     * @param callToolResult the result from calling x_higress_tool_search (调用x_higress_tool_search的结果)
+     * @return parsed HigressToolSearchResult (解析后的HigressToolSearchResult)
      */
     public static HigressToolSearchResult parse(McpSchema.CallToolResult callToolResult) {
         if (callToolResult == null) {
@@ -114,7 +115,7 @@ public class HigressToolSearchResult {
     }
 
     /**
-     * Parses from structuredContent map.
+     * {@summary Parses from structuredContent map (从structuredContent映射解析)}
      */
     @SuppressWarnings("unchecked")
     private static HigressToolSearchResult parseFromStructuredContent(
@@ -132,7 +133,7 @@ public class HigressToolSearchResult {
     }
 
     /**
-     * Parses from content list (text content).
+     * {@summary Parses from content list (text content) (从内容列表解析(文本内容))}
      */
     private static HigressToolSearchResult parseFromContent(List<McpSchema.Content> contentList)
             throws JsonException {
@@ -152,7 +153,7 @@ public class HigressToolSearchResult {
     }
 
     /**
-     * Parses a single tool info from a map.
+     * {@summary Parses a single tool info from a map (从映射解析单个工具信息)}
      */
     @SuppressWarnings("unchecked")
     private static ToolInfo parseToolInfo(Map<String, Object> map) {
@@ -173,36 +174,36 @@ public class HigressToolSearchResult {
     }
 
     /**
-     * Returns whether the search was successful.
+     * {@summary Returns whether the search was successful (返回搜索是否成功)}
      *
-     * @return true if successful
+     * @return true if successful (如果成功则返回true)
      */
     public boolean isSuccess() {
         return success;
     }
 
     /**
-     * Returns the error message if the search failed.
+     * {@summary Returns the error message if the search failed (如果搜索失败则返回错误消息)}
      *
-     * @return error message, or null if successful
+     * @return error message, or null if successful (错误消息，如果成功则为null)
      */
     public String getErrorMessage() {
         return errorMessage;
     }
 
     /**
-     * Returns the list of recommended tools.
+     * {@summary Returns the list of recommended tools (返回推荐工具列表)}
      *
-     * @return list of tools, never null but may be empty
+     * @return list of tools, never null but may be empty (工具列表，永不为null但可能为空)
      */
     public List<ToolInfo> getTools() {
         return tools;
     }
 
     /**
-     * Returns the names of all found tools.
+     * {@summary Returns the names of all found tools (返回所有找到的工具名称)}
      *
-     * @return list of tool names
+     * @return list of tool names (工具名称列表)
      */
     public List<String> getToolNames() {
         return tools.stream().map(ToolInfo::name).toList();
@@ -217,13 +218,13 @@ public class HigressToolSearchResult {
     }
 
     /**
-     * Represents a single tool returned from the search.
+     * {@summary Represents a single tool returned from the search (表示搜索返回的单个工具)}
      *
-     * @param name the tool name (e.g., "map___maps_weather")
-     * @param description the tool description
-     * @param title the tool title (e.g., "maps_weather")
-     * @param inputSchema the input parameter JSON schema
-     * @param outputSchema the output parameter JSON schema
+     * @param name the tool name (e.g., "map___maps_weather") (工具名称)
+     * @param description the tool description (工具描述)
+     * @param title the tool title (e.g., "maps_weather") (工具标题)
+     * @param inputSchema the input parameter JSON schema (输入参数JSON模式)
+     * @param outputSchema the output parameter JSON schema (输出参数JSON模式)
      */
     public record ToolInfo(
             String name,
@@ -233,7 +234,7 @@ public class HigressToolSearchResult {
             Map<String, Object> outputSchema) {}
 
     /**
-     * Internal class for JSON deserialization.
+     * {@summary Internal class for JSON deserialization (用于JSON反序列化的内部类)}
      */
     @JsonIgnoreProperties(ignoreUnknown = true)
     private static class ToolSearchResponse {

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary EnvironmentFilter (EnvironmentFilter)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.skill.AgentSkill;
 import java.util.ArrayList;
@@ -22,8 +23,8 @@ import java.util.List;
 
 /**
  * Filter that admits a skill only when its sidecar's {@code environments} list contains the
- * configured environment ({@code prod}, {@code staging}, …). Unlike the canary / allow-list
- * filters, this one applies to <em>every</em> skill — including pre-existing ones — so the
+ * configured environment ({@code prod}, {@code staging}, .... Unlike the canary / allow-list
+ * filters, this one applies to <em>every</em> skill ...including pre-existing ones ...so the
  * deployment-environment story is consistent across both agent-authored and hand-crafted
  * skills.
  *
@@ -54,7 +55,7 @@ public class EnvironmentFilter implements SkillVisibilityFilter {
             }
             SkillUsageRecord rec = usageStore.get(skill.getName()).orElse(null);
             if (rec == null) {
-                // No sidecar entry → external / pre-existing skill; let through.
+                // No sidecar entry 鈫?external / pre-existing skill; let through.
                 out.add(skill);
                 continue;
             }

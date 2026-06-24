@@ -22,6 +22,7 @@ import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 
 /**
+ * {@summary AgentscopeCommandsEndpoint class ()}
  * {@code GET /actuator/agentscope-commands}: machine-readable catalog of every admin command
  * exposed by this process. Equivalent to opencode's CLI {@code /help} dialog, but in JSON for CLI
  * / Studio / Kubernetes operator clients to consume.

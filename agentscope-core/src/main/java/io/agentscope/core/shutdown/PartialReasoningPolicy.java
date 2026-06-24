@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary PartialReasoningPolicy (PartialReasoningPolicy)} */
+
 /**
  * Policy for handling incomplete reasoning content on shutdown interruption.
  */

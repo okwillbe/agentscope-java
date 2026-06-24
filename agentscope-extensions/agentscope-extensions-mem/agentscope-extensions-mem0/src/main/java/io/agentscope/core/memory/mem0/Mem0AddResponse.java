@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Response object from Mem0's add memory API. (Response object from Mem0's add memory API.)}
  * Response object from Mem0's add memory API.
  *
  * <p>This response is returned from the {@code POST /v1/memories} endpoint after
@@ -36,6 +37,7 @@ import java.util.Map;
 public class Mem0AddResponse {
 
     /**
+     * {@summary Response object from Mem0's add memory API. (Response object from Mem0's add memory API.)}
      * List of memory results, each containing the extracted memory and metadata.
      * May be empty if no memories were extracted.
      */

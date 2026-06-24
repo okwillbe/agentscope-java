@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.file;
 
+/** {@summary FileToolUtils (FileToolUtils)} */
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;

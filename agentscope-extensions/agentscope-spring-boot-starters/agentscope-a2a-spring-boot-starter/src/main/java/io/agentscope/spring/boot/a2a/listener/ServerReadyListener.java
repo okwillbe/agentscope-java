@@ -21,6 +21,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 
 /**
+ * {@summary ServerReadyListener class ()}
  * Server Ready Listener, used to callback {@link AgentScopeA2aServer#postEndpointReady()}.
  */
 public class ServerReadyListener {

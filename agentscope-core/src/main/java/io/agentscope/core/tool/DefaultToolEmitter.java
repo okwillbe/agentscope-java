@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary DefaultToolEmitter (DefaultToolEmitter)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.message.ToolUseBlock;
 import java.util.function.BiConsumer;

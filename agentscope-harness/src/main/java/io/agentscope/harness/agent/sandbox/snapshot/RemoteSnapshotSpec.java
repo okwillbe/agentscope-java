@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary RemoteSnapshotSpec (RemoteSnapshotSpec)} */
+
 /**
  * Snapshot spec that creates {@link RemoteSandboxSnapshot} instances backed by a
  * {@link RemoteSnapshotClient}.

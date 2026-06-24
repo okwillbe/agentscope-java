@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolMethodInvoker (ToolMethodInvoker)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.message.ContentBlock;
@@ -216,19 +217,19 @@ class ToolMethodInvoker {
      * @return true if the parameter should be resolved from context as user POJO
      */
     private boolean isUserContextPojo(Parameter param) {
-        // 1. Explicitly annotated with @ToolParam → tool input from LLM
+        // 1. Explicitly annotated with @ToolParam 鈫?tool input from LLM
         if (param.getAnnotation(ToolParam.class) != null) {
             return false;
         }
 
         Class<?> type = param.getType();
 
-        // 2. Primitive types → must be tool inputs
+        // 2. Primitive types 鈫?must be tool inputs
         if (type.isPrimitive()) {
             return false;
         }
 
-        // 3. Framework message types (ContentBlock, Msg, etc.) → not user POJOs
+        // 3. Framework message types (ContentBlock, Msg, etc.) 鈫?not user POJOs
         // Check by class hierarchy rather than package to avoid excluding test classes
         try {
             if (ContentBlock.class.isAssignableFrom(type) || type == Msg.class) {
@@ -240,12 +241,12 @@ class ToolMethodInvoker {
 
         String packageName = type.getPackage() != null ? type.getPackage().getName() : "";
 
-        // 4. Java standard library types → typically tool inputs
+        // 4. Java standard library types 鈫?typically tool inputs
         if (packageName.startsWith("java.") || packageName.startsWith("javax.")) {
             return false;
         }
 
-        // 5. Everything else → user-defined context POJO
+        // 5. Everything else 鈫?user-defined context POJO
         return true;
     }
 

@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.properties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Configuration properties for the AgentScope admin/ops starter. (Configuration properties for the AgentScope admin/ops starter.)}
  * Configuration properties for the AgentScope admin/ops starter.
  *
  * <p>The starter is opt-in. Set {@code agentscope.admin.enabled=true} to activate. Write operations
@@ -31,6 +32,7 @@ public class AdminProperties {
     private boolean enabled = false;
 
     /**
+     * {@summary Configuration properties for the AgentScope admin/ops starter. (Configuration properties for the AgentScope admin/ops starter.)}
      * Whether write operations (compact, abort, reset, fork, drain, shutdown, ...) are accepted.
      * Read-only inspection endpoints work even when this is false.
      */
@@ -40,6 +42,7 @@ public class AdminProperties {
     private String basePath = "/v1/admin";
 
     /**
+     * {@summary Configuration properties for the AgentScope admin/ops starter. (Configuration properties for the AgentScope admin/ops starter.)}
      * Optional shared-secret token required as the {@code X-Agentscope-Admin-Token} header on every
      * write request. When blank, no token check is performed (rely on the surrounding security
      * layer). Strongly recommended in production.

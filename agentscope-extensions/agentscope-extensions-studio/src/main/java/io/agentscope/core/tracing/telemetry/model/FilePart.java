@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-/** Represents an external referenced file sent to the model by file id. */
+/** {@summary Represents an external referenced file sent to the model by file id. (Represents an external referenced file sent to the model by file id.)} Represents an external referenced file sent to the model by file id. */
 @JsonClassDescription("File part")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class FilePart implements MessagePart {

@@ -30,6 +30,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 /**
+ * {@summary Spring Boot auto-configuration for AG-UI MVC integration. (Spring Boot auto-configuration for AG-UI MVC integration.)}
  * Spring Boot auto-configuration for AG-UI MVC integration.
  *
  * <p>This auto-configuration provides:
@@ -50,6 +51,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 public class AgentscopeAguiMvcAutoConfiguration {
 
     /**
+     * {@summary Spring Boot auto-configuration for AG-UI MVC integration. (Spring Boot auto-configuration for AG-UI MVC integration.)}
      * Creates the thread session manager bean.
      *
      * @param props The configuration properties
@@ -63,6 +65,7 @@ public class AgentscopeAguiMvcAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for AG-UI MVC integration. (Spring Boot auto-configuration for AG-UI MVC integration.)}
      * Creates the AG-UI MVC controller bean.
      *
      * @param registry The agent registry
@@ -95,6 +98,7 @@ public class AgentscopeAguiMvcAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot auto-configuration for AG-UI MVC integration. (Spring Boot auto-configuration for AG-UI MVC integration.)}
      * Creates the REST controller for AG-UI endpoints.
      *
      * @param aguiMvcController The AG-UI MVC controller

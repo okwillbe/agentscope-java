@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary ErrorEvent (ErrorEvent)} */
 import io.agentscope.core.agent.Agent;
 import java.util.Objects;
 

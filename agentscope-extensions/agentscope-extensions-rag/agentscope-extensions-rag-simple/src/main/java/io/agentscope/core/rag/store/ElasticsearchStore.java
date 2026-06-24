@@ -61,6 +61,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
  * Elasticsearch vector database store implementation.
  *
  * <p>This class provides an interface for storing and searching vectors using Elasticsearch.
@@ -172,6 +173,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
      * Adds a list of documents to the Elasticsearch index.
      *
      * @param documents the list of documents to add
@@ -220,6 +222,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
      * Searches for documents in the Elasticsearch index matching the query embedding.
      *
      * @param searchDocumentDto the search criteria containing query embedding, limit, and score threshold
@@ -278,6 +281,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
      * Deletes a document from the Elasticsearch index by its ID.
      *
      * @param id the ID of the document to delete
@@ -488,6 +492,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
      * Creates a new builder for ElasticsearchStore.
      * @return a new Builder instance
      */
@@ -496,6 +501,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
     }
 
     /**
+     * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
      * Builder for ElasticsearchStore.
      */
     public static class Builder {
@@ -509,6 +515,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         private Builder() {}
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Sets the Elasticsearch connection URL.
          * @param url the URL
          * @return the builder
@@ -519,6 +526,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Sets the index name.
          * @param indexName the index name
          * @return the builder
@@ -529,6 +537,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Sets the vector dimensions.
          * @param dimensions the number of dimensions
          * @return the builder
@@ -539,6 +548,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Sets the username for authentication.
          * @param username the username
          * @return the builder
@@ -549,6 +559,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Sets the password for authentication.
          * @param password the password
          * @return the builder
@@ -559,6 +570,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Sets whether to disable SSL verification.
          * <p><strong>Warning:</strong> Disabling SSL verification is insecure and should only be used for development.
          * @param disableSslVerification true to disable verification
@@ -570,6 +582,7 @@ public class ElasticsearchStore implements VDBStoreBase, AutoCloseable {
         }
 
         /**
+         * {@summary Elasticsearch vector database store implementation. (Elasticsearch vector database store implementation.)}
          * Builds the ElasticsearchStore instance.
          * @return the store instance
          * @throws VectorStoreException if configuration is invalid

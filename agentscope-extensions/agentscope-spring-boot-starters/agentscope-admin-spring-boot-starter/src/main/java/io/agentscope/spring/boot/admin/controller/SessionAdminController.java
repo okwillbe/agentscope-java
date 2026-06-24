@@ -40,6 +40,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Data-plane REST surface. Route prefix is derived from (Data-plane REST surface. Route prefix is derived from)}
  * Data-plane REST surface. Route prefix is derived from
  * {@code agentscope.admin.base-path} (default {@code /v1/admin}).
  *

@@ -39,6 +39,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Spring Boot configuration for agentscope-claw — the local single-user assistant. (Spring Boot configuration for agentscope-claw — the local single-user assistant.)}
  * Spring Boot configuration for agentscope-claw — the local single-user assistant.
  *
  * <p>Assembles a {@link ClawBootstrap} rooted at {@code ${claw.home}} (defaults to
@@ -191,6 +192,7 @@ public class BuilderConfig {
     }
 
     /**
+     * {@summary Spring Boot configuration for agentscope-claw — the local single-user assistant. (Spring Boot configuration for agentscope-claw — the local single-user assistant.)}
      * Auto-generates a minimal {@code agentscope.json} (and scaffolds the default agent
      * workspace) if it doesn't already exist. The generated config defines a single
      * {@code default} built-in agent with an explicit {@code workspace} of {@code "workspace"},

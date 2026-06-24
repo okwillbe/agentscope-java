@@ -17,6 +17,7 @@
 package io.agentscope.core.a2a.agent.message;
 
 /**
+ * {@summary Message Constants. (Message Constants.)}
  * Message Constants.
  */
 public class MessageConstants {

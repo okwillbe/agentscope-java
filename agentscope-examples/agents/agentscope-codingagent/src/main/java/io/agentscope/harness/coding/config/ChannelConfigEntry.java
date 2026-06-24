@@ -24,6 +24,7 @@ import io.agentscope.harness.coding.CodingBootstrap;
 import java.util.Map;
 
 /**
+ * {@summary Fallback agent id when no binding matches. If omitted, falls back to the globally bound main (Fallback agent id when no binding matches. If omitted, falls back to the globally bound main)}
  * Per-channel section in {@code agentscope.json} under {@code channels.<channelId>}.
  *
  * <p>Defines routing configuration for a channel adapter. The built-in {@code chatui} channel is
@@ -54,6 +55,7 @@ import java.util.Map;
 public class ChannelConfigEntry {
 
     /**
+     * {@summary Fallback agent id when no binding matches. If omitted, falls back to the globally bound main (Fallback agent id when no binding matches. If omitted, falls back to the globally bound main)}
      * Fallback agent id when no binding matches. If omitted, falls back to the globally bound main
      * agent.
      */
@@ -61,6 +63,7 @@ public class ChannelConfigEntry {
     private String defaultAgentId;
 
     /**
+     * {@summary Fallback agent id when no binding matches. If omitted, falls back to the globally bound main (Fallback agent id when no binding matches. If omitted, falls back to the globally bound main)}
      * Controls how DM session keys are scoped. One of {@code MAIN}, {@code PER_PEER}, {@code
      * PER_CHANNEL_PEER}, {@code PER_ACCOUNT_CHANNEL_PEER}. Defaults to {@code MAIN} when omitted.
      *
@@ -70,6 +73,7 @@ public class ChannelConfigEntry {
     private String dmScope;
 
     /**
+     * {@summary Fallback agent id when no binding matches. If omitted, falls back to the globally bound main (Fallback agent id when no binding matches. If omitted, falls back to the globally bound main)}
      * When {@code true}, this channel entry is ignored at bootstrap time — no channel instance is
      * created and any programmatically registered channel with the same id is not started.
      */
@@ -77,6 +81,7 @@ public class ChannelConfigEntry {
     private Boolean disabled;
 
     /**
+     * {@summary Fallback agent id when no binding matches. If omitted, falls back to the globally bound main (Fallback agent id when no binding matches. If omitted, falls back to the globally bound main)}
      * Provider-specific properties consumed by the channel adapter factory (e.g. {@code appKey},
      * {@code appSecret}, {@code robotCode} for DingTalk; {@code verificationToken}, {@code
      * encryptKey} for Feishu). Unknown keys are passed through to the factory.

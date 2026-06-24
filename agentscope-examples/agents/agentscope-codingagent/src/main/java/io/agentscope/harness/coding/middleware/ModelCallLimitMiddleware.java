@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Middleware that enforces a global model call limit across all threads. (Middleware that enforces a global model call limit across all threads.)}
  * Middleware that enforces a global model call limit across all threads.
  *
  * <p>Terminates the run when the total model call count exceeds the configured limit (default:

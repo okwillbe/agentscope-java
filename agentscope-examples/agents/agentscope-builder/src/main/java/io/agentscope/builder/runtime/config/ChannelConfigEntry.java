@@ -28,6 +28,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
  * Per-channel section in {@code agentscope.json} under {@code channels.<channelId>}.
  *
  * <p>Defines routing configuration for a channel adapter. The built-in {@code chatui} channel is
@@ -58,6 +59,7 @@ import java.util.Map;
 public class ChannelConfigEntry {
 
     /**
+     * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
      * Channel type discriminator, looked up by {@link ChannelTypeRegistry} to select the
      * {@link ChannelFactory} that builds the channel instance. Built-in types: {@code chatui},
      * {@code dingtalk}, {@code wecom}, {@code feishu}, {@code github}, {@code gitlab}. Optional
@@ -68,6 +70,7 @@ public class ChannelConfigEntry {
     private String type;
 
     /**
+     * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
      * Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded
      * as-is to {@link ChannelFactory#create(String, ChannelConfig, Map)}.
      */
@@ -75,6 +78,7 @@ public class ChannelConfigEntry {
     private Map<String, Object> properties;
 
     /**
+     * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
      * Fallback agent id when no binding matches. If omitted, falls back to the globally bound main
      * agent.
      */
@@ -82,6 +86,7 @@ public class ChannelConfigEntry {
     private String defaultAgentId;
 
     /**
+     * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
      * Controls how DM session keys are scoped. One of {@code MAIN}, {@code PER_PEER}, {@code
      * PER_CHANNEL_PEER}, {@code PER_ACCOUNT_CHANNEL_PEER}. Defaults to {@code MAIN} when omitted.
      *
@@ -91,6 +96,7 @@ public class ChannelConfigEntry {
     private String dmScope;
 
     /**
+     * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
      * When {@code true}, this channel entry is ignored at bootstrap time — no channel instance is
      * created and any programmatically registered channel with the same id is not started.
      */
@@ -98,6 +104,7 @@ public class ChannelConfigEntry {
     private Boolean disabled;
 
     /**
+     * {@summary Type-specific provider properties (e.g. credentials, endpoints, signing secrets). Forwarded}
      * Ordered list of {@link io.agentscope.harness.agent.gateway.channel.ChannelBinding} routing rules,
      * evaluated by {@link io.agentscope.harness.agent.gateway.channel.ChannelRouter} in priority tiers.
      * First matching binding within the highest-priority tier wins.

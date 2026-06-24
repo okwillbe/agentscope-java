@@ -38,6 +38,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
  * PostgreSQL database-based implementation of AgentSkillRepository.
  *
  * <p>This implementation stores skills in PostgreSQL database tables with the following structure:
@@ -134,6 +135,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     private static final String DEFAULT_RESOURCES_TABLE_NAME = "agentscope_skill_resources";
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Pattern for validating schema and table names. Identifiers are double-quoted in generated
      * SQL, but this follows the conservative underscore-only convention used by other repositories.
      */
@@ -167,6 +169,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Create a PostgresSkillRepository with default schema and table names.
      *
      * <p>
@@ -194,6 +197,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Create a PostgresSkillRepository with custom schema name, table names, and
      * options.
      *
@@ -277,6 +281,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Create the schema if it doesn't exist.
      *
      * <p>PostgreSQL databases are selected by the JDBC URL, so this implementation creates a
@@ -300,6 +305,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Create the skills and resources tables if they don't exist.
      *
      * <p>Newly created skills tables include the optional {@code metadata_json} column so complete
@@ -353,6 +359,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Verify that the schema exists.
      *
      * @throws IllegalStateException if schema does not exist
@@ -380,6 +387,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Verify that the required tables exist.
      *
      * @throws IllegalStateException if any table does not exist
@@ -390,6 +398,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Verify that a specific table exists.
      *
      * @param tableName the table name to check
@@ -422,6 +431,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Get the full table name with schema prefix.
      *
      * @param tableName the table name
@@ -436,6 +446,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Detect whether the current skills table supports the optional {@code metadata_json} column.
      *
      * <p>This capability is cached at repository construction time and drives the read/write
@@ -729,6 +740,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Insert a skill into the database and return the generated id.
      *
      * @param conn  the database connection
@@ -776,6 +788,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Insert resources for a skill using batch processing.
      *
      * <p>
@@ -909,6 +922,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Delete a skill and its resources from the database.
      *
      * <p>
@@ -944,6 +958,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Check if a skill exists using an existing connection.
      *
      * @param conn      the database connection
@@ -991,6 +1006,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Get the schema name used for storing skills.
      *
      * @return the schema name
@@ -1000,6 +1016,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Get the skills table name.
      *
      * @return the skills table name
@@ -1009,6 +1026,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Get the resources table name.
      *
      * @return the resources table name
@@ -1018,6 +1036,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Get the DataSource used for database connections.
      *
      * @return the DataSource instance
@@ -1027,6 +1046,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Exposes whether the connected skills table supports {@code metadata_json}.
      *
      * <p>Package-private for tests.
@@ -1036,6 +1056,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Build an {@link AgentSkill} from SQL row data, restoring full metadata when available and
      * otherwise falling back to legacy core metadata.
      */
@@ -1051,6 +1072,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Deserialize {@code metadata_json} when present, then overlay the authoritative SQL columns
      * for {@code name} and {@code description}.
      */
@@ -1085,6 +1107,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Check whether metadata contains fields beyond the legacy core columns.
      *
      * <p>This is used only to emit a downgrade warning when writing to a legacy schema.
@@ -1121,6 +1144,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Clear all skills from the database (for testing or cleanup).
      *
      * <p>
@@ -1156,6 +1180,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Safely restore auto-commit mode on a connection.
      *
      * <p>
@@ -1198,6 +1223,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Validate a skill name.
      *
      * @param skillName the skill name to validate
@@ -1218,6 +1244,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Validate a resource path.
      *
      * @param path the resource path to validate
@@ -1234,6 +1261,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Validate a schema or table identifier to prevent SQL injection.
      *
      * <p>
@@ -1266,6 +1294,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Create a new Builder for PostgresSkillRepository.
      *
      * <p>
@@ -1290,6 +1319,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
     }
 
     /**
+     * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
      * Builder for creating PostgresSkillRepository instances with custom configuration.
      *
      * <p>
@@ -1306,6 +1336,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         private boolean writeable = true;
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Create a new Builder with the required DataSource.
          *
          * @param dataSource DataSource for database connections
@@ -1319,6 +1350,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Set the schema name for storing skills.
          *
          * @param schemaName the schema name (default: "agentscope")
@@ -1330,6 +1362,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Set the skills table name.
          *
          * @param skillsTableName the skills table name (default: "agentscope_skills")
@@ -1341,6 +1374,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Set the resources table name.
          *
          * @param resourcesTableName the resources table name (default:
@@ -1353,6 +1387,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Set whether to create schema and tables if they don't exist.
          *
          * @param createIfNotExist true to auto-create, false to require existing
@@ -1365,6 +1400,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Set whether the repository supports write operations.
          *
          * @param writeable true to enable write operations, false for read-only
@@ -1377,6 +1413,7 @@ public class PostgresSkillRepository implements AgentSkillRepository {
         }
 
         /**
+         * {@summary PostgreSQL database-based implementation of AgentSkillRepository. (PostgreSQL database-based implementation of AgentSkillRepository.)}
          * Build the PostgresSkillRepository instance.
          *
          * @return a new PostgresSkillRepository instance

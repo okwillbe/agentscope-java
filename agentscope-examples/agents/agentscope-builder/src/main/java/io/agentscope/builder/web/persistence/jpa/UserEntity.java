@@ -23,6 +23,7 @@ import jakarta.persistence.Table;
 import java.time.Instant;
 
 /**
+ * {@summary UserEntity class ()}
  * Persistent representation of a builder user. Keyed by stable {@code userId} (the same value
  * used as the HarnessAgent namespace key on disk in file mode) so migration from a JSON store
  * preserves all references.
@@ -50,6 +51,7 @@ public class UserEntity {
     private String passwordHash;
 
     /**
+     * {@summary UserEntity class ()}
      * Comma-separated role list. {@code null} or empty is treated as {@code "user"} at the API
      * boundary.
      */

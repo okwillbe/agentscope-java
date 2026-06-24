@@ -25,6 +25,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * {@summary SkillCompositionExample — Demonstrates the four-layer skill composition model with workspace (SkillCompositionExample — Demonstrates the four-layer skill composition model with workspace)}
  * SkillCompositionExample — Demonstrates the four-layer skill composition model with workspace
  * skills and classpath marketplace skills merged together.
  *

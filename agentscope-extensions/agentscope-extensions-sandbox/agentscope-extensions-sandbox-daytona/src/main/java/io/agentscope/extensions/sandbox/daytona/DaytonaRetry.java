@@ -19,7 +19,7 @@ import io.agentscope.harness.agent.sandbox.SandboxException;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 
-/** Simple bounded retry for transient Daytona HTTP failures. */
+/** {@summary Simple bounded retry for transient Daytona HTTP failures. (Simple bounded retry for transient Daytona HTTP failures.)} Simple bounded retry for transient Daytona HTTP failures. */
 final class DaytonaRetry {
 
     private DaytonaRetry() {}

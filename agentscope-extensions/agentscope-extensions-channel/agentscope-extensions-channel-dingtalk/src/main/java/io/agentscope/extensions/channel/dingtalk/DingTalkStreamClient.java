@@ -38,6 +38,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary DingTalk Stream client — opens a long-lived WebSocket to the DingTalk gateway, subscribes to the (DingTalk Stream client — opens a long-lived WebSocket to the DingTalk gateway, subscribes to the)}
  * DingTalk Stream client — opens a long-lived WebSocket to the DingTalk gateway, subscribes to the
  * bot-messages topic, and dispatches inbound frames to a consumer. Reconnects with exponential
  * backoff on failure.

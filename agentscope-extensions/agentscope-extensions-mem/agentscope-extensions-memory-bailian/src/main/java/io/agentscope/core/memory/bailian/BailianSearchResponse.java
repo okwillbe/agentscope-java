@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Response object from Bailian Memory API's search memory operation. (Response object from Bailian Memory API's search memory operation.)}
  * Response object from Bailian Memory API's search memory operation.
  *
  * <p>This response is returned from the POST /api/v2/apps/memory/memory_nodes/search endpoint
@@ -43,6 +44,7 @@ public class BailianSearchResponse {
     public BailianSearchResponse() {}
 
     /**
+     * {@summary Response object from Bailian Memory API's search memory operation. (Response object from Bailian Memory API's search memory operation.)}
      * Gets the request ID.
      *
      * @return the request ID
@@ -52,6 +54,7 @@ public class BailianSearchResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's search memory operation. (Response object from Bailian Memory API's search memory operation.)}
      * Sets the request ID.
      *
      * @param requestId the request ID
@@ -61,6 +64,7 @@ public class BailianSearchResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's search memory operation. (Response object from Bailian Memory API's search memory operation.)}
      * Gets the memory nodes.
      *
      * @return the memory nodes list
@@ -70,6 +74,7 @@ public class BailianSearchResponse {
     }
 
     /**
+     * {@summary Response object from Bailian Memory API's search memory operation. (Response object from Bailian Memory API's search memory operation.)}
      * Sets the memory nodes.
      *
      * @param memoryNodes the memory nodes list

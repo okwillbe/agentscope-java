@@ -19,6 +19,7 @@ package io.agentscope.core.training.runner;
 import java.util.UUID;
 
 /**
+ * {@summary Task ID Generator (Task ID Generator)}
  * Task ID Generator
  *
  * <p>Automatically generates unique Task ID for each Agent call.
@@ -44,6 +45,7 @@ class TaskIdGenerator {
     private TaskIdGenerator() {}
 
     /**
+     * {@summary Task ID Generator (Task ID Generator)}
      * Generate unique Task ID
      *
      * <p>Generation strategy: {@code task-{uuid}}
@@ -57,6 +59,7 @@ class TaskIdGenerator {
     }
 
     /**
+     * {@summary Task ID Generator (Task ID Generator)}
      * Generate Task ID with timestamp (alternative approach)
      *
      * <p>Generation strategy: {@code task-{timestamp}-{random}}

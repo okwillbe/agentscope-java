@@ -27,6 +27,7 @@ import java.security.GeneralSecurityException;
 import java.util.Base64;
 
 /**
+ * {@summary Token encryption/decryption using Google Tink AEAD. (Token encryption/decryption using Google Tink AEAD.)}
  * Token encryption/decryption using Google Tink AEAD.
  *
  * <p>Used to store GitHub tokens encrypted at rest in {@code SqliteBaseStore}.
@@ -56,6 +57,7 @@ public class TokenEncryption {
     }
 
     /**
+     * {@summary Token encryption/decryption using Google Tink AEAD. (Token encryption/decryption using Google Tink AEAD.)}
      * Encrypts a plaintext token.
      *
      * @param plaintext token to encrypt
@@ -67,6 +69,7 @@ public class TokenEncryption {
     }
 
     /**
+     * {@summary Token encryption/decryption using Google Tink AEAD. (Token encryption/decryption using Google Tink AEAD.)}
      * Decrypts a ciphertext token.
      *
      * @param ciphertext base64url-encoded ciphertext (from {@link #encrypt})

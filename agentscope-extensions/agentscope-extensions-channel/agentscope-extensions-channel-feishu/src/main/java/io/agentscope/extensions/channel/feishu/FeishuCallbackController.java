@@ -35,6 +35,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Handles the Feishu URL verification handshake and event-subscription callbacks. (Handles the Feishu URL verification handshake and event-subscription callbacks.)}
  * Handles the Feishu URL verification handshake and event-subscription callbacks.
  *
  * <p>Single endpoint at {@code POST /api/channels/feishu/{channelId}/callback}. The body is JSON;

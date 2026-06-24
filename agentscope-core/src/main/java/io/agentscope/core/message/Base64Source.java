@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary Base64Source (Base64Source)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;

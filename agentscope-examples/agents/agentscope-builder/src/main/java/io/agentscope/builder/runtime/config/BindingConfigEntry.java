@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
+ * {@summary BindingConfigEntry class ()}
  * JSON-serializable counterpart of {@link ChannelBinding}.
  *
  * <p>Field order corresponds to the OpenClaw routing priority tiers evaluated by {@link
@@ -84,6 +85,7 @@ public class BindingConfigEntry {
     private String channel;
 
     /**
+     * {@summary BindingConfigEntry class ()}
      * Optional per-binding DM scope override. One of {@code MAIN}, {@code PER_PEER}, {@code
      * PER_CHANNEL_PEER}, {@code PER_ACCOUNT_CHANNEL_PEER}. When null the channel-level scope
      * applies.
@@ -172,6 +174,7 @@ public class BindingConfigEntry {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary BindingConfigEntry class ()}
      * Converts this entry to a runtime {@link ChannelBinding}.
      *
      * @throws IllegalArgumentException if {@code agentId} is missing or blank

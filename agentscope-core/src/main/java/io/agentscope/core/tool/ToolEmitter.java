@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolEmitter (ToolEmitter)} */
 import io.agentscope.core.message.ToolResultBlock;
 
 /**

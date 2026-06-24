@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary BadRequestException (BadRequestException)} */
+
 /**
  * Exception thrown when the request is malformed (HTTP 400).
  *

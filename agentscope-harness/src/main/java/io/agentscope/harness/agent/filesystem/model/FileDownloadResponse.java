@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.filesystem.model;
 
+/** {@summary FileDownloadResponse (FileDownloadResponse)} */
+
 /**
  * Result of a single file download operation.
  *

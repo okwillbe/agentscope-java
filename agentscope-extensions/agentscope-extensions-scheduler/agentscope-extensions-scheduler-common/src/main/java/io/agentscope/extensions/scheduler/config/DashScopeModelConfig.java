@@ -21,6 +21,7 @@ import io.agentscope.core.model.Model;
 import java.util.Objects;
 
 /**
+ * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
  * Configuration for DashScope model settings.
  *
  * <p>This configuration class encapsulates all the settings for DashScope chat models.
@@ -83,6 +84,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Validate the configuration.
      */
     private void validate() {
@@ -100,6 +102,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Create a Model instance from this configuration.
      *
      * <p>This method creates a {@link DashScopeChatModel} instance with all the
@@ -129,6 +132,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Get the API key.
      *
      * @return The API key
@@ -138,6 +142,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Check if streaming is enabled.
      *
      * @return true if streaming is enabled
@@ -147,6 +152,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Check if thinking mode is enabled.
      *
      * @return true if thinking mode is enabled, false if disabled
@@ -156,6 +162,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Get the base URL.
      *
      * @return The custom base URL, may be null for default
@@ -165,6 +172,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Create a new builder instance.
      *
      * @return A new Builder
@@ -207,6 +215,7 @@ public class DashScopeModelConfig implements ModelConfig {
     }
 
     /**
+     * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
      * Builder for creating DashScopeModelConfig instances.
      */
     public static class Builder {
@@ -219,6 +228,7 @@ public class DashScopeModelConfig implements ModelConfig {
         private Builder() {}
 
         /**
+         * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
          * Set the API key for DashScope authentication (required).
          *
          * @param apiKey The API key
@@ -230,6 +240,7 @@ public class DashScopeModelConfig implements ModelConfig {
         }
 
         /**
+         * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
          * Set the model name to use (required).
          *
          * <p>The model name determines which API is used:
@@ -255,6 +266,7 @@ public class DashScopeModelConfig implements ModelConfig {
         }
 
         /**
+         * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
          * Set whether streaming should be enabled (optional, default: true).
          *
          * <p>This setting is ignored if enableThinking is set to true, as thinking mode
@@ -269,6 +281,7 @@ public class DashScopeModelConfig implements ModelConfig {
         }
 
         /**
+         * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
          * Set whether thinking mode should be enabled (optional, default: false).
          *
          * <p>When enabled, this automatically enables streaming and may override the stream setting.
@@ -283,6 +296,7 @@ public class DashScopeModelConfig implements ModelConfig {
         }
 
         /**
+         * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
          * Set a custom base URL for DashScope API (optional).
          *
          * <p>Useful for:
@@ -301,6 +315,7 @@ public class DashScopeModelConfig implements ModelConfig {
         }
 
         /**
+         * {@summary Configuration for DashScope model settings. (Configuration for DashScope model settings.)}
          * Build the DashScopeModelConfig instance.
          *
          * @return A new DashScopeModelConfig instance

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel.chatui;
 
+/** {@summary SendOptions (SendOptions)} */
 import java.util.Objects;
 
 /**
@@ -23,13 +24,13 @@ import java.util.Objects;
  * routing intent through simple business identifiers.
  *
  * <ul>
- *   <li>{@code userId} — identifies the user. Maps to
+ *   <li>{@code userId} ...identifies the user. Maps to
  *       {@link io.agentscope.harness.agent.gateway.MsgContext#userId()} for HarnessAgent
  *       namespace isolation, and is used as the default session key when {@code sessionId} is null.
- *   <li>{@code sessionId} — optional explicit conversation identifier. When provided, different
+ *   <li>{@code sessionId} ...optional explicit conversation identifier. When provided, different
  *       sessions for the same user are kept separate. When null, one session per user is the
  *       default.
- *   <li>{@code agentId} — optional target agent override for multi-agent setups. When null, the
+ *   <li>{@code agentId} ...optional target agent override for multi-agent setups. When null, the
  *       channel's default agent is used.
  * </ul>
  *
@@ -57,12 +58,12 @@ public record SendOptions(String userId, String sessionId, String agentId) {
         Objects.requireNonNull(userId, "userId");
     }
 
-    /** One session per user — the most common case. */
+    /** One session per user ...the most common case. */
     public static SendOptions userId(String userId) {
         return new SendOptions(userId, null, null);
     }
 
-    /** Explicit user + session — multiple conversations for the same user. */
+    /** Explicit user + session ...multiple conversations for the same user. */
     public static SendOptions of(String userId, String sessionId) {
         Objects.requireNonNull(sessionId, "sessionId");
         return new SendOptions(userId, sessionId, null);

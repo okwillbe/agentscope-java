@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.skill.curator;
 
+/** {@summary SkillVisibilityFilter (SkillVisibilityFilter)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.skill.AgentSkill;
 import java.util.List;
@@ -26,10 +27,10 @@ import java.util.List;
  *
  * <p>The standard implementations live in this package:
  * <ul>
- *   <li>{@link EnvironmentFilter} — environment matching (applies to every skill)</li>
- *   <li>{@link CanaryFilter} — userId-keyed percentage rollout (agent-created only)</li>
- *   <li>{@link AllowListFilter} — explicit name allow-list (agent-created only)</li>
- *   <li>{@link CompositeFilter} — chains other filters with AND semantics</li>
+ *   <li>{@link EnvironmentFilter} ...environment matching (applies to every skill)</li>
+ *   <li>{@link CanaryFilter} ...userId-keyed percentage rollout (agent-created only)</li>
+ *   <li>{@link AllowListFilter} ...explicit name allow-list (agent-created only)</li>
+ *   <li>{@link CompositeFilter} ...chains other filters with AND semantics</li>
  * </ul>
  */
 @SuppressWarnings("deprecation")

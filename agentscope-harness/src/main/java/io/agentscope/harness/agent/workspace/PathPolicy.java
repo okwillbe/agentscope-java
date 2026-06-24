@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.workspace;
 
+/** {@summary PathPolicy (PathPolicy)} */
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;

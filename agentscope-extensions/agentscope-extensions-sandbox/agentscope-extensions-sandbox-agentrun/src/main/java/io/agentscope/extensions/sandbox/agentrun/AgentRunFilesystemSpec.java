@@ -22,7 +22,8 @@ import io.agentscope.harness.agent.sandbox.WorkspaceSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.NoopSnapshotSpec;
 import io.agentscope.harness.agent.sandbox.snapshot.SandboxSnapshotSpec;
 
-/** {@link SandboxFilesystemSpec} for the Alibaba Cloud AgentRun store. */
+/**
+ * {@summary AgentRunFilesystemSpec (AgentRunFilesystemSpec)} {@link SandboxFilesystemSpec} for the Alibaba Cloud AgentRun store. */
 public class AgentRunFilesystemSpec extends SandboxFilesystemSpec {
 
     private SandboxClient<?> client;

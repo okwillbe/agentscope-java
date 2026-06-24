@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary ChannelBinding (ChannelBinding)} */
 import java.util.Objects;
 import java.util.Set;
 
@@ -25,13 +26,13 @@ import java.util.Set;
  * specific non-null condition field it carries (priority order):
  *
  * <ol>
- *   <li>{@link #peer} — exact peer-key match ({@code "direct:u_123"} or {@code "channel:c_help"})
- *   <li>{@link #parentPeer} — parent-peer key match (thread-parent inheritance)
- *   <li>{@link #guild} + {@link #roles} — guild membership AND at least one role matches
- *   <li>{@link #guild} alone — guild membership (no role constraint)
- *   <li>{@link #team} — team id match
- *   <li>{@link #account} — account id match
- *   <li>{@link #channel} — channel id match
+ *   <li>{@link #peer} ...exact peer-key match ({@code "direct:u_123"} or {@code "channel:c_help"})
+ *   <li>{@link #parentPeer} ...parent-peer key match (thread-parent inheritance)
+ *   <li>{@link #guild} + {@link #roles} ...guild membership AND at least one role matches
+ *   <li>{@link #guild} alone ...guild membership (no role constraint)
+ *   <li>{@link #team} ...team id match
+ *   <li>{@link #account} ...account id match
+ *   <li>{@link #channel} ...channel id match
  * </ol>
  *
  * <p>Within a tier, the first binding in {@link ChannelConfig#bindings()} list order that matches

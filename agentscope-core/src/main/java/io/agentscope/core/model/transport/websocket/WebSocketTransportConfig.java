@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary WebSocketTransportConfig (WebSocketTransportConfig)} */
 import io.agentscope.core.model.transport.ProxyConfig;
 import java.time.Duration;
 

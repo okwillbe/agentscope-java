@@ -21,6 +21,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 /**
+ * {@summary Single source of truth for per-agent permissions. (Single source of truth for per-agent permissions.)}
  * Single source of truth for per-agent permissions.
  *
  * <p>Tiers are ordered: {@code EDIT > RUN > CLONE}. Rules:
@@ -92,6 +93,7 @@ public class AgentAclService {
     }
 
     /**
+     * {@summary Single source of truth for per-agent permissions. (Single source of truth for per-agent permissions.)}
      * Returns the highest tier from {@code grants} that applies to {@code userId} via either a
      * direct USER grant or a WORKSPACE grant. {@code null} if none matches.
      */

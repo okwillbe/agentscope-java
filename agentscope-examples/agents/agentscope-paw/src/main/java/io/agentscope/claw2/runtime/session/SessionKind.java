@@ -15,7 +15,7 @@
  */
 package io.agentscope.claw2.runtime.session;
 
-/** AgentStateStore classification. */
+/** {@summary AgentStateStore classification. (AgentStateStore classification.)} AgentStateStore classification. */
 public enum SessionKind {
     SUBAGENT("subagent"),
     MAIN("main");

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tool;
 
+/** {@summary PlanModeTools (PlanModeTools)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.permission.PermissionContextState;
@@ -32,10 +33,10 @@ import reactor.core.publisher.Mono;
  * PlanModeManager}.
  *
  * <ul>
- *   <li>{@code plan_enter} — switch into read-only plan mode to investigate and design before
+ *   <li>{@code plan_enter} ...switch into read-only plan mode to investigate and design before
  *       touching anything.
- *   <li>{@code plan_write} — create / overwrite the plan markdown blueprint (allowed in plan mode).
- *   <li>{@code plan_exit} — request to leave plan mode and start executing. Gated by an {@code ASK}
+ *   <li>{@code plan_write} ...create / overwrite the plan markdown blueprint (allowed in plan mode).
+ *   <li>{@code plan_exit} ...request to leave plan mode and start executing. Gated by an {@code ASK}
  *       self-check, so the user confirms the plan (via the existing permission HITL flow) before
  *       the agent regains write access.
  * </ul>

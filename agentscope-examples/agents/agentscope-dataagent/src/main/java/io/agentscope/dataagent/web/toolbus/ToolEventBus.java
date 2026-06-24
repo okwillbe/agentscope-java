@@ -22,6 +22,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Sinks;
 
 /**
+ * {@summary Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks. (Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks.)}
  * Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks.
  *
  * <p>Consumers subscribe via {@link #subscribe(String)} filtering by session key.
@@ -39,6 +40,7 @@ public class ToolEventBus {
     }
 
     /**
+     * {@summary Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks. (Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks.)}
      * Returns a {@link Flux} filtered to events matching the given session key.
      * Callers should manage the flux lifecycle (e.g. take-until-signal).
      */
@@ -47,6 +49,7 @@ public class ToolEventBus {
     }
 
     /**
+     * {@summary Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks. (Singleton in-memory event bus for tool-call events emitted by HarnessAgent hooks.)}
      * A single tool-call or tool-result event.
      *
      * @param sessionKey the session key that produced this event

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core;
 
+/** {@summary ReActAgent (ReActAgent)} */
 import com.fasterxml.jackson.databind.JsonNode;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.AgentBase;
@@ -193,7 +194,7 @@ import reactor.core.scheduler.Schedulers;
  * processes exactly one {@code call()} at a time; a concurrent invocation on the same instance
  * throws {@link IllegalStateException}. For web services or other concurrent scenarios, create
  * one agent instance per request via a factory method. {@link io.agentscope.core.model.Model},
- * {@link io.agentscope.core.tool.Toolkit} (as a template — {@code build()} deep-copies it), and
+ * {@link io.agentscope.core.tool.Toolkit} (as a template 鈥?{@code build()} deep-copies it), and
  * {@link io.agentscope.core.state.AgentStateStore} are all safe to share across instances.
  */
 @SuppressWarnings("deprecation")
@@ -209,7 +210,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
     /**
      * @deprecated Permission HITL no longer uses a Reactor Sink. Confirm results are now
      *     delivered via a second {@code agent.call(msgs)} carrying a {@link ConfirmResult}
-     *     payload — see {@code applyConfirmResults}. This constant is retained as a
+     *     payload 鈥?see {@code applyConfirmResults}. This constant is retained as a
      *     compile-time marker and will be removed in a future release.
      */
     @Deprecated
@@ -227,7 +228,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
     /**
      * Agent-owned toolkit (a deep copy made at {@code build()} time, isolated per agent instance).
      * Shared across this agent's concurrent calls; per-call structured-output tools are NOT
-     * registered here — they live on the per-call {@link CallExecution} scope.
+     * registered here 鈥?they live on the per-call {@link CallExecution} scope.
      */
     private final Toolkit toolkit;
 
@@ -330,7 +331,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
     }
 
     /**
-     * Internal slot identifier — {@code (userId or "__anon__") + "/" + sessionId}.
+     * Internal slot identifier 鈥?{@code (userId or "__anon__") + "/" + sessionId}.
      * Not part of the public API.
      */
     private static String slotKey(String userId, String sessionId) {
@@ -431,7 +432,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
      * drift across machines) see the latest persisted state rather than a stale local cache entry.
      * The per-call cost of one store read is negligible compared to the LLM round-trip.
      *
-     * <p>Safe to call from {@code beforeAgentExecution} only — caller must hold the
+     * <p>Safe to call from {@code beforeAgentExecution} only 鈥?caller must hold the
      * {@code AgentBase.acquireExecution} lock.
      */
     private CallExecution activateSlotForContext(RuntimeContext ctx) {
@@ -782,8 +783,8 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
     // ==================== Shared agent-stream core ====================
 
     /**
-     * Overrides the base-class hook so that every {@code call()} variant — including structured
-     * output and context-bearing overloads — runs through the same {@link #buildAgentStream} core
+     * Overrides the base-class hook so that every {@code call()} variant 鈥?including structured
+     * output and context-bearing overloads 鈥?runs through the same {@link #buildAgentStream} core
      * as {@code streamEvents()}.  This guarantees that the {@code onAgent} middleware chain fires
      * on <em>all</em> invocation paths, not only on the streaming path.
      *
@@ -828,7 +829,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
                                     reactor.util.context.Context subscriberCtx =
                                             reactor.util.context.Context.of(sink.contextView());
 
-                                    // Call runLifecycle directly — NOT call() — to avoid the
+                                    // Call runLifecycle directly 鈥?NOT call() 鈥?to avoid the
                                     // onAgent chain being applied a second time.
                                     Mono<Msg> lifecycle = runLifecycle(input.msgs(), doCallFn);
                                     if (context != null) {
@@ -837,7 +838,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
                                                         c -> c.put(RUNTIME_CONTEXT_KEY, context));
                                     }
                                     // Do not install AgentEventEmitter.CONTEXT_KEY when the
-                                    // deprecated stream() → SubagentEventBus path is driving
+                                    // deprecated stream() 鈫?SubagentEventBus path is driving
                                     // this invocation. On that path AgentSpawnTool reads
                                     // SubagentEventBus.CONTEXT_KEY to forward child events;
                                     // installing CONTEXT_KEY here would cause execLocalSync to
@@ -904,7 +905,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
     /**
      * Stream fine-grained {@link AgentEvent}s with a caller-supplied {@link RuntimeContext}.
      *
-     * <p>Delegates directly to {@link #buildAgentStream} — the same core used by {@code call()}.
+     * <p>Delegates directly to {@link #buildAgentStream} 鈥?the same core used by {@code call()}.
      * Concurrent invocations do not share any state; each subscription gets its own event sink and
      * lifecycle execution.
      *
@@ -962,7 +963,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
         Object scope = cv.getOrDefault(CALL_SCOPE_KEY, null);
         if (!(scope instanceof CallExecution ce)) {
             throw new IllegalStateException(
-                    "No CallExecution in Reactor Context — scopeFrom called outside call"
+                    "No CallExecution in Reactor Context 鈥?scopeFrom called outside call"
                             + " lifecycle");
         }
         return ce;
@@ -1377,7 +1378,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
      * Per-call execution scope: holds the active {@code (userId, sessionId)} slot's mutable
      * {@link AgentState} + {@link PermissionEngine} + slot key, and hosts the entire ReAct
      * reasoning loop. Non-static inner class so the loop references the enclosing agent's
-     * immutable config ({@code model}, {@code toolkit}, {@code middlewares}, …) and lifecycle
+     * immutable config ({@code model}, {@code toolkit}, {@code middlewares}, 鈥? and lifecycle
      * helpers directly. Built per-call by {@link #activateSlotForContext(RuntimeContext)}.
      */
     final class CallExecution {
@@ -1386,7 +1387,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
         String slotKey;
 
         /**
-         * Per-call system message, propagated across PreCallEvent → PreReasoningEvent /
+         * Per-call system message, propagated across PreCallEvent 鈫?PreReasoningEvent /
          * PreSummaryEvent. Owned by a single logical execution: seeded to {@code null} at call
          * entry ({@code #beforeAgentExecution(List)}) and set by
          * {@link #consumeSystemMsgAfterPreCall(Msg, Object)}.
@@ -1534,7 +1535,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
                 return hasPendingToolUse() ? resumeAgent() : coreAgent();
             }
 
-            // Recovery was disabled and user did not provide tool results — unrecoverable.
+            // Recovery was disabled and user did not provide tool results 鈥?unrecoverable.
             throw new IllegalStateException(
                     "Pending tool calls exist without results. "
                             + "Enable enablePendingToolRecovery or provide tool results. "
@@ -2058,7 +2059,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
         /**
          * Stream fine-grained {@link AgentEvent}s from a model call during reasoning.
          *
-         * <p>Emits: {@link ModelCallStartEvent} → block start/delta/end events → {@link
+         * <p>Emits: {@link ModelCallStartEvent} 鈫?block start/delta/end events 鈫?{@link
          * ModelCallEndEvent}. The provided {@link ReasoningContext} is used to accumulate chunks
          * (for building the final {@link Msg}) and to notify legacy {@link Hook}s.
          *
@@ -2251,7 +2252,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
                             })
                     .flatMap(
                             results -> {
-                                // Middleware requested stop during acting — return immediately with
+                                // Middleware requested stop during acting 鈥?return immediately with
                                 // the requested GenerateReason, preserving any results already
                                 // collected.
                                 RequestStopEvent rs = actingStopRequested.get();
@@ -2302,7 +2303,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
         /**
          * Stream fine-grained {@link AgentEvent}s from tool execution during the acting phase.
          *
-         * <p>Emits: {@link ToolResultStartEvent} → delta events → {@link ToolResultEndEvent}
+         * <p>Emits: {@link ToolResultStartEvent} 鈫?delta events 鈫?{@link ToolResultEndEvent}
          * for each tool call. The provided {@code resultHolder} is populated with the execution
          * results so the caller can process them afterward.
          *
@@ -2328,7 +2329,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
                                 Map<String, ToolCallState> stateUpdates = new HashMap<>();
                                 for (ToolUseBlock tc : toolCalls) {
                                     if (autoDenied.contains(tc.getId())) {
-                                        // DENIED tools don't need a state change — they'll get a
+                                        // DENIED tools don't need a state change 鈥?they'll get a
                                         // DENIED ToolResultBlock and won't reappear in pending.
                                         continue;
                                     }
@@ -2560,7 +2561,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
          * Run every tool call through the permission gate.
          *
          * <p>When the agent's {@link io.agentscope.core.permission.PermissionContextState} is trivial
-         * (default mode, no rules, no working directories — i.e. the user has not opted into the
+         * (default mode, no rules, no working directories 鈥?i.e. the user has not opted into the
          * permission system) we fall back to the lightweight pre-2.0 path: the tool's own
          * {@link ToolBase#checkPermissions} ASK gates a confirmation, anything else is approved.
          *
@@ -3357,7 +3358,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
      *
      * <p>Note: in distributed deployments the authoritative reload happens at call start inside
      * {@code activateSlotForContext}. This method returns the locally cached instance (suitable
-     * for the "get → mutate → save" pattern used by admin APIs and tests).
+     * for the "get 鈫?mutate 鈫?save" pattern used by admin APIs and tests).
      */
     public AgentState getAgentState(String userId, String sessionId) {
         String slot = slotKey(userId, sessionId);
@@ -3615,8 +3616,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
 
         /**
          * When true, {@link DynamicSkillMiddleware} toggles the prompt provider's code-execution
-         * block (per-skill {@code <files-root>} listing + instructions). Off by default —
-         * enabling it without also wiring a shell-like tool will produce a prompt that asks the
+         * block (per-skill {@code <files-root>} listing + instructions). Off by default 鈥?         * enabling it without also wiring a shell-like tool will produce a prompt that asks the
          * model to do things it cannot.
          */
         private boolean skillCodeExecutionEnabled = false;
@@ -4061,7 +4061,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
          * @deprecated since 2.0.0. Skills now flow through {@link #skillRepository} /
          *     {@link #skillRepositories}; legacy {@link io.agentscope.core.skill.SkillBox}
          *     instances are still accepted for source compatibility, but combining a
-         *     {@code skillBox(...)} with {@code skillRepository(...)} is untested — new code
+         *     {@code skillBox(...)} with {@code skillRepository(...)} is untested 鈥?new code
          *     should prefer {@link #skillRepository(AgentSkillRepository)}.
          */
         @Deprecated(forRemoval = true, since = "2.0.0")
@@ -4072,7 +4072,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
 
         /**
          * Adds a single {@link AgentSkillRepository} to the layered skill stack. Multiple calls
-         * append in order from low to high priority — when two repositories expose a skill with
+         * append in order from low to high priority 鈥?when two repositories expose a skill with
          * the same {@link io.agentscope.core.skill.AgentSkill#getName()}, the later (higher
          * priority) entry wins.
          *
@@ -4134,8 +4134,7 @@ public class ReActAgent extends AgentBase implements AutoCloseable {
          *   <li>Otherwise the prompt falls back to a single {@code uploadDir} root.</li>
          * </ul>
          *
-         * <p>Only flip this on when the agent's toolkit has a shell-like tool wired in —
-         * otherwise the prompt will ask the model to do things it cannot. Defaults to {@code false}.
+         * <p>Only flip this on when the agent's toolkit has a shell-like tool wired in 鈥?         * otherwise the prompt will ask the model to do things it cannot. Defaults to {@code false}.
          */
         public Builder skillCodeExecutionEnabled(boolean enabled) {
             this.skillCodeExecutionEnabled = enabled;

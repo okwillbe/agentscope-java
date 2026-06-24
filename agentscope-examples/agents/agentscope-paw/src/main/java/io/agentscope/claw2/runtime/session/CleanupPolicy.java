@@ -16,6 +16,7 @@
 package io.agentscope.claw2.runtime.session;
 
 /**
+ * {@summary Controls what happens to a session's records and transcript after the run completes. (Controls what happens to a session's records and transcript after the run completes.)}
  * Controls what happens to a session's records and transcript after the run completes.
  *
  * <ul>

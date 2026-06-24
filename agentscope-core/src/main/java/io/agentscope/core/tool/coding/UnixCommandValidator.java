@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.coding;
 
+/** {@summary UnixCommandValidator (UnixCommandValidator)} */
 import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,10 +26,10 @@ import org.slf4j.LoggerFactory;
  * <p><b>Validation Order:</b>
  * <ol>
  *   <li>Extract executable from command (remove quotes, extract first token, remove extensions)</li>
- *   <li>If no whitelist configured → allow (backward compatible)</li>
- *   <li>Check for multiple command separators → reject if found</li>
- *   <li>Check relative path safety (commands starting with {@code ./}) → reject if escapes current directory</li>
- *   <li>Check whitelist → reject if not in whitelist</li>
+ *   <li>If no whitelist configured 鈫?allow (backward compatible)</li>
+ *   <li>Check for multiple command separators 鈫?reject if found</li>
+ *   <li>Check relative path safety (commands starting with {@code ./}) 鈫?reject if escapes current directory</li>
+ *   <li>Check whitelist 鈫?reject if not in whitelist</li>
  * </ol>
  *
  * <p><b>Multiple Command Detection:</b> Detects Unix-specific separators:

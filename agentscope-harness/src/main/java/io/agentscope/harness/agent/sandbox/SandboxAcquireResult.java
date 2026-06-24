@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxAcquireResult (SandboxAcquireResult)} */
+
 /**
  * Result of acquiring a {@link Sandbox} from {@link SandboxManager}.
  *
@@ -22,7 +24,7 @@ package io.agentscope.harness.agent.sandbox;
  *
  * <ul>
  *   <li><b>self-managed</b> ({@code selfManaged=true}): the SDK created the sandbox and is
- *       responsible for its full lifecycle — {@code stop()} + {@code shutdown()} are both called
+ *       responsible for its full lifecycle ...{@code stop()} + {@code shutdown()} are both called
  *       after each agent call.
  *   <li><b>user-managed</b> ({@code selfManaged=false}): the caller injected a pre-existing
  *       sandbox; the SDK only calls {@code stop()} and never calls {@code shutdown()}.

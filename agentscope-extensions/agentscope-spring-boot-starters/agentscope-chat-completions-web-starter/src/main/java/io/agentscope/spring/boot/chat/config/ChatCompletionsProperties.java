@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.chat.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * {@summary Configuration properties for the Chat Completions Web Starter. (Configuration properties for the Chat Completions Web Starter.)}
  * Configuration properties for the Chat Completions Web Starter.
  *
  * <p>Example configuration:

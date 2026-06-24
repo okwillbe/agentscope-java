@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary WorkspaceProjectionApplier (WorkspaceProjectionApplier)} */
 import io.agentscope.harness.agent.sandbox.layout.DirEntry;
 import io.agentscope.harness.agent.sandbox.layout.WorkspaceEntry;
 import io.agentscope.harness.agent.sandbox.layout.WorkspaceProjectionEntry;

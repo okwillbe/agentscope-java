@@ -25,6 +25,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 
 /**
+ * {@summary Registers task protocol REST endpoints when enabled. (Registers task protocol REST endpoints when enabled.)}
  * Registers task protocol REST endpoints when enabled.
  *
  * <p>{@link ConditionalOnBean} is applied at the {@code @Bean} method level (not class level) to

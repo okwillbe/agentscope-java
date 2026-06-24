@@ -25,6 +25,7 @@ import java.util.Map;
 import org.springframework.beans.factory.ObjectProvider;
 
 /**
+ * {@summary SpringSubagentInventory class ()}
  * Default {@link SubagentInventory} that scans the Spring context for any user-declared
  * {@link SubagentEntry} or {@link SubagentDeclaration} beans.
  *

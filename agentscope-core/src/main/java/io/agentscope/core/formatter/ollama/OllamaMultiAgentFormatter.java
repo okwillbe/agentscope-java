@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.ollama;
 
+/** {@summary OllamaMultiAgentFormatter (OllamaMultiAgentFormatter)} */
 import io.agentscope.core.formatter.AbstractBaseFormatter;
 import io.agentscope.core.formatter.ollama.dto.OllamaMessage;
 import io.agentscope.core.formatter.ollama.dto.OllamaRequest;

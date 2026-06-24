@@ -43,6 +43,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Business logic for the local agent catalog. There is no notion of users or sharing — every (Business logic for the local agent catalog. There is no notion of users or sharing — every)}
  * Business logic for the local agent catalog. There is no notion of users or sharing — every
  * agent visible here is usable by the local user.
  *
@@ -265,6 +266,7 @@ public class AgentCatalogService {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Business logic for the local agent catalog. There is no notion of users or sharing — every (Business logic for the local agent catalog. There is no notion of users or sharing — every)}
      * Resolves the gateway agent id to use when routing a chat message to the given agent. Both
      * built-in and custom agents are registered under their natural id. For custom agents, this
      * call lazily builds and registers the agent on first invocation.
@@ -367,6 +369,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the local agent catalog. There is no notion of users or sharing — every (Business logic for the local agent catalog. There is no notion of users or sharing — every)}
      * Resolves the on-disk workspace path for a custom agent. If the entry stored a
      * {@code workspacePath}, it is resolved against {@code clawHome} (absolute paths preserved).
      * Otherwise the default {@code ${clawHome}/agents/{id}/workspace} layout is used.
@@ -381,6 +384,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the local agent catalog. There is no notion of users or sharing — every (Business logic for the local agent catalog. There is no notion of users or sharing — every)}
      * Trims a user-supplied workspace path. Returns {@code null} for blank input (defaults are
      * resolved at runtime). Absolute paths are passed through. Relative paths reject any
      * {@code ..} traversal segments.
@@ -403,6 +407,7 @@ public class AgentCatalogService {
     }
 
     /**
+     * {@summary Business logic for the local agent catalog. There is no notion of users or sharing — every (Business logic for the local agent catalog. There is no notion of users or sharing — every)}
      * Materializes an AI-suggested agent into the workspace folder: {@code AGENTS.md} from
      * {@code (name, description, sysPrompt)}, {@code tools.json} from {@code suggestedTools},
      * one skill file per {@code suggestedSkills} entry, one subagent file per

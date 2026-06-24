@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 /**
+ * {@summary REST controller for AG-UI protocol endpoints. (REST controller for AG-UI protocol endpoints.)}
  * REST controller for AG-UI protocol endpoints.
  *
  * <p>This controller exposes the AG-UI run endpoints for Spring MVC applications.
@@ -38,6 +39,7 @@ public class AguiRestController {
     private final boolean enablePathRouting;
 
     /**
+     * {@summary REST controller for AG-UI protocol endpoints. (REST controller for AG-UI protocol endpoints.)}
      * Creates a new AguiRestController.
      *
      * @param aguiMvcController The AG-UI MVC controller
@@ -52,6 +54,7 @@ public class AguiRestController {
     }
 
     /**
+     * {@summary REST controller for AG-UI protocol endpoints. (REST controller for AG-UI protocol endpoints.)}
      * Handle an AG-UI run request.
      *
      * <p>Agent ID is resolved from (in priority order):
@@ -80,6 +83,7 @@ public class AguiRestController {
     }
 
     /**
+     * {@summary REST controller for AG-UI protocol endpoints. (REST controller for AG-UI protocol endpoints.)}
      * Handle an AG-UI run request with agent ID in the URL path.
      *
      * <p>The path variable takes highest priority for agent resolution.

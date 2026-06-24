@@ -28,6 +28,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 /**
+ * {@summary AgentShareEntity class ()}
  * Persistent representation of one {@link io.agentscope.builder.web.share.AgentShareGrant}.
  *
  * <p>Owned by an {@link AgentEntity} via a {@code @ManyToOne} relationship with a hard foreign

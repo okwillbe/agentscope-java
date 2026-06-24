@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.user;
 
+/** {@summary UserAgent (UserAgent)} */
 import io.agentscope.core.agent.AgentBase;
 import io.agentscope.core.hook.Hook;
 import io.agentscope.core.interruption.InterruptContext;

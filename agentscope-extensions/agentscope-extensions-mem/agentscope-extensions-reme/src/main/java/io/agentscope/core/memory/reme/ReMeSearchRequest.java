@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary Request object for searching memories in ReMe API. (Request object for searching memories in ReMe API.)}
  * Request object for searching memories in ReMe API.
  *
  * <p>This request is sent to the ReMe API's {@code POST /retrieve_personal_memory} endpoint
@@ -44,6 +45,7 @@ public class ReMeSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in ReMe API. (Request object for searching memories in ReMe API.)}
      * Creates a new ReMeSearchRequest with specified workspace ID, query, and topK.
      *
      * @param workspaceId The workspace identifier
@@ -83,6 +85,7 @@ public class ReMeSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in ReMe API. (Request object for searching memories in ReMe API.)}
      * Creates a new builder for ReMeSearchRequest.
      *
      * @return A new builder instance

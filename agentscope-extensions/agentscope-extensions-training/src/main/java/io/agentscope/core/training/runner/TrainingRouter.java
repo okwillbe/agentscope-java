@@ -38,6 +38,7 @@ import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * {@summary Training Router Hook (Training Router Hook)}
  * Training Router Hook
  *
  * <p>Core training router Hook implementing shadow traffic training architecture with <b>fully automated Task/Run ID management</b>
@@ -114,6 +115,7 @@ public class TrainingRouter implements Hook {
     }
 
     /**
+     * {@summary Training Router Hook (Training Router Hook)}
      * Handle PreCallEvent
      * Save input messages for use in PostCallEvent
      */
@@ -127,6 +129,7 @@ public class TrainingRouter implements Hook {
     }
 
     /**
+     * {@summary Training Router Hook (Training Router Hook)}
      * Handle PostCallEvent
      * <b>Auto-generate Task ID, allocate Run ID, run shadow Agent asynchronously</b>
      */
@@ -250,6 +253,7 @@ public class TrainingRouter implements Hook {
     }
 
     /**
+     * {@summary Training Router Hook (Training Router Hook)}
      * Run shadow Agent
      *
      * <p><b>Fully automated:</b>

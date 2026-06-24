@@ -23,6 +23,7 @@ import java.nio.file.Paths;
 import java.util.Objects;
 
 /**
+ * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
  * Builds {@link WorkspaceManager} instances whose filesystem is backed by a per-{@code (userId,
  * agentId)} live {@link Sandbox} from {@link UserSandboxRegistry}.
  *
@@ -46,6 +47,7 @@ public final class WorkspaceManagerFactory {
     }
 
     /**
+     * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
      * Returns a {@link WorkspaceManager} for a user-scoped agent. Equivalent to
      * {@link #forAgent(String, String, String)} with {@code workspacePath=null}.
      */
@@ -54,6 +56,7 @@ public final class WorkspaceManagerFactory {
     }
 
     /**
+     * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
      * Returns a {@link WorkspaceManager} for a user-scoped agent. Borrows (and starts on first
      * use) the per-{@code (ownerId, agentId)} sandbox; the returned {@link WorkspaceManager} reads
      * and writes through that sandbox via {@link SharedSandboxFilesystem}.
@@ -67,6 +70,7 @@ public final class WorkspaceManagerFactory {
     }
 
     /**
+     * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
      * Returns a {@link WorkspaceManager} for a global agent accessed by a specific user.
      * Equivalent to {@link #forAgent(String, String, String)} — once the filesystem layer is
      * sandbox-backed, the global/user distinction disappears because the sandbox itself is keyed
@@ -82,6 +86,7 @@ public final class WorkspaceManagerFactory {
     }
 
     /**
+     * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
      * Returns the raw per-{@code (userId, agentId)} {@link AbstractFilesystem} without the
      * {@link WorkspaceManager} wrapper, suitable for callers that need to enumerate / copy files
      * inside the user's isolated workspace (notably the audit/activity log and
@@ -94,6 +99,7 @@ public final class WorkspaceManagerFactory {
     }
 
     /**
+     * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
      * Path prefix under which {@link #userDataFs(String, String, String)} reports file paths.
      * With sandbox-backed isolation the entire container belongs to one user, so the prefix is
      * just the container root ({@code "/"}). Kept on the API surface to avoid forcing call-site
@@ -106,6 +112,7 @@ public final class WorkspaceManagerFactory {
     }
 
     /**
+     * {@summary Resolves the user-supplied workspace path for an agent into an absolute host-side data (Resolves the user-supplied workspace path for an agent into an absolute host-side data)}
      * Resolves the user-supplied workspace path for an agent into an absolute host-side data
      * root, mirroring the pre-sandbox behaviour so {@link WorkspaceManager#getWorkspace()} keeps
      * returning the same labels (audit logs, UI display).

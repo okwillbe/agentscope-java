@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
  * Bailian Cloud Knowledge Base implementation.
  *
  * <p>This class provides integration with Alibaba Cloud Bailian Knowledge Base service,
@@ -93,6 +94,7 @@ public class BailianKnowledge implements Knowledge {
     private final String indexId;
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Creates a new BailianKnowledge instance.
      *
      * @param client the Bailian API client
@@ -118,6 +120,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Adds documents to the knowledge base.
      *
      * <p><b>Note:</b> This operation is not yet supported via API. Please use the
@@ -137,6 +140,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Retrieves relevant documents based on a query.
      *
      * <p>This method searches the Bailian knowledge base for documents relevant to
@@ -215,6 +219,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Converts a list of Msg objects to QueryHistoryEntry format for Bailian API.
      *
      * <p>This method extracts USER and ASSISTANT messages from the conversation history
@@ -243,6 +248,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Extracts text content from a Msg object.
      *
      * <p>This method concatenates all text blocks from the message's content.
@@ -269,6 +275,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Gets the knowledge base index ID.
      *
      * @return the index ID
@@ -278,6 +285,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Gets the Bailian API client.
      *
      * @return the client
@@ -287,6 +295,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Creates a new builder for BailianKnowledge.
      *
      * @return a new Builder instance
@@ -296,6 +305,7 @@ public class BailianKnowledge implements Knowledge {
     }
 
     /**
+     * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
      * Builder for BailianKnowledge.
      */
     public static class Builder {
@@ -306,6 +316,7 @@ public class BailianKnowledge implements Knowledge {
         private Builder() {}
 
         /**
+         * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
          * Sets the Bailian configuration.
          *
          * <p>If this is set, a BailianClient will be automatically created from the config.
@@ -320,6 +331,7 @@ public class BailianKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
          * Sets the Bailian client directly.
          *
          * <p>Use this if you want to share a client instance across multiple
@@ -334,6 +346,7 @@ public class BailianKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
          * Sets the knowledge base index ID.
          *
          * <p>This overrides the indexId from config if both are provided.
@@ -347,6 +360,7 @@ public class BailianKnowledge implements Knowledge {
         }
 
         /**
+         * {@summary Bailian Cloud Knowledge Base implementation. (Bailian Cloud Knowledge Base implementation.)}
          * Builds a new BailianKnowledge instance.
          *
          * @return a new BailianKnowledge instance

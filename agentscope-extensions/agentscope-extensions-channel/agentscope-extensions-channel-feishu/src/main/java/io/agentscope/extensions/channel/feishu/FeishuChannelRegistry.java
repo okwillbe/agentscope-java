@@ -18,6 +18,7 @@ package io.agentscope.extensions.channel.feishu;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * {@summary Returns the process-wide singleton instance. (Returns the process-wide singleton instance.)}
  * Process-wide lookup table from {@code channelId} to {@link FeishuChannel}. Used by
  * {@link FeishuCallbackController} to dispatch URL-routed requests onto the correct channel,
  * mirroring the pattern in

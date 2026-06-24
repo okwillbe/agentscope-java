@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.interruption;
 
+/** {@summary InterruptSource (InterruptSource)} */
+
 /**
  * Enum representing the source of an interruption.
  *

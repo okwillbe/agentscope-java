@@ -16,6 +16,7 @@
 package io.agentscope.core.embedding;
 
 /**
+ * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
  * Exception thrown when embedding generation fails.
  *
  * <p>This exception is used to wrap errors from embedding model API calls, providing
@@ -27,6 +28,7 @@ public class EmbeddingException extends RuntimeException {
     private final String provider;
 
     /**
+     * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
      * Creates a new EmbeddingException with the given message.
      *
      * @param message the error message
@@ -38,6 +40,7 @@ public class EmbeddingException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
      * Creates a new EmbeddingException with the given message and cause.
      *
      * @param message the error message
@@ -50,6 +53,7 @@ public class EmbeddingException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
      * Creates a new EmbeddingException with the given message, model name, and provider.
      *
      * @param message the error message
@@ -63,6 +67,7 @@ public class EmbeddingException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
      * Creates a new EmbeddingException with the given message, cause, model name, and provider.
      *
      * @param message the error message
@@ -77,6 +82,7 @@ public class EmbeddingException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
      * Gets the model name that failed.
      *
      * @return the model name, or null if not set
@@ -86,6 +92,7 @@ public class EmbeddingException extends RuntimeException {
     }
 
     /**
+     * {@summary Exception thrown when embedding generation fails. (Exception thrown when embedding generation fails.)}
      * Gets the provider name.
      *
      * @return the provider name, or null if not set

@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary ReviewerFindingsService class ()}
  * CRUD service for reviewer findings. Backed by a {@link BaseStore} so a re-review on the same
  * thread can resume from previously recorded findings, mirroring open-swe's behaviour.
  *

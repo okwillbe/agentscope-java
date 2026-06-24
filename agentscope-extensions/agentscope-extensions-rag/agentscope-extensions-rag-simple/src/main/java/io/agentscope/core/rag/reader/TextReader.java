@@ -25,6 +25,7 @@ import java.util.UUID;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Text reader implementation that reads and chunks text documents. (Text reader implementation that reads and chunks text documents.)}
  * Text reader implementation that reads and chunks text documents.
  *
  * <p>This reader supports various text formats and splitting strategies. It can
@@ -41,6 +42,7 @@ import reactor.core.publisher.Mono;
 public class TextReader extends AbstractChunkingReader {
 
     /**
+     * {@summary Text reader implementation that reads and chunks text documents. (Text reader implementation that reads and chunks text documents.)}
      * Creates a new TextReader with the specified configuration.
      *
      * @param chunkSize the target size for each chunk (interpreted based on strategy)
@@ -53,6 +55,7 @@ public class TextReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Text reader implementation that reads and chunks text documents. (Text reader implementation that reads and chunks text documents.)}
      * Creates a new TextReader with default settings.
      *
      * <p>Defaults: chunkSize=512, strategy=PARAGRAPH, overlapSize=50
@@ -88,6 +91,7 @@ public class TextReader extends AbstractChunkingReader {
     }
 
     /**
+     * {@summary Text reader implementation that reads and chunks text documents. (Text reader implementation that reads and chunks text documents.)}
      * Creates Document objects from text chunks.
      *
      * @param chunks the list of text chunks

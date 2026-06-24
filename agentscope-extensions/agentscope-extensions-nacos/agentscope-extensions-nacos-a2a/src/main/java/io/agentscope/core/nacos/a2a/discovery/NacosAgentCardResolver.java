@@ -32,7 +32,7 @@ import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Agent Card Producer from Nacos A2A Registry.
+ * {@summary Agent Card Producer from Nacos A2A Registry. (Agent Card Producer from Nacos A2A Registry.)}
  *
  * <p>Example Usage:
  * <pre>{@code

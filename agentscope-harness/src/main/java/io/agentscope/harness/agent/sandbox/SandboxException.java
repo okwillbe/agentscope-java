@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxException (SandboxException)} */
 import java.nio.file.Path;
 
 /**

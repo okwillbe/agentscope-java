@@ -16,6 +16,7 @@
 package io.agentscope.spring.boot.properties;
 
 /**
+ * {@summary DashScope provider specific configuration properties. (DashScope provider specific configuration properties.)}
  * DashScope provider specific configuration properties.
  *
  * <p>Example configuration (default provider when {@code agentscope.model.provider} is omitted):
@@ -33,26 +34,31 @@ package io.agentscope.spring.boot.properties;
 public class DashscopeProperties {
 
     /**
+     * {@summary DashScope provider specific configuration properties. (DashScope provider specific configuration properties.)}
      * Whether to enable DashScope model auto-configuration.
      */
     private boolean enabled = true;
 
     /**
+     * {@summary DashScope provider specific configuration properties. (DashScope provider specific configuration properties.)}
      * DashScope API key used to authenticate requests.
      */
     private String apiKey;
 
     /**
+     * {@summary DashScope provider specific configuration properties. (DashScope provider specific configuration properties.)}
      * DashScope model name, for example {@code qwen-plus} or {@code qwen-max}.
      */
     private String modelName = "qwen-plus";
 
     /**
+     * {@summary DashScope provider specific configuration properties. (DashScope provider specific configuration properties.)}
      * Whether to enable streaming responses.
      */
     private boolean stream = true;
 
     /**
+     * {@summary DashScope provider specific configuration properties. (DashScope provider specific configuration properties.)}
      * Whether to enable thinking mode (optional).
      */
     private Boolean enableThinking;

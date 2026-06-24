@@ -28,6 +28,7 @@ import redis.clients.jedis.UnifiedJedis;
 import redis.clients.jedis.params.SetParams;
 
 /**
+ * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
  * Redis-backed {@link SandboxExecutionGuard} that serialises concurrent access to a sandbox
  * isolation slot using a Redis {@code SET NX PX} lease.
  *
@@ -97,6 +98,7 @@ public final class RedisSandboxExecutionGuard implements SandboxExecutionGuard {
     private static final Logger log = LoggerFactory.getLogger(RedisSandboxExecutionGuard.class);
 
     /**
+     * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
      * Lua script: atomically delete {@code KEYS[1]} only when its value equals {@code ARGV[1]}.
      * Returns 1 on success, 0 if the key was already gone or held by a different token.
      */
@@ -120,6 +122,7 @@ public final class RedisSandboxExecutionGuard implements SandboxExecutionGuard {
     }
 
     /**
+     * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
      * Creates a builder for this guard.
      *
      * @param jedis initialized Jedis client; the same instance used for
@@ -130,6 +133,7 @@ public final class RedisSandboxExecutionGuard implements SandboxExecutionGuard {
     }
 
     /**
+     * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
      * Acquires the Redis-backed lease for {@code key}, spinning at {@code retryInterval} until
      * the slot is free.
      *
@@ -203,6 +207,7 @@ public final class RedisSandboxExecutionGuard implements SandboxExecutionGuard {
         }
 
         /**
+         * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
          * Sets the Redis key prefix used for lock keys.
          *
          * <p>Default: {@code "agentscope:sandbox:lock:"}. Useful when multiple environments or
@@ -219,6 +224,7 @@ public final class RedisSandboxExecutionGuard implements SandboxExecutionGuard {
         }
 
         /**
+         * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
          * Sets the TTL for each Redis lock key.
          *
          * <p>Default: {@code 30 minutes}. Must exceed the worst-case agent call duration
@@ -238,6 +244,7 @@ public final class RedisSandboxExecutionGuard implements SandboxExecutionGuard {
         }
 
         /**
+         * {@summary Creates a builder for this guard. (Creates a builder for this guard.)}
          * Sets the polling interval between lock acquisition attempts.
          *
          * <p>Default: {@code 500 ms}. Lower values reduce latency at the cost of more Redis

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary AgentEventEmitter (AgentEventEmitter)} */
 import java.util.Optional;
 import reactor.util.context.ContextView;
 

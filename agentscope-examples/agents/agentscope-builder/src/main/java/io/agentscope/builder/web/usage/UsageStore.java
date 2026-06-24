@@ -28,6 +28,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary In-memory usage event store. Records individual turn events (one per user message) and provides}
  * In-memory usage event store. Records individual turn events (one per user message) and provides
  * hourly/daily aggregations for trend charts.
  *
@@ -58,6 +59,7 @@ public class UsageStore {
     }
 
     /**
+     * {@summary In-memory usage event store. Records individual turn events (one per user message) and provides}
      * Returns hourly turn counts for the past {@code hours} hours.
      *
      * @param hours number of hours of history to include (max 168 = 7 days)
@@ -85,6 +87,7 @@ public class UsageStore {
     }
 
     /**
+     * {@summary In-memory usage event store. Records individual turn events (one per user message) and provides}
      * Returns daily turn counts for the past {@code days} days.
      *
      * @param days number of days of history to include (max 90)
@@ -161,6 +164,7 @@ public class UsageStore {
     }
 
     /**
+     * {@summary In-memory usage event store. Records individual turn events (one per user message) and provides}
      * Returns top-N users by turn count over the past {@code days} days.
      * Used by admin usage dashboard.
      */
@@ -179,6 +183,7 @@ public class UsageStore {
     }
 
     /**
+     * {@summary In-memory usage event store. Records individual turn events (one per user message) and provides}
      * Returns top-N agents by turn count over the past {@code days} days.
      * Used by admin usage dashboard.
      */

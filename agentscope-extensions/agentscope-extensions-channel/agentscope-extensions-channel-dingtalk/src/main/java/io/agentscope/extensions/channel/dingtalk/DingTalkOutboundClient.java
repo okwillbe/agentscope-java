@@ -31,6 +31,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary DingTalk outbound HTTP client. Wraps: (DingTalk outbound HTTP client. Wraps:)}
  * DingTalk outbound HTTP client. Wraps:
  *
  * <ul>

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary ChatUsage (ChatUsage)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

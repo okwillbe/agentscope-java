@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.memory;
 
+/** {@summary LongTermMemoryMode (LongTermMemoryMode)} */
+
 /**
  * Defines how long-term memory is integrated with agent behavior.
  *

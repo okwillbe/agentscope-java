@@ -25,6 +25,7 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
+ * {@summary Converter for state management in the AG-UI protocol. (Converter for state management in the AG-UI protocol.)}
  * Converter for state management in the AG-UI protocol.
  *
  * <p>This class handles the creation of state events (snapshots and deltas)
@@ -33,6 +34,7 @@ import java.util.Set;
 public class AguiStateConverter {
 
     /**
+     * {@summary Converter for state management in the AG-UI protocol. (Converter for state management in the AG-UI protocol.)}
      * Create a STATE_SNAPSHOT event from a state map.
      *
      * @param state The state map
@@ -46,6 +48,7 @@ public class AguiStateConverter {
     }
 
     /**
+     * {@summary Converter for state management in the AG-UI protocol. (Converter for state management in the AG-UI protocol.)}
      * Create a STATE_DELTA event by comparing before and after states.
      *
      * <p>This method generates JSON Patch operations (RFC 6902) that can transform
@@ -69,6 +72,7 @@ public class AguiStateConverter {
     }
 
     /**
+     * {@summary Converter for state management in the AG-UI protocol. (Converter for state management in the AG-UI protocol.)}
      * Check if there are any differences between two states.
      *
      * @param before The state before changes
@@ -80,6 +84,7 @@ public class AguiStateConverter {
     }
 
     /**
+     * {@summary Converter for state management in the AG-UI protocol. (Converter for state management in the AG-UI protocol.)}
      * Compute the JSON Patch operations needed to transform "before" into "after".
      *
      * @param before The state before changes
@@ -139,6 +144,7 @@ public class AguiStateConverter {
     }
 
     /**
+     * {@summary Converter for state management in the AG-UI protocol. (Converter for state management in the AG-UI protocol.)}
      * Escape a string for use in a JSON Pointer (RFC 6901).
      *
      * @param value The string to escape

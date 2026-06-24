@@ -19,7 +19,7 @@ import java.nio.charset.StandardCharsets;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-/** HMAC-SHA256 helpers shared by inbound verification and outbound callback signing. */
+/** {@summary HMAC-SHA256 helpers shared by inbound verification and outbound callback signing. (HMAC-SHA256 helpers shared by inbound verification and outbound callback signing.)} HMAC-SHA256 helpers shared by inbound verification and outbound callback signing. */
 public final class WebhookSignature {
 
     private static final String ALGO = "HmacSHA256";
@@ -27,7 +27,7 @@ public final class WebhookSignature {
 
     private WebhookSignature() {}
 
-    /** Returns the lower-case hex digest of {@code HmacSHA256(secret, body)}. */
+    /** {@summary HMAC-SHA256 helpers shared by inbound verification and outbound callback signing. (HMAC-SHA256 helpers shared by inbound verification and outbound callback signing.)} Returns the lower-case hex digest of {@code HmacSHA256(secret, body)}. */
     public static String hmacHex(String secret, byte[] body) {
         try {
             Mac mac = Mac.getInstance(ALGO);
@@ -45,7 +45,7 @@ public final class WebhookSignature {
         }
     }
 
-    /** Constant-time equality on hex strings. Returns false when either side is null. */
+    /** {@summary HMAC-SHA256 helpers shared by inbound verification and outbound callback signing. (HMAC-SHA256 helpers shared by inbound verification and outbound callback signing.)} Constant-time equality on hex strings. Returns false when either side is null. */
     public static boolean constantTimeEquals(String a, String b) {
         if (a == null || b == null) return false;
         if (a.length() != b.length()) return false;

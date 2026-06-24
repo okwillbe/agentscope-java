@@ -18,6 +18,7 @@ package io.agentscope.spring.boot.admin.endpoint;
 import io.agentscope.spring.boot.admin.properties.AdminProperties;
 
 /**
+ * {@summary WriteGuardSupport class ()}
  * Helper that mirrors {@code controller.WriteGuard} for Actuator write endpoints.
  *
  * <p>Actuator's {@code @WriteOperation} signature does not expose raw HTTP headers, so the

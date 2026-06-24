@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary Sandbox (Sandbox)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.io.InputStream;
 
@@ -24,19 +25,19 @@ import java.io.InputStream;
  * <p>Lifecycle:
  * <ol>
  *   <li>Acquire via {@link SandboxClient#create} (new) or {@link SandboxClient#resume} (existing)
- *   <li>Call {@link #start()} — initializes or restores the workspace
+ *   <li>Call {@link #start()} ...initializes or restores the workspace
  *   <li>Use {@link #exec} for command execution, {@link #persistWorkspace}/{@link #hydrateWorkspace}
  *       for archive operations
- *   <li>Call {@link #stop()} — persists the snapshot (does NOT destroy resources)
- *   <li>Call {@link #shutdown()} — destroys backend resources (tmpdir, container)
+ *   <li>Call {@link #stop()} ...persists the snapshot (does NOT destroy resources)
+ *   <li>Call {@link #shutdown()} ...destroys backend resources (tmpdir, container)
  *   <li>Or use {@link #close()} which calls stop + shutdown in sequence
  * </ol>
  *
  * <p>The distinction between {@code stop()} and {@code shutdown()} is critical:
  * <ul>
- *   <li>{@code stop()}: persist snapshot only — safe for both self-managed and user-managed
+ *   <li>{@code stop()}: persist snapshot only ...safe for both self-managed and user-managed
  *       sandboxes</li>
- *   <li>{@code shutdown()}: destroy backend resources — only called on self-managed sandboxes</li>
+ *   <li>{@code shutdown()}: destroy backend resources ...only called on self-managed sandboxes</li>
  * </ul>
  */
 public interface Sandbox extends AutoCloseable {

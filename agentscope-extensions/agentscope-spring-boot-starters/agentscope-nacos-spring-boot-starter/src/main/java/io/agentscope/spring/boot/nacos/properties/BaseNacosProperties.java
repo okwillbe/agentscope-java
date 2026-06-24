@@ -20,6 +20,7 @@ import com.alibaba.nacos.api.PropertyKeyConst;
 import java.util.Properties;
 
 /**
+ * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
  * Properties for Nacos Client connecting to Nacos Server.
  *
  * <p>This class is used to configure the Nacos Server basic properties, like {@link #serverAddr}, {@link #namespace}, {@link #username}, {@link #password} and more.
@@ -33,6 +34,7 @@ public class BaseNacosProperties {
     private static final String DEFAULT_NAMESPACE = "public";
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * The Server Address of Nacos Server.
      *
      * <p>Default is {@code 127.0.0.1:8848}.
@@ -43,6 +45,7 @@ public class BaseNacosProperties {
     String serverAddr;
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * The Namespace of Nacos Server.
      *
      * <p>Default is {@code public}.
@@ -52,6 +55,7 @@ public class BaseNacosProperties {
     String namespace;
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * The Username of Nacos Server.
      *
      * <p>This property should configure the username of Nacos Server.
@@ -62,6 +66,7 @@ public class BaseNacosProperties {
     String username;
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * The Password of Nacos Server.
      *
      * <p>This property should configure the password of Nacos Server.
@@ -72,6 +77,7 @@ public class BaseNacosProperties {
     String password;
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * The AccessKey of Nacos Server.
      *
      * <p>This property should configure the accessKey of Nacos Server from cloud provider, such as aliyun.
@@ -82,6 +88,7 @@ public class BaseNacosProperties {
     String accessKey;
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * The SecretKey of Nacos Server.
      *
      * <p>This property should configure the secretKey of Nacos Server from cloud provider, such as aliyun.
@@ -92,6 +99,7 @@ public class BaseNacosProperties {
     String secretKey;
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * Some advanced properties of Nacos Server and Nacos Client.
      *
      * <p>Keys of properties are from {@link PropertyKeyConst}.
@@ -166,6 +174,7 @@ public class BaseNacosProperties {
     }
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * Build a {@link Properties} instance containing only the explicitly configured fields.
      *
      * <p>Unlike {@link #getNacosProperties()}, this method does NOT apply default values
@@ -201,6 +210,7 @@ public class BaseNacosProperties {
     }
 
     /**
+     * {@summary Properties for Nacos Client connecting to Nacos Server. (Properties for Nacos Client connecting to Nacos Server.)}
      * Build a {@link Properties} instance for configuring the Nacos client.
      *
      * <p>This method builds on {@link #getExplicitNacosProperties()} and additionally applies

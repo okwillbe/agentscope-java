@@ -27,6 +27,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
  * Sealed interface for all AG-UI protocol events.
  *
  * <p>
@@ -86,6 +87,7 @@ public sealed interface AguiEvent
                 AguiEvent.ReasoningEnd {
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Get the event type.
      *
      * @return The event type
@@ -94,6 +96,7 @@ public sealed interface AguiEvent
     AguiEventType getType();
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Get the thread ID associated with this event.
      *
      * @return The thread ID
@@ -101,6 +104,7 @@ public sealed interface AguiEvent
     String getThreadId();
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Get the run ID associated with this event.
      *
      * @return The run ID
@@ -108,6 +112,7 @@ public sealed interface AguiEvent
     String getRunId();
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating that an agent run has started. This is the first event
      * emitted when an agent
      * begins processing a request.
@@ -138,6 +143,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating that an agent run has finished. This is the last event
      * emitted when an agent
      * completes processing a request.
@@ -168,6 +174,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating the start of a text message. This event is emitted when the
      * agent begins
      * generating a text response.
@@ -204,6 +211,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing incremental text content for a message. This event is
      * emitted during
      * streaming to deliver text content in chunks.
@@ -240,6 +248,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating the end of a text message. This event is emitted when the
      * agent has finished
      * generating a text message.
@@ -273,6 +282,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating the start of a tool call. This event is emitted when the
      * agent begins a tool
      * invocation.
@@ -309,6 +319,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing streaming arguments for a tool call. The delta contains a
      * JSON fragment that
      * forms part of the complete tool arguments.
@@ -345,6 +356,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating the end of a tool call. This event is emitted when a tool
      * invocation completes.
      */
@@ -377,6 +389,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing the result of a tool call.
      */
     record ToolCallResult(
@@ -429,6 +442,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing a full state snapshot. This event replaces the entire
      * client-side state with
      * the provided snapshot.
@@ -466,6 +480,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing an incremental state delta. This event contains a list of
      * JSON Patch
      * operations (RFC 6902) that should be applied to the current client-side
@@ -502,6 +517,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing raw/custom data. This event type allows passing through
      * custom data that
      * doesn't fit into the standard AG-UI event types.
@@ -535,6 +551,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * The Custom event provides an extension mechanism for implementing
      * features not covered by the standard event types.
      */
@@ -569,6 +586,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating the start of a reasoning/thinking phase. This event is emitted
      * when the agent begins its internal reasoning process.
      *
@@ -606,6 +624,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event signaling the start of a reasoning message.
      *
      * <p>According to AG-UI Reasoning draft specification.
@@ -642,6 +661,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event containing a chunk of content in a streaming reasoning message.
      *
      * <p>According to AG-UI Reasoning draft specification.
@@ -678,6 +698,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event signaling the end of a reasoning message.
      *
      * <p>According to AG-UI Reasoning draft specification.
@@ -712,6 +733,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * A convenience event to auto start/close reasoning messages.
      *
      * <p>According to AG-UI Reasoning draft specification.
@@ -748,6 +770,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Event indicating the end of a reasoning/thinking phase. This event is emitted
      * when the agent has finished its internal reasoning process.
      *
@@ -782,6 +805,7 @@ public sealed interface AguiEvent
     }
 
     /**
+     * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
      * Represents a JSON Patch operation (RFC 6902). Used in {@link StateDelta}
      * events for
      * incremental state updates.
@@ -801,6 +825,7 @@ public sealed interface AguiEvent
         }
 
         /**
+         * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
          * Creates an "add" operation.
          *
          * @param path  The path to add at
@@ -812,6 +837,7 @@ public sealed interface AguiEvent
         }
 
         /**
+         * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
          * Creates a "remove" operation.
          *
          * @param path The path to remove
@@ -822,6 +848,7 @@ public sealed interface AguiEvent
         }
 
         /**
+         * {@summary Sealed interface for all AG-UI protocol events. (Sealed interface for all AG-UI protocol events.)}
          * Creates a "replace" operation.
          *
          * @param path  The path to replace

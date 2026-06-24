@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.middleware;
 
+/** {@summary MiddlewareBase (MiddlewareBase)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -26,17 +27,17 @@ import reactor.core.publisher.Mono;
  * Middleware provides interception mechanisms at 5 key execution points
  * in the Agent lifecycle.
  *
- * <p><b>Onion Pattern</b> (4 hooks — wrap execution with before/after logic):
+ * <p><b>Onion Pattern</b> (4 hooks 鈥?wrap execution with before/after logic):
  * <ul>
- *   <li>{@link #onAgent} — intercepts the entire agent invocation</li>
- *   <li>{@link #onReasoning} — intercepts the reasoning/model-call phase</li>
- *   <li>{@link #onActing} — intercepts individual tool-call execution</li>
- *   <li>{@link #onModelCall} — intercepts the raw model API call</li>
+ *   <li>{@link #onAgent} 鈥?intercepts the entire agent invocation</li>
+ *   <li>{@link #onReasoning} 鈥?intercepts the reasoning/model-call phase</li>
+ *   <li>{@link #onActing} 鈥?intercepts individual tool-call execution</li>
+ *   <li>{@link #onModelCall} 鈥?intercepts the raw model API call</li>
  * </ul>
  *
- * <p><b>Transformer/Pipeline Pattern</b> (1 hook — sequential transform):
+ * <p><b>Transformer/Pipeline Pattern</b> (1 hook 鈥?sequential transform):
  * <ul>
- *   <li>{@link #onSystemPrompt} — transforms the system prompt string</li>
+ *   <li>{@link #onSystemPrompt} 鈥?transforms the system prompt string</li>
  * </ul>
  *
  * <p>Each hook has a default implementation that delegates directly to

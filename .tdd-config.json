@@ -1,0 +1,104 @@
+{
+  "projectType": "maven-multi-module",
+  "initializedAt": "2026-06-11T16:00:00Z",
+  "isExistingProject": true,
+  "modules": [
+    {
+      "name": "agentscope-core",
+      "path": "agentscope-core",
+      "sourceDir": "src/main/java",
+      "testDir": "src/test/java",
+      "status": "analyzed",
+      "features": [
+        "agent",
+        "tool",
+        "memory",
+        "model",
+        "session",
+        "rag",
+        "formatter",
+        "credential",
+        "event",
+        "hook",
+        "middleware",
+        "interruption",
+        "plan",
+        "skill",
+        "tracing",
+        "workspace"
+      ],
+      "sourceFiles": 410,
+      "testFiles": 289,
+      "coverage": 70
+    },
+    {
+      "name": "agentscope-extensions",
+      "path": "agentscope-extensions",
+      "sourceDir": "src/main/java",
+      "testDir": "src/test/java",
+      "status": "analyzed",
+      "features": [
+        "a2a",
+        "agui",
+        "agent-protocol",
+        "chat-completions-web",
+        "higress",
+        "kotlin",
+        "mem0",
+        "memory-bailian",
+        "nacos",
+        "rag",
+        "reme",
+        "rocketmq",
+        "scheduler",
+        "session",
+        "skill-repository",
+        "studio",
+        "training",
+        "spring-boot-starters"
+      ],
+      "sourceFiles": 200,
+      "testFiles": 50,
+      "coverage": 25
+    },
+    {
+      "name": "agentscope-examples",
+      "path": "agentscope-examples",
+      "sourceDir": "src/main/java",
+      "testDir": "src/test/java",
+      "status": "analyzed",
+      "features": [
+        "builder",
+        "claw",
+        "codingagent",
+        "dataagent",
+        "documentation"
+      ],
+      "sourceFiles": 30,
+      "testFiles": 5,
+      "coverage": 10
+    },
+    {
+      "name": "agentscope-harness",
+      "path": "agentscope-harness",
+      "sourceDir": "src/main/java",
+      "testDir": "src/test/java",
+      "status": "analyzed",
+      "features": [
+        "harness"
+      ],
+      "sourceFiles": 20,
+      "testFiles": 10,
+      "coverage": 50
+    }
+  ],
+  "projectInfo": {
+    "groupId": "io.agentscope",
+    "artifactId": "agentscope-parent",
+    "version": "2.0.0-SNAPSHOT",
+    "javaVersion": "17",
+    "description": "AgentScope Java: Agent-Oriented Programming for Building LLM Applications",
+    "organization": "Alibaba",
+    "url": "https://github.com/agentscope-ai/agentscope-java"
+  }
+}

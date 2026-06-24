@@ -59,6 +59,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
  * Single API class for assembling, configuring, and running the agentscope harness.
  *
  * <h2>Build phase — {@link #builder()}</h2>
@@ -205,6 +206,7 @@ public final class ClawBootstrap {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * The claw home directory (basis for relative config paths and the default location for the
      * {@code agentscope.json}, per-agent workspaces and session stores).
      */
@@ -244,6 +246,7 @@ public final class ClawBootstrap {
     }
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Channels resolved from {@code agentscope.json} via {@link ChannelTypeRegistry}, plus any
      * programmatically added via {@link Builder#channel(Channel...)}. These are not yet started
      * — callers either pass them to {@link #start(Channel...)} or register them into the
@@ -263,6 +266,7 @@ public final class ClawBootstrap {
     }
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Resolves the workspace {@link Path} for a given agent id using the same logic as the
      * build phase.
      *
@@ -345,6 +349,7 @@ public final class ClawBootstrap {
     }
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Translates the optional {@code session.maintenance} block of {@code agentscope.json} into a
      * runtime {@link AgentManagerConfig}. Falls back to {@link AgentManagerConfig#defaults()} when
      * no block is present.
@@ -479,6 +484,7 @@ public final class ClawBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Registers a customizer that will be applied to <em>every</em> agent builder, in addition
          * to any per-agent customizers. Useful for injecting cross-cutting concerns like hooks.
          */
@@ -499,6 +505,7 @@ public final class ClawBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Assembles all agents and channels, wires the internal gateway, and returns a fully
          * initialized {@link ClawBootstrap}.
          *

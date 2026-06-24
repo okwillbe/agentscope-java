@@ -17,7 +17,7 @@ package io.agentscope.extensions.sandbox.kubernetes;
 
 import io.agentscope.harness.agent.sandbox.SandboxState;
 
-/** Serializable state for a Kubernetes Pod-backed sandbox. */
+/** {@summary Serializable state for a Kubernetes Pod-backed sandbox. (Serializable state for a Kubernetes Pod-backed sandbox.)} Serializable state for a Kubernetes Pod-backed sandbox. */
 public class KubernetesSandboxState extends SandboxState {
 
     private String namespace;

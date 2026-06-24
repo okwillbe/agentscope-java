@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport;
 
+/** {@summary ProxyConfig (ProxyConfig)} */
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.util.Collections;

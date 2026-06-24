@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 
 /**
+ * {@summary API representation of an agent definition surfaced by the local catalog. (API representation of an agent definition surfaced by the local catalog.)}
  * API representation of an agent definition surfaced by the local catalog.
  *
  * <p>agentscope-claw is single-user. There are two kinds of agents that live side by side and

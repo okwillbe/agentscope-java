@@ -15,13 +15,14 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary HintBlockEvent (HintBlockEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * One-shot hint block event.
  *
- * <p>Unlike text/thinking blocks, hint blocks are not streamed — the full content is available at
+ * <p>Unlike text/thinking blocks, hint blocks are not streamed 鈥?the full content is available at
  * creation time (team messages, background tool results, user interruptions, etc.). A single event
  * carries the complete hint.
  */

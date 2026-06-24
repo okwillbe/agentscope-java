@@ -19,6 +19,7 @@ package io.agentscope.core.a2a.server.executor.runner;
 import io.agentscope.core.ReActAgent;
 
 /**
+ * {@summary ReActAgentWithBuilderRunner class ()}
  * Default Implementation for {@link AgentRunner} by {@link ReActAgent}.
  *
  * <p>Use {@link ReActAgent} directly to handler request from A2A client. In this implementation, {@link ReActAgent}
@@ -41,6 +42,7 @@ public class ReActAgentWithBuilderRunner extends BaseReActAgentRunner implements
     }
 
     /**
+     * {@summary ReActAgentWithBuilderRunner class ()}
      * Build new {@link ReActAgentWithBuilderRunner} instance from {@link ReActAgent.Builder}.
      *
      * @param agentBuilder builder of {@link ReActAgent}

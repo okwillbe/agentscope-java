@@ -36,6 +36,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
+ * {@summary Reads the current on-disk config without taking the write lock. Used by read-only (Reads the current on-disk config without taking the write lock. Used by read-only)}
  * Helper that loads, mutates, and atomically rewrites the {@code marketplaces} section of
  * {@code agentscope.json}, then drives {@link ClawMarketplaceRegistry} so changes take effect
  * in-process without a restart.
@@ -64,6 +65,7 @@ public class MarketplacePersistence {
     }
 
     /**
+     * {@summary Reads the current on-disk config without taking the write lock. Used by read-only (Reads the current on-disk config without taking the write lock. Used by read-only)}
      * Apply {@code mutator} to the live marketplaces map of {@code agentscope.json}, persist the
      * result atomically, and re-register every id in {@code idsToReload} against the live
      * {@link ClawMarketplaceRegistry}. An id present in {@code idsToReload} but missing from the
@@ -112,6 +114,7 @@ public class MarketplacePersistence {
     }
 
     /**
+     * {@summary Reads the current on-disk config without taking the write lock. Used by read-only (Reads the current on-disk config without taking the write lock. Used by read-only)}
      * Reads the current on-disk config without taking the write lock. Used by read-only
      * endpoints that want the freshest marketplaces snapshot after recent mutations.
      */

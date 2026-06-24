@@ -19,6 +19,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * {@summary Entry point for the local agentscope-claw assistant. (Entry point for the local agentscope-claw assistant.)}
  * Entry point for the local agentscope-claw assistant.
  *
  * <p>Starts a Spring Boot WebFlux server that hosts:

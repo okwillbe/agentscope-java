@@ -15,10 +15,12 @@
  */
 
 /**
- * Agent execution environment abstraction for AgentScope Java.
+ * {@summary Agent execution environment abstraction for AgentScope Java (AgentScope Java的智能体执行环境抽象)}
  *
  * <p>The package will host the {@code WorkspaceBase} contract (initialize, close,
  * getInstructions, listTools, listSkills, offloadContext, offloadToolResult)
  * and a {@code LocalWorkspace} default implementation.
+ * <p>此包将包含{@code WorkspaceBase}契约（initialize、close、getInstructions、listTools、
+ * listSkills、offloadContext、offloadToolResult）以及{@code LocalWorkspace}默认实现。
  */
 package io.agentscope.core.workspace;

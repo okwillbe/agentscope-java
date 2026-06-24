@@ -67,6 +67,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
  * Single API class for assembling, configuring, and running the agentscope harness.
  *
  * <h2>Build phase — {@link #builder()}</h2>
@@ -90,6 +91,7 @@ public final class CodingBootstrap {
     private static final String DEFAULT_MAIN_ID = "default";
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Default workspace root for every coding-agent instance. Lives outside the project tree so
      * the agent's skills/memory/sessions don't pollute the cwd it was launched from, and so two
      * different harness apps (codingagent, builder, dataagent, claw) cannot collide on the same
@@ -99,6 +101,7 @@ public final class CodingBootstrap {
             Paths.get(System.getProperty("user.home"), ".agentscope", "codingagent", "workspace");
 
     /**
+     * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
      * Default location of the {@code agentscope.json} config file. Pinned to the per-app home
      * directory ({@code ~/.agentscope/codingagent/}) so the coding agent never picks up a stale
      * config left behind by another harness app (e.g. dataagent) in the cwd it was launched from.
@@ -419,6 +422,7 @@ public final class CodingBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Convenience method: registers the coding and reviewer agents using their respective
          * factories ({@link CodingAgentFactory} / {@link ReviewerAgentFactory}).
          *
@@ -435,6 +439,7 @@ public final class CodingBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Same as {@link #withDualCodingAgents(io.agentscope.core.tool.Toolkit,
          * io.agentscope.core.tool.Toolkit)} but additionally registers the open-swe-style
          * middleware stack ({@link MessageQueueMiddleware}, {@link ThreadBudgetMiddleware},
@@ -497,6 +502,7 @@ public final class CodingBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Configures conversation compaction for long-running sessions, mirroring opencode's
          * automatic overflow handling. Was previously only wired in the unused {@link
          * CodingAgentFactory}; this brings it onto the production {@link #withDualCodingAgents}
@@ -512,6 +518,7 @@ public final class CodingBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Attaches a Docker sandbox filesystem when {@code SANDBOX_TYPE=docker}. Other values (e.g. {@code none}) leave the agent on the default
          * local-host filesystem so unit tests and offline runs continue to work.
          */
@@ -559,6 +566,7 @@ public final class CodingBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Assembles all agents and channels, wires the internal gateway, and returns a fully
          * initialized {@link CodingBootstrap}.
          *
@@ -729,6 +737,7 @@ public final class CodingBootstrap {
         }
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Bundled workspace templates seeded into the agent workspace on first run: opencode-style
          * coding skills (auto-loaded from {@code <workspace>/skills/}) and the general subagent
          * declaration (scanned from {@code <workspace>/subagents/}). Paths are relative to the
@@ -743,6 +752,7 @@ public final class CodingBootstrap {
                         "subagents/general.md");
 
         /**
+         * {@summary Single API class for assembling, configuring, and running the agentscope harness. (Single API class for assembling, configuring, and running the agentscope harness.)}
          * Copies bundled workspace templates into {@code workspace}, skipping any file that
          * already exists so user edits are never clobbered. Best-effort: failures are logged and
          * do not abort startup.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.hook;
 
+/** {@summary HookEvent (HookEvent)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.memory.AgentStateMemoryView;
@@ -50,7 +51,7 @@ import java.util.Objects;
  *   <li>After {@link PreCallEvent} hooks complete, the resulting system message is
  *       <em>frozen</em> as the base for the entire call.</li>
  *   <li>Before each {@link PreReasoningEvent} (and {@link PreSummaryEvent}), the frozen base
- *       is injected fresh into the event — hooks that run on these events always start from
+ *       is injected fresh into the event 鈥?hooks that run on these events always start from
  *       the same clean baseline and may append per-iteration content.</li>
  *   <li>Before {@code model.stream(...)} is called: the event's final system message is
  *       prepended to {@link PreReasoningEvent#getInputMessages()} as the first element.</li>
@@ -58,7 +59,7 @@ import java.util.Objects;
  *
  * <p>Because each {@link PreReasoningEvent} starts from a fresh copy of the frozen base,
  * hooks that fire per-iteration (e.g. subagent guidance) can safely use
- * {@link #appendSystemContent(String)} — content is added to that iteration's copy and never
+ * {@link #appendSystemContent(String)} 鈥?content is added to that iteration's copy and never
  * accumulates across iterations.
  *
  * <p>Hooks should modify the system message exclusively via {@link #setSystemMessage(Msg)},

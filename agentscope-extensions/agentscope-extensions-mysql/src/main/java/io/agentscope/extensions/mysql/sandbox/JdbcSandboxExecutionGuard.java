@@ -29,6 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary JdbcSandboxExecutionGuard class ()}
  * JDBC-backed {@link SandboxExecutionGuard} using MySQL {@code GET_LOCK()} / {@code RELEASE_LOCK()}.
  *
  * <p>Each lock is identified by a string key derived from the {@link SandboxIsolationKey}'s scope

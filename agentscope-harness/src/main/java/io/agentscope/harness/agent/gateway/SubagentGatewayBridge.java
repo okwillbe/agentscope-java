@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway;
 
+/** {@summary SubagentGatewayBridge (SubagentGatewayBridge)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.harness.agent.gateway.channel.OutboundAddress;
 

@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary ExecResult (ExecResult)} */
+
 /**
  * Result of a sandbox command execution.
  *

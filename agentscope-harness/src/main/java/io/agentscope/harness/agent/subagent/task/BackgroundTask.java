@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.subagent.task;
 
+/** {@summary BackgroundTask (BackgroundTask)} */
 import java.time.Instant;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
@@ -27,9 +28,9 @@ import java.util.concurrent.TimeoutException;
  * <p>Lifecycle metadata:
  *
  * <ul>
- *   <li>{@code agentId} — which subagent type is executing
- *   <li>{@code createdAt} — when the task was created
- *   <li>{@code lastCheckedAt} — when the task status was last polled
+ *   <li>{@code agentId} ...which subagent type is executing
+ *   <li>{@code createdAt} ...when the task was created
+ *   <li>{@code lastCheckedAt} ...when the task status was last polled
  * </ul>
  */
 public class BackgroundTask {

@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 /**
+ * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
  * Request object for searching memories in Bailian Memory API.
  *
  * <p>This request is sent to the POST /api/v2/apps/memory/memory_nodes/search endpoint
@@ -40,6 +41,7 @@ public class BailianSearchRequest {
     private String memoryLibraryId;
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * List project identifiers for memory rules.
      * Multi-memory fragment rule identifiers can be passed in for mixed retrieval.
      */
@@ -70,6 +72,7 @@ public class BailianSearchRequest {
     public BailianSearchRequest() {}
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the user ID.
      *
      * @return the user ID
@@ -79,6 +82,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the user ID.
      *
      * @param userId the user ID
@@ -88,6 +92,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the messages.
      *
      * @return the messages list
@@ -97,6 +102,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the messages.
      *
      * @param messages the messages list
@@ -106,6 +112,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the memory library ID.
      *
      * @return the memory library ID
@@ -115,6 +122,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the memory library ID.
      *
      * @param memoryLibraryId the memory library ID
@@ -124,6 +132,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the project IDs.
      *
      * @return the project IDs
@@ -133,6 +142,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the project IDs.
      *
      * @param projectIds the project IDs
@@ -142,6 +152,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the top K.
      *
      * @return the top K value
@@ -151,6 +162,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the top K.
      *
      * @param topK the top K value
@@ -160,6 +172,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the minimum score.
      *
      * @return the minimum score threshold
@@ -169,6 +182,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the minimum score.
      *
      * @param minScore the minimum score threshold
@@ -178,6 +192,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the enable rerank value.
      *
      * @return the enable rerank value
@@ -187,6 +202,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the enable rerank value.
      *
      * @param enableRerank the enable rerank value
@@ -196,6 +212,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the enable judge value.
      *
      * @return the enable judge value
@@ -205,6 +222,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the enable judge value.
      *
      * @param enableJudge the enable judge value
@@ -214,6 +232,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Gets the enable rewrite value.
      *
      * @return the enable rewrite value
@@ -223,6 +242,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Sets the enable rewrite value.
      *
      * @param enableRewrite the enable rewrite value
@@ -232,6 +252,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Creates a new builder for BailianSearchRequest.
      *
      * @return a new Builder instance
@@ -241,6 +262,7 @@ public class BailianSearchRequest {
     }
 
     /**
+     * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
      * Builder for BailianSearchRequest.
      */
     public static class Builder {
@@ -255,6 +277,7 @@ public class BailianSearchRequest {
         private Boolean enableRewrite;
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the user ID.
          *
          * @param userId the user ID
@@ -266,6 +289,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the messages.
          *
          * @param messages the messages list
@@ -277,6 +301,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the memory library ID.
          *
          * @param memoryLibraryId the memory library ID
@@ -288,6 +313,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the project IDs.
          *
          * @param projectIds the project IDs
@@ -299,6 +325,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the top K.
          *
          * @param topK the top K value
@@ -310,6 +337,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the minimum score.
          *
          * @param minScore the minimum score threshold
@@ -321,6 +349,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the enableRerank value.
          *
          * @param enableRerank the enableRerank value
@@ -332,6 +361,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the enableJudge value.
          *
          * @param enableJudge the enableJudge value
@@ -343,6 +373,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Sets the enableRewrite value.
          *
          * @param enableRewrite the enableRewrite value
@@ -354,6 +385,7 @@ public class BailianSearchRequest {
         }
 
         /**
+         * {@summary Request object for searching memories in Bailian Memory API. (Request object for searching memories in Bailian Memory API.)}
          * Builds the BailianSearchRequest instance.
          *
          * @return a new BailianSearchRequest instance

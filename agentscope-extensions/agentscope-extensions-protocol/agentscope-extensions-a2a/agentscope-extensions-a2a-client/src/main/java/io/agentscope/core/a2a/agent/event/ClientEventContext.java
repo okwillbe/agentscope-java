@@ -29,6 +29,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.publisher.MonoSink;
 
 /**
+ * {@summary Temporarily store the complete historical dialogue context at the time of this call, (Temporarily store the complete historical dialogue context at the time of this call,)}
  * Context for handler {@link io.a2a.client.ClientEvent}.
  *
  * <p>One A2A task might respond multiple times, so we need a context to store the response.
@@ -46,6 +47,7 @@ public class ClientEventContext {
     private Task task;
 
     /**
+     * {@summary Temporarily store the complete historical dialogue context at the time of this call, (Temporarily store the complete historical dialogue context at the time of this call,)}
      * Temporarily store the complete historical dialogue context at the time of this call,
      * specifically for use in constructing PreReasoning Events using the {@link #publishPreReasoning()} method.
      */
@@ -101,6 +103,7 @@ public class ClientEventContext {
     // ==========================================
 
     /**
+     * {@summary Temporarily store the complete historical dialogue context at the time of this call, (Temporarily store the complete historical dialogue context at the time of this call,)}
      * Trigger PreReasoningEvent (triggered only once)
      */
     void publishPreReasoning() {
@@ -117,6 +120,7 @@ public class ClientEventContext {
     }
 
     /**
+     * {@summary Temporarily store the complete historical dialogue context at the time of this call, (Temporarily store the complete historical dialogue context at the time of this call,)}
      * Trigger ReasoningChunkEvent (streaming process)
      */
     void publishReasoningChunk(Msg chunkMsg) {
@@ -134,6 +138,7 @@ public class ClientEventContext {
     }
 
     /**
+     * {@summary Temporarily store the complete historical dialogue context at the time of this call, (Temporarily store the complete historical dialogue context at the time of this call,)}
      * Trigger PostReasoningEvent (triggered only once) and return the final reasoning message
      * after hooks have had a chance to modify it.
      *

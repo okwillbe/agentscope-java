@@ -16,11 +16,13 @@
 package io.agentscope.core.agui;
 
 /**
+ * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
  * Base exception for AG-UI related errors.
  */
 public class AguiException extends RuntimeException {
 
     /**
+     * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
      * Creates a new AguiException with the specified message.
      *
      * @param message The error message
@@ -30,6 +32,7 @@ public class AguiException extends RuntimeException {
     }
 
     /**
+     * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
      * Creates a new AguiException with the specified message and cause.
      *
      * @param message The error message
@@ -40,11 +43,13 @@ public class AguiException extends RuntimeException {
     }
 
     /**
+     * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
      * Exception thrown when an agent is not found in the registry.
      */
     public static class AgentNotFoundException extends AguiException {
 
         /**
+         * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
          * Creates a new AgentNotFoundException.
          *
          * @param agentId The agent ID that was not found
@@ -55,11 +60,13 @@ public class AguiException extends RuntimeException {
     }
 
     /**
+     * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
      * Exception thrown when event encoding fails.
      */
     public static class EncodingException extends AguiException {
 
         /**
+         * {@summary Base exception for AG-UI related errors. (Base exception for AG-UI related errors.)}
          * Creates a new EncodingException.
          *
          * @param message The error message

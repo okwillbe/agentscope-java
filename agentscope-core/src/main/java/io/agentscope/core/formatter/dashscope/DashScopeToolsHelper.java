@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.dashscope;
 
+/** {@summary DashScopeToolsHelper (DashScopeToolsHelper)} */
 import io.agentscope.core.formatter.dashscope.dto.DashScopeFunction;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeParameters;
 import io.agentscope.core.formatter.dashscope.dto.DashScopeTool;

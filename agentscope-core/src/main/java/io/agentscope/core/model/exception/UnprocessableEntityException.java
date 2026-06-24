@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.model.exception;
 
+/** {@summary UnprocessableEntityException (UnprocessableEntityException)} */
+
 /**
  * Exception thrown when the request is well-formed but semantically incorrect (HTTP 422).
  *

@@ -20,7 +20,8 @@ import io.agentscope.harness.agent.sandbox.AbstractBaseSandbox;
 import io.agentscope.harness.agent.sandbox.ExecResult;
 import java.io.InputStream;
 
-/** {@link io.agentscope.harness.agent.sandbox.Sandbox} backed by a Kubernetes Pod. */
+/**
+ * {@summary KubernetesSandbox (KubernetesSandbox)} {@link io.agentscope.harness.agent.sandbox.Sandbox} backed by a Kubernetes Pod. */
 public class KubernetesSandbox extends AbstractBaseSandbox {
 
     private final KubernetesSandboxState k8sState;

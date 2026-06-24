@@ -27,6 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Converter for transforming RAGFlow API responses to AgentScope Document objects. (Converter for transforming RAGFlow API responses to AgentScope Document objects.)}
  * Converter for transforming RAGFlow API responses to AgentScope Document objects.
  *
  * <p>This class handles the conversion between RAGFlow's chunk format
@@ -42,6 +43,7 @@ public class RAGFlowDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming RAGFlow API responses to AgentScope Document objects. (Converter for transforming RAGFlow API responses to AgentScope Document objects.)}
      * Converts a list of RAGFlow chunks to Documents.
      *
      * @param chunks the RAGFlow chunks from retrieve response
@@ -63,6 +65,7 @@ public class RAGFlowDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming RAGFlow API responses to AgentScope Document objects. (Converter for transforming RAGFlow API responses to AgentScope Document objects.)}
      * Converts a single RAGFlow chunk to a Document.
      *
      * @param chunk the RAGFlow chunk from retrieve response
@@ -125,6 +128,7 @@ public class RAGFlowDocumentConverter {
     }
 
     /**
+     * {@summary Converter for transforming RAGFlow API responses to AgentScope Document objects. (Converter for transforming RAGFlow API responses to AgentScope Document objects.)}
      * Builds payload map from RAGFlow chunk metadata.
      *
      * <p>This method extracts relevant metadata fields from the RAGFlow Chunk object

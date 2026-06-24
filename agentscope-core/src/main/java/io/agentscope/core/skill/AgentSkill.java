@@ -16,6 +16,7 @@
 
 package io.agentscope.core.skill;
 
+/** {@summary AgentSkill (AgentSkill)} */
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.HashMap;

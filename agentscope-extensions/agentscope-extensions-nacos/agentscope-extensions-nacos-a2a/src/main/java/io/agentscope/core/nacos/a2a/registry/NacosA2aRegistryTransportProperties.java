@@ -20,7 +20,7 @@ import com.alibaba.nacos.common.utils.StringUtils;
 import io.agentscope.core.nacos.a2a.registry.constants.Constants;
 
 /**
- * Properties for A2A Transports Endpoint registry to Nacos.
+ * {@summary Properties for A2A Transports Endpoint registry to Nacos. (Properties for A2A Transports Endpoint registry to Nacos.)}
  *
  * <p>Used to configure A2A Interface(Endpoint) which registers to Nacos, these properties will be merged to `transport`
  * and `url`. The format is:

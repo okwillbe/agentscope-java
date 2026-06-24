@@ -28,6 +28,7 @@ import java.util.Objects;
 import javax.sql.DataSource;
 
 /**
+ * {@summary Creates a MySQL distributed store. (Creates a MySQL distributed store.)}
  * MySQL/JDBC-backed {@link DistributedStore}.
  *
  * <p>Usage:
@@ -60,6 +61,7 @@ public class MysqlDistributedStore implements DistributedStore {
     }
 
     /**
+     * {@summary Creates a MySQL distributed store. (Creates a MySQL distributed store.)}
      * Creates a MySQL distributed store.
      *
      * @param dataSource JDBC data source for MySQL

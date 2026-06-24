@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem.remote.store;
 
+/** {@summary StoreItem (StoreItem)} */
 import java.util.Map;
 
 /**

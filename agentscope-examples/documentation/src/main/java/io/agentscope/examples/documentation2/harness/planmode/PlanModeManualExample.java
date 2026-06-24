@@ -34,6 +34,7 @@ import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * {@summary Shows the drafted plan and asks the user to approve or reject each tool call awaiting (Shows the drafted plan and asks the user to approve or reject each tool call awaiting)}
  * PlanModeManualExample — Application-driven plan mode, run as an <b>interactive terminal session</b>
  * so you can experience the full plan → approve → build switch yourself.
  *
@@ -154,6 +155,7 @@ public class PlanModeManualExample {
     }
 
     /**
+     * {@summary Shows the drafted plan and asks the user to approve or reject each tool call awaiting (Shows the drafted plan and asks the user to approve or reject each tool call awaiting)}
      * Shows the drafted plan and asks the user to approve or reject each tool call awaiting
      * confirmation (typically {@code plan_exit}). Builds the resume message carrying the
      * {@link ConfirmResult}s under {@link Msg#METADATA_CONFIRM_RESULTS}.

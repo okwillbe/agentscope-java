@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary GracefulShutdownConfig (GracefulShutdownConfig)} */
 import java.time.Duration;
 import java.util.Objects;
 

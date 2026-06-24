@@ -16,6 +16,7 @@
 package io.agentscope.extensions.mysql.store;
 
 /**
+ * {@summary H2JdbcStoreDialect class ()}
  * H2 dialect for {@link JdbcStore}.
  *
  * <p>Uses the PostgreSQL-compatible {@code ON CONFLICT ... DO UPDATE} syntax, supported by H2

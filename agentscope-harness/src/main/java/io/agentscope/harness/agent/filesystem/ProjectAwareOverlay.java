@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem;
 
+/** {@summary ProjectAwareOverlay (ProjectAwareOverlay)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.local.LocalFilesystem;
 import io.agentscope.harness.agent.filesystem.model.EditResult;

@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * {@summary Parses a DingTalk Stream bot-message payload (subscribed topic}
  * Parses a DingTalk Stream bot-message payload (subscribed topic
  * {@code /v1.0/im/bot/messages/get}) into an {@link InboundMessage}.
  *
@@ -54,6 +55,7 @@ public final class DingTalkInboundMapper {
     }
 
     /**
+     * {@summary Parses a DingTalk Stream bot-message payload (subscribed topic}
      * Builds an {@link InboundMessage} from a DingTalk Stream bot-message JSON payload, or returns
      * empty when the payload is not a text message we should dispatch.
      */

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary ModelContextWindows (ModelContextWindows)} */
 import java.util.Map;
 
 /**

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.ollama;
 
+/** {@summary OllamaConversationMerger (OllamaConversationMerger)} */
 import io.agentscope.core.formatter.ollama.dto.OllamaMessage;
 import io.agentscope.core.message.Base64Source;
 import io.agentscope.core.message.ContentBlock;

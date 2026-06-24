@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.anthropic;
 
+/** {@summary AnthropicBaseFormatter (AnthropicBaseFormatter)} */
 import com.anthropic.models.messages.MessageCreateParams;
 import com.anthropic.models.messages.MessageParam;
 import io.agentscope.core.formatter.AbstractBaseFormatter;

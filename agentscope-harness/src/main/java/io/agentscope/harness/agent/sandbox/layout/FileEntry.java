@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary FileEntry (FileEntry)} */
+
 /**
  * Layout entry that creates a file with inline text content.
  */

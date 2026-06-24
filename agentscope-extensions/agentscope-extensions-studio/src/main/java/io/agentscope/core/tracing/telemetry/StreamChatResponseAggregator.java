@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * {@summary StreamChatResponseAggregator class ()}
  * An aggregator for streaming {@link ChatResponse}.
  * */
 final class StreamChatResponseAggregator {

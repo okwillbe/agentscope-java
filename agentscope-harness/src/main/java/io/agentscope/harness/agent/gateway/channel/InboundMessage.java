@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary InboundMessage (InboundMessage)} */
 import io.agentscope.core.message.Msg;
 import java.util.List;
 import java.util.Objects;
@@ -27,9 +28,9 @@ import java.util.Set;
  *
  * <p>Two identity fields are deliberately separate:
  * <ul>
- *   <li>{@link #peer} — the <em>conversation</em> identifier used to construct the session key
+ *   <li>{@link #peer} ...the <em>conversation</em> identifier used to construct the session key
  *       (DM user id, group chat id, channel id)
- *   <li>{@link #senderId} — the <em>message sender's</em> identity, used as {@code userId} for
+ *   <li>{@link #senderId} ...the <em>message sender's</em> identity, used as {@code userId} for
  *       HarnessAgent namespace isolation. In DM scenarios these are equal; in group/channel
  *       scenarios {@code peer.id} is the group and {@code senderId} is the individual author.
  * </ul>
@@ -37,7 +38,7 @@ import java.util.Set;
  * @param channelId identifier of the originating channel (e.g. {@code "chatui"}, {@code "slack"})
  * @param accountId optional multi-account identifier (e.g. Slack app installation id); null for
  *     single-account channels
- * @param peer the conversation peer (DM partner, channel, group, or thread) — used for session key
+ * @param peer the conversation peer (DM partner, channel, group, or thread) ...used for session key
  * @param senderId optional sender identity for user-level isolation; if null, {@link #peer}'s id is
  *     used as fallback in DM contexts
  * @param parentPeer optional parent peer for thread-nested messages; used for
@@ -76,7 +77,7 @@ public record InboundMessage(
     /**
      * Single-turn DM with no guild/team/role metadata (typical for direct chat UI use).
      *
-     * <p>In DM context {@code senderId} equals {@code peerId} — the conversation partner is also
+     * <p>In DM context {@code senderId} equals {@code peerId} ...the conversation partner is also
      * the message author.
      */
     public static InboundMessage dm(String channelId, String peerId, List<Msg> messages) {
@@ -94,7 +95,7 @@ public record InboundMessage(
     }
 
     /**
-     * Single-turn DM with an explicit {@link #preferredAgentId()} override — the router will use
+     * Single-turn DM with an explicit {@link #preferredAgentId()} override ...the router will use
      * the supplied {@code agentId} as a tier-0 short-circuit instead of evaluating bindings.
      */
     public static InboundMessage dmFor(
@@ -133,7 +134,7 @@ public record InboundMessage(
     }
 
     /**
-     * Channel message with optional guild context (no explicit senderId — sender identity unknown,
+     * Channel message with optional guild context (no explicit senderId ...sender identity unknown,
      * falls back to room peer for isolation).
      */
     public static InboundMessage channel(

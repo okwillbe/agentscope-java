@@ -27,6 +27,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
+ * {@summary HS256 JWT service for the DataAgent web application. (HS256 JWT service for the DataAgent web application.)}
  * HS256 JWT service for the DataAgent web application.
  *
  * <p>Tokens contain the following claims:
@@ -61,6 +62,7 @@ public class JwtService {
     }
 
     /**
+     * {@summary HS256 JWT service for the DataAgent web application. (HS256 JWT service for the DataAgent web application.)}
      * Generates a signed JWT for the given user.
      */
     public String generate(String userId, String username, List<String> roles) {
@@ -76,6 +78,7 @@ public class JwtService {
     }
 
     /**
+     * {@summary HS256 JWT service for the DataAgent web application. (HS256 JWT service for the DataAgent web application.)}
      * Parses and validates a JWT, returning its claims.
      *
      * @throws JwtException if the token is invalid or expired
@@ -85,6 +88,7 @@ public class JwtService {
     }
 
     /**
+     * {@summary HS256 JWT service for the DataAgent web application. (HS256 JWT service for the DataAgent web application.)}
      * Extracts the {@code userId} (subject) from a token without full validation (caller must
      * call {@link #parse} for secure extraction).
      */

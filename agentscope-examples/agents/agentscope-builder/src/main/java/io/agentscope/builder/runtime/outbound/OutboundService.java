@@ -32,6 +32,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary OutboundService class ()}
  * Translates an {@link OutboundRequest} into an {@link OutboundAddress} + {@link Msg} and pushes
  * it through the {@link ChannelManager}.
  *
@@ -104,6 +105,7 @@ public final class OutboundService {
     }
 
     /**
+     * {@summary OutboundService class ()}
      * Probes the channel's router with a synthetic inbound on {@code peer} and refuses delivery
      * when the channel's bindings (or its {@code defaultAgentId}) route to a different agent than
      * {@code request.agentId()}. The probe carries the requested agent as a hint so that channels

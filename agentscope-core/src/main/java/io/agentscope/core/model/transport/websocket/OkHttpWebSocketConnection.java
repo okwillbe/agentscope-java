@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model.transport.websocket;
 
+/** {@summary OkHttpWebSocketConnection (OkHttpWebSocketConnection)} */
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicBoolean;
 import okhttp3.WebSocket;

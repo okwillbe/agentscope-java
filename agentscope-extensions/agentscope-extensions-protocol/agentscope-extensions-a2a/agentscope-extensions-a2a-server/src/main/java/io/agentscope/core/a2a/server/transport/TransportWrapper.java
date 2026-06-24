@@ -19,6 +19,7 @@ package io.agentscope.core.a2a.server.transport;
 import java.util.Map;
 
 /**
+ * {@summary The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to (The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to)}
  * The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to
  * separate the access requests and handle requests.
  *
@@ -28,6 +29,7 @@ import java.util.Map;
 public interface TransportWrapper<T, R> {
 
     /**
+     * {@summary The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to (The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to)}
      * Get wrapper transport type name.
      *
      * @return name of transport type
@@ -35,6 +37,7 @@ public interface TransportWrapper<T, R> {
     String getTransportType();
 
     /**
+     * {@summary The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to (The interface for different A2A transports, such as `JSON-RPC`, `GRPC`, `REST` and other custom transports to)}
      * Do handle for target transport request, including streaming and non-streaming request.
      *
      * @param body     transport request body

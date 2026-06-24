@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.coding;
 
+/** {@summary CommandValidator (CommandValidator)} */
 import java.util.Set;
 
 /**
@@ -47,10 +48,10 @@ public interface CommandValidator {
      * <p>Validation checks (in order):
      * <ol>
      *   <li>Extract executable name</li>
-     *   <li>If whitelist is null/empty → allow (backward compatible)</li>
-     *   <li>Check for multiple command separators → reject if found</li>
-     *   <li>Check relative path safety → reject if escapes current directory</li>
-     *   <li>Check whitelist → reject if not in whitelist</li>
+     *   <li>If whitelist is null/empty 鈫?allow (backward compatible)</li>
+     *   <li>Check for multiple command separators 鈫?reject if found</li>
+     *   <li>Check relative path safety 鈫?reject if escapes current directory</li>
+     *   <li>Check whitelist 鈫?reject if not in whitelist</li>
      * </ol>
      *
      * @param command The command string to validate
@@ -95,20 +96,20 @@ public interface CommandValidator {
      *
      * <p><b>Algorithm:</b> Uses depth-tracking to detect directory traversal:
      * <ol>
-     *   <li>Normalize path separators ({@code \} → {@code /})</li>
+     *   <li>Normalize path separators ({@code \} 鈫?{@code /})</li>
      *   <li>Remove leading {@code ./}</li>
      *   <li>Split by {@code /} into segments</li>
      *   <li>Track depth: {@code ..} decreases depth, normal dirs increase depth</li>
-     *   <li>If depth &lt; 0 at any point → path escapes current directory</li>
+     *   <li>If depth &lt; 0 at any point 鈫?path escapes current directory</li>
      * </ol>
      *
      * <p><b>Examples:</b>
      * <ul>
-     *   <li>{@code ./script.sh} → ✅ allowed (depth: 0→1)</li>
-     *   <li>{@code ./subdir/script.sh} → ✅ allowed (depth: 0→1→2)</li>
-     *   <li>{@code ./a/b/../c/script.sh} → ✅ allowed (depth: 0→1→2→1→2)</li>
-     *   <li>{@code ./../script.sh} → ❌ rejected (depth: 0→-1)</li>
-     *   <li>{@code ./../../script.sh} → ❌ rejected (depth: 0→-1→-2)</li>
+     *   <li>{@code ./script.sh} 鈫?鉁?allowed (depth: 0鈫?)</li>
+     *   <li>{@code ./subdir/script.sh} 鈫?鉁?allowed (depth: 0鈫?鈫?)</li>
+     *   <li>{@code ./a/b/../c/script.sh} 鈫?鉁?allowed (depth: 0鈫?鈫?鈫?鈫?)</li>
+     *   <li>{@code ./../script.sh} 鈫?鉂?rejected (depth: 0鈫?1)</li>
+     *   <li>{@code ./../../script.sh} 鈫?鉂?rejected (depth: 0鈫?1鈫?2)</li>
      * </ul>
      *
      * <p>Supports both Unix ({@code /}) and Windows ({@code \}) path separators.

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary SandboxManager (SandboxManager)} */
 import io.agentscope.core.agent.RuntimeContext;
 import java.util.Objects;
 import java.util.Optional;
@@ -65,7 +66,7 @@ public class SandboxManager {
 
     public SandboxAcquireResult acquire(
             SandboxContext sandboxContext, RuntimeContext runtimeContext) throws Exception {
-        // Priority 1: user-supplied sandbox — guard does not apply
+        // Priority 1: user-supplied sandbox ...guard does not apply
         if (sandboxContext.getExternalSandbox() != null) {
             Sandbox external = sandboxContext.getExternalSandbox();
             log.debug(
@@ -74,7 +75,7 @@ public class SandboxManager {
             return SandboxAcquireResult.userManaged(external);
         }
 
-        // Priority 2: user-supplied state — guard does not apply
+        // Priority 2: user-supplied state ...guard does not apply
         if (sandboxContext.getExternalSandboxState() != null) {
             Sandbox sandbox = client.resume(sandboxContext.getExternalSandboxState());
             log.debug(
@@ -83,7 +84,7 @@ public class SandboxManager {
             return SandboxAcquireResult.selfManaged(sandbox);
         }
 
-        // Priority 3 / 4: harness-managed — apply guard when a scope key is present
+        // Priority 3 / 4: harness-managed ...apply guard when a scope key is present
         Optional<SandboxIsolationKey> scopeKey =
                 SandboxIsolationKey.resolve(
                         sandboxContext.getIsolationScope(), runtimeContext, agentId);
@@ -133,7 +134,7 @@ public class SandboxManager {
             return SandboxAcquireResult.selfManaged(sandbox, lease);
 
         } catch (Exception e) {
-            // Guard must be released if acquire fails — the caller won't see the result
+            // Guard must be released if acquire fails ...the caller won't see the result
             lease.close();
             throw e;
         }
@@ -148,7 +149,7 @@ public class SandboxManager {
             return;
         }
 
-        // User-managed sandboxes (Priority 1) are owned by the caller — the harness must not
+        // User-managed sandboxes (Priority 1) are owned by the caller ...the harness must not
         // stop/snapshot or shutdown them, since the caller relies on the sandbox staying alive
         // across multiple acquire/release cycles (e.g. a registry that reuses one container per
         // user across the browser path and successive agent turns).

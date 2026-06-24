@@ -45,6 +45,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Spring Boot configuration for the agentscope-builder web module. (Spring Boot configuration for the agentscope-builder web module.)}
  * Spring Boot configuration for the agentscope-builder web module.
  *
  * <p>Assembles a {@link BuilderBootstrap} from {@code .agentscope/agentscope.json} in the working
@@ -120,6 +121,7 @@ public class BuilderConfig {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-builder web module. (Spring Boot configuration for the agentscope-builder web module.)}
      * Creates a {@link DashScopeChatModel} bean when {@code builder.dashscope.api-key} (or the
      * legacy {@code claw.dashscope.api-key}) is configured and no other {@link Model} bean is
      * present. Skipped entirely when both properties are blank so that {@code Optional<Model>}
@@ -145,6 +147,7 @@ public class BuilderConfig {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-builder web module. (Spring Boot configuration for the agentscope-builder web module.)}
      * Default {@link BaseStore} backed by the Spring-managed {@link DataSource}. The schema is
      * auto-created on startup via {@link JdbcStore.Builder#initializeSchema(boolean)}, which is safe
      * across MySQL/PostgreSQL/H2/SQLite. Operators can override by declaring their own
@@ -163,6 +166,7 @@ public class BuilderConfig {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-builder web module. (Spring Boot configuration for the agentscope-builder web module.)}
      * Assembles the {@link BuilderBootstrap}, loading agent config from {@code agentscope.json} and
      * starting the {@link ChatUiChannel} for per-user isolated sessions.
      *
@@ -280,6 +284,7 @@ public class BuilderConfig {
     }
 
     /**
+     * {@summary Spring Boot configuration for the agentscope-builder web module. (Spring Boot configuration for the agentscope-builder web module.)}
      * Auto-generates a minimal {@code ~/.agentscope/builder/agentscope.json} if it doesn't exist,
      * so the app can start without manual setup. The generated config defines a single
      * {@code default} agent using the configured system prompt and lets the bootstrap fall through

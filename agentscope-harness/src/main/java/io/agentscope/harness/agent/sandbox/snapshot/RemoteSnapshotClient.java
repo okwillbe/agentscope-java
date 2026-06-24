@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary RemoteSnapshotClient (RemoteSnapshotClient)} */
 import java.io.InputStream;
 
 /**

@@ -23,6 +23,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Represents a tool definition in the AG-UI protocol. (Represents a tool definition in the AG-UI protocol.)}
  * Represents a tool definition in the AG-UI protocol.
  *
  * <p>Tools are functions that the agent can call to perform actions or retrieve information.
@@ -35,6 +36,7 @@ public class AguiTool {
     private final Map<String, Object> parameters;
 
     /**
+     * {@summary Represents a tool definition in the AG-UI protocol. (Represents a tool definition in the AG-UI protocol.)}
      * Creates a new AguiTool.
      *
      * @param name The tool name
@@ -55,6 +57,7 @@ public class AguiTool {
     }
 
     /**
+     * {@summary Represents a tool definition in the AG-UI protocol. (Represents a tool definition in the AG-UI protocol.)}
      * Get the tool name.
      *
      * @return The tool name
@@ -64,6 +67,7 @@ public class AguiTool {
     }
 
     /**
+     * {@summary Represents a tool definition in the AG-UI protocol. (Represents a tool definition in the AG-UI protocol.)}
      * Get the tool description.
      *
      * @return The tool description
@@ -73,6 +77,7 @@ public class AguiTool {
     }
 
     /**
+     * {@summary Represents a tool definition in the AG-UI protocol. (Represents a tool definition in the AG-UI protocol.)}
      * Get the parameters JSON Schema.
      *
      * @return The parameters schema as an immutable map

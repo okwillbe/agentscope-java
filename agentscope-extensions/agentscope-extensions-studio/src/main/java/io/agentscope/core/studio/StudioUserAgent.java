@@ -34,6 +34,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
  * User proxy agent that represents human users in the agent system.
  *
  * <p>This agent allows human users to interact with other agents either through:
@@ -88,6 +89,7 @@ public class StudioUserAgent extends AgentBase {
     }
 
     /**
+     * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
      * Gets user input from the terminal/console.
      *
      * @return A Mono containing the user's input
@@ -118,6 +120,7 @@ public class StudioUserAgent extends AgentBase {
     }
 
     /**
+     * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
      * Gets user input from Studio web interface.
      *
      * <p>This sends an HTTP request to Studio to display an input form, then waits for the user
@@ -193,6 +196,7 @@ public class StudioUserAgent extends AgentBase {
     }
 
     /**
+     * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
      * Handle interrupt scenarios.
      * For UserAgent, interrupts simply return an interrupted message.
      *
@@ -213,6 +217,7 @@ public class StudioUserAgent extends AgentBase {
     }
 
     /**
+     * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
      * Process a list of input messages
      *
      * @param msgs Input messages (ignored)
@@ -230,6 +235,7 @@ public class StudioUserAgent extends AgentBase {
     }
 
     /**
+     * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
      * Creates a new UserProxyAgent builder.
      *
      * @return A new builder instance
@@ -239,6 +245,7 @@ public class StudioUserAgent extends AgentBase {
     }
 
     /**
+     * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
      * Builder for UserProxyAgent.
      */
     public static class Builder {
@@ -250,6 +257,7 @@ public class StudioUserAgent extends AgentBase {
         private BufferedReader terminalReader;
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Sets the agent name (default: "User").
          *
          * @param name Agent name
@@ -261,6 +269,7 @@ public class StudioUserAgent extends AgentBase {
         }
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Sets the agent description (optional).
          *
          * @param description Agent description
@@ -272,6 +281,7 @@ public class StudioUserAgent extends AgentBase {
         }
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Sets the Studio HTTP client for requesting user input.
          *
          * <p>Both studioClient and webSocketClient must be set to enable Studio integration.
@@ -285,6 +295,7 @@ public class StudioUserAgent extends AgentBase {
         }
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Sets the Studio WebSocket client for receiving user input.
          *
          * <p>Both studioClient and webSocketClient must be set to enable Studio integration.
@@ -298,6 +309,7 @@ public class StudioUserAgent extends AgentBase {
         }
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Sets the timeout for waiting for user input from Studio (default: 30 minutes).
          *
          * @param inputTimeout Timeout duration
@@ -309,6 +321,7 @@ public class StudioUserAgent extends AgentBase {
         }
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Sets a custom BufferedReader for terminal input (package-private for testing).
          *
          * @param terminalReader Custom BufferedReader
@@ -320,6 +333,7 @@ public class StudioUserAgent extends AgentBase {
         }
 
         /**
+         * {@summary User proxy agent that represents human users in the agent system. (User proxy agent that represents human users in the agent system.)}
          * Builds the UserProxyAgent.
          *
          * @return A new UserProxyAgent instance

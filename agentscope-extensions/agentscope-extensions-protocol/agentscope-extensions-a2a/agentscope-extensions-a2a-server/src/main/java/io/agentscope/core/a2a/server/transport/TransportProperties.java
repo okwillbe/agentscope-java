@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * {@summary Properties for transports. (Properties for transports.)}
  * Properties for transports.
  *
  * <p>Usage for auto-generate {@link io.a2a.spec.AgentCard} and do register to A2A Registries.

@@ -32,6 +32,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary SubagentTaskController class ()}
  * Data-plane REST for {@code BackgroundTask}s dispatched to subagents via
  * {@code TaskRepository}.
  *

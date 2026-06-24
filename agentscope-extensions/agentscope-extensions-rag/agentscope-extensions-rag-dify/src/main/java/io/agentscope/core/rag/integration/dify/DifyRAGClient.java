@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
  * Client for interacting with Dify Knowledge Base API.
  *
  * <p>This class wraps OkHttp client and provides reactive API methods for
@@ -64,6 +65,7 @@ public class DifyRAGClient {
     private final JsonCodec jsonCodec;
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Creates a new DifyRAGClient instance.
      *
      * @param config the Dify configuration
@@ -84,6 +86,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Package-private constructor for testing purposes.
      *
      * <p>This constructor allows injecting a mock HTTP client for unit testing
@@ -109,6 +112,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Retrieves relevant documents from the knowledge base.
      *
      * <p>This method searches the Dify knowledge base for documents relevant to
@@ -274,6 +278,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Handles error responses from Dify API.
      *
      * @param statusCode the HTTP status code
@@ -312,6 +317,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Creates and configures the OkHttp client.
      *
      * @param config the Dify configuration
@@ -339,6 +345,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Gets the Dify configuration.
      *
      * @return the configuration
@@ -348,6 +355,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Truncates a string to specified length with ellipsis.
      *
      * @param text the text to truncate
@@ -365,6 +373,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Retry interceptor for OkHttp.
      */
     private static class RetryInterceptor implements Interceptor {
@@ -438,6 +447,7 @@ public class DifyRAGClient {
     }
 
     /**
+     * {@summary Client for interacting with Dify Knowledge Base API. (Client for interacting with Dify Knowledge Base API.)}
      * Logging interceptor for OkHttp (debug mode only).
      */
     private static class LoggingInterceptor implements Interceptor {

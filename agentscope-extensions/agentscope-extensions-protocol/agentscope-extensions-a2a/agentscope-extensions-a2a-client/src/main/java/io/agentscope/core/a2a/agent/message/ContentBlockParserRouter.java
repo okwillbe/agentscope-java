@@ -30,6 +30,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary ContentBlockParserRouter class ()}
  * The router for {@link ContentBlockParser} according to class type of {@link ContentBlock}.
  */
 public class ContentBlockParserRouter {
@@ -37,6 +38,7 @@ public class ContentBlockParserRouter {
     private static final Logger log = LoggerFactory.getLogger(ContentBlockParserRouter.class);
 
     /**
+     * {@summary ContentBlockParserRouter class ()}
      * Parse {@link ContentBlock} to {@link Part}.
      *
      * @param contentBlock the content block to parse

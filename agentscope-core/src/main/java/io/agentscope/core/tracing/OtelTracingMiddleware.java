@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tracing;
 
+/** {@summary OtelTracingMiddleware (OtelTracingMiddleware)} */
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.core.event.AgentEvent;
@@ -42,9 +43,9 @@ import reactor.core.publisher.Flux;
  *
  * <p>Produces spans for:
  * <ul>
- *   <li>{@code invoke_agent <name>} — wraps the entire reply</li>
- *   <li>{@code chat <model>} — wraps each model API call</li>
- *   <li>{@code execute_tool <name>} — wraps each tool execution</li>
+ *   <li>{@code invoke_agent <name>} 鈥?wraps the entire reply</li>
+ *   <li>{@code chat <model>} 鈥?wraps each model API call</li>
+ *   <li>{@code execute_tool <name>} 鈥?wraps each tool execution</li>
  * </ul>
  *
  * <p>When no OTel SDK is configured (only the default no-op provider is
@@ -68,11 +69,11 @@ public class OtelTracingMiddleware implements MiddlewareBase {
         return GlobalOpenTelemetry.getTracer(INSTRUMENTATION_NAME);
     }
 
-    // Removed isTracingEnabled() — the OTel no-op provider already short-circuits
+    // Removed isTracingEnabled() 鈥?the OTel no-op provider already short-circuits
     // with near-zero overhead, so an explicit check is unnecessary.
 
     // ------------------------------------------------------------------
-    // onAgent — invoke_agent span
+    // onAgent 鈥?invoke_agent span
     // ------------------------------------------------------------------
 
     @Override
@@ -124,7 +125,7 @@ public class OtelTracingMiddleware implements MiddlewareBase {
     }
 
     // ------------------------------------------------------------------
-    // onModelCall — chat span
+    // onModelCall 鈥?chat span
     // ------------------------------------------------------------------
 
     @Override
@@ -177,7 +178,7 @@ public class OtelTracingMiddleware implements MiddlewareBase {
     }
 
     // ------------------------------------------------------------------
-    // onActing — execute_tool span
+    // onActing 鈥?execute_tool span
     // ------------------------------------------------------------------
 
     @Override

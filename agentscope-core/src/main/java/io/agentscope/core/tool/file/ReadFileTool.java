@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.file;
 
+/** {@summary ReadFileTool (ReadFileTool)} */
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.tool.Tool;
 import io.agentscope.core.tool.ToolParam;

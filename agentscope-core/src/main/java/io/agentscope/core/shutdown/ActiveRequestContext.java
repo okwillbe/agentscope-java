@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.shutdown;
 
+/** {@summary ActiveRequestContext (ActiveRequestContext)} */
 import io.agentscope.core.agent.AgentBase;
 import io.agentscope.core.interruption.InterruptSource;
 import io.agentscope.core.state.AgentState;
@@ -27,7 +28,7 @@ import org.slf4j.LoggerFactory;
  *
  * <p>When the owning {@code call()} resolves its per-(userId, sessionId) {@link AgentState} slot,
  * it is bound here via {@link #bindState(AgentState)} so shutdown interruption and state-saving
- * target that exact session — concurrency-safe even when an agent instance serves multiple
+ * target that exact session 鈥?concurrency-safe even when an agent instance serves multiple
  * sessions. Until a session is bound (or for agents that keep no per-session state), the context
  * falls back to the agent's no-arg interrupt / {@link AgentBase#getAgentState()} accessors.
  */

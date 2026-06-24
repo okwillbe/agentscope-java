@@ -31,6 +31,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary LocalApprovalMarketplace class ()}
  * Filesystem-backed {@link DataAgentMarketplace} reading skills from a per-agent slice on disk,
  * by convention {@code ${dataagentHome}/shared/agents/<agentId>/skills/} (the caller of this
  * class picks the exact root — see {@link io.agentscope.dataagent.web.config.DataAgentConfig}).

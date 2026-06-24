@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.gateway.channel;
 
+/** {@summary Peer (Peer)} */
 import java.util.Objects;
 
 /**

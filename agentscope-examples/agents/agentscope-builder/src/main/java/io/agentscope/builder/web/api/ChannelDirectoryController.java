@@ -46,6 +46,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Channel directory and channel-instance management. (Channel directory and channel-instance management.)}
  * Channel directory and channel-instance management.
  *
  * <ul>
@@ -72,6 +73,7 @@ import reactor.core.publisher.Mono;
 public class ChannelDirectoryController {
 
     /**
+     * {@summary Channel directory and channel-instance management. (Channel directory and channel-instance management.)}
      * Property keys whose values are always masked on response. Matches the credential field names
      * used by the bundled IM channel adapters (DingTalk / WeCom / Feishu / GitHub / GitLab).
      */
@@ -143,6 +145,7 @@ public class ChannelDirectoryController {
     }
 
     /**
+     * {@summary Channel directory and channel-instance management. (Channel directory and channel-instance management.)}
      * Returns the channel types the runtime knows how to instantiate (chatui, dingtalk, wecom,
      * feishu, github, gitlab, plus any types registered via
      * {@link ChannelTypeRegistry#register(String, ChannelFactory)}). Used by the binding form's

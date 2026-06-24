@@ -18,7 +18,8 @@ package io.agentscope.dataagent.web.persistence.jpa;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-/** Spring Data repository for {@link UserEntity}. */
+/**
+ * {@summary UserEntityRepository (UserEntityRepository)} Spring Data repository for {@link UserEntity}. */
 public interface UserEntityRepository extends JpaRepository<UserEntity, String> {
 
     Optional<UserEntity> findByUsernameIgnoreCase(String username);

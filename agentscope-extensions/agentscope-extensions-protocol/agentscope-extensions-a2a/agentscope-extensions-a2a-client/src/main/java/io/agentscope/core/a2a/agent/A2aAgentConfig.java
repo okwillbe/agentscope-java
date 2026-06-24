@@ -23,6 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * {@summary Config of A2A Agent. (Config of A2A Agent.)}
  * Config of A2A Agent.
  */
 public record A2aAgentConfig(
@@ -30,6 +31,7 @@ public record A2aAgentConfig(
         ClientConfig clientConfig) {
 
     /**
+     * {@summary Config of A2A Agent. (Config of A2A Agent.)}
      * Create a new builder instance for A2aAgentConfig.
      *
      * @return new builder instance
@@ -50,6 +52,7 @@ public record A2aAgentConfig(
         }
 
         /**
+         * {@summary Config of A2A Agent. (Config of A2A Agent.)}
          * Add client transport configuration which will be used to
          * {@link io.a2a.client.ClientBuilder#withTransport(Class, ClientTransportConfig)}.
          *
@@ -65,6 +68,7 @@ public record A2aAgentConfig(
         }
 
         /**
+         * {@summary Config of A2A Agent. (Config of A2A Agent.)}
          * Add client relative config for A2A client.
          *
          * @param clientConfig A2A client config

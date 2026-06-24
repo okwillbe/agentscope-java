@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 /**
+ * {@summary OpenAI tool function definition for Chat Completions API requests. (OpenAI tool function definition for Chat Completions API requests.)}
  * OpenAI tool function definition for Chat Completions API requests.
  *
  * <p>This class represents the function definition in a tool, following OpenAI's format.

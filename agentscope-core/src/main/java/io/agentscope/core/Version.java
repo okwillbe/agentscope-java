@@ -15,6 +15,8 @@
  */
 package io.agentscope.core;
 
+/** {@summary Version (Version)} */
+
 /**
  * AgentScope version and User-Agent information.
  *

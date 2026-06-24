@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter.openai;
 
+/** {@summary OpenAIResponseParser (OpenAIResponseParser)} */
 import io.agentscope.core.formatter.openai.dto.OpenAIChoice;
 import io.agentscope.core.formatter.openai.dto.OpenAIError;
 import io.agentscope.core.formatter.openai.dto.OpenAIMessage;
@@ -208,7 +209,7 @@ public class OpenAIResponseParser {
                                         thoughtSignature = reasoningSignatures.get(toolCallId);
                                     }
 
-                                    // 防御性检查：确保必要字段不为null
+                                    // 闃插尽鎬ф鏌ワ細纭繚蹇呰瀛楁涓嶄负null
                                     if (name == null) {
                                         log.warn("Tool call has null name, skipping");
                                         continue;

@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.middleware;
 
+/** {@summary MemoryFlushMiddleware (MemoryFlushMiddleware)} */
 import io.agentscope.core.ReActAgent;
 import io.agentscope.core.agent.Agent;
 import io.agentscope.core.agent.RuntimeContext;
@@ -50,10 +51,10 @@ import reactor.core.scheduler.Schedulers;
  *
  * <p>Flush is gated by a {@link MemoryConfig.FlushTrigger}:
  * <ul>
- *   <li>{@link MemoryConfig.FlushMode#ALWAYS} (default) — flush after every call.</li>
- *   <li>{@link MemoryConfig.FlushMode#NEVER} — never flush via this middleware. The CompactionMiddleware
+ *   <li>{@link MemoryConfig.FlushMode#ALWAYS} (default) ...flush after every call.</li>
+ *   <li>{@link MemoryConfig.FlushMode#NEVER} ...never flush via this middleware. The CompactionMiddleware
  *       and overflow-recovery paths still run their own flush when they fire.</li>
- *   <li>{@link MemoryConfig.FlushMode#THROTTLED} — flush at most once per
+ *   <li>{@link MemoryConfig.FlushMode#THROTTLED} ...flush at most once per
  *       {@link MemoryConfig.FlushTrigger#minGap()}.</li>
  * </ul>
  *
@@ -63,9 +64,9 @@ import reactor.core.scheduler.Schedulers;
  * <p>The throttle window is tracked per <em>isolation key</em>, which matches the memory data
  * isolation in use:
  * <ul>
- *   <li>{@link IsolationScope#USER} (default) — one window per {@code userId}.</li>
- *   <li>{@link IsolationScope#SESSION} — one window per {@code sessionId}.</li>
- *   <li>{@link IsolationScope#AGENT} / {@link IsolationScope#GLOBAL} — one shared window for
+ *   <li>{@link IsolationScope#USER} (default) ...one window per {@code userId}.</li>
+ *   <li>{@link IsolationScope#SESSION} ...one window per {@code sessionId}.</li>
+ *   <li>{@link IsolationScope#AGENT} / {@link IsolationScope#GLOBAL} ...one shared window for
  *       the whole agent instance (prevents concurrent flush races on shared memory files).</li>
  * </ul>
  */
@@ -231,9 +232,9 @@ public class MemoryFlushMiddleware implements MiddlewareBase {
      * Derives the timer map key from the configured {@link IsolationScope} and the per-call
      * {@link RuntimeContext}, mirroring the memory data namespace:
      * <ul>
-     *   <li>{@link IsolationScope#USER} — {@code userId} (empty string for anonymous)</li>
-     *   <li>{@link IsolationScope#SESSION} — {@code sessionId} (empty string when absent)</li>
-     *   <li>{@link IsolationScope#AGENT} / {@link IsolationScope#GLOBAL} — constant {@code ""}
+     *   <li>{@link IsolationScope#USER} ...{@code userId} (empty string for anonymous)</li>
+     *   <li>{@link IsolationScope#SESSION} ...{@code sessionId} (empty string when absent)</li>
+     *   <li>{@link IsolationScope#AGENT} / {@link IsolationScope#GLOBAL} ...constant {@code ""}
      *       so all callers share one throttle slot, serialising flushes on shared memory files</li>
      * </ul>
      */

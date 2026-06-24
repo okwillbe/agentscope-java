@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 
 /**
+ * {@summary Represents a trajectory (conversation sequence) in the ReMe API format.}
  * Represents a trajectory (conversation sequence) in the ReMe API format.
  *
  * <p>A trajectory contains a list of messages that form a conversation sequence.
@@ -34,6 +35,7 @@ public class ReMeTrajectory {
     public ReMeTrajectory() {}
 
     /**
+     * {@summary Represents a trajectory (conversation sequence) in the ReMe API format.}
      * Creates a new ReMeTrajectory with specified messages.
      *
      * @param messages The list of messages
@@ -53,6 +55,7 @@ public class ReMeTrajectory {
     }
 
     /**
+     * {@summary Represents a trajectory (conversation sequence) in the ReMe API format.}
      * Builder for creating ReMeTrajectory instances.
      *
      * @return A new builder instance

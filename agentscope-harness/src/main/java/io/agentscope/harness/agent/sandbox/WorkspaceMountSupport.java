@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox;
 
+/** {@summary WorkspaceMountSupport (WorkspaceMountSupport)} */
 import io.agentscope.harness.agent.sandbox.layout.BindMountEntry;
 import io.agentscope.harness.agent.sandbox.layout.DirEntry;
 import io.agentscope.harness.agent.sandbox.layout.WorkspaceEntry;

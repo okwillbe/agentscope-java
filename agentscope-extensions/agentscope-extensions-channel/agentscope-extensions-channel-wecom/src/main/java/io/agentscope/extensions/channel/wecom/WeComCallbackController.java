@@ -40,6 +40,7 @@ import org.xml.sax.InputSource;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Handles the WeCom callback URL handshake (GET) and inbound encrypted message delivery (POST).}
  * Handles the WeCom callback URL handshake (GET) and inbound encrypted message delivery (POST).
  *
  * <p>Each {@link WeComChannel} registers itself with the controller at start-up; the controller
@@ -65,6 +66,7 @@ public class WeComCallbackController {
     }
 
     /**
+     * {@summary Handles the WeCom callback URL handshake (GET) and inbound encrypted message delivery (POST).}
      * URL verification handshake. WeCom calls this with an encrypted {@code echostr} that the
      * server must decrypt and return verbatim so WeCom can confirm the server holds the right
      * encoding AES key.
@@ -99,6 +101,7 @@ public class WeComCallbackController {
     }
 
     /**
+     * {@summary Handles the WeCom callback URL handshake (GET) and inbound encrypted message delivery (POST).}
      * Inbound encrypted message. The request body is XML containing {@code <Encrypt>...</Encrypt>}.
      * Verifies signature, decrypts, deduplicates by {@code MsgId}, applies bot-loop guard, then
      * dispatches to the channel for routing. Always returns {@code 200} so WeCom does not retry,

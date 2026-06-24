@@ -36,6 +36,7 @@ import java.util.function.Function;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary InterruptionExample - Demonstrates user-initiated agent interruption. (InterruptionExample - Demonstrates user-initiated agent interruption.)}
  * InterruptionExample - Demonstrates user-initiated agent interruption.
  *
  * <p>Migration notes (from documentation/quickstart):
@@ -57,6 +58,7 @@ import reactor.core.publisher.Flux;
 public class InterruptionExample {
 
     /**
+     * {@summary InterruptionExample - Demonstrates user-initiated agent interruption. (InterruptionExample - Demonstrates user-initiated agent interruption.)}
      * Runs the interruption example.
      *
      * @param args command-line arguments (ignored)
@@ -153,6 +155,7 @@ public class InterruptionExample {
     }
 
     /**
+     * {@summary InterruptionExample - Demonstrates user-initiated agent interruption. (InterruptionExample - Demonstrates user-initiated agent interruption.)}
      * Monitoring middleware that logs all lifecycle events:
      * agent start/end, tool calls, progress chunks, and errors.
      */
@@ -202,6 +205,7 @@ public class InterruptionExample {
     public static class LongRunningTools {
 
         /**
+         * {@summary InterruptionExample - Demonstrates user-initiated agent interruption. (InterruptionExample - Demonstrates user-initiated agent interruption.)}
          * Processes a large dataset — simulates a long-running operation with progress updates.
          *
          * @param datasetName name of the dataset

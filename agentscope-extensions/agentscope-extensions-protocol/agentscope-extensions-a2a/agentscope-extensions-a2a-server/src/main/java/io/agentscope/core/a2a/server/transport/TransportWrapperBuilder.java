@@ -22,12 +22,14 @@ import io.agentscope.core.a2a.server.AgentScopeA2aServer;
 import java.util.concurrent.Executor;
 
 /**
+ * {@summary Get wrapper transport type name to build. (Get wrapper transport type name to build.)}
  * Builder interface to build {@link TransportWrapper} for different transports.
  */
 @SuppressWarnings("rawtypes")
 public interface TransportWrapperBuilder<T extends TransportWrapper> {
 
     /**
+     * {@summary Get wrapper transport type name to build. (Get wrapper transport type name to build.)}
      * Get wrapper transport type name to build.
      *
      * @return name of transport type
@@ -35,6 +37,7 @@ public interface TransportWrapperBuilder<T extends TransportWrapper> {
     String getTransportType();
 
     /**
+     * {@summary Get wrapper transport type name to build. (Get wrapper transport type name to build.)}
      * Build wrapper transport without extendedAgentCard.
      *
      * @param agentCard         agent card build by {@link AgentScopeA2aServer}
@@ -47,6 +50,7 @@ public interface TransportWrapperBuilder<T extends TransportWrapper> {
     }
 
     /**
+     * {@summary Get wrapper transport type name to build. (Get wrapper transport type name to build.)}
      * Build wrapper transport with extendedAgentCard.
      *
      * @param agentCard         agent card build by {@link AgentScopeA2aServer}

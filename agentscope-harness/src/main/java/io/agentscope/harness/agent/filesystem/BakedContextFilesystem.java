@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.filesystem;
 
+/** {@summary BakedContextFilesystem (BakedContextFilesystem)} */
 import io.agentscope.core.agent.RuntimeContext;
 import io.agentscope.harness.agent.filesystem.model.EditResult;
 import io.agentscope.harness.agent.filesystem.model.FileDownloadResponse;

@@ -29,6 +29,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary BuilderSandboxConfig class ()}
  * Optional sandbox filesystem wiring for the agentscope-builder deployable. When {@code
  * builder.sandbox.enabled=true}, this configuration contributes:
  *

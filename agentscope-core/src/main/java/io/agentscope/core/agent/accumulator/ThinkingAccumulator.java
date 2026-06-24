@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.agent.accumulator;
 
+/** {@summary ThinkingAccumulator (ThinkingAccumulator)} */
 import io.agentscope.core.message.ContentBlock;
 import io.agentscope.core.message.ThinkingBlock;
 

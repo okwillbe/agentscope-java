@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /**
+ * {@summary Utility class for chunking text into smaller pieces. (Utility class for chunking text into smaller pieces.)}
  * Utility class for chunking text into smaller pieces.
  *
  * <p>This class provides methods to split text according to different strategies,
@@ -35,6 +36,7 @@ public final class TextChunker {
     }
 
     /**
+     * {@summary Utility class for chunking text into smaller pieces. (Utility class for chunking text into smaller pieces.)}
      * Chunks text according to the specified strategy.
      *
      * @param text the text to chunk
@@ -71,6 +73,7 @@ public final class TextChunker {
     }
 
     /**
+     * {@summary Utility class for chunking text into smaller pieces. (Utility class for chunking text into smaller pieces.)}
      * Chunks text by character count.
      *
      * @param text the text to chunk
@@ -101,6 +104,7 @@ public final class TextChunker {
     }
 
     /**
+     * {@summary Utility class for chunking text into smaller pieces. (Utility class for chunking text into smaller pieces.)}
      * Chunks text by paragraphs, respecting chunk size limits.
      *
      * @param text the text to chunk
@@ -158,6 +162,7 @@ public final class TextChunker {
     }
 
     /**
+     * {@summary Utility class for chunking text into smaller pieces. (Utility class for chunking text into smaller pieces.)}
      * Chunks text by approximate token count.
      *
      * <p>Uses a simple heuristic: 1 token ≈ 4 characters.
@@ -177,6 +182,7 @@ public final class TextChunker {
     }
 
     /**
+     * {@summary Utility class for chunking text into smaller pieces. (Utility class for chunking text into smaller pieces.)}
      * Chunks text by semantic boundaries.
      *
      * <p>Currently falls back to paragraph-based chunking. A full implementation

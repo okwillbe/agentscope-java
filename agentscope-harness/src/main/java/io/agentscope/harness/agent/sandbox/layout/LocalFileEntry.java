@@ -15,6 +15,8 @@
  */
 package io.agentscope.harness.agent.sandbox.layout;
 
+/** {@summary LocalFileEntry (LocalFileEntry)} */
+
 /**
  * Layout entry that copies a single file from the host filesystem into the sandbox workspace.
  *

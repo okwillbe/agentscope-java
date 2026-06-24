@@ -40,6 +40,7 @@ import java.util.UUID;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
  * Adapter that bridges AgentScope agents to the AG-UI protocol.
  *
  * <p>This adapter converts AG-UI protocol inputs to AgentScope messages,
@@ -68,6 +69,7 @@ public class AguiAgentAdapter {
     private final AguiMessageConverter messageConverter;
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * Creates a new AguiAgentAdapter.
      *
      * @param agent The agent to adapt
@@ -80,6 +82,7 @@ public class AguiAgentAdapter {
     }
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * Run the agent with AG-UI protocol input.
      *
      * <p>This method converts the input messages, invokes the agent's streaming API,
@@ -135,6 +138,7 @@ public class AguiAgentAdapter {
     }
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * Convert an AgentScope event to AG-UI events.
      *
      * @param event The AgentScope event
@@ -301,6 +305,7 @@ public class AguiAgentAdapter {
     }
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * Finish the run by emitting any pending end events and RUN_FINISHED.
      *
      * @param state The conversion state
@@ -338,6 +343,7 @@ public class AguiAgentAdapter {
     }
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * Extract text content from a tool result block.
      *
      * @param toolResult The tool result block
@@ -362,6 +368,7 @@ public class AguiAgentAdapter {
     }
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * Serialize tool arguments to JSON string.
      *
      * @param input The tool input map
@@ -379,6 +386,7 @@ public class AguiAgentAdapter {
     }
 
     /**
+     * {@summary Adapter that bridges AgentScope agents to the AG-UI protocol. (Adapter that bridges AgentScope agents to the AG-UI protocol.)}
      * State tracker for event conversion.
      * Uses LinkedHashSet to preserve insertion order for proper event sequencing.
      */

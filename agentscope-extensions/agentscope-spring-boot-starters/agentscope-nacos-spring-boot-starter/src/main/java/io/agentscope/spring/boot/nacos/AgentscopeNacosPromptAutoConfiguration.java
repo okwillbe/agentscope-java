@@ -35,6 +35,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 
 /**
+ * {@summary Auto-configuration that builds ReActAgent from prompts stored in Nacos. (Auto-configuration that builds ReActAgent from prompts stored in Nacos.)}
  * Auto-configuration that builds ReActAgent from prompts stored in Nacos.
  *
  * <p>When this starter is on the classpath and {@code agentscope.nacos.prompt.enabled=true}, the

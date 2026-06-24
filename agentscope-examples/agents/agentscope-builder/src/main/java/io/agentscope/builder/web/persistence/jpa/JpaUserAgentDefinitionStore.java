@@ -29,6 +29,7 @@ import java.util.function.Function;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
+ * {@summary JpaUserAgentDefinitionStore class ()}
  * JPA-backed {@link UserAgentDefinitionStore}. This is the only {@link UserAgentDefinitionStore}
  * implementation shipped with the builder; it is always wired in by {@link JpaPersistenceConfig}.
  *

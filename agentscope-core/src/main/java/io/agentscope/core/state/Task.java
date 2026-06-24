@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state;
 
+/** {@summary Task (Task)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -30,8 +31,8 @@ import java.util.UUID;
 /**
  * Persistent agent task record carried inside {@link TaskContextState}.
  *
- * <p>Tasks are user-visible work items. Their {@link #state} progresses {@code pending → in_progress
- * → completed}; dependencies are declared via {@link #blocks} (downstream task ids waiting on this
+ * <p>Tasks are user-visible work items. Their {@link #state} progresses {@code pending 鈫?in_progress
+ * 鈫?completed}; dependencies are declared via {@link #blocks} (downstream task ids waiting on this
  * one) and {@link #blockedBy} (upstream task ids whose completion gates this one).
  *
  * <p>All fields except {@code subject} and {@code description} have sensible defaults so callers

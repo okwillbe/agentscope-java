@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.snapshot;
 
+/** {@summary RemoteSandboxSnapshot (RemoteSandboxSnapshot)} */
 import io.agentscope.harness.agent.sandbox.SandboxException;
 import java.io.InputStream;
 
@@ -26,7 +27,7 @@ import java.io.InputStream;
  *
  * <p>Note: {@code RemoteSandboxSnapshot} is not directly serializable to JSON because
  * {@link RemoteSnapshotClient} cannot be serialized. When persisting session state,
- * only the {@code id} is needed — the client is re-injected from the builder at resume time.
+ * only the {@code id} is needed ...the client is re-injected from the builder at resume time.
  */
 public class RemoteSandboxSnapshot implements SandboxSnapshot {
 

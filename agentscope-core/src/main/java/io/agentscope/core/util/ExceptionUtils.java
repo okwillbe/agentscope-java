@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.util;
 
+/** {@summary ExceptionUtils (ExceptionUtils)} */
+
 /**
  * Utility methods for exception handling.
  */

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolDangerousPathConstants (ToolDangerousPathConstants)} */
 import java.util.List;
 
 /**

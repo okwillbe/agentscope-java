@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.tools;
 
+/** {@summary ToolFilter (ToolFilter)} */
 import io.agentscope.core.tool.Toolkit;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -37,7 +38,7 @@ import org.slf4j.LoggerFactory;
  * </ul>
  *
  * <p>Names that don't correspond to a currently registered tool are logged at WARN and otherwise
- * ignored — typos in the workspace file should not abort the agent.
+ * ignored ...typos in the workspace file should not abort the agent.
  */
 public final class ToolFilter {
 

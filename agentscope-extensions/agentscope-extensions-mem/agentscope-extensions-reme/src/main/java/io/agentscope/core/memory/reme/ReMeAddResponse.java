@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * {@summary Response object from ReMe's add memory API. (Response object from ReMe's add memory API.)}
  * Response object from ReMe's add memory API.
  *
  * <p>This response is returned from the {@code POST /summary_personal_memory} endpoint

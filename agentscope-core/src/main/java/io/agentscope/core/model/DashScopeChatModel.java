@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary DashScopeChatModel (DashScopeChatModel)} */
 import io.agentscope.core.formatter.Formatter;
 import io.agentscope.core.formatter.dashscope.DashScopeChatFormatter;
 import io.agentscope.core.formatter.dashscope.DashScopeMultiAgentFormatter;
@@ -183,8 +184,8 @@ public class DashScopeChatModel extends ChatModelBase {
      *
      * <p>This method automatically routes to the appropriate API based on the model name:
      * <ul>
-     *   <li>Vision models (qvq* or *-vl*) → MultiModal API</li>
-     *   <li>Text models → Text Generation API</li>
+     *   <li>Vision models (qvq* or *-vl*) 鈫?MultiModal API</li>
+     *   <li>Text models 鈫?Text Generation API</li>
      * </ul>
      *
      * <p>Supports timeout and retry configuration through GenerateOptions.
@@ -685,13 +686,13 @@ public class DashScopeChatModel extends ChatModelBase {
             }
 
             if (proxyConfig != null) {
-                // Only proxy() called → use default transport with proxy
+                // Only proxy() called 鈫?use default transport with proxy
                 return OkHttpTransport.builder()
                         .config(HttpTransportConfig.builder().proxy(proxyConfig).build())
                         .build();
             }
 
-            // Neither called → use factory default
+            // Neither called 鈫?use factory default
             return HttpTransportFactory.getDefault();
         }
     }

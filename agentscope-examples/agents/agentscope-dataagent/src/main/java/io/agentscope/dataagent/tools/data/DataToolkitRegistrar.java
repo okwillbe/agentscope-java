@@ -23,6 +23,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary DataToolkitRegistrar class ()}
  * Wires a singleton {@link DataAgentToolkit} onto the built-in main agent's toolkit at startup,
  * so the agent can call {@code list_data_sources}, {@code describe_table}, {@code run_sql_preview}
  * and {@code render_chart}.

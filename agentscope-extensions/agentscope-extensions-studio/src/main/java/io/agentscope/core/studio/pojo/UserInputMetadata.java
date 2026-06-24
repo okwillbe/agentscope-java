@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
 
 /**
+ * {@summary Metadata for user input messages from Studio. (Metadata for user input messages from Studio.)}
  * Metadata for user input messages from Studio.
  *
  * <p>This class provides type-safe metadata for messages received from AgentScope Studio,
@@ -43,6 +44,7 @@ public class UserInputMetadata {
     }
 
     /**
+     * {@summary Metadata for user input messages from Studio. (Metadata for user input messages from Studio.)}
      * Gets the source of the user input.
      *
      * @return the source identifier (typically "studio")
@@ -52,6 +54,7 @@ public class UserInputMetadata {
     }
 
     /**
+     * {@summary Metadata for user input messages from Studio. (Metadata for user input messages from Studio.)}
      * Gets the request ID that this input is responding to.
      *
      * @return the request ID, or null if this is not a response to a specific request
@@ -61,6 +64,7 @@ public class UserInputMetadata {
     }
 
     /**
+     * {@summary Metadata for user input messages from Studio. (Metadata for user input messages from Studio.)}
      * Gets the structured input data if provided.
      *
      * @return map of structured input fields, or null if not provided

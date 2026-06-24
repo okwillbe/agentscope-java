@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary NoOpToolEmitter (NoOpToolEmitter)} */
 import io.agentscope.core.message.ToolResultBlock;
 
 /**

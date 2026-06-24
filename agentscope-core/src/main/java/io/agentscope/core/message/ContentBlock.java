@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.message;
 
+/** {@summary ContentBlock (ContentBlock)} */
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.agentscope.core.state.State;

@@ -47,6 +47,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
 /**
+ * {@summary Spring Boot autoconfiguration that exposes A2A beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A beans for AgentScope.)}
  * Spring Boot autoconfiguration that exposes A2A beans for AgentScope.
  *
  * <p>Only support export web type transport for now. If support export not only web type, might remove condition of
@@ -115,6 +116,7 @@ public class AgentscopeA2aAutoConfiguration {
     }
 
     /**
+     * {@summary Spring Boot autoconfiguration that exposes A2A beans for AgentScope. (Spring Boot autoconfiguration that exposes A2A beans for AgentScope.)}
      * Autoconfiguration A2A JSON-RPC controller.
      *
      * <p>TODO should judge whether user want to export JSON-RPC transport.

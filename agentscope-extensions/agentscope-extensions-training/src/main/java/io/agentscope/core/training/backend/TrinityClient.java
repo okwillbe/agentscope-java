@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Trinity Backend Client (Trinity Backend Client)}
  * Trinity Backend Client
  *
  * <p>Simplified Trinity client that only encapsulates Feedback and Commit APIs.
@@ -62,6 +63,7 @@ public class TrinityClient {
     }
 
     /**
+     * {@summary Trinity Backend Client (Trinity Backend Client)}
      * Submit Feedback (reward feedback)
      *
      * @param request Feedback request (containing msg_ids and reward)
@@ -117,6 +119,7 @@ public class TrinityClient {
     }
 
     /**
+     * {@summary Trinity Backend Client (Trinity Backend Client)}
      * Submit Commit to trigger training
      *
      * @param request Commit request (containing task_id and run_id)

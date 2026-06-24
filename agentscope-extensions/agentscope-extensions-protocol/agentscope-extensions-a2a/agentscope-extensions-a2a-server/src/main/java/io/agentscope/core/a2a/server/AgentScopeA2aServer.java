@@ -52,6 +52,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
  * Agentscope A2a Server.
  *
  * <p>The core enter class for developer to export agent as A2A Server by agentscope, Developers should build server
@@ -104,6 +105,7 @@ public class AgentScopeA2aServer {
     }
 
     /**
+     * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
      * Get a raw type {@link TransportWrapper} instance by its name. Developers should judge type whether expected their
      * expected before actual use.
      *
@@ -119,6 +121,7 @@ public class AgentScopeA2aServer {
     }
 
     /**
+     * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
      * Get a specific {@link TransportWrapper} instance by its name and expected type.
      *
      * @param transportName transport name
@@ -144,6 +147,7 @@ public class AgentScopeA2aServer {
     }
 
     /**
+     * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
      * Get {@link AgentCard} instance for this server.
      *
      * @return agent card
@@ -153,6 +157,7 @@ public class AgentScopeA2aServer {
     }
 
     /**
+     * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
      * Call this method when all endpoint ready to access.
      *
      * <p>By default, it should be called after web server ready or other network endpoint ready. To let AgentScope end
@@ -163,6 +168,7 @@ public class AgentScopeA2aServer {
     }
 
     /**
+     * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
      * Get a Builder of {@link AgentScopeA2aServer} from {@link ReActAgent.Builder}.
      *
      * <p>For Most situation, will use default {@link ReActAgentWithBuilderRunner} as the {@link AgentRunner}
@@ -176,6 +182,7 @@ public class AgentScopeA2aServer {
     }
 
     /**
+     * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
      * Get a Builder of {@link AgentScopeA2aServer} from custom {@link AgentRunner}.
      *
      * @param agentRunner custom agent runner
@@ -216,6 +223,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set developer configured agent card.
          *
          * @param agentCard configured agent card
@@ -227,6 +235,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Add supported transport for this A2A server, and input this transport's properties.
          *
          * @param transportProperties properties of supported transport
@@ -238,6 +247,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set implementations of {@link TaskStore}.
          *
          * <p> use {@link io.a2a.server.tasks.InMemoryTaskStore} by default.
@@ -251,6 +261,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set implementations of {@link QueueManager}.
          *
          * <p> use {@link io.a2a.server.events.InMemoryQueueManager} by default.
@@ -264,6 +275,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set implementations of {@link PushNotificationConfigStore}.
          *
          * <p> use {@link io.a2a.server.tasks.InMemoryPushNotificationConfigStore} by default.
@@ -277,6 +289,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set implementations of {@link PushNotificationSender}.
          *
          * <p> use {@link io.a2a.server.tasks.BasePushNotificationSender} by default.
@@ -290,6 +303,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set executor for handle a2a request.
          *
          * <p> use {@link Executors#newCachedThreadPool()} by default.
@@ -303,6 +317,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set deployment port to generate default transport interface information in agentCard.
          *
          * @param port deployment port
@@ -314,6 +329,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set deployment properties to generate default transport interface information in agentCard.
          *
          * @param deploymentProperties deployment properties
@@ -325,6 +341,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Add {@link AgentRegistry} implementation which should register this agent to registry.
          *
          * @param agentRegistry agent registry implementation
@@ -336,6 +353,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Set agent execute properties.
          *
          * @param agentExecuteProperties agent execute properties
@@ -347,6 +365,7 @@ public class AgentScopeA2aServer {
         }
 
         /**
+         * {@summary Agentscope A2a Server. (Agentscope A2a Server.)}
          * Build a new instance of {@link AgentScopeA2aServer}.
          *
          * <p> This Builder will build with follow steps:

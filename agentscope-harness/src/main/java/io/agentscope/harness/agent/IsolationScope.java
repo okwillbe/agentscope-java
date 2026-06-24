@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent;
 
+/** {@summary IsolationScope (IsolationScope)} */
 import io.agentscope.harness.agent.filesystem.remote.RemoteFilesystem;
 import io.agentscope.harness.agent.filesystem.remote.store.NamespaceFactory;
 import io.agentscope.harness.agent.filesystem.spec.RemoteFilesystemSpec;
@@ -39,11 +40,11 @@ import java.util.List;
  *
  * <p>Scope selection:
  * <ul>
- *   <li>{@link #USER} – shared across all sessions of the same user; the default. When
+ *   <li>{@link #USER} ...shared across all sessions of the same user; the default. When
  *       {@code userId} is absent, falls back to {@link #SESSION}.</li>
- *   <li>{@link #SESSION} – isolated per session.</li>
- *   <li>{@link #AGENT} – shared across all users and sessions of the same agent.</li>
- *   <li>{@link #GLOBAL} – globally shared within the same workspace/store instance.</li>
+ *   <li>{@link #SESSION} ...isolated per session.</li>
+ *   <li>{@link #AGENT} ...shared across all users and sessions of the same agent.</li>
+ *   <li>{@link #GLOBAL} ...globally shared within the same workspace/store instance.</li>
  * </ul>
  *
  * <p><b>Concurrency note:</b> for sandbox mode this is sequential-reuse sharing, not
@@ -91,10 +92,10 @@ public enum IsolationScope {
      * {@link io.agentscope.core.agent.RuntimeContext} according to this scope.
      *
      * <ul>
-     *   <li>{@link #USER} — prefix with {@code userId}; falls back to {@code sessionId} when
+     *   <li>{@link #USER} ...prefix with {@code userId}; falls back to {@code sessionId} when
      *       {@code userId} is absent.
-     *   <li>{@link #SESSION} — prefix with {@code sessionId}.
-     *   <li>{@link #AGENT} / {@link #GLOBAL} — no prefix (workspace is already per-agent).
+     *   <li>{@link #SESSION} ...prefix with {@code sessionId}.
+     *   <li>{@link #AGENT} / {@link #GLOBAL} ...no prefix (workspace is already per-agent).
      * </ul>
      *
      * @return a namespace factory consistent with this scope

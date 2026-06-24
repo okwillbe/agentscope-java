@@ -35,6 +35,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
  * Service for converting ChatMessage DTOs to framework internal Msg objects.
  *
  * <p>This converter handles the transformation from HTTP request DTOs (with String roles) to
@@ -54,6 +55,7 @@ public class ChatMessageConverter {
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
+     * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
      * Converts a list of {@link ChatMessage} DTOs to framework internal {@link Msg} objects,
      * supporting full conversation history including tool calls.
      *
@@ -77,6 +79,7 @@ public class ChatMessageConverter {
     }
 
     /**
+     * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
      * Convert a single ChatMessage to Msg.
      *
      * @param chatMsg The chat message to convert
@@ -116,6 +119,7 @@ public class ChatMessageConverter {
     }
 
     /**
+     * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
      * Convert an assistant message with tool calls to Msg.
      *
      * @param chatMsg The assistant message containing tool calls
@@ -147,6 +151,7 @@ public class ChatMessageConverter {
     }
 
     /**
+     * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
      * Convert a tool result message to Msg.
      *
      * @param chatMsg The tool result message
@@ -165,6 +170,7 @@ public class ChatMessageConverter {
     }
 
     /**
+     * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
      * Parse JSON arguments string to Map.
      *
      * @param arguments JSON string of arguments
@@ -184,6 +190,7 @@ public class ChatMessageConverter {
     }
 
     /**
+     * {@summary Service for converting ChatMessage DTOs to framework internal Msg objects. (Service for converting ChatMessage DTOs to framework internal Msg objects.)}
      * Convert string role to MsgRole enum.
      *
      * @param roleStr The role string (case-insensitive)

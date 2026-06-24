@@ -28,6 +28,7 @@ import java.util.Optional;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary ContextStatePersistenceExample — Demonstrates the stateless-engine model: one (ContextStatePersistenceExample — Demonstrates the stateless-engine model: one)}
  * ContextStatePersistenceExample — Demonstrates the stateless-engine model: one
  * {@link HarnessAgent} instance serves multiple users concurrently, each with isolated state
  * persisted via {@link JsonFileAgentStateStore}.

@@ -16,6 +16,7 @@
 
 package io.agentscope.core.skill.util;
 
+/** {@summary SkillUtil (SkillUtil)} */
 import io.agentscope.core.skill.AgentSkill;
 import io.agentscope.core.skill.util.MarkdownSkillParser.ParsedMarkdown;
 import java.io.ByteArrayInputStream;

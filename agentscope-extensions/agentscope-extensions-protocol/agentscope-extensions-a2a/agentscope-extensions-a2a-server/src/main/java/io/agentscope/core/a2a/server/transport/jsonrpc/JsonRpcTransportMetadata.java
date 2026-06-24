@@ -20,6 +20,7 @@ import io.a2a.server.TransportMetadata;
 import io.a2a.spec.TransportProtocol;
 
 /**
+ * {@summary SPI for JSON-RPC transport metadata. (SPI for JSON-RPC transport metadata.)}
  * SPI for JSON-RPC transport metadata.
  *
  * <p>Inject transport `JSONRPC` supported into A2A Server to validate agentCard.

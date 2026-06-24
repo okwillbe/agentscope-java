@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary Single choice in a Chat Completions style response. (Single choice in a Chat Completions style response.)}
  * Single choice in a Chat Completions style response.
  *
  * <p>This class follows OpenAI's Chat Completions API format.

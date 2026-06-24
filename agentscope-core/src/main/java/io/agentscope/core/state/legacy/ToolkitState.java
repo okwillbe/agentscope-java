@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.state.legacy;
 
+/** {@summary ToolkitState (ToolkitState)} */
 import io.agentscope.core.state.State;
 import java.util.List;
 

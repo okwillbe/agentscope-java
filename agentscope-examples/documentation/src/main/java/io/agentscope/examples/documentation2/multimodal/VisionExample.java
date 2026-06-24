@@ -30,6 +30,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
+ * {@summary VisionExample - Demonstrates vision capabilities with images. (VisionExample - Demonstrates vision capabilities with images.)}
  * VisionExample - Demonstrates vision capabilities with images.
  *
  * <p>Migration notes:
@@ -40,6 +41,7 @@ import java.io.InputStreamReader;
 public class VisionExample {
 
     /**
+     * {@summary VisionExample - Demonstrates vision capabilities with images. (VisionExample - Demonstrates vision capabilities with images.)}
      * Runs the vision example.
      *
      * @param args command-line arguments (ignored)

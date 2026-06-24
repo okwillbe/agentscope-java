@@ -15,7 +15,7 @@
  */
 package io.agentscope.claw2.runtime.session;
 
-/** Result of registering a managed subagent session. */
+/** {@summary Result of registering a managed subagent session. (Result of registering a managed subagent session.)} Result of registering a managed subagent session. */
 public record SpawnResult(
         String runId,
         String sessionKey,

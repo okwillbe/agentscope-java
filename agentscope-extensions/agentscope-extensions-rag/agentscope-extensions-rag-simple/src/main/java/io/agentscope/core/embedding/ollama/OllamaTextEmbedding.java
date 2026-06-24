@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
  * Ollama Text Embedding Model implementation.
  *
  * <p>This implementation provides access to Ollama's text embedding API, supporting both
@@ -52,6 +53,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
     private final ExecutionConfig defaultExecutionConfig;
 
     /**
+     * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
      * Creates a new Ollama text embedding model instance.
      *
      * @param baseUrl the base URL for Ollama API (e.g., "http://localhost:11434")
@@ -72,6 +74,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
      * Creates a new builder for OllamaTextEmbedding.
      *
      * @return a new Builder instance
@@ -209,6 +212,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
      * Builder for OllamaTextEmbedding.
      */
     public static class Builder {
@@ -218,6 +222,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
         private ExecutionConfig defaultExecutionConfig;
 
         /**
+         * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
          * Sets the base URL for Ollama API.
          *
          * @param baseUrl the base URL (e.g., "http://localhost:11434")
@@ -229,6 +234,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
          * Sets the model name to use.
          *
          * @param modelName the model name (e.g., "nomic-embed-text", "all-minilm")
@@ -240,6 +246,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
          * Sets the dimension of embedding vectors.
          *
          * @param dimensions the dimension
@@ -251,6 +258,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
          * Sets the default execution configuration.
          *
          * @param config the execution config (null for defaults)
@@ -262,6 +270,7 @@ public class OllamaTextEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary Ollama Text Embedding Model implementation. (Ollama Text Embedding Model implementation.)}
          * Builds the OllamaTextEmbedding instance.
          *
          * <p>This method validates required parameters and ensures that the defaultExecutionConfig

@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary DefaultToolResultConverter (DefaultToolResultConverter)} */
 import io.agentscope.core.message.TextBlock;
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.util.JsonUtils;

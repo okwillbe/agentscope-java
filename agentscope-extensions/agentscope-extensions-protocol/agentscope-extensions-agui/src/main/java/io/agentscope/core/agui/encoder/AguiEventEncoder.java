@@ -21,6 +21,7 @@ import io.agentscope.core.util.JsonException;
 import io.agentscope.core.util.JsonUtils;
 
 /**
+ * {@summary Encoder for AG-UI events to Server-Sent Events (SSE) format.}
  * Encoder for AG-UI events to Server-Sent Events (SSE) format.
  *
  * <p>This encoder serializes AG-UI events to the SSE wire format:
@@ -33,11 +34,13 @@ import io.agentscope.core.util.JsonUtils;
 public class AguiEventEncoder {
 
     /**
+     * {@summary Encoder for AG-UI events to Server-Sent Events (SSE) format.}
      * Creates a new AguiEventEncoder.
      */
     public AguiEventEncoder() {}
 
     /**
+     * {@summary Encoder for AG-UI events to Server-Sent Events (SSE) format.}
      * Encode an AG-UI event to SSE format.
      *
      * <p>The output format is:
@@ -59,6 +62,7 @@ public class AguiEventEncoder {
     }
 
     /**
+     * {@summary Encoder for AG-UI events to Server-Sent Events (SSE) format.}
      * Encode an AG-UI event to JSON string only (without SSE wrapper).
      *
      * <p>Note: The returned string has a leading space to ensure compatibility
@@ -80,6 +84,7 @@ public class AguiEventEncoder {
     }
 
     /**
+     * {@summary Encoder for AG-UI events to Server-Sent Events (SSE) format.}
      * Encode a comment in SSE format.
      *
      * <p>Comments can be used as keep-alive signals:
@@ -95,6 +100,7 @@ public class AguiEventEncoder {
     }
 
     /**
+     * {@summary Encoder for AG-UI events to Server-Sent Events (SSE) format.}
      * Generate a keep-alive comment.
      *
      * @return An SSE keep-alive comment

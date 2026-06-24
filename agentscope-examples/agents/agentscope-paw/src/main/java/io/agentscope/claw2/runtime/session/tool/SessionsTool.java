@@ -40,6 +40,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Tool facade exposing managed subagent session operations to the agent. (Tool facade exposing managed subagent session operations to the agent.)}
  * Tool facade exposing managed subagent session operations to the agent.
  *
  * <p>Provides the following tools:
@@ -78,6 +79,7 @@ public class SessionsTool {
     private final int parentSpawnDepth;
 
     /**
+     * {@summary Tool facade exposing managed subagent session operations to the agent. (Tool facade exposing managed subagent session operations to the agent.)}
      * @param sessionAgentManager full session lifecycle manager
      * @param taskRepository background task store (for async fire-and-forget)
      * @param parentSessionKey session key of the agent that owns this tool instance (null = main)

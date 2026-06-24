@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.exception;
 
 /**
+ * {@summary Exception thrown when document reading fails. (Exception thrown when document reading fails.)}
  * Exception thrown when document reading fails.
  *
  * <p>This exception is used to wrap errors from document reading operations, providing
@@ -24,6 +25,7 @@ package io.agentscope.core.rag.exception;
 public class ReaderException extends Exception {
 
     /**
+     * {@summary Exception thrown when document reading fails. (Exception thrown when document reading fails.)}
      * Creates a new ReaderException with the given message.
      *
      * @param message the error message
@@ -33,6 +35,7 @@ public class ReaderException extends Exception {
     }
 
     /**
+     * {@summary Exception thrown when document reading fails. (Exception thrown when document reading fails.)}
      * Creates a new ReaderException with the given message and cause.
      *
      * @param message the error message

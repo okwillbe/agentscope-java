@@ -16,6 +16,7 @@
 
 package io.agentscope.core.message;
 
+/** {@summary Source (Source)} */
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 

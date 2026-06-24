@@ -32,6 +32,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
  * Adapter for Lettuce Redis client.
  *
  * <p>This adapter supports multiple Redis deployment modes through different client types:
@@ -95,18 +96,21 @@ public class LettuceClientAdapter implements RedisClientAdapter {
     private static final Logger log = LoggerFactory.getLogger(LettuceClientAdapter.class);
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Redis commands for standalone and sentinel modes.
      * Null when operating in cluster mode.
      */
     private final RedisCommands<String, String> commands;
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Redis cluster commands for cluster mode.
      * Null when operating in standalone or sentinel mode.
      */
     private final RedisAdvancedClusterCommands<String, String> clusterCommands;
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Closeable resource handler for cleaning up connections and clients.
      * Uses a strategy pattern to handle different cleanup logic for
      * standalone/sentinel and cluster modes.
@@ -123,6 +127,7 @@ public class LettuceClientAdapter implements RedisClientAdapter {
     }
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Create adapter from RedisClient (standalone/sentinel mode).
      *
      * @param redisClient the RedisClient for standalone or sentinel mode
@@ -139,6 +144,7 @@ public class LettuceClientAdapter implements RedisClientAdapter {
     }
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Create adapter from RedisClusterClient (cluster mode).
      *
      * @param redisClusterClient the RedisClusterClient for cluster mode
@@ -254,6 +260,7 @@ public class LettuceClientAdapter implements RedisClientAdapter {
     }
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Helper method to scan keys using the provided scan function.
      *
      * @param pattern the key pattern to match
@@ -273,6 +280,7 @@ public class LettuceClientAdapter implements RedisClientAdapter {
     }
 
     /**
+     * {@summary Adapter for Lettuce Redis client. (Adapter for Lettuce Redis client.)}
      * Functional interface for scan operations.
      */
     @FunctionalInterface

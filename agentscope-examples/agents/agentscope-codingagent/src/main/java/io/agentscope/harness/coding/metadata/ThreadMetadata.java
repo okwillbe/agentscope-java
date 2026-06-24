@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * {@summary AgentStateStore kind: "coding" or "reviewer". (AgentStateStore kind: "coding" or "reviewer".)}
  * Per-thread metadata stored in {@code SqliteBaseStore} namespace {@code ["threads", thread_id]}.
  *
  */

@@ -23,6 +23,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * {@summary Spring configuration for shared workspace path resolution. (Spring configuration for shared workspace path resolution.)}
  * Spring configuration for shared workspace path resolution.
  *
  * <p>Filesystem composition for each agent now lives entirely inside the harness via {@code

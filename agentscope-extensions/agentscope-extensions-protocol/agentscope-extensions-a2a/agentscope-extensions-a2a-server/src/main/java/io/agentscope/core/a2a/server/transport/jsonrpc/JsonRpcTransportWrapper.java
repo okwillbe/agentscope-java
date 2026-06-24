@@ -61,6 +61,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
 
 /**
+ * {@summary The Wrapper for JSON-RPC transport request. (The Wrapper for JSON-RPC transport request.)}
  * The Wrapper for JSON-RPC transport request.
  *
  * <p> wrapper all JSON-RPC request pre-handle logic, developer should get string body and some headers and metadata
@@ -89,6 +90,7 @@ public class JsonRpcTransportWrapper implements TransportWrapper<String, Object>
     }
 
     /**
+     * {@summary The Wrapper for JSON-RPC transport request. (The Wrapper for JSON-RPC transport request.)}
      * Do handle for JSON-RPC Request, including streaming and non-streaming request.
      *
      * @param body     JSON-RPC request body string

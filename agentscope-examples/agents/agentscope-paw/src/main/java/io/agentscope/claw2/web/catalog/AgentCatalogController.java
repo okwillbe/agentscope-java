@@ -31,6 +31,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary REST controller for the local agent catalog. (REST controller for the local agent catalog.)}
  * REST controller for the local agent catalog.
  *
  * <ul>

@@ -16,6 +16,7 @@
 package io.agentscope.core.rag.integration.bailian;
 
 /**
+ * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
  * Rerank configuration for Bailian knowledge base retrieval.
  *
  * <p>Reranking can improve the relevance of retrieved documents by re-scoring them
@@ -34,6 +35,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
      * Gets the rerank model name.
      *
      * @return the model name
@@ -43,6 +45,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
      * Gets the minimum score threshold for reranking.
      *
      * @return the minimum score (0.01-1.00)
@@ -52,6 +55,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
      * Gets the top N results after reranking.
      *
      * @return the top N value (1-20)
@@ -61,6 +65,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
      * Creates a new builder.
      *
      * @return a new Builder instance
@@ -70,6 +75,7 @@ public class RerankConfig {
     }
 
     /**
+     * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
      * Builder for RerankConfig.
      */
     public static class Builder {
@@ -80,6 +86,7 @@ public class RerankConfig {
         private Builder() {}
 
         /**
+         * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
          * Sets the rerank model name.
          *
          * <p>Supported models:
@@ -97,6 +104,7 @@ public class RerankConfig {
         }
 
         /**
+         * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
          * Sets the minimum score threshold.
          *
          * <p>Only documents with scores above this threshold will be returned.
@@ -114,6 +122,7 @@ public class RerankConfig {
         }
 
         /**
+         * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
          * Sets the top N results after reranking.
          *
          * <p>Range: [1-20], default: 5
@@ -130,6 +139,7 @@ public class RerankConfig {
         }
 
         /**
+         * {@summary Rerank configuration for Bailian knowledge base retrieval. (Rerank configuration for Bailian knowledge base retrieval.)}
          * Builds a new RerankConfig.
          *
          * @return a new RerankConfig instance

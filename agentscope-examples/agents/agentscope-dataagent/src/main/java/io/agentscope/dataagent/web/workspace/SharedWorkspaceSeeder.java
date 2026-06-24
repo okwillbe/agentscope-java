@@ -36,6 +36,7 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary SharedWorkspaceSeeder class ()}
  * Materialises the bundled {@code classpath:shared/**} tree (default skills, sub-agents, memory
  * snippets shipped with the DataAgent build) onto disk at {@code ${cwd}/shared/} the first time the
  * application starts.
@@ -102,6 +103,7 @@ public class SharedWorkspaceSeeder {
     }
 
     /**
+     * {@summary SharedWorkspaceSeeder class ()}
      * Eagerly enumerates every regular file under {@code classpath*:shared/**}, regardless of
      * whether the classpath element is an exploded directory (development) or a JAR (production
      * fat-jar). Returns paths relative to {@code shared/}.
@@ -151,6 +153,7 @@ public class SharedWorkspaceSeeder {
     }
 
     /**
+     * {@summary SharedWorkspaceSeeder class ()}
      * Extracts the path component after {@code /shared/} from a classpath resource URI. Returns
      * {@code null} when the URI does not contain the expected prefix.
      */

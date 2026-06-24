@@ -65,6 +65,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
  * Generic workspace file CRUD for an agent.
  *
  * <ul>
@@ -673,6 +674,7 @@ public class AgentWorkspaceController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Resolves the (display workspace path, {@link WorkspaceManager}, audit-owner) tuple for an
      * agent.
      *
@@ -720,6 +722,7 @@ public class AgentWorkspaceController {
     private record WorkspaceContext(Path workspace, WorkspaceManager manager, String ownerId) {}
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Normalizes a user-supplied workspace-relative path into an {@link AbstractFilesystem}
      * absolute path (leading {@code /}). Strips any leading slashes from the caller, then routes
      * through {@link AbstractFilesystem#validatePath(String)} which rejects {@code ..} traversal.
@@ -744,6 +747,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Returns the workspace-relative path (no leading {@code /}) for use with
      * {@link AbstractFilesystem#uploadFiles(RuntimeContext, List)} — that API takes relative
      * paths everywhere else in the codebase.
@@ -771,6 +775,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Normalizes a {@link FileInfo} path coming out of an {@link AbstractFilesystem} into a
      * workspace-relative path: strips leading/trailing slashes. Local stores in namespaced mode
      * already return relative paths, but virtual-mode stores and composite routes prepend
@@ -796,6 +801,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Folds a flat {@code glob("**&#47;*", "/")} result into the nested {@link FileNode} tree the
      * UI expects. Each file is placed under the chain of directory nodes derived from its path
      * components; directories listed explicitly by the backend are merged in by deduplicating on
@@ -847,6 +853,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Walks the parent chain of {@code parts[0..len-1]} and inserts placeholder directory nodes
      * for any segment we haven't seen yet. Each new dir is hooked into its parent's child list
      * once (deduplication is done via {@code dirPaths}).
@@ -898,6 +905,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Shallow listing for {@code recursive=false}: take the entries from {@code fs.ls("/")} as a
      * flat (no children) {@link FileNode} list, deduplicate on path (composite's union view may
      * surface the same dir from both the default backend and a route placeholder), and apply the
@@ -959,6 +967,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Counts entries under {@code dirAbsPath} via {@code fs.ls}, optionally restricted to
      * directories ({@code dirOnly=true}) or to files whose name ends with {@code suffix} (when
      * non-null). Missing directories count as zero.
@@ -1002,6 +1011,7 @@ public class AgentWorkspaceController {
     }
 
     /**
+     * {@summary Generic workspace file CRUD for an agent. (Generic workspace file CRUD for an agent.)}
      * Ensures an ISOLATED subagent gets a per-user absolute default {@code workspacePath} rooted
      * at {@code <builderHome>/users/<userId>/agents/<parentAgentId>/agents/<subName>/workspace}
      * when the caller didn't specify one. The {@code userId} prefix is what keeps each tenant's

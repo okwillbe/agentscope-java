@@ -25,6 +25,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 
 /**
+ * {@summary Resolves the bot's GitLab user id (and username) for the configured token by calling}
  * Resolves the bot's GitLab user id (and username) for the configured token by calling
  * {@code GET /user}. Used for bot-loop self-detection — when a Note Hook is fired by the bot
  * itself, the channel must drop it to avoid infinite loops.
@@ -44,6 +45,7 @@ public final class GitLabBotIdentityResolver {
     }
 
     /**
+     * {@summary Resolves the bot's GitLab user id (and username) for the configured token by calling}
      * Synchronously attempts to resolve {@code GET /user} and cache the response. Errors are
      * logged at WARN; startup continues.
      */

@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
  * Input model for running an agent via the AG-UI protocol.
  *
  * <p>This class represents the complete input needed to invoke an agent,
@@ -40,6 +41,7 @@ public class RunAgentInput {
     private final Map<String, Object> forwardedProps;
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Creates a new RunAgentInput.
      *
      * @param threadId The thread ID for this conversation
@@ -77,6 +79,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the thread ID.
      *
      * @return The thread ID
@@ -86,6 +89,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the run ID.
      *
      * @return The run ID
@@ -95,6 +99,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the conversation messages.
      *
      * @return The messages as an immutable list
@@ -104,6 +109,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the frontend-provided tools.
      *
      * @return The tools as an immutable list
@@ -113,6 +119,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the context information.
      *
      * @return The context as an immutable list
@@ -122,6 +129,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the initial state.
      *
      * @return The state as an immutable map
@@ -131,6 +139,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get the forwarded properties.
      *
      * @return The forwarded properties as an immutable map
@@ -140,6 +149,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get a specific forwarded property.
      *
      * @param key The property key
@@ -150,6 +160,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Get a specific forwarded property with a default value.
      *
      * @param key The property key
@@ -161,6 +172,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Check if there are any messages.
      *
      * @return true if messages are present
@@ -170,6 +182,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Check if there are any frontend tools.
      *
      * @return true if tools are present
@@ -179,6 +192,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Check if there is any context.
      *
      * @return true if context is present
@@ -188,6 +202,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Check if there is initial state.
      *
      * @return true if state is present
@@ -216,6 +231,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Creates a new builder for RunAgentInput.
      *
      * @return A new builder instance
@@ -225,6 +241,7 @@ public class RunAgentInput {
     }
 
     /**
+     * {@summary Input model for running an agent via the AG-UI protocol. (Input model for running an agent via the AG-UI protocol.)}
      * Builder for RunAgentInput.
      */
     public static class Builder {

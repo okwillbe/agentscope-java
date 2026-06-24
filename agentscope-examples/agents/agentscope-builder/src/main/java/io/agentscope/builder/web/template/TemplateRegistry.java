@@ -45,6 +45,7 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary Registry of starter agent templates. Templates are loaded from two sources: (Registry of starter agent templates. Templates are loaded from two sources:)}
  * Registry of starter agent templates. Templates are loaded from two sources:
  *
  * <ol>
@@ -142,6 +143,7 @@ public class TemplateRegistry {
     }
 
     /**
+     * {@summary Registry of starter agent templates. Templates are loaded from two sources: (Registry of starter agent templates. Templates are loaded from two sources:)}
      * Copies all files of the given template into {@code workspaceDir} with write-if-missing
      * semantics. Returns {@code false} if the template id is unknown.
      */
@@ -322,6 +324,7 @@ public class TemplateRegistry {
     }
 
     /**
+     * {@summary Registry of starter agent templates. Templates are loaded from two sources: (Registry of starter agent templates. Templates are loaded from two sources:)}
      * Eagerly loads every regular file under a classpath-bundled template into memory. Returns
      * relative paths and raw byte contents.
      *

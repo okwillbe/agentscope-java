@@ -36,6 +36,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
  * DashScope Multi-Modal Embedding Model implementation.
  *
  * <p>This implementation provides access to DashScope's multi-modal embedding API, supporting
@@ -65,6 +66,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     private final String baseUrl;
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Creates a new DashScope multi-modal embedding model instance.
      *
      * @param apiKey the API key for DashScope authentication
@@ -89,6 +91,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Creates a new builder for DashScopeMultiModalEmbedding.
      *
      * @return a new Builder instance
@@ -138,6 +141,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Embeds a single ContentBlock (TextBlock or ImageBlock) using MultiModalEmbedding API.
      *
      * @param block the content block to embed
@@ -181,6 +185,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Creates a new MultiModalEmbedding client instance.
      *
      * <p>Note: A new client instance is created for each request because the DashScope SDK
@@ -194,6 +199,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Builds a MultiModalEmbeddingParam for text embedding.
      *
      * @param text the text to embed
@@ -209,6 +215,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Builds a MultiModalEmbeddingParam for image embedding.
      *
      * @param imageUrl the image URL to embed
@@ -224,6 +231,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Calls the DashScope MultiModalEmbedding API with the given parameter.
      *
      * @param param the embedding parameter
@@ -256,6 +264,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Parses the embedding result and converts it to a double array.
      *
      * @param result the embedding result from API
@@ -279,6 +288,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Validates the embedding dimension and logs a warning if mismatch.
      *
      * @param embedding the embedding vector to validate
@@ -303,6 +313,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
     }
 
     /**
+     * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
      * Builder for DashScopeMultiModalEmbedding.
      */
     public static class Builder {
@@ -313,6 +324,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
         private String baseUrl;
 
         /**
+         * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
          * Sets the API key for DashScope authentication.
          *
          * @param apiKey the API key
@@ -324,6 +336,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
          * Sets the model name to use.
          *
          * @param modelName the model name (e.g., "multimodal-embedding-v1")
@@ -335,6 +348,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
          * Sets the dimension of embedding vectors.
          *
          * @param dimensions the dimension
@@ -346,6 +360,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
          * Sets the default execution configuration.
          *
          * @param config the execution config (null for defaults)
@@ -357,6 +372,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
          * Sets a custom base URL for DashScope API.
          *
          * @param baseUrl the base URL (null for default)
@@ -368,6 +384,7 @@ public class DashScopeMultiModalEmbedding implements EmbeddingModel {
         }
 
         /**
+         * {@summary DashScope Multi-Modal Embedding Model implementation. (DashScope Multi-Modal Embedding Model implementation.)}
          * Builds the DashScopeMultiModalEmbedding instance.
          *
          * <p>This method validates required parameters and ensures that the defaultExecutionConfig

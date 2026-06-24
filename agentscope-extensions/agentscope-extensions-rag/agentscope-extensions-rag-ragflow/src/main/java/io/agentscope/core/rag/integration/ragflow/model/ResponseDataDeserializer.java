@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * {@summary Custom deserializer for RAGFlow ResponseData. (Custom deserializer for RAGFlow ResponseData.)}
  * Custom deserializer for RAGFlow ResponseData.
  *
  * <p>RAGFlow API may return "data": false or "data": null in some cases (e.g., errors, no

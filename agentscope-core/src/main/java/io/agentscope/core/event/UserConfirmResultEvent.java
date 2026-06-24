@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary UserConfirmResultEvent (UserConfirmResultEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;

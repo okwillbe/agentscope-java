@@ -15,6 +15,7 @@
  */
 package io.agentscope.harness.agent.sandbox.impl.docker;
 
+/** {@summary DockerSandboxClient (DockerSandboxClient)} */
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.agentscope.harness.agent.sandbox.Sandbox;
 import io.agentscope.harness.agent.sandbox.SandboxClient;

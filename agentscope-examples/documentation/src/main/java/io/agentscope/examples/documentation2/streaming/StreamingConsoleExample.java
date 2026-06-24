@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
+ * {@summary Runs the streaming console example. (Runs the streaming console example.)}
  * StreamingConsoleExample - Demonstrates {@link ReActAgent#stream} for console-based real-time output.
  *
  * <p>{@code agent.stream()} returns a {@link reactor.core.publisher.Flux}&lt;{@link Event}&gt;.
@@ -63,6 +64,7 @@ import java.util.Scanner;
 public class StreamingConsoleExample {
 
     /**
+     * {@summary Runs the streaming console example. (Runs the streaming console example.)}
      * Runs the streaming console example.
      *
      * @param args command-line arguments (ignored)
@@ -137,6 +139,7 @@ public class StreamingConsoleExample {
     }
 
     /**
+     * {@summary Runs the streaming console example. (Runs the streaming console example.)}
      * Prints an event to the console based on its type.
      *
      * <p>Incremental REASONING chunks are printed without a newline to create a
@@ -168,6 +171,7 @@ public class StreamingConsoleExample {
     public static class SimpleCalcTools {
 
         /**
+         * {@summary Runs the streaming console example. (Runs the streaming console example.)}
          * Adds two numbers.
          *
          * @param a first operand
@@ -182,6 +186,7 @@ public class StreamingConsoleExample {
         }
 
         /**
+         * {@summary Runs the streaming console example. (Runs the streaming console example.)}
          * Multiplies two numbers.
          *
          * @param a first operand

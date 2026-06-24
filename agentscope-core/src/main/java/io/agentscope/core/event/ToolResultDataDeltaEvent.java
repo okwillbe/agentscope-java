@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.event;
 
+/** {@summary ToolResultDataDeltaEvent (ToolResultDataDeltaEvent)} */
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.agentscope.core.message.ContentBlock;

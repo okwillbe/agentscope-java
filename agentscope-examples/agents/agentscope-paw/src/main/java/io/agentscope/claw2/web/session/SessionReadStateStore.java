@@ -32,6 +32,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary Per-session "last read at" tracker, used by the Threads inbox to derive an unread flag. (Per-session "last read at" tracker, used by the Threads inbox to derive an unread flag.)}
  * Per-session "last read at" tracker, used by the Threads inbox to derive an unread flag.
  *
  * <p>A session is considered <em>unread</em> when its {@code lastActivityMs} is greater than the
@@ -75,6 +76,7 @@ public class SessionReadStateStore {
     }
 
     /**
+     * {@summary Per-session "last read at" tracker, used by the Threads inbox to derive an unread flag. (Per-session "last read at" tracker, used by the Threads inbox to derive an unread flag.)}
      * Whether the session is unread — i.e. its {@code lastActivityMs} is strictly greater than
      * the stored last-read timestamp. Sessions that have never been read are treated as unread.
      */

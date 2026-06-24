@@ -32,6 +32,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * {@summary SessionLifecycleScheduler class ()}
  * Drives the session lifecycle triggers declared in {@code agentscope.json}'s
  * {@code session} block:
  *

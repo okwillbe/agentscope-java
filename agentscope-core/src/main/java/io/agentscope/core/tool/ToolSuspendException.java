@@ -15,6 +15,8 @@
  */
 package io.agentscope.core.tool;
 
+/** {@summary ToolSuspendException (ToolSuspendException)} */
+
 /**
  * Exception thrown to signal that a tool execution should be suspended and handled externally.
  *

@@ -30,6 +30,7 @@ import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
  * Long-term memory implementation using Bailian Long Term Memory service.
  *
  * <p>This implementation integrates with Alibaba Cloud Bailian's memory service,
@@ -94,6 +95,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     private final Map<String, Object> metadata;
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Creates a new {@link BailianLongTermMemory} instance.
      *
      * @param builder the builder for configuring the memory
@@ -124,6 +126,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     }
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Records messages to long-term memory.
      *
      * <p>This method converts each message to a BailianMessage object, preserving the
@@ -215,6 +218,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     }
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Retrieves relevant memories based on the input message.
      *
      * <p>Uses semantic search to find memories relevant to the message content.
@@ -273,6 +277,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     }
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Converts a Msg to a BailianMessage.
      *
      * <p>Role mapping:
@@ -300,6 +305,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     }
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Creates a new builder for {@link BailianLongTermMemory}.
      *
      * @return a new builder instance
@@ -309,6 +315,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     }
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Closes the BailianMemoryClient and releases resources.
      */
     @Override
@@ -319,6 +326,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
     }
 
     /**
+     * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
      * Builder for {@link BailianLongTermMemory}.
      */
     public static class Builder {
@@ -337,6 +345,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         private HttpTransport httpTransport = HttpTransportFactory.getDefault();
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the Bailian API key.
          *
          * @param apiKey the DASHSCOPE_API_KEY
@@ -348,6 +357,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the Bailian API base URL.
          *
          * @param apiBaseUrl the base URL
@@ -359,6 +369,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the user identifier for memory organization.
          *
          * @param userId the user ID (required)
@@ -370,6 +381,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the memory library identifier.
          *
          * @param memoryLibraryId the memory library ID
@@ -381,6 +393,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the project identifier.
          *
          * @param projectId the project ID
@@ -392,6 +405,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the profile schema identifier.
          *
          * @param profileSchema the profile schema ID
@@ -403,6 +417,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the maximum number of search results.
          *
          * @param topK the top K value
@@ -414,6 +429,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the minimum similarity score threshold.
          *
          * @param minScore the minimum score threshold [0,1]
@@ -425,6 +441,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets whether to enable reranking.
          *
          * @param enableRerank true to enable reranking, false otherwise
@@ -436,6 +453,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets whether to enable judge.
          *
          * @param enableJudge true to enable judge, false otherwise
@@ -447,6 +465,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets whether to enable rewrite.
          *
          * @param enableRewrite true to enable rewrite, false otherwise
@@ -458,6 +477,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets custom metadata to be stored with memories.
          *
          * @param metadata custom metadata map
@@ -469,6 +489,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Sets the HTTP transport.
          *
          * @param httpTransport the HTTP transport
@@ -480,6 +501,7 @@ public class BailianLongTermMemory implements LongTermMemory, AutoCloseable {
         }
 
         /**
+         * {@summary Long-term memory implementation using Bailian Long Term Memory service. (Long-term memory implementation using Bailian Long Term Memory service.)}
          * Builds the {@link BailianLongTermMemory} instance.
          *
          * @return a new {@link BailianLongTermMemory} instance

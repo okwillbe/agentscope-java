@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.model;
 
+/** {@summary OllamaHttpClient (OllamaHttpClient)} */
 import io.agentscope.core.formatter.ollama.dto.OllamaEmbeddingRequest;
 import io.agentscope.core.formatter.ollama.dto.OllamaEmbeddingResponse;
 import io.agentscope.core.formatter.ollama.dto.OllamaRequest;

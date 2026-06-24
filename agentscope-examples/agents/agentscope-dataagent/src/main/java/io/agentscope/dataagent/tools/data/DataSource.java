@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Admin-curated catalog entry describing a named data source the agent may query. v1 is a thin (Admin-curated catalog entry describing a named data source the agent may query. v1 is a thin)}
  * Admin-curated catalog entry describing a named data source the agent may query. v1 is a thin
  * descriptor: a stable id, a human-readable label, the JDBC-style URL prefix (or other connector
  * hint), and an opaque {@code properties} map for connector-specific configuration.

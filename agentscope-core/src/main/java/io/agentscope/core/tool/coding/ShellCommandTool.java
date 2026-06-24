@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.tool.coding;
 
+/** {@summary ShellCommandTool (ShellCommandTool)} */
 import io.agentscope.core.message.TextBlock;
 import io.agentscope.core.message.ToolResultBlock;
 import io.agentscope.core.tool.AgentTool;

@@ -19,7 +19,7 @@ import io.agentscope.harness.agent.sandbox.SandboxClient;
 import io.agentscope.harness.agent.sandbox.SandboxClientOptions;
 import okhttp3.OkHttpClient;
 
-/** Options for {@link E2bSandboxClient}. */
+/** {@summary E2B template id (or snapshot id when creating from a snapshot). (E2B template id (or snapshot id when creating from a snapshot).)} Options for {@link E2bSandboxClient}. */
 public class E2bSandboxClientOptions extends SandboxClientOptions {
 
     private OkHttpClient httpClient;
@@ -27,10 +27,10 @@ public class E2bSandboxClientOptions extends SandboxClientOptions {
     private String apiBaseUrl = "https://api.e2b.app";
     private String domain = "e2b.app";
 
-    /** E2B template id (or snapshot id when creating from a snapshot). */
+    /** {@summary E2B template id (or snapshot id when creating from a snapshot). (E2B template id (or snapshot id when creating from a snapshot).)} E2B template id (or snapshot id when creating from a snapshot). */
     private String templateId = "base";
 
-    /** Absolute path of the workspace root inside the sandbox. */
+    /** {@summary E2B template id (or snapshot id when creating from a snapshot). (E2B template id (or snapshot id when creating from a snapshot).)} Absolute path of the workspace root inside the sandbox. */
     private String workspaceRoot = "/home/user";
 
     private int sandboxTimeoutSeconds = 300;

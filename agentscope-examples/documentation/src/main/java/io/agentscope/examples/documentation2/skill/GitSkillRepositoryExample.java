@@ -30,6 +30,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 /**
+ * {@summary Demonstrates loading skills from a remote Git repository. (Demonstrates loading skills from a remote Git repository.)}
  * Demonstrates loading skills from a remote Git repository.
  *
  * <p>{@link GitSkillRepository} clones a remote Git repository to a local temporary directory

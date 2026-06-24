@@ -30,6 +30,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * {@summary E2bSandbox class ()}
  * {@link io.agentscope.harness.agent.sandbox.Sandbox} backed by E2B cloud sandboxes.
  *
  * <p>Execution uses envd {@code process.Process/Start} over HTTPS (Connect+protobuf). Workspace

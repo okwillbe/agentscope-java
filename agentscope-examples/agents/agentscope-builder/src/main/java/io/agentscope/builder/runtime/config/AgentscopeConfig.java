@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
  * Root document for {@code ${cwd}/.agentscope/agentscope.json}.
  *
  * <p>Shape is intentionally similar to OpenClaw's top-level config: a {@code main} entry id, an
@@ -38,6 +39,7 @@ public class AgentscopeConfig {
     private String schema;
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Agent id of the default entry point. Programmatic {@link
      * BuilderBootstrap.Builder#mainAgent(String)} overrides this when set.
      */
@@ -48,6 +50,7 @@ public class AgentscopeConfig {
     private Map<String, AgentConfigEntry> agents = new LinkedHashMap<>();
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Optional channel configurations keyed by channel id (e.g. {@code "chatui"}, {@code
      * "slack"}). The built-in {@code chatui} channel is auto-created from its entry when no
      * programmatic channel registration covers the same id. For other channel types, the entry
@@ -57,6 +60,7 @@ public class AgentscopeConfig {
     private Map<String, ChannelConfigEntry> channels = new LinkedHashMap<>();
 
     /**
+     * {@summary Optional JSON Schema reference for editors. (Optional JSON Schema reference for editors.)}
      * Optional session-lifecycle config (auto-reset, maintenance). Maps to runtime {@link
      * io.agentscope.builder.runtime.session.SessionMaintenanceConfig} and an internal scheduler for
      * daily / idle resets.

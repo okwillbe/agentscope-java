@@ -47,6 +47,7 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 /**
+ * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
  * AgentStateStore management endpoints, scoped to a specific agent.
  *
  * <ul>
@@ -174,6 +175,7 @@ public class SessionController {
     // -----------------------------------------------------------------
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Resolves a path-level {@code key} to a {@link SessionEntry} owned by {@code userId} for the
      * URL {@code agentId}. {@code key} may be either the internal storage key (legacy callers) or
      * the conversationId surfaced via {@link InboxEntry#conversationId()} — the FE only ever sees
@@ -197,6 +199,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Scans registered MAIN sessions for one whose {@code gateKey} carries {@code |t:<key>} and
      * matches the user+agent pair. Returns {@code null} if no match.
      */
@@ -215,6 +218,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Authorizes a session against the URL agent. {@link SessionEntry#agentId()} holds the
      * HarnessAgent's internal UUID (not the gateway/catalog id), so we cannot match by agent id
      * directly. Instead we look at the session's {@code gateKey} (which is deterministically
@@ -236,6 +240,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Extracts the {@code agentId} value from a canonical gateKey segment of the form
      * {@code |x:agentId=<value>}. Returns an empty string if no such segment is present.
      */
@@ -249,6 +254,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Extracts the conversationId (the threadId portion of {@link
      * io.agentscope.harness.agent.gateway.MsgContext}) from a canonical gateKey segment of the
      * form {@code |t:<value>}. Returns {@code null} when the gateKey is missing or has no thread
@@ -287,6 +293,7 @@ public class SessionController {
     }
 
     /**
+     * {@summary AgentStateStore management endpoints, scoped to a specific agent. (AgentStateStore management endpoints, scoped to a specific agent.)}
      * Reads the chat content for a session. The actual transcript lives at the per-agent workspace
      * under {@code agents/<innerAgentId>/sessions/<sessionId>.log.jsonl}, written by the harness
      * memory hooks. The {@link SessionAgentManager} registry stores a stale legacy path

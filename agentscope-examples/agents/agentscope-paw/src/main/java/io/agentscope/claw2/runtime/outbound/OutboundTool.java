@@ -21,6 +21,7 @@ import io.agentscope.harness.agent.gateway.ChannelManager;
 import java.util.Objects;
 
 /**
+ * {@summary Agent-facing tool for proactive outbound delivery into any registered channel (DingTalk, WeCom,}
  * Agent-facing tool for proactive outbound delivery into any registered channel (DingTalk, WeCom,
  * ...). Registered onto the main agent's toolkit by {@link
  * io.agentscope.claw2.runtime.ClawBootstrap}.

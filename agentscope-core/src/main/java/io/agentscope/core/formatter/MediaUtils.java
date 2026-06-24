@@ -15,6 +15,7 @@
  */
 package io.agentscope.core.formatter;
 
+/** {@summary MediaUtils (MediaUtils)} */
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
